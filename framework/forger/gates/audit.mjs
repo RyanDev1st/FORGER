@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
-import { pathToFileURL } from 'node:url';
 import { readYaml, writeYaml,
          validateSourceEntry, validateClaimEntry } from '../_lib/ledger.mjs';
 import { headRequest, getPageText, grepQuote } from '../_lib/playwright.mjs';
@@ -127,7 +126,7 @@ export async function runAudit({ workspace, skipNetwork = false }) {
 }
 
 // CLI entry
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (process.argv[1] && import.meta.url === `file://${process.argv[1]}`) {
   const args = parseArgs(process.argv.slice(2));
   if (!args.workspace) {
     console.error('Usage: audit.mjs --workspace <path>');

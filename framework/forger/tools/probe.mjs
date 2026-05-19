@@ -4,7 +4,6 @@ import path from 'node:path';
 import os from 'node:os';
 import crypto from 'node:crypto';
 import { spawnSync } from 'node:child_process';
-import { pathToFileURL } from 'node:url';
 import { appendProbeResult } from '../_lib/ledger.mjs';
 
 export async function runProbe({ workspace, assumptionId, probeType, cmd, expected = '', timeoutMs = 60000 }) {
@@ -35,7 +34,7 @@ export async function runProbe({ workspace, assumptionId, probeType, cmd, expect
   return result;
 }
 
-if (import.meta.url === pathToFileURL(process.argv[1]).href) {
+if (process.argv[1] && import.meta.url === `file://${process.argv[1]}`) {
   const argv = process.argv.slice(2);
   const args = {};
   for (let i = 0; i < argv.length; i++) {
