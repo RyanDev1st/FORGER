@@ -1,0 +1,105 @@
+# schema: ../../../schemas/failure_hypothesis.schema.yaml
+# Worked example: a failure_hypotheses.yaml after a deep-mode GRILL run on
+# the same Node.js streaming DoW used by the FIND, OBSERVE, and RECOMBINE
+# examples. Four entries cover the resolution surface:
+#   - two accepted_test_added (different severities, different reviewers)
+#   - one rejected_with_counter_evidence (cites two clm-* ids from the
+#     example claim ledger)
+#   - one escalated (deep-mode blind reviewer raised a DoW-level concern)
+# This file represents post-exit state: GRILL gate 2 forbids any
+# `status: open` entry at exit, so none appear here.
+
+- id: fh-backpressure-burst-regression
+  hypothesis: |
+    Sustained throughput drops below the 1 MB/s DoW threshold during
+    burst inputs because the inserted gzip Transform does not yield to
+    the event loop on every chunk, so backpressure does not propagate
+    to the HTTP Readable in time.
+  what_disproves: |
+    A 60-second benchmark interleaving 5 ms / 10 ms / 50 ms chunk gaps
+    records p95 throughput >= 1 MB/s and event-loop lag p95 <= 25 ms.
+  minimal_test: |
+    node tools/probe.mjs --workspace <path>
+    --assumption-id fh-backpressure-burst-regression
+    --type benchmark --cmd 'node bench/burst_throughput.mjs --duration 60'
+  severity_if_wrong: high
+  confidence: 3
+  reviewer_provider: anthropic
+  reviewer_model: claude-opus-4-7
+  reviewer_tier: best
+  blind: false
+  status: accepted_test_added
+  resolution_test_id: at-burst-throughput-p95
+
+- id: fh-destroyed-writable-leak-undetectable
+  hypothesis: |
+    The destroyed-Writable memory leak grows so slowly under our test
+    load that the planned 60-second canary will not register a
+    statistically significant difference, so the regression slips into
+    production unnoticed.
+  what_disproves: |
+    Two back-to-back 5-minute leak benchmarks (one with the fix, one
+    without) show an RSS delta > 3 sigma of the no-fix baseline,
+    detectable inside the first 60 seconds of either run.
+  minimal_test: |
+    node tools/probe.mjs --workspace <path>
+    --assumption-id fh-destroyed-writable-leak-undetectable
+    --type benchmark
+    --cmd 'node bench/leak_canary.mjs --duration 300 --emit-rss'
+  severity_if_wrong: critical
+  confidence: 4
+  reviewer_provider: openai
+  reviewer_model: gpt-5.1-mini
+  reviewer_tier: best
+  blind: false
+  status: accepted_test_added
+  resolution_test_id: at-leak-canary-rss-delta
+
+- id: fh-pipeline-error-callback-omitted-by-refactor
+  hypothesis: |
+    A later refactor will silently drop the final callback argument to
+    stream.pipeline, leaving errors unhandled and reintroducing the
+    very failure mode this proposal was designed to eliminate.
+  what_disproves: |
+    The proposal already wires a documented behavior (Node.js docs +
+    confirmed community Q&A) that errors propagate to the final
+    callback, and the artifact pairs every pipeline call site with a
+    static-check rule. The behavior is anchored in the claim ledger,
+    not extrapolated.
+  minimal_test: |
+    grep -rE 'stream\.pipeline\(' src/ | awk -F'pipeline' 'NF<3'
+    (empty output = every call has at least two further tokens; the
+    trailing callback is therefore present)
+  severity_if_wrong: high
+  confidence: 2
+  reviewer_provider: google
+  reviewer_model: gemini-2.5-pro
+  reviewer_tier: best
+  blind: false
+  status: rejected_with_counter_evidence
+  counter_evidence_refs:
+    - clm-pipeline-error-propagation
+    - clm-pipeline-error-handler-required
+
+- id: fh-dow-assumes-single-tenant-throughput
+  hypothesis: |
+    The DoW's success_criteria_measurable threshold (>= 1 MB/s
+    sustained throughput) is implicitly single-tenant. Once the
+    streaming wrapper is colocated with other tenants on the same
+    process, the threshold becomes per-process rather than per-tenant
+    and the artifact silently misses its real obligation.
+  what_disproves: |
+    A DoW addendum either (a) re-states the threshold as per-tenant
+    with a documented isolation mechanism, or (b) confirms in writing
+    with the user that single-tenant is the intended deployment.
+  minimal_test: |
+    Read dow.yaml::success_criteria_measurable[id=sc-throughput] and
+    confirm whether `threshold` mentions tenancy. If it does not,
+    escalate to user before EXECUTE writes the benchmark.
+  severity_if_wrong: critical
+  confidence: 3
+  reviewer_provider: openai
+  reviewer_model: gpt-5.1
+  reviewer_tier: good
+  blind: true
+  status: escalated
