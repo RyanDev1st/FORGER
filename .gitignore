@@ -1,0 +1,26 @@
+# Keep the public branch intentionally minimal.
+*
+
+!.gitignore
+!README.md
+
+# Explicit local/sensitive paths.
+.env
+.env.*
+node_modules/
+.node_modules/
+
+# Keep Playwright folders local; do not publish their contents.
+.playwright/
+.playwright-cli/
+playwright/
+
+.claude/
+CLAUDE.md
+claude.md
+
+framework/
+FORGER framework/
+IPBC/
+results/
+reTruth/
