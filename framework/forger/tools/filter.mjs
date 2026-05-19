@@ -1,11 +1,11 @@
-#!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { headRequest } from '../_lib/playwright.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const blocklistPath = path.resolve(here, '..', '_lib', 'domain_blocklist.txt');
+const entryUrl = process.argv[1] ? pathToFileURL(process.argv[1]).href : null;
 
 function loadBlocklist() {
   if (!fs.existsSync(blocklistPath)) return new Set();
@@ -64,7 +64,7 @@ export async function filterUrls(candidates) {
   return { kept, rejected };
 }
 
-if (process.argv[1] && import.meta.url === `file://${process.argv[1]}`) {
+if (entryUrl && import.meta.url === entryUrl) {
   const args = Object.fromEntries(
     process.argv.slice(2).reduce((acc, v, i, a) => {
       if (v.startsWith('--')) acc.push([v.slice(2), a[i + 1]]);

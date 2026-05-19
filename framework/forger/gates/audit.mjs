@@ -1,11 +1,12 @@
-#!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { readYaml, writeYaml,
          validateSourceEntry, validateClaimEntry } from '../_lib/ledger.mjs';
 import { headRequest, getPageText, grepQuote } from '../_lib/playwright.mjs';
 
 const STOPWORDS = new Set(['a','an','the','of','and','or','to','in','for','on','with','by','is','are','as','at','it','that','this']);
+const entryUrl = process.argv[1] ? pathToFileURL(process.argv[1]).href : null;
 
 function bigrams(text) {
   const tokens = text.toLowerCase()
@@ -126,7 +127,7 @@ export async function runAudit({ workspace, skipNetwork = false }) {
 }
 
 // CLI entry
-if (process.argv[1] && import.meta.url === `file://${process.argv[1]}`) {
+if (entryUrl && import.meta.url === entryUrl) {
   const args = parseArgs(process.argv.slice(2));
   if (!args.workspace) {
     console.error('Usage: audit.mjs --workspace <path>');

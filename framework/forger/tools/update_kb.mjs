@@ -1,7 +1,6 @@
-#!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import {
   readYaml, writeYaml, appendJsonl, readJsonl,
   validateRetroNote,
@@ -9,6 +8,7 @@ import {
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const defaultPluginRoot = path.resolve(here, '..');
+const entryUrl = process.argv[1] ? pathToFileURL(process.argv[1]).href : null;
 
 export async function runUpdateKb({ workspace, pluginRoot = defaultPluginRoot, now = new Date() }) {
   const retro = readYaml(path.join(workspace, 'retro_note.yaml'));
@@ -106,7 +106,7 @@ export async function runUpdateKb({ workspace, pluginRoot = defaultPluginRoot, n
   return { proven_claims_merged, status: retro.status };
 }
 
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (entryUrl && import.meta.url === entryUrl) {
   const argv = process.argv.slice(2);
   const args = {};
   for (let i = 0; i < argv.length; i++) {
