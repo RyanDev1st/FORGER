@@ -26,5 +26,6 @@ describe('reviewer_router', () => {
     const r = await invokeReviewer('system', 'user', { sessionProvider: 'anthropic',
                                                        sessionModel: 'claude-opus-4-7' });
     expect(r.reviewer_meta.provider).toBe('anthropic');
+    expect(r.reviewer_meta.key_source).toBe('env');
   });
 });

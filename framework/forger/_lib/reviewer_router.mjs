@@ -67,11 +67,9 @@ export async function invokeReviewer(systemPrompt, userPrompt, opts = {}) {
   if (process.env.FORGER_REVIEWER_PROVIDER) {
     const adapterKey = PROVIDER_TO_ADAPTER[process.env.FORGER_REVIEWER_PROVIDER]
                       || process.env.FORGER_REVIEWER_PROVIDER;
-    try {
-      const result = await safeInvoke(adapterKey, systemPrompt, userPrompt,
-                                      { model: process.env.FORGER_REVIEWER_MODEL });
-      return wrap(result, adapterKey, 'env', tierFor(adapterKey, sessionProvider));
-    } catch { /* cascade to reviewer fallback */ }
+    const result = await safeInvoke(adapterKey, systemPrompt, userPrompt,
+                                    { model: process.env.FORGER_REVIEWER_MODEL });
+    return wrap(result, adapterKey, 'env', tierFor(adapterKey, sessionProvider));
   }
 
   // Tier 'best': different provider env key
