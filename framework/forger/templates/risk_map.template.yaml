@@ -1,8 +1,8 @@
 # schema: ../schemas/risk_map.schema.yaml
 assumptions:
   - id: a-1
-    description: 'Assumption requiring evidence or probe.'
-    severity: medium
+    description: 'Example unverified assumption.'
+    severity: high
     evidence_refs:
       - clm-example
     resolution_required: source+probe

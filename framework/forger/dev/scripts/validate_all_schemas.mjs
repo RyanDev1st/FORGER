@@ -40,7 +40,15 @@ const templateToSchema = {
   'retro_note.template.yaml': 'retro_note.schema.yaml',
 };
 
-for (const [tmplName, schemaName] of Object.entries(templateToSchema)) {
+const templateFiles = fs.readdirSync(templatesDir).filter(f => f.endsWith('.template.yaml'));
+
+for (const tmplName of templateFiles) {
+  const schemaName = templateToSchema[tmplName];
+  if (!schemaName) {
+    console.error(`template SKIP ${tmplName}: no schema mapping`);
+    allOk = false;
+    continue;
+  }
   const tmplPath = path.join(templatesDir, tmplName);
   const validator = validators[schemaName];
   if (!validator) {

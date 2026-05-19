@@ -18,8 +18,8 @@ audience:
 
 hard_constraints:
   - id: hc-1
-    description: 'Non-negotiable constraint.'
-    verification_method: 'Command, check, or inspection.'
+    description: 'Constraint statement.'
+    verification_method: 'How a human or test can verify.'
     threshold: 'Optional measurable bound.'
 
 success_criteria_measurable:
@@ -39,12 +39,8 @@ unacceptable_failure_modes:
 reframe_memo:
   original_framing: 'User-stated problem framing.'
   alternative_framings:
-    - 'A simpler or more robust framing.'
-  chosen_framing: 'Chosen framing.'
-  rationale: 'Why this framing is safer or more useful.'
+    - 'A simpler reframe to consider.'
+  chosen_framing: 'The framing we ran with.'
+  rationale: 'Why we chose it.'
 
-assumptions:
-  - id: a-1
-    description: 'Assumption requiring evidence or waiver.'
-    severity: medium
-    status: unverified
+assumptions: []
