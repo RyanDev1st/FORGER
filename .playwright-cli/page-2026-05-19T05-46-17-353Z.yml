@@ -1,0 +1,542 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - link "DuckDuckGo home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e9]: DuckDuckGo
+          - generic [ref=e15]:
+            - combobox "Search privately" [ref=e17]: site:arxiv.org self-rag paper retrieval augmented generation
+            - button "search" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e25]:
+              - banner [ref=e26]:
+                - img [ref=e27]
+                - paragraph [ref=e28]: Upgrade to our browser.
+              - generic [ref=e29]:
+                - generic [ref=e30]:
+                  - img [ref=e31]
+                  - generic [ref=e32]:
+                    - img [ref=e33]
+                    - img [ref=e34]
+                - paragraph [ref=e35]:
+                  - generic [ref=e36]:
+                    - text: Try the
+                    - strong [ref=e37]: DuckDuckGo Browser.
+                    - text: Fast. Free. Private.
+                - link "Download Browser" [ref=e38] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/windows?origin=funnel_browser_searchresults__popover
+                  - img [ref=e39]
+                  - generic [ref=e41]: Download Browser
+              - paragraph [ref=e44]:
+                - generic [ref=e45]: Free
+            - button [ref=e47] [cursor=pointer]:
+              - img [ref=e48]
+          - button "Open menu" [ref=e50] [cursor=pointer]:
+            - generic [ref=e51]: Open menu
+            - img [ref=e52]
+      - navigation [ref=e58]:
+        - list [ref=e59]:
+          - listitem [ref=e60]:
+            - link "All" [ref=e61] [cursor=pointer]:
+              - /url: /?q=site%3Aarxiv.org+self-rag+paper+retrieval+augmented+generation&ia=web
+              - img [ref=e62]
+              - text: All
+          - listitem [ref=e64]:
+            - link "Images" [ref=e65] [cursor=pointer]:
+              - /url: /?q=site%3Aarxiv.org+self-rag+paper+retrieval+augmented+generation&ia=images&iax=images
+          - listitem [ref=e66]:
+            - link "Videos" [ref=e67] [cursor=pointer]:
+              - /url: /?q=site%3Aarxiv.org+self-rag+paper+retrieval+augmented+generation&ia=videos&iax=videos
+          - listitem [ref=e68]:
+            - link "News" [ref=e69] [cursor=pointer]:
+              - /url: /?q=site%3Aarxiv.org+self-rag+paper+retrieval+augmented+generation&ia=news&iar=news
+          - listitem [ref=e70]:
+            - link "Maps" [ref=e71] [cursor=pointer]:
+              - /url: /?q=site%3Aarxiv.org+self-rag+paper+retrieval+augmented+generation&iaxm=maps
+        - list [ref=e72]:
+          - listitem [ref=e73]:
+            - link "Duck.ai" [ref=e75] [cursor=pointer]:
+              - /url: /?q=site%3Aarxiv.org+self-rag+paper+retrieval+augmented+generation&ia=chat
+              - img [ref=e76]
+              - text: Duck.ai
+          - listitem [ref=e79]:
+            - button "Search Settings ✀" [ref=e81] [cursor=pointer]:
+              - img [ref=e82]
+              - generic [ref=e84]: Search Settings
+              - generic [ref=e87]: ✀
+    - generic [ref=e92]:
+      - navigation [ref=e94]:
+        - generic [ref=e97] [cursor=pointer]:
+          - generic [ref=e105]: Protected
+          - img [ref=e106]: ▼
+        - generic [ref=e110] [cursor=pointer]:
+          - generic [ref=e113]:
+            - switch "✓" [ref=e114]: ✓
+            - generic [ref=e116]: Vietnam (en)
+          - img [ref=e117]: ▼
+        - generic [ref=e121] [cursor=pointer]:
+          - generic [ref=e122]: "Safe search: moderate"
+          - img [ref=e123]: ▼
+        - generic [ref=e127] [cursor=pointer]:
+          - generic [ref=e128]: Any time
+          - img [ref=e129]: ▼
+      - generic [ref=e132]:
+        - list [ref=e133]:
+          - listitem [ref=e134]:
+            - article [ref=e135] [cursor=pointer]:
+              - button [ref=e137]:
+                - img [ref=e138]
+              - link "Udemy https://udemy.com" [ref=e144]:
+                - /url: https://duckduckgo.com/y.js?ad_domain=udemy.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=3Pf9J_Y9N4mAY2omZVIF5W6sk05NyaIa_z6qGEhTW4wqmiSmhQ1%2DUF_NlaOz2OwRImBOgfrLaWaI9PxBVI3wkD3BvttRA1j1flcCjzTyUysi%2DAGP9auVQQyaatEroYGtKSGNGPWYvrxvK5gAAomJepLFIDiiicuidDOPwSgzm6g.6p1uiOpovzDfyKqF9EyTIA&eddgt=6ovisUZxLcgfiKOWQjhCFA%3D%3D&rut=7f5767289b0b5e3639359a10d7d843aecd325cab130eeabac18d176761722e55&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8GflnweEpgeN%2DZffBcGDMPjVUCUxxXv5hvzue0NFjitZiR9OsNB_qLgBAjKKO47HMMkEZcSFGu8k4J4UgA7Y1zm0mhZks%2DTAusY25vDz6cnD9DzqbDAISFEgX_PXz1JNbMEv7QVbtR5GPKEX8XIiXSDsrbi6yfA52c_1qUyYC3TE4eD9dUfR_KPdZgWg5xbFzvTyZYeGCtJe6waV02cX7TDb7n8k%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmY291cnNlJTJmYmFzaWMtdG8tYWR2YW5jZWQtcmV0cmVpdmFsLWF1Z21lbnRlZC1nZW5lcmF0aW9uLXJhZy1jb3Vyc2UlMmYlM2Z1dG1fY2FtcGFpZ24lM2RCRy1TZWFyY2hfRFNBX0JldGFfUHJvZl9sYS5FTl9jYy5ST1ctRW5nbGlzaCUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBhaWQtc2VhcmNoJTI2cG9ydGZvbGlvJTNkQmluZy1ST1ctRW5nbGlzaCUyNnV0bV9hdWRpZW5jZSUzZG14JTI2dXRtX3RhY3RpYyUzZG5iJTI2dXRtX3Rlcm0lM2RfLl9hZ18xMzI0OTEzODk5OTE4MDExXy5fYWRfXy5fa3dfRGV2JTI1MjBlbiUyNnV0bV9jb250ZW50JTNkbyUyNmZ1bm5lbCUzZCUyNnRlc3QlM2QlMjZ1dG1fY2FtcGFpZ25faWQlM2Q2Mzg1OTYyMjklMjZtc2Nsa2lkJTNkYTJjMjY1ZmMwNTRmMTIxMjM0NjAwZmY3ZmM2Njg1YjE%26rlid%3Da2c265fc054f121234600ff7fc6685b1&vqd=4-331491026996470589911205944656395160474&iurl=%7B1%7DIG%3D2FCCD6AA060A47D99B8500F86B778B9B%26CID%3D181B4CBC1B186A3D1F665BE21A786B4D%26ID%3DDevEx%2C5036.1
+                - img [ref=e147]
+                - generic [ref=e148]:
+                  - paragraph [ref=e149]: Udemy
+                  - paragraph [ref=e150]:
+                    - generic [ref=e151]: https://udemy.com
+              - heading "RAG - Retrieval Augmented Generation Ad" [level=2] [ref=e153]:
+                - link "RAG - Retrieval Augmented Generation" [ref=e154]:
+                  - /url: https://duckduckgo.com/y.js?ad_domain=udemy.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=3Pf9J_Y9N4mAY2omZVIF5W6sk05NyaIa_z6qGEhTW4wqmiSmhQ1%2DUF_NlaOz2OwRImBOgfrLaWaI9PxBVI3wkD3BvttRA1j1flcCjzTyUysi%2DAGP9auVQQyaatEroYGtKSGNGPWYvrxvK5gAAomJepLFIDiiicuidDOPwSgzm6g.6p1uiOpovzDfyKqF9EyTIA&eddgt=6ovisUZxLcgfiKOWQjhCFA%3D%3D&rut=7f5767289b0b5e3639359a10d7d843aecd325cab130eeabac18d176761722e55&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8GflnweEpgeN%2DZffBcGDMPjVUCUxxXv5hvzue0NFjitZiR9OsNB_qLgBAjKKO47HMMkEZcSFGu8k4J4UgA7Y1zm0mhZks%2DTAusY25vDz6cnD9DzqbDAISFEgX_PXz1JNbMEv7QVbtR5GPKEX8XIiXSDsrbi6yfA52c_1qUyYC3TE4eD9dUfR_KPdZgWg5xbFzvTyZYeGCtJe6waV02cX7TDb7n8k%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmY291cnNlJTJmYmFzaWMtdG8tYWR2YW5jZWQtcmV0cmVpdmFsLWF1Z21lbnRlZC1nZW5lcmF0aW9uLXJhZy1jb3Vyc2UlMmYlM2Z1dG1fY2FtcGFpZ24lM2RCRy1TZWFyY2hfRFNBX0JldGFfUHJvZl9sYS5FTl9jYy5ST1ctRW5nbGlzaCUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBhaWQtc2VhcmNoJTI2cG9ydGZvbGlvJTNkQmluZy1ST1ctRW5nbGlzaCUyNnV0bV9hdWRpZW5jZSUzZG14JTI2dXRtX3RhY3RpYyUzZG5iJTI2dXRtX3Rlcm0lM2RfLl9hZ18xMzI0OTEzODk5OTE4MDExXy5fYWRfXy5fa3dfRGV2JTI1MjBlbiUyNnV0bV9jb250ZW50JTNkbyUyNmZ1bm5lbCUzZCUyNnRlc3QlM2QlMjZ1dG1fY2FtcGFpZ25faWQlM2Q2Mzg1OTYyMjklMjZtc2Nsa2lkJTNkYTJjMjY1ZmMwNTRmMTIxMjM0NjAwZmY3ZmM2Njg1YjE%26rlid%3Da2c265fc054f121234600ff7fc6685b1&vqd=4-331491026996470589911205944656395160474&iurl=%7B1%7DIG%3D2FCCD6AA060A47D99B8500F86B778B9B%26CID%3D181B4CBC1B186A3D1F665BE21A786B4D%26ID%3DDevEx%2C5036.1
+                - button "Ad" [ref=e157]
+              - generic [ref=e160]:
+                - link "Find the right instructor for you. Choose from many topics, skill levels, and languages. Join millions of learners from around the world already learning on Udemy." [ref=e161]:
+                  - /url: https://duckduckgo.com/y.js?ad_domain=udemy.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=3Pf9J_Y9N4mAY2omZVIF5W6sk05NyaIa_z6qGEhTW4wqmiSmhQ1%2DUF_NlaOz2OwRImBOgfrLaWaI9PxBVI3wkD3BvttRA1j1flcCjzTyUysi%2DAGP9auVQQyaatEroYGtKSGNGPWYvrxvK5gAAomJepLFIDiiicuidDOPwSgzm6g.6p1uiOpovzDfyKqF9EyTIA&eddgt=6ovisUZxLcgfiKOWQjhCFA%3D%3D&rut=7f5767289b0b5e3639359a10d7d843aecd325cab130eeabac18d176761722e55&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8GflnweEpgeN%2DZffBcGDMPjVUCUxxXv5hvzue0NFjitZiR9OsNB_qLgBAjKKO47HMMkEZcSFGu8k4J4UgA7Y1zm0mhZks%2DTAusY25vDz6cnD9DzqbDAISFEgX_PXz1JNbMEv7QVbtR5GPKEX8XIiXSDsrbi6yfA52c_1qUyYC3TE4eD9dUfR_KPdZgWg5xbFzvTyZYeGCtJe6waV02cX7TDb7n8k%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmY291cnNlJTJmYmFzaWMtdG8tYWR2YW5jZWQtcmV0cmVpdmFsLWF1Z21lbnRlZC1nZW5lcmF0aW9uLXJhZy1jb3Vyc2UlMmYlM2Z1dG1fY2FtcGFpZ24lM2RCRy1TZWFyY2hfRFNBX0JldGFfUHJvZl9sYS5FTl9jYy5ST1ctRW5nbGlzaCUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBhaWQtc2VhcmNoJTI2cG9ydGZvbGlvJTNkQmluZy1ST1ctRW5nbGlzaCUyNnV0bV9hdWRpZW5jZSUzZG14JTI2dXRtX3RhY3RpYyUzZG5iJTI2dXRtX3Rlcm0lM2RfLl9hZ18xMzI0OTEzODk5OTE4MDExXy5fYWRfXy5fa3dfRGV2JTI1MjBlbiUyNnV0bV9jb250ZW50JTNkbyUyNmZ1bm5lbCUzZCUyNnRlc3QlM2QlMjZ1dG1fY2FtcGFpZ25faWQlM2Q2Mzg1OTYyMjklMjZtc2Nsa2lkJTNkYTJjMjY1ZmMwNTRmMTIxMjM0NjAwZmY3ZmM2Njg1YjE%26rlid%3Da2c265fc054f121234600ff7fc6685b1&vqd=4-331491026996470589911205944656395160474&iurl=%7B1%7DIG%3D2FCCD6AA060A47D99B8500F86B778B9B%26CID%3D181B4CBC1B186A3D1F665BE21A786B4D%26ID%3DDevEx%2C5036.1
+                - link "Build No-Code Apps · Top 100 Questions · Build SPAs with Laravel" [ref=e163]:
+                  - /url: https://duckduckgo.com/y.js?ad_domain=udemy.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=3Pf9J_Y9N4mAY2omZVIF5W6sk05NyaIa_z6qGEhTW4wqmiSmhQ1%2DUF_NlaOz2OwRImBOgfrLaWaI9PxBVI3wkD3BvttRA1j1flcCjzTyUysi%2DAGP9auVQQyaatEroYGtKSGNGPWYvrxvK5gAAomJepLFIDiiicuidDOPwSgzm6g.6p1uiOpovzDfyKqF9EyTIA&eddgt=6ovisUZxLcgfiKOWQjhCFA%3D%3D&rut=7f5767289b0b5e3639359a10d7d843aecd325cab130eeabac18d176761722e55&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8GflnweEpgeN%2DZffBcGDMPjVUCUxxXv5hvzue0NFjitZiR9OsNB_qLgBAjKKO47HMMkEZcSFGu8k4J4UgA7Y1zm0mhZks%2DTAusY25vDz6cnD9DzqbDAISFEgX_PXz1JNbMEv7QVbtR5GPKEX8XIiXSDsrbi6yfA52c_1qUyYC3TE4eD9dUfR_KPdZgWg5xbFzvTyZYeGCtJe6waV02cX7TDb7n8k%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmY291cnNlJTJmYmFzaWMtdG8tYWR2YW5jZWQtcmV0cmVpdmFsLWF1Z21lbnRlZC1nZW5lcmF0aW9uLXJhZy1jb3Vyc2UlMmYlM2Z1dG1fY2FtcGFpZ24lM2RCRy1TZWFyY2hfRFNBX0JldGFfUHJvZl9sYS5FTl9jYy5ST1ctRW5nbGlzaCUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBhaWQtc2VhcmNoJTI2cG9ydGZvbGlvJTNkQmluZy1ST1ctRW5nbGlzaCUyNnV0bV9hdWRpZW5jZSUzZG14JTI2dXRtX3RhY3RpYyUzZG5iJTI2dXRtX3Rlcm0lM2RfLl9hZ18xMzI0OTEzODk5OTE4MDExXy5fYWRfXy5fa3dfRGV2JTI1MjBlbiUyNnV0bV9jb250ZW50JTNkbyUyNmZ1bm5lbCUzZCUyNnRlc3QlM2QlMjZ1dG1fY2FtcGFpZ25faWQlM2Q2Mzg1OTYyMjklMjZtc2Nsa2lkJTNkYTJjMjY1ZmMwNTRmMTIxMjM0NjAwZmY3ZmM2Njg1YjE%26rlid%3Da2c265fc054f121234600ff7fc6685b1&vqd=4-331491026996470589911205944656395160474&iurl=%7B1%7DIG%3D2FCCD6AA060A47D99B8500F86B778B9B%26CID%3D181B4CBC1B186A3D1F665BE21A786B4D%26ID%3DDevEx%2C5036.1
+              - list [ref=e166]:
+                - listitem [ref=e167]:
+                  - link "Browse Free Courses Free courses to achieve your goals Learn new skills, on us" [ref=e168]:
+                    - /url: https://duckduckgo.com/y.js?ad_domain=udemy.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=c1eGuGQaKCz43o%2D6tObEqgC0R9dNzbEdeNI3jMFDnJklqNrTMTQXzD2BsWtJ5IwKIUtPiVKY1N6gZ_Ga5wH5laKZzgfVDlT_vPUYKNRRUiBOviEDoSna6So94AM4kZrKYBwVglV4xHb4Dxm4Oqo7HDGKsxaDXqGOcSj0czY4N18.fMEdwbZIo8amg00PJ8Xj7w&eddgt=6ovisUZxLcgfiKOWQjhCFA%3D%3D&rut=dbb8e5257ece80b6bad4f058bcc9fbaf36738de915fe2cf94d6dc9b940606f86&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8coGMsQbBg7lOA1arfxbaLjVUCUyAkGOvv_Kd0BN7RWq8qGH2Tp3QH8xXHXynhSscN0iGLGKVaxry776kYRnEHZLm%2De9xhCLqsxFQvogWHGFFMzvGSeQQO7Td40qHmaBQvaIvGFxxdgtn7wgo2i_T3NOgLe4Ba1RLU7s9k9IxPXSVyJQiJJbSexD8UJfbO4zI%2Dr07aNPms5p2qw6DtjTYTo_5HSbh1egWQKGrJVG5H%2DAUqYb3%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmY291cnNlcyUyZmZyZWUlMmYlM2Z1dG1fY2FtcGFpZ24lM2RCRy1TZWFyY2hfRFNBX0JldGFfUHJvZl9sYS5FTl9jYy5ST1ctRW5nbGlzaCUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBhaWQtc2VhcmNoJTI2cG9ydGZvbGlvJTNkQmluZy1ST1ctRW5nbGlzaCUyNnV0bV9hdWRpZW5jZSUzZG14JTI2dXRtX3RhY3RpYyUzZG5iJTI2dXRtX3Rlcm0lM2RfLl9hZ18xMzI0OTEzODk5OTE4MDExXy5fYWRfXy5fa3dfRGV2JTI1MjBlbiUyNnV0bV9jb250ZW50JTNkbyUyNmZ1bm5lbCUzZCUyNnRlc3QlM2QlMjZ1dG1fY2FtcGFpZ25faWQlM2Q2Mzg1OTYyMjklMjZtc2Nsa2lkJTNkNjJlZjQ2YjkwYjhkMWM0Y2ZiOGEyY2IyZjJhNGQ4ZTU%26rlid%3D62ef46b90b8d1c4cfb8a2cb2f2a4d8e5&vqd=4-86889791250488820645863350652522482860&iurl=%7B1%7DIG%3D2FCCD6AA060A47D99B8500F86B778B9B%26CID%3D181B4CBC1B186A3D1F665BE21A786B4D%26ID%3DDevEx%2C5042.1
+                    - heading "Browse Free Courses" [level=3] [ref=e169]
+                    - paragraph [ref=e170]:
+                      - generic [ref=e171]: Free courses to achieve your goals Learn new skills, on us
+                - listitem [ref=e172]:
+                  - link "Online Courses Learn More About Udemy's-Free Online Courses Online." [ref=e173]:
+                    - /url: https://duckduckgo.com/y.js?ad_domain=udemy.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=VM5n8HDYs%2DXhWOsFZ6a9Ngvn6x0DSNJmbzUhn_V6vWqvNwYCVm_trfUvhgssaG4t4sJluXv6DL4_VkA%2DCkV1pIxJTkThnBItcT25eCOntsVnJ1GWiwynwWoHPC%2DUlCZXNNEb0CVaJ68brolw9sHeXkjwmWw9zpsxu7yUwaYYlPE.nDyr%2DF2nWPhnfgoL9mLlUQ&eddgt=6ovisUZxLcgfiKOWQjhCFA%3D%3D&rut=06a8ca743d98e5b5b41688d20b15e6e2e677d97b3be42bece9f6da5fa26ae869&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De88pYvMsvOwHkVDdd5tAl_KDVUCUxU7q50VIGkImVXSsfT2AiRTRqWQdKIjSnQmsJJwAPmRn3VupOkb3BCc5rw3WRQN2FvHwNzYivi89aC1s6ldFE2kUt_qMIH7_%2Dp0XZnaOr7Ygcr7on8ibPLeiE7aXVoKT99SUY0qNLDeUDpOyCek0CMoTgw6RX6RW59IvaanonS6F80cnqt8Cz8NP4_qifBkZ4IyR7nSX%2D36a%2DE4DUvVs%2DG%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmY291cnNlcyUyZmZyZWUlMmYlM2Z1dG1fY2FtcGFpZ24lM2RCRy1TZWFyY2hfRFNBX0JldGFfUHJvZl9sYS5FTl9jYy5ST1ctRW5nbGlzaCUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBhaWQtc2VhcmNoJTI2cG9ydGZvbGlvJTNkQmluZy1ST1ctRW5nbGlzaCUyNnV0bV9hdWRpZW5jZSUzZG14JTI2dXRtX3RhY3RpYyUzZG5iJTI2dXRtX3Rlcm0lM2RfLl9hZ18xMzI0OTEzODk5OTE4MDExXy5fYWRfXy5fa3dfRGV2JTI1MjBlbiUyNnV0bV9jb250ZW50JTNkbyUyNmZ1bm5lbCUzZCUyNnRlc3QlM2QlMjZ1dG1fY2FtcGFpZ25faWQlM2Q2Mzg1OTYyMjk%26rlid%3Dbbd9477d2302151c03ed2d76da2b055d&vqd=4-42162016683430817646148104029897324326&iurl=%7B1%7DIG%3D2FCCD6AA060A47D99B8500F86B778B9B%26CID%3D181B4CBC1B186A3D1F665BE21A786B4D%26ID%3DDevEx%2C5044.1
+                    - heading "Online Courses" [level=3] [ref=e174]
+                    - paragraph [ref=e175]:
+                      - generic [ref=e176]: Learn More About Udemy's-Free Online Courses Online.
+                - listitem [ref=e177]:
+                  - link "Leadership Courses List. View the list of the most popular and popular training programs" [ref=e178]:
+                    - /url: https://duckduckgo.com/y.js?ad_domain=udemy.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=Gs5m7zeqPVkUR2zlWLAp3hQCJvQTl9cfDS7hBsymi6DsY0VLevgL4RYpLf9X7HuYYwYzRriIFYFAhzpVBZyzTVbz4M3gp4ij7w384MJ46hPVEidYQVK_BCZubZzP_FyscfIOocqEA2hCLKC6Y82FdK9zrRJYfa9GPwtZezYuHtc.5b12WsCFXabELrJArwF_zA&eddgt=6ovisUZxLcgfiKOWQjhCFA%3D%3D&rut=e6cae5aad20256831a8dc9a1265c3e842a570893491b7baf17eb0d49a4528762&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8WGdKoS6A1M07Ry7QlsgFbzVUCUwg7HjoHVs9ZDzvRZqMGwhbbp5ESbXXwrhpI_P3YZWccvmw%2DRxa48sef7uN8MIne1P7jUMqDR9PABwUNhIBGpWEBGb7ulBRIrsATKwgMYmdGI8hT8Yet9HhqHya4Zfz%2DQAQP9m5_idew9YXbjlN0dSoaOfM0HmU2JaL_dM4yDNcQzwkLx6vVSwFO4QMjY3fMUaiTvf8ZNjMkv1jg5FuVyEE%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmdG9waWMlMmZsZWFkZXJzaGlwJTJmJTNmdXRtX2NhbXBhaWduJTNkQkctU2VhcmNoX0RTQV9CZXRhX1Byb2ZfbGEuRU5fY2MuUk9XLUVuZ2xpc2glMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RwYWlkLXNlYXJjaCUyNnBvcnRmb2xpbyUzZEJpbmctUk9XLUVuZ2xpc2glMjZ1dG1fYXVkaWVuY2UlM2RteCUyNnV0bV90YWN0aWMlM2RuYiUyNnV0bV90ZXJtJTNkXy5fYWdfMTMyNDkxMzg5OTkxODAxMV8uX2FkX18uX2t3X0RldiUyNTIwZW4lMjZ1dG1fY29udGVudCUzZG8lMjZmdW5uZWwlM2QlMjZ0ZXN0JTNkJTI2dXRtX2NhbXBhaWduX2lkJTNkNjM4NTk2MjI5%26rlid%3D9c4e3b32c30012ab3a0e51393a290ac7&vqd=4-110916976441285590644906667870073984308&iurl=%7B1%7DIG%3D2FCCD6AA060A47D99B8500F86B778B9B%26CID%3D181B4CBC1B186A3D1F665BE21A786B4D%26ID%3DDevEx%2C5046.1
+                    - heading "Leadership Courses List." [level=3] [ref=e179]
+                    - paragraph [ref=e180]:
+                      - generic [ref=e181]: View the list of the most popular and popular training programs
+                - listitem [ref=e182]:
+                  - link "ChatGPT Courses Maximize productivity with ChatGPT Work smarter with ChatGPT today" [ref=e183]:
+                    - /url: https://duckduckgo.com/y.js?ad_domain=udemy.com&ad_provider=bingv7aa&ad_type=txad&click_metadata=D1ZoMENOqpHQGUgAy5NRfIPFAJK_BHloxnQoeAH5dhwMm3nZmQZr4ge8AYZR19PLCVndKQjDxnQI8_PJh2B8iRtpAtZEUKrTulM9BI2O0mjQmQYuVsQI%2DbDHPFs_aebabiMxnpiaj8LAqtXpecrhaKRo2c6rw4_4Swy61XtN8FE.j6MPD9vICz1XIuBIUOH4Cw&eddgt=6ovisUZxLcgfiKOWQjhCFA%3D%3D&rut=fe10b2a1baf5a1acfd66eeb0f0f47152728e5ca154a249cfa5d15a9b97ed5595&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8ZZhS%2D0Xzu%2Dfjupv8oykryzVUCUzeVdw%2D_1OdvhpfXCIYH5gG53cmCNjDMImLF62HKY_utapBL8F9sTRcqj7aTxcp9KMabYE8AwLDlVIsOt41mwAT5q1VzpnLnNN95jsABogIik9FZxzBKAMwF4vXC8rEVBLVvwBESricWdZfpCRJafn8WkVTuD6NIIAMYy4ko0Axli6GVm7Xi1x%2DL6F1nkS8CVLL6JdIntR0rdOj0xbRCfIU%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmdG9waWMlMmZjaGF0Z3B0JTJmJTNmdXRtX2NhbXBhaWduJTNkQkctU2VhcmNoX0RTQV9CZXRhX1Byb2ZfbGEuRU5fY2MuUk9XLUVuZ2xpc2glMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RwYWlkLXNlYXJjaCUyNnBvcnRmb2xpbyUzZEJpbmctUk9XLUVuZ2xpc2glMjZ1dG1fYXVkaWVuY2UlM2RteCUyNnV0bV90YWN0aWMlM2RuYiUyNnV0bV90ZXJtJTNkXy5fYWdfMTMyNDkxMzg5OTkxODAxMV8uX2FkX18uX2t3X0RldiUyNTIwZW4lMjZ1dG1fY29udGVudCUzZG8lMjZmdW5uZWwlM2QlMjZ0ZXN0JTNkJTI2dXRtX2NhbXBhaWduX2lkJTNkNjM4NTk2MjI5JTI2bXNjbGtpZCUzZGE2MjIxNmVjYzFhNzE1ZjUyMjRjN2NlNzM4OGU2Y2Ni%26rlid%3Da62216ecc1a715f5224c7ce7388e6ccb&vqd=4-271991777772884523200376800337647802259&iurl=%7B1%7DIG%3D2FCCD6AA060A47D99B8500F86B778B9B%26CID%3D181B4CBC1B186A3D1F665BE21A786B4D%26ID%3DDevEx%2C5048.1
+                    - heading "ChatGPT Courses" [level=3] [ref=e184]
+                    - paragraph [ref=e185]:
+                      - generic [ref=e186]: Maximize productivity with ChatGPT Work smarter with ChatGPT today
+          - listitem [ref=e187]:
+            - generic [ref=e188]:
+              - generic [ref=e191]:
+                - text: Only showing results from
+                - generic [ref=e193]: arxiv.org
+              - button "Show all results" [ref=e194] [cursor=pointer]
+          - listitem [ref=e195]:
+            - article [ref=e196] [cursor=pointer]:
+              - button [ref=e198]:
+                - img [ref=e199]
+              - generic [ref=e203]:
+                - link "Search domain arxiv.org" [ref=e205]:
+                  - /url: /?q=site%3Aarxiv.org%20self%2Drag%20paper%20retrieval%20augmented%20generation
+                  - img [ref=e207]
+                - generic [ref=e208]:
+                  - paragraph [ref=e209]: arXiv.org
+                  - link "https://arxiv.org › abs › 2310.11511" [ref=e210]:
+                    - /url: https://arxiv.org/abs/2310.11511
+                    - paragraph [ref=e212]:
+                      - generic [ref=e213]: https://arxiv.org
+                      - generic [ref=e214]: › abs › 2310.11511
+              - 'heading "Self-RAG: Learning to Retrieve, Generate, and Critique through Self ..." [level=2] [ref=e216]':
+                - 'link "Self-RAG: Learning to Retrieve, Generate, and Critique through Self ..." [ref=e217]':
+                  - /url: https://arxiv.org/abs/2310.11511
+                  - generic [ref=e218]: "Self-RAG: Learning to Retrieve, Generate, and Critique through Self ..."
+              - generic [ref=e223]: We introduce a new framework called Self-Reflective Retrieval-Augmented Generation (Self-RAG) that enhances an LM's quality and factuality through retrieval and self-reflection.
+          - listitem [ref=e224]:
+            - article [ref=e225] [cursor=pointer]:
+              - button [ref=e227]:
+                - img [ref=e228]
+              - generic [ref=e232]:
+                - link "Search domain arxiv.org" [ref=e234]:
+                  - /url: /?q=site%3Aarxiv.org%20self%2Drag%20paper%20retrieval%20augmented%20generation
+                  - img [ref=e236]
+                - generic [ref=e237]:
+                  - paragraph [ref=e238]: arXiv.org
+                  - link "https://arxiv.org › html › 2310.11511" [ref=e239]:
+                    - /url: https://arxiv.org/html/2310.11511
+                    - paragraph [ref=e241]:
+                      - generic [ref=e242]: https://arxiv.org
+                      - generic [ref=e243]: › html › 2310.11511
+              - 'heading "Self-Rag: Self-reflective Retrieval augmented Generation" [level=2] [ref=e245]':
+                - 'link "Self-Rag: Self-reflective Retrieval augmented Generation" [ref=e246]':
+                  - /url: https://arxiv.org/html/2310.11511
+                  - generic [ref=e247]: "Self-Rag: Self-reflective Retrieval augmented Generation"
+              - generic [ref=e252]: This work introduces Self-Reflective Retrieval-augmented Generation (Self-Rag) to improve an LLM's generation quality, including its factual accuracy without hurting its versatility, via on-demand retrieval and self-reflection.
+          - listitem [ref=e253]:
+            - article [ref=e254] [cursor=pointer]:
+              - button [ref=e256]:
+                - img [ref=e257]
+              - generic [ref=e261]:
+                - link "Search domain arxiv.org" [ref=e263]:
+                  - /url: /?q=site%3Aarxiv.org%20self%2Drag%20paper%20retrieval%20augmented%20generation
+                  - img [ref=e265]
+                - generic [ref=e266]:
+                  - paragraph [ref=e267]: arXiv.org
+                  - link "https://arxiv.org › abs › 2501.09136" [ref=e268]:
+                    - /url: https://arxiv.org/abs/2501.09136
+                    - paragraph [ref=e270]:
+                      - generic [ref=e271]: https://arxiv.org
+                      - generic [ref=e272]: › abs › 2501.09136
+              - 'heading "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG" [level=2] [ref=e274]':
+                - 'link "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG" [ref=e275]':
+                  - /url: https://arxiv.org/abs/2501.09136
+                  - generic [ref=e276]: "Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG"
+              - generic [ref=e280]:
+                - text: Jan 15, 2025·
+                - generic [ref=e281]: Retrieval-Augmented Generation (RAG) has emerged as a solution, enhancing LLMs by integrating real-time data retrieval to provide contextually relevant and up-to-date responses. Despite its promise, traditional RAG systems are constrained by static workflows and lack the adaptability required for multi-step reasoning and complex task management.
+          - listitem [ref=e282]:
+            - article [ref=e283] [cursor=pointer]:
+              - button [ref=e285]:
+                - img [ref=e286]
+              - generic [ref=e290]:
+                - link "Search domain arxiv.org" [ref=e292]:
+                  - /url: /?q=site%3Aarxiv.org%20self%2Drag%20paper%20retrieval%20augmented%20generation
+                  - img [ref=e294]
+                - generic [ref=e295]:
+                  - paragraph [ref=e296]: arXiv.org
+                  - link "https://arxiv.org › html › 2506.00054v1" [ref=e297]:
+                    - /url: https://arxiv.org/html/2506.00054v1
+                    - paragraph [ref=e299]:
+                      - generic [ref=e300]: https://arxiv.org
+                      - generic [ref=e301]: › html › 2506.00054v1
+              - 'heading "Retrieval-Augmented Generation: A Comprehensive Survey of Architectures ..." [level=2] [ref=e303]':
+                - 'link "Retrieval-Augmented Generation: A Comprehensive Survey of Architectures ..." [ref=e304]':
+                  - /url: https://arxiv.org/html/2506.00054v1
+                  - generic [ref=e305]: "Retrieval-Augmented Generation: A Comprehensive Survey of Architectures ..."
+              - generic [ref=e310]: Abstract. Retrieval-Augmented Generation (RAG) has emerged as a powerful paradigm to enhance large language models (LLMs) by conditioning generation on external evidence retrieved at inference time.
+          - listitem [ref=e311]:
+            - article [ref=e312] [cursor=pointer]:
+              - button [ref=e314]:
+                - img [ref=e315]
+              - generic [ref=e319]:
+                - link "Search domain arxiv.org" [ref=e321]:
+                  - /url: /?q=site%3Aarxiv.org%20self%2Drag%20paper%20retrieval%20augmented%20generation
+                  - img [ref=e323]
+                - generic [ref=e324]:
+                  - paragraph [ref=e325]: arXiv.org
+                  - link "https://arxiv.org › abs › 2410.17952" [ref=e326]:
+                    - /url: https://arxiv.org/abs/2410.17952
+                    - paragraph [ref=e328]:
+                      - generic [ref=e329]: https://arxiv.org
+                      - generic [ref=e330]: › abs › 2410.17952
+              - 'heading "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting ..." [level=2] [ref=e332]':
+                - 'link "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting ..." [ref=e333]':
+                  - /url: https://arxiv.org/abs/2410.17952
+                  - generic [ref=e334]: "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting ..."
+              - generic [ref=e338]:
+                - text: Oct 23, 2024·
+                - generic [ref=e339]: To tackle this, we propose SimRAG, a self-training approach that equips the LLM with joint capabilities of question answering and question generation for domain adaptation. Our method first fine-tunes the LLM on instruction-following, question-answering, and search-related data.
+          - listitem [ref=e340]:
+            - article [ref=e341] [cursor=pointer]:
+              - button [ref=e343]:
+                - img [ref=e344]
+              - generic [ref=e348]:
+                - link "Search domain arxiv.org" [ref=e350]:
+                  - /url: /?q=site%3Aarxiv.org%20self%2Drag%20paper%20retrieval%20augmented%20generation
+                  - img [ref=e352]
+                - generic [ref=e353]:
+                  - paragraph [ref=e354]: arXiv.org
+                  - link "https://arxiv.org › abs › 2406.13629" [ref=e355]:
+                    - /url: https://arxiv.org/abs/2406.13629
+                    - paragraph [ref=e357]:
+                      - generic [ref=e358]: https://arxiv.org
+                      - generic [ref=e359]: › abs › 2406.13629
+              - 'heading "InstructRAG: Instructing Retrieval-Augmented Generation via Self ..." [level=2] [ref=e361]':
+                - 'link "InstructRAG: Instructing Retrieval-Augmented Generation via Self ..." [ref=e362]':
+                  - /url: https://arxiv.org/abs/2406.13629
+                  - generic [ref=e363]: "InstructRAG: Instructing Retrieval-Augmented Generation via Self ..."
+              - generic [ref=e367]:
+                - text: Jun 19, 2024·
+                - generic [ref=e368]: Compared to standard RAG approaches, InstructRAG requires no additional supervision, allows for easier verification of the predicted answers, and effectively improves generation accuracy.
+          - listitem [ref=e369]:
+            - article [ref=e370] [cursor=pointer]:
+              - button [ref=e372]:
+                - img [ref=e373]
+              - generic [ref=e377]:
+                - link "Search domain arxiv.org" [ref=e379]:
+                  - /url: /?q=site%3Aarxiv.org%20self%2Drag%20paper%20retrieval%20augmented%20generation
+                  - img [ref=e381]
+                - generic [ref=e382]:
+                  - paragraph [ref=e383]: arXiv.org
+                  - link "https://arxiv.org › abs › 2507.18910" [ref=e384]:
+                    - /url: https://arxiv.org/abs/2507.18910
+                    - paragraph [ref=e386]:
+                      - generic [ref=e387]: https://arxiv.org
+                      - generic [ref=e388]: › abs › 2507.18910
+              - heading "A Systematic Review of Key Retrieval-Augmented Generation (RAG) Systems ..." [level=2] [ref=e390]:
+                - link "A Systematic Review of Key Retrieval-Augmented Generation (RAG) Systems ..." [ref=e391]:
+                  - /url: https://arxiv.org/abs/2507.18910
+                  - generic [ref=e392]: A Systematic Review of Key Retrieval-Augmented Generation (RAG) Systems ...
+              - generic [ref=e396]:
+                - text: Jul 25, 2025·
+                - generic [ref=e397]: This paper presents a comprehensive systematic review of RAG, tracing its evolution from early developments in open domain question answering to recent state-of-the-art implementations across diverse applications.
+          - listitem [ref=e398]:
+            - article [ref=e399] [cursor=pointer]:
+              - button [ref=e401]:
+                - img [ref=e402]
+              - generic [ref=e406]:
+                - link "Search domain arxiv.org" [ref=e408]:
+                  - /url: /?q=site%3Aarxiv.org%20self%2Drag%20paper%20retrieval%20augmented%20generation
+                  - img [ref=e410]
+                - generic [ref=e411]:
+                  - paragraph [ref=e412]: arXiv.org
+                  - link "https://arxiv.org › abs › 2506.00054" [ref=e413]:
+                    - /url: https://arxiv.org/abs/2506.00054
+                    - paragraph [ref=e415]:
+                      - generic [ref=e416]: https://arxiv.org
+                      - generic [ref=e417]: › abs › 2506.00054
+              - 'heading "Retrieval-Augmented Generation: A Comprehensive Survey of Architectures ..." [level=2] [ref=e419]':
+                - 'link "Retrieval-Augmented Generation: A Comprehensive Survey of Architectures ..." [ref=e420]':
+                  - /url: https://arxiv.org/abs/2506.00054
+                  - generic [ref=e421]: "Retrieval-Augmented Generation: A Comprehensive Survey of Architectures ..."
+              - generic [ref=e425]:
+                - text: May 28, 2025·
+                - generic [ref=e426]: This survey aims to consolidate current knowledge in RAG research and serve as a foundation for the next generation of retrieval-augmented language modeling systems.
+          - listitem [ref=e427]:
+            - article [ref=e428] [cursor=pointer]:
+              - button [ref=e430]:
+                - img [ref=e431]
+              - generic [ref=e435]:
+                - link "Search domain arxiv.org" [ref=e437]:
+                  - /url: /?q=site%3Aarxiv.org%20self%2Drag%20paper%20retrieval%20augmented%20generation
+                  - img [ref=e439]
+                - generic [ref=e440]:
+                  - paragraph [ref=e441]: arXiv.org
+                  - link "https://arxiv.org › abs › 2604.11407" [ref=e442]:
+                    - /url: https://arxiv.org/abs/2604.11407
+                    - paragraph [ref=e444]:
+                      - generic [ref=e445]: https://arxiv.org
+                      - generic [ref=e446]: › abs › 2604.11407
+              - 'heading "Retrieval as Generation: A Unified Framework with Self-Triggered ..." [level=2] [ref=e448]':
+                - 'link "Retrieval as Generation: A Unified Framework with Self-Triggered ..." [ref=e449]':
+                  - /url: https://arxiv.org/abs/2604.11407
+                  - generic [ref=e450]: "Retrieval as Generation: A Unified Framework with Self-Triggered ..."
+              - generic [ref=e454]:
+                - text: Apr 13, 2026·
+                - generic [ref=e455]: We revisit retrieval-augmented generation (RAG) by embedding retrieval control directly into generation. Instead of treating retrieval as an external intervention, we express retrieval decisions within token-level decoding, enabling end-to-end coordination without additional controllers or classifiers.
+          - listitem [ref=e456]:
+            - article [ref=e457] [cursor=pointer]:
+              - button [ref=e459]:
+                - img [ref=e460]
+              - generic [ref=e464]:
+                - link "Search domain arxiv.org" [ref=e466]:
+                  - /url: /?q=site%3Aarxiv.org%20self%2Drag%20paper%20retrieval%20augmented%20generation
+                  - img [ref=e468]
+                - generic [ref=e469]:
+                  - paragraph [ref=e470]: arXiv.org
+                  - link "https://arxiv.org › abs › 2402.19473" [ref=e471]:
+                    - /url: https://arxiv.org/abs/2402.19473
+                    - paragraph [ref=e473]:
+                      - generic [ref=e474]: https://arxiv.org
+                      - generic [ref=e475]: › abs › 2402.19473
+              - 'heading "Retrieval-Augmented Generation for AI-Generated Content: A Survey" [level=2] [ref=e477]':
+                - 'link "Retrieval-Augmented Generation for AI-Generated Content: A Survey" [ref=e478]':
+                  - /url: https://arxiv.org/abs/2402.19473
+                  - generic [ref=e479]: "Retrieval-Augmented Generation for AI-Generated Content: A Survey"
+              - generic [ref=e484]: In particular, RAG introduces the information retrieval process, which enhances the generation process by retrieving relevant objects from available data stores, leading to higher accuracy and better robustness.
+          - listitem [ref=e485]:
+            - generic [ref=e487]:
+              - paragraph [ref=e488]: Searches related to site:arxiv.org self-rag paper retrieval augmented generation
+              - generic [ref=e489]:
+                - list [ref=e490]:
+                  - listitem [ref=e491]:
+                    - link "retrieval augmented generation rag system" [ref=e492] [cursor=pointer]:
+                      - /url: "?q=retrieval%20augmented%20generation%20rag%20system"
+                      - generic [ref=e494]: retrieval augmented generation rag system
+                  - listitem [ref=e495]:
+                    - link "retrieval augmented generation original paper" [ref=e496] [cursor=pointer]:
+                      - /url: "?q=retrieval%20augmented%20generation%20original%20paper"
+                      - generic [ref=e498]: retrieval augmented generation original paper
+                  - listitem [ref=e499]:
+                    - link "retrieval augmented generation rag pdf" [ref=e500] [cursor=pointer]:
+                      - /url: "?q=retrieval%20augmented%20generation%20rag%20pdf"
+                      - generic [ref=e502]: retrieval augmented generation rag pdf
+                  - listitem [ref=e503]:
+                    - link "retrieval augmented generation rag model" [ref=e504] [cursor=pointer]:
+                      - /url: "?q=retrieval%20augmented%20generation%20rag%20model"
+                      - generic [ref=e506]: retrieval augmented generation rag model
+                - list [ref=e507]:
+                  - listitem [ref=e508]:
+                    - link "retrieval augmented generation rag method" [ref=e509] [cursor=pointer]:
+                      - /url: "?q=retrieval%20augmented%20generation%20rag%20method"
+                      - generic [ref=e511]: retrieval augmented generation rag method
+                  - listitem [ref=e512]:
+                    - link "rag lewis et al 2020" [ref=e513] [cursor=pointer]:
+                      - /url: "?q=rag%20lewis%20et%20al%202020"
+                      - generic [ref=e515]: rag lewis et al 2020
+                  - listitem [ref=e516]:
+                    - link "retrieval augmented generation rag architectures" [ref=e517] [cursor=pointer]:
+                      - /url: "?q=retrieval%20augmented%20generation%20rag%20architectures"
+                      - generic [ref=e519]: retrieval augmented generation rag architectures
+                  - listitem [ref=e520]:
+                    - link "when was rag invented" [ref=e521] [cursor=pointer]:
+                      - /url: "?q=when%20was%20rag%20invented"
+                      - generic [ref=e523]: when was rag invented
+        - button "More results" [ref=e526] [cursor=pointer]
+    - list [ref=e529]:
+      - button "Close menu" [ref=e530] [cursor=pointer]:
+        - generic [ref=e531]: Close menu
+        - img [ref=e532]
+      - list [ref=e534]:
+        - listitem [ref=e535]: Search
+        - listitem [ref=e536]:
+          - link "Homepage" [ref=e537] [cursor=pointer]:
+            - /url: https://start.duckduckgo.com/
+        - listitem [ref=e538]:
+          - link "Themes" [ref=e539] [cursor=pointer]:
+            - /url: /settings#appearance
+        - listitem [ref=e540]:
+          - link "Settings" [ref=e541] [cursor=pointer]:
+            - /url: /settings
+      - list [ref=e542]:
+        - listitem [ref=e543]: Share Feedback
+        - listitem [ref=e544]:
+          - generic [ref=e547]:
+            - button "Positive feedback" [ref=e548] [cursor=pointer]:
+              - img [ref=e549]
+            - button "Negative feedback" [ref=e552] [cursor=pointer]:
+              - img [ref=e553]
+      - list [ref=e556]:
+        - listitem [ref=e557]: Downloads
+        - listitem [ref=e558]:
+          - link "iOS Browser" [ref=e559] [cursor=pointer]:
+            - /url: https://apps.apple.com/app/duckduckgo-private-browser/id663592361?platform=iphone&pt=866401&mt=8&ct=serp-atb-serp
+        - listitem [ref=e560]:
+          - link "Android Browser" [ref=e561] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=utm_campaign%3Dserp-atb-serp%26origin%3Dfunnel_playstore_searchresults
+        - listitem [ref=e562]:
+          - link "Mac Browser" [ref=e563] [cursor=pointer]:
+            - /url: /mac?origin=funnel_browser_searchresults
+        - listitem [ref=e564]:
+          - link "Windows Browser" [ref=e565] [cursor=pointer]:
+            - /url: /windows?origin=funnel_browser_searchresults
+        - listitem [ref=e566]: Browser Extensions
+      - list [ref=e567]:
+        - listitem [ref=e568]: More From DuckDuckGo
+        - listitem [ref=e569]:
+          - generic [ref=e572]:
+            - button "Dismiss promotion" [ref=e573] [cursor=pointer]:
+              - img [ref=e574]
+            - generic [ref=e576]:
+              - paragraph [ref=e578]:
+                - img [ref=e579]
+                - text: Upgrade to our Private Browser
+              - paragraph [ref=e590]: Fast. Secure. Free.
+            - link "Download Browser" [ref=e591] [cursor=pointer]:
+              - /url: /windows
+              - img [ref=e592]
+              - text: Download Browser
+        - listitem [ref=e594]:
+          - link "Duck.ai" [ref=e595] [cursor=pointer]:
+            - /url: https://duck.ai
+        - listitem [ref=e596]:
+          - link "Email Protection" [ref=e597] [cursor=pointer]:
+            - /url: /email
+        - listitem [ref=e598]:
+          - link "Newsletter" [ref=e599] [cursor=pointer]:
+            - /url: /newsletter
+        - listitem [ref=e600]:
+          - link "Blog" [ref=e601] [cursor=pointer]:
+            - /url: /blog
+        - listitem [ref=e602]:
+          - link "Podcast" [ref=e603] [cursor=pointer]:
+            - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+        - listitem [ref=e604]:
+          - link "Collaborations" [ref=e605] [cursor=pointer]:
+            - /url: /collaborations
+      - list [ref=e606]:
+        - listitem [ref=e607]: Learn More
+        - listitem [ref=e608]:
+          - link "What’s New" [ref=e609] [cursor=pointer]:
+            - /url: /updates
+        - listitem [ref=e610]:
+          - link "Compare Privacy" [ref=e611] [cursor=pointer]:
+            - /url: /compare-privacy
+        - listitem [ref=e612]:
+          - link "About Our Browser" [ref=e613] [cursor=pointer]:
+            - /url: /app
+        - listitem [ref=e614]:
+          - link "About DuckDuckGo" [ref=e615] [cursor=pointer]:
+            - /url: /about
+      - list [ref=e616]:
+        - listitem [ref=e617]: Other Resources
+        - listitem [ref=e618]:
+          - link "Help" [ref=e619] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages
+        - listitem [ref=e620]:
+          - link "Community" [ref=e621] [cursor=pointer]:
+            - /url: https://www.reddit.com/r/duckduckgo/
+        - listitem [ref=e622]:
+          - link "Careers" [ref=e623] [cursor=pointer]:
+            - /url: /careers
+        - listitem [ref=e624]:
+          - link "Privacy Policy" [ref=e625] [cursor=pointer]:
+            - /url: /privacy
+        - listitem [ref=e626]:
+          - link "Terms of Service" [ref=e627] [cursor=pointer]:
+            - /url: /terms
+        - listitem [ref=e628]:
+          - link "Press Kit" [ref=e629] [cursor=pointer]:
+            - /url: /press
+        - listitem [ref=e630]:
+          - link "Advertise on Search" [ref=e631] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages/company/advertise-on-duckduckgo-search
+  - generic [ref=e635]:
+    - generic [ref=e637]:
+      - img [ref=e638]
+      - generic [ref=e653]:
+        - heading "Get Our Windows Browser" [level=3] [ref=e654]
+        - paragraph [ref=e655]: Protect your data as you search, browse, and use AI.
+      - link "Download" [ref=e656] [cursor=pointer]:
+        - /url: https://duckduckgo.com/windows?origin=funnel_browser_searchresults__footercard
+        - img [ref=e657]
+        - text: Download
+    - generic [ref=e660]:
+      - generic [ref=e661]:
+        - heading "Learn More" [level=3] [ref=e662]
+        - list [ref=e663]:
+          - listitem [ref=e664]:
+            - link "What's New" [ref=e665] [cursor=pointer]:
+              - /url: https://duckduckgo.com/updates
+          - listitem [ref=e666]:
+            - link "About Browser" [ref=e667] [cursor=pointer]:
+              - /url: https://duckduckgo.com/app
+          - listitem [ref=e668]:
+            - link "Compare Privacy" [ref=e669] [cursor=pointer]:
+              - /url: https://duckduckgo.com/compare-privacy
+          - listitem [ref=e670]:
+            - link "Help Pages" [ref=e671] [cursor=pointer]:
+              - /url: https://duckduckgo.com/duckduckgo-help-pages/
+      - generic [ref=e672]:
+        - heading "Get More" [level=3] [ref=e673]
+        - list [ref=e674]:
+          - listitem [ref=e675]:
+            - link "Email Protection" [ref=e676] [cursor=pointer]:
+              - /url: https://duckduckgo.com/email
+          - listitem [ref=e677]:
+            - generic [ref=e678]:
+              - link "Podcast" [ref=e680] [cursor=pointer]:
+                - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+              - generic [ref=e681]:
+                - text: "&"
+                - link "Newsletter" [ref=e682] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/newsletter
+          - listitem [ref=e683]:
+            - link "Collaborations" [ref=e684] [cursor=pointer]:
+              - /url: https://duckduckgo.com/collaborations
+  - button "Share Feedback" [ref=e689] [cursor=pointer]

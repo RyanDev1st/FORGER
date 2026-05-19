@@ -1,0 +1,301 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#content"
+    - generic [ref=e5]:
+      - link "Cornell University" [ref=e7] [cursor=pointer]:
+        - /url: https://www.cornell.edu/
+        - img "Cornell University" [ref=e8]
+      - link "Learn about arXiv becoming an independent nonprofit." [ref=e10] [cursor=pointer]:
+        - /url: https://tech.cornell.edu/arxiv/
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - text: We gratefully acknowledge support from the Simons Foundation,
+          - link "member institutions" [ref=e13] [cursor=pointer]:
+            - /url: https://info.arxiv.org/about/ourmembers.html
+          - text: ", and all contributors."
+        - link "Donate" [ref=e14] [cursor=pointer]:
+          - /url: https://info.arxiv.org/about/donate.html
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - link "arxiv logo" [ref=e17] [cursor=pointer]:
+          - /url: /
+          - img "arxiv logo" [ref=e18]
+        - generic [ref=e19]: ">"
+        - link "cs" [ref=e20] [cursor=pointer]:
+          - /url: /list/cs/recent
+        - generic [ref=e21]: ">"
+        - text: arXiv:2305.06983
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - textbox "Search term or terms" [ref=e26]:
+            - /placeholder: Search...
+          - paragraph [ref=e27]:
+            - link "Help" [ref=e28] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help
+            - text: "|"
+            - link "Advanced Search" [ref=e29] [cursor=pointer]:
+              - /url: https://arxiv.org/search/advanced
+        - combobox "Field to search" [ref=e31]:
+          - option "All fields" [selected]
+          - option "Title"
+          - option "Author"
+          - option "Abstract"
+          - option "Comments"
+          - option "Journal reference"
+          - option "ACM classification"
+          - option "MSC classification"
+          - option "Report number"
+          - option "arXiv identifier"
+          - option "DOI"
+          - option "ORCID"
+          - option "arXiv author ID"
+          - option "Help pages"
+          - option "Full text"
+        - button "Search" [ref=e32] [cursor=pointer]
+  - main [ref=e33]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - heading "Computer Science > Computation and Language" [level=1] [ref=e38]
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - text: "[Submitted on 11 May 2023 ("
+            - link "v1" [ref=e42] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2305.06983v1
+            - text: ), last revised 22 Oct 2023 (this version, v2)]
+          - heading "Active Retrieval Augmented Generation" [level=1] [ref=e43]
+          - generic [ref=e44]:
+            - link "Zhengbao Jiang" [ref=e45] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Jiang,+Z
+            - text: ","
+            - link "Frank F. Xu" [ref=e46] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Xu,+F+F
+            - text: ","
+            - link "Luyu Gao" [ref=e47] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Gao,+L
+            - text: ","
+            - link "Zhiqing Sun" [ref=e48] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Sun,+Z
+            - text: ","
+            - link "Qian Liu" [ref=e49] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Liu,+Q
+            - text: ","
+            - link "Jane Dwivedi-Yu" [ref=e50] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Dwivedi-Yu,+J
+            - text: ","
+            - link "Yiming Yang" [ref=e51] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Yang,+Y
+            - text: ","
+            - link "Jamie Callan" [ref=e52] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Callan,+J
+            - text: ","
+            - link "Graham Neubig" [ref=e53] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Neubig,+G
+          - blockquote [ref=e54]:
+            - text: Despite the remarkable ability of large language models (LMs) to comprehend and generate language, they have a tendency to hallucinate and create factually inaccurate output. Augmenting LMs by retrieving information from external knowledge resources is one promising solution. Most existing retrieval augmented LMs employ a retrieve-and-generate setup that only retrieves information once based on the input. This is limiting, however, in more general scenarios involving generation of long texts, where continually gathering information throughout generation is essential. In this work, we provide a generalized view of active retrieval augmented generation, methods that actively decide when and what to retrieve across the course of the generation. We propose Forward-Looking Active REtrieval augmented generation (FLARE), a generic method which iteratively uses a prediction of the upcoming sentence to anticipate future content, which is then utilized as a query to retrieve relevant documents to regenerate the sentence if it contains low-confidence tokens. We test FLARE along with baselines comprehensively over 4 long-form knowledge-intensive generation tasks/datasets. FLARE achieves superior or competitive performance on all tasks, demonstrating the effectiveness of our method. Code and datasets are available at
+            - link "this https URL" [ref=e55] [cursor=pointer]:
+              - /url: https://github.com/jzbjyb/FLARE
+            - text: .
+          - table "Additional metadata" [ref=e57]:
+            - rowgroup [ref=e58]:
+              - 'row "Comments: EMNLP 2023" [ref=e59]':
+                - cell "Comments:" [ref=e60]
+                - cell "EMNLP 2023" [ref=e61]
+              - 'row "Subjects: Computation and Language (cs.CL); Machine Learning (cs.LG)" [ref=e62]':
+                - cell "Subjects:" [ref=e63]
+                - cell "Computation and Language (cs.CL); Machine Learning (cs.LG)" [ref=e64]
+              - 'row "Cite as: arXiv:2305.06983 [cs.CL]" [ref=e65]':
+                - cell "Cite as:" [ref=e66]
+                - cell "arXiv:2305.06983 [cs.CL]" [ref=e67]:
+                  - generic [ref=e68]:
+                    - link "arXiv:2305.06983" [ref=e69] [cursor=pointer]:
+                      - /url: https://arxiv.org/abs/2305.06983
+                    - text: "[cs.CL]"
+              - row "(or arXiv:2305.06983v2 [cs.CL] for this version)" [ref=e70]:
+                - cell [ref=e71]
+                - cell "(or arXiv:2305.06983v2 [cs.CL] for this version)" [ref=e72]:
+                  - text: (or
+                  - generic [ref=e73]:
+                    - link "arXiv:2305.06983v2" [ref=e74] [cursor=pointer]:
+                      - /url: https://arxiv.org/abs/2305.06983v2
+                    - text: "[cs.CL]"
+                  - text: for this version)
+              - row "https://doi.org/10.48550/arXiv.2305.06983 Focus to learn more" [ref=e75]:
+                - cell [ref=e76]
+                - cell "https://doi.org/10.48550/arXiv.2305.06983 Focus to learn more" [ref=e77]:
+                  - link "https://doi.org/10.48550/arXiv.2305.06983" [ref=e78] [cursor=pointer]:
+                    - /url: https://doi.org/10.48550/arXiv.2305.06983
+                  - button "Focus to learn more" [ref=e80]:
+                    - generic [ref=e82]: Focus to learn more
+        - generic [ref=e83]:
+          - heading "Submission history" [level=2] [ref=e84]
+          - text: "From: Zhengbao Jiang ["
+          - link "view email" [ref=e85] [cursor=pointer]:
+            - /url: /show-email/7f7d9d4d/2305.06983
+          - text: "]"
+          - strong [ref=e86]:
+            - link "[v1]" [ref=e87] [cursor=pointer]:
+              - /url: /abs/2305.06983v1
+          - text: Thu, 11 May 2023 17:13:40 UTC (541 KB)
+          - strong [ref=e88]: "[v2]"
+          - text: Sun, 22 Oct 2023 00:11:13 UTC (629 KB)
+      - generic [ref=e89]:
+        - generic [ref=e90]:
+          - heading "Access Paper:" [level=2] [ref=e91]
+          - list [ref=e92]:
+            - listitem [ref=e93]:
+              - link "View PDF" [ref=e94] [cursor=pointer]:
+                - /url: /pdf/2305.06983
+            - listitem [ref=e95]:
+              - link "TeX Source" [ref=e96] [cursor=pointer]:
+                - /url: /src/2305.06983
+          - link "view license" [ref=e98] [cursor=pointer]:
+            - /url: http://arxiv.org/licenses/nonexclusive-distrib/1.0/
+        - generic [ref=e99]:
+          - heading "Current browse context:" [level=3] [ref=e100]
+          - generic [ref=e101]: cs.CL
+          - generic [ref=e102]:
+            - link "< prev" [ref=e104] [cursor=pointer]:
+              - /url: /prevnext?id=2305.06983&function=prev&context=cs.CL
+            - text: "|"
+            - link "next >" [ref=e106] [cursor=pointer]:
+              - /url: /prevnext?id=2305.06983&function=next&context=cs.CL
+          - generic [ref=e107]:
+            - link "new" [ref=e108] [cursor=pointer]:
+              - /url: /list/cs.CL/new
+            - text: "|"
+            - link "recent" [ref=e109] [cursor=pointer]:
+              - /url: /list/cs.CL/recent
+            - text: "|"
+            - link "2023-05" [ref=e110] [cursor=pointer]:
+              - /url: /list/cs.CL/2023-05
+          - generic [ref=e111]:
+            - text: "Change to browse by:"
+            - generic [ref=e112]:
+              - link "cs" [ref=e113] [cursor=pointer]:
+                - /url: /abs/2305.06983?context=cs
+              - link "cs.LG" [ref=e114] [cursor=pointer]:
+                - /url: /abs/2305.06983?context=cs.LG
+        - generic [ref=e115]:
+          - heading "References & Citations" [level=3] [ref=e116]
+          - list [ref=e117]:
+            - listitem [ref=e118]:
+              - link "NASA ADS" [ref=e119] [cursor=pointer]:
+                - /url: https://ui.adsabs.harvard.edu/abs/arXiv:2305.06983
+            - listitem [ref=e120]:
+              - link "Google Scholar" [ref=e121] [cursor=pointer]:
+                - /url: https://scholar.google.com/scholar_lookup?arxiv_id=2305.06983
+            - listitem [ref=e122]:
+              - link "Semantic Scholar" [ref=e123] [cursor=pointer]:
+                - /url: https://api.semanticscholar.org/arXiv:2305.06983
+        - button "export BibTeX citation" [ref=e125]
+        - generic [ref=e126]:
+          - heading "Bookmark" [level=3] [ref=e128]
+          - link "BibSonomy" [ref=e129] [cursor=pointer]:
+            - /url: http://www.bibsonomy.org/BibtexHandler?requTask=upload&url=https://arxiv.org/abs/2305.06983&description=Active Retrieval Augmented Generation
+            - img "BibSonomy" [ref=e130]
+          - link "Reddit" [ref=e131] [cursor=pointer]:
+            - /url: https://reddit.com/submit?url=https://arxiv.org/abs/2305.06983&title=Active Retrieval Augmented Generation
+            - img "Reddit" [ref=e132]
+      - tablist "arXivLabs tools" [ref=e134]:
+        - radio "Bibliographic Tools" [checked] [ref=e135]
+        - tab "Bibliographic Tools" [selected] [ref=e136] [cursor=pointer]
+        - tabpanel "Bibliographic Tools" [ref=e137]:
+          - heading "Bibliographic and Citation Tools" [level=1] [ref=e138]
+          - generic [ref=e139]:
+            - generic [ref=e140]:
+              - generic [ref=e142]:
+                - checkbox "Bibliographic Explorer Toggle"
+                - generic [ref=e144]: Bibliographic Explorer Toggle
+              - generic [ref=e145]:
+                - text: Bibliographic Explorer
+                - emphasis [ref=e146]:
+                  - text: (
+                  - link "What is the Explorer?" [ref=e147] [cursor=pointer]:
+                    - /url: https://info.arxiv.org/labs/showcase.html#arxiv-bibliographic-explorer
+                  - text: )
+            - generic [ref=e148]:
+              - generic [ref=e150]:
+                - checkbox "Connected Papers"
+                - generic [ref=e152]: Connected Papers Toggle
+              - generic [ref=e153]:
+                - text: Connected Papers
+                - emphasis [ref=e154]:
+                  - text: (
+                  - link "What is Connected Papers?" [ref=e155] [cursor=pointer]:
+                    - /url: https://www.connectedpapers.com/about
+                  - text: )
+            - generic [ref=e156]:
+              - generic [ref=e158]:
+                - checkbox "Litmaps"
+                - generic [ref=e160]: Litmaps Toggle
+              - generic [ref=e161]:
+                - text: Litmaps
+                - emphasis [ref=e162]:
+                  - text: (
+                  - link "What is Litmaps?" [ref=e163] [cursor=pointer]:
+                    - /url: https://www.litmaps.co/
+                  - text: )
+            - generic [ref=e164]:
+              - generic [ref=e166]:
+                - checkbox "scite Smart Citations"
+                - generic [ref=e168]: scite.ai Toggle
+              - generic [ref=e169]:
+                - text: scite Smart Citations
+                - emphasis [ref=e170]:
+                  - text: (
+                  - link "What are Smart Citations?" [ref=e171] [cursor=pointer]:
+                    - /url: https://www.scite.ai/
+                  - text: )
+        - radio "Code, Data, Media" [ref=e175]
+        - tab "Code, Data, Media" [ref=e176] [cursor=pointer]
+        - radio "Demos" [ref=e177]
+        - tab "Demos" [ref=e178] [cursor=pointer]
+        - radio "Related Papers" [ref=e179]
+        - tab "Related Papers" [ref=e180] [cursor=pointer]
+        - radio "About arXivLabs" [ref=e181]
+        - tab "About arXivLabs" [ref=e182] [cursor=pointer]
+      - generic [ref=e183]:
+        - link "Which authors of this paper are endorsers?" [ref=e184] [cursor=pointer]:
+          - /url: /auth/show-endorsers/2305.06983
+        - text: "|"
+        - link "Disable MathJax" [ref=e185] [cursor=pointer]:
+          - /url: javascript:setMathjaxCookie()
+        - text: (
+        - link "What is MathJax?" [ref=e186] [cursor=pointer]:
+          - /url: https://info.arxiv.org/help/mathjax.html
+        - text: )
+  - contentinfo [ref=e187]:
+    - navigation "Secondary" [ref=e188]:
+      - generic [ref=e190]:
+        - list [ref=e192]:
+          - listitem [ref=e193]:
+            - link "About" [ref=e194] [cursor=pointer]:
+              - /url: https://info.arxiv.org/about
+          - listitem [ref=e195]:
+            - link "Help" [ref=e196] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help
+        - list [ref=e198]:
+          - listitem [ref=e199]:
+            - link "Contact" [ref=e201] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help/contact.html
+          - listitem [ref=e202]:
+            - link "Subscribe" [ref=e204] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help/subscribe
+      - generic [ref=e206]:
+        - list [ref=e208]:
+          - listitem [ref=e209]:
+            - link "Copyright" [ref=e210] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help/license/index.html
+          - listitem [ref=e211]:
+            - link "Privacy Policy" [ref=e212] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help/policies/privacy_policy.html
+        - list [ref=e214]:
+          - listitem [ref=e215]:
+            - link "Web Accessibility Assistance" [ref=e216] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help/web_accessibility.html
+          - listitem [ref=e217]:
+            - paragraph [ref=e218]:
+              - link "arXiv Operational Status" [ref=e219] [cursor=pointer]:
+                - /url: https://status.arxiv.org
+                - text: arXiv Operational Status

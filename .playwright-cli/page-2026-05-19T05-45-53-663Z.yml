@@ -1,0 +1,534 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - link "DuckDuckGo home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e9]: DuckDuckGo
+          - generic [ref=e15]:
+            - combobox "Search privately" [ref=e17]: arxiv self-rag retrieval augmented generation
+            - button "search" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e25]:
+              - banner [ref=e26]:
+                - img [ref=e27]
+                - paragraph [ref=e28]: Upgrade to our browser.
+              - generic [ref=e29]:
+                - generic [ref=e30]:
+                  - img [ref=e31]
+                  - generic [ref=e32]:
+                    - img [ref=e33]
+                    - img [ref=e34]
+                - paragraph [ref=e35]:
+                  - generic [ref=e36]:
+                    - text: Try the
+                    - strong [ref=e37]: DuckDuckGo Browser.
+                    - text: Fast. Free. Private.
+                - link "Download Browser" [ref=e38] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/windows?origin=funnel_browser_searchresults__popover
+                  - img [ref=e39]
+                  - generic [ref=e41]: Download Browser
+              - paragraph [ref=e44]:
+                - generic [ref=e45]: Free
+            - button [ref=e47] [cursor=pointer]:
+              - img [ref=e48]
+          - button "Open menu" [ref=e50] [cursor=pointer]:
+            - generic [ref=e51]: Open menu
+            - img [ref=e52]
+      - navigation [ref=e58]:
+        - list [ref=e59]:
+          - listitem [ref=e60]:
+            - link "All" [ref=e61] [cursor=pointer]:
+              - /url: /?q=arxiv+self-rag+retrieval+augmented+generation&ia=web
+              - img [ref=e62]
+              - text: All
+          - listitem [ref=e64]:
+            - link "Images" [ref=e65] [cursor=pointer]:
+              - /url: /?q=arxiv+self-rag+retrieval+augmented+generation&ia=images&iax=images
+          - listitem [ref=e66]:
+            - link "Videos" [ref=e67] [cursor=pointer]:
+              - /url: /?q=arxiv+self-rag+retrieval+augmented+generation&ia=videos&iax=videos
+          - listitem [ref=e68]:
+            - link "News" [ref=e69] [cursor=pointer]:
+              - /url: /?q=arxiv+self-rag+retrieval+augmented+generation&ia=news&iar=news
+          - listitem [ref=e70]:
+            - link "Maps" [ref=e71] [cursor=pointer]:
+              - /url: /?q=arxiv+self-rag+retrieval+augmented+generation&iaxm=maps
+        - list [ref=e72]:
+          - listitem [ref=e73]:
+            - link "Duck.ai" [ref=e75] [cursor=pointer]:
+              - /url: /?q=arxiv+self-rag+retrieval+augmented+generation&ia=chat
+              - img [ref=e76]
+              - text: Duck.ai
+          - listitem [ref=e79]:
+            - button "Search Settings ✀" [ref=e81] [cursor=pointer]:
+              - img [ref=e82]
+              - generic [ref=e84]: Search Settings
+              - generic [ref=e87]: ✀
+    - generic [ref=e92]:
+      - navigation [ref=e94]:
+        - generic [ref=e97] [cursor=pointer]:
+          - generic [ref=e105]: Protected
+          - img [ref=e106]: ▼
+        - generic [ref=e110] [cursor=pointer]:
+          - generic [ref=e113]:
+            - switch "✓" [ref=e114]: ✓
+            - generic [ref=e116]: Vietnam (en)
+          - img [ref=e117]: ▼
+        - generic [ref=e121] [cursor=pointer]:
+          - generic [ref=e122]: "Safe search: moderate"
+          - img [ref=e123]: ▼
+        - generic [ref=e127] [cursor=pointer]:
+          - generic [ref=e128]: Any time
+          - img [ref=e129]: ▼
+      - generic [ref=e132]:
+        - list [ref=e133]:
+          - listitem [ref=e134]:
+            - article [ref=e135] [cursor=pointer]:
+              - button [ref=e137]:
+                - img [ref=e138]
+              - generic [ref=e142]:
+                - link "Search domain arxiv.org" [ref=e144]:
+                  - /url: /?q=arxiv%20self%2Drag%20retrieval%20augmented%20generation+site:arxiv.org
+                  - img [ref=e146]
+                - generic [ref=e147]:
+                  - paragraph [ref=e148]: arXiv.org
+                  - link "https://arxiv.org › abs › 2310.11511" [ref=e149]:
+                    - /url: https://arxiv.org/abs/2310.11511
+                    - paragraph [ref=e151]:
+                      - generic [ref=e152]: https://arxiv.org
+                      - generic [ref=e153]: › abs › 2310.11511
+              - 'heading "Self-RAG: Learning to Retrieve, Generate, and Critique through Self ..." [level=2] [ref=e155]':
+                - 'link "Self-RAG: Learning to Retrieve, Generate, and Critique through Self ..." [ref=e156]':
+                  - /url: https://arxiv.org/abs/2310.11511
+                  - generic [ref=e157]: "Self-RAG: Learning to Retrieve, Generate, and Critique through Self ..."
+              - generic [ref=e162]: We introduce a new framework called Self-Reflective Retrieval-Augmented Generation (Self-RAG) that enhances an LM's quality and factuality through retrieval and self-reflection.
+              - list [ref=e165]:
+                - listitem [ref=e166]:
+                  - link "View PDF arXiv.org is a repository for electronic preprints of scientific papers across various disciplines, providing open access to academic research and developments." [ref=e167]:
+                    - /url: https://arxiv.org/pdf/2310.11511
+                    - heading "View PDF" [level=3] [ref=e168]
+                    - paragraph [ref=e169]:
+                      - generic [ref=e170]: arXiv.org is a repository for electronic preprints of scientific papers across various disciplines, providing open access to academic research and developments.
+                - listitem [ref=e171]:
+                  - link "Self-Rag Despite their remarkable capabilities, large language models (LLMs) often produce responses containing factual inaccuracies due to their sole reliance on the parametric knowledge they encapsulate. Retrieval-Augmented Generation (RAG), an ad hoc approach that augments LMs with retrieval of relevant knowledge, decreases such issues. However, indiscriminately retrieving and incorporating a fixed ..." [ref=e172]:
+                    - /url: https://arxiv.org/abs/2310.11511v1
+                    - heading "Self-Rag" [level=3] [ref=e173]
+                    - paragraph [ref=e174]:
+                      - generic [ref=e175]: Despite their remarkable capabilities, large language models (LLMs) often produce responses containing factual inaccuracies due to their sole reliance on the parametric knowledge they encapsulate. Retrieval-Augmented Generation (RAG), an ad hoc approach that augments LMs with retrieval of relevant knowledge, decreases such issues. However, indiscriminately retrieving and incorporating a fixed ...
+                - listitem [ref=e176]:
+                  - 'link "Other Formats Other Formats - Self-RAG: Learning to Retrieve, Generate, and Critique through Self ..." [ref=e177]':
+                    - /url: https://arxiv.org/format/2310.11511
+                    - heading "Other Formats" [level=3] [ref=e178]
+                    - paragraph [ref=e179]:
+                      - generic [ref=e180]: "Other Formats - Self-RAG: Learning to Retrieve, Generate, and Critique through Self ..."
+                - listitem [ref=e181]:
+                  - 'link "TeX Source TeX Source - Self-RAG: Learning to Retrieve, Generate, and Critique through Self ..." [ref=e182]':
+                    - /url: https://arxiv.org/src/2310.11511
+                    - heading "TeX Source" [level=3] [ref=e183]
+                    - paragraph [ref=e184]:
+                      - generic [ref=e185]: "TeX Source - Self-RAG: Learning to Retrieve, Generate, and Critique through Self ..."
+                - listitem [ref=e186]:
+                  - link "Login If you've never logged in to arXiv.org Register for the first time Registration is required to submit or update papers, but is not necessary to view them." [ref=e187]:
+                    - /url: https://arxiv.org/login
+                    - heading "Login" [level=3] [ref=e188]
+                    - paragraph [ref=e189]:
+                      - generic [ref=e190]: If you've never logged in to arXiv.org Register for the first time Registration is required to submit or update papers, but is not necessary to view them.
+                - listitem [ref=e191]:
+                  - link "License and Copyright To maintain this scholarly record, arXiv needs permission from submitters to post and distribute their work. Permission is granted through a license, chosen by the submitter, and the submitter must certify that they have the right to grant that license." [ref=e192]:
+                    - /url: https://info.arxiv.org/help/license/index.html
+                    - heading "License and Copyright" [level=3] [ref=e193]
+                    - paragraph [ref=e194]:
+                      - generic [ref=e195]: To maintain this scholarly record, arXiv needs permission from submitters to post and distribute their work. Permission is granted through a license, chosen by the submitter, and the submitter must certify that they have the right to grant that license.
+          - listitem [ref=e196]:
+            - article [ref=e197] [cursor=pointer]:
+              - button [ref=e199]:
+                - img [ref=e200]
+              - generic [ref=e204]:
+                - link "Search domain github.com" [ref=e206]:
+                  - /url: /?q=arxiv%20self%2Drag%20retrieval%20augmented%20generation+site:github.com
+                  - img [ref=e208]
+                - generic [ref=e209]:
+                  - paragraph [ref=e210]: Github
+                  - link "https://github.com › AkariAsai › self-rag" [ref=e211]:
+                    - /url: https://github.com/AkariAsai/self-rag
+                    - paragraph [ref=e213]:
+                      - generic [ref=e214]: https://github.com
+                      - generic [ref=e215]: › AkariAsai › self-rag
+              - 'heading "GitHub - AkariAsai/self-rag: This includes the original implementation ..." [level=2] [ref=e217]':
+                - 'link "GitHub - AkariAsai/self-rag: This includes the original implementation ..." [ref=e218]':
+                  - /url: https://github.com/AkariAsai/self-rag
+                  - generic [ref=e219]: "GitHub - AkariAsai/self-rag: This includes the original implementation ..."
+              - generic [ref=e224]: Self-RAG (Figure right) is a new framework to train an arbitrary LM to learn to retrieve, generate, and critique to enhance the factuality and quality of generations, without hurting the versatility of LLMs.
+              - generic [ref=e225]:
+                - button "Overview" [ref=e227]:
+                  - generic [ref=e228]: Overview
+                  - img [ref=e230]
+                - button "Updates" [ref=e233]:
+                  - generic [ref=e234]: Updates
+                  - img [ref=e236]
+                - button "Content" [ref=e239]:
+                  - generic [ref=e240]: Content
+                  - img [ref=e242]
+                - link "See more on github.com" [ref=e244]:
+                  - /url: https://github.com/AkariAsai/self-rag
+          - listitem [ref=e245]:
+            - article [ref=e246] [cursor=pointer]:
+              - button [ref=e248]:
+                - img [ref=e249]
+              - generic [ref=e253]:
+                - link "Search domain neurips.cc" [ref=e255]:
+                  - /url: /?q=arxiv%20self%2Drag%20retrieval%20augmented%20generation+site:neurips.cc
+                  - img [ref=e257]
+                - generic [ref=e258]:
+                  - paragraph [ref=e259]: NeurIPS
+                  - link "https://neurips.cc › virtual › 2023 › 79625" [ref=e260]:
+                    - /url: https://neurips.cc/virtual/2023/79625
+                    - paragraph [ref=e262]:
+                      - generic [ref=e263]: https://neurips.cc
+                      - generic [ref=e264]: › virtual › 2023 › 79625
+              - 'heading "Self-RAG: Self-reflective Retrieval Augmented Generation - NeurIPS" [level=2] [ref=e266]':
+                - 'link "Self-RAG: Self-reflective Retrieval Augmented Generation - NeurIPS" [ref=e267]':
+                  - /url: https://neurips.cc/virtual/2023/79625
+                  - generic [ref=e268]: "Self-RAG: Self-reflective Retrieval Augmented Generation - NeurIPS"
+              - generic [ref=e273]: In this work, we introduce a new framework called Self-Reflective Retrieval-Augmented Generation (Self-RAG) that enhances an LM's quality and factuality through retrieval and self-reflection.
+          - listitem [ref=e274]:
+            - article [ref=e275] [cursor=pointer]:
+              - button [ref=e277]:
+                - img [ref=e278]
+              - generic [ref=e282]:
+                - link "Search domain proceedings.iclr.cc" [ref=e284]:
+                  - /url: /?q=arxiv%20self%2Drag%20retrieval%20augmented%20generation+site:proceedings.iclr.cc
+                  - img [ref=e286]
+                - generic [ref=e287]:
+                  - paragraph [ref=e288]: proceedings.iclr.cc
+                  - link "https://proceedings.iclr.cc › paper_files › paper › 2024 › file › 25f7be9694d7b32d5cc670927b8091e1-Paper-Conference.pdf" [ref=e289]:
+                    - /url: https://proceedings.iclr.cc/paper_files/paper/2024/file/25f7be9694d7b32d5cc670927b8091e1-Paper-Conference.pdf
+                    - paragraph [ref=e291]:
+                      - generic [ref=e292]: https://proceedings.iclr.cc
+                      - generic [ref=e293]: › paper_files › paper › 2024 › file › 25f7be9694d7b32d5cc670927b8091e1-Paper-Conference.pdf
+              - 'heading "PDF Self Rag: Learning to Retrieve, Generate and Critique Through Self ..." [level=2] [ref=e295]':
+                - 'link "PDF Self Rag: Learning to Retrieve, Generate and Critique Through Self ..." [ref=e296]':
+                  - /url: https://proceedings.iclr.cc/paper_files/paper/2024/file/25f7be9694d7b32d5cc670927b8091e1-Paper-Conference.pdf
+                  - generic [ref=e297]:
+                    - generic [ref=e298]: PDF
+                    - text: "Self Rag: Learning to Retrieve, Generate and Critique Through Self ..."
+              - generic [ref=e303]: Self-Reflective Retrieval-Augmented Generation (SELF-RAG), shown in Figure 1. SELF-RAG is a framework that enhances the quality and factuality of an LLM through retrieval and sel
+          - listitem [ref=e304]:
+            - article [ref=e305] [cursor=pointer]:
+              - button [ref=e307]:
+                - img [ref=e308]
+              - generic [ref=e312]:
+                - link "Search domain arxiv.org" [ref=e314]:
+                  - /url: /?q=arxiv%20self%2Drag%20retrieval%20augmented%20generation+site:arxiv.org
+                  - img [ref=e316]
+                - generic [ref=e317]:
+                  - paragraph [ref=e318]: arXiv.org
+                  - link "https://arxiv.org › html › 2310.11511" [ref=e319]:
+                    - /url: https://arxiv.org/html/2310.11511
+                    - paragraph [ref=e321]:
+                      - generic [ref=e322]: https://arxiv.org
+                      - generic [ref=e323]: › html › 2310.11511
+              - 'heading "Self-Rag: Self-reflective Retrieval augmented Generation - arXiv.org" [level=2] [ref=e325]':
+                - 'link "Self-Rag: Self-reflective Retrieval augmented Generation - arXiv.org" [ref=e326]':
+                  - /url: https://arxiv.org/html/2310.11511
+                  - generic [ref=e327]: "Self-Rag: Self-reflective Retrieval augmented Generation - arXiv.org"
+              - generic [ref=e332]: This work introduces Self-Reflective Retrieval-augmented Generation (Self-Rag) to improve an LLM's generation quality, including its factual accuracy without hurting its versatility, via on-demand retrieval and self-reflection.
+          - listitem [ref=e333]:
+            - article [ref=e334] [cursor=pointer]:
+              - button [ref=e336]:
+                - img [ref=e337]
+              - generic [ref=e341]:
+                - link "Search domain link.springer.com" [ref=e343]:
+                  - /url: /?q=arxiv%20self%2Drag%20retrieval%20augmented%20generation+site:link.springer.com
+                  - img [ref=e345]
+                - generic [ref=e346]:
+                  - paragraph [ref=e347]: Springer
+                  - link "https://link.springer.com › article › 10.1007 › s41019-025-00335-5" [ref=e348]:
+                    - /url: https://link.springer.com/article/10.1007/s41019-025-00335-5
+                    - paragraph [ref=e350]:
+                      - generic [ref=e351]: https://link.springer.com
+                      - generic [ref=e352]: › article › 10.1007 › s41019-025-00335-5
+              - 'heading "Retrieval-Augmented Generation for AI-Generated Content: A Survey" [level=2] [ref=e354]':
+                - 'link "Retrieval-Augmented Generation for AI-Generated Content: A Survey" [ref=e355]':
+                  - /url: https://link.springer.com/article/10.1007/s41019-025-00335-5
+                  - generic [ref=e356]: "Retrieval-Augmented Generation for AI-Generated Content: A Survey"
+              - generic [ref=e361]: Retrieval-augmented generation (RAG) has recently emerged as a paradigm to address such challenges. In particular, RAG introduces the information retrieval process, which enhances the generation process by retrieving relevant objects from available data stores, leading to higher accuracy and better robustness.
+          - listitem [ref=e362]:
+            - article [ref=e363] [cursor=pointer]:
+              - button [ref=e365]:
+                - img [ref=e366]
+              - generic [ref=e370]:
+                - link "Search domain sciencedirect.com" [ref=e372]:
+                  - /url: /?q=arxiv%20self%2Drag%20retrieval%20augmented%20generation+site:www.sciencedirect.com
+                  - img [ref=e374]
+                - generic [ref=e375]:
+                  - paragraph [ref=e376]: ScienceDirect
+                  - link "https://www.sciencedirect.com › science › article › pii › S2666920X25000578" [ref=e377]:
+                    - /url: https://www.sciencedirect.com/science/article/pii/S2666920X25000578
+                    - paragraph [ref=e379]:
+                      - generic [ref=e380]: https://www.sciencedirect.com
+                      - generic [ref=e381]: › science › article › pii › S2666920X25000578
+              - 'heading "Retrieval-augmented generation for educational application: A ..." [level=2] [ref=e383]':
+                - 'link "Retrieval-augmented generation for educational application: A ..." [ref=e384]':
+                  - /url: https://www.sciencedirect.com/science/article/pii/S2666920X25000578
+                  - generic [ref=e385]: "Retrieval-augmented generation for educational application: A ..."
+              - generic [ref=e389]:
+                - text: Jun 1, 2025·
+                - generic [ref=e390]: Retrieval-Augmented Generation (RAG) enhances LLMs by retrieving relevant information from an external knowledge base and incorporating it into the LLM's generation process. This approach improves factual accuracy and enables dynamic knowledge updates, making LLMs particularly suitable for educational applications.
+          - listitem [ref=e391]:
+            - article [ref=e392] [cursor=pointer]:
+              - button [ref=e394]:
+                - img [ref=e395]
+              - generic [ref=e399]:
+                - link "Search domain arxiv.org" [ref=e401]:
+                  - /url: /?q=arxiv%20self%2Drag%20retrieval%20augmented%20generation+site:arxiv.org
+                  - img [ref=e403]
+                - generic [ref=e404]:
+                  - paragraph [ref=e405]: arXiv.org
+                  - link "https://arxiv.org › html › 2506.00054v1" [ref=e406]:
+                    - /url: https://arxiv.org/html/2506.00054v1
+                    - paragraph [ref=e408]:
+                      - generic [ref=e409]: https://arxiv.org
+                      - generic [ref=e410]: › html › 2506.00054v1
+              - 'heading "Retrieval-Augmented Generation: A Comprehensive Survey of Architectures ..." [level=2] [ref=e412]':
+                - 'link "Retrieval-Augmented Generation: A Comprehensive Survey of Architectures ..." [ref=e413]':
+                  - /url: https://arxiv.org/html/2506.00054v1
+                  - generic [ref=e414]: "Retrieval-Augmented Generation: A Comprehensive Survey of Architectures ..."
+              - generic [ref=e419]: Abstract. Retrieval-Augmented Generation (RAG) has emerged as a powerful paradigm to enhance large language models (LLMs) by conditioning generation on external evidence retrieved at inference time.
+          - listitem [ref=e420]:
+            - article [ref=e421] [cursor=pointer]:
+              - button [ref=e423]:
+                - img [ref=e424]
+              - generic [ref=e428]:
+                - link "Search domain arxiv.org" [ref=e430]:
+                  - /url: /?q=arxiv%20self%2Drag%20retrieval%20augmented%20generation+site:arxiv.org
+                  - img [ref=e432]
+                - generic [ref=e433]:
+                  - paragraph [ref=e434]: arXiv.org
+                  - link "https://arxiv.org › abs › 2506.00054" [ref=e435]:
+                    - /url: https://arxiv.org/abs/2506.00054
+                    - paragraph [ref=e437]:
+                      - generic [ref=e438]: https://arxiv.org
+                      - generic [ref=e439]: › abs › 2506.00054
+              - 'heading "Retrieval-Augmented Generation: A Comprehensive Survey of Architectures ..." [level=2] [ref=e441]':
+                - 'link "Retrieval-Augmented Generation: A Comprehensive Survey of Architectures ..." [ref=e442]':
+                  - /url: https://arxiv.org/abs/2506.00054
+                  - generic [ref=e443]: "Retrieval-Augmented Generation: A Comprehensive Survey of Architectures ..."
+              - generic [ref=e447]:
+                - text: May 28, 2025·
+                - generic [ref=e448]: This survey aims to consolidate current knowledge in RAG research and serve as a foundation for the next generation of retrieval-augmented language modeling systems.
+          - listitem [ref=e449]:
+            - article [ref=e450] [cursor=pointer]:
+              - button [ref=e452]:
+                - img [ref=e453]
+              - generic [ref=e457]:
+                - link "Search domain par.nsf.gov" [ref=e459]:
+                  - /url: /?q=arxiv%20self%2Drag%20retrieval%20augmented%20generation+site:par.nsf.gov
+                  - img [ref=e461]
+                - generic [ref=e462]:
+                  - paragraph [ref=e463]: NSF Public Access
+                  - link "https://par.nsf.gov › servlets › purl › 10539591" [ref=e464]:
+                    - /url: https://par.nsf.gov/servlets/purl/10539591
+                    - paragraph [ref=e466]:
+                      - generic [ref=e467]: https://par.nsf.gov
+                      - generic [ref=e468]: › servlets › purl › 10539591
+              - heading "Self Rag:Learning Toretrieve,Generate and Critique Throughself ..." [level=2] [ref=e470]:
+                - link "Self Rag:Learning Toretrieve,Generate and Critique Throughself ..." [ref=e471]:
+                  - /url: https://par.nsf.gov/servlets/purl/10539591
+                  - generic [ref=e472]: Self Rag:Learning Toretrieve,Generate and Critique Throughself ...
+              - generic [ref=e477]: of-the-art LLMs and retrieval-augmented models on a diverse set of tasks. Specifically, SELF-RAG outperforms ChatGPT and retrieval-augmented Llama2-chat on Open-domain QA, reasoning and fact verification tasks, and it shows significant gains in improving factuality
+          - listitem [ref=e478]:
+            - generic [ref=e480]:
+              - paragraph [ref=e481]: Searches related to arxiv self-rag retrieval augmented generation
+              - generic [ref=e482]:
+                - list [ref=e483]:
+                  - listitem [ref=e484]:
+                    - link "self reflective retrieval augmented generation" [ref=e485] [cursor=pointer]:
+                      - /url: "?q=self%20reflective%20retrieval%20augmented%20generation"
+                      - generic [ref=e487]: self reflective retrieval augmented generation
+                  - listitem [ref=e488]:
+                    - link "self reflective retrieval aggravated generation" [ref=e489] [cursor=pointer]:
+                      - /url: "?q=self%20reflective%20retrieval%20aggravated%20generation"
+                      - generic [ref=e491]: self reflective retrieval aggravated generation
+                  - listitem [ref=e492]:
+                    - link "self reg retrieval augmented generation" [ref=e493] [cursor=pointer]:
+                      - /url: "?q=self%20reg%20retrieval%20augmented%20generation"
+                      - generic [ref=e495]: self reg retrieval augmented generation
+                  - listitem [ref=e496]:
+                    - link "self reflective retrieval enhanced generation" [ref=e497] [cursor=pointer]:
+                      - /url: "?q=self%20reflective%20retrieval%20enhanced%20generation"
+                      - generic [ref=e499]: self reflective retrieval enhanced generation
+                - list [ref=e500]:
+                  - listitem [ref=e501]:
+                    - link "retrieval augmented models" [ref=e502] [cursor=pointer]:
+                      - /url: "?q=retrieval%20augmented%20models"
+                      - generic [ref=e504]: retrieval augmented models
+                  - listitem [ref=e505]:
+                    - link "retrieval augmented generation neurips" [ref=e506] [cursor=pointer]:
+                      - /url: "?q=retrieval%20augmented%20generation%20neurips"
+                      - generic [ref=e508]: retrieval augmented generation neurips
+                  - listitem [ref=e509]:
+                    - link "retrieval augmented generation" [ref=e510] [cursor=pointer]:
+                      - /url: "?q=retrieval%20augmented%20generation"
+                      - generic [ref=e512]: retrieval augmented generation
+                  - listitem [ref=e513]:
+                    - link "self rag pdf" [ref=e514] [cursor=pointer]:
+                      - /url: "?q=self%20rag%20pdf"
+                      - generic [ref=e516]: self rag pdf
+        - button "More results" [ref=e519] [cursor=pointer]
+    - list [ref=e522]:
+      - button "Close menu" [ref=e523] [cursor=pointer]:
+        - generic [ref=e524]: Close menu
+        - img [ref=e525]
+      - list [ref=e527]:
+        - listitem [ref=e528]: Search
+        - listitem [ref=e529]:
+          - link "Homepage" [ref=e530] [cursor=pointer]:
+            - /url: https://start.duckduckgo.com/
+        - listitem [ref=e531]:
+          - link "Themes" [ref=e532] [cursor=pointer]:
+            - /url: /settings#appearance
+        - listitem [ref=e533]:
+          - link "Settings" [ref=e534] [cursor=pointer]:
+            - /url: /settings
+      - list [ref=e535]:
+        - listitem [ref=e536]: Share Feedback
+        - listitem [ref=e537]:
+          - generic [ref=e540]:
+            - button "Positive feedback" [ref=e541] [cursor=pointer]:
+              - img [ref=e542]
+            - button "Negative feedback" [ref=e545] [cursor=pointer]:
+              - img [ref=e546]
+      - list [ref=e549]:
+        - listitem [ref=e550]: Downloads
+        - listitem [ref=e551]:
+          - link "iOS Browser" [ref=e552] [cursor=pointer]:
+            - /url: https://apps.apple.com/app/duckduckgo-private-browser/id663592361?platform=iphone&pt=866401&mt=8&ct=serp-atb-serp
+        - listitem [ref=e553]:
+          - link "Android Browser" [ref=e554] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=utm_campaign%3Dserp-atb-serp%26origin%3Dfunnel_playstore_searchresults
+        - listitem [ref=e555]:
+          - link "Mac Browser" [ref=e556] [cursor=pointer]:
+            - /url: /mac?origin=funnel_browser_searchresults
+        - listitem [ref=e557]:
+          - link "Windows Browser" [ref=e558] [cursor=pointer]:
+            - /url: /windows?origin=funnel_browser_searchresults
+        - listitem [ref=e559]: Browser Extensions
+      - list [ref=e560]:
+        - listitem [ref=e561]: More From DuckDuckGo
+        - listitem [ref=e562]:
+          - generic [ref=e565]:
+            - button "Dismiss promotion" [ref=e566] [cursor=pointer]:
+              - img [ref=e567]
+            - generic [ref=e569]:
+              - paragraph [ref=e571]:
+                - img [ref=e572]
+                - text: Upgrade to our Private Browser
+              - paragraph [ref=e583]: Fast. Secure. Free.
+            - link "Download Browser" [ref=e584] [cursor=pointer]:
+              - /url: /windows
+              - img [ref=e585]
+              - text: Download Browser
+        - listitem [ref=e587]:
+          - link "Duck.ai" [ref=e588] [cursor=pointer]:
+            - /url: https://duck.ai
+        - listitem [ref=e589]:
+          - link "Email Protection" [ref=e590] [cursor=pointer]:
+            - /url: /email
+        - listitem [ref=e591]:
+          - link "Newsletter" [ref=e592] [cursor=pointer]:
+            - /url: /newsletter
+        - listitem [ref=e593]:
+          - link "Blog" [ref=e594] [cursor=pointer]:
+            - /url: /blog
+        - listitem [ref=e595]:
+          - link "Podcast" [ref=e596] [cursor=pointer]:
+            - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+        - listitem [ref=e597]:
+          - link "Collaborations" [ref=e598] [cursor=pointer]:
+            - /url: /collaborations
+      - list [ref=e599]:
+        - listitem [ref=e600]: Learn More
+        - listitem [ref=e601]:
+          - link "What’s New" [ref=e602] [cursor=pointer]:
+            - /url: /updates
+        - listitem [ref=e603]:
+          - link "Compare Privacy" [ref=e604] [cursor=pointer]:
+            - /url: /compare-privacy
+        - listitem [ref=e605]:
+          - link "About Our Browser" [ref=e606] [cursor=pointer]:
+            - /url: /app
+        - listitem [ref=e607]:
+          - link "About DuckDuckGo" [ref=e608] [cursor=pointer]:
+            - /url: /about
+      - list [ref=e609]:
+        - listitem [ref=e610]: Other Resources
+        - listitem [ref=e611]:
+          - link "Help" [ref=e612] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages
+        - listitem [ref=e613]:
+          - link "Community" [ref=e614] [cursor=pointer]:
+            - /url: https://www.reddit.com/r/duckduckgo/
+        - listitem [ref=e615]:
+          - link "Careers" [ref=e616] [cursor=pointer]:
+            - /url: /careers
+        - listitem [ref=e617]:
+          - link "Privacy Policy" [ref=e618] [cursor=pointer]:
+            - /url: /privacy
+        - listitem [ref=e619]:
+          - link "Terms of Service" [ref=e620] [cursor=pointer]:
+            - /url: /terms
+        - listitem [ref=e621]:
+          - link "Press Kit" [ref=e622] [cursor=pointer]:
+            - /url: /press
+        - listitem [ref=e623]:
+          - link "Advertise on Search" [ref=e624] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages/company/advertise-on-duckduckgo-search
+  - generic [ref=e628]:
+    - generic [ref=e630]:
+      - img [ref=e631]
+      - generic [ref=e646]:
+        - heading "Get Our Windows Browser" [level=3] [ref=e647]
+        - paragraph [ref=e648]: Protect your data as you search, browse, and use AI.
+      - link "Download" [ref=e649] [cursor=pointer]:
+        - /url: https://duckduckgo.com/windows?origin=funnel_browser_searchresults__footercard
+        - img [ref=e650]
+        - text: Download
+    - generic [ref=e653]:
+      - generic [ref=e654]:
+        - heading "Learn More" [level=3] [ref=e655]
+        - list [ref=e656]:
+          - listitem [ref=e657]:
+            - link "What's New" [ref=e658] [cursor=pointer]:
+              - /url: https://duckduckgo.com/updates
+          - listitem [ref=e659]:
+            - link "About Browser" [ref=e660] [cursor=pointer]:
+              - /url: https://duckduckgo.com/app
+          - listitem [ref=e661]:
+            - link "Compare Privacy" [ref=e662] [cursor=pointer]:
+              - /url: https://duckduckgo.com/compare-privacy
+          - listitem [ref=e663]:
+            - link "Help Pages" [ref=e664] [cursor=pointer]:
+              - /url: https://duckduckgo.com/duckduckgo-help-pages/
+      - generic [ref=e665]:
+        - heading "Get More" [level=3] [ref=e666]
+        - list [ref=e667]:
+          - listitem [ref=e668]:
+            - link "Email Protection" [ref=e669] [cursor=pointer]:
+              - /url: https://duckduckgo.com/email
+          - listitem [ref=e670]:
+            - generic [ref=e671]:
+              - link "Podcast" [ref=e673] [cursor=pointer]:
+                - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+              - generic [ref=e674]:
+                - text: "&"
+                - link "Newsletter" [ref=e675] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/newsletter
+          - listitem [ref=e676]:
+            - link "Collaborations" [ref=e677] [cursor=pointer]:
+              - /url: https://duckduckgo.com/collaborations
+  - button "Share Feedback" [ref=e682] [cursor=pointer]

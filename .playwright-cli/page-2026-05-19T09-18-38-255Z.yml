@@ -1,0 +1,29 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - banner [ref=e9]:
+      - generic [ref=e10]:
+        - button "Menu" [ref=e11] [cursor=pointer]:
+          - img [ref=e13]
+        - heading "LESSWRONG" [level=2] [ref=e16]:
+          - link "LESSWRONG" [ref=e17] [cursor=pointer]:
+            - /url: /
+        - generic [ref=e18]:
+          - button [ref=e23] [cursor=pointer]:
+            - img [ref=e25]
+          - button "Login" [ref=e29] [cursor=pointer]:
+            - generic [ref=e31]: Login
+    - generic [ref=e35]:
+      - heading "Base Rate" [level=1] [ref=e36]:
+        - link "Base Rate" [ref=e37] [cursor=pointer]:
+          - /url: /w/base-rate
+      - generic:
+        - paragraph [ref=e38]: This wiki page has not been created yet.
+        - paragraph [ref=e39]: "These wiki pages link to this page:"
+        - list
+        - paragraph [ref=e40]: There are no wiki pages linking to this page.
+      - link "Create Page" [ref=e41] [cursor=pointer]:
+        - /url: /w/create?name=Base%20Rate&type=wiki
+        - button "Create Page" [ref=e42]:
+          - generic [ref=e43]: Create Page
+  - generic [ref=e45]: x
+  - alert [ref=e46]

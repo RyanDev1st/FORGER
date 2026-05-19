@@ -1,0 +1,488 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - link "DuckDuckGo home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e9]: DuckDuckGo
+          - generic [ref=e15]:
+            - combobox "Search privately" [ref=e17]: arxiv hierarchical retrieval augmented generation RAPTOR
+            - button "search" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e25]:
+              - banner [ref=e26]:
+                - img [ref=e27]
+                - paragraph [ref=e28]: Upgrade to our browser.
+              - generic [ref=e29]:
+                - generic [ref=e30]:
+                  - img [ref=e31]
+                  - generic [ref=e32]:
+                    - img [ref=e33]
+                    - img [ref=e34]
+                - paragraph [ref=e35]:
+                  - generic [ref=e36]:
+                    - text: Try the
+                    - strong [ref=e37]: DuckDuckGo Browser.
+                    - text: Fast. Free. Private.
+                - link "Download Browser" [ref=e38] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/windows?origin=funnel_browser_searchresults__popover
+                  - img [ref=e39]
+                  - generic [ref=e41]: Download Browser
+              - paragraph [ref=e44]:
+                - generic [ref=e45]: Free
+            - button [ref=e47] [cursor=pointer]:
+              - img [ref=e48]
+          - button "Open menu" [ref=e50] [cursor=pointer]:
+            - generic [ref=e51]: Open menu
+            - img [ref=e52]
+      - navigation [ref=e58]:
+        - list [ref=e59]:
+          - listitem [ref=e60]:
+            - link "All" [ref=e61] [cursor=pointer]:
+              - /url: /?q=arxiv+hierarchical+retrieval+augmented+generation+RAPTOR&ia=web
+              - img [ref=e62]
+              - text: All
+          - listitem [ref=e64]:
+            - link "Images" [ref=e65] [cursor=pointer]:
+              - /url: /?q=arxiv+hierarchical+retrieval+augmented+generation+RAPTOR&ia=images&iax=images
+          - listitem [ref=e66]:
+            - link "Videos" [ref=e67] [cursor=pointer]:
+              - /url: /?q=arxiv+hierarchical+retrieval+augmented+generation+RAPTOR&ia=videos&iax=videos
+          - listitem [ref=e68]:
+            - link "News" [ref=e69] [cursor=pointer]:
+              - /url: /?q=arxiv+hierarchical+retrieval+augmented+generation+RAPTOR&ia=news&iar=news
+          - listitem [ref=e70]:
+            - link "Maps" [ref=e71] [cursor=pointer]:
+              - /url: /?q=arxiv+hierarchical+retrieval+augmented+generation+RAPTOR&iaxm=maps
+        - list [ref=e72]:
+          - listitem [ref=e73]:
+            - link "Duck.ai" [ref=e75] [cursor=pointer]:
+              - /url: /?q=arxiv+hierarchical+retrieval+augmented+generation+RAPTOR&ia=chat
+              - img [ref=e76]
+              - text: Duck.ai
+          - listitem [ref=e79]:
+            - button "Search Settings ✀" [ref=e81] [cursor=pointer]:
+              - img [ref=e82]
+              - generic [ref=e84]: Search Settings
+              - generic [ref=e87]: ✀
+    - generic [ref=e92]:
+      - navigation [ref=e94]:
+        - generic [ref=e97] [cursor=pointer]:
+          - generic [ref=e105]: Protected
+          - img [ref=e106]: ▼
+        - generic [ref=e110] [cursor=pointer]:
+          - generic [ref=e113]:
+            - switch "✓" [ref=e114]: ✓
+            - generic [ref=e116]: Vietnam (en)
+          - img [ref=e117]: ▼
+        - generic [ref=e121] [cursor=pointer]:
+          - generic [ref=e122]: "Safe search: moderate"
+          - img [ref=e123]: ▼
+        - generic [ref=e127] [cursor=pointer]:
+          - generic [ref=e128]: Any time
+          - img [ref=e129]: ▼
+      - generic [ref=e132]:
+        - list [ref=e133]:
+          - listitem [ref=e134]:
+            - article [ref=e135] [cursor=pointer]:
+              - button [ref=e137]:
+                - img [ref=e138]
+              - generic [ref=e142]:
+                - link "Search domain arxiv.org" [ref=e144]:
+                  - /url: /?q=arxiv%20hierarchical%20retrieval%20augmented%20generation%20RAPTOR+site:arxiv.org
+                  - img [ref=e146]
+                - generic [ref=e147]:
+                  - paragraph [ref=e148]: arXiv.org
+                  - link "https://arxiv.org › html › 2401.18059v1" [ref=e149]:
+                    - /url: https://arxiv.org/html/2401.18059v1
+                    - paragraph [ref=e151]:
+                      - generic [ref=e152]: https://arxiv.org
+                      - generic [ref=e153]: › html › 2401.18059v1
+              - 'heading "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval" [level=2] [ref=e155]':
+                - 'link "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval" [ref=e156]':
+                  - /url: https://arxiv.org/html/2401.18059v1
+                  - generic [ref=e157]: "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval"
+              - generic [ref=e162]: The data indicate that a substantial portion of the nodes contributing to the final retrieval comes from non-leaf layers, with a notable percentage from the first and second layers, highlighting the importance of RAPTOR's hierarchical summarization in the retrieval process.
+              - list [ref=e165]:
+                - listitem [ref=e166]:
+                  - 'link "[2401.18059] RAPTOR: Recursive Abstractive Processing for Tree ... On question-answering tasks that involve complex, multi-step reasoning, we show state-of-the-art results; for example, by coupling RAPTOR retrieval with the use of GPT-4, we can improve the best performance on the QuALITY benchmark by 20% in absolute accuracy." [ref=e167]':
+                    - /url: https://arxiv.org/abs/2401.18059
+                    - 'heading "[2401.18059] RAPTOR: Recursive Abstractive Processing for Tree ..." [level=3] [ref=e168]'
+                    - paragraph [ref=e169]:
+                      - generic [ref=e170]: On question-answering tasks that involve complex, multi-step reasoning, we show state-of-the-art results; for example, by coupling RAPTOR retrieval with the use of GPT-4, we can improve the best performance on the QuALITY benchmark by 20% in absolute accuracy.
+          - listitem [ref=e171]:
+            - article [ref=e172] [cursor=pointer]:
+              - button [ref=e174]:
+                - img [ref=e175]
+              - generic [ref=e179]:
+                - link "Search domain huggingface.co" [ref=e181]:
+                  - /url: /?q=arxiv%20hierarchical%20retrieval%20augmented%20generation%20RAPTOR+site:huggingface.co
+                  - img [ref=e183]
+                - generic [ref=e184]:
+                  - paragraph [ref=e185]: Hugging Face
+                  - link "https://huggingface.co › papers › 2602.03442" [ref=e186]:
+                    - /url: https://huggingface.co/papers/2602.03442
+                    - paragraph [ref=e188]:
+                      - generic [ref=e189]: https://huggingface.co
+                      - generic [ref=e190]: › papers › 2602.03442
+              - 'heading "A-RAG: Scaling Agentic Retrieval-Augmented Generation via Hierarchical ..." [level=2] [ref=e192]':
+                - 'link "A-RAG: Scaling Agentic Retrieval-Augmented Generation via Hierarchical ..." [ref=e193]':
+                  - /url: https://huggingface.co/papers/2602.03442
+                  - generic [ref=e194]: "A-RAG: Scaling Agentic Retrieval-Augmented Generation via Hierarchical ..."
+              - generic [ref=e198]:
+                - text: Feb 5, 2026·
+                - generic [ref=e199]: "A-RAG: Scaling Agentic Retrieval-Augmented Generation via Hierarchical Retrieval Interfaces Mingxuan Du ... Benfeng Xu Chiwei Zhu"
+          - listitem [ref=e200]:
+            - article [ref=e201] [cursor=pointer]:
+              - button [ref=e203]:
+                - img [ref=e204]
+              - generic [ref=e208]:
+                - link "Search domain github.com" [ref=e210]:
+                  - /url: /?q=arxiv%20hierarchical%20retrieval%20augmented%20generation%20RAPTOR+site:github.com
+                  - img [ref=e212]
+                - generic [ref=e213]:
+                  - paragraph [ref=e214]: Github
+                  - link "https://github.com › parthsarthi03 › raptor" [ref=e215]:
+                    - /url: https://github.com/parthsarthi03/raptor
+                    - paragraph [ref=e217]:
+                      - generic [ref=e218]: https://github.com
+                      - generic [ref=e219]: › parthsarthi03 › raptor
+              - 'heading "GitHub - parthsarthi03/raptor: The official implementation of RAPTOR ..." [level=2] [ref=e221]':
+                - 'link "GitHub - parthsarthi03/raptor: The official implementation of RAPTOR ..." [ref=e222]':
+                  - /url: https://github.com/parthsarthi03/raptor
+                  - generic [ref=e223]: "GitHub - parthsarthi03/raptor: The official implementation of RAPTOR ..."
+              - generic [ref=e228]: RAPTOR introduces a novel approach to retrieval-augmented language models by constructing a recursive tree structure from documents. This allows for more efficient and context-aware information retrieval across large texts, addressing common limitations in traditional language models.
+          - listitem [ref=e229]:
+            - article [ref=e230] [cursor=pointer]:
+              - button [ref=e232]:
+                - img [ref=e233]
+              - generic [ref=e237]:
+                - link "Search domain arxiv.org" [ref=e239]:
+                  - /url: /?q=arxiv%20hierarchical%20retrieval%20augmented%20generation%20RAPTOR+site:arxiv.org
+                  - img [ref=e241]
+                - generic [ref=e242]:
+                  - paragraph [ref=e243]: arXiv.org
+                  - link "https://arxiv.org › abs › 2401.18059" [ref=e244]:
+                    - /url: https://arxiv.org/abs/2401.18059
+                    - paragraph [ref=e246]:
+                      - generic [ref=e247]: https://arxiv.org
+                      - generic [ref=e248]: › abs › 2401.18059
+              - 'heading "[2401.18059] RAPTOR: Recursive Abstractive Processing for Tree ..." [level=2] [ref=e250]':
+                - 'link "[2401.18059] RAPTOR: Recursive Abstractive Processing for Tree ..." [ref=e251]':
+                  - /url: https://arxiv.org/abs/2401.18059
+                  - generic [ref=e252]: "[2401.18059] RAPTOR: Recursive Abstractive Processing for Tree ..."
+              - generic [ref=e257]: On question-answering tasks that involve complex, multi-step reasoning, we show state-of-the-art results; for example, by coupling RAPTOR retrieval with the use of GPT-4, we can improve the best performance on the QuALITY benchmark by 20% in absolute accuracy.
+          - listitem [ref=e258]:
+            - article [ref=e259] [cursor=pointer]:
+              - button [ref=e261]:
+                - img [ref=e262]
+              - generic [ref=e266]:
+                - link "Search domain machinelearningplus.com" [ref=e268]:
+                  - /url: /?q=arxiv%20hierarchical%20retrieval%20augmented%20generation%20RAPTOR+site:machinelearningplus.com
+                  - img [ref=e270]
+                - generic [ref=e271]:
+                  - paragraph [ref=e272]: Machine Learning Plus
+                  - link "https://machinelearningplus.com › gen-ai › raptor-rag-explained-building-hierarchical-retrieval-for-smarter-ai-answers" [ref=e273]:
+                    - /url: https://machinelearningplus.com/gen-ai/raptor-rag-explained-building-hierarchical-retrieval-for-smarter-ai-answers/
+                    - paragraph [ref=e275]:
+                      - generic [ref=e276]: https://machinelearningplus.com
+                      - generic [ref=e277]: › gen-ai › raptor-rag-explained-building-hierarchical-retrieval-for-smarter-ai-answers
+              - 'heading "RAPTOR RAG Explained: Building Hierarchical Retrieval for Smarter AI ..." [level=2] [ref=e279]':
+                - 'link "RAPTOR RAG Explained: Building Hierarchical Retrieval for Smarter AI ..." [ref=e280]':
+                  - /url: https://machinelearningplus.com/gen-ai/raptor-rag-explained-building-hierarchical-retrieval-for-smarter-ai-answers/
+                  - generic [ref=e281]: "RAPTOR RAG Explained: Building Hierarchical Retrieval for Smarter AI ..."
+              - generic [ref=e286]: RAPTOR (Recursive Abstractive Processing for Tree-Organized Retrieval) is an advanced RAG technique that creates hierarchical tree structures from your documents, allowing you to retrieve information at different levels of detail and abstraction.
+          - listitem [ref=e287]:
+            - article [ref=e288] [cursor=pointer]:
+              - button [ref=e290]:
+                - img [ref=e291]
+              - generic [ref=e295]:
+                - link "Search domain huggingface.co" [ref=e297]:
+                  - /url: /?q=arxiv%20hierarchical%20retrieval%20augmented%20generation%20RAPTOR+site:huggingface.co
+                  - img [ref=e299]
+                - generic [ref=e300]:
+                  - paragraph [ref=e301]: Hugging Face
+                  - link "https://huggingface.co › papers › 2401.18059" [ref=e302]:
+                    - /url: https://huggingface.co/papers/2401.18059
+                    - paragraph [ref=e304]:
+                      - generic [ref=e305]: https://huggingface.co
+                      - generic [ref=e306]: › papers › 2401.18059
+              - 'heading "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval" [level=2] [ref=e308]':
+                - 'link "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval" [ref=e309]':
+                  - /url: https://huggingface.co/papers/2401.18059
+                  - generic [ref=e310]: "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval"
+              - generic [ref=e315]: We introduce the novel approach of recursively embedding, clustering, and summarizing chunks of text, constructing a tree with differing levels of summarization from the bottom up. At inference time, our RAPTOR model retrieves from this tree, integrating information across lengthy documents at different levels of abstraction.
+          - listitem [ref=e316]:
+            - article [ref=e317] [cursor=pointer]:
+              - button [ref=e319]:
+                - img [ref=e320]
+              - generic [ref=e324]:
+                - link "Search domain arxiv.org" [ref=e326]:
+                  - /url: /?q=arxiv%20hierarchical%20retrieval%20augmented%20generation%20RAPTOR+site:arxiv.org
+                  - img [ref=e328]
+                - generic [ref=e329]:
+                  - paragraph [ref=e330]: arXiv.org
+                  - link "https://arxiv.org › abs › 2602.03442" [ref=e331]:
+                    - /url: https://arxiv.org/abs/2602.03442
+                    - paragraph [ref=e333]:
+                      - generic [ref=e334]: https://arxiv.org
+                      - generic [ref=e335]: › abs › 2602.03442
+              - 'heading "A-RAG: Scaling Agentic Retrieval-Augmented Generation via Hierarchical ..." [level=2] [ref=e337]':
+                - 'link "A-RAG: Scaling Agentic Retrieval-Augmented Generation via Hierarchical ..." [ref=e338]':
+                  - /url: https://arxiv.org/abs/2602.03442
+                  - generic [ref=e339]: "A-RAG: Scaling Agentic Retrieval-Augmented Generation via Hierarchical ..."
+              - generic [ref=e343]:
+                - text: Feb 3, 2026·
+                - generic [ref=e344]: "In this paper, we introduce A-RAG, an Agentic RAG framework that exposes hierarchical retrieval interfaces directly to the model. A-RAG provides three retrieval tools: keyword search, semantic search, and chunk read, enabling the agent to adaptively search and retrieve information across multiple granularities."
+          - listitem [ref=e345]:
+            - article [ref=e346] [cursor=pointer]:
+              - button [ref=e348]:
+                - img [ref=e349]
+              - generic [ref=e353]:
+                - link "Search domain alphaxiv.org" [ref=e355]:
+                  - /url: /?q=arxiv%20hierarchical%20retrieval%20augmented%20generation%20RAPTOR+site:www.alphaxiv.org
+                  - img [ref=e357]
+                - generic [ref=e358]:
+                  - paragraph [ref=e359]: alphaxiv.org
+                  - link "https://www.alphaxiv.org › overview › 2401.18059v1" [ref=e360]:
+                    - /url: https://www.alphaxiv.org/overview/2401.18059v1
+                    - paragraph [ref=e362]:
+                      - generic [ref=e363]: https://www.alphaxiv.org
+                      - generic [ref=e364]: › overview › 2401.18059v1
+              - 'heading "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval ..." [level=2] [ref=e366]':
+                - 'link "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval ..." [ref=e367]':
+                  - /url: https://www.alphaxiv.org/overview/2401.18059v1
+                  - generic [ref=e368]: "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval ..."
+              - generic [ref=e373]: RAPTOR, developed by researchers at Stanford University, introduces a method for creating a hierarchical tree-structured index of documents to improve retrieval for large language models.
+          - listitem [ref=e374]:
+            - article [ref=e375] [cursor=pointer]:
+              - button [ref=e377]:
+                - img [ref=e378]
+              - generic [ref=e382]:
+                - link "Search domain aiengineering.academy" [ref=e384]:
+                  - /url: /?q=arxiv%20hierarchical%20retrieval%20augmented%20generation%20RAPTOR+site:aiengineering.academy
+                  - img [ref=e386]
+                - generic [ref=e387]:
+                  - paragraph [ref=e388]: aiengineering.academy
+                  - link "https://aiengineering.academy › RAG › 09_RAPTOR" [ref=e389]:
+                    - /url: https://aiengineering.academy/RAG/09_RAPTOR/
+                    - paragraph [ref=e391]:
+                      - generic [ref=e392]: https://aiengineering.academy
+                      - generic [ref=e393]: › RAG › 09_RAPTOR
+              - 'heading "RAPTOR: Recursive Abstractive Processing for Tree Organized Retrieval ..." [level=2] [ref=e395]':
+                - 'link "RAPTOR: Recursive Abstractive Processing for Tree Organized Retrieval ..." [ref=e396]':
+                  - /url: https://aiengineering.academy/RAG/09_RAPTOR/
+                  - generic [ref=e397]: "RAPTOR: Recursive Abstractive Processing for Tree Organized Retrieval ..."
+              - generic [ref=e402]: RAPTOR (Recursive Abstractive Processing for Tree Organized Retrieval) is an advanced approach to Retrieval-Augmented Generation (RAG) that enhances the traditional RAG pipeline by incorporating hierarchical document structuring and summarization.
+          - listitem [ref=e403]:
+            - article [ref=e404] [cursor=pointer]:
+              - button [ref=e406]:
+                - img [ref=e407]
+              - generic [ref=e411]:
+                - link "Search domain emergentmind.com" [ref=e413]:
+                  - /url: /?q=arxiv%20hierarchical%20retrieval%20augmented%20generation%20RAPTOR+site:www.emergentmind.com
+                  - img [ref=e415]
+                - generic [ref=e416]:
+                  - paragraph [ref=e417]: Emergent Mind
+                  - link "https://www.emergentmind.com › papers › 2401.18059" [ref=e418]:
+                    - /url: https://www.emergentmind.com/papers/2401.18059
+                    - paragraph [ref=e420]:
+                      - generic [ref=e421]: https://www.emergentmind.com
+                      - generic [ref=e422]: › papers › 2401.18059
+              - 'heading "RAPTOR: Recursive Abstractive Tree Retrieval - Emergent Mind" [level=2] [ref=e424]':
+                - 'link "RAPTOR: Recursive Abstractive Tree Retrieval - Emergent Mind" [ref=e425]':
+                  - /url: https://www.emergentmind.com/papers/2401.18059
+                  - generic [ref=e426]: "RAPTOR: Recursive Abstractive Tree Retrieval - Emergent Mind"
+              - generic [ref=e431]: RAPTOR sets a new standard in retrieval-augmented LM systems. It adeptly navigates the innate complexity of providing precise context at varying abstraction levels, thus enhancing question-answering capabilities.
+          - listitem [ref=e432]:
+            - generic [ref=e434]:
+              - paragraph [ref=e435]: Searches related to arxiv hierarchical retrieval augmented generation RAPTOR
+              - generic [ref=e436]:
+                - list [ref=e437]:
+                  - listitem [ref=e438]:
+                    - link "raptor retrieval abstract processing" [ref=e439] [cursor=pointer]:
+                      - /url: "?q=raptor%20retrieval%20abstract%20processing"
+                      - generic [ref=e441]: raptor retrieval abstract processing
+                  - listitem [ref=e442]:
+                    - link "raptor retrieval augmentation" [ref=e443] [cursor=pointer]:
+                      - /url: "?q=raptor%20retrieval%20augmentation"
+                      - generic [ref=e445]: raptor retrieval augmentation
+                  - listitem [ref=e446]:
+                    - link "tree organized retrieval raptor" [ref=e447] [cursor=pointer]:
+                      - /url: "?q=tree%20organized%20retrieval%20raptor"
+                      - generic [ref=e449]: tree organized retrieval raptor
+                  - listitem [ref=e450]:
+                    - link "raptor tree based retrieval" [ref=e451] [cursor=pointer]:
+                      - /url: "?q=raptor%20tree%20based%20retrieval"
+                      - generic [ref=e453]: raptor tree based retrieval
+                - list [ref=e454]:
+                  - listitem [ref=e455]:
+                    - link "raptor tree abstraction" [ref=e456] [cursor=pointer]:
+                      - /url: "?q=raptor%20tree%20abstraction"
+                      - generic [ref=e458]: raptor tree abstraction
+                  - listitem [ref=e459]:
+                    - link "raptor abstractive processing" [ref=e460] [cursor=pointer]:
+                      - /url: "?q=raptor%20abstractive%20processing"
+                      - generic [ref=e462]: raptor abstractive processing
+                  - listitem [ref=e463]:
+                    - link "raptor retrieval process" [ref=e464] [cursor=pointer]:
+                      - /url: "?q=raptor%20retrieval%20process"
+                      - generic [ref=e466]: raptor retrieval process
+                  - listitem [ref=e467]:
+                    - link "raptor retrieval" [ref=e468] [cursor=pointer]:
+                      - /url: "?q=raptor%20retrieval"
+                      - generic [ref=e470]: raptor retrieval
+        - button "More results" [ref=e473] [cursor=pointer]
+    - list [ref=e476]:
+      - button "Close menu" [ref=e477] [cursor=pointer]:
+        - generic [ref=e478]: Close menu
+        - img [ref=e479]
+      - list [ref=e481]:
+        - listitem [ref=e482]: Search
+        - listitem [ref=e483]:
+          - link "Homepage" [ref=e484] [cursor=pointer]:
+            - /url: https://start.duckduckgo.com/
+        - listitem [ref=e485]:
+          - link "Themes" [ref=e486] [cursor=pointer]:
+            - /url: /settings#appearance
+        - listitem [ref=e487]:
+          - link "Settings" [ref=e488] [cursor=pointer]:
+            - /url: /settings
+      - list [ref=e489]:
+        - listitem [ref=e490]: Share Feedback
+        - listitem [ref=e491]:
+          - generic [ref=e494]:
+            - button "Positive feedback" [ref=e495] [cursor=pointer]:
+              - img [ref=e496]
+            - button "Negative feedback" [ref=e499] [cursor=pointer]:
+              - img [ref=e500]
+      - list [ref=e503]:
+        - listitem [ref=e504]: Downloads
+        - listitem [ref=e505]:
+          - link "iOS Browser" [ref=e506] [cursor=pointer]:
+            - /url: https://apps.apple.com/app/duckduckgo-private-browser/id663592361?platform=iphone&pt=866401&mt=8&ct=serp-atb-serp
+        - listitem [ref=e507]:
+          - link "Android Browser" [ref=e508] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=utm_campaign%3Dserp-atb-serp%26origin%3Dfunnel_playstore_searchresults
+        - listitem [ref=e509]:
+          - link "Mac Browser" [ref=e510] [cursor=pointer]:
+            - /url: /mac?origin=funnel_browser_searchresults
+        - listitem [ref=e511]:
+          - link "Windows Browser" [ref=e512] [cursor=pointer]:
+            - /url: /windows?origin=funnel_browser_searchresults
+        - listitem [ref=e513]: Browser Extensions
+      - list [ref=e514]:
+        - listitem [ref=e515]: More From DuckDuckGo
+        - listitem [ref=e516]:
+          - generic [ref=e519]:
+            - button "Dismiss promotion" [ref=e520] [cursor=pointer]:
+              - img [ref=e521]
+            - generic [ref=e523]:
+              - paragraph [ref=e525]:
+                - img [ref=e526]
+                - text: Upgrade to our Private Browser
+              - paragraph [ref=e537]: Fast. Secure. Free.
+            - link "Download Browser" [ref=e538] [cursor=pointer]:
+              - /url: /windows
+              - img [ref=e539]
+              - text: Download Browser
+        - listitem [ref=e541]:
+          - link "Duck.ai" [ref=e542] [cursor=pointer]:
+            - /url: https://duck.ai
+        - listitem [ref=e543]:
+          - link "Email Protection" [ref=e544] [cursor=pointer]:
+            - /url: /email
+        - listitem [ref=e545]:
+          - link "Newsletter" [ref=e546] [cursor=pointer]:
+            - /url: /newsletter
+        - listitem [ref=e547]:
+          - link "Blog" [ref=e548] [cursor=pointer]:
+            - /url: /blog
+        - listitem [ref=e549]:
+          - link "Podcast" [ref=e550] [cursor=pointer]:
+            - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+        - listitem [ref=e551]:
+          - link "Collaborations" [ref=e552] [cursor=pointer]:
+            - /url: /collaborations
+      - list [ref=e553]:
+        - listitem [ref=e554]: Learn More
+        - listitem [ref=e555]:
+          - link "What’s New" [ref=e556] [cursor=pointer]:
+            - /url: /updates
+        - listitem [ref=e557]:
+          - link "Compare Privacy" [ref=e558] [cursor=pointer]:
+            - /url: /compare-privacy
+        - listitem [ref=e559]:
+          - link "About Our Browser" [ref=e560] [cursor=pointer]:
+            - /url: /app
+        - listitem [ref=e561]:
+          - link "About DuckDuckGo" [ref=e562] [cursor=pointer]:
+            - /url: /about
+      - list [ref=e563]:
+        - listitem [ref=e564]: Other Resources
+        - listitem [ref=e565]:
+          - link "Help" [ref=e566] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages
+        - listitem [ref=e567]:
+          - link "Community" [ref=e568] [cursor=pointer]:
+            - /url: https://www.reddit.com/r/duckduckgo/
+        - listitem [ref=e569]:
+          - link "Careers" [ref=e570] [cursor=pointer]:
+            - /url: /careers
+        - listitem [ref=e571]:
+          - link "Privacy Policy" [ref=e572] [cursor=pointer]:
+            - /url: /privacy
+        - listitem [ref=e573]:
+          - link "Terms of Service" [ref=e574] [cursor=pointer]:
+            - /url: /terms
+        - listitem [ref=e575]:
+          - link "Press Kit" [ref=e576] [cursor=pointer]:
+            - /url: /press
+        - listitem [ref=e577]:
+          - link "Advertise on Search" [ref=e578] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages/company/advertise-on-duckduckgo-search
+  - generic [ref=e582]:
+    - generic [ref=e584]:
+      - img [ref=e585]
+      - generic [ref=e595]:
+        - heading "Introducing DuckDuckGo Collaborations" [level=3] [ref=e596]
+        - paragraph [ref=e597]: Expertly crafted products for people who give a duck about privacy.
+      - link "See More" [ref=e598] [cursor=pointer]:
+        - /url: https://duckduckgo.com/collaborations
+    - generic [ref=e600]:
+      - generic [ref=e601]:
+        - heading "Learn More" [level=3] [ref=e602]
+        - list [ref=e603]:
+          - listitem [ref=e604]:
+            - link "What's New" [ref=e605] [cursor=pointer]:
+              - /url: https://duckduckgo.com/updates
+          - listitem [ref=e606]:
+            - link "About Browser" [ref=e607] [cursor=pointer]:
+              - /url: https://duckduckgo.com/app
+          - listitem [ref=e608]:
+            - link "Compare Privacy" [ref=e609] [cursor=pointer]:
+              - /url: https://duckduckgo.com/compare-privacy
+          - listitem [ref=e610]:
+            - link "Help Pages" [ref=e611] [cursor=pointer]:
+              - /url: https://duckduckgo.com/duckduckgo-help-pages/
+      - generic [ref=e612]:
+        - heading "Get More" [level=3] [ref=e613]
+        - list [ref=e614]:
+          - listitem [ref=e615]:
+            - link "Email Protection" [ref=e616] [cursor=pointer]:
+              - /url: https://duckduckgo.com/email
+          - listitem [ref=e617]:
+            - generic [ref=e618]:
+              - link "Podcast" [ref=e620] [cursor=pointer]:
+                - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+              - generic [ref=e621]:
+                - text: "&"
+                - link "Newsletter" [ref=e622] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/newsletter
+          - listitem [ref=e623]:
+            - link "Collaborations" [ref=e624] [cursor=pointer]:
+              - /url: https://duckduckgo.com/collaborations
+  - button "Share Feedback" [ref=e629] [cursor=pointer]

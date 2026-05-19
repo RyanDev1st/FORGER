@@ -1,0 +1,1099 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e7]:
+        - menu [ref=e9]:
+          - generic [ref=e10]:
+            - list [ref=e12]:
+              - listitem [ref=e13]:
+                - link "English" [ref=e14] [cursor=pointer]:
+                  - /url: /authors/handbooks-and-manuals/handbook/current/chapter-24
+              - listitem [ref=e15]:
+                - link "Español" [ref=e16] [cursor=pointer]:
+                  - /url: /es/authors/handbooks-and-manuals/handbook/current/chapter-24
+              - listitem [ref=e17]:
+                - link "فارسی" [ref=e18] [cursor=pointer]:
+                  - /url: /fa/authors/handbooks-and-manuals/handbook/current/chapter-24
+              - listitem [ref=e19]:
+                - link "Français" [ref=e20] [cursor=pointer]:
+                  - /url: /fr/authors/handbooks-and-manuals/handbook/current/chapter-24
+              - listitem [ref=e21]:
+                - link "Русский" [ref=e22] [cursor=pointer]:
+                  - /url: /ru/authors/handbooks-and-manuals/handbook/current/chapter-24
+              - listitem [ref=e23]:
+                - link "Hrvatski" [ref=e24] [cursor=pointer]:
+                  - /url: /hr/authors/handbooks-and-manuals/handbook/current/chapter-24
+              - listitem [ref=e25]:
+                - link "Deutsch" [ref=e26] [cursor=pointer]:
+                  - /url: /de/authors/handbooks-and-manuals/handbook/current/chapter-24
+              - listitem [ref=e27]:
+                - link "Bahasa Malaysia" [ref=e28] [cursor=pointer]:
+                  - /url: /ms/authors/handbooks-and-manuals/handbook/current/chapter-24
+              - listitem [ref=e29]:
+                - link "ไทย" [ref=e30] [cursor=pointer]:
+                  - /url: /th/authors/handbooks-and-manuals/handbook/current/chapter-24
+              - listitem [ref=e31]:
+                - link "繁體中文" [ref=e32] [cursor=pointer]:
+                  - /url: /zh-hant/authors/handbooks-and-manuals/handbook/current/chapter-24
+              - listitem [ref=e33]:
+                - link "简体中文" [ref=e34] [cursor=pointer]:
+                  - /url: /zh-hans/authors/handbooks-and-manuals/handbook/current/chapter-24
+            - list [ref=e36]:
+              - listitem [ref=e37]:
+                - link "About Cochrane translations" [ref=e38] [cursor=pointer]:
+                  - /url: /get-involved/translate-our-evidence
+        - menu [ref=e39]:
+          - list [ref=e40]:
+            - listitem [ref=e41]:
+              - link "Log in" [ref=e42] [cursor=pointer]:
+                - /url: /cochranelogin
+            - listitem [ref=e43]:
+              - link "Cochrane Library ►" [ref=e44] [cursor=pointer]:
+                - /url: https://www.cochranelibrary.com/
+    - banner [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - link "Cochrane" [ref=e50] [cursor=pointer]:
+            - /url: /
+            - img "Cochrane" [ref=e51]
+          - menu [ref=e55]:
+            - listitem [ref=e56]:
+              - menuitem "About us" [ref=e57] [cursor=pointer]
+            - listitem [ref=e58]:
+              - menuitem "Our evidence" [ref=e59] [cursor=pointer]
+            - listitem [ref=e60]:
+              - menuitem "Get involved" [ref=e61] [cursor=pointer]
+            - listitem [ref=e62]:
+              - menuitem "Learn" [ref=e63] [cursor=pointer]
+            - listitem [ref=e64]:
+              - menuitem "Products and services" [ref=e65] [cursor=pointer]
+            - listitem [ref=e66]:
+              - menuitem "For authors" [ref=e67] [cursor=pointer]
+              - menu [ref=e68]:
+                - listitem [ref=e69]:
+                  - menuitem "Publish with us" [ref=e70] [cursor=pointer]
+                - listitem [ref=e71]:
+                  - menuitem "Handbooks and manuals" [ref=e72] [cursor=pointer]
+                - listitem [ref=e73]:
+                  - menuitem "Editorial policies" [ref=e74] [cursor=pointer]
+                - listitem [ref=e75]:
+                  - menuitem "Author support" [ref=e76] [cursor=pointer]
+                - listitem [ref=e77]:
+                  - menuitem "Methods in Cochrane" [ref=e78] [cursor=pointer]
+        - button "Toggle search" [ref=e79] [cursor=pointer]
+    - generic [ref=e83]:
+      - button "Close search results" [ref=e84] [cursor=pointer]
+      - generic [ref=e85]:
+        - checkbox "Only our evidence" [ref=e86]
+        - text: Only our evidence
+        - checkbox "Only \"Handbook\"" [ref=e87]
+        - text: Only "Handbook"
+        - checkbox "Exclude our evidence" [ref=e88]
+        - text: Exclude our evidence
+        - checkbox "Exclude news" [ref=e89]
+        - text: Exclude news
+    - navigation "Breadcrumb" [ref=e97]:
+      - heading "Breadcrumb" [level=2] [ref=e98]
+      - list [ref=e99]:
+        - listitem [ref=e100]:
+          - link "Home" [ref=e101] [cursor=pointer]:
+            - /url: /
+          - text: »
+        - listitem [ref=e102]:
+          - link "For authors" [ref=e103] [cursor=pointer]:
+            - /url: /authors
+          - text: »
+        - listitem [ref=e104]:
+          - link "Handbooks and manuals" [ref=e105] [cursor=pointer]:
+            - /url: /authors/handbooks-and-manuals
+          - text: »
+        - listitem [ref=e106]:
+          - link "Cochrane Handbook for Systematic Reviews of Interventions" [ref=e107] [cursor=pointer]:
+            - /url: /authors/handbooks-and-manuals/handbook
+          - text: »
+        - listitem [ref=e108]:
+          - link "Current version" [ref=e109] [cursor=pointer]:
+            - /url: /authors/handbooks-and-manuals/handbook/current
+          - text: »
+    - 'heading "Chapter 24: Including non-randomized studies on intervention effects" [level=1] [ref=e115]':
+      - generic [ref=e117]: "Chapter 24: Including non-randomized studies on intervention effects"
+    - main [ref=e118]:
+      - generic [ref=e119]:
+        - navigation "SRI Handbook" [ref=e120]:
+          - heading "SRI Handbook" [level=2] [ref=e121]
+          - generic [ref=e124]:
+            - combobox [ref=e125]:
+              - 'option "Part 1: About Cochrane Reviews"'
+              - 'option "Chapter I: Introduction"'
+              - 'option "Chapter II: Planning a Cochrane Review"'
+              - 'option "Chapter III: Reporting the review"'
+              - 'option "III.S1 Supplementary material: Considerations and recommendations for figures in Cochrane reviews: graphs of statistical data"'
+              - 'option "III.S2 Supplementary material: Guidance for writing a Cochrane Plain language summary"'
+              - 'option "Chapter IV: Updating a review"'
+              - 'option "Chapter V: Overviews of Reviews"'
+              - 'option "Part 2: Core methods"'
+              - 'option "Chapter 1: Starting a review"'
+              - 'option "Chapter 2: Determining the scope of the review and the questions it will address"'
+              - 'option "Chapter 3: Defining the criteria for including studies and how they will be grouped for the synthesis"'
+              - 'option "Chapter 4: Searching for and selecting studies"'
+              - 'option "4.S1 Supplementary material: Technical supplement"'
+              - 'option "4.S2 Supplementary material: Appendix of resources"'
+              - 'option "Chapter 5: Collecting data"'
+              - 'option "Chapter 6: Choosing effect measures and computing estimates of effect"'
+              - 'option "Chapter 7: Considering bias and conflicts of interest among the included studies"'
+              - 'option "Chapter 8: Assessing risk of bias in a randomized trial"'
+              - 'option "Chapter 9: Summarizing study characteristics and preparing for synthesis"'
+              - 'option "Chapter 10: Analysing data and undertaking meta-analyses"'
+              - 'option "Chapter 11: Undertaking network meta-analyses"'
+              - 'option "Chapter 12: Synthesizing and presenting findings using other methods"'
+              - 'option "Chapter 13: Assessing risk of bias due to missing results in a synthesis"'
+              - 'option "Chapter 14: Completing ‘Summary of findings’ tables and grading the certainty of the evidence"'
+              - 'option "Chapter 15: Interpreting results and drawing conclusions"'
+              - 'option "Part 3: Specific perspectives in reviews"'
+              - 'option "Chapter 16: Equity and specific populations"'
+              - 'option "Chapter 17: Intervention complexity"'
+              - 'option "Chapter 18: Patient-reported outcomes"'
+              - 'option "Chapter 19: Adverse effects"'
+              - 'option "Chapter 20: Economic evidence"'
+              - 'option "20.S Technical Supplement: Integrated full systematic review of economic evidence"'
+              - 'option "Chapter 21: Qualitative evidence"'
+              - 'option "Part 4: Other topics"'
+              - 'option "Chapter 22: Prospective approaches to accumulating evidence"'
+              - 'option "Chapter 23: Including variants on randomized trials"'
+              - 'option "Chapter 24: Including non-randomized studies on intervention effects" [selected]'
+              - 'option "Chapter 25: Assessing risk of bias in a non-randomized study"'
+              - 'option "Chapter 26: Individual participant data"'
+            - generic [ref=e126]:
+              - generic [ref=e128]: "Chapter 24: Including non-randomized studies on intervention effects"
+              - combobox [ref=e133]:
+                - listbox
+            - textbox "Search within the Handbook" [ref=e135]
+        - generic [ref=e140]:
+          - heading "Table of contents" [level=4] [ref=e141]
+          - list [ref=e142]:
+            - listitem [ref=e143]:
+              - link "24.1 Introduction" [ref=e144] [cursor=pointer]:
+                - /url: "#section-24-1"
+            - listitem [ref=e145]:
+              - link "24.1.1 Why consider non-randomized studies of interventions?" [ref=e146] [cursor=pointer]:
+                - /url: "#section-24-1-1"
+            - listitem [ref=e147]:
+              - link "24.1.2 Key issues about the inclusion of non-randomized studies of interventions in a Cochrane review" [ref=e148] [cursor=pointer]:
+                - /url: "#section-24-1-2"
+            - listitem [ref=e149]:
+              - link "24.1.3 The importance of a protocol for a Cochrane review that includes non-randomized studies of interventions" [ref=e150] [cursor=pointer]:
+                - /url: "#section-24-1-3"
+            - listitem [ref=e151]:
+              - link "24.2 Developing criteria for including non-randomized studies of interventions" [ref=e152] [cursor=pointer]:
+                - /url: "#section-24-2"
+            - listitem [ref=e153]:
+              - link "24.2.1 What is different when including non-randomized studies of interventions?" [ref=e154] [cursor=pointer]:
+                - /url: "#section-24-2-1"
+            - listitem [ref=e155]:
+              - link "24.2.2 Guidance and resources available to support review authors" [ref=e156] [cursor=pointer]:
+                - /url: "#section-24-2-2"
+            - listitem [ref=e157]:
+              - link "24.3 Searching for non-randomized studies of interventions" [ref=e158] [cursor=pointer]:
+                - /url: "#section-24-3"
+            - listitem [ref=e159]:
+              - link "24.3.1 What is different when including non-randomized studies of interventions?" [ref=e160] [cursor=pointer]:
+                - /url: "#section-24-3-1"
+            - listitem [ref=e161]:
+              - link "24.3.2 Guidance and resources available to support review authors" [ref=e162] [cursor=pointer]:
+                - /url: "#section-24-3-2"
+            - listitem [ref=e163]:
+              - link "24.4 Selecting studies and collecting data" [ref=e164] [cursor=pointer]:
+                - /url: "#section-24-4"
+            - listitem [ref=e165]:
+              - link "24.4.1 What is different when including non-randomized studies?" [ref=e166] [cursor=pointer]:
+                - /url: "#section-24-4-1"
+            - listitem [ref=e167]:
+              - link "24.4.2 Guidance and resources available to support review authors" [ref=e168] [cursor=pointer]:
+                - /url: "#section-24-4-2"
+            - listitem [ref=e169]:
+              - link "24.5 Assessing risk of bias in non-randomized studies" [ref=e170] [cursor=pointer]:
+                - /url: "#section-24-5"
+            - listitem [ref=e171]:
+              - link "24.5.1 What is different when including non-randomized studies?" [ref=e172] [cursor=pointer]:
+                - /url: "#section-24-5-1"
+            - listitem [ref=e173]:
+              - link "24.5.2 Guidance and resources available to support review authors" [ref=e174] [cursor=pointer]:
+                - /url: "#section-24-5-2"
+            - listitem [ref=e175]:
+              - link "24.6 Synthesis of results from non-randomized studies" [ref=e176] [cursor=pointer]:
+                - /url: "#section-24-6"
+            - listitem [ref=e177]:
+              - link "24.6.1 What is different when including non-randomized studies?" [ref=e178] [cursor=pointer]:
+                - /url: "#section-24-6-1"
+            - listitem [ref=e179]:
+              - link "24.6.2 Guidance and resources available to support review authors" [ref=e180] [cursor=pointer]:
+                - /url: "#section-24-6-2"
+            - listitem [ref=e181]:
+              - link "24.7 Interpretation and discussion" [ref=e182] [cursor=pointer]:
+                - /url: "#section-24-7"
+            - listitem [ref=e183]:
+              - link "24.7.1 What is different when including non-randomized studies?" [ref=e184] [cursor=pointer]:
+                - /url: "#section-24-7-1"
+            - listitem [ref=e185]:
+              - link "24.7.2 Evaluating the strength of evidence provided by reviews that include non-randomized studies" [ref=e186] [cursor=pointer]:
+                - /url: "#section-24-7-2"
+            - listitem [ref=e187]:
+              - link "24.7.3 Guidance for potential review authors" [ref=e188] [cursor=pointer]:
+                - /url: "#section-24-7-3"
+            - listitem [ref=e189]:
+              - link "24.8 Chapter information" [ref=e190] [cursor=pointer]:
+                - /url: "#section-24-8"
+            - listitem [ref=e191]:
+              - link "24.9 References" [ref=e192] [cursor=pointer]:
+                - /url: "#section-24-9"
+        - article [ref=e194]:
+          - generic [ref=e200]:
+            - paragraph [ref=e201]: Barnaby C Reeves, Jonathan J Deeks, Julian PT Higgins, Beverley Shea, Peter Tugwell, George A Wells; on behalf of the Cochrane Non-Randomized Studies of Interventions Methods Group
+            - heading "Key Points:#a-key-points" [level=5] [ref=e202]
+            - list [ref=e203]:
+              - listitem [ref=e204]: For some Cochrane reviews, the question of interest cannot be answered by randomized trials, and review authors may be justified in including non-randomized studies.
+              - listitem [ref=e205]: Potential biases are likely to be greater for non-randomized studies compared with randomized trials when evaluating the effects of interventions, so results should always be interpreted with caution when they are included in reviews and meta-analyses.
+              - listitem [ref=e206]: Non-randomized studies of interventions vary in their ability to estimate a causal effect; key design features of studies can distinguish ‘strong’ from ‘weak’ studies.
+              - listitem [ref=e207]: Biases affecting non-randomized studies of interventions vary depending on the features of the studies.
+              - listitem [ref=e208]: We recommend that eligibility criteria, data collection and assessment of included studies place an emphasis on specific features of study design (e.g. which parts of the study were prospectively designed) rather than ‘labels’ for study designs (such as case-control versus cohort).
+              - listitem [ref=e209]: Review authors should consider how potential confounders, and how the likelihood of increased heterogeneity resulting from residual confounding and from other biases that vary across studies, are addressed in meta-analyses of non-randomized studies.
+            - paragraph [ref=e210]:
+              - text: "Cite this chapter as: Reeves BC, Deeks JJ, Higgins JP, Shea B, Tugwell P, Wells GA. Chapter 24: Including non-randomized studies on intervention effects (last updated October 2019). In: Higgins JP, Thomas J, Chandler J, Cumpston M, Li T, Page MJ, et al, editor(s)."
+              - emphasis [ref=e211]: Cochrane Handbook for Systematic Reviews of Interventions
+              - text: version 6.5. Cochrane, 2024. Available from
+              - emphasis [ref=e212]: cochrane.org/handbook
+              - text: .
+            - heading "24.1 Introduction#section-24-1" [level=2] [ref=e213]
+            - paragraph [ref=e214]:
+              - text: This chapter aims to support review authors who are considering including non-randomized studies of interventions (NRSI) in a Cochrane review. NRSI are defined here as any quantitative study estimating the effectiveness of an intervention (harm or benefit) that does not use randomization to allocate units (individuals or clusters of individuals) to intervention groups. Such studies include those in which allocation occurs in the course of usual treatment decisions or according to peoples’ choices (i.e. studies often called
+              - emphasis [ref=e215]: observational
+              - text: ). (The term observational is used in various ways and, therefore, we discourage its use with respect to NRSI studies; see
+              - link "Box 24.2.a" [ref=e216] [cursor=pointer]:
+                - /url: "#box-24-2-a"
+              - text: and Section
+              - link "24.2.1.3" [ref=e217] [cursor=pointer]:
+                - /url: "#section-24-2-1-3"
+              - text: .) Review authors have a duty to patients, practitioners and policy makers to do their best to provide these groups with a summary of available evidence balancing harms against benefits, albeit qualified with a certainty assessment. Some of this evidence, especially about harms of interventions, will often need to come from NRSI.
+            - paragraph [ref=e218]:
+              - text: NRSI are used by researchers to evaluate numerous types of interventions, ranging from drugs and hospital procedures, through diverse community health interventions, to health systems implemented at a national level. There are many types of NRSI. Common labels attached to them include cohort studies, case-control studies, controlled before-and-after studies and interrupted-time-series studies (see Section
+              - link "24.5.1" [ref=e219] [cursor=pointer]:
+                - /url: "#section-24-5-1"
+              - text: for a discussion of why these labels are not always clear and can be problematic). We also consider controlled trials that use inappropriate strategies of allocating interventions (sometimes called quasi-randomized studies), and specific types of analysis of non-randomized data, such as instrumental variable analysis and regression discontinuity analysis, to be NRSI. We prefer to characterize NRSI with respect to specific study design features (see Section
+              - link "24.2.2" [ref=e220] [cursor=pointer]:
+                - /url: "#section-24-2-2"
+              - text: and
+              - link "Box 24.2.a" [ref=e221] [cursor=pointer]:
+                - /url: "#box-24-2-a"
+              - text: ) rather than study design labels. A mapping of features to some commonly used study design labels can be found in Reeves and colleagues (Reeves et al 2017).
+            - paragraph [ref=e222]: Including NRSI in a Cochrane review allows, in principle, the inclusion of non-randomized studies in which the use of an intervention occurs in the course of usual health care or daily life. These include interventions that a study participant chooses to take (e.g. an over-the-counter preparation or a health education session). Such studies also allow exposures to be studied that are not obviously ‘interventions’, such as nutritional choices, and other behaviours that may affect health. This introduces a grey area between evidence about effectiveness and aetiology.
+            - paragraph [ref=e223]: An intervention review needs to distinguish carefully between aetiological and effectiveness research questions related to a particular exposure. For example, nutritionists may be interested in the health-related effects of a diet that includes a minimum of five portions of fruit or vegetables per day (‘five-a-day’), an aetiological question. On the other hand, public health professionals may be interested in the health-related effects of interventions to promote a change in diet to include ‘five-a-day’, an effectiveness question. NRSI addressing the former type of question are often perceived as being more direct than randomized trials because of other differences between studies addressing these two kinds of question (e.g. compared with the randomized trials, NRSI of health behaviours may be able to investigate longer durations of follow-up and outcomes than become apparent in the short term). However, it is important to appreciate that they are addressing fundamentally different research questions. Cochrane reviews target effects of interventions, and interventions have a defined start time.
+            - paragraph [ref=e224]: This chapter has been prepared by the Cochrane Non-Randomized Studies of Interventions Methods Group (NRSMG). It aims to describe the particular challenges that arise if NRSI are included in a Cochrane review. Where evidence or established theory indicates a suitable strategy, we propose this strategy; where it does not, we sometimes offer our recommendations about what to do. Where we do not make any recommendations, we aim to set out the pros and cons of alternative actions and to identify questions for further methodological research.
+            - paragraph [ref=e225]:
+              - text: Review authors who are considering including NRSI in a Cochrane review should not start with this chapter unless they are already familiar with the process of preparing a systematic review of randomized trials. The format and basic steps of a Cochrane review should be the same irrespective of the types of study included. The reader is referred to Chapters 1 to 15 of the
+              - emphasis [ref=e226]: Handbook
+              - text: for a detailed description of these steps. Every step in carrying out a systematic review is more difficult when NRSI are included and the review team should include one or more people with expert knowledge of the subject and of NRSI methods.
+            - heading "24.1.1 Why consider non-randomized studies of interventions?#section-24-1-1" [level=3] [ref=e227]
+            - paragraph [ref=e228]:
+              - text: Cochrane reviews of interventions have traditionally focused mainly on systematic reviews of randomized trials because they are more likely to provide unbiased information about the differential effects of alternative health interventions than NRSI. Reviews of NRSI are generally undertaken when the question of interest cannot be answered by a review of randomized trials. Broadly, we consider that there are two main justifications for including NRSI in a systematic review, covered by the flow diagram shown in
+              - link "Figure 24.1.a" [ref=e229] [cursor=pointer]:
+                - /url: "#figure-24-1-a"
+              - text: ":"
+            - list [ref=e230]:
+              - listitem [ref=e231]:
+                - text: To provide evidence of the effects (benefit or harm) of interventions that can feasibly be studied in randomized trials, but for which available randomized trials address the review question indirectly or incompletely (an element of the GRADE approach to assessing the certainty of the evidence, see
+                - link "Chapter 14, Section 14.2" [ref=e232] [cursor=pointer]:
+                  - /url: /authors/handbooks-and-manuals/handbook/current/chapter-14#section-14-2
+                - text: ) (Schünemann et al 2013). Such non-randomized evidence might address, for example, long-term or rare outcomes, different populations or settings, or ways of delivering interventions that better match the review question.
+              - listitem [ref=e233]:
+                - text: To provide evidence of the effects (benefit or harm) of interventions that
+                - emphasis [ref=e234]: cannot
+                - text: be randomized, or that are extremely unlikely to be studied in randomized trials. Such non-randomized evidence might address, for example, population-level interventions (e.g. the effects of legislation; (Macpherson and Spinks 2008) or interventions about which prospective study participants are likely to have strong preferences, preventing randomization (Li et al 2016).
+            - paragraph [ref=e235]: "A third justification for including NRSI in a systematic review is reasonable, but is unlikely to be a strong reason in the context of a Cochrane review:"
+            - list [ref=e236]:
+              - listitem [ref=e237]: To examine the case for undertaking a randomized trial by providing an explicit evaluation of the weaknesses of available NRSI. The findings of a review of NRSI may also be useful to inform the design of a subsequent randomized trial (e.g. through the identification of relevant subgroups).
+            - paragraph [ref=e238]: "Two other reasons sometimes described for including NRSI in systematic reviews are:"
+            - list [ref=e239]:
+              - listitem [ref=e240]: When an intervention effect is very large.
+              - listitem [ref=e241]: To provide evidence of the effects (benefit or harm) of interventions that can feasibly be studied in randomized trials, but for which only a small number of randomized trials is available (or likely to be available).
+            - paragraph [ref=e242]: We urge caution in invoking either of these justifications. Reason 4, that an effect is large, is implicitly a result-driven or post-hoc argument, since some evidence or opinion would need to be available to inform the judgement about the likely size of the effect. Whilst it can be argued that large effects are less likely to be completely explained by bias than small effects (Glasziou et al 2007), clinical and economic decisions still need to be informed by unbiased estimates of the magnitude of these large effects (Reeves 2006). Randomized trials are the appropriate design to quantify large effects (and the trials need not be large if the effects are truly large). Of course, there may be ethical opposition to randomized trials of interventions already suspected to be associated with a large benefit, making it difficult to randomize participants, and interventions postulated to have large effects may also be difficult to randomize for other reasons (e.g. surgery versus no surgery). However, the justification for a systematic review including NRSI in these circumstances can be classified as reason 2 above (i.e. interventions that are unlikely to be randomized).
+            - paragraph [ref=e243]:
+              - text: The appropriateness of reason 5 depends to a large extent on expectations of how the review will be used in practice. Most Cochrane reviews seek to identify highly trustworthy evidence (typically only randomized trials) and if none is found then the review can be published as an ‘empty review’. However, as Cochrane reviews also seek to inform clinical and policy decisions, it can be necessary to draw on the ‘best available’ evidence rather than the ‘highest tier’ of evidence for questions that have a high priority. While acknowledging the priority to inform decisions, it remains important that the challenges associated with appraising, synthesizing and interpreting evidence from NRSI, as discussed in the remainder of this chapter, are well-appreciated and addressed in this situation. See also Section
+              - link "24.2.1.3" [ref=e244] [cursor=pointer]:
+                - /url: "#section-24-2-1-3"
+              - text: for further discussion of these issues. Reason 5 is a less appropriate justification in a review that is not a priority topic where there is a paucity of evidence from randomized trials alone; in such instances, the potential of NRSI to inform the review question directly and without a critical risk of bias are paramount.
+            - paragraph [ref=e245]:
+              - text: Review authors may need to apply different eligibility criteria in order to answer different review questions about harms as well as benefits (
+              - link "Chapter 19, Section 19.2.2" [ref=e246] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-19#section-19-2-2
+              - text: ). In some reviews the situation may be still more complex, since NRSI specified to answer questions about benefits may have different design features from NRSI specified to answer questions about harms (see Section
+              - link "24.2" [ref=e247] [cursor=pointer]:
+                - /url: "#section-24-2"
+              - text: ). A further complexity arises in relation to the specification of eligible NRSI in the protocol and the desire to avoid an empty review (depending on the justification for including NRSI).
+            - paragraph [ref=e248]:
+              - text: Whenever review authors decide that NRSI are required to answer one or more review questions, the review protocol must specify appropriate methods for reviewing NRSI. If a review aims to include both randomized trials and NRSI, the protocol must specify methods appropriate for both. Since methods for reviewing NRSI can be complex,
+              - strong [ref=e249]: we recommend that review authors scope the available NRSI evidence
+              - text: ", after registering a title but in advance of writing a protocol, allowing review authors to check that relevant NRSI exist and to specify NRSI with the most appropriate study design features in the protocol (Reeves et al 2013). If the registered title is broadly conceived, this may require detailed review questions to be formulated in advance of scoping: these are the"
+              - strong [ref=e250]: PICOs for each synthesis
+              - text: as discussed in
+              - link "Chapter 3, Section 3.2" [ref=e251] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-03#section-3-2
+              - text: . Scoping also allows the directness of the available evidence to be assessed against specific review questions (see
+              - link "Figure 24.1.a" [ref=e252] [cursor=pointer]:
+                - /url: "#figure-24-1-a"
+              - text: ). Basing protocol decisions on scoping creates a small risk that different kinds of studies are found to be necessary at a later stage to answer the review questions. In such instances, we recommend completing the review as specified and including other studies in a planned update, to allow timelines for the completion of a review to be set.
+            - paragraph [ref=e253]: An alternative approach is to write a protocol that describes the review methods to be used for both randomized trials and NRSI (and all types of NRSI) and to specify the study design features of eligible NRSI after carrying out searches for both types of study. We recommend against this approach in a Cochrane review, largely to minimize the work required to write the protocol, carry out searches and examine study reports, and to allow timelines for the completion of a review to be set.
+            - paragraph [ref=e254]:
+              - strong [ref=e255]: Figure 24.1.a
+              - text: Algorithm to decide whether a review should include non-randomized studies of an intervention or not
+            - generic [ref=e256]: Image
+            - heading "24.1.2 Key issues about the inclusion of non-randomized studies of interventions in a Cochrane review#section-24-1-2" [level=3] [ref=e257]
+            - paragraph [ref=e258]:
+              - text: Randomized trials are the preferred design for studying the effects of healthcare interventions because, in most circumstances, a high-quality randomized trial is the study design that is least likely to be biased. All Cochrane reviews must consider the risk of bias in individual primary studies, whether randomized trials or NRSI (see
+              - link "Chapter 7" [ref=e259] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-07
+              - text: ","
+              - link "Chapter 8" [ref=e260] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-08
+              - text: and
+              - link "Chapter 25" [ref=e261] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-25
+              - text: ). Some biases apply to both randomized trials and NRSI. However, some biases are specific (or particularly important) to NRSI, such as biases due to confounding or selection of participants into the study (see
+              - link "Chapter 25" [ref=e262] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-25
+              - text: ). The key advantage of a high-quality randomized trial is its ability to estimate the causal relationship between an experimental intervention (relative to a comparator) and outcome. Review authors will need to consider (i) the strengths of the design features of the NRSI that have been used (such as noting their potential to estimate causality, in particular by inspecting the assumptions that underpin such estimation); and (ii) the execution of the studies through a careful assessment of their risk of bias. The review team should be constituted so that it can judge suitability of the design features of included studies and implement a careful assessment of risk of bias.
+            - paragraph [ref=e263]: Potential biases are likely to be greater for NRSI compared with randomized trials because some of the protections against bias that are available for randomized trials are not established for NRSI. Randomization is an obvious example. Randomization aims to balance prognostic factors across intervention groups, thus preventing confounding (which occurs when there are common causes of intervention group assignment and outcome). Other protections include a detailed protocol and a pre-specified statistical analysis plan which, for example, should define the primary and secondary outcomes to be studied, their derivation from measured variables, methods for managing protocol deviations and missing data, planned subgroup and sensitivity analyses and their interpretation.
+            - heading "24.1.3 The importance of a protocol for a Cochrane review that includes non-randomized studies of interventions#section-24-1-3" [level=3] [ref=e264]
+            - paragraph [ref=e265]:
+              - link "Chapter 1 (Section 1.5)" [ref=e266] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-01#section-1-5
+              - text: establishes the importance of writing a protocol before carrying out the review. Because the methodological choices made during a review including NRSI are complex and may affect the review findings, a protocol is even more important for such a review. The rationale for including NRSI (see Section
+              - link "24.1.1" [ref=e267] [cursor=pointer]:
+                - /url: "#section-24-1-1"
+              - text: ) should be documented in the protocol. The protocol should include much more detail than for a review of randomized trials, pre-specifying key methodological decisions about the methods to be used and the analyses that are planned. The protocol needs to specify details that are not as relevant for randomized trials (e.g. potential confounding domains, important co-interventions, details of the risk-of-bias assessment and analysis of the NRSI), as well as providing more detail about standard steps in the review process that are more difficult when including NRSI (e.g. specification of eligibility criteria and the search strategy for identifying eligible studies).
+            - paragraph [ref=e268]:
+              - text: We recognize that it may not be possible to pre-specify all decisions about the methods used in a review. Nevertheless, review authors should aim to make all decisions about the methods for the review without reference to the
+              - emphasis [ref=e269]: findings
+              - text: of primary studies, and report methodological decisions that had to be made or modified after collecting data about the study findings.
+            - heading "24.2 Developing criteria for including non-randomized studies of interventions#section-24-2" [level=2] [ref=e270]
+            - heading "24.2.1 What is different when including non-randomized studies of interventions?#section-24-2-1" [level=3] [ref=e271]
+            - heading "24.2.1.1 Evaluating benefits and harms#section-24-2-1-1" [level=4] [ref=e272]
+            - paragraph [ref=e273]:
+              - text: Cochrane reviews aim to quantify the effects of healthcare interventions, both beneficial and harmful, and both expected and unexpected. The expected benefits of an intervention can often be assessed in randomized trials. Randomized trials may also report some of the harms of an intervention, either those that were expected and which a trial was designed to assess, or those that were not expected but which were collected in a trial as part of standard monitoring of safety. However, many serious harms of an intervention are rare or do not arise during the follow-up period of randomized trials, preventing randomized trials from providing high-quality evidence about these effects, even when combined in a meta-analysis (see
+              - link "Chapter 19" [ref=e274] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-19
+              - text: for further discussion of adverse events). Therefore, one of the most important reasons to include NRSI in a review is to assess potential unexpected or rare harms of interventions (reason 1 in Section
+              - link "24.1.1" [ref=e275] [cursor=pointer]:
+                - /url: "#section-24-1-1"
+              - text: ).
+            - paragraph [ref=e276]: Although widely accepted criteria for selecting appropriate studies for evaluating rare or long-term adverse and unexpected effects have not been established, some design features are preferred to reduce the risk of bias. In cohort studies, a preferred design feature is the ascertainment of outcomes of interest (e.g. an adverse event) from the onset of an exposure (i.e. the start of intervention); these are sometimes referred to as inception cohorts. The relative strengths and weaknesses of different study design features do not differ in principle between beneficial and harmful outcomes, but the choice of study designs to include may depend on both the frequency of an outcome and its importance. For example, for some rare or delayed adverse outcomes only case series or case-control studies may be available. NRSI with some study design features that are more susceptible to bias may be acceptable for evaluation of serious adverse events in the absence of better evidence, but the risk of bias must still be assessed and reported.
+            - paragraph [ref=e277]:
+              - text: Confounding (see
+              - link "Chapter 25, Section 25.2.1" [ref=e278] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-25#section-25-2-1
+              - text: ) may be less of a threat to the validity of a review when researching rare harms or unexpected effects of interventions than when researching expected effects, since it may be argued that ‘confounding by indication’ mainly influences treatment decisions with respect to outcomes about which the clinicians are primarily concerned. However, confounding can never be ruled out because the same factors that are confounders for the expected effects may also be direct confounders for the unexpected effects, or be correlated with factors that are confounders.
+            - paragraph [ref=e279]:
+              - text: A related issue is the need to distinguish between
+              - emphasis [ref=e280]: quantifying
+              - text: and
+              - emphasis [ref=e281]: detecting
+              - text: an effect of an intervention. Quantifying the intended benefits of an intervention – maximizing the precision of the estimate and minimizing susceptibility to bias – is critical when weighing up the relative merits of alternative interventions for the same condition. A review should also try to quantify the harms of an intervention, minimizing susceptibility to bias as far as possible. However, if a review can establish beyond reasonable doubt that an intervention causes a particular harm, the precision and susceptibility to bias of the estimated effect may not be essential. In other words, the seriousness of the harm may outweigh any benefit from the intervention. This situation is more likely to occur when there are competing interventions for a condition.
+            - heading "24.2.1.2 Including both randomized trials and non-randomized studies of interventions#section-24-2-1-2" [level=4] [ref=e282]
+            - paragraph [ref=e283]:
+              - text: When both randomized trials and NRSI are identified that appear to address the same underlying research question, it is important to check carefully that this is indeed the case. There are often systematic differences between randomized trials and NRSI in the PICO elements (MacLehose et al 2000), which may become apparent when considering the directness (e.g. applicability or generalizability) of the primary studies (see
+              - link "Chapter 14, Section 14.2.2" [ref=e284] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-14#section-14-2-2
+              - text: ).
+            - paragraph [ref=e285]:
+              - text: A NRSI can be viewed as an attempt to emulate a hypothetical randomized trial answering the same question. Hernán and Robins have referred to this as a ‘target’ trial; the target trial is usually a hypothetical pragmatic randomized trial comparing the health effects of the same interventions, conducted on the same participant group and without features putting it at risk of bias (Hernán and Robins 2016). Importantly, a target randomized trial need not be feasible or ethical. This concept is the foundation of the risk-of-bias assessment for NRSI, and helps a review author to distinguish between the risk of bias in a NRSI (see
+              - link "Chapter 25" [ref=e286] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-25
+              - text: ) and a lack of directness of a NRSI with respect to the review question (see
+              - link "Chapter 14, Section 14.2.2" [ref=e287] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-14#section-14-2-2
+              - text: ). A lack of directness among randomized trials may be a motivation for including NRSI that address the review question more directly. In this situation, review authors need to recognize that discrepancies in intervention effects between randomized trials and NRSI (and, potentially, between NRSI with different study design features) may arise either from differential risk of bias or from differences in the specific PICO questions evaluated by the primary studies.
+            - paragraph [ref=e288]:
+              - text: A single review may include different types of study to address different outcomes, for example, randomized trials for evaluating benefits and NRSI to evaluate harms; see Section
+              - link "24.2.1.1" [ref=e289] [cursor=pointer]:
+                - /url: "#section-24-2-1-1"
+              - text: and
+              - link "Chapter 19. Section 19.2" [ref=e290] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-19#section-19-2
+              - text: . Scoping in advance of writing a protocol should allow review authors to identify whether NRSI are required to address directly one or more of the PICO questions for a review comparison. In time, as a review is updated, the NRSI may be dropped if randomized trials addressing these questions become available.
+            - heading "24.2.1.3 Determining which non-randomized studies of interventions to include#section-24-2-1-3" [level=4] [ref=e291]
+            - paragraph [ref=e292]:
+              - text: A randomized trial is a prospective, experimental study design specifically involving random allocation of participants to interventions. Although there are variations in randomized trial design (see
+              - link "Chapter 23" [ref=e293] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-23
+              - text: ), they constitute a distinctive study category. By contrast, NRSI embrace a number of fundamentally different design principles, several of which were originally conceived in the context of aetiological epidemiology; some studies combine different principles. As we discuss in Section
+              - link "24.2.2" [ref=e294] [cursor=pointer]:
+                - /url: "#section-24-2-2"
+              - text: ", study design labels such as ‘cohort’ or ‘prospective study’ are not consistently applied. The diversity of NRSI designs raises two related questions. First, should all NRSI relevant to a PICO question for a planned synthesis be included in a review, irrespective of their study design features? Second, if review authors do not include all NRSI, what study design features should be used as criteria to decide which NRSI to include and which to exclude?"
+            - paragraph [ref=e295]:
+              - text: NRSI vary with respect to their intrinsic ability to estimate the causal effect of an intervention (Reeves et al 2017, Tugwell et al 2017). Therefore, to reach reliable conclusions, review authors should include only ‘strong’ NRSI that can estimate causality with minimal risk of bias. It is not helpful to include primary studies in a review when the results of the studies are highly likely to be biased even if there is no better evidence (except for justification 3, i.e. to examine the case for performing a randomized trial by describing the weakness of the NRSI evidence; see Section
+              - link "24.1.1" [ref=e296] [cursor=pointer]:
+                - /url: "#section-24-1-1"
+              - text: "). This is because a misleading effect estimate from a systematic review may be more harmful to future patients than no estimate at all, particularly if the people using the evidence to make decisions are unaware of its limitations (Doll 1993, Peto et al 1995). Systematic reviews have a privileged status in the evidence base (Reeves et al 2013), typically sitting between primary research studies and guidelines (which frequently cite them). There may be long-term undesirable consequences of reviewing evidence when it is inadequate: an evidence synthesis may make it less likely that less biased research will be carried out in the future, increasing the risk that more poorly informed decisions will be made than would otherwise have been the case (Stampfer and Colditz 1991, Siegfried et al 2005)."
+            - paragraph [ref=e297]:
+              - text: There is not currently a general framework for deciding which kinds of NRSI will be used to answer a specific PICO question. One possible strategy is to limit included NRSI to those that have used a strong design (NRSI with specified design features; (Reeves et al 2017, Tugwell et al 2017). This should give reasonably valid effect estimates, subject to assessment of risk of bias. An alternative strategy is to include the best available NRSI (i.e. those with the strongest design features among those that have been carried out) to answer the PICO question. In this situation, we recommend scoping available NRSI in advance of finalizing study eligibility for a specific review question and defining eligibility with respect to study design features (Reeves et al 2017). Widespread adoption of the first strategy might result in reviews that consistently include NRSI with the same design features, but some reviews would include no studies at all. The second strategy would lead to different reviews including NRSI with different study design features according to what is available. Whichever strategy is adopted, it is important to explain the choice of included studies in the protocol. For example, review authors might be justified in using different eligibility criteria when reviewing the harms, compared with the benefits, of an intervention (see
+              - link "Chapter 19, Section 19.2" [ref=e298] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-19#section-19-2
+              - text: ).
+            - paragraph [ref=e299]: We advise caution in assessing NRSI according to existing ‘evidence hierarchies’ for studies of effectiveness (Eccles et al 1996, National Health and Medical Research Council 1999, Oxford Centre for Evidence-based Medicine 2001). These appear to have arisen largely by applying hierarchies for aetiological research questions to effectiveness questions and refer to study design labels. NRSI used for studying the effects of interventions are very diverse and complex (Shadish et al 2002) and may not be easily assimilated into existing evidence hierarchies. NRSI with different study design features are susceptible to different biases, and it is often unclear which biases have the greatest impact and how they vary between healthcare contexts. We recommend including at least one expert with knowledge of the subject and NRSI methods (with previous experience of estimating an intervention effect from NRSI similar to the ones of interest) on a review team to help to address these complexities.
+            - heading "24.2.2 Guidance and resources available to support review authors#section-24-2-2" [level=3] [ref=e300]
+            - paragraph [ref=e301]:
+              - text: Review authors should scope the available NRSI evidence between deciding on the specific synthesis PICOs that the review will address and finalizing the review protocol (see Section
+              - link "24.1.1" [ref=e302] [cursor=pointer]:
+                - /url: "#section-24-1-1"
+              - text: ). Review authors may need to consult with stakeholders about the specific PICO questions of interest to ensure that scoping is informative. With this information, review authors can then use the algorithm (
+              - link "Figure 24.1.a" [ref=e303] [cursor=pointer]:
+                - /url: "#figure-24-1-a"
+              - text: ) to decide whether the review needs to include NRSI and for which questions, enabling review authors to justify their decision(s) to include or exclude NRSI in their protocol. It will be important to ensure that the review team includes informed methodologists. Review authors intending to review the adverse effects (harms) of an intervention should consult
+              - link "Chapter 19" [ref=e304] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-19
+              - text: .
+            - paragraph [ref=e305]:
+              - text: "We recommend that review authors use explicit study design features (NB: not study design labels) when deciding which types of NRSI to include in a review. A checklist of study design features was first drawn up for the designs most frequently used to evaluate healthcare interventions (Higgins et al 2013). This checklist has since been revised to include designs often used to evaluate health systems (Reeves et al 2017) and combines the previous two checklists (for studies with individual and cluster-level allocation, respectively). Thirty-two items are grouped under seven headings, characterizing key features of strong and weak study designs ("
+              - link "Box 24.2.a" [ref=e306] [cursor=pointer]:
+                - /url: "#box-24-2-a"
+              - text: ). The paper also sets out which features are associated with NRSI study design labels (acknowledging that these labels can be used inconsistently). We propose that the checklist be used in the processes of data collection and as part of the assessment of the studies (Sections
+              - link "24.4.2" [ref=e307] [cursor=pointer]:
+                - /url: "#section-24-4-2"
+              - text: and
+              - link "24.6.2" [ref=e308] [cursor=pointer]:
+                - /url: "#section-24-6-2"
+              - text: ).
+            - paragraph [ref=e309]: Some Cochrane reviews have limited inclusion of NRSI by study design labels, sometimes in combination with considerations of methodological quality. For example, Cochrane Effective Practice and Organisation of Care accepts protocols that include interrupted time series (ITS) and controlled before-and-after (CBA) studies, and specifies some minimum criteria for these types of studies. The risks of using design labels are highlighted by a recent review that showed that Cochrane reviews inconsistently labelled CBA and ITS studies, and included studies that used these labels in highly inconsistent ways (Polus et al 2017). We believe that these issues will be addressed by applying the study feature checklist.
+            - paragraph [ref=e310]: "Our proposal is that:"
+            - list [ref=e311]:
+              - listitem [ref=e312]: the review team decides which study design features are desirable in a NRSI to address a specific PICO question;
+              - listitem [ref=e313]: scoping will indicate the study design features of the NRSI that are available; and
+              - listitem [ref=e314]: the review team sets eligibility criteria based on study design features that represent an appropriate balance between the priority of the question and the likely strength of the available evidence.
+            - paragraph [ref=e315]:
+              - text: When both randomized trials and NRSI of an intervention exist in relation to a specific PICO question and, for one or more of the reasons given in Section
+              - link "24.1.1" [ref=e316] [cursor=pointer]:
+                - /url: "#section-24-1-1"
+              - text: ", both are defined as eligible, the results for randomized trials and for NRSI should be presented and analysed separately. Alternatively, if there is an adequate number of randomized trials to inform the main analysis for a review question, comments about relevant NRSI can be included in the Discussion section of a review although the reader needs to be reassured that NRSI studies are not selectively cited."
+            - paragraph [ref=e317]:
+              - strong [ref=e318]: Box 24.2.a
+              - text: "Checklist of study features. Responses to each item should be recorded as: yes, no, or can’t tell (Reeves et al 2017). Reproduced with permission of Elsevier"
+            - table [ref=e319]:
+              - rowgroup [ref=e320]:
+                - row [ref=e321]:
+                  - cell [ref=e322]:
+                    - paragraph [ref=e323]: "1. Was the intervention/comparator (answer ‘yes’ to more than one item, if applicable):"
+                    - list [ref=e324]:
+                      - listitem [ref=e325]: allocated to (provided for/administered to/chosen by) individuals?
+                      - listitem [ref=e326]:
+                        - text: allocated to (provided for/administered to/chosen by) clusters of individuals?
+                        - superscript [ref=e327]: a
+                      - listitem [ref=e328]:
+                        - text: clustered in the way it was provided (by practitioner or organizational unit)?
+                        - superscript [ref=e329]: b
+                    - paragraph [ref=e330]: "2. Were outcome data available (answer ‘yes’ to only one item):"
+                    - list [ref=e331]:
+                      - listitem [ref=e332]: after intervention / comparator only (same individuals)?
+                      - listitem [ref=e333]: after intervention/comparator only (not all same individuals)?
+                      - listitem [ref=e334]: before (once) AND after intervention/comparator (same individuals)?
+                      - listitem [ref=e335]: before (once) AND after intervention/comparator (not all same individuals)?
+                      - listitem [ref=e336]: multiple times before AND multiple times after intervention/comparator (same individuals)?
+                      - listitem [ref=e337]: multiple times before AND multiple times after intervention/comparator (not all same individuals)?
+                    - paragraph [ref=e338]: "3. Was the intervention effect estimated by (answer ‘yes’ to only one item):"
+                    - list [ref=e339]:
+                      - listitem [ref=e340]: change over time (same individuals at different time-points)?
+                      - listitem [ref=e341]: change over time (not all same individuals at different time-points)?
+                      - listitem [ref=e342]:
+                        - text: difference between groups (of individuals or clusters receiving either intervention or comparator)
+                        - superscript [ref=e343]: c
+                        - text: "?"
+                    - paragraph [ref=e344]: "4. Did the researchers aim to control for confounding (design or analysis) (answer ‘yes’ to only one item):"
+                    - list [ref=e345]:
+                      - listitem [ref=e346]: using methods that control in principle for any confounding?
+                      - listitem [ref=e347]: using methods that control in principle for time invariant unobserved confounding?
+                      - listitem [ref=e348]: using methods that control only for confounding by observed covariates?
+                    - paragraph [ref=e349]:
+                      - text: "5. Were groups of individuals or clusters formed by (answer ‘yes’ to more than one item, if applicable):"
+                      - superscript [ref=e350]: d
+                    - list [ref=e351]:
+                      - listitem [ref=e352]: randomization?
+                      - listitem [ref=e353]: quasi-randomization?
+                      - listitem [ref=e354]: explicit rule for allocation based on a threshold for a variable measured on a continuous or ordinal scale or boundary (in conjunction with identifying the variable dimension, below)?
+                      - listitem [ref=e355]: some other action of researchers?
+                      - listitem [ref=e356]: time differences?
+                      - listitem [ref=e357]: location differences?
+                      - listitem [ref=e358]: healthcare decision makers/practitioners?
+                      - listitem [ref=e359]: participants’ preferences?
+                      - listitem [ref=e360]: policy maker?
+                      - listitem [ref=e361]:
+                        - text: on the basis of outcome?
+                        - superscript [ref=e362]: e
+                      - listitem [ref=e363]: some other process? (specify)
+                    - paragraph [ref=e364]: "6. Were the following features of the study carried out after the study was designed (answer ‘yes’ to more than one item, if applicable):"
+                    - list [ref=e365]:
+                      - listitem [ref=e366]: characterization of individuals/clusters before intervention?
+                      - listitem [ref=e367]:
+                        - text: actions/choices leading to an individual/cluster becoming a member of a group?
+                        - superscript [ref=e368]: e
+                      - listitem [ref=e369]: assessment of outcomes?
+                    - paragraph [ref=e370]: "7. Were the following variables measured before intervention (answer ‘yes’ to more than one item, if applicable):"
+                    - list [ref=e371]:
+                      - listitem [ref=e372]: potential confounders?
+                      - listitem [ref=e373]: outcome variable(s)?
+                    - paragraph [ref=e374]:
+                      - superscript [ref=e375]: a
+                      - text: This item describes ‘explicit’ clustering. In randomized controlled trials, participants can be allocated individually or by virtue of ‘belonging to a cluster such as a primary care practice or a village.
+                    - paragraph [ref=e376]:
+                      - superscript [ref=e377]: b
+                      - text: This item describes ‘implicit’ clustering. In randomized controlled trials, participants can be allocated individually but with the intervention being delivered in clusters (e.g. group cognitive therapy); similarly, in a cluster-randomized trial (by general practice), the provision of an intervention could also be clustered by therapist, with several therapists providing ‘group’ therapy.
+                    - paragraph [ref=e378]:
+                      - superscript [ref=e379]: c
+                      - text: A study should be classified as ‘yes’ for this feature, even if it involves comparing the extent of change over time between groups.
+                    - paragraph [ref=e380]:
+                      - superscript [ref=e381]: d
+                      - text: The distinction between these options is to do with the exogeneity of the allocation.
+                    - paragraph [ref=e382]:
+                      - superscript [ref=e383]: e
+                      - text: For (nested) case-control studies, group refers to the case/control status of an individual. This option is not applicable when interventions are allocated to (provided for/administered to/chosen by) clusters.
+            - heading "24.3 Searching for non-randomized studies of interventions#section-24-3" [level=2] [ref=e384]
+            - heading "24.3.1 What is different when including non-randomized studies of interventions?#section-24-3-1" [level=3] [ref=e385]
+            - heading "24.3.1.1 Identifying non-randomized studies in searches#section-24-3-1-1" [level=4] [ref=e386]
+            - paragraph [ref=e387]:
+              - text: Searching for NRSI is less straightforward than searching for randomized trials. A broad search strategy – with search strings for the population and disease characteristics, the intervention and possibly the comparator – can potentially identify all evidence about an intervention. When a review aims to include randomized trials only, various approaches are available to focus the search strategy towards randomized trials (see
+              - link "Chapter 4, Section 4.4" [ref=e388] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-04#section-4-4
+              - text: "):"
+            - list [ref=e389]:
+              - listitem [ref=e390]: implement the search within resources, such as the Cochrane Central Register of Controlled Trials (CENTRAL), that are ‘rich’ in randomized trials;
+              - listitem [ref=e391]: use methodological filters and indexing fields, such as publication type in MEDLINE, to limit searches to studies that are likely to be randomized trials; and
+              - listitem [ref=e392]: search trials registers.
+            - paragraph [ref=e393]: Restricting the search to NRSI with specific study design features is more difficult. Of the above approaches, only 1 is likely to be helpful. Some Cochrane review Groups maintain specialized trials registers that also include NRSI, only some of which will also be found in CENTRAL, and authors of Cochrane reviews can search these registers where they are likely to be relevant (e.g. the register of Cochrane Effective Practice and Organisation of Care). There are no databases of NRSI similar to CENTRAL.
+            - paragraph [ref=e394]:
+              - text: Some review authors have tried to develop and validate methodological filters for NRSI (strategy 2) but with limited success because NRSI design labels are not reliably indexed by bibliographic databases and are used inconsistently by authors of primary studies (Wieland and Dickersin 2005, Fraser et al 2006, Furlan et al 2006). Furthermore, study design features, which are the preferred approach to determining eligibility of NRSI for a review, suffer from the same problems. Review authors have also sought to optimize search strategies for adverse effects (see
+              - link "Chapter 19, Section 19.3" [ref=e395] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-19#section-19-3
+              - text: ) (Golder et al 2006c, Golder et al 2006b). Because of the time-consuming nature of systematic reviews that include NRSI, attempts to develop search strategies for NRSI have not investigated large numbers of review questions. Therefore, review authors should be cautious about assuming that previous strategies can be applied to new topics.
+            - paragraph [ref=e396]: Finally, although trials registers such as ClinicalTrials.gov do include some NRSI, their coverage is very low so strategy 3 is unlikely to be very fruitful.
+            - paragraph [ref=e397]: Searching using ‘snowballing’ methods may be helpful, if one or more publications of relevance or importance are known (Wohlin 2014), although it is likely to identify other evidence about the research question in general rather than studies with similar design features.
+            - heading "24.3.1.2 Non-reporting biases for non-randomized studies#section-24-3-1-2" [level=4] [ref=e398]
+            - paragraph [ref=e399]:
+              - text: We are not aware of evidence that risk of bias due to missing evidence affects randomized trials and NRSI differentially. However, it is difficult to believe that publication bias could affect NRSI
+              - emphasis [ref=e400]: less
+              - text: than randomized trials, given the increasing number of safeguards associated with carrying out and reporting randomized trials that act to prevent reporting biases (e.g. pre-specified protocols, ethical approval including progress and final reports, the CONSORT statement (Moher et al 2001), trials registers and indexing of publication type in bibliographic databases). These safeguards are much less applicable to NRSI, which may not have been executed according to a pre-specified protocol, may not require explicit ethical approval, are unlikely to be registered, and do not always have a research sponsor or funder. The likely magnitude and determinants of publication bias for NRSI are not known.
+            - heading "24.3.1.3 Practical issues in selecting non-randomized studies for inclusion#section-24-3-1-3" [level=4] [ref=e401]
+            - paragraph [ref=e402]:
+              - text: Section
+              - link "24.2.1.3" [ref=e403] [cursor=pointer]:
+                - /url: "#section-24-2-1-3"
+              - text: points out that NRSI include diverse study design features, and that there is difficulty in categorizing them. Assuming that review authors set specific criteria against which potential NRSI should be assessed for eligibility (e.g. study features), many of the potentially eligible NRSI will report insufficient information to allow them to be classified.
+            - paragraph [ref=e404]: There is a further problem in defining exactly when a NRSI comes into existence. For example, is a cohort study that has collected data on the interventions and outcome of interest, but that has not examined their association, an eligible NRSI? Is computer output in a filing cabinet that includes a calculated odds ratio for the relevant association an eligible NRSI? Consequently, it is difficult to define a ‘finite population of NRSI’ for a particular review question. Many NRSI that have been done may not be traceable at all, that is, they are not to be found even in the proverbial ‘bottom drawer’.
+            - paragraph [ref=e405]:
+              - text: Given these limitations of NRSI evidence, it is tempting to question the benefits of comprehensive searching for NRSI. It is possible that the studies that are the hardest to find are the most biased – if being hard to find is associated with design features that are susceptible to bias – to a greater extent than has been shown for randomized trials for some topics. It is likely that search strategies can be developed that identify eligible studies with reasonable precision (see
+              - link "Chapter 4, Section 4.4.3" [ref=e406] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-04#section-4-4-3
+              - text: ) and are replicable, but which are not comprehensive (i.e. lack sensitivity). Unfortunately, the risk of bias to review findings with such strategies has not been researched and their acceptability would depend on pre-specifying the strategy without knowledge of influential results, which would be difficult to achieve.
+            - heading "24.3.2 Guidance and resources available to support review authors#section-24-3-2" [level=3] [ref=e407]
+            - paragraph [ref=e408]:
+              - text: We do not recommend limiting search strategies by index terms relating to study design labels. However, review authors may wish to contact information specialists with expertise in searching for NRSI, researchers who have reported some success in developing efficient search strategies for NRSI (see Section
+              - link "24.3.1" [ref=e409] [cursor=pointer]:
+                - /url: "#section-24-3-1"
+              - text: ) and other review authors who have carried out Cochrane reviews (or other systematic reviews) of NRSI for review questions similar to their own.
+            - paragraph [ref=e410]:
+              - text: When searching for NRSI, review authors are advised to search for studies investigating all effects of an intervention and not to limit search strategies to specific outcomes (
+              - link "Chapter 4, Section 4.4.2" [ref=e411] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-04#section-4-4-2
+              - text: ). When searching for NRSI of specific rare or long-term (usually adverse or unintended) outcomes of an intervention, including free text and MeSH terms for specific outcomes in the search strategy may be justified (see
+              - link "Chapter 19, Section 19.3" [ref=e412] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-19#section-19-3
+              - text: ).
+            - paragraph [ref=e413]:
+              - text: Review authors should check with their Cochrane review Group editors whether the Group-specific register includes NRSI with particular study design features and should seek the advice of information retrieval experts within the Group and in the Information Retrieval Methods Group (see also
+              - link "Chapter 4" [ref=e414] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-04
+              - text: ).
+            - heading "24.4 Selecting studies and collecting data#section-24-4" [level=2] [ref=e415]
+            - heading "24.4.1 What is different when including non-randomized studies?#section-24-4-1" [level=3] [ref=e416]
+            - paragraph [ref=e417]: Search results obtained using search strategies without study design filters are often much more numerous, and contain large numbers of irrelevant records. Also, abstracts of NRSI reports often do not provide adequate detail about NRSI study design features (which are likely to be required to judge eligibility), or some secondary outcomes measured (such as adverse effects). Therefore, more so than when reviewing randomized trials, very many full reports of studies may need to be obtained and read in order to identify eligible studies.
+            - paragraph [ref=e418]:
+              - text: Review authors need to collect the same types of data required for a systematic review of randomized trials (see
+              - link "Chapter 5, Section 5.3" [ref=e419] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-05#section-5-3
+              - text: ) and will also need to collect data specific to the NRSI. For a NRSI, review authors should extract the estimate of intervention effect together with a measure of precision (e.g. a confidence interval) and information about how the estimate was derived (e.g. the confounders controlled for). Relevant results can then be meta-analysed using standard software.
+            - paragraph [ref=e420]:
+              - strong [ref=e421]: If both unadjusted and adjusted intervention effects are reported, then adjusted effects should be preferred.
+              - text: It is straightforward to extract an adjusted effect estimate and its standard error for a meta-analysis if a single adjusted estimate is reported for a particular outcome in a primary NRSI. However, some NRSI report multiple adjusted estimates from analyses including different sets of covariates.
+              - strong [ref=e422]: If multiple adjusted estimates of intervention effect are reported, the one that is judged to minimize the risk of bias due to confounding should be chosen
+              - text: (see
+              - link "Chapter 25, Section 25.2.1" [ref=e423] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-25#section-25-2-1
+              - text: ). (Simple numerators and denominators, or means and standard errors, for intervention and control groups cannot control for confounding unless the groups have been matched on all important confounding domains at the design stage.)
+            - paragraph [ref=e424]: Anecdotally, the experience of review authors is that NRSI are poorly reported so that the required information is difficult to find, and different review authors may extract different information from the same paper. Data collection forms may need to be customized to the research question being investigated. Restricting included studies to those that share specific features can help to reduce their diversity and facilitate the design of customized data collection forms.
+            - paragraph [ref=e425]:
+              - text: As with randomized trials, results of NRSI may be presented using different measures of effect and uncertainty or statistical significance.
+              - strong [ref=e426]: Before concluding that information required to describe an intervention effect has not been reported, review authors should seek statistical advice about whether reported information can be transformed or used in other ways to provide a consistent effect measure across studies
+              - text: so that this can be analysed using standard software (see
+              - link "Chapter 6" [ref=e427] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-06
+              - text: ). Data collection sheets need to be able to handle the different kinds of information about study findings that review authors may encounter.
+            - heading "24.4.2 Guidance and resources available to support review authors#section-24-4-2" [level=3] [ref=e428]
+            - paragraph [ref=e429]: Data collection for each study needs to cover the following.
+            - list [ref=e430]:
+              - listitem [ref=e431]:
+                - text: Data about study design features to demonstrate the eligibility of included studies against criteria specified in the review protocol. The study design feature checklist can help to do this (see Section
+                - link "24.2.2" [ref=e432] [cursor=pointer]:
+                  - /url: "#section-24-2-2"
+                - text: ). When using this checklist, whether to decide on eligibility or for data extraction, the intention should be to document what researchers did in the primary studies, rather than what researchers called their studies or think they did. Further guidance on using the checklist is included with the description of the tool (Reeves et al 2017).
+              - listitem [ref=e433]:
+                - text: Variables measured in a study that characterize confounding domains of interest; the ROBINS-I tool provides a template for collecting this information (see
+                - link "Chapter 25, Section 25.3" [ref=e434] [cursor=pointer]:
+                  - /url: /authors/handbooks-and-manuals/handbook/current/chapter-25#section-25-3
+                - text: ) (Sterne et al 2016).
+              - listitem [ref=e435]:
+                - text: The availability of data for experimental and comparator intervention groups, and about the co-interventions; the ROBINS-I tool provides a template for collecting information about co-interventions (see
+                - link "Chapter 25" [ref=e436] [cursor=pointer]:
+                  - /url: /authors/handbooks-and-manuals/handbook/current/chapter-25
+                - text: ).
+              - listitem [ref=e437]: Data to characterize the directness with which the study addresses the review question (i.e. the PICO elements of the study). We recommend that review authors record this information, then apply a simple template that has been published for doing this (Schünemann et al 2013, Wells et al 2013), judging the directness of each element as ‘sufficient’ on a 4-point categorical scale. (This tool could be used for scoping and can be applied to randomized trials as well as NRSI.)
+              - listitem [ref=e438]:
+                - text: Data describing the study results (see Section
+                - link "24.6.1" [ref=e439] [cursor=pointer]:
+                  - /url: "#section-24-6-1"
+                - text: ). Capturing these data is likely to be challenging and data collection will almost certainly need to be customized to the research question being investigated. Review authors are strongly advised to pilot the methods they plan to use with studies that cover the expected diversity; developing the data collection form may require several iterations. It is almost impossible to finalize these forms in advance. Methods developed at the outset (e.g. forms or database) may need to be amended to record additional important information identified when appraising NRSI but overlooked at the outset. Review authors should record when required data are not available due to poor reporting, as well as data that are available. Data should be captured describing both unadjusted and adjusted intervention effects.
+            - heading "24.5 Assessing risk of bias in non-randomized studies#section-24-5" [level=2] [ref=e440]
+            - heading "24.5.1 What is different when including non-randomized studies?#section-24-5-1" [level=3] [ref=e441]
+            - paragraph [ref=e442]: Biases in non-randomized studies are a major threat to the validity of findings from a review that includes NRSI. Key challenges affecting NRSI include the appropriate consideration of confounding in the absence of randomization, less consistent development of a comprehensive study protocol in advance of the study, and issues in the analysis of routinely collected data.
+            - paragraph [ref=e443]: Assessing the risk of bias in a NRSI has long been a challenge and has not always been performed or performed well. Indeed, two studies of systematic reviews that included NRSI have commented that only a minority of reviews assessed the methodological quality of included studies (Audigé et al 2004, Golder et al 2006a).
+            - paragraph [ref=e444]: The process of assessing risk of bias in NRSI is hampered in practice by the quality of reporting of many NRSI, and – in most cases – by the lack of availability of a protocol. A protocol is a tool to protect against bias; when registered in advance of a study starting, it proves that aspects of study design and analysis were considered in advance of starting to recruit (or acquiring historical data), and that data definitions and methods for standardizing data collection were defined. Primary NRSI rarely report whether the methods are based on a protocol and, therefore, these protections often do not apply to NRSI. An important consequence of not having a protocol is the lack of constraint on researchers with respect to ‘cherry-picking’ outcomes, subgroups and analyses to report; this can be a source of bias even in randomized trials where protocols exist (Chan et al 2004).
+            - heading "24.5.2 Guidance and resources available to support review authors#section-24-5-2" [level=3] [ref=e445]
+            - paragraph [ref=e446]:
+              - text: The recommended tool for assessing risk of bias in NRSI included in Cochrane reviews is the ROBINS-I tool, described in detail in
+              - link "Chapter 25" [ref=e447] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-25
+              - text: (Sterne et al 2016). If review authors choose not to use ROBINS-I, they should demonstrate that their chosen method of assessment covers the range of biases assessed by ROBINS-I.
+            - paragraph [ref=e448]: The ROBINS-I tool involves some preliminary work when writing the protocol. Notably, review authors will need to specify important confounding domains and co-interventions. There is no established method for identifying a pre-specified set of important confounding domains. The list of potential confounding domains should not be generated solely on the basis of factors considered in primary studies included in the review (at least, not without some form of independent validation), since the number of suspected confounders is likely to increase over time (hence, older studies may be out of date) and researchers themselves may simply choose to measure confounders considered in previous studies. Rather, the list should be based on evidence (although undertaking a systematic review to identify all potential prognostic factors is extreme) and expert opinion from members of the review team and advisors with content expertise.
+            - paragraph [ref=e449]: The ROBINS-I assessment involves consideration of several bias domains. Each domain is judged as low, moderate, serious or critical risk of bias. A judgement of low risk of bias for a NRSI using ROBINS-I equates to a low risk-of-bias judgement for a high-quality randomized trial. Few circumstances around a NRSI are likely to give a similar level of protection against confounding as randomization, and few NRSI have detailed statistical analysis plans in advance of carrying out analyses. We therefore consider it very unlikely that any NRSI will be judged to be at low risk of bias overall.
+            - paragraph [ref=e450]: Although the bias domains are common to all types of NRSI, specific issues can arise for certain types of study, such as analyses of routinely collected data, pharmaco-epidemiological studies. Review authors are advised to consider carefully whether a methodologist with knowledge of the kinds of study to be included should be recruited to the review team to help to identify key areas of weakness.
+            - heading "24.6 Synthesis of results from non-randomized studies#section-24-6" [level=2] [ref=e451]
+            - heading "24.6.1 What is different when including non-randomized studies?#section-24-6-1" [level=3] [ref=e452]
+            - paragraph [ref=e453]:
+              - text: Review authors should expect greater heterogeneity in a systematic review of NRSI than a systematic review of randomized trials. This is partly due to the diverse ways in which non-randomized studies may be designed to investigate the effects of interventions, and partly due to the increased potential for methodological variation between primary studies and the resulting variation in their risk of bias. It is very difficult to interpret the implications of this diversity in the analysis of primary studies. Some methodological diversity may give rise to bias, for example different methods for measuring exposure and outcome, or adjustment for more versus fewer important confounding domains. There is no established method for assessing how, or the extent to which, these biases affect primary studies (but see
+              - link "Chapter 7" [ref=e454] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-07
+              - text: and
+              - link "Chapter 25" [ref=e455] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-25
+              - text: ).
+            - paragraph [ref=e456]:
+              - text: Unlike for randomized trials, it will usually be appropriate to analyse adjusted, rather than unadjusted, effect estimates (i.e. analyses should be selected that attempt to control for confounding). Review authors may have to choose between alternative adjusted estimates reported for one study and should choose the one that minimizes the risk of bias due to confounding (see
+              - link "Chapter 25, Section 25.2.1" [ref=e457] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-25#section-25-2-1
+              - text: ). In principle, any effect measure used in meta-analysis of randomized trials can also be used in meta-analysis of non-randomized studies (see
+              - link "Chapter 6" [ref=e458] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-06
+              - text: ). The odds ratio will commonly be used as it is the only effect measure for dichotomous outcomes that can be estimated from case-control studies, and is estimated when logistic regression is used to adjust for confounders.
+            - paragraph [ref=e459]: One danger is that a very large NRSI of poor methodological quality (e.g. based on routinely collected data) may dominate the findings of other smaller studies at less risk of bias (perhaps carried out using customized data collection). Review authors need to remember that the confidence intervals for effect estimates from larger NRSI are less likely to represent the true uncertainty of the observed effect than are the confidence intervals for smaller NRSI (Deeks et al 2003), although there is no way of estimating or correcting for this. Review authors should exclude from analysis any NRSI judged to be at critical risk of bias and may choose to include only studies that are at moderate or low risk of bias, specifying this choice a priori in the review protocol.
+            - heading "24.6.2 Guidance and resources available to support review authors#section-24-6-2" [level=3] [ref=e460]
+            - heading "24.6.2.1 Combining studies#section-24-6-2-1" [level=4] [ref=e461]
+            - paragraph [ref=e462]: If review authors judge that included NRSI are at low to moderate overall risk of biases and relatively homogeneous in other respects, then they may combine results across studies using meta-analysis (Taggart et al 2001). Decisions about combining results at serious risk of bias are more difficult to make, and any such syntheses will need to be presented with very clear warnings about the likelihood of bias in the findings. As stated earlier, results considered to be at critical risk of bias using the ROBINS-I tool should be excluded from analyses.
+            - paragraph [ref=e463]:
+              - text: Estimated intervention effects for NRSI with different study design features can be expected to be influenced to varying degrees by different sources of bias (see Section
+              - link "24.6" [ref=e464] [cursor=pointer]:
+                - /url: "#section-24-6"
+              - text: ). Results from NRSI with different combinations of study design features should be expected to differ systematically, resulting in increased heterogeneity. Therefore, we recommend that NRSI that have very different design features should be analysed separately.
+              - strong [ref=e465]: This recommendation implies that, for example, randomized trials and NRSI should not be combined in a meta-analysis
+              - text: ", and that cohort studies and case-control studies should not be combined in a meta-analysis if they address different research questions."
+            - paragraph [ref=e466]: An illustration of many of these points is provided by a review of the effects of some childhood vaccines on overall mortality. The authors analysed randomized trials separately from NRSI. However, they decided that the cohort studies and case-control studies were asking sufficiently similar questions to be combined in meta-analyses, while results from any NRSI that were judged to be at a very high risk of bias were excluded from the syntheses (Higgins et al 2016). In many other situations, it may not be reasonable to combine results from cohort studies and case-control studies.
+            - paragraph [ref=e467]:
+              - text: Meta-analysis methods based on estimates and standard errors, and in particular the generic inverse-variance method, will be suitable for NRSI (see
+              - link "Chapter 10, Section 10.3" [ref=e468] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-10#section-10-3
+              - text: ). Given that heterogeneity between NRSI is expected to be high because of their diversity, the random-effects meta-analysis approach should be the default choice; a clear rationale should be provided for any decision to use the fixed-effect method.
+            - heading "24.6.2.2 Analysis of heterogeneity#section-24-6-2-2" [level=4] [ref=e469]
+            - paragraph [ref=e470]:
+              - text: The exploration of possible sources of heterogeneity between studies should be part of any Cochrane review, and is discussed in detail in
+              - link "Chapter 10 (Section 10.11" [ref=e471] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-10#section-10-11
+              - text: ). Non-randomized studies may be expected to be more heterogeneous than randomized trials, given the extra sources of methodological diversity and bias. Researchers do not always make the same decisions concerning confounding factors, so the extent of residual confounding is an important source of heterogeneity between studies. There may be differences in the confounding factors considered, the method used to control for confounding and the precise way in which confounding factors were measured and included in analyses.
+            - paragraph [ref=e472]:
+              - text: The simplest way to display the variation in results of studies is by drawing a forest plot (see
+              - link "Chapter 10, Section 10.2.1" [ref=e473] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-10#section-10-2-1
+              - text: ). Providing that sufficient intervention effect estimates are available, it may be valuable to undertake meta-regression analyses to identify important determinants of heterogeneity, even in reviews when studies are considered too heterogeneous to combine. Such analyses could include study design
+              - emphasis [ref=e474]: features
+              - text: believed to be influential, to help to identify methodological features that systematically relate to observed intervention effects, and help to identify the subgroups of studies most likely to yield valid estimates of intervention effects. Investigation of key study design features should preferably be pre-specified in the protocol, based on scoping.
+            - heading "24.6.2.3 When combining results is judged not to be appropriate#section-24-6-2-3" [level=4] [ref=e475]
+            - paragraph [ref=e476]:
+              - text: Before undertaking a meta-analysis, review authors should ask themselves the standard question about whether primary studies are ‘similar enough’ to justify combining results (see
+              - link "Chapter 9, Section 9.3.2" [ref=e477] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-09#section-9-3-2
+              - text: ). Forest plots allow the presentation of estimates and standard errors for each study, and in most software (including RevMan) it is possible to omit summary estimates from the plots, or include them only for subgroups of studies. Providing that effect estimates from the included studies can be expressed using consistent effect measures, we recommend that review authors display individual study results for NRSI with similar study design features using forest plots, as a standard feature. If consistent effect measures are not available or calculable, then additional tables should be used to present results in a systematic format (see also
+              - link "Chapter 12, Section 12.3" [ref=e478] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-12#section-12-3
+              - text: ).
+            - paragraph [ref=e479]:
+              - text: If the features of studies are not sufficiently similar to combine in a meta-analysis (which is expected to be the norm for reviews that include NRSI), we recommend displaying the results of included studies in a forest plot but suppressing the summary estimate (see
+              - link "Chapter 12, Section 12.3.2" [ref=e480] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-12#section-12-3-2
+              - text: ). For example, in a review of the effects of circumcision on risk of HIV infection, a forest plot illustrated the result from each study without synthesizing them (Siegfried et al 2005). Studies may be sorted in the forest plot (or shown in separate forest plots) by study design feature, or their risk of bias. For example, the circumcision studies were separated into cohort studies, cross-sectional studies and case-control studies. Heterogeneity diagnostics and investigations (e.g. testing and quantifying heterogeneity, the I
+              - superscript [ref=e481]: "2"
+              - text: statistic and meta-regression analyses) are worthwhile even when a judgement has been made that calculating a pooled estimate of effect is not (Higgins et al 2003, Siegfried et al 2003).
+            - paragraph [ref=e482]:
+              - text: Non-statistical syntheses of quantitative intervention effects (see
+              - link "Chapter 12" [ref=e483] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-12
+              - text: ) are challenging, however, because it is difficult to set out or describe results without being selective or emphasizing some findings over others. Ideally, authors should set out in the review protocol how they plan to use narrative synthesis to report the findings of primary studies.
+            - heading "24.7 Interpretation and discussion#section-24-7" [level=2] [ref=e484]
+            - heading "24.7.1 What is different when including non-randomized studies?#section-24-7-1" [level=3] [ref=e485]
+            - paragraph [ref=e486]: As highlighted at the outset, review authors have a duty to summarize available evidence about interventions, balancing harms against benefits and qualified with a certainty assessment. Some of this evidence, especially about harms of interventions, will often need to come from NRSI. Nevertheless, obtaining definitive results about the likely effects of an intervention based on NRSI alone can be difficult (Deeks et al 2003). Many reviews of NRSI conclude that an ‘average’ effect is not an appropriate summary (Siegfried et al 2003), that evidence from NRSI does not provide enough certainty to demonstrate effectiveness or harm (Kwan and Sandercock 2004) and that randomized trials should be undertaken (Taggart et al 2001). Inspection of the risk-of-bias judgements for the individual domains addressed by the ROBINS-I tool should help interpretation, and may highlight the main ways in which NRSI are limited (Sterne et al 2016).
+            - paragraph [ref=e487]: "Challenges arise at all stages of conducting a review of NRSI: deciding which study design features should be specified as eligibility criteria, searching for studies, assessing studies for potential bias, and deciding how to synthesize results. A review author needs to satisfy the reader of the review that these challenges have been adequately addressed, or should discuss how and why they cannot be met. In this section, the challenges are illustrated with reference to issues raised in the different sections of this chapter. The Discussion section of the review should address the extent to which the challenges have been met."
+            - heading "24.7.1.1 Have important and relevant studies been included?#section-24-7-1-1" [level=4] [ref=e488]
+            - paragraph [ref=e489]: Even if the choice of eligible study design features can be justified, it may be difficult to show that all relevant studies have been identified because of poor indexing and inconsistent use of study design labels or poor reporting of design features by researchers. Comprehensive search strategies that focus only on the health condition and intervention of interest are likely to result in a very long list of bibliographic records including relatively few eligible studies; conversely, restrictive strategies will inevitably miss some eligible studies. In practice, available resources may make it impossible to process the results from a comprehensive search, especially since review authors will often have to read full papers rather than abstracts to determine eligibility. The implications of using a more or less comprehensive search strategy are not known.
+            - heading "24.7.1.2 Has the risk of bias to included studies been adequately assessed?#section-24-7-1-2" [level=4] [ref=e490]
+            - paragraph [ref=e491]: Interpretation of the results of a review of NRSI should include consideration of the likely direction and magnitude of bias, although this can be challenging to do. Some of the biases that affect randomized trials also affect NRSI but typically to a greater extent. For example, attrition in NRSI is often worse (and poorly reported), intervention and outcome assessment are rarely conducted according to standardized protocols, outcomes are rarely assessed blind to the allocation to intervention and comparator, and there is typically little protection against selection of the reported result. Too often these limitations of NRSI are seen as part of doing a NRSI, and their implications for risk of bias are not properly considered. For example, some users of evidence may consider NRSI that investigate long-term outcomes to have ‘better quality’ than randomized trials of short-term outcomes, simply on the basis of their directness without appraising their risk of bias; long-term outcomes may address the review question(s) more directly, but may do so with a considerable risk of bias.
+            - paragraph [ref=e492]: We recommend using the ROBINS-I tool to assess the risk of bias because of the consensus among a large team of developers that it covers all important bias domains. This is not true of any other tool to assess the risk of bias in NRSI. The importance of individual bias domains may vary according to the review question; for example, confounding may be less likely to arise in NRSI studies of long-term or adverse effects, or some public health primary prevention interventions.
+            - paragraph [ref=e493]: As with randomized trials, one clue to the presence of bias is notable between-study heterogeneity. Although heterogeneity can arise through differences in participants, interventions and outcome assessments, the possibility that bias is the cause of heterogeneity in reviews of NRSI must be seriously considered. However, lack of heterogeneity does not indicate lack of bias, since it is possible that a consistent bias applies in all studies.
+            - paragraph [ref=e494]: Predicting the direction of bias (within each bias domain) is an optional element of the ROBINS-I tool. This is a subject of ongoing research which is attempting to gather empirical evidence on factors (such as study design features and intervention type) that determine the size and direction of the biases. The ability to predict both the likely magnitude of bias and the likely direction of bias would greatly improve the usefulness of evidence from systematic reviews of NRSI. There is currently some evidence that in limited circumstances the direction, at least, can be predicted (Henry et al 2001).
+            - heading "24.7.2 Evaluating the strength of evidence provided by reviews that include non-randomized studies#section-24-7-2" [level=3] [ref=e495]
+            - paragraph [ref=e496]: Assembling the evidence from NRSI on a particular health question enables informed debate about its meaning and importance, and the certainty that can be attributed to it. Critically, there needs to be a debate about whether the findings could be misleading. Formal hierarchies of evidence all place NRSI lower than randomized trials, but above those of clinical opinion (Eccles et al 1996, National Health and Medical Research Council 1999, Oxford Centre for Evidence-based Medicine 2001). This emphasizes the general concern about biases in NRSI, and the difficulties of attributing causality to the observed associations between intervention and outcome.
+            - paragraph [ref=e497]:
+              - text: In preference to these traditional hierarchies, the GRADE approach is recommended for assessing the certainty of a body of evidence in Cochrane reviews, and is summarized in
+              - link "Chapter 14 (Section 14.2" [ref=e498] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-14#section-14-2
+              - text: "). There are four levels of certainty: ‘high’, ‘moderate’, ‘low’ and ‘very low’. A collection of studies begins with an assumption of ‘high’ certainty (with the introduction of ROBINS-I, this includes collections of NRSI) (Schünemann et al 2018). The certainty is then rated down in the presence of serious concerns about study limitations (risk of bias), indirectness of evidence, heterogeneity, imprecision or publication bias. In practice, the final rating for a body of evidence based on NRSI is typically rated as ‘low’ or ‘very low’."
+            - paragraph [ref=e499]: Application of the GRADE approach to systematic reviews of NRSI requires expertise about the design of NRSI due to the nature of the biases that may arise. For example, the strength of evidence for an association may be enhanced by a subset of primary studies that have tested considerations about causality not usually applied to randomized trial evidence (Bradford Hill 1965), or use of negative controls (Jackson et al 2006). In some contexts, little prognostic information may be known, limiting identification of possible confounding (Jefferson et al 2005).
+            - paragraph [ref=e500]: Whether the debate concludes that the evidence from NRSI is adequate for informed decision making or that there is a need for randomized trials will depend on the value placed on the uncertainty arising through use of potentially biased NRSI, and the collective value of the observed effects. The GRADE approach interprets certainty as the certainty that the effect of the intervention is large enough to reach a threshold for action. This value may depend on the wider healthcare context. It may not be possible to include assessments of the value within the review itself, and it may become evident only as part of the wider debate following publication.
+            - paragraph [ref=e501]: For example, is evidence from NRSI of a rare serious adverse effect adequate to decide that an intervention should not be used? The evidence has low certainty (due to a lack of randomized trials) but the value of knowing that there is the possibility of a potentially serious harm is considerable, and may be judged sufficient to withdraw the intervention. (It is worth noting that the judgement about withdrawing an intervention may depend on whether equivalent benefits can be obtained from elsewhere without such a risk; if not, the intervention may still be offered but with full disclosure of the potential harm.) Where evidence of benefit is also uncertain, the value attached to a systematic review of NRSI of harm may be even greater.
+            - paragraph [ref=e502]: In contrast, evidence of a small benefit of a novel intervention from a systematic review of NRSI may not be sufficient for decision makers to recommend widespread implementation in the face of the uncertainty of the evidence and the costs arising from provision of the intervention. In these circumstances, decision makers may conclude that randomized trials should be undertaken to improve the certainty of the evidence if practicable and if the investment in the trial is likely to be repaid in the future.
+            - heading "24.7.3 Guidance for potential review authors#section-24-7-3" [level=3] [ref=e503]
+            - paragraph [ref=e504]: Carrying out a systematic review of NRSI is likely to require complex decisions, often necessitating members of the review team with content knowledge and methodological expertise about NRSI at each stage of the review. Potential review authors should therefore seek to collaborate with methodologists, irrespective of whether a review aims to investigate harms or benefits, short-term or long-term outcomes, frequent or rare events.
+            - paragraph [ref=e505]: Review teams may be keen to include NRSI in systematic reviews in areas where there are few or no randomized trials because they have the ambition to improve the evidence-base in their specialty areas (a key motivation for many Cochrane reviews). However, for reviews of NRSI to estimate the effects of an intervention on short-term and expected outcomes, review authors should also recognize that the resources required to do a systematic review of NRSI are likely to be much greater than for a systematic review of randomized trials. Inclusion of NRSI to address some review questions will be invaluable in addressing the broad aims of a review; however, the conclusions in relation to some review questions are likely to be much weaker and may make a relatively small contribution to the topic. Therefore, review authors and Cochrane review Group editors need to decide at an early stage whether the investment of resources is likely to be justified by the priority of the research question.
+            - paragraph [ref=e506]: Bringing together the required team of healthcare professionals and methodologists may be easier for systematic reviews of NRSI to estimate the effects of an intervention on long-term and rare adverse outcomes, for example when considering the side effects of drugs. A review of this kind is likely to provide important missing evidence about the effects of an intervention in a priority area (i.e. adverse effects). However, these reviews may require the input of additional specialist authors, for example with relevant content pharmacological expertise. There is a pressing need in many health conditions to supplement traditional systematic reviews of randomized trials of effectiveness with systematic reviews of adverse (unintended) effects. It is likely that these systematic reviews will usually need to include NRSI.
+            - heading "24.8 Chapter information#section-24-8" [level=2] [ref=e507]
+            - paragraph [ref=e508]:
+              - strong [ref=e509]: "Authors:"
+              - text: Barnaby C Reeves, Jonathan J Deeks, Julian PT Higgins, Beverley Shea, Peter Tugwell, George A Wells; on behalf of the Cochrane Non-Randomized Studies of Interventions Methods Group
+            - paragraph [ref=e510]:
+              - strong [ref=e511]: "Acknowledgements:"
+              - text: We gratefully acknowledge Ole Olsen, Peter Gøtzsche, Angela Harden, Mustafa Soomro and Guido Schwarzer for their early drafts of different sections. We also thank Laurent Audigé, Duncan Saunders, Alex Sutton, Helen Thomas and Gro Jamtved for comments on previous drafts.
+            - paragraph [ref=e512]:
+              - strong [ref=e513]: "Funding:"
+              - text: BCR is supported by the UK National Institute for Health Research Biomedical Research Centre at University Hospitals Bristol NHS Foundation Trust and the University of Bristol. JJD receives support from the National Institute for Health Research (NIHR) Birmingham Biomedical Research Centre at the University Hospitals Birmingham NHS Foundation Trust and the University of Birmingham. JPTH is a member of the NIHR Biomedical Research Centre at University Hospitals Bristol NHS Foundation Trust and the University of Bristol. The views expressed are those of the author(s) and not necessarily those of the NHS, the NIHR or the Department of Health.
+            - heading "24.9 References#section-24-9" [level=2] [ref=e514]
+            - paragraph [ref=e515]:
+              - text: Audigé L, Bhandari M, Griffin D, Middleton P, Reeves BC. Systematic reviews of nonrandomized clinical studies in the orthopaedic literature.
+              - emphasis [ref=e516]: Clinical Orthopaedics and Related Research
+              - text: "2004: 249-257."
+            - paragraph [ref=e517]:
+              - text: "Bradford Hill A. The environment and disease: association or causation?"
+              - emphasis [ref=e518]: Proceedings of the Royal Society of Medicine
+              - text: 1965;
+              - strong [ref=e519]: "58"
+              - text: ": 295-300."
+            - paragraph [ref=e520]:
+              - text: "Chan AW, Hróbjartsson A, Haahr MT, Gøtzsche PC, Altman DG. Empirical evidence for selective reporting of outcomes in randomized trials: comparison of protocols to published articles."
+              - emphasis [ref=e521]: JAMA
+              - text: 2004;
+              - strong [ref=e522]: "291"
+              - text: ": 2457-2465."
+            - paragraph [ref=e523]:
+              - text: Deeks JJ, Dinnes J, D'Amico R, Sowden AJ, Sakarovitch C, Song F, Petticrew M, Altman DG. Evaluating non-randomised intervention studies.
+              - emphasis [ref=e524]: Health Technology Assessment
+              - text: 2003;
+              - strong [ref=e525]: "7"
+              - text: ": 27."
+            - paragraph [ref=e526]:
+              - text: "Doll R. Doing more good than harm: The evaluation of health care interventions: Summation of the conference."
+              - emphasis [ref=e527]: Annals of the New York Academy of Sciences
+              - text: 1993;
+              - strong [ref=e528]: "703"
+              - text: ": 310-313."
+            - paragraph [ref=e529]:
+              - text: "Eccles M, Clapp Z, Grimshaw J, Adams PC, Higgins B, Purves I, Russel I. North of England evidence based guidelines development project: methods of guideline development."
+              - emphasis [ref=e530]: BMJ
+              - text: 1996;
+              - strong [ref=e531]: "312"
+              - text: ": 760-762."
+            - paragraph [ref=e532]:
+              - text: Fraser C, Murray A, Burr J. Identifying observational studies of surgical interventions in MEDLINE and EMBASE.
+              - emphasis [ref=e533]: BMC Medical Research Methodology
+              - text: 2006;
+              - strong [ref=e534]: "6"
+              - text: ": 41."
+            - paragraph [ref=e535]:
+              - text: Furlan AD, Irvin E, Bombardier C. Limited search strategies were effective in finding relevant nonrandomized studies.
+              - emphasis [ref=e536]: Journal of Clinical Epidemiology
+              - text: 2006;
+              - strong [ref=e537]: "59"
+              - text: ": 1303-1311."
+            - paragraph [ref=e538]:
+              - text: Glasziou P, Chalmers I, Rawlins M, McCulloch P. When are randomised trials unnecessary? Picking signal from noise.
+              - emphasis [ref=e539]: BMJ
+              - text: 2007;
+              - strong [ref=e540]: "334"
+              - text: ": 349-351."
+            - paragraph [ref=e541]:
+              - text: Golder S, Loke Y, McIntosh HM. Room for improvement? A survey of the methods used in systematic reviews of adverse effects.
+              - emphasis [ref=e542]: BMC Medical Research Methodology
+              - text: 2006a;
+              - strong [ref=e543]: "6"
+              - text: ": 3."
+            - paragraph [ref=e544]:
+              - text: Golder S, McIntosh HM, Duffy S, Glanville J, Centre for Reviews and Dissemination and UK Cochrane Centre Search Filters Design Group. Developing efficient search strategies to identify reports of adverse effects in MEDLINE and EMBASE.
+              - emphasis [ref=e545]: Health Information and Libraries Journal
+              - text: 2006b;
+              - strong [ref=e546]: "23"
+              - text: ": 3-12."
+            - paragraph [ref=e547]:
+              - text: Golder S, McIntosh HM, Loke Y. Identifying systematic reviews of the adverse effects of health care interventions.
+              - emphasis [ref=e548]: BMC Medical Research Methodology
+              - text: 2006c;
+              - strong [ref=e549]: "6"
+              - text: ": 22."
+            - paragraph [ref=e550]: "Henry D, Moxey A, O'Connell D. Agreement between randomized and non-randomized studies: the effects of bias and confounding. 9th Cochrane Colloquium; 2001; Lyon (France)."
+            - paragraph [ref=e551]:
+              - text: Hernán MA, Robins JM. Using big data to emulate a target trial when a randomized trial is not available.
+              - emphasis [ref=e552]: American Journal of Epidemiology
+              - text: 2016;
+              - strong [ref=e553]: "183"
+              - text: ": 758-764."
+            - paragraph [ref=e554]:
+              - text: Higgins JPT, Thompson SG, Deeks JJ, Altman DG. Measuring inconsistency in meta-analyses.
+              - emphasis [ref=e555]: BMJ
+              - text: 2003;
+              - strong [ref=e556]: "327"
+              - text: ": 557-560."
+            - paragraph [ref=e557]:
+              - text: Higgins JPT, Ramsay C, Reeves BC, Deeks JJ, Shea B, Valentine JC, Tugwell P, Wells G. Issues relating to study design and risk of bias when including non-randomized studies in systematic reviews on the effects of interventions.
+              - emphasis [ref=e558]: Research Synthesis Methods
+              - text: 2013;
+              - strong [ref=e559]: "4"
+              - text: ": 12-25."
+            - paragraph [ref=e560]:
+              - text: "Higgins JPT, Soares-Weiser K, López-López JA, Kakourou A, Chaplin K, Christensen H, Martin NK, Sterne JA, Reingold AL. Association of BCG, DTP, and measles containing vaccines with childhood mortality: systematic review."
+              - emphasis [ref=e561]: BMJ
+              - text: 2016;
+              - strong [ref=e562]: "355"
+              - text: ": i5170."
+            - paragraph [ref=e563]:
+              - text: Jackson LA, Jackson ML, Nelson JC, Neuzil KM, Weiss NS. Evidence of bias in estimates of influenza vaccine effectiveness in seniors.
+              - emphasis [ref=e564]: International Journal of Epidemiology
+              - text: 2006;
+              - strong [ref=e565]: "35"
+              - text: ": 337-344."
+            - paragraph [ref=e566]:
+              - text: "Jefferson T, Smith S, Demicheli V, Harnden A, Rivetti A, Di Pietrantonj C. Assessment of the efficacy and effectiveness of influenza vaccines in healthy children: systematic review."
+              - emphasis [ref=e567]: The Lancet
+              - text: 2005;
+              - strong [ref=e568]: "365"
+              - text: ": 773-780."
+            - paragraph [ref=e569]:
+              - text: Kwan J, Sandercock P. In-hospital care pathways for stroke.
+              - emphasis [ref=e570]: Cochrane Database of Systematic Reviews
+              - text: 2004;
+              - strong [ref=e571]: "4"
+              - text: ": CD002924."
+            - paragraph [ref=e572]:
+              - text: "Li X, You R, Wang X, Liu C, Xu Z, Zhou J, Yu B, Xu T, Cai H, Zou Q. Effectiveness of prophylactic surgeries in BRCA1 or BRCA2 mutation carriers: a meta-analysis and systematic review."
+              - emphasis [ref=e573]: Clinical Cancer Research
+              - text: 2016;
+              - strong [ref=e574]: "22"
+              - text: ": 3971-3981."
+            - paragraph [ref=e575]:
+              - text: MacLehose RR, Reeves BC, Harvey IM, Sheldon TA, Russell IT, Black AM. A systematic review of comparisons of effect sizes derived from randomised and non-randomised studies.
+              - emphasis [ref=e576]: Health Technology Assessment
+              - text: 2000;
+              - strong [ref=e577]: "4"
+              - text: ": 1-154."
+            - paragraph [ref=e578]:
+              - text: Macpherson A, Spinks A. Bicycle helmet legislation for the uptake of helmet use and prevention of head injuries.
+              - emphasis [ref=e579]: Cochrane Database of Systematic Reviews
+              - text: 2008;
+              - strong [ref=e580]: "3"
+              - text: ": CD005401."
+            - paragraph [ref=e581]:
+              - text: "Moher D, Schulz KF, Altman DG. The CONSORT Statement: revised recommendations for improving the quality of reports of parallel-group randomised trials."
+              - emphasis [ref=e582]: Lancet
+              - text: 2001;
+              - strong [ref=e583]: "357"
+              - text: ": 1191-1194."
+            - paragraph [ref=e584]:
+              - text: National Health and Medical Research Council.
+              - emphasis [ref=e585]: A guide to the development, implementation and evaluation of clinical practice guidelines [Endorsed 16 November 1998]
+              - text: ". Canberra (Australia): Commonwealth of Australia; 1999."
+            - paragraph [ref=e586]:
+              - text: Oxford Centre for Evidence-based Medicine. Levels of Evidence. 2001.
+              - link "www.cebm.net" [ref=e587] [cursor=pointer]:
+                - /url: http://www.cebm.net/
+              - text: .
+            - paragraph [ref=e588]:
+              - text: "Peto R, Collins R, Gray R. Large-scale randomized evidence: large, simple trials and overviews of trials."
+              - emphasis [ref=e589]: Journal of Clinical Epidemiology
+              - text: 1995;
+              - strong [ref=e590]: "48"
+              - text: ": 23-40."
+            - paragraph [ref=e591]:
+              - text: Polus S, Pieper D, Burns J, Fretheim A, Ramsay C, Higgins JPT, Mathes T, Pfadenhauer LM, Rehfuess EA. Heterogeneity in application, design, and analysis characteristics was found for controlled before-after and interrupted time series studies included in Cochrane reviews.
+              - emphasis [ref=e592]: Journal of Clinical Epidemiology
+              - text: 2017;
+              - strong [ref=e593]: "91"
+              - text: ": 56-69."
+            - paragraph [ref=e594]:
+              - text: "Reeves BC. Parachute approach to evidence based medicine: as obvious as ABC."
+              - emphasis [ref=e595]: BMJ
+              - text: 2006;
+              - strong [ref=e596]: "333"
+              - text: ": 807-808."
+            - paragraph [ref=e597]:
+              - text: Reeves BC, Higgins JPT, Ramsay C, Shea B, Tugwell P, Wells GA. An introduction to methodological issues when including non-randomised studies in systematic reviews on the effects of interventions.
+              - emphasis [ref=e598]: Research Synthesis Methods
+              - text: 2013;
+              - strong [ref=e599]: "4"
+              - text: ": 1-11."
+            - paragraph [ref=e600]:
+              - text: "Reeves BC, Wells GA, Waddington H. Quasi-experimental study designs series-paper 5: a checklist for classifying studies evaluating the effects on health interventions-a taxonomy without labels."
+              - emphasis [ref=e601]: Journal of Clinical Epidemiology
+              - text: 2017;
+              - strong [ref=e602]: "89"
+              - text: ": 30-42."
+            - paragraph [ref=e603]:
+              - text: Schünemann HJ, Tugwell P, Reeves BC, Akl EA, Santesso N, Spencer FA, Shea B, Wells G, Helfand M. Non-randomized studies as a source of complementary, sequential or replacement evidence for randomized controlled trials in systematic reviews on the effects of interventions.
+              - emphasis [ref=e604]: Research Synthesis Methods
+              - text: 2013;
+              - strong [ref=e605]: "4"
+              - text: ": 49-62."
+            - paragraph [ref=e606]:
+              - text: "Schünemann HJ, Cuello C, Akl EA, Mustafa RA, Meerpohl JJ, Thayer K, Morgan RL, Gartlehner G, Kunz R, Katikireddi SV, Sterne J, Higgins JPT, Guyatt G, Grade Working Group. GRADE guidelines: 18. How ROBINS-I and other tools to assess risk of bias in nonrandomized studies should be used to rate the certainty of a body of evidence."
+              - emphasis [ref=e607]: Journal of Clinical Epidemiology
+              - text: "2018."
+            - paragraph [ref=e608]:
+              - text: Shadish WR, Cook TD, Campbell DT.
+              - emphasis [ref=e609]: Experimental and Quasi-Experimental Designs for Generalized Causal Inference
+              - text: ". Boston (MA): Houghton Mifflin; 2002 2002."
+            - paragraph [ref=e610]:
+              - text: Siegfried N, Muller M, Volmink J, Deeks J, Egger M, Low N, Weiss H, Walker S, Williamson P. Male circumcision for prevention of heterosexual acquisition of HIV in men.
+              - emphasis [ref=e611]: Cochrane Database of Systematic Reviews
+              - text: 2003;
+              - strong [ref=e612]: "3"
+              - text: ": CD003362."
+            - paragraph [ref=e613]:
+              - text: Siegfried N, Muller M, Deeks J, Volmink J, Egger M, Low N, Walker S, Williamson P. HIV and male circumcision--a systematic review with assessment of the quality of studies.
+              - emphasis [ref=e614]: Lancet Infectious Diseases
+              - text: 2005;
+              - strong [ref=e615]: "5"
+              - text: ": 165-173."
+            - paragraph [ref=e616]:
+              - text: "Stampfer MJ, Colditz GA. Estrogen replacement therapy and coronary heart disease: a quantitative assessment of the epidemiologic evidence."
+              - emphasis [ref=e617]: Preventive Medicine
+              - text: 1991;
+              - strong [ref=e618]: "20"
+              - text: ": 47-63."
+            - paragraph [ref=e619]:
+              - text: "Sterne JAC, Hernán MA, Reeves BC, Savović J, Berkman ND, Viswanathan M, Henry D, Altman DG, Ansari MT, Boutron I, Carpenter JR, Chan AW, Churchill R, Deeks JJ, Hróbjartsson A, Kirkham J, Jüni P, Loke YK, Pigott TD, Ramsay CR, Regidor D, Rothstein HR, Sandhu L, Santaguida PL, Schünemann HJ, Shea B, Shrier I, Tugwell P, Turner L, Valentine JC, Waddington H, Waters E, Wells GA, Whiting PF, Higgins JPT. ROBINS-I: a tool for assessing risk of bias in non-randomized studies of interventions."
+              - emphasis [ref=e620]: BMJ
+              - text: 2016;
+              - strong [ref=e621]: "355"
+              - text: ": i4919."
+            - paragraph [ref=e622]:
+              - text: "Taggart DP, D'Amico R, Altman DG. Effect of arterial revascularisation on survival: a systematic review of studies comparing bilateral and single internal mammary arteries."
+              - emphasis [ref=e623]: The Lancet
+              - text: 2001;
+              - strong [ref=e624]: "358"
+              - text: ": 870-875."
+            - paragraph [ref=e625]:
+              - text: Tugwell P, Knottnerus JA, McGowan J, Tricco A. Big-5 Quasi-Experimental designs.
+              - emphasis [ref=e626]: Journal of Clinical Epidemiology
+              - text: 2017;
+              - strong [ref=e627]: "89"
+              - text: ": 1-3."
+            - paragraph [ref=e628]:
+              - text: Wells GA, Shea B, Higgins JPT, Sterne J, Tugwell P, Reeves BC. Checklists of methodological issues for review authors to consider when including non-randomized studies in systematic reviews.
+              - emphasis [ref=e629]: Research Synthesis Methods
+              - text: 2013;
+              - strong [ref=e630]: "4"
+              - text: ": 63-77."
+            - paragraph [ref=e631]:
+              - text: Wieland S, Dickersin K. Selective exposure reporting and Medline indexing limited the search sensitivity for observational studies of the adverse effects of oral contraceptives.
+              - emphasis [ref=e632]: Journal of Clinical Epidemiology
+              - text: 2005;
+              - strong [ref=e633]: "58"
+              - text: ": 560-567."
+            - paragraph [ref=e634]: Wohlin C. Guidelines for snowballing in systematic literature studies and a replication in software engineering. EASE '14 Proceedings of the 18th International Conference on Evaluation and Assessment in Software Engineering; London, UK 2014.
+    - generic [ref=e635]:
+      - generic [ref=e637]:
+        - generic [ref=e638]:
+          - link "Cochrane" [ref=e640] [cursor=pointer]:
+            - /url: /
+            - img "Cochrane" [ref=e641]
+          - generic [ref=e642]:
+            - text: Trusted evidence.
+            - text: Informed decisions.
+            - text: Better health.
+        - paragraph [ref=e644]:
+          - text: 11-13 Cavendish Square
+          - text: London
+          - text: W1G 0AN
+          - text: United Kingdom
+        - generic [ref=e645]:
+          - list [ref=e646]:
+            - listitem [ref=e647]:
+              - link "Contact us" [ref=e648] [cursor=pointer]:
+                - /url: /contact-us
+            - listitem [ref=e649]:
+              - link "News" [ref=e650] [cursor=pointer]:
+                - /url: /about-us/news
+            - listitem [ref=e651]:
+              - link "Press office" [ref=e652] [cursor=pointer]:
+                - /url: /about-us/news/press-office
+            - listitem [ref=e653]:
+              - link "About us" [ref=e654] [cursor=pointer]:
+                - /url: /about-us
+            - listitem [ref=e655]:
+              - link "Jobs" [ref=e656] [cursor=pointer]:
+                - /url: /about-us/jobs
+            - listitem [ref=e657]:
+              - link "Cochrane Library" [ref=e658] [cursor=pointer]:
+                - /url: https://www.cochranelibrary.com/
+          - generic [ref=e659]:
+            - link "Facebook icon" [ref=e660] [cursor=pointer]:
+              - /url: https://links.cochrane.org/facebook
+              - img "Facebook icon" [ref=e661]
+            - link "YouTube icon" [ref=e662] [cursor=pointer]:
+              - /url: https://links.cochrane.org/youtube
+              - img "YouTube icon" [ref=e663]
+            - link "Instagram icon" [ref=e664] [cursor=pointer]:
+              - /url: https://links.cochrane.org/instagram
+              - img "Instagram icon" [ref=e665]
+            - link "LinkedIn icon" [ref=e666] [cursor=pointer]:
+              - /url: https://links.cochrane.org/linkedin
+              - img "LinkedIn icon" [ref=e667]
+            - link "Bluesky icon" [ref=e668] [cursor=pointer]:
+              - /url: https://links.cochrane.org/bsky
+              - img "Bluesky icon" [ref=e669]
+      - generic [ref=e670]: The Cochrane Collaboration is a charity (no. 1045921) and a company limited by guarantee (no. 03044323) registered in England & Wales. VAT registration number GB 718 2127 49.
+      - generic [ref=e671]:
+        - text: Copyright © 2026 The Cochrane Collaboration
+        - generic [ref=e672]:
+          - link "Website Terms & Conditions" [ref=e673] [cursor=pointer]:
+            - /url: /website-terms-and-conditions
+          - text: "|"
+          - link "Disclaimer" [ref=e674] [cursor=pointer]:
+            - /url: /privacy-policy#disclaimer
+          - text: "|"
+          - link "Privacy" [ref=e675] [cursor=pointer]:
+            - /url: /privacy-policy
+          - text: "|"
+          - link "Cookie policy" [ref=e676] [cursor=pointer]:
+            - /url: /privacy-policy#cookies-policy
+          - text: "| Cookie settings"
+  - generic [ref=e678]:
+    - heading "Our use of cookies" [level=4] [ref=e679]
+    - paragraph [ref=e680]:
+      - text: We use necessary cookies to make our site work. We'd also like to set optional analytics cookies to help us improve it. We won't set optional cookies unless you enable them. Using this tool will set a cookie on your device to remember your preferences. You can always change your cookie preferences at any time by clicking on the 'Cookies settings' link in the footer of every page.
+      - text: For more detailed information about the cookies we use, see our
+      - link "Cookies page" [ref=e681] [cursor=pointer]:
+        - /url: https://www.cochrane.org/cookies-policy
+      - text: .
+    - generic [ref=e682] [cursor=pointer]: Accept all
+    - generic [ref=e683] [cursor=pointer]: Configure
+  - status [ref=e684]
+  - status [ref=e685]

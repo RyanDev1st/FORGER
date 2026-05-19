@@ -1,0 +1,480 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - link "DuckDuckGo home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e9]: DuckDuckGo
+          - generic [ref=e15]:
+            - combobox "Search privately" [ref=e17]: arxiv knowledge graph retrieval augmented generation evidence
+            - button "search" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e25]:
+              - banner [ref=e26]:
+                - img [ref=e27]
+                - paragraph [ref=e28]: Upgrade to our browser.
+              - generic [ref=e29]:
+                - generic [ref=e30]:
+                  - img [ref=e31]
+                  - generic [ref=e32]:
+                    - img [ref=e33]
+                    - img [ref=e34]
+                - paragraph [ref=e35]:
+                  - generic [ref=e36]:
+                    - text: Try the
+                    - strong [ref=e37]: DuckDuckGo Browser.
+                    - text: Fast. Free. Private.
+                - link "Download Browser" [ref=e38] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/windows?origin=funnel_browser_searchresults__popover
+                  - img [ref=e39]
+                  - generic [ref=e41]: Download Browser
+              - paragraph [ref=e44]:
+                - generic [ref=e45]: Free
+            - button [ref=e47] [cursor=pointer]:
+              - img [ref=e48]
+          - button "Open menu" [ref=e50] [cursor=pointer]:
+            - generic [ref=e51]: Open menu
+            - img [ref=e52]
+      - navigation [ref=e58]:
+        - list [ref=e59]:
+          - listitem [ref=e60]:
+            - link "All" [ref=e61] [cursor=pointer]:
+              - /url: /?q=arxiv+knowledge+graph+retrieval+augmented+generation+evidence&ia=web
+              - img [ref=e62]
+              - text: All
+          - listitem [ref=e64]:
+            - link "Images" [ref=e65] [cursor=pointer]:
+              - /url: /?q=arxiv+knowledge+graph+retrieval+augmented+generation+evidence&ia=images&iax=images
+          - listitem [ref=e66]:
+            - link "Videos" [ref=e67] [cursor=pointer]:
+              - /url: /?q=arxiv+knowledge+graph+retrieval+augmented+generation+evidence&ia=videos&iax=videos
+          - listitem [ref=e68]:
+            - link "News" [ref=e69] [cursor=pointer]:
+              - /url: /?q=arxiv+knowledge+graph+retrieval+augmented+generation+evidence&ia=news&iar=news
+          - listitem [ref=e70]:
+            - link "Maps" [ref=e71] [cursor=pointer]:
+              - /url: /?q=arxiv+knowledge+graph+retrieval+augmented+generation+evidence&iaxm=maps
+        - list [ref=e72]:
+          - listitem [ref=e73]:
+            - link "Duck.ai" [ref=e75] [cursor=pointer]:
+              - /url: /?q=arxiv+knowledge+graph+retrieval+augmented+generation+evidence&ia=chat
+              - img [ref=e76]
+              - text: Duck.ai
+          - listitem [ref=e79]:
+            - button "Search Settings ✀" [ref=e81] [cursor=pointer]:
+              - img [ref=e82]
+              - generic [ref=e84]: Search Settings
+              - generic [ref=e87]: ✀
+    - generic [ref=e92]:
+      - navigation [ref=e94]:
+        - generic [ref=e97] [cursor=pointer]:
+          - generic [ref=e105]: Protected
+          - img [ref=e106]: ▼
+        - generic [ref=e110] [cursor=pointer]:
+          - generic [ref=e113]:
+            - switch "✓" [ref=e114]: ✓
+            - generic [ref=e116]: Vietnam (en)
+          - img [ref=e117]: ▼
+        - generic [ref=e121] [cursor=pointer]:
+          - generic [ref=e122]: "Safe search: moderate"
+          - img [ref=e123]: ▼
+        - generic [ref=e127] [cursor=pointer]:
+          - generic [ref=e128]: Any time
+          - img [ref=e129]: ▼
+      - generic [ref=e132]:
+        - list [ref=e133]:
+          - listitem [ref=e134]:
+            - article [ref=e135] [cursor=pointer]:
+              - button [ref=e137]:
+                - img [ref=e138]
+              - generic [ref=e142]:
+                - link "Search domain arxiv.org" [ref=e144]:
+                  - /url: /?q=arxiv%20knowledge%20graph%20retrieval%20augmented%20generation%20evidence+site:arxiv.org
+                  - img [ref=e146]
+                - generic [ref=e147]:
+                  - paragraph [ref=e148]: arXiv.org
+                  - link "https://arxiv.org › abs › 2502.06864" [ref=e149]:
+                    - /url: https://arxiv.org/abs/2502.06864
+                    - paragraph [ref=e151]:
+                      - generic [ref=e152]: https://arxiv.org
+                      - generic [ref=e153]: › abs › 2502.06864
+              - heading "Knowledge Graph-Guided Retrieval Augmented Generation" [level=2] [ref=e155]:
+                - link "Knowledge Graph-Guided Retrieval Augmented Generation" [ref=e156]:
+                  - /url: https://arxiv.org/abs/2502.06864
+                  - generic [ref=e157]: Knowledge Graph-Guided Retrieval Augmented Generation
+              - generic [ref=e161]:
+                - text: Feb 8, 2025·
+                - generic [ref=e162]: In this paper, we propose a novel Knowledge Graph-Guided Retrieval Augmented Generation (KG 2 RAG) framework that utilizes knowledge graphs (KGs) to provide fact-level relationships between chunks, improving the diversity and coherence of the retrieved results.
+          - listitem [ref=e163]:
+            - article [ref=e164] [cursor=pointer]:
+              - button [ref=e166]:
+                - img [ref=e167]
+              - generic [ref=e171]:
+                - link "Search domain aclanthology.org" [ref=e173]:
+                  - /url: /?q=arxiv%20knowledge%20graph%20retrieval%20augmented%20generation%20evidence+site:aclanthology.org
+                  - img [ref=e175]
+                - generic [ref=e176]:
+                  - paragraph [ref=e177]: ACL Anthology
+                  - link "https://aclanthology.org › 2025.acl-long.1317" [ref=e178]:
+                    - /url: https://aclanthology.org/2025.acl-long.1317/
+                    - paragraph [ref=e180]:
+                      - generic [ref=e181]: https://aclanthology.org
+                      - generic [ref=e182]: › 2025.acl-long.1317
+              - heading "Knowledge Graph Retrieval-Augmented Generation for LLM-based ..." [level=2] [ref=e184]:
+                - link "Knowledge Graph Retrieval-Augmented Generation for LLM-based ..." [ref=e185]:
+                  - /url: https://aclanthology.org/2025.acl-long.1317/
+                  - generic [ref=e186]: Knowledge Graph Retrieval-Augmented Generation for LLM-based ...
+              - generic [ref=e190]:
+                - text: 3 days ago·
+                - generic [ref=e191]: "Knowledge Graph Retrieval-Augmented Generation for LLM-based Recommendation. In Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 27152-27168, Vienna, Austria. Association for Computational Linguistics. Cite (Informal):"
+          - listitem [ref=e192]:
+            - article [ref=e193] [cursor=pointer]:
+              - button [ref=e195]:
+                - img [ref=e196]
+              - generic [ref=e200]:
+                - link "Search domain ui.adsabs.harvard.edu" [ref=e202]:
+                  - /url: /?q=arxiv%20knowledge%20graph%20retrieval%20augmented%20generation%20evidence+site:ui.adsabs.harvard.edu
+                  - img [ref=e204]
+                - generic [ref=e205]:
+                  - paragraph [ref=e206]: NASA/ADS
+                  - link "https://ui.adsabs.harvard.edu › abs › 2025arXiv250206864Z › abstract" [ref=e207]:
+                    - /url: https://ui.adsabs.harvard.edu/abs/2025arXiv250206864Z/abstract
+                    - paragraph [ref=e209]:
+                      - generic [ref=e210]: https://ui.adsabs.harvard.edu
+                      - generic [ref=e211]: › abs › 2025arXiv250206864Z › abstract
+              - heading "Knowledge Graph-Guided Retrieval Augmented Generation - ADS" [level=2] [ref=e213]:
+                - link "Knowledge Graph-Guided Retrieval Augmented Generation - ADS" [ref=e214]:
+                  - /url: https://ui.adsabs.harvard.edu/abs/2025arXiv250206864Z/abstract
+                  - generic [ref=e215]: Knowledge Graph-Guided Retrieval Augmented Generation - ADS
+              - generic [ref=e220]: In this paper, we propose a novel Knowledge Graph-Guided Retrieval Augmented Generation (KG$^2$RAG) framework that utilizes knowledge graphs (KGs) to provide fact-level relationships between chunks, improving the diversity and coherence of the retrieved results.
+          - listitem [ref=e221]:
+            - article [ref=e222] [cursor=pointer]:
+              - button [ref=e224]:
+                - img [ref=e225]
+              - generic [ref=e228]:
+                - generic [ref=e229]:
+                  - generic [ref=e231]:
+                    - link "Search domain nature.com" [ref=e233]:
+                      - /url: /?q=arxiv%20knowledge%20graph%20retrieval%20augmented%20generation%20evidence+site:www.nature.com
+                      - img [ref=e235]
+                    - generic [ref=e236]:
+                      - paragraph [ref=e237]: Nature
+                      - link "https://www.nature.com › articles › s41598-025-21222-z" [ref=e238]:
+                        - /url: https://www.nature.com/articles/s41598-025-21222-z
+                        - paragraph [ref=e240]:
+                          - generic [ref=e241]: https://www.nature.com
+                          - generic [ref=e242]: › articles › s41598-025-21222-z
+                  - heading "Research on the construction and application of retrieval enhanced ..." [level=2] [ref=e244]:
+                    - link "Research on the construction and application of retrieval enhanced ..." [ref=e245]:
+                      - /url: https://www.nature.com/articles/s41598-025-21222-z
+                      - generic [ref=e246]: Research on the construction and application of retrieval enhanced ...
+                  - generic [ref=e250]:
+                    - text: Nov 18, 2025·
+                    - generic [ref=e251]: To address the defects of traditional Retrieval-Augmented Generation (RAG) in retrieval relevance and diversity, the Knowledge Graph-enhanced Retrieval-Augmented Generation (KG-RAG) model proposed ...
+                - img [ref=e252]
+          - listitem [ref=e253]:
+            - article [ref=e254] [cursor=pointer]:
+              - button [ref=e256]:
+                - img [ref=e257]
+              - generic [ref=e261]:
+                - link "Search domain openreview.net" [ref=e263]:
+                  - /url: /?q=arxiv%20knowledge%20graph%20retrieval%20augmented%20generation%20evidence+site:openreview.net
+                  - img [ref=e265]
+                - generic [ref=e266]:
+                  - paragraph [ref=e267]: OpenReview
+                  - link "https://openreview.net › pdf?id=R1NWMExESj" [ref=e268]:
+                    - /url: https://openreview.net/pdf?id=R1NWMExESj
+                    - paragraph [ref=e270]:
+                      - generic [ref=e271]: https://openreview.net
+                      - generic [ref=e272]: › pdf?id=R1NWMExESj
+              - heading "Knowledge Graph Retrieval-Augmented Generation via GNN ... - OpenReview" [level=2] [ref=e274]:
+                - link "Knowledge Graph Retrieval-Augmented Generation via GNN ... - OpenReview" [ref=e275]:
+                  - /url: https://openreview.net/pdf?id=R1NWMExESj
+                  - generic [ref=e276]: Knowledge Graph Retrieval-Augmented Generation via GNN ... - OpenReview
+              - generic [ref=e281]: To address the limitations of LLMs in knowledge-intensive tasks where external knowledge is needed, Retrieval-Augmented Generation (RAG) (Gao et al., 2023) enhances LLMs by retrieving external knowledge sources such as Knowledge Graphs (KGs).
+          - listitem [ref=e282]:
+            - article [ref=e283] [cursor=pointer]:
+              - button [ref=e285]:
+                - img [ref=e286]
+              - generic [ref=e290]:
+                - link "Search domain vitalab.github.io" [ref=e292]:
+                  - /url: /?q=arxiv%20knowledge%20graph%20retrieval%20augmented%20generation%20evidence+site:vitalab.github.io
+                  - img [ref=e294]
+                - generic [ref=e295]:
+                  - paragraph [ref=e296]: vitalab.github.io
+                  - link "https://vitalab.github.io › article › 2024 › 09 › 16 › graphrag.html" [ref=e297]:
+                    - /url: https://vitalab.github.io/article/2024/09/16/graphrag.html
+                    - paragraph [ref=e299]:
+                      - generic [ref=e300]: https://vitalab.github.io
+                      - generic [ref=e301]: › article › 2024 › 09 › 16 › graphrag.html
+              - heading "Retrieval Augmented Generation with Knowledge Graphs" [level=2] [ref=e303]:
+                - link "Retrieval Augmented Generation with Knowledge Graphs" [ref=e304]:
+                  - /url: https://vitalab.github.io/article/2024/09/16/graphrag.html
+                  - generic [ref=e305]: Retrieval Augmented Generation with Knowledge Graphs
+              - generic [ref=e309]:
+                - text: Sep 16, 2024·
+                - generic [ref=e310]: Ask the LLM to generate a summary of each community (at all levels of the hierarchy identified in step 3.1) to provide the knowledge base with a scoped understanding of the graph at different granularity.
+          - listitem [ref=e311]:
+            - article [ref=e312] [cursor=pointer]:
+              - button [ref=e314]:
+                - img [ref=e315]
+              - generic [ref=e319]:
+                - link "Search domain researchgate.net" [ref=e321]:
+                  - /url: /?q=arxiv%20knowledge%20graph%20retrieval%20augmented%20generation%20evidence+site:www.researchgate.net
+                  - img [ref=e323]
+                - generic [ref=e324]:
+                  - paragraph [ref=e325]: ResearchGate
+                  - link "https://www.researchgate.net › publication › 388920433_Knowledge_Graph-Guided_Retrieval_Augmented_Generation" [ref=e326]:
+                    - /url: https://www.researchgate.net/publication/388920433_Knowledge_Graph-Guided_Retrieval_Augmented_Generation
+                    - paragraph [ref=e328]:
+                      - generic [ref=e329]: https://www.researchgate.net
+                      - generic [ref=e330]: › publication › 388920433_Knowledge_Graph-Guided_Retrieval_Augmented_Generation
+              - heading "Knowledge Graph-Guided Retrieval Augmented Generation" [level=2] [ref=e332]:
+                - link "Knowledge Graph-Guided Retrieval Augmented Generation" [ref=e333]:
+                  - /url: https://www.researchgate.net/publication/388920433_Knowledge_Graph-Guided_Retrieval_Augmented_Generation
+                  - generic [ref=e334]: Knowledge Graph-Guided Retrieval Augmented Generation
+              - generic [ref=e338]:
+                - text: Feb 7, 2025·
+                - generic [ref=e339]: In this paper, we propose a novel Knowledge Graph-Guided Retrieval Augmented Generation (KG ^2 RAG) framework that utilizes knowledge graphs (KGs) to provide fact-level relationships...
+          - listitem [ref=e340]:
+            - article [ref=e341] [cursor=pointer]:
+              - button [ref=e343]:
+                - img [ref=e344]
+              - generic [ref=e348]:
+                - link "Search domain sciencedirect.com" [ref=e350]:
+                  - /url: /?q=arxiv%20knowledge%20graph%20retrieval%20augmented%20generation%20evidence+site:www.sciencedirect.com
+                  - img [ref=e352]
+                - generic [ref=e353]:
+                  - paragraph [ref=e354]: ScienceDirect
+                  - link "https://www.sciencedirect.com › science › article › pii › S1574013726000341" [ref=e355]:
+                    - /url: https://www.sciencedirect.com/science/article/pii/S1574013726000341
+                    - paragraph [ref=e357]:
+                      - generic [ref=e358]: https://www.sciencedirect.com
+                      - generic [ref=e359]: › science › article › pii › S1574013726000341
+              - 'heading "From vectors to knowledge graphs: A comprehensive analysis of modern ..." [level=2] [ref=e361]':
+                - 'link "From vectors to knowledge graphs: A comprehensive analysis of modern ..." [ref=e362]':
+                  - /url: https://www.sciencedirect.com/science/article/pii/S1574013726000341
+                  - generic [ref=e363]: "From vectors to knowledge graphs: A comprehensive analysis of modern ..."
+              - generic [ref=e368]: "From vectors to knowledge graphs: A comprehensive analysis of modern retrieval-augmented generation architectures - ScienceDirect"
+          - listitem [ref=e369]:
+            - article [ref=e370] [cursor=pointer]:
+              - button [ref=e372]:
+                - img [ref=e373]
+              - generic [ref=e377]:
+                - link "Search domain semanticscholar.org" [ref=e379]:
+                  - /url: /?q=arxiv%20knowledge%20graph%20retrieval%20augmented%20generation%20evidence+site:www.semanticscholar.org
+                  - img [ref=e381]
+                - generic [ref=e382]:
+                  - paragraph [ref=e383]: Semantic Scholar
+                  - link "https://www.semanticscholar.org › paper › Knowledge-Graph-Guided-Retrieval-Augmented-Zhu-Xie › 6f119697114ba712a97690295a96fb1b3e60e1a7" [ref=e384]:
+                    - /url: https://www.semanticscholar.org/paper/Knowledge-Graph-Guided-Retrieval-Augmented-Zhu-Xie/6f119697114ba712a97690295a96fb1b3e60e1a7
+                    - paragraph [ref=e386]:
+                      - generic [ref=e387]: https://www.semanticscholar.org
+                      - generic [ref=e388]: › paper › Knowledge-Graph-Guided-Retrieval-Augmented-Zhu-Xie › 6f119697114ba712a97690295a96fb1b3e60e1a7
+              - heading "Knowledge Graph-Guided Retrieval Augmented Generation" [level=2] [ref=e390]:
+                - link "Knowledge Graph-Guided Retrieval Augmented Generation" [ref=e391]:
+                  - /url: https://www.semanticscholar.org/paper/Knowledge-Graph-Guided-Retrieval-Augmented-Zhu-Xie/6f119697114ba712a97690295a96fb1b3e60e1a7
+                  - generic [ref=e392]: Knowledge Graph-Guided Retrieval Augmented Generation
+              - generic [ref=e396]:
+                - text: Feb 8, 2025·
+                - generic [ref=e397]: In this paper, we propose a novel Knowledge Graph-Guided Retrieval Augmented Generation (KG$^2$RAG) framework that utilizes knowledge graphs (KGs) to provide fact-level relationships between chunks, improving the diversity and coherence of the retrieved results.
+          - listitem [ref=e398]:
+            - article [ref=e399] [cursor=pointer]:
+              - button [ref=e401]:
+                - img [ref=e402]
+              - generic [ref=e406]:
+                - link "Search domain github.com" [ref=e408]:
+                  - /url: /?q=arxiv%20knowledge%20graph%20retrieval%20augmented%20generation%20evidence+site:github.com
+                  - img [ref=e410]
+                - generic [ref=e411]:
+                  - paragraph [ref=e412]: Github
+                  - link "https://github.com › DEEP-PolyU › Awesome-GraphRAG" [ref=e413]:
+                    - /url: https://github.com/DEEP-PolyU/Awesome-GraphRAG
+                    - paragraph [ref=e415]:
+                      - generic [ref=e416]: https://github.com
+                      - generic [ref=e417]: › DEEP-PolyU › Awesome-GraphRAG
+              - 'heading "GitHub - DEEP-PolyU/Awesome-GraphRAG: Awesome-GraphRAG: A curated list ..." [level=2] [ref=e419]':
+                - 'link "GitHub - DEEP-PolyU/Awesome-GraphRAG: Awesome-GraphRAG: A curated list ..." [ref=e420]':
+                  - /url: https://github.com/DEEP-PolyU/Awesome-GraphRAG
+                  - generic [ref=e421]: "GitHub - DEEP-PolyU/Awesome-GraphRAG: Awesome-GraphRAG: A curated list ..."
+              - generic [ref=e426]: This repository contains a curated list of resources on graph-based retrieval-augmented generation (GraphRAG), which are classified according to " A Survey of Graph Retrieval-Augmented Generation for Customized Large Language Models ".
+          - listitem [ref=e427]:
+            - generic [ref=e429]:
+              - paragraph [ref=e430]: Searches related to arxiv knowledge graph retrieval augmented generation evidence
+              - generic [ref=e431]:
+                - list [ref=e432]:
+                  - listitem [ref=e433]:
+                    - link "retrieval augmented generation llms" [ref=e434] [cursor=pointer]:
+                      - /url: "?q=retrieval%20augmented%20generation%20llms"
+                      - generic [ref=e436]: retrieval augmented generation llms
+                  - listitem [ref=e437]:
+                    - link "retrieval augmented generation research paper" [ref=e438] [cursor=pointer]:
+                      - /url: "?q=retrieval%20augmented%20generation%20research%20paper"
+                      - generic [ref=e440]: retrieval augmented generation research paper
+                  - listitem [ref=e441]:
+                    - link "knowledge graph augmented generation" [ref=e442] [cursor=pointer]:
+                      - /url: "?q=knowledge%20graph%20augmented%20generation"
+                      - generic [ref=e444]: knowledge graph augmented generation
+                - list [ref=e445]:
+                  - listitem [ref=e446]:
+                    - link "retrieval augmented generation" [ref=e447] [cursor=pointer]:
+                      - /url: "?q=retrieval%20augmented%20generation"
+                      - generic [ref=e449]: retrieval augmented generation
+                  - listitem [ref=e450]:
+                    - link "knowledge graph retrieval" [ref=e451] [cursor=pointer]:
+                      - /url: "?q=knowledge%20graph%20retrieval"
+                      - generic [ref=e453]: knowledge graph retrieval
+        - button "More results" [ref=e456] [cursor=pointer]
+    - list [ref=e459]:
+      - button "Close menu" [ref=e460] [cursor=pointer]:
+        - generic [ref=e461]: Close menu
+        - img [ref=e462]
+      - list [ref=e464]:
+        - listitem [ref=e465]: Search
+        - listitem [ref=e466]:
+          - link "Homepage" [ref=e467] [cursor=pointer]:
+            - /url: https://start.duckduckgo.com/
+        - listitem [ref=e468]:
+          - link "Themes" [ref=e469] [cursor=pointer]:
+            - /url: /settings#appearance
+        - listitem [ref=e470]:
+          - link "Settings" [ref=e471] [cursor=pointer]:
+            - /url: /settings
+      - list [ref=e472]:
+        - listitem [ref=e473]: Share Feedback
+        - listitem [ref=e474]:
+          - generic [ref=e477]:
+            - button "Positive feedback" [ref=e478] [cursor=pointer]:
+              - img [ref=e479]
+            - button "Negative feedback" [ref=e482] [cursor=pointer]:
+              - img [ref=e483]
+      - list [ref=e486]:
+        - listitem [ref=e487]: Downloads
+        - listitem [ref=e488]:
+          - link "iOS Browser" [ref=e489] [cursor=pointer]:
+            - /url: https://apps.apple.com/app/duckduckgo-private-browser/id663592361?platform=iphone&pt=866401&mt=8&ct=serp-atb-serp
+        - listitem [ref=e490]:
+          - link "Android Browser" [ref=e491] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=utm_campaign%3Dserp-atb-serp%26origin%3Dfunnel_playstore_searchresults
+        - listitem [ref=e492]:
+          - link "Mac Browser" [ref=e493] [cursor=pointer]:
+            - /url: /mac?origin=funnel_browser_searchresults
+        - listitem [ref=e494]:
+          - link "Windows Browser" [ref=e495] [cursor=pointer]:
+            - /url: /windows?origin=funnel_browser_searchresults
+        - listitem [ref=e496]: Browser Extensions
+      - list [ref=e497]:
+        - listitem [ref=e498]: More From DuckDuckGo
+        - listitem [ref=e499]:
+          - generic [ref=e502]:
+            - button "Dismiss promotion" [ref=e503] [cursor=pointer]:
+              - img [ref=e504]
+            - generic [ref=e506]:
+              - paragraph [ref=e508]:
+                - img [ref=e509]
+                - text: Upgrade to our Private Browser
+              - paragraph [ref=e520]: Fast. Secure. Free.
+            - link "Download Browser" [ref=e521] [cursor=pointer]:
+              - /url: /windows
+              - img [ref=e522]
+              - text: Download Browser
+        - listitem [ref=e524]:
+          - link "Duck.ai" [ref=e525] [cursor=pointer]:
+            - /url: https://duck.ai
+        - listitem [ref=e526]:
+          - link "Email Protection" [ref=e527] [cursor=pointer]:
+            - /url: /email
+        - listitem [ref=e528]:
+          - link "Newsletter" [ref=e529] [cursor=pointer]:
+            - /url: /newsletter
+        - listitem [ref=e530]:
+          - link "Blog" [ref=e531] [cursor=pointer]:
+            - /url: /blog
+        - listitem [ref=e532]:
+          - link "Podcast" [ref=e533] [cursor=pointer]:
+            - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+        - listitem [ref=e534]:
+          - link "Collaborations" [ref=e535] [cursor=pointer]:
+            - /url: /collaborations
+      - list [ref=e536]:
+        - listitem [ref=e537]: Learn More
+        - listitem [ref=e538]:
+          - link "What’s New" [ref=e539] [cursor=pointer]:
+            - /url: /updates
+        - listitem [ref=e540]:
+          - link "Compare Privacy" [ref=e541] [cursor=pointer]:
+            - /url: /compare-privacy
+        - listitem [ref=e542]:
+          - link "About Our Browser" [ref=e543] [cursor=pointer]:
+            - /url: /app
+        - listitem [ref=e544]:
+          - link "About DuckDuckGo" [ref=e545] [cursor=pointer]:
+            - /url: /about
+      - list [ref=e546]:
+        - listitem [ref=e547]: Other Resources
+        - listitem [ref=e548]:
+          - link "Help" [ref=e549] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages
+        - listitem [ref=e550]:
+          - link "Community" [ref=e551] [cursor=pointer]:
+            - /url: https://www.reddit.com/r/duckduckgo/
+        - listitem [ref=e552]:
+          - link "Careers" [ref=e553] [cursor=pointer]:
+            - /url: /careers
+        - listitem [ref=e554]:
+          - link "Privacy Policy" [ref=e555] [cursor=pointer]:
+            - /url: /privacy
+        - listitem [ref=e556]:
+          - link "Terms of Service" [ref=e557] [cursor=pointer]:
+            - /url: /terms
+        - listitem [ref=e558]:
+          - link "Press Kit" [ref=e559] [cursor=pointer]:
+            - /url: /press
+        - listitem [ref=e560]:
+          - link "Advertise on Search" [ref=e561] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages/company/advertise-on-duckduckgo-search
+  - generic [ref=e565]:
+    - generic [ref=e567]:
+      - img [ref=e568]
+      - generic [ref=e578]:
+        - heading "Introducing DuckDuckGo Collaborations" [level=3] [ref=e579]
+        - paragraph [ref=e580]: Expertly crafted products for people who give a duck about privacy.
+      - link "See More" [ref=e581] [cursor=pointer]:
+        - /url: https://duckduckgo.com/collaborations
+    - generic [ref=e583]:
+      - generic [ref=e584]:
+        - heading "Learn More" [level=3] [ref=e585]
+        - list [ref=e586]:
+          - listitem [ref=e587]:
+            - link "What's New" [ref=e588] [cursor=pointer]:
+              - /url: https://duckduckgo.com/updates
+          - listitem [ref=e589]:
+            - link "About Browser" [ref=e590] [cursor=pointer]:
+              - /url: https://duckduckgo.com/app
+          - listitem [ref=e591]:
+            - link "Compare Privacy" [ref=e592] [cursor=pointer]:
+              - /url: https://duckduckgo.com/compare-privacy
+          - listitem [ref=e593]:
+            - link "Help Pages" [ref=e594] [cursor=pointer]:
+              - /url: https://duckduckgo.com/duckduckgo-help-pages/
+      - generic [ref=e595]:
+        - heading "Get More" [level=3] [ref=e596]
+        - list [ref=e597]:
+          - listitem [ref=e598]:
+            - link "Email Protection" [ref=e599] [cursor=pointer]:
+              - /url: https://duckduckgo.com/email
+          - listitem [ref=e600]:
+            - generic [ref=e601]:
+              - link "Podcast" [ref=e603] [cursor=pointer]:
+                - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+              - generic [ref=e604]:
+                - text: "&"
+                - link "Newsletter" [ref=e605] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/newsletter
+          - listitem [ref=e606]:
+            - link "Collaborations" [ref=e607] [cursor=pointer]:
+              - /url: https://duckduckgo.com/collaborations
+  - button "Share Feedback" [ref=e612] [cursor=pointer]

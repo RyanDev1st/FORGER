@@ -1,0 +1,12 @@
+{
+  "browser": {
+    "launchOptions": {
+      "executablePath": "C:\\\\Users\\\\admin\\\\.cloakbrowser\\\\chromium-146.0.7680.177.4\\\\chrome.exe",
+      "args": [
+        "--disable-blink-features=AutomationControlled",
+        "--disable-infobars",
+        "--lang=en-US"
+      ]
+    }
+  }
+}

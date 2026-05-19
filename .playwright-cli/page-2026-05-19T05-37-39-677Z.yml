@@ -1,0 +1,201 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "ACL Logo ACL Anthology" [ref=e4] [cursor=pointer]:
+        - /url: https://aclanthology.org/
+        - img "ACL Logo" [ref=e5]
+        - text: ACL Anthology
+      - generic [ref=e6]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - link "News (current)" [ref=e9] [cursor=pointer]:
+              - /url: /posts/
+              - text: News
+              - generic [ref=e10]: (current)
+          - listitem [ref=e11]:
+            - link "FAQ (current)" [ref=e12] [cursor=pointer]:
+              - /url: /faq/
+              - text: FAQ
+              - generic [ref=e13]: (current)
+          - listitem [ref=e14]:
+            - link "Corrections (current)" [ref=e15] [cursor=pointer]:
+              - /url: /info/corrections/
+              - text: Corrections
+              - generic [ref=e16]: (current)
+          - listitem [ref=e17]:
+            - link "Submissions (current)" [ref=e18] [cursor=pointer]:
+              - /url: /info/contrib/
+              - text: Submissions
+              - generic [ref=e19]: (current)
+          - listitem [ref=e20]:
+            - link " GitHub" [ref=e21] [cursor=pointer]:
+              - /url: https://github.com/acl-org/acl-anthology/
+              - generic [ref=e22]: 
+              - text: GitHub
+        - text: 
+      - search [ref=e23]:
+        - searchbox "Search the Anthology" [ref=e24]
+        - button "Submit search" [ref=e25] [cursor=pointer]:
+          - generic [ref=e26]: 
+  - generic [ref=e28]:
+    - generic [ref=e29]:
+      - heading "Context-Informed Machine Translation of Manga using Multimodal Large Language Models" [level=2] [ref=e30]:
+        - link "Context-Informed Machine Translation of Manga using Multimodal Large Language Models" [ref=e31] [cursor=pointer]:
+          - /url: https://aclanthology.org/2025.coling-main.232.pdf
+      - paragraph [ref=e32]:
+        - link "Philip Lippmann" [ref=e33] [cursor=pointer]:
+          - /url: /people/philip-lippmann/
+        - text: ","
+        - link "Konrad Skublicki" [ref=e34] [cursor=pointer]:
+          - /url: /people/konrad-skublicki/unverified/
+        - text: ","
+        - link "Joshua Tanner" [ref=e35] [cursor=pointer]:
+          - /url: /people/joshua-tanner/unverified/
+        - text: ","
+        - link "Shonosuke Ishiwatari" [ref=e36] [cursor=pointer]:
+          - /url: /people/shonosuke-ishiwatari/unverified/
+        - text: ","
+        - link "Jie Yang" [ref=e37] [cursor=pointer]:
+          - /url: /people/jie-yang/unverified/
+    - separator [ref=e38]
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - generic [ref=e42]:
+          - heading "Abstract" [level=5] [ref=e43]
+          - text: Due to the significant time and effort required for handcrafting translations, most manga never leave the domestic Japanese market. Automatic manga translation is a promising potential solution. However, it is a budding and underdeveloped field and presents complexities even greater than those found in standard translation due to the need to effectively incorporate visual elements into the translation process to resolve ambiguities. In this work, we investigate to what extent multimodal large language models (LLMs) can provide effective manga translation, thereby assisting manga authors and publishers in reaching wider audiences. Specifically, we propose a methodology that leverages the vision component of multimodal LLMs to improve translation quality and evaluate the impact of translation unit size, context length, and propose a token efficient approach for manga translation. Moreover, we introduce a new evaluation dataset – the first parallel Japanese-Polish manga translation dataset – as part of a benchmark to be used in future research. Finally, we contribute an open-source software suite, enabling others to benchmark LLMs for manga translation. Our findings demonstrate that our proposed methods achieve state-of-the-art results for Japanese-English translation and set a new standard for Japanese-Polish.
+        - generic [ref=e44]:
+          - term [ref=e45]: "Anthology ID:"
+          - definition [ref=e46]: 2025.coling-main.232
+          - term [ref=e47]: "Volume:"
+          - definition [ref=e48]:
+            - link "Proceedings of the 31st International Conference on Computational Linguistics" [ref=e49] [cursor=pointer]:
+              - /url: /volumes/2025.coling-main/
+          - term [ref=e50]: "Month:"
+          - definition [ref=e51]: January
+          - term [ref=e52]: "Year:"
+          - definition [ref=e53]: "2025"
+          - term [ref=e54]: "Address:"
+          - definition [ref=e55]: Abu Dhabi, UAE
+          - term [ref=e56]: "Editors:"
+          - definition [ref=e57]:
+            - link "Owen Rambow" [ref=e58] [cursor=pointer]:
+              - /url: /people/owen-rambow/
+            - text: ","
+            - link "Leo Wanner" [ref=e59] [cursor=pointer]:
+              - /url: /people/leo-wanner/
+            - text: ","
+            - link "Marianna Apidianaki" [ref=e60] [cursor=pointer]:
+              - /url: /people/marianna-apidianaki/
+            - text: ","
+            - link "Hend Al-Khalifa" [ref=e61] [cursor=pointer]:
+              - /url: /people/hend-al-khalifa/
+            - text: ","
+            - link "Barbara Di Eugenio" [ref=e62] [cursor=pointer]:
+              - /url: /people/barbara-di-eugenio/
+            - text: ","
+            - link "Steven Schockaert" [ref=e63] [cursor=pointer]:
+              - /url: /people/steven-schockaert/unverified/
+          - term [ref=e64]: "Venue:"
+          - definition [ref=e65]:
+            - link "COLING" [ref=e66] [cursor=pointer]:
+              - /url: /venues/coling/
+          - term [ref=e67]: "SIG:"
+          - definition [ref=e68]: –
+          - term [ref=e69]: "Publisher:"
+          - definition [ref=e70]: Association for Computational Linguistics
+          - term [ref=e71]: "Note:"
+          - definition [ref=e72]: –
+          - term [ref=e73]: "Pages:"
+          - definition [ref=e74]: 3444–3464
+          - term [ref=e75]: "Language:"
+          - definition [ref=e76]: –
+          - term [ref=e77]: "URL:"
+          - definition [ref=e78]:
+            - link "https://aclanthology.org/2025.coling-main.232/" [ref=e79] [cursor=pointer]:
+              - /url: https://aclanthology.org/2025.coling-main.232/
+          - term [ref=e80]: "DOI:"
+          - definition [ref=e81]: –
+          - term [ref=e82]: "Bibkey:"
+          - definition [ref=e83]:
+            - button "Copy Bibkey to clipboard" [ref=e84] [cursor=pointer]:
+              - generic [ref=e85]: 
+              - text: lippmann-etal-2025-context
+          - term [ref=e86]: "Cite (ACL):"
+          - definition [ref=e87]:
+            - generic [ref=e88]:
+              - text: Philip Lippmann, Konrad Skublicki, Joshua Tanner, Shonosuke Ishiwatari, and Jie Yang. 2025.
+              - link "Context-Informed Machine Translation of Manga using Multimodal Large Language Models" [ref=e89] [cursor=pointer]:
+                - /url: https://aclanthology.org/2025.coling-main.232/
+              - text: . In Proceedings of the 31st International Conference on Computational Linguistics, pages 3444–3464, Abu Dhabi, UAE. Association for Computational Linguistics.
+            - button "Copy ACL citation to clipboard" [ref=e90] [cursor=pointer]:
+              - generic [ref=e91]: 
+          - term [ref=e92]: "Cite (Informal):"
+          - definition [ref=e93]:
+            - generic [ref=e94]:
+              - link "Context-Informed Machine Translation of Manga using Multimodal Large Language Models" [ref=e95] [cursor=pointer]:
+                - /url: https://aclanthology.org/2025.coling-main.232/
+              - text: (Lippmann et al., COLING 2025)
+            - button "Copy informal citation to clipboard" [ref=e96] [cursor=pointer]:
+              - generic [ref=e97]: 
+          - term [ref=e98]: "Copy Citation:"
+          - definition [ref=e99]:
+            - button "Copy BibTeX to clipboard" [ref=e100] [cursor=pointer]:
+              - generic [ref=e101]: 
+              - text: BibTeX
+            - button "Copy Markdown to clipboard" [ref=e102] [cursor=pointer]:
+              - generic [ref=e103]: 
+              - text: Markdown
+            - button "Copy MODS XML to clipboard" [ref=e104] [cursor=pointer]:
+              - generic [ref=e105]: 
+              - text: MODS XML
+            - button "Copy Endnote to clipboard" [ref=e106] [cursor=pointer]:
+              - generic [ref=e107]: 
+              - text: Endnote
+            - button "More options…" [ref=e108] [cursor=pointer]
+          - term [ref=e109]: "PDF:"
+          - definition [ref=e110]:
+            - link "https://aclanthology.org/2025.coling-main.232.pdf" [ref=e111] [cursor=pointer]:
+              - /url: https://aclanthology.org/2025.coling-main.232.pdf
+      - generic [ref=e112]:
+        - link " PDF" [ref=e113] [cursor=pointer]:
+          - /url: https://aclanthology.org/2025.coling-main.232.pdf
+          - generic [ref=e114]: 
+          - text: PDF
+        - link " Cite" [ref=e115] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e116]: 
+          - text: Cite
+        - link "Search for this paper on Semantic Scholar" [ref=e117] [cursor=pointer]:
+          - /url: https://www.semanticscholar.org/search?+q=Context-Informed+Machine+Translation+of+Manga+using+Multimodal+Large+Language+Models
+          - generic [ref=e118]: 
+          - text: Search
+        - link "Suggest a correction for this paper's metadata" [ref=e119] [cursor=pointer]:
+          - /url: "#"
+          - generic [ref=e121]: 
+          - generic [ref=e122]: Fix data
+    - separator [ref=e123]
+    - text:        
+  - contentinfo [ref=e124]:
+    - generic [ref=e125]:
+      - paragraph [ref=e126]:
+        - link "Creative Commons License" [ref=e128] [cursor=pointer]:
+          - /url: http://creativecommons.org/licenses/by/4.0/
+          - img "Creative Commons License" [ref=e129]
+        - text: ACL materials are Copyright © 1963–2026 ACL; other materials are copyrighted by their respective copyright holders. Materials prior to 2016 here are licensed under the
+        - link "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 International License" [ref=e130] [cursor=pointer]:
+          - /url: https://creativecommons.org/licenses/by-nc-sa/3.0/
+        - text: . Permission is granted to make copies for the purposes of teaching and research. Materials published in or after 2016 are licensed on a
+        - link "Creative Commons Attribution 4.0 International License" [ref=e131] [cursor=pointer]:
+          - /url: https://creativecommons.org/licenses/by/4.0/
+        - text: .
+      - paragraph [ref=e132]:
+        - text: The ACL Anthology is managed and built by the
+        - link "ACL Anthology team" [ref=e133] [cursor=pointer]:
+          - /url: /info/credits/
+        - text: of volunteers.
+      - paragraph [ref=e134]:
+        - generic [ref=e135]:
+          - text: Site last built on 18 May 2026 at 13:47 UTC with
+          - link "commit 0bc9cab" [ref=e136] [cursor=pointer]:
+            - /url: https://github.com/acl-org/acl-anthology/tree/0bc9cabfd987c66629e0d76e96aec2c8fef988a4
+          - text: .

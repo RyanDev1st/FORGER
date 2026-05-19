@@ -1,0 +1,1651 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e7]:
+        - menu [ref=e9]:
+          - generic [ref=e10]:
+            - list [ref=e12]:
+              - listitem [ref=e13]:
+                - link "English" [ref=e14] [cursor=pointer]:
+                  - /url: /authors/handbooks-and-manuals/handbook/current/chapter-15
+              - listitem [ref=e15]:
+                - link "Español" [ref=e16] [cursor=pointer]:
+                  - /url: /es/authors/handbooks-and-manuals/handbook/current/chapter-15
+              - listitem [ref=e17]:
+                - link "فارسی" [ref=e18] [cursor=pointer]:
+                  - /url: /fa/authors/handbooks-and-manuals/handbook/current/chapter-15
+              - listitem [ref=e19]:
+                - link "Français" [ref=e20] [cursor=pointer]:
+                  - /url: /fr/authors/handbooks-and-manuals/handbook/current/chapter-15
+              - listitem [ref=e21]:
+                - link "Русский" [ref=e22] [cursor=pointer]:
+                  - /url: /ru/authors/handbooks-and-manuals/handbook/current/chapter-15
+              - listitem [ref=e23]:
+                - link "Hrvatski" [ref=e24] [cursor=pointer]:
+                  - /url: /hr/authors/handbooks-and-manuals/handbook/current/chapter-15
+              - listitem [ref=e25]:
+                - link "Deutsch" [ref=e26] [cursor=pointer]:
+                  - /url: /de/authors/handbooks-and-manuals/handbook/current/chapter-15
+              - listitem [ref=e27]:
+                - link "Bahasa Malaysia" [ref=e28] [cursor=pointer]:
+                  - /url: /ms/authors/handbooks-and-manuals/handbook/current/chapter-15
+              - listitem [ref=e29]:
+                - link "ไทย" [ref=e30] [cursor=pointer]:
+                  - /url: /th/authors/handbooks-and-manuals/handbook/current/chapter-15
+              - listitem [ref=e31]:
+                - link "繁體中文" [ref=e32] [cursor=pointer]:
+                  - /url: /zh-hant/authors/handbooks-and-manuals/handbook/current/chapter-15
+              - listitem [ref=e33]:
+                - link "简体中文" [ref=e34] [cursor=pointer]:
+                  - /url: /zh-hans/authors/handbooks-and-manuals/handbook/current/chapter-15
+            - list [ref=e36]:
+              - listitem [ref=e37]:
+                - link "About Cochrane translations" [ref=e38] [cursor=pointer]:
+                  - /url: /get-involved/translate-our-evidence
+        - menu [ref=e39]:
+          - list [ref=e40]:
+            - listitem [ref=e41]:
+              - link "Log in" [ref=e42] [cursor=pointer]:
+                - /url: /cochranelogin
+            - listitem [ref=e43]:
+              - link "Cochrane Library ►" [ref=e44] [cursor=pointer]:
+                - /url: https://www.cochranelibrary.com/
+    - banner [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - link "Cochrane" [ref=e50] [cursor=pointer]:
+            - /url: /
+            - img "Cochrane" [ref=e51]
+          - menu [ref=e55]:
+            - listitem [ref=e56]:
+              - menuitem "About us" [ref=e57] [cursor=pointer]
+            - listitem [ref=e58]:
+              - menuitem "Our evidence" [ref=e59] [cursor=pointer]
+            - listitem [ref=e60]:
+              - menuitem "Get involved" [ref=e61] [cursor=pointer]
+            - listitem [ref=e62]:
+              - menuitem "Learn" [ref=e63] [cursor=pointer]
+            - listitem [ref=e64]:
+              - menuitem "Products and services" [ref=e65] [cursor=pointer]
+            - listitem [ref=e66]:
+              - menuitem "For authors" [ref=e67] [cursor=pointer]
+              - menu [ref=e68]:
+                - listitem [ref=e69]:
+                  - menuitem "Publish with us" [ref=e70] [cursor=pointer]
+                - listitem [ref=e71]:
+                  - menuitem "Handbooks and manuals" [ref=e72] [cursor=pointer]
+                - listitem [ref=e73]:
+                  - menuitem "Editorial policies" [ref=e74] [cursor=pointer]
+                - listitem [ref=e75]:
+                  - menuitem "Author support" [ref=e76] [cursor=pointer]
+                - listitem [ref=e77]:
+                  - menuitem "Methods in Cochrane" [ref=e78] [cursor=pointer]
+        - button "Toggle search" [ref=e79] [cursor=pointer]
+    - generic [ref=e83]:
+      - button "Close search results" [ref=e84] [cursor=pointer]
+      - generic [ref=e85]:
+        - checkbox "Only our evidence" [ref=e86]
+        - text: Only our evidence
+        - checkbox "Only \"Handbook\"" [ref=e87]
+        - text: Only "Handbook"
+        - checkbox "Exclude our evidence" [ref=e88]
+        - text: Exclude our evidence
+        - checkbox "Exclude news" [ref=e89]
+        - text: Exclude news
+    - navigation "Breadcrumb" [ref=e97]:
+      - heading "Breadcrumb" [level=2] [ref=e98]
+      - list [ref=e99]:
+        - listitem [ref=e100]:
+          - link "Home" [ref=e101] [cursor=pointer]:
+            - /url: /
+          - text: »
+        - listitem [ref=e102]:
+          - link "For authors" [ref=e103] [cursor=pointer]:
+            - /url: /authors
+          - text: »
+        - listitem [ref=e104]:
+          - link "Handbooks and manuals" [ref=e105] [cursor=pointer]:
+            - /url: /authors/handbooks-and-manuals
+          - text: »
+        - listitem [ref=e106]:
+          - link "Cochrane Handbook for Systematic Reviews of Interventions" [ref=e107] [cursor=pointer]:
+            - /url: /authors/handbooks-and-manuals/handbook
+          - text: »
+        - listitem [ref=e108]:
+          - link "Current version" [ref=e109] [cursor=pointer]:
+            - /url: /authors/handbooks-and-manuals/handbook/current
+          - text: »
+    - 'heading "Chapter 15: Interpreting results and drawing conclusions" [level=1] [ref=e115]':
+      - generic [ref=e117]: "Chapter 15: Interpreting results and drawing conclusions"
+    - main [ref=e118]:
+      - generic [ref=e119]:
+        - navigation "SRI Handbook" [ref=e120]:
+          - heading "SRI Handbook" [level=2] [ref=e121]
+          - generic [ref=e124]:
+            - combobox [ref=e125]:
+              - 'option "Part 1: About Cochrane Reviews"'
+              - 'option "Chapter I: Introduction"'
+              - 'option "Chapter II: Planning a Cochrane Review"'
+              - 'option "Chapter III: Reporting the review"'
+              - 'option "III.S1 Supplementary material: Considerations and recommendations for figures in Cochrane reviews: graphs of statistical data"'
+              - 'option "III.S2 Supplementary material: Guidance for writing a Cochrane Plain language summary"'
+              - 'option "Chapter IV: Updating a review"'
+              - 'option "Chapter V: Overviews of Reviews"'
+              - 'option "Part 2: Core methods"'
+              - 'option "Chapter 1: Starting a review"'
+              - 'option "Chapter 2: Determining the scope of the review and the questions it will address"'
+              - 'option "Chapter 3: Defining the criteria for including studies and how they will be grouped for the synthesis"'
+              - 'option "Chapter 4: Searching for and selecting studies"'
+              - 'option "4.S1 Supplementary material: Technical supplement"'
+              - 'option "4.S2 Supplementary material: Appendix of resources"'
+              - 'option "Chapter 5: Collecting data"'
+              - 'option "Chapter 6: Choosing effect measures and computing estimates of effect"'
+              - 'option "Chapter 7: Considering bias and conflicts of interest among the included studies"'
+              - 'option "Chapter 8: Assessing risk of bias in a randomized trial"'
+              - 'option "Chapter 9: Summarizing study characteristics and preparing for synthesis"'
+              - 'option "Chapter 10: Analysing data and undertaking meta-analyses"'
+              - 'option "Chapter 11: Undertaking network meta-analyses"'
+              - 'option "Chapter 12: Synthesizing and presenting findings using other methods"'
+              - 'option "Chapter 13: Assessing risk of bias due to missing results in a synthesis"'
+              - 'option "Chapter 14: Completing ‘Summary of findings’ tables and grading the certainty of the evidence"'
+              - 'option "Chapter 15: Interpreting results and drawing conclusions" [selected]'
+              - 'option "Part 3: Specific perspectives in reviews"'
+              - 'option "Chapter 16: Equity and specific populations"'
+              - 'option "Chapter 17: Intervention complexity"'
+              - 'option "Chapter 18: Patient-reported outcomes"'
+              - 'option "Chapter 19: Adverse effects"'
+              - 'option "Chapter 20: Economic evidence"'
+              - 'option "20.S Technical Supplement: Integrated full systematic review of economic evidence"'
+              - 'option "Chapter 21: Qualitative evidence"'
+              - 'option "Part 4: Other topics"'
+              - 'option "Chapter 22: Prospective approaches to accumulating evidence"'
+              - 'option "Chapter 23: Including variants on randomized trials"'
+              - 'option "Chapter 24: Including non-randomized studies on intervention effects"'
+              - 'option "Chapter 25: Assessing risk of bias in a non-randomized study"'
+              - 'option "Chapter 26: Individual participant data"'
+            - generic [ref=e126]:
+              - generic [ref=e128]: "Chapter 15: Interpreting results and drawing conclusions"
+              - combobox [ref=e133]:
+                - listbox
+            - textbox "Search within the Handbook" [ref=e135]
+        - generic [ref=e140]:
+          - heading "Table of contents" [level=4] [ref=e141]
+          - list [ref=e142]:
+            - listitem [ref=e143]:
+              - link "15.1 Introduction" [ref=e144] [cursor=pointer]:
+                - /url: "#section-15-1"
+            - listitem [ref=e145]:
+              - link "15.2 Issues of indirectness and applicability" [ref=e146] [cursor=pointer]:
+                - /url: "#section-15-2"
+            - listitem [ref=e147]:
+              - link "15.2.1 The role of the review author" [ref=e148] [cursor=pointer]:
+                - /url: "#section-15-2-1"
+            - listitem [ref=e149]:
+              - link "15.2.2 Biological variation" [ref=e150] [cursor=pointer]:
+                - /url: "#section-15-2-2"
+            - listitem [ref=e151]:
+              - link "15.2.3 Variation in context" [ref=e152] [cursor=pointer]:
+                - /url: "#section-15-2-3"
+            - listitem [ref=e153]:
+              - link "15.2.4 Variation in adherence" [ref=e154] [cursor=pointer]:
+                - /url: "#section-15-2-4"
+            - listitem [ref=e155]:
+              - link "15.2.5 Variation in values and preferences" [ref=e156] [cursor=pointer]:
+                - /url: "#section-15-2-5"
+            - listitem [ref=e157]:
+              - link "15.3 Interpreting results of statistical analyses" [ref=e158] [cursor=pointer]:
+                - /url: "#section-15-3"
+            - listitem [ref=e159]:
+              - link "15.3.1 Confidence intervals" [ref=e160] [cursor=pointer]:
+                - /url: "#section-15-3-1"
+            - listitem [ref=e161]:
+              - link "15.3.2 P values and statistical significance" [ref=e162] [cursor=pointer]:
+                - /url: "#section-15-3-2"
+            - listitem [ref=e163]:
+              - link "15.3.3 Relation between confidence intervals, statistical significance and certainty of evidence" [ref=e164] [cursor=pointer]:
+                - /url: "#section-15-3-3"
+            - listitem [ref=e165]:
+              - link "15.4 Interpreting results from dichotomous outcomes (including numbers needed to treat)" [ref=e166] [cursor=pointer]:
+                - /url: "#section-15-4"
+            - listitem [ref=e167]:
+              - link "15.4.1 Relative and absolute risk reductions" [ref=e168] [cursor=pointer]:
+                - /url: "#section-15-4-1"
+            - listitem [ref=e169]:
+              - link "15.4.2 Number needed to treat (NNT)" [ref=e170] [cursor=pointer]:
+                - /url: "#section-15-4-2"
+            - listitem [ref=e171]:
+              - link "15.4.3 Expressing risk differences" [ref=e172] [cursor=pointer]:
+                - /url: "#section-15-4-3"
+            - listitem [ref=e173]:
+              - link "15.4.4 Computations" [ref=e174] [cursor=pointer]:
+                - /url: "#section-15-4-4"
+            - listitem [ref=e175]:
+              - link "15.5 Interpreting results from continuous outcomes (including standardized mean differences)" [ref=e176] [cursor=pointer]:
+                - /url: "#section-15-5"
+            - listitem [ref=e177]:
+              - link "15.5.1 Meta-analyses with continuous outcomes" [ref=e178] [cursor=pointer]:
+                - /url: "#section-15-5-1"
+            - listitem [ref=e179]:
+              - link "15.5.2 Meta-analyses with continuous outcomes using the same measure" [ref=e180] [cursor=pointer]:
+                - /url: "#section-15-5-2"
+            - listitem [ref=e181]:
+              - link "15.5.3 Meta-analyses with continuous outcomes using different measures" [ref=e182] [cursor=pointer]:
+                - /url: "#section-15-5-3"
+            - listitem [ref=e183]:
+              - link "15.6 Drawing conclusions" [ref=e184] [cursor=pointer]:
+                - /url: "#section-15-6"
+            - listitem [ref=e185]:
+              - link "15.6.1 Conclusions sections of a Cochrane review" [ref=e186] [cursor=pointer]:
+                - /url: "#section-15-6-1"
+            - listitem [ref=e187]:
+              - link "15.6.2 Implications for practice" [ref=e188] [cursor=pointer]:
+                - /url: "#section-15-6-2"
+            - listitem [ref=e189]:
+              - link "15.6.3 Implications for research" [ref=e190] [cursor=pointer]:
+                - /url: "#section-15-6-3"
+            - listitem [ref=e191]:
+              - link "15.6.4 Reaching conclusions" [ref=e192] [cursor=pointer]:
+                - /url: "#section-15-6-4"
+            - listitem [ref=e193]:
+              - link "15.7 Chapter information" [ref=e194] [cursor=pointer]:
+                - /url: "#section-15-7"
+            - listitem [ref=e195]:
+              - link "15.8 References" [ref=e196] [cursor=pointer]:
+                - /url: "#section-15-8"
+        - article [ref=e198]:
+          - generic [ref=e204]:
+            - paragraph [ref=e205]: Holger J Schünemann, Gunn E Vist, Julian PT Higgins, Nancy Santesso, Jonathan J Deeks, Paul Glasziou, Elie A Akl, Gordon H Guyatt; on behalf of the Cochrane GRADEing Methods Group
+            - paragraph [ref=e206]:
+              - strong [ref=e207]: "Key Points:"
+            - list [ref=e208]:
+              - listitem [ref=e209]: This chapter provides guidance on interpreting the results of synthesis in order to communicate the conclusions of the review effectively.
+              - listitem [ref=e210]: Methods are presented for computing, presenting and interpreting relative and absolute effects for dichotomous outcome data, including the number needed to treat (NNT).
+              - listitem [ref=e211]: For continuous outcome measures, review authors can present summary results for studies using natural units of measurement or as minimal important differences when all studies use the same scale. When studies measure the same construct but with different scales, review authors will need to find a way to interpret the standardized mean difference, or to use an alternative effect measure for the meta-analysis such as the ratio of means.
+              - listitem [ref=e212]: Review authors should not describe results as ‘statistically significant’, ‘not statistically significant’ or ‘non-significant’ or unduly rely on thresholds for P values, but report the confidence interval together with the exact P value.
+              - listitem [ref=e213]: Review authors should not make recommendations about healthcare decisions, but they can – after describing the certainty of evidence and the balance of benefits and harms – highlight different actions that might be consistent with particular patterns of values and preferences and other factors that determine a decision such as cost.
+            - paragraph [ref=e214]:
+              - text: "Cite this chapter as: Schünemann HJ, Vist GE, Higgins JP, Santesso N, Deeks JJ, Glasziou P, Akl EA, Guyatt GH. Chapter 15: Interpreting results and drawing conclusions [last updated August 2023]. In: Higgins JP, Thomas J, Chandler J, Cumpston M, Li T, Page MJ, et al, editor(s)."
+              - emphasis [ref=e215]: Cochrane Handbook for Systematic Reviews of Interventions
+              - text: version 6.5. Cochrane, 2024. Available from
+              - emphasis [ref=e216]: cochrane.org/handbook
+              - text: .
+            - heading "15.1 Introduction#section-15-1" [level=2] [ref=e217]
+            - paragraph [ref=e218]: "The purpose of Cochrane reviews is to facilitate healthcare decisions by patients and the general public, clinicians, guideline developers, administrators and policy makers. They also inform future research. A clear statement of findings, a considered discussion and a clear presentation of the authors’ conclusions are, therefore, important parts of the review. In particular, the following issues can help people make better informed decisions and increase the usability of Cochrane reviews:"
+            - list [ref=e219]:
+              - listitem [ref=e220]: information on all important outcomes, including adverse outcomes;
+              - listitem [ref=e221]: the certainty of the evidence for each of these outcomes, as it applies to specific populations and specific interventions; and
+              - listitem [ref=e222]: clarification of the manner in which particular values and preferences may bear on the desirable and undesirable consequences of the intervention.
+            - paragraph [ref=e223]:
+              - text: A ‘Summary of findings’ table, described in
+              - link "Chapter 14" [ref=e224] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-14
+              - link ", Section 14.1" [ref=e225] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-14#section-14-1
+              - text: ", provides key pieces of information about health benefits and harms in a quick and accessible format. It is highly desirable that review authors include a ‘Summary of findings’ table in Cochrane reviews alongside a sufficient description of the studies and meta-analyses to support its contents. This description includes the rating of the certainty of evidence, also called the quality of the evidence or confidence in the estimates of the effects, which is expected in all Cochrane reviews."
+            - paragraph [ref=e226]: "‘Summary of findings’ tables are usually supported by full evidence profiles which include the detailed ratings of the evidence (Guyatt et al 2011a, Guyatt et al 2013a, Guyatt et al 2013b, Santesso et al 2016). The Discussion section of the text of the review provides space to reflect and consider the implications of these aspects of the review’s findings. Cochrane reviews include five standard subheadings to ensure the Discussion section places the review in an appropriate context: ‘Summary of main results (benefits and harms)’; ‘Potential biases in the review process’; ‘Overall completeness and applicability of evidence’; ‘Certainty of the evidence’; and ‘Agreements and disagreements with other studies or reviews’. Following the Discussion, the Authors’ conclusions section is divided into two standard subsections: ‘Implications for practice’ and ‘Implications for research’. The assessment of the certainty of evidence facilitates a structured description of the implications for practice and research."
+            - paragraph [ref=e227]: Because Cochrane reviews have an international audience, the Discussion and Authors’ conclusions should, so far as possible, assume a broad international perspective and provide guidance for how the results could be applied in different settings, rather than being restricted to specific national or local circumstances. Cultural differences and economic differences may both play an important role in determining the best course of action based on the results of a Cochrane review. Furthermore, individuals within societies have widely varying values and preferences regarding health states, and use of societal resources to achieve particular health states. For all these reasons, and because information that goes beyond that included in a Cochrane review is required to make fully informed decisions, different people will often make different decisions based on the same evidence presented in a review.
+            - paragraph [ref=e228]: Thus, review authors should avoid specific recommendations that inevitably depend on assumptions about available resources, values and preferences, and other factors such as equity considerations, feasibility and acceptability of an intervention. The purpose of the review should be to present information and aid interpretation rather than to offer recommendations. The discussion and conclusions should help people understand the implications of the evidence in relation to practical decisions and apply the results to their specific situation. Review authors can aid this understanding of the implications by laying out different scenarios that describe certain value structures.
+            - paragraph [ref=e229]: "In this chapter, we address first one of the key aspects of interpreting findings that is also fundamental in completing a ‘Summary of findings’ table: the certainty of evidence related to each of the outcomes. We then provide a more detailed consideration of issues around applicability and around interpretation of numerical results, and provide suggestions for presenting authors’ conclusions."
+            - heading "15.2 Issues of indirectness and applicability#section-15-2" [level=2] [ref=e230]
+            - heading "15.2.1 The role of the review author#section-15-2-1" [level=3] [ref=e231]
+            - paragraph [ref=e232]: “A leap of faith is always required when applying any study findings to the population at large” or to a specific person. “In making that jump, one must always strike a balance between making justifiable broad generalizations and being too conservative in one’s conclusions” (Friedman et al 1985). In addition to issues about risk of bias and other domains determining the certainty of evidence, this leap of faith is related to how well the identified body of evidence matches the posed PICO (Population, Intervention, Comparator(s) and Outcome) question. As to the population, no individual can be entirely matched to the population included in research studies. At the time of decision, there will always be differences between the study population and the person or population to whom the evidence is applied; sometimes these differences are slight, sometimes large.
+            - paragraph [ref=e233]: "The terms applicability, generalizability, external validity and transferability are related, sometimes used interchangeably and have in common that they lack a clear and consistent definition in the classic epidemiological literature (Schünemann et al 2013). However, all of the terms describe one overarching theme: whether or not available research evidence can be directly used to answer the health and healthcare question at hand, ideally supported by a judgement about the degree of confidence in this use (Schünemann et al 2013). GRADE’s certainty domains include a judgement about ‘indirectness’ to describe all of these aspects including the concept of direct versus indirect comparisons of different interventions (Atkins et al 2004, Guyatt et al 2008, Guyatt et al 2011b)."
+            - paragraph [ref=e234]:
+              - text: To address adequately the extent to which a review is relevant for the purpose to which it is being put, there are certain things the review author must do, and certain things the user of the review must do to assess the degree of indirectness. Cochrane and the GRADE Working Group suggest using a very structured framework to address indirectness. We discuss here and in
+              - link "Chapter 14" [ref=e235] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-14
+              - text: what the review author can do to help the user. Cochrane review authors must be extremely clear on the population, intervention and outcomes that they intend to address.
+              - link "Chapter 14, Section 14.1.2" [ref=e236] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-14#section-14-1-2
+              - text: ", also emphasizes a crucial step: the specification of all patient-important outcomes relevant to the intervention strategies under comparison."
+            - paragraph [ref=e237]:
+              - text: In considering whether the effect of an intervention applies equally to all participants, and whether different variations on the intervention have similar effects, review authors need to make a priori hypotheses about possible effect modifiers, and then examine those hypotheses (see
+              - link "Chapter 10, Section 10.10" [ref=e238] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-10#section-10-10
+              - text: and
+              - link "Section 10.11" [ref=e239] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-10#section-10-11
+              - text: ). If they find apparent subgroup effects, they must ultimately decide whether or not these effects are credible (Sun et al 2012). Differences between subgroups, particularly those that correspond to differences between studies, should be interpreted cautiously. Some chance variation between subgroups is inevitable so, unless there is good reason to believe that there is an interaction, review authors should not assume that the subgroup effect exists. If, despite due caution, review authors judge subgroup effects in terms of relative effect estimates as credible (i.e. the effects differ credibly), they should conduct separate meta-analyses for the relevant subgroups, and produce separate ‘Summary of findings’ tables for those subgroups.
+            - paragraph [ref=e240]:
+              - text: The user of the review will be challenged with ‘individualization’ of the findings, whether they seek to apply the findings to an individual patient or a policy decision in a specific context. For example, even if relative effects are similar across subgroups, absolute effects will differ according to baseline risk. Review authors can help provide this information by identifying identifiable groups of people with varying baseline risks in the ‘Summary of findings’ tables, as discussed in
+              - link "Chapter 14, Section 14.1.3" [ref=e241] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-14#section-14-1-3
+              - text: . Users can then identify their specific case or population as belonging to a particular risk group, if relevant, and assess their likely magnitude of benefit or harm accordingly. A description of the identifying prognostic or baseline risk factors in a brief scenario (e.g. age or gender) will help users of a review further.
+            - paragraph [ref=e242]: Another decision users must make is whether their individual case or population of interest is so different from those included in the studies that they cannot use the results of the systematic review and meta-analysis at all. Rather than rigidly applying the inclusion and exclusion criteria of studies, it is better to ask whether or not there are compelling reasons why the evidence should not be applied to a particular patient. Review authors can sometimes help decision makers by identifying important variation where divergence might limit the applicability of results (Rothwell 2005, Schünemann et al 2006, Guyatt et al 2011b, Schünemann et al 2013), including biologic and cultural variation, and variation in adherence to an intervention.
+            - paragraph [ref=e243]: In addressing these issues, review authors cannot be aware of, or address, the myriad of differences in circumstances around the world. They can, however, address differences of known importance to many people and, importantly, they should avoid assuming that other people’s circumstances are the same as their own in discussing the results and drawing conclusions.
+            - heading "15.2.2 Biological variation#section-15-2-2" [level=3] [ref=e244]
+            - paragraph [ref=e245]: Issues of biological variation that may affect the applicability of a result to a reader or population include divergence in pathophysiology (e.g. biological differences between women and men that may affect responsiveness to an intervention) and divergence in a causative agent (e.g. for infectious diseases such as malaria, which may be caused by several different parasites). The discussion of the results in the review should make clear whether the included studies addressed all or only some of these groups, and whether any important subgroup effects were found.
+            - heading "15.2.3 Variation in context#section-15-2-3" [level=3] [ref=e246]
+            - paragraph [ref=e247]:
+              - text: Some interventions, particularly non-pharmacological interventions, may work in some contexts but not in others; the situation has been described as program by context interaction (Hawe et al 2004). Contextual factors might pertain to the host organization in which an intervention is offered, such as the expertise, experience and morale of the staff expected to carry out the intervention, the competing priorities for the clinician’s or staff’s attention, the local resources such as service and facilities made available to the program and the status or importance given to the program by the host organization. Broader context issues might include aspects of the
+              - emphasis [ref=e248]
+              - text: system within which the host organization operates, such as the fee or payment structure for healthcare providers and the local insurance system. Some interventions, in particular complex interventions (see
+              - link "Chapter 17" [ref=e249] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-17
+              - text: ), can be only partially implemented in some contexts, and this requires judgements about indirectness of the intervention and its components for readers in that context (Schünemann 2013).
+            - paragraph [ref=e250]:
+              - text: Contextual factors may also pertain to the characteristics of the target group or population,
+              - emphasis [ref=e251]
+              - text: such as cultural and linguistic diversity, socio-economic position, rural/urban setting. These factors may mean that a particular style of care or relationship evolves between service providers and consumers that may or may not match the values and technology of the program.
+            - paragraph [ref=e252]: For many years these aspects have been acknowledged when decision makers have argued that results of evidence reviews from other countries do not apply in their own country or setting. Whilst some programmes/interventions have been successfully transferred from one context to another, others have not (Resnicow et al 1993, Lumley et al 2004, Coleman et al 2015). Review authors should be cautious when making generalizations from one context to another. They should report on the presence (or otherwise) of context-related information in intervention studies, where this information is available.
+            - heading "15.2.4 Variation in adherence#section-15-2-4" [level=3] [ref=e253]
+            - paragraph [ref=e254]: Variation in the adherence of the recipients and providers of care can limit the certainty in the applicability of results. Predictable differences in adherence can be due to divergence in how recipients of care perceive the intervention (e.g. the importance of side effects), economic conditions or attitudes that make some forms of care inaccessible in some settings, such as in low-income countries (Dans et al 2007). It should not be assumed that high levels of adherence in closely monitored randomized trials will translate into similar levels of adherence in normal practice.
+            - heading "15.2.5 Variation in values and preferences#section-15-2-5" [level=3] [ref=e255]
+            - paragraph [ref=e256]:
+              - text: Decisions about healthcare management strategies and options involve trading off health benefits and harms. The right choice may differ for people with different values and preferences (i.e. the importance people place on the outcomes and interventions), and it is important that decision makers ensure that decisions are consistent with a patient or population’s values and preferences. The importance placed on outcomes, together with other factors, will influence whether the recipients of care will or will not accept an option that is offered (Alonso-Coello et al 2016) and, thus, can be one factor influencing adherence. In Section
+              - link "15.6" [ref=e257] [cursor=pointer]:
+                - /url: "#section-15-6"
+              - text: ", we describe how the review author can help this process and the limits of supporting decision making based on intervention reviews."
+            - heading "15.3 Interpreting results of statistical analyses#section-15-3" [level=2] [ref=e258]
+            - heading "15.3.1 Confidence intervals#section-15-3-1" [level=3] [ref=e259]
+            - paragraph [ref=e260]: Results for both individual studies and meta-analyses are reported with a point estimate together with an associated confidence interval. For example, ‘The odds ratio was 0.75 with a 95% confidence interval of 0.70 to 0.80’. The point estimate (0.75) is the best estimate of the magnitude and direction of the experimental intervention’s effect compared with the comparator intervention. The confidence interval describes the uncertainty inherent in any estimate, and describes a range of values within which we can be reasonably sure that the true effect actually lies. If the confidence interval is relatively narrow (e.g. 0.70 to 0.80), the effect size is known precisely. If the interval is wider (e.g. 0.60 to 0.93) the uncertainty is greater, although there may still be enough precision to make decisions about the utility of the intervention. Intervals that are very wide (e.g. 0.50 to 1.10) indicate that we have little knowledge about the effect and this imprecision affects our certainty in the evidence, and that further information would be needed before we could draw a more certain conclusion.
+            - paragraph [ref=e261]:
+              - text: A 95% confidence interval is often interpreted as indicating a range within which we can be 95% certain that the true effect lies. This statement is a loose interpretation, but is useful as a rough guide. The strictly correct interpretation of a confidence interval is based on the hypothetical notion of considering the results that would be obtained if the study were repeated many times. If a study were repeated infinitely often, and on each occasion a 95% confidence interval calculated, then 95% of these intervals would contain the true effect (see Section
+              - link "15.3.3" [ref=e262] [cursor=pointer]:
+                - /url: "#section-15-3-3"
+              - text: for further explanation).
+            - paragraph [ref=e263]: The width of the confidence interval for an individual study depends to a large extent on the sample size. Larger studies tend to give more precise estimates of effects (and hence have narrower confidence intervals) than smaller studies. For continuous outcomes, precision depends also on the variability in the outcome measurements (i.e. how widely individual results vary between people in the study, measured as the standard deviation); for dichotomous outcomes it depends on the risk of the event (more frequent events allow more precision, and narrower confidence intervals), and for time-to-event outcomes it also depends on the number of events observed. All these quantities are used in computation of the standard errors of effect estimates from which the confidence interval is derived.
+            - paragraph [ref=e264]:
+              - text: The width of a confidence interval for a meta-analysis depends on the precision of the individual study estimates and on the number of studies combined. In addition, for random-effects models, precision will decrease with increasing heterogeneity and confidence intervals will widen correspondingly (see
+              - link "Chapter 10, Section 10.10.4" [ref=e265] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-10#section-10-10-4
+              - text: ). As more studies are added to a meta-analysis the width of the confidence interval usually decreases. However, if the additional studies increase the heterogeneity in the meta-analysis and a random-effects model is used, it is possible that the confidence interval width will increase.
+            - paragraph [ref=e266]:
+              - text: Confidence intervals and point estimates have different interpretations in fixed-effect and random-effects models. While the fixed-effect estimate and its confidence interval address the question ‘what is the best (single) estimate of the effect?’, the random-effects estimate assumes there to be a distribution of effects, and the estimate and its confidence interval address the question ‘what is the best estimate of the average effect?’ A confidence interval may be reported for any level of confidence (although they are most commonly reported for 95%, and sometimes 90% or 99%). For example, the odds ratio of 0.80 could be reported with an 80% confidence interval of 0.73 to 0.88; a 90% interval of 0.72 to 0.89; and a 95% interval of 0.70 to 0.92. As the confidence level
+              - emphasis [ref=e267]
+              - text: increases, the confidence interval widens.
+            - paragraph [ref=e268]:
+              - text: There is logical correspondence between the confidence interval and the P value (see Section
+              - link "15.3.3" [ref=e269] [cursor=pointer]:
+                - /url: "#section-15-3-3"
+              - text: ). The 95% confidence interval for an effect will exclude the null value (such as an odds ratio of 1.0 or a risk difference of 0) if and only if the test of significance yields a P value of less than 0.05. If the P value is exactly 0.05, then either the upper or lower limit of the 95% confidence interval will be at the null value. Similarly, the 99% confidence interval will exclude the null if and only if the test of significance yields a P value of less than 0.01.
+            - paragraph [ref=e270]: Together, the point estimate and confidence interval provide information to assess the effects of the intervention on the outcome. For example, suppose that we are evaluating an intervention that reduces the risk of an event and we decide that it would be useful only if it reduced the risk of an event from 30% by at least 5 percentage points to 25% (these values will depend on the specific clinical scenario and outcomes, including the anticipated harms). If the meta-analysis yielded an effect estimate of a reduction of 10 percentage points with a tight 95% confidence interval, say, from 7% to 13%, we would be able to conclude that the intervention was useful since both the point estimate and the entire range of the interval exceed our criterion of a reduction of 5% for net health benefit. However, if the meta-analysis reported the same risk reduction of 10% but with a wider interval, say, from 2% to 18%, although we would still conclude that our best estimate of the intervention effect is that it provides net benefit, we could not be so confident as we still entertain the possibility that the effect could be between 2% and 5%. If the confidence interval was wider still, and included the null value of a difference of 0%, we would still consider the possibility that the intervention has no effect on the outcome whatsoever, and would need to be even more sceptical in our conclusions.
+            - paragraph [ref=e271]:
+              - text: Review authors may use the same general approach to conclude that an intervention is
+              - emphasis [ref=e272]: not
+              - text: useful. Continuing with the above example where the criterion for an important difference that should be achieved to provide more benefit than harm is a 5% risk difference, an effect estimate of 2% with a 95% confidence interval of 1% to 4% suggests that the intervention does not provide net health benefit.
+            - heading "15.3.2 P values and statistical significance#section-15-3-2" [level=3] [ref=e273]
+            - paragraph [ref=e274]:
+              - text: A P value is the standard result of a statistical test, and is the probability of obtaining the observed effect (or larger) under a ‘null hypothesis’. In the context of Cochrane reviews there are two commonly used statistical tests. The first is a test of overall effect (a Z-test), and its null hypothesis is that there is no overall effect of the experimental intervention compared with the comparator on the outcome of interest. The second is the (Chi
+              - superscript [ref=e275]: "2"
+              - text: ) test for heterogeneity, and its null hypothesis is that there are no differences in the intervention effects across studies.
+            - paragraph [ref=e276]:
+              - text: A P value that is very small indicates that the observed effect is very unlikely to have arisen purely by chance, and therefore provides evidence against the null hypothesis. It has been common practice to interpret a P value by examining whether it is smaller than particular threshold values. In particular, P values less than 0.05 are often reported as ‘statistically significant’, and interpreted as being small enough to justify rejection of the null hypothesis. However, the 0.05 threshold is an arbitrary one that became commonly used in medical and psychological research largely because P values were determined by comparing the test statistic against tabulations of specific percentage points of statistical distributions. If review authors decide to present a P value with the results of a meta-analysis, they should report a precise P value (as calculated by most statistical software), together with the 95% confidence interval.
+              - strong [ref=e277]: Review authors should not describe results as ‘statistically significant’, ‘not statistically significant’ or ‘non-significant’ or unduly rely on thresholds for P values
+              - text: ", but report the confidence interval together with the exact P value (see"
+              - link "MECIR Box 15.3.a" [ref=e278] [cursor=pointer]:
+                - /url: "#mecir-box-15-3-a"
+              - text: ).
+            - paragraph [ref=e279]:
+              - text: We discuss interpretation of the test for heterogeneity in
+              - link "Chapter 10, Section 10.10.2" [ref=e280] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-10#section-10-10-2
+              - text: ; the remainder of this section refers mainly to tests for an overall effect. For tests of an overall effect, the computation of P involves both the effect estimate and precision of the effect estimate (driven largely by sample size). As precision increases, the range of plausible effects that could occur by chance is reduced. Correspondingly, the statistical significance of an effect of a particular magnitude will usually be greater (the P value will be smaller) in a larger study than in a smaller study.
+            - paragraph [ref=e281]: P values are commonly misinterpreted in two ways. First, a moderate or large P value (e.g. greater than 0.05) may be misinterpreted as evidence that the intervention has no effect on the outcome. There is an important difference between this statement and the correct interpretation that there is a high probability that the observed effect on the outcome is due to chance alone. To avoid such a misinterpretation, review authors should always examine the effect estimate and its 95% confidence interval.
+            - paragraph [ref=e282]:
+              - text: The second misinterpretation is to assume that a result with a small P value for the summary effect estimate implies that an experimental intervention has an important benefit. Such a misinterpretation is more likely to occur in large studies and meta-analyses that accumulate data over dozens of studies and thousands of participants. The P value addresses the question of whether the experimental intervention effect is precisely nil; it does not examine whether the effect is of a magnitude of importance to potential recipients of the intervention. In a large study, a small P value may represent the detection of a trivial effect that may not lead to net health benefit when compared with the potential harms (i.e. harmful effects on other important outcomes). Again, inspection of the point estimate and confidence interval helps correct interpretations (see Section
+              - link "15.3.1" [ref=e283] [cursor=pointer]:
+                - /url: "#section-15-3-1"
+              - text: ).
+            - paragraph [ref=e284]:
+              - strong [ref=e285]: MECIR Box 15.3.a
+              - text: Relevant expectations for conduct of intervention reviews
+            - table [ref=e286]:
+              - rowgroup [ref=e287]:
+                - 'row "C72: Interpreting results (Mandatory)" [ref=e288]':
+                  - 'cell "C72: Interpreting results (Mandatory)" [ref=e289]':
+                    - emphasis [ref=e290]: "C72:"
+                    - text: Interpreting results (
+                    - strong [ref=e291]: Mandatory
+                    - text: )
+                - row "Focus interpretation of results on estimates of effect and their confidence intervals, avoiding use of a distinction between “statistically significant” and “statistically non-significant\". Authors commonly mistake a lack of evidence of effect as evidence of a lack of effect." [ref=e292]:
+                  - cell "Focus interpretation of results on estimates of effect and their confidence intervals, avoiding use of a distinction between “statistically significant” and “statistically non-significant\"." [ref=e293]:
+                    - emphasis [ref=e294]: Focus interpretation of results on estimates of effect and their confidence intervals, avoiding use of a distinction between “statistically significant” and “statistically non-significant"
+                    - text: .
+                  - cell "Authors commonly mistake a lack of evidence of effect as evidence of a lack of effect." [ref=e295]
+            - heading "15.3.3 Relation between confidence intervals, statistical significance and certainty of evidence#section-15-3-3" [level=3] [ref=e296]
+            - paragraph [ref=e297]:
+              - text: The confidence interval (and imprecision) is only one domain that influences overall uncertainty about effect estimates. Uncertainty resulting from imprecision (i.e. statistical uncertainty) may be no less important than uncertainty from indirectness, or any other GRADE domain, in the context of decision making (Schünemann 2016). Thus, the extent to which interpretations of the confidence interval described in Sections
+              - link "15.3.1" [ref=e298] [cursor=pointer]:
+                - /url: "#section-15-3-1"
+              - text: and
+              - link "15.3.2" [ref=e299] [cursor=pointer]:
+                - /url: "#section-15-3-2"
+              - text: correspond to conclusions about overall certainty of the evidence for the outcome of interest depends on these other domains. If there are no concerns about other domains that determine the certainty of the evidence (i.e. risk of bias, inconsistency, indirectness or publication bias), then the interpretation in Sections
+              - link "15.3.1" [ref=e300] [cursor=pointer]:
+                - /url: "#section-15-3-1"
+              - text: and
+              - link "15.3.2" [ref=e301] [cursor=pointer]:
+                - /url: "#section-15-3-2"
+              - text: . about the relation of the confidence interval to the true effect may be carried forward to the overall certainty. However, if there are concerns about the other domains that affect the certainty of the evidence, the interpretation about the true effect needs to be seen in the context of further uncertainty resulting from those concerns.
+            - paragraph [ref=e302]:
+              - text: For example, nine randomized controlled trials in almost 6000 cancer patients indicated that the administration of heparin reduces the risk of venous thromboembolism (VTE), with a risk ratio of 43% (95% CI 19% to 60%) (Akl et al 2011a). For patients with a plausible baseline risk of approximately 4.6% per year, this relative effect suggests that heparin leads to an absolute risk reduction of 20 fewer VTEs (95% CI 9 fewer to 27 fewer) per 1000 people per year (Akl et al 2011a). Now consider that the review authors or those applying the evidence in a guideline have lowered the certainty in the evidence as a result of indirectness. While the confidence intervals would remain unchanged, the certainty in that confidence interval and in the point estimate as reflecting the truth for the question of interest will be lowered. In fact, the certainty range will have unknown width so there will be unknown likelihood of a result within that range because of this indirectness. The lower the certainty in the evidence, the less we know about the width of the certainty range, although methods for quantifying risk of bias and understanding potential direction of bias may offer insight when lowered certainty is due to risk of bias. Nevertheless, decision makers must consider this uncertainty, and must do so in relation to the effect measure that is being evaluated (e.g. a relative or absolute measure). We will describe the impact on interpretations for dichotomous outcomes in Section
+              - link "15.4" [ref=e303] [cursor=pointer]:
+                - /url: "#section-15-4"
+              - text: .
+            - heading "15.4 Interpreting results from dichotomous outcomes (including numbers needed to treat)#section-15-4" [level=2] [ref=e304]
+            - heading "15.4.1 Relative and absolute risk reductions#section-15-4-1" [level=3] [ref=e305]
+            - paragraph [ref=e306]:
+              - text: Clinicians may be more inclined to prescribe an intervention that reduces the relative risk of death by 25% than one that reduces the risk of death by 1 percentage point, although both presentations of the evidence may relate to the same benefit (i.e. a reduction in risk from 4% to 3%). The former refers to the
+              - emphasis [ref=e307]: relative
+              - text: reduction in risk and the latter to the
+              - emphasis [ref=e308]: absolute
+              - text: reduction in risk. As described in
+              - link "Chapter 6, Section 6.4.1" [ref=e309] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-06#section-6-4-1
+              - text: ", there are several measures for comparing dichotomous outcomes in two groups. Meta-analyses are usually undertaken using risk ratios (RR), odds ratios (OR) or risk differences (RD), but there are several alternative ways of expressing results."
+            - paragraph [ref=e310]:
+              - strong [ref=e311]: Relative risk reduction
+              - text: "(RRR) is a convenient way of re-expressing a risk ratio as a percentage reduction:"
+            - generic [ref=e312]: Image
+            - paragraph [ref=e313]: For example, a risk ratio of 0.75 translates to a relative risk reduction of 25%, as in the example above.
+            - paragraph [ref=e314]:
+              - text: The risk difference is often referred to as the
+              - strong [ref=e315]: absolute risk reduction
+              - text: (ARR) or absolute risk increase (ARI), and may be presented as a percentage (e.g. 1%), as a decimal (e.g. 0.01), or as account (e.g. 10 out of 1000). We consider different choices for presenting absolute effects in Section
+              - link "15.4.3" [ref=e316] [cursor=pointer]:
+                - /url: "#section-15-4-3"
+              - text: . We then describe computations for obtaining these numbers from the results of individual studies and of meta-analyses in Section
+              - link "15.4.4" [ref=e317] [cursor=pointer]:
+                - /url: "#section-15-4-4"
+              - text: .
+            - heading "15.4.2 Number needed to treat (NNT)#section-15-4-2" [level=3] [ref=e318]
+            - paragraph [ref=e319]:
+              - text: The
+              - strong [ref=e320]: number needed to treat
+              - text: "(NNT) is a common alternative way of presenting information on the effect of an intervention. The NNT is defined as the expected number of people who need to receive the experimental rather than the comparator intervention for one additional person to either incur or avoid an event (depending on the direction of the result) in a given time frame. Thus, for example, an NNT of 10 can be interpreted as ‘it is expected that one additional (or less) person will incur an event for every 10 participants receiving the experimental intervention rather than comparator over a given time frame’. It is important to be clear that:"
+            - list [ref=e321]:
+              - listitem [ref=e322]:
+                - text: since the NNT is derived from the risk difference, it is still a
+                - emphasis [ref=e323]: comparative
+                - text: measure of effect (experimental versus a specific comparator) and not a general property of a single intervention; and
+              - listitem [ref=e324]:
+                - text: the NNT gives an ‘expected value’. For example, NNT = 10 does not imply that one additional event
+                - emphasis [ref=e325]: will
+                - text: occur in each and every group of 10 people.
+            - paragraph [ref=e326]: NNTs can be computed for both beneficial and detrimental events, and for interventions that cause both improvements and deteriorations in outcomes. In all instances NNTs are expressed as positive whole numbers. Some authors use the term ‘number needed to harm’ (NNH) when an intervention leads to an adverse outcome, or a decrease in a positive outcome, rather than improvement. However, this phrase can be misleading (most notably, it can easily be read to imply the number of people who will experience a harmful outcome if given the intervention), and it is strongly recommended that ‘number needed to harm’ and ‘NNH’ are avoided. The preferred alternative is to use phrases such as ‘number needed to treat for an additional beneficial outcome’ (NNTB) and ‘number needed to treat for an additional harmful outcome’ (NNTH) to indicate direction of effect.
+            - paragraph [ref=e327]: As NNTs refer to events, their interpretation needs to be worded carefully when the binary outcome is a dichotomization of a scale-based outcome. For example, if the outcome is pain measured on a ‘none, mild, moderate or severe’ scale it may have been dichotomized as ‘none or mild’ versus ‘moderate or severe’. It would be inappropriate for an NNT from these data to be referred to as an ‘NNT for pain’. It is an ‘NNT for moderate or severe pain’.
+            - paragraph [ref=e328]:
+              - text: We consider different choices for presenting absolute effects in Section
+              - link "15.4.3" [ref=e329] [cursor=pointer]:
+                - /url: "#section-15-4-3"
+              - text: . We then describe computations for obtaining these numbers from the results of individual studies and of meta-analyses in Section
+              - link "15.4.4" [ref=e330] [cursor=pointer]:
+                - /url: "#section-15-4-4"
+              - text: .
+            - heading "15.4.3 Expressing risk differences#section-15-4-3" [level=3] [ref=e331]
+            - paragraph [ref=e332]:
+              - text: Users of reviews are liable to be influenced by the choice of statistical presentations of the evidence. Hoffrage and colleagues suggest that physicians’ inferences about statistical outcomes are more appropriate when they deal with ‘natural frequencies’ – whole numbers of people, both treated and untreated (e.g. treatment results in a drop from 20 out of 1000 to 10 out of 1000 women having breast cancer) – than when effects are presented as percentages (e.g. 1% absolute reduction in breast cancer risk) (Hoffrage et al 2000). Probabilities may be more difficult to understand than frequencies, particularly when events are rare. While standardization may be important in improving the presentation of research evidence (and participation in healthcare decisions), current evidence suggests that the presentation of natural frequencies for expressing differences in absolute risk is best understood by consumers of healthcare information (Akl et al 2011b). This evidence provides the rationale for presenting absolute risks in ‘Summary of findings’ tables as numbers of people with events per 1000 people receiving the intervention (see
+              - link "Chapter 14" [ref=e333] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-14
+              - text: ).
+            - paragraph [ref=e334]:
+              - text: RRs and RRRs remain crucial because relative effects tend to be substantially more stable across risk groups than absolute effects (see
+              - link "Chapter 10, Section 10.4.3" [ref=e335] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-10#section-10-4-3
+              - text: ). Review authors can use their own data to study this consistency (Cates 1999, Smeeth et al 1999). Risk differences from studies are least likely to be consistent across baseline event rates; thus, they are rarely appropriate for computing numbers needed to treat in systematic reviews. If a relative effect measure (OR or RR) is chosen for meta-analysis, then a comparator group risk needs to be specified as part of the calculation of an RD or NNT. In addition, if there are several different groups of participants with different levels of risk, it is crucial to express absolute benefit for each clinically identifiable risk group, clarifying the time period to which this applies. Studies in patients with differing severity of disease, or studies with different lengths of follow-up will almost certainly have different comparator group risks. In these cases, different comparator group risks lead to different RDs and NNTs (except when the intervention has no effect). A recommended approach is to re-express an odds ratio or a risk ratio as a variety of RD or NNTs across a range of assumed comparator risks (ACRs) (McQuay and Moore 1997, Smeeth et al 1999). Review authors should bear these considerations in mind not only when constructing their ‘Summary of findings’ table, but also in the text of their review.
+            - paragraph [ref=e336]: For example, a review of oral anticoagulants to prevent stroke presented information to users by describing absolute benefits for various baseline risks (Aguilar and Hart 2005, Aguilar et al 2007). They presented their principal findings as “The inherent risk of stroke should be considered in the decision to use oral anticoagulants in atrial fibrillation patients, selecting those who stand to benefit most for this therapy” (Aguilar and Hart 2005). Among high-risk atrial fibrillation patients with prior stroke or transient ischaemic attack who have stroke rates of about 12% (120 per 1000) per year, warfarin prevents about 70 strokes yearly per 1000 patients, whereas for low-risk atrial fibrillation patients (with a stroke rate of about 2% per year or 20 per 1000), warfarin prevents only 12 strokes. This presentation helps users to understand the important impact that typical baseline risks have on the absolute benefit that they can expect.
+            - heading "15.4.4 Computations#section-15-4-4" [level=3] [ref=e337]
+            - paragraph [ref=e338]:
+              - text: Direct computation of risk difference (RD) or a number needed to treat (NNT) depends on the summary statistic (odds ratio, risk ratio or risk differences) available from the study or meta-analysis. When expressing results of meta-analyses, review authors should use, in the computations, whatever statistic they determined to be the most appropriate summary for meta-analysis (see
+              - link "Chapter 10, Section 10.4.3" [ref=e339] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-10#section-10-4-3
+              - text: ). Here we present calculations to obtain RD as a reduction in the number of participants per 1000. For example, a risk difference of –0.133 corresponds to 133
+              - emphasis [ref=e340]: fewer
+              - text: participants with the event per 1000.
+            - paragraph [ref=e341]: RDs and NNTs should not be computed from the aggregated total numbers of participants and events across the trials. This approach ignores the randomization within studies, and may produce seriously misleading results if there is unbalanced randomization in any of the studies. Using the pooled result of a meta-analysis is more appropriate. When computing NNTs, the values obtained are by convention always rounded up to the next whole number.
+            - heading "15.4.4.1 Computing NNT from a risk difference (RD)#section-15-4-4-1" [level=4] [ref=e342]
+            - paragraph [ref=e343]: A NNT may be computed from a risk difference as
+            - generic [ref=e344]: Image
+            - paragraph [ref=e345]:
+              - text: where the vertical bars (‘absolute value of’) in the denominator indicate that any minus sign should be ignored. It is convention to round the NNT up to the nearest whole number. For example, if the risk difference is –0.12 the NNT is 9; if the risk difference is –0.22 the NNT is 5. Cochrane review authors should qualify the NNT as referring to benefit (improvement) or harm by denoting the NNT as NNTB or NNTH. Note that this approach, although feasible, should be used only for the results of a meta-analysis of risk differences. In most cases meta-analyses will be undertaken using a relative measure of effect (RR or OR), and those statistics should be used to calculate the NNT (see Section
+              - link "15.4.4.2" [ref=e346] [cursor=pointer]:
+                - /url: "#section-15-4-4-2"
+              - text: and
+              - link "15.4.4.3" [ref=e347] [cursor=pointer]:
+                - /url: "#section-15-4-4-3"
+              - text: ).
+            - heading "15.4.4.2 Computing risk differences or NNT from a risk ratio#section-15-4-4-2" [level=4] [ref=e348]
+            - paragraph [ref=e349]: "To aid interpretation of the results of a meta-analysis of risk ratios, review authors may compute an absolute risk reduction or NNT. In order to do this, an assumed comparator risk (ACR) (otherwise known as a baseline risk, or risk that the outcome of interest would occur with the comparator intervention) is required. It will usually be appropriate to do this for a range of different ACRs. The computation proceeds as follows:"
+            - generic [ref=e350]: Image
+            - generic [ref=e351]: Image
+            - paragraph [ref=e352]: "As an example, suppose the risk ratio is RR = 0.92, and an ACR = 0.3 (300 per 1000) is assumed. Then the effect on risk is 24 fewer per 1000:"
+            - generic [ref=e353]: Image
+            - paragraph [ref=e354]: "The NNT is 42:"
+            - generic [ref=e355]: Image
+            - heading "15.4.4.3 Computing risk differences or NNT from an odds ratio#section-15-4-4-3" [level=4] [ref=e356]
+            - paragraph [ref=e357]: "Review authors may wish to compute a risk difference or NNT from the results of a meta-analysis of odds ratios. In order to do this, an ACR is required. It will usually be appropriate to do this for a range of different ACRs. The computation proceeds as follows:"
+            - generic [ref=e358]: Image
+            - paragraph [ref=e359]
+            - generic [ref=e360]: Image
+            - paragraph [ref=e361]: "As an example, suppose the odds ratio is OR = 0.73, and a comparator risk of ACR = 0.3 is assumed. Then the effect on risk is 62 fewer per 1000:"
+            - generic [ref=e362]: Image
+            - paragraph [ref=e363]
+            - generic [ref=e364]: Image
+            - paragraph [ref=e365]
+            - generic [ref=e366]: Image
+            - paragraph [ref=e367]: "The NNT is 17:"
+            - generic [ref=e368]: Image
+            - paragraph [ref=e369]
+            - generic [ref=e370]: Image
+            - paragraph [ref=e371]
+            - generic [ref=e372]: Image
+            - heading "15.4.4.4 Computing risk ratio from an odds ratio#section-15-4-4-4" [level=4] [ref=e373]
+            - paragraph [ref=e374]: Because risk ratios are easier to interpret than odds ratios, but odds ratios have favourable mathematical properties, a review author may decide to undertake a meta-analysis based on odds ratios, but to express the result as a summary risk ratio (or relative risk reduction). This requires an ACR. Then
+            - generic [ref=e375]: Image
+            - paragraph [ref=e376]: It will often be reasonable to perform this transformation using the median comparator group risk from the studies in the meta-analysis.
+            - heading "15.4.4.5 Computing confidence limits#section-15-4-4-5" [level=4] [ref=e377]
+            - paragraph [ref=e378]: Confidence limits for RDs and NNTs may be calculated by applying the above formulae to the upper and lower confidence limits for the summary statistic (RD, RR or OR) (Altman 1998). Note that this confidence interval does not incorporate uncertainty around the ACR.
+            - paragraph [ref=e379]: If the 95% confidence interval of OR or RR includes the value 1, one of the confidence limits will indicate benefit and the other harm. Thus, appropriate use of the words ‘fewer’ and ‘more’ is required for each limit when presenting results in terms of events. For NNTs, the two confidence limits should be labelled as NNTB and NNTH to indicate the direction of effect in each case. The confidence interval for the NNT will include a ‘discontinuity’, because increasingly smaller risk differences that approach zero will lead to NNTs approaching infinity. Thus, the confidence interval will include both an infinitely large NNTB and an infinitely large NNTH.
+            - heading "15.5 Interpreting results from continuous outcomes (including standardized mean differences)#section-15-5" [level=2] [ref=e380]
+            - heading "15.5.1 Meta-analyses with continuous outcomes#section-15-5-1" [level=3] [ref=e381]
+            - paragraph [ref=e382]: Review authors should describe in the study protocol how they plan to interpret results for continuous outcomes. When outcomes are continuous, review authors have a number of options to present summary results. These options differ if studies report the same measure that is familiar to the target audiences, studies report the same or very similar measures that are less familiar to the target audiences, or studies report different measures.
+            - heading "15.5.2 Meta-analyses with continuous outcomes using the same measure#section-15-5-2" [level=3] [ref=e383]
+            - paragraph [ref=e384]:
+              - text: If all studies have used the same familiar units, for instance, results are expressed as durations of events, such as symptoms for conditions including diarrhoea, sore throat, otitis media, influenza or duration of hospitalization, a meta-analysis may generate a summary estimate in those units, as a difference in mean response (see, for instance, the row summarizing results for duration of diarrhoea in
+              - link "Chapter 14, Figure 14.1.b" [ref=e385] [cursor=pointer]:
+                - /url: /node/106#figure-14.1.b
+              - text: and the row summarizing oedema in
+              - link "Chapter 14, Figure 14.1.a" [ref=e386] [cursor=pointer]:
+                - /url: /node/106#figure-14.1.a
+              - text: ). For such outcomes, the ‘Summary of findings’ table should include a difference of means between the two interventions. However, when units of such outcomes may be difficult to interpret, particularly when they relate to rating scales (again, see the oedema row of
+              - link "Chapter 14, Figure 14.1.a" [ref=e387] [cursor=pointer]:
+                - /url: /node/106#figure-14.1.a
+              - text: ). ‘Summary of findings’ tables should include the minimum and maximum of the scale of measurement, and the direction. Knowledge of the smallest change in instrument score that patients perceive is important – the minimal important difference (MID) – and can greatly facilitate the interpretation of results (Guyatt et al 1998, Schünemann and Guyatt 2005). Knowing the MID allows review authors and users to place results in context. Review authors should state the MID – if known – in the Comments column of their ‘Summary of findings’ table. For example, the chronic respiratory questionnaire has possible scores in health-related quality of life ranging from 1 to 7 and 0.5 represents a well-established MID (Jaeschke et al 1989, Schünemann et al 2005).
+            - heading "15.5.3 Meta-analyses with continuous outcomes using different measures#section-15-5-3" [level=3] [ref=e388]
+            - paragraph [ref=e389]:
+              - text: When studies have used different instruments to measure the same construct, a standardized mean difference (SMD) may be used in meta-analysis for combining continuous data. Without guidance, clinicians and patients may have little idea how to interpret results presented as SMDs. Review authors should therefore consider issues of interpretability when planning their analysis at the protocol stage and should consider whether there will be suitable ways to re-express the SMD or whether alternative effect measures, such as a ratio of means, or possibly as minimal important difference units (Guyatt et al 2013b) should be used.
+              - link "Table 15.5.a" [ref=e390] [cursor=pointer]:
+                - /url: "#table-15-5-a"
+              - text: and the following sections describe these options.
+            - paragraph [ref=e391]:
+              - strong [ref=e392]: Table 15.5.a
+              - text: Approaches and their implications to presenting results of continuous variables when primary studies have used different instruments to measure the same construct. Adapted from Guyatt et al (2013b)
+            - table [ref=e393]:
+              - rowgroup [ref=e394]:
+                - row "Approach Observations about using the approach Recommendation" [ref=e395]:
+                  - cell "Approach" [ref=e396]:
+                    - strong [ref=e397]: Approach
+                  - cell "Observations about using the approach" [ref=e398]:
+                    - strong [ref=e399]: Observations about using the approach
+                  - cell "Recommendation" [ref=e400]:
+                    - strong [ref=e401]: Recommendation
+                - row "Options for interpreting SMDs" [ref=e402]:
+                  - cell "Options for interpreting SMDs" [ref=e403]:
+                    - strong [ref=e404]: Options for interpreting SMDs
+                - row "1a. Generic standard deviation (SD) units and guiding rules It is widely used, but the interpretation is challenging. It can be misleading depending on whether the population is very homogenous or heterogeneous (i.e. how variable the outcome was in the population of each included study, and therefore how applicable a standard SD is likely to be). See Section 15.5.3.1. Use together with other approaches below." [ref=e405]:
+                  - cell "1a. Generic standard deviation (SD) units and guiding rules" [ref=e406]
+                  - cell "It is widely used, but the interpretation is challenging. It can be misleading depending on whether the population is very homogenous or heterogeneous (i.e. how variable the outcome was in the population of each included study, and therefore how applicable a standard SD is likely to be). See Section 15.5.3.1." [ref=e407]:
+                    - text: It is widely used, but the interpretation is challenging. It can be misleading depending on whether the population is very homogenous or heterogeneous (i.e. how variable the outcome was in the population of each included study, and therefore how applicable a standard SD is likely to be). See Section
+                    - link "15.5.3.1" [ref=e408] [cursor=pointer]:
+                      - /url: "#section-15-5-3-1"
+                    - text: .
+                  - cell "Use together with other approaches below." [ref=e409]
+                - 'row "1b. Re-express and present as units of a familiar measure Presenting data with this approach may be viewed by users as closer to the primary data. However, few instruments are sufficiently used in clinical practice to make many of the presented units easily interpretable. See Section 15.5.3.2. When the units and measures are familiar to the decision makers (e.g. healthcare providers and patients), this presentation should be seriously considered. Note: Conversion to natural units is also an option for expressing results using the MID approach below (row 3)." [ref=e410]':
+                  - cell "1b. Re-express and present as units of a familiar measure" [ref=e411]
+                  - cell "Presenting data with this approach may be viewed by users as closer to the primary data. However, few instruments are sufficiently used in clinical practice to make many of the presented units easily interpretable. See Section 15.5.3.2." [ref=e412]:
+                    - text: Presenting data with this approach may be viewed by users as closer to the primary data. However, few instruments are sufficiently used in clinical practice to make many of the presented units easily interpretable. See Section
+                    - link "15.5.3.2" [ref=e413] [cursor=pointer]:
+                      - /url: "#section-15-5-3-2"
+                    - text: .
+                  - 'cell "When the units and measures are familiar to the decision makers (e.g. healthcare providers and patients), this presentation should be seriously considered. Note: Conversion to natural units is also an option for expressing results using the MID approach below (row 3)." [ref=e414]':
+                    - paragraph [ref=e415]: When the units and measures are familiar to the decision makers (e.g. healthcare providers and patients), this presentation should be seriously considered.
+                    - paragraph [ref=e416]:
+                      - emphasis [ref=e417]: "Note:"
+                      - text: Conversion to natural units is also an option for expressing results using the MID approach below (row 3).
+                - row [ref=e418]:
+                  - cell "1c. Re-express as result for a dichotomous outcome" [ref=e419]
+                  - cell "Dichotomous outcomes are very familiar to clinical audiences and may facilitate understanding. However, this approach involves assumptions that may not always be valid (e.g. it assumes that distributions in intervention and comparator group are roughly normally distributed and variances are similar). It allows applying GRADE guidance for large and very large effects. See Section 15.5.3.3." [ref=e420]:
+                    - text: Dichotomous outcomes are very familiar to clinical audiences and may facilitate understanding. However, this approach involves assumptions that may not always be valid (e.g. it assumes that distributions in intervention and comparator group are roughly normally distributed and variances are similar). It allows applying GRADE guidance for large and very large effects. See Section
+                    - link "15.5.3.3" [ref=e421] [cursor=pointer]:
+                      - /url: "#section-15-5-3-3"
+                    - text: .
+                  - 'cell "Consider this approach if the assumptions appear reasonable. If the minimal important difference for an instrument is known describing the probability of individuals achieving this difference may be more intuitive. Review authors should always seriously consider this option. Note: Re-expressing SMDs is not the only way of expressing results as dichotomous outcomes. For example, the actual outcomes in the studies can be dichotomized, either directly or using assumptions, prior to meta-analysis." [ref=e422]':
+                    - paragraph [ref=e423]: Consider this approach if the assumptions appear reasonable.
+                    - paragraph [ref=e424]: If the minimal important difference for an instrument is known describing the probability of individuals achieving this difference may be more intuitive. Review authors should always seriously consider this option.
+                    - paragraph [ref=e425]:
+                      - emphasis [ref=e426]: "Note:"
+                      - text: Re-expressing SMDs is not the only way of expressing results as dichotomous outcomes. For example, the actual outcomes in the studies can be dichotomized, either directly or using assumptions, prior to meta-analysis.
+                - row "Options based on other effect measures" [ref=e427]:
+                  - cell "Options based on other effect measures" [ref=e428]:
+                    - strong [ref=e429]: Options based on other effect measures
+                - row "2. Ratio of means This approach may be easily interpretable to clinical audiences and involves fewer assumptions than some other approaches. It allows applying GRADE guidance for large and very large effects. It cannot be applied when measure is a change from baseline and therefore negative values possible and the interpretation requires knowledge and interpretation of comparator group mean. See Section 15.5.3.4 Consider as complementing other approaches, particularly the presentation of relative and absolute effects." [ref=e430]:
+                  - cell "2. Ratio of means" [ref=e431]
+                  - cell "This approach may be easily interpretable to clinical audiences and involves fewer assumptions than some other approaches. It allows applying GRADE guidance for large and very large effects. It cannot be applied when measure is a change from baseline and therefore negative values possible and the interpretation requires knowledge and interpretation of comparator group mean. See Section 15.5.3.4" [ref=e432]:
+                    - text: This approach may be easily interpretable to clinical audiences and involves fewer assumptions than some other approaches. It allows applying GRADE guidance for large and very large effects. It cannot be applied when measure is a change from baseline and therefore negative values possible and the interpretation requires knowledge and interpretation of comparator group mean. See Section
+                    - link "15.5.3.4" [ref=e433] [cursor=pointer]:
+                      - /url: "#section-15-5-3-4"
+                  - cell "Consider as complementing other approaches, particularly the presentation of relative and absolute effects." [ref=e434]
+                - row "3. Minimal important difference units This approach may be easily interpretable for audiences but is applicable only when minimal important differences are known. See Section 15.5.3.5. Consider as complementing other approaches, particularly the presentation of relative and absolute effects." [ref=e435]:
+                  - cell "3. Minimal important difference units" [ref=e436]
+                  - cell "This approach may be easily interpretable for audiences but is applicable only when minimal important differences are known. See Section 15.5.3.5." [ref=e437]:
+                    - text: This approach may be easily interpretable for audiences but is applicable only when minimal important differences are known. See Section
+                    - link "15.5.3.5" [ref=e438] [cursor=pointer]:
+                      - /url: "#section-15-5-3-5"
+                    - text: .
+                  - cell "Consider as complementing other approaches, particularly the presentation of relative and absolute effects." [ref=e439]
+            - heading "15.5.3.1 Presenting and interpreting SMDs using generic effect size estimates#section-15-5-3-1" [level=4] [ref=e440]
+            - paragraph [ref=e441]:
+              - text: The SMD expresses the intervention effect in standard units rather than the original units of measurement. The SMD is the difference in mean effects between the experimental and comparator groups divided by the pooled standard deviation of participants’ outcomes, or external SDs when studies are very small (see
+              - link "Chapter 6, Section 6.5.1.2" [ref=e442] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-06#section-6-5-1-2
+              - text: ). The value of a SMD thus depends on both the size of the effect (the difference between means) and the standard deviation of the outcomes (the inherent variability among participants or based on an external SD).
+            - paragraph [ref=e443]:
+              - text: If review authors use the SMD, they might choose to present the results directly as SMDs (row 1a,
+              - link "Table 15.5.a" [ref=e444] [cursor=pointer]:
+                - /url: "#table-15-5-a"
+              - text: and
+              - link "Table 15.5.b" [ref=e445] [cursor=pointer]:
+                - /url: "#table-15-5-b"
+              - text: "). However, absolute values of the intervention and comparison groups are typically not useful because studies have used different measurement instruments with different units. Guiding rules for interpreting SMDs (or ‘Cohen’s effect sizes’) exist, and have arisen mainly from researchers in the social sciences (Cohen 1988). One example is as follows: 0.2 represents a small effect, 0.5 a moderate effect and 0.8 a large effect (Cohen 1988). Variations exist (e.g. <0.40=small, 0.40 to 0.70=moderate, >0.70=large). Review authors might consider including such a guiding rule in interpreting the SMD in the text of the review, and in summary versions such as the Comments column of a ‘Summary of findings’ table. However, some methodologists believe that such interpretations are problematic because"
+              - emphasis [ref=e446]: patient
+              - text: importance of a finding is context-dependent and not amenable to generic statements.
+            - heading "15.5.3.2 Re-expressing SMDs using a familiar instrument#section-15-5-3-2" [level=4] [ref=e447]
+            - paragraph [ref=e448]:
+              - text: The second possibility for interpreting the SMD is to express it in the units of one or more of the specific measurement instruments used by the included studies (row 1b,
+              - link "Table 15.5.a" [ref=e449] [cursor=pointer]:
+                - /url: "#table-15-5-a"
+              - text: and
+              - link "Table 15.5.b" [ref=e450] [cursor=pointer]:
+                - /url: "#table-15-5-b"
+              - text: ). The approach is to calculate an absolute difference in means by multiplying the SMD by an estimate of the SD associated with the most familiar instrument. To obtain this SD, a reasonable option is to calculate a weighted average across all intervention groups of all studies that used the selected instrument (preferably a pre-intervention or post-intervention SD as discussed in
+              - link "Chapter 10, Section 10.5.2" [ref=e451] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-10#section-10-5-2
+              - text: ). To better reflect among-person variation in practice, or to use an instrument not represented in the meta-analysis, it may be preferable to use a standard deviation from a representative observational study. The summary effect is thus re-expressed in the original units of that particular instrument and the clinical relevance and impact of the intervention effect can be interpreted using that familiar instrument.
+            - paragraph [ref=e452]:
+              - text: "The same approach of re-expressing the results for a familiar instrument can also be used for other standardized effect measures such as when standardizing by MIDs (Guyatt et al 2013b): see Section"
+              - link "15.5.3.5" [ref=e453] [cursor=pointer]:
+                - /url: "#section-15-5-3-5"
+              - text: .
+            - paragraph [ref=e454]
+            - paragraph [ref=e455]:
+              - strong [ref=e456]: Table 15.5.b
+              - text: "Application of approaches when studies have used different measures: effects of dexamethasone for pain after laparoscopic cholecystectomy (Karanicolas et al 2008). Reproduced with permission of Wolters Kluwer"
+            - table [ref=e457]:
+              - rowgroup [ref=e458]:
+                - row "Options for presenting information about the outcome post-operative pain and suggested description of the measure Relative effect (95% CI) Number of participants (studies) Certainty of evidence1 Comments" [ref=e459]:
+                  - cell "Options for presenting information about the outcome post-operative pain and suggested description of the measure" [ref=e460]:
+                    - strong [ref=e461]: Options for presenting information about the outcome post-operative pain and suggested description of the measure
+                  - cell [ref=e462]:
+                    - paragraph [ref=e463]
+                  - cell "Relative effect (95% CI)" [ref=e464]:
+                    - paragraph [ref=e465]:
+                      - strong [ref=e466]: Relative effect
+                    - paragraph [ref=e467]:
+                      - strong [ref=e468]: (95% CI)
+                  - cell "Number of participants (studies)" [ref=e469]:
+                    - paragraph [ref=e470]:
+                      - strong [ref=e471]: Number of participants (studies)
+                  - cell "Certainty of evidence1" [ref=e472]:
+                    - paragraph [ref=e473]:
+                      - strong [ref=e474]:
+                        - text: Certainty of evidence
+                        - superscript [ref=e475]: "1"
+                    - paragraph [ref=e476]
+                  - cell "Comments" [ref=e477]:
+                    - paragraph [ref=e478]:
+                      - strong [ref=e479]: Comments
+                - row "Estimated risk or estimated score/value with placebo Risk difference or relative reduction in score/value with dexamethasone" [ref=e480]:
+                  - cell "Estimated risk or estimated score/value with placebo" [ref=e481]:
+                    - paragraph [ref=e482]:
+                      - strong [ref=e483]: Estimated risk or estimated score/value with placebo
+                  - cell "Risk difference or relative reduction in score/value with dexamethasone" [ref=e484]:
+                    - paragraph [ref=e485]
+                    - paragraph [ref=e486]:
+                      - strong [ref=e487]: Risk difference or relative reduction in score/value with dexamethasone
+                    - paragraph [ref=e488]
+                - row [ref=e489]:
+                  - cell [ref=e490]:
+                    - paragraph [ref=e491]
+                  - cell [ref=e492]:
+                    - paragraph [ref=e493]
+                - row "1a. Post-operative pain, standard deviation units Investigators measured pain using different instruments. Lower scores mean less pain. The pain score in the dexamethasone groups was on average 0.79 SDs (1.41 to 0.17) lower than in the placebo groups). – 539 (5) ⊕⊕OO2,3 Low As a rule of thumb, 0.2 SD represents a small difference, 0.5 a moderate and 0.8 a large." [ref=e494]:
+                  - cell "1a. Post-operative pain, standard deviation units Investigators measured pain using different instruments. Lower scores mean less pain." [ref=e495]:
+                    - paragraph [ref=e496]: 1a. Post-operative pain, standard deviation units
+                    - paragraph [ref=e497]: Investigators measured pain using different instruments. Lower scores mean less pain.
+                  - cell "The pain score in the dexamethasone groups was on average 0.79 SDs (1.41 to 0.17) lower than in the placebo groups)." [ref=e498]:
+                    - paragraph [ref=e499]:
+                      - text: The pain score in the dexamethasone groups was on average
+                      - strong [ref=e500]: 0.79 SDs (1.41 to 0.17) lower
+                      - text: than in the placebo groups).
+                  - cell "–" [ref=e501]:
+                    - paragraph [ref=e502]: –
+                  - cell "539 (5)" [ref=e503]:
+                    - paragraph [ref=e504]: 539 (5)
+                  - cell "⊕⊕OO2,3 Low" [ref=e505]:
+                    - paragraph [ref=e506]:
+                      - strong [ref=e507]: ⊕⊕
+                      - text: OO
+                      - superscript [ref=e508]: 2,3
+                    - paragraph [ref=e509]: Low
+                  - cell "As a rule of thumb, 0.2 SD represents a small difference, 0.5 a moderate and 0.8 a large." [ref=e510]:
+                    - paragraph [ref=e511]
+                    - paragraph [ref=e512]
+                    - paragraph [ref=e513]: As a rule of thumb, 0.2 SD represents a small difference, 0.5 a moderate and 0.8 a large.
+                - row "1b. Post-operative pain Measured on a scale from 0, no pain, to 100, worst pain imaginable. The mean post-operative pain scores with placebo ranged from 43 to 54. The mean pain score in the intervention groups was on average 8.1 (1.8 to 14.5) lower. – 539 (5) ⊕⊕OO Low2,3 Scores calculated based on an SMD of 0.79 (95% CI –1.41 to –0.17) and rescaled to a 0 to 100 pain scale. The minimal important difference on the 0 to 100 pain scale is approximately 10." [ref=e514]:
+                  - cell "1b. Post-operative pain Measured on a scale from 0, no pain, to 100, worst pain imaginable." [ref=e515]:
+                    - paragraph [ref=e516]: 1b. Post-operative pain
+                    - paragraph [ref=e517]: Measured on a scale from 0, no pain, to 100, worst pain imaginable.
+                  - cell "The mean post-operative pain scores with placebo ranged from 43 to 54." [ref=e518]:
+                    - paragraph [ref=e519]: The mean post-operative pain scores with placebo ranged from 43 to 54.
+                  - cell "The mean pain score in the intervention groups was on average 8.1 (1.8 to 14.5) lower." [ref=e520]:
+                    - paragraph [ref=e521]: The mean pain score in the intervention groups was on average
+                    - paragraph [ref=e522]:
+                      - strong [ref=e523]: 8.1 (1.8 to 14.5) lower.
+                    - paragraph [ref=e524]
+                  - cell "–" [ref=e525]:
+                    - paragraph [ref=e526]: –
+                  - cell "539 (5)" [ref=e527]:
+                    - paragraph [ref=e528]: 539 (5)
+                  - cell "⊕⊕OO Low2,3" [ref=e529]:
+                    - paragraph [ref=e530]
+                    - paragraph [ref=e531]:
+                      - strong [ref=e532]: ⊕⊕
+                      - text: OO
+                    - paragraph [ref=e533]:
+                      - text: Low
+                      - superscript [ref=e534]: 2,3
+                  - cell "Scores calculated based on an SMD of 0.79 (95% CI –1.41 to –0.17) and rescaled to a 0 to 100 pain scale. The minimal important difference on the 0 to 100 pain scale is approximately 10." [ref=e535]:
+                    - paragraph [ref=e536]: Scores calculated based on an SMD of 0.79 (95% CI –1.41 to –0.17) and rescaled to a 0 to 100 pain scale.
+                    - paragraph [ref=e537]: The minimal important difference on the 0 to 100 pain scale is approximately 10.
+                - row "1c. Substantial post-operative pain, dichotomized Investigators measured pain using different instruments. 20 per 1004 15 more (4 more to 18 more) per 100 patients in dexamethasone group achieved important improvement in the pain score. RR = 0.25 (95% CI 0.05 to 0.75) 539 (5) ⊕⊕OO2,3 Low Scores estimated based on an SMD of 0.79 (95% CI –1.41 to –0.17)." [ref=e538]:
+                  - cell "1c. Substantial post-operative pain, dichotomized Investigators measured pain using different instruments." [ref=e539]:
+                    - paragraph [ref=e540]: 1c. Substantial post-operative pain, dichotomized
+                    - paragraph [ref=e541]: Investigators measured pain using different instruments.
+                  - cell "20 per 1004" [ref=e542]:
+                    - paragraph [ref=e543]:
+                      - text: 20 per 100
+                      - superscript [ref=e544]: "4"
+                  - cell "15 more (4 more to 18 more) per 100 patients in dexamethasone group achieved important improvement in the pain score." [ref=e545]:
+                    - paragraph [ref=e546]: 15 more (4 more to 18 more) per 100 patients in dexamethasone group achieved important improvement in the pain score.
+                  - cell "RR = 0.25 (95% CI 0.05 to 0.75)" [ref=e547]:
+                    - paragraph [ref=e548]: RR = 0.25 (95% CI 0.05 to 0.75)
+                  - cell "539 (5)" [ref=e549]:
+                    - paragraph [ref=e550]: 539 (5)
+                  - cell "⊕⊕OO2,3 Low" [ref=e551]:
+                    - paragraph [ref=e552]:
+                      - strong [ref=e553]: ⊕⊕
+                      - text: OO
+                      - superscript [ref=e554]: 2,3
+                    - paragraph [ref=e555]: Low
+                  - cell "Scores estimated based on an SMD of 0.79 (95% CI –1.41 to –0.17)." [ref=e556]:
+                    - paragraph [ref=e557]: Scores estimated based on an SMD of 0.79 (95% CI –1.41 to –0.17).
+                    - paragraph [ref=e558]
+                - row "2. Post-operative pain Investigators measured pain using different instruments. Lower scores mean less pain. The mean post-operative pain scores with placebo was 28.1.5 On average a 3.7 lower pain score (0.6 to 6.1 lower) Ratio of means 0.87 (0.78 to 0.98) 539 (5) ⊕⊕OO2,3 Low Weighted average of the mean pain score in dexamethasone group divided by mean pain score in placebo." [ref=e559]:
+                  - cell "2. Post-operative pain Investigators measured pain using different instruments. Lower scores mean less pain." [ref=e560]:
+                    - paragraph [ref=e561]: 2. Post-operative pain
+                    - paragraph [ref=e562]: Investigators measured pain using different instruments. Lower scores mean less pain.
+                  - cell "The mean post-operative pain scores with placebo was 28.1.5" [ref=e563]:
+                    - paragraph [ref=e564]:
+                      - text: The mean post-operative pain scores with placebo was 28.1.
+                      - superscript [ref=e565]: "5"
+                  - cell "On average a 3.7 lower pain score (0.6 to 6.1 lower)" [ref=e566]:
+                    - paragraph [ref=e567]: On average a 3.7 lower pain score
+                    - paragraph [ref=e568]: (0.6 to 6.1 lower)
+                  - cell "Ratio of means 0.87 (0.78 to 0.98)" [ref=e569]:
+                    - paragraph [ref=e570]: Ratio of means
+                    - paragraph [ref=e571]: "0.87"
+                    - paragraph [ref=e572]: (0.78 to 0.98)
+                  - cell "539 (5)" [ref=e573]:
+                    - paragraph [ref=e574]: 539 (5)
+                  - cell "⊕⊕OO2,3 Low" [ref=e575]:
+                    - paragraph [ref=e576]:
+                      - strong [ref=e577]: ⊕⊕
+                      - text: OO
+                      - superscript [ref=e578]: 2,3
+                    - paragraph [ref=e579]: Low
+                  - cell "Weighted average of the mean pain score in dexamethasone group divided by mean pain score in placebo." [ref=e580]:
+                    - paragraph [ref=e581]: Weighted average of the mean pain score in dexamethasone group divided by mean pain score in placebo.
+                - row "3. Post-operative pain Investigators measured pain using different instruments. The pain score in the dexamethasone groups was on average 0.40 (95% CI 0.74 to 0.07) minimal important difference units less than the control group. – 539 (5) ⊕⊕OO2,3 Low An effect less than half the minimal important difference suggests a small or very small effect." [ref=e582]:
+                  - cell "3. Post-operative pain Investigators measured pain using different instruments." [ref=e583]:
+                    - paragraph [ref=e584]: 3. Post-operative pain
+                    - paragraph [ref=e585]: Investigators measured pain using different instruments.
+                  - cell "The pain score in the dexamethasone groups was on average 0.40 (95% CI 0.74 to 0.07) minimal important difference units less than the control group." [ref=e586]:
+                    - paragraph [ref=e587]:
+                      - text: The pain score in the dexamethasone groups was on average
+                      - strong [ref=e588]: 0.40 (95% CI 0.74 to 0.07) minimal important difference units
+                      - text: less than the control group.
+                  - cell "–" [ref=e589]:
+                    - paragraph [ref=e590]: –
+                  - cell "539 (5)" [ref=e591]:
+                    - paragraph [ref=e592]: 539 (5)
+                  - cell "⊕⊕OO2,3 Low" [ref=e593]:
+                    - paragraph [ref=e594]:
+                      - strong [ref=e595]: ⊕⊕
+                      - text: OO
+                      - superscript [ref=e596]: 2,3
+                    - paragraph [ref=e597]: Low
+                  - cell "An effect less than half the minimal important difference suggests a small or very small effect." [ref=e598]:
+                    - paragraph [ref=e599]: An effect less than half the minimal important difference suggests a small or very small effect.
+            - paragraph [ref=e600]:
+              - superscript [ref=e601]: "1"
+              - text: Certainty rated according to GRADE from very low to high certainty.
+              - superscript [ref=e602]: "2"
+              - text: Substantial unexplained heterogeneity in study results.
+              - superscript [ref=e603]: "3"
+              - text: Imprecision due to wide confidence intervals.
+              - superscript [ref=e604]: "4"
+              - text: The 20% comes from the proportion in the control group requiring rescue analgesia.
+              - superscript [ref=e605]: "5"
+              - text: Crude (arithmetic) means of the post-operative pain mean responses across all five trials when transformed to a 100-point scale.
+            - heading "15.5.3.3 Re-expressing SMDs through dichotomization and transformation to relative and absolute measures#section-15-5-3-3" [level=4] [ref=e606]
+            - paragraph [ref=e607]:
+              - text: A third approach (row 1c,
+              - link "Table 15.5.a" [ref=e608] [cursor=pointer]:
+                - /url: "#table-15-5-a"
+              - text: and
+              - link "Table 15.5.b" [ref=e609] [cursor=pointer]:
+                - /url: "#table-15-5-b"
+              - text: ) relies on converting the continuous measure into a dichotomy and thus allows calculation of relative and absolute effects on a binary scale. A transformation of a SMD to a (log) odds ratio is available, based on the assumption that an underlying continuous variable has a logistic distribution with equal standard deviation in the two intervention groups, as discussed in
+              - link "Chapter 10, Section 10.6" [ref=e610] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-10#section-10-6
+              - text: (Furukawa 1999, Guyatt et al 2013b). The assumption is unlikely to hold exactly and the results must be regarded as an approximation. The log odds ratio is estimated as
+            - generic [ref=e611]: Image
+            - paragraph [ref=e612]:
+              - text: (or approximately 1.81✕SMD). The resulting odds ratio can then be presented as normal, and in a ‘Summary of findings’ table, combined with an assumed comparator group risk to be expressed as an absolute risk difference. The comparator group risk in this case would refer to the proportion of people who have achieved a specific value of the continuous outcome. In randomized trials this can be interpreted as the proportion who have improved by some (specified) amount (responders), for instance by 5 points on a 0 to 100 scale.
+              - link "Table 15.5.c" [ref=e613] [cursor=pointer]:
+                - /url: "#table-15-5-c"
+              - text: shows some illustrative results from this method. The risk differences can then be converted to NNTs or to people per thousand using methods described in Section
+              - link "15.4.4" [ref=e614] [cursor=pointer]:
+                - /url: "#section-15-4-4"
+              - text: .
+            - paragraph [ref=e615]:
+              - strong [ref=e616]: Table 15.5.c
+              - text: Risk difference derived for specific SMDs for various given ‘proportions improved’ in the comparator group (Furukawa 1999, Guyatt et al 2013b). Reproduced with permission of Elsevier
+            - table [ref=e617]:
+              - rowgroup [ref=e618]:
+                - row "Comparator group response proportion 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9" [ref=e619]:
+                  - cell "Comparator group response proportion" [ref=e620]:
+                    - strong [ref=e621]: Comparator group response proportion
+                  - cell "0.1" [ref=e622]:
+                    - paragraph [ref=e623]:
+                      - strong [ref=e624]: "0.1"
+                  - cell "0.2" [ref=e625]:
+                    - paragraph [ref=e626]:
+                      - strong [ref=e627]: "0.2"
+                  - cell "0.3" [ref=e628]:
+                    - paragraph [ref=e629]:
+                      - strong [ref=e630]: "0.3"
+                  - cell "0.4" [ref=e631]:
+                    - paragraph [ref=e632]:
+                      - strong [ref=e633]: "0.4"
+                  - cell "0.5" [ref=e634]:
+                    - paragraph [ref=e635]:
+                      - strong [ref=e636]: "0.5"
+                  - cell "0.6" [ref=e637]:
+                    - paragraph [ref=e638]:
+                      - strong [ref=e639]: "0.6"
+                  - cell "0.7" [ref=e640]:
+                    - paragraph [ref=e641]:
+                      - strong [ref=e642]: "0.7"
+                  - cell "0.8" [ref=e643]:
+                    - paragraph [ref=e644]:
+                      - strong [ref=e645]: "0.8"
+                  - cell "0.9" [ref=e646]:
+                    - paragraph [ref=e647]:
+                      - strong [ref=e648]: "0.9"
+                - row "Situations in which the event is undesirable, reduction (or increase if intervention harmful) in adverse events with the intervention" [ref=e649]:
+                  - cell "Situations in which the event is undesirable, reduction (or increase if intervention harmful) in adverse events with the intervention" [ref=e650]
+                - row "SMD = −0.2 −3% −5% −7% −8% −8% −8% −7% −6% −4%" [ref=e651]:
+                  - cell "SMD = −0.2" [ref=e652]:
+                    - strong [ref=e653]: SMD = −0.2
+                  - cell "−3%" [ref=e654]:
+                    - paragraph [ref=e655]: −3%
+                  - cell "−5%" [ref=e656]:
+                    - paragraph [ref=e657]: −5%
+                  - cell "−7%" [ref=e658]:
+                    - paragraph [ref=e659]: −7%
+                  - cell "−8%" [ref=e660]:
+                    - paragraph [ref=e661]: −8%
+                  - cell "−8%" [ref=e662]:
+                    - paragraph [ref=e663]: −8%
+                  - cell "−8%" [ref=e664]:
+                    - paragraph [ref=e665]: −8%
+                  - cell "−7%" [ref=e666]:
+                    - paragraph [ref=e667]: −7%
+                  - cell "−6%" [ref=e668]:
+                    - paragraph [ref=e669]: −6%
+                  - cell "−4%" [ref=e670]:
+                    - paragraph [ref=e671]: −4%
+                - row "SMD = −0.5 −6% −11% −15% −17% −19% −20% −20% −17% −12%" [ref=e672]:
+                  - cell "SMD = −0.5" [ref=e673]:
+                    - strong [ref=e674]: SMD = −0.5
+                  - cell "−6%" [ref=e675]:
+                    - paragraph [ref=e676]: −6%
+                  - cell "−11%" [ref=e677]:
+                    - paragraph [ref=e678]: −11%
+                  - cell "−15%" [ref=e679]:
+                    - paragraph [ref=e680]: −15%
+                  - cell "−17%" [ref=e681]:
+                    - paragraph [ref=e682]: −17%
+                  - cell "−19%" [ref=e683]:
+                    - paragraph [ref=e684]: −19%
+                  - cell "−20%" [ref=e685]:
+                    - paragraph [ref=e686]: −20%
+                  - cell "−20%" [ref=e687]:
+                    - paragraph [ref=e688]: −20%
+                  - cell "−17%" [ref=e689]:
+                    - paragraph [ref=e690]: −17%
+                  - cell "−12%" [ref=e691]:
+                    - paragraph [ref=e692]: −12%
+                - row "SMD = −0.8 −8% −15% −21% −25% −29% −31% −31% −28% −22%" [ref=e693]:
+                  - cell "SMD = −0.8" [ref=e694]:
+                    - strong [ref=e695]: SMD = −0.8
+                  - cell "−8%" [ref=e696]:
+                    - paragraph [ref=e697]: −8%
+                  - cell "−15%" [ref=e698]:
+                    - paragraph [ref=e699]: −15%
+                  - cell "−21%" [ref=e700]:
+                    - paragraph [ref=e701]: −21%
+                  - cell "−25%" [ref=e702]:
+                    - paragraph [ref=e703]: −25%
+                  - cell "−29%" [ref=e704]:
+                    - paragraph [ref=e705]: −29%
+                  - cell "−31%" [ref=e706]:
+                    - paragraph [ref=e707]: −31%
+                  - cell "−31%" [ref=e708]:
+                    - paragraph [ref=e709]: −31%
+                  - cell "−28%" [ref=e710]:
+                    - paragraph [ref=e711]: −28%
+                  - cell "−22%" [ref=e712]:
+                    - paragraph [ref=e713]: −22%
+                - row "SMD = −1.0 −9% −17% −24% −23% −34% −37% −38% −36% −29%" [ref=e714]:
+                  - cell "SMD = −1.0" [ref=e715]:
+                    - strong [ref=e716]: SMD = −1.0
+                  - cell "−9%" [ref=e717]:
+                    - paragraph [ref=e718]: −9%
+                  - cell "−17%" [ref=e719]:
+                    - paragraph [ref=e720]: −17%
+                  - cell "−24%" [ref=e721]:
+                    - paragraph [ref=e722]: −24%
+                  - cell "−23%" [ref=e723]:
+                    - paragraph [ref=e724]: −23%
+                  - cell "−34%" [ref=e725]:
+                    - paragraph [ref=e726]: −34%
+                  - cell "−37%" [ref=e727]:
+                    - paragraph [ref=e728]: −37%
+                  - cell "−38%" [ref=e729]:
+                    - paragraph [ref=e730]: −38%
+                  - cell "−36%" [ref=e731]:
+                    - paragraph [ref=e732]: −36%
+                  - cell "−29%" [ref=e733]:
+                    - paragraph [ref=e734]: −29%
+                - row "Situations in which the event is desirable, increase (or decrease if intervention harmful) in positive responses to the intervention" [ref=e735]:
+                  - cell "Situations in which the event is desirable, increase (or decrease if intervention harmful) in positive responses to the intervention" [ref=e736]
+                - row "SMD = 0.2 4% 6% 7% 8% 8% 8% 7% 5% 3%" [ref=e737]:
+                  - cell "SMD = 0.2" [ref=e738]:
+                    - strong [ref=e739]: SMD = 0.2
+                  - cell "4%" [ref=e740]:
+                    - paragraph [ref=e741]: 4%
+                  - cell "6%" [ref=e742]:
+                    - paragraph [ref=e743]: 6%
+                  - cell "7%" [ref=e744]:
+                    - paragraph [ref=e745]: 7%
+                  - cell "8%" [ref=e746]:
+                    - paragraph [ref=e747]: 8%
+                  - cell "8%" [ref=e748]:
+                    - paragraph [ref=e749]: 8%
+                  - cell "8%" [ref=e750]:
+                    - paragraph [ref=e751]: 8%
+                  - cell "7%" [ref=e752]:
+                    - paragraph [ref=e753]: 7%
+                  - cell "5%" [ref=e754]:
+                    - paragraph [ref=e755]: 5%
+                  - cell "3%" [ref=e756]:
+                    - paragraph [ref=e757]: 3%
+                - row "SMD = 0.5 12% 17% 19% 20% 19% 17% 15% 11% 6%" [ref=e758]:
+                  - cell "SMD = 0.5" [ref=e759]:
+                    - strong [ref=e760]: SMD = 0.5
+                  - cell "12%" [ref=e761]:
+                    - paragraph [ref=e762]: 12%
+                  - cell "17%" [ref=e763]:
+                    - paragraph [ref=e764]: 17%
+                  - cell "19%" [ref=e765]:
+                    - paragraph [ref=e766]: 19%
+                  - cell "20%" [ref=e767]:
+                    - paragraph [ref=e768]: 20%
+                  - cell "19%" [ref=e769]:
+                    - paragraph [ref=e770]: 19%
+                  - cell "17%" [ref=e771]:
+                    - paragraph [ref=e772]: 17%
+                  - cell "15%" [ref=e773]:
+                    - paragraph [ref=e774]: 15%
+                  - cell "11%" [ref=e775]:
+                    - paragraph [ref=e776]: 11%
+                  - cell "6%" [ref=e777]:
+                    - paragraph [ref=e778]: 6%
+                - row "SMD = 0.8 22% 28% 31% 31% 29% 25% 21% 15% 8%" [ref=e779]:
+                  - cell "SMD = 0.8" [ref=e780]:
+                    - strong [ref=e781]: SMD = 0.8
+                  - cell "22%" [ref=e782]:
+                    - paragraph [ref=e783]: 22%
+                  - cell "28%" [ref=e784]:
+                    - paragraph [ref=e785]: 28%
+                  - cell "31%" [ref=e786]:
+                    - paragraph [ref=e787]: 31%
+                  - cell "31%" [ref=e788]:
+                    - paragraph [ref=e789]: 31%
+                  - cell "29%" [ref=e790]:
+                    - paragraph [ref=e791]: 29%
+                  - cell "25%" [ref=e792]:
+                    - paragraph [ref=e793]: 25%
+                  - cell "21%" [ref=e794]:
+                    - paragraph [ref=e795]: 21%
+                  - cell "15%" [ref=e796]:
+                    - paragraph [ref=e797]: 15%
+                  - cell "8%" [ref=e798]:
+                    - paragraph [ref=e799]: 8%
+                - row "SMD = 1.0 29% 36% 38% 38% 34% 30% 24% 17% 9%" [ref=e800]:
+                  - cell "SMD = 1.0" [ref=e801]:
+                    - strong [ref=e802]: SMD = 1.0
+                  - cell "29%" [ref=e803]:
+                    - paragraph [ref=e804]: 29%
+                  - cell "36%" [ref=e805]:
+                    - paragraph [ref=e806]: 36%
+                  - cell "38%" [ref=e807]:
+                    - paragraph [ref=e808]: 38%
+                  - cell "38%" [ref=e809]:
+                    - paragraph [ref=e810]: 38%
+                  - cell "34%" [ref=e811]:
+                    - paragraph [ref=e812]: 34%
+                  - cell "30%" [ref=e813]:
+                    - paragraph [ref=e814]: 30%
+                  - cell "24%" [ref=e815]:
+                    - paragraph [ref=e816]: 24%
+                  - cell "17%" [ref=e817]:
+                    - paragraph [ref=e818]: 17%
+                  - cell "9%" [ref=e819]:
+                    - paragraph [ref=e820]: 9%
+                - row [ref=e821]:
+                  - cell [ref=e822]
+                  - cell [ref=e823]
+                  - cell [ref=e824]
+                  - cell [ref=e825]
+                  - cell [ref=e826]
+                  - cell [ref=e827]
+                  - cell [ref=e828]
+                  - cell [ref=e829]
+                  - cell [ref=e830]
+                  - cell [ref=e831]
+                  - cell [ref=e832]
+                  - cell [ref=e833]
+                  - cell [ref=e834]
+                  - cell [ref=e835]
+                  - cell [ref=e836]
+                  - cell [ref=e837]
+                  - cell [ref=e838]
+                  - cell [ref=e839]
+            - heading "15.5.3.4 Ratio of means#section-15-5-3-4" [level=4] [ref=e840]
+            - paragraph [ref=e841]:
+              - text: A more frequently used approach is based on calculation of a ratio of means between the intervention and comparator groups (Friedrich et al 2008) as discussed in
+              - link "Chapter 6, Section 6.5.1.3" [ref=e842] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-06#section-6-5-1-3
+              - text: . Interpretational advantages of this approach include the ability to pool studies with outcomes expressed in different units directly, to avoid the vulnerability of heterogeneous populations that limits approaches that rely on SD units, and for ease of clinical interpretation (row 2,
+              - link "Table 15.5.a" [ref=e843] [cursor=pointer]:
+                - /url: "#table-15-5-a"
+              - text: and
+              - link "Table 15.5.b" [ref=e844] [cursor=pointer]:
+                - /url: "#table-15-5-b"
+              - text: ). This method is currently designed for post-intervention scores only. However, it is possible to calculate a ratio of change scores if both intervention and comparator groups change in the same direction in each relevant study, and this ratio may sometimes be informative.
+            - paragraph [ref=e845]:
+              - text: Limitations to this approach include its limited applicability to change scores (since it is unlikely that both intervention and comparator group changes are in the same direction in all studies) and the possibility of misleading results if the comparator group mean is very small, in which case even a modest difference from the intervention group will yield a large and therefore misleading ratio of means. It also requires that separate ratios of means be calculated for each included study, and then entered into a generic inverse variance meta-analysis (see
+              - link "Chapter 10, Section 10.3" [ref=e846] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-10#section-10-3
+              - text: ).
+            - paragraph [ref=e847]:
+              - text: The ratio of means approach illustrated in
+              - link "Table 15.5.b" [ref=e848] [cursor=pointer]:
+                - /url: "#table-15-5-b"
+              - text: suggests a relative reduction in pain of only 13%, meaning that those receiving steroids have a pain severity 87% of those in the comparator group, an effect that might be considered modest.
+            - heading "15.5.3.5 Presenting continuous results as minimally important difference units#section-15-5-3-5" [level=4] [ref=e849]
+            - paragraph [ref=e850]:
+              - text: To express results in MID units, review authors have two options. First, they can be combined across studies in the same way as the SMD, but instead of dividing the mean difference of each study by its SD, review authors divide by the MID associated with that outcome (Johnston et al 2010, Guyatt et al 2013b). Instead of SD units, the pooled results represent MID units (row 3,
+              - link "Table 15.5.a" [ref=e851] [cursor=pointer]:
+                - /url: "#table-15-5-a"
+              - text: and
+              - link "Table 15.5.b" [ref=e852] [cursor=pointer]:
+                - /url: "#table-15-5-b"
+              - text: ), and may be more easily interpretable. This approach avoids the problem of varying SDs across studies that may distort estimates of effect in approaches that rely on the SMD. The approach, however, relies on having well-established MIDs. The approach is also risky in that a difference less than the MID may be interpreted as trivial when a substantial proportion of patients may have achieved an important benefit.
+            - paragraph [ref=e853]:
+              - text: The other approach makes a simple conversion (not shown in
+              - link "Table 15.5.b" [ref=e854] [cursor=pointer]:
+                - /url: "#table-15-5-b"
+              - text: ), before undertaking the meta-analysis, of the means and SDs from each study to means and SDs on the scale of a particular familiar instrument whose MID is known. For example, one can rescale the mean and SD of other chronic respiratory disease instruments (e.g. rescaling a 0 to 100 score of an instrument) to a the 1 to 7 score in Chronic Respiratory Disease Questionnaire (CRQ) units (by assuming 0 equals 1 and 100 equals 7 on the CRQ). Given the MID of the CRQ of 0.5, a mean difference in change of 0.71 after rescaling of all studies suggests a substantial effect of the intervention (Guyatt et al 2013b). This approach, presenting in units of the most familiar instrument, may be the most desirable when the target audiences have extensive experience with that instrument, particularly if the MID is well established.
+            - heading "15.6 Drawing conclusions#section-15-6" [level=2] [ref=e855]
+            - heading "15.6.1 Conclusions sections of a Cochrane review#section-15-6-1" [level=3] [ref=e856]
+            - paragraph [ref=e857]: Authors’ conclusions in a Cochrane review are divided into implications for practice and implications for research. While Cochrane reviews about interventions can provide meaningful information and guidance for practice, decisions about the desirable and undesirable consequences of healthcare options require evidence and judgements for criteria that most Cochrane reviews do not provide (Alonso-Coello et al 2016). In describing the implications for practice and the development of recommendations, however, review authors may consider the certainty of the evidence, the balance of benefits and harms, and assumed values and preferences.
+            - heading "15.6.2 Implications for practice#section-15-6-2" [level=3] [ref=e858]
+            - paragraph [ref=e859]: Drawing conclusions about the practical usefulness of an intervention entails making trade-offs, either implicitly or explicitly, between the estimated benefits, harms and the values and preferences. Making such trade-offs, and thus making specific recommendations for an action in a specific context, goes beyond a Cochrane review and requires additional evidence and informed judgements that most Cochrane reviews do not provide (Alonso-Coello et al 2016). Such judgements are typically the domain of clinical practice guideline developers for which Cochrane reviews will provide crucial information (Graham et al 2011, Schünemann et al 2014, Zhang et al 2018a). Thus, authors of Cochrane reviews should not make recommendations.
+            - paragraph [ref=e860]:
+              - text: If review authors feel compelled to lay out actions that clinicians and patients could take, they should – after describing the certainty of evidence and the balance of benefits and harms – highlight different actions that might be consistent with particular patterns of values and preferences. Other factors that might influence a decision should also be highlighted, including any known factors that would be expected to modify the effects of the intervention, the baseline risk or status of the patient, costs and who bears those costs, and the availability of resources. Review authors should ensure they consider all patient-important outcomes, including those for which limited data may be available. In the context of public health reviews the focus may be on population-important outcomes as the target may be an entire (non-diseased) population and include outcomes that are not measured in the population receiving an intervention (e.g. a reduction of transmission of infections from those receiving an intervention). This process implies a high level of explicitness in judgements about values or preferences attached to different outcomes and the certainty of the related evidence (Zhang et al 2018b, Zhang et al 2018c); this and a full cost-effectiveness analysis is beyond the scope of most Cochrane reviews (although they might well be used for such analyses; see
+              - link "Chapter 20" [ref=e861] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-20
+              - text: ).
+            - paragraph [ref=e862]: "A review on the use of anticoagulation in cancer patients to increase survival (Akl et al 2011a) provides an example for laying out clinical implications for situations where there are important trade-offs between desirable and undesirable effects of the intervention: “The decision for a patient with cancer to start heparin therapy for survival benefit should balance the benefits and downsides and integrate the patient’s values and preferences. Patients with a high preference for a potential survival prolongation, limited aversion to potential bleeding, and who do not consider heparin (both UFH or LMWH) therapy a burden may opt to use heparin, while those with aversion to bleeding may not.”"
+            - heading "15.6.3 Implications for research#section-15-6-3" [level=3] [ref=e863]
+            - paragraph [ref=e864]: "The second category for authors’ conclusions in a Cochrane review is implications for research. To help people make well-informed decisions about future healthcare research, the ‘Implications for research’ section should comment on the need for further research, and the nature of the further research that would be most desirable. It is helpful to consider the population, intervention, comparison and outcomes that could be addressed, or addressed more effectively in the future, in the context of the certainty of the evidence in the current review (Brown et al 2006):"
+            - list [ref=e865]:
+              - listitem [ref=e866]: "P (Population): diagnosis, disease stage, comorbidity, risk factor, sex, age, ethnic group, specific inclusion or exclusion criteria, clinical setting;"
+              - listitem [ref=e867]: "I (Intervention): type, frequency, dose, duration, prognostic factor;"
+              - listitem [ref=e868]: "C (Comparison): placebo, routine care, alternative treatment/management;"
+              - listitem [ref=e869]: "O (Outcome): which clinical or patient-related outcomes will the researcher need to measure, improve, influence or accomplish? Which methods of measurement should be used?"
+            - paragraph [ref=e870]:
+              - text: While Cochrane review authors will find the PICO domains helpful, the domains of the GRADE certainty framework further support understanding and describing what additional research will improve the certainty in the available evidence. Note that as the certainty of the evidence is likely to vary by outcome, these implications will be specific to certain outcomes in the review.
+              - link "Table 15.6.a" [ref=e871] [cursor=pointer]:
+                - /url: "#table-15-6-a"
+              - text: shows how review authors may be aided in their interpretation of the body of evidence and drawing conclusions about future research and practice.
+            - paragraph [ref=e872]:
+              - strong [ref=e873]: Table 15.6.a
+              - text: Implications for research and practice suggested by individual GRADE domains
+            - table [ref=e874]:
+              - rowgroup [ref=e875]:
+                - row "Domain Implications for research Examples for research statements Implications for practice" [ref=e876]:
+                  - cell "Domain" [ref=e877]
+                  - cell "Implications for research" [ref=e878]
+                  - cell "Examples for research statements" [ref=e879]
+                  - cell "Implications for practice" [ref=e880]
+                - row "Risk of bias Need for methodologically better designed and executed studies. All studies suffered from lack of blinding of outcome assessors. Trials of this type are required. The estimates of effect may be biased because of a lack of blinding of the assessors of the outcome." [ref=e881]:
+                  - cell "Risk of bias" [ref=e882]
+                  - cell "Need for methodologically better designed and executed studies." [ref=e883]
+                  - cell "All studies suffered from lack of blinding of outcome assessors. Trials of this type are required." [ref=e884]
+                  - cell "The estimates of effect may be biased because of a lack of blinding of the assessors of the outcome." [ref=e885]
+                - 'row "Inconsistency Unexplained inconsistency: need for individual participant data meta-analysis; need for studies in relevant subgroups. Studies in patients with small cell lung cancer are needed to understand if the effects differ from those in patients with pancreatic cancer. Unexplained inconsistency: consider and interpret overall effect estimates as for the overall certainty of a body of evidence. Explained inconsistency (if results are not presented in strata): consider and interpret effects estimates by subgroup." [ref=e886]':
+                  - cell "Inconsistency" [ref=e887]
+                  - 'cell "Unexplained inconsistency: need for individual participant data meta-analysis; need for studies in relevant subgroups." [ref=e888]'
+                  - cell "Studies in patients with small cell lung cancer are needed to understand if the effects differ from those in patients with pancreatic cancer." [ref=e889]
+                  - 'cell "Unexplained inconsistency: consider and interpret overall effect estimates as for the overall certainty of a body of evidence. Explained inconsistency (if results are not presented in strata): consider and interpret effects estimates by subgroup." [ref=e890]':
+                    - paragraph [ref=e891]: "Unexplained inconsistency: consider and interpret overall effect estimates as for the overall certainty of a body of evidence."
+                    - paragraph [ref=e892]: "Explained inconsistency (if results are not presented in strata): consider and interpret effects estimates by subgroup."
+                - row "Indirectness Need for studies that better fit the PICO question of interest. Studies in patients with early cancer are needed because the evidence is from studies in patients with advanced cancer. It is uncertain if the results directly apply to the patients or the way that the intervention is applied in a particular setting." [ref=e893]:
+                  - cell "Indirectness" [ref=e894]
+                  - cell "Need for studies that better fit the PICO question of interest." [ref=e895]
+                  - cell "Studies in patients with early cancer are needed because the evidence is from studies in patients with advanced cancer." [ref=e896]
+                  - cell "It is uncertain if the results directly apply to the patients or the way that the intervention is applied in a particular setting." [ref=e897]
+                - 'row "Imprecision Need for more studies with more participants to reach optimal information size. Studies with approximately 200 more events in the experimental intervention group and the comparator intervention group are required. Same uncertainty interpretation as for certainty of a body of evidence: e.g. the true effect may be substantially different." [ref=e898]':
+                  - cell "Imprecision" [ref=e899]
+                  - cell "Need for more studies with more participants to reach optimal information size." [ref=e900]
+                  - cell "Studies with approximately 200 more events in the experimental intervention group and the comparator intervention group are required." [ref=e901]
+                  - 'cell "Same uncertainty interpretation as for certainty of a body of evidence: e.g. the true effect may be substantially different." [ref=e902]'
+                - row "Publication bias Need to investigate and identify unpublished data; large studies might help resolve this issue. Large studies are required. Same uncertainty interpretation as for certainty of a body of evidence (e.g. the true effect may be substantially different)." [ref=e903]:
+                  - cell "Publication bias" [ref=e904]
+                  - cell "Need to investigate and identify unpublished data; large studies might help resolve this issue." [ref=e905]
+                  - cell "Large studies are required." [ref=e906]
+                  - cell "Same uncertainty interpretation as for certainty of a body of evidence (e.g. the true effect may be substantially different)." [ref=e907]
+                - row "Large effects No direct implications. Not applicable. The effect is large in the populations that were included in the studies and the true effect is likely going to cross important thresholds." [ref=e908]:
+                  - cell "Large effects" [ref=e909]
+                  - cell "No direct implications." [ref=e910]
+                  - cell "Not applicable." [ref=e911]
+                  - cell "The effect is large in the populations that were included in the studies and the true effect is likely going to cross important thresholds." [ref=e912]
+                - row "Dose effects No direct implications. Not applicable. The greater the reduction in the exposure the larger is the expected harm (or benefit)." [ref=e913]:
+                  - cell "Dose effects" [ref=e914]
+                  - cell "No direct implications." [ref=e915]
+                  - cell "Not applicable." [ref=e916]
+                  - cell "The greater the reduction in the exposure the larger is the expected harm (or benefit)." [ref=e917]
+                - row "Opposing bias and confounding Studies controlling for the residual bias and confounding are needed. Studies controlling for possible confounders such as smoking and degree of education are required. The effect could be even larger or smaller (depending on the direction of the results) than the one that is observed in the studies presented here." [ref=e918]:
+                  - cell "Opposing bias and confounding" [ref=e919]
+                  - cell "Studies controlling for the residual bias and confounding are needed." [ref=e920]
+                  - cell "Studies controlling for possible confounders such as smoking and degree of education are required." [ref=e921]
+                  - cell "The effect could be even larger or smaller (depending on the direction of the results) than the one that is observed in the studies presented here." [ref=e922]
+            - paragraph [ref=e923]:
+              - text: The review of compression stockings for prevention of deep vein thrombosis (DVT) in airline passengers described in
+              - link "Chapter 14" [ref=e924] [cursor=pointer]:
+                - /url: /authors/handbooks-and-manuals/handbook/current/chapter-14
+              - text: "provides an example where there is some convincing evidence of a benefit of the intervention: “This review shows that the question of the effects on symptomless DVT of wearing versus not wearing compression stockings in the types of people studied in these trials should now be regarded as answered. Further research may be justified to investigate the relative effects of different strengths of stockings or of stockings compared to other preventative strategies. Further randomised trials to address the remaining uncertainty about the effects of wearing versus not wearing compression stockings on outcomes such as death, pulmonary embolism and symptomatic DVT would need to be large.” (Clarke et al 2016)."
+            - paragraph [ref=e925]: "A review of therapeutic touch for anxiety disorder provides an example of the implications for research when no eligible studies had been found: “This review highlights the need for randomized controlled trials to evaluate the effectiveness of therapeutic touch in reducing anxiety symptoms in people diagnosed with anxiety disorders. Future trials need to be rigorous in design and delivery, with subsequent reporting to include high quality descriptions of all aspects of methodology to enable appraisal and interpretation of results.” (Robinson et al 2007)."
+            - heading "15.6.4 Reaching conclusions#section-15-6-4" [level=3] [ref=e926]
+            - paragraph [ref=e927]:
+              - text: A common mistake is to confuse ‘no evidence of an effect’ with ‘evidence of no effect’. When the confidence intervals are too wide (e.g. including no effect), it is wrong to claim that the experimental intervention has ‘no effect’ or is ‘no different’ from the comparator intervention. Review authors may also incorrectly ‘positively’ frame results for some effects but not others. For example, when the effect estimate is positive for a beneficial outcome but confidence intervals are wide, review authors may describe the effect as promising. However, when the effect estimate is negative for an outcome that is considered harmful but the confidence intervals include no effect, review authors report no effect. Another mistake is to frame the conclusion in wishful terms. For example, review authors might write, “there were too few people in the analysis to detect a reduction in mortality” when the included studies showed a reduction or even increase in mortality that was not ‘statistically significant’. One way of avoiding errors such as these is to consider the results blinded; that is, consider how the results would be presented and framed in the conclusions if the direction of the results was reversed. If the confidence interval for the estimate of the difference in the effects of the interventions overlaps with no effect, the analysis is compatible with both a true beneficial effect and a true harmful effect. If one of the possibilities is mentioned in the conclusion, the other possibility should be mentioned as well.
+              - link "Table 15.6.b" [ref=e928] [cursor=pointer]:
+                - /url: "#table-15-6-b"
+              - text: suggests narrative statements for drawing conclusions based on the effect estimate from the meta-analysis and the certainty of the evidence.
+            - paragraph [ref=e929]:
+              - strong [ref=e930]: Table 15.6.b
+              - text: Suggested narrative statements for phrasing conclusions
+            - table [ref=e931]:
+              - rowgroup [ref=e932]:
+                - row "Size of the effect estimate Suggested statements for conclusions (replace X with intervention, choose ‘reduce’ or ‘increase’ depending on the direction of the effect, replace ‘outcome’ with name of outcome, include ‘when compared with Y’ when needed)" [ref=e933]:
+                  - cell "Size of the effect estimate" [ref=e934]:
+                    - strong [ref=e935]: Size of the effect estimate
+                  - cell "Suggested statements for conclusions (replace X with intervention, choose ‘reduce’ or ‘increase’ depending on the direction of the effect, replace ‘outcome’ with name of outcome, include ‘when compared with Y’ when needed)" [ref=e936]:
+                    - paragraph [ref=e937]:
+                      - strong [ref=e938]: Suggested statements for conclusions
+                    - paragraph [ref=e939]:
+                      - emphasis [ref=e940]: (replace X with intervention, choose ‘reduce’ or ‘increase’ depending on the direction of the effect, replace ‘outcome’ with name of outcome, include ‘when compared with Y’ when needed)
+                - row "High certainty of the evidence" [ref=e941]:
+                  - cell "High certainty of the evidence" [ref=e942]
+                - row "Large effect X results in a large reduction/increase in outcome" [ref=e943]:
+                  - cell "Large effect" [ref=e944]
+                  - cell "X results in a large reduction/increase in outcome" [ref=e945]
+                - row "Moderate effect X reduces/increases outcome X results in a reduction/increase in outcome" [ref=e946]:
+                  - cell "Moderate effect" [ref=e947]
+                  - cell "X reduces/increases outcome X results in a reduction/increase in outcome" [ref=e948]:
+                    - paragraph [ref=e949]: X reduces/increases outcome
+                    - paragraph [ref=e950]: X results in a reduction/increase in outcome
+                - row "Small important effect X reduces/increases outcome slightly X results in a slight reduction/increase in outcome" [ref=e951]:
+                  - cell "Small important effect" [ref=e952]
+                  - cell "X reduces/increases outcome slightly X results in a slight reduction/increase in outcome" [ref=e953]:
+                    - paragraph [ref=e954]: X reduces/increases outcome slightly
+                    - paragraph [ref=e955]: X results in a slight reduction/increase in outcome
+                - row "Trivial, small unimportant effect or no effect X results in little to no difference in outcome X does not reduce/increase outcome" [ref=e956]:
+                  - cell "Trivial, small unimportant effect or no effect" [ref=e957]
+                  - cell "X results in little to no difference in outcome X does not reduce/increase outcome" [ref=e958]:
+                    - paragraph [ref=e959]: X results in little to no difference in outcome
+                    - paragraph [ref=e960]: X does not reduce/increase outcome
+                - row "Moderate certainty of the evidence" [ref=e961]:
+                  - cell "Moderate certainty of the evidence" [ref=e962]
+                - row "Large effect X likely results in a large reduction/increase in outcome X probably results in a large reduction/increase in outcome" [ref=e963]:
+                  - cell "Large effect" [ref=e964]
+                  - cell "X likely results in a large reduction/increase in outcome X probably results in a large reduction/increase in outcome" [ref=e965]:
+                    - paragraph [ref=e966]: X likely results in a large reduction/increase in outcome
+                    - paragraph [ref=e967]: X probably results in a large reduction/increase in outcome
+                - row "Moderate effect X likely reduces/increases outcome X probably reduces/increases outcome X likely results in a reduction/increase in outcome X probably results in a reduction/increase in outcome" [ref=e968]:
+                  - cell "Moderate effect" [ref=e969]
+                  - cell "X likely reduces/increases outcome X probably reduces/increases outcome X likely results in a reduction/increase in outcome X probably results in a reduction/increase in outcome" [ref=e970]:
+                    - paragraph [ref=e971]: X likely reduces/increases outcome
+                    - paragraph [ref=e972]: X probably reduces/increases outcome
+                    - paragraph [ref=e973]: X likely results in a reduction/increase in outcome
+                    - paragraph [ref=e974]: X probably results in a reduction/increase in outcome
+                - row "Small important effect X probably reduces/increases outcome slightly X likely reduces/increases outcome slightly X probably results in a slight reduction/increase in outcome X likely results in a slight reduction/increase in outcome" [ref=e975]:
+                  - cell "Small important effect" [ref=e976]
+                  - cell "X probably reduces/increases outcome slightly X likely reduces/increases outcome slightly X probably results in a slight reduction/increase in outcome X likely results in a slight reduction/increase in outcome" [ref=e977]:
+                    - paragraph [ref=e978]: X probably reduces/increases outcome slightly
+                    - paragraph [ref=e979]: X likely reduces/increases outcome slightly
+                    - paragraph [ref=e980]: X probably results in a slight reduction/increase in outcome
+                    - paragraph [ref=e981]: X likely results in a slight reduction/increase in outcome
+                - row "Trivial, small unimportant effect or no effect X likely results in little to no difference in outcome X probably results in little to no difference in outcome X likely does not reduce/increase outcome X probably does not reduce/increase outcome" [ref=e982]:
+                  - cell "Trivial, small unimportant effect or no effect" [ref=e983]
+                  - cell "X likely results in little to no difference in outcome X probably results in little to no difference in outcome X likely does not reduce/increase outcome X probably does not reduce/increase outcome" [ref=e984]:
+                    - paragraph [ref=e985]: X likely results in little to no difference in outcome
+                    - paragraph [ref=e986]: X probably results in little to no difference in outcome
+                    - paragraph [ref=e987]: X likely does not reduce/increase outcome
+                    - paragraph [ref=e988]: X probably does not reduce/increase outcome
+                - row "Low certainty of the evidence" [ref=e989]:
+                  - cell "Low certainty of the evidence" [ref=e990]
+                - row "Large effect X may result in a large reduction/increase in outcome The evidence suggests X results in a large reduction/increase in outcome" [ref=e991]:
+                  - cell "Large effect" [ref=e992]
+                  - cell "X may result in a large reduction/increase in outcome The evidence suggests X results in a large reduction/increase in outcome" [ref=e993]:
+                    - paragraph [ref=e994]: X may result in a large reduction/increase in outcome
+                    - paragraph [ref=e995]: The evidence suggests X results in a large reduction/increase in outcome
+                - row "Moderate effect X may reduce/increase outcome The evidence suggests X reduces/increases outcome X may result in a reduction/increase in outcome The evidence suggests X results in a reduction/increase in outcome" [ref=e996]:
+                  - cell "Moderate effect" [ref=e997]
+                  - cell "X may reduce/increase outcome The evidence suggests X reduces/increases outcome X may result in a reduction/increase in outcome The evidence suggests X results in a reduction/increase in outcome" [ref=e998]:
+                    - paragraph [ref=e999]: X may reduce/increase outcome
+                    - paragraph [ref=e1000]: The evidence suggests X reduces/increases outcome
+                    - paragraph [ref=e1001]: X may result in a reduction/increase in outcome
+                    - paragraph [ref=e1002]: The evidence suggests X results in a reduction/increase in outcome
+                - row "Small important effect X may reduce/increase outcome slightly The evidence suggests X reduces/increases outcome slightly X may result in a slight reduction/increase in outcome The evidence suggests X results in a slight reduction/increase in outcome" [ref=e1003]:
+                  - cell "Small important effect" [ref=e1004]
+                  - cell "X may reduce/increase outcome slightly The evidence suggests X reduces/increases outcome slightly X may result in a slight reduction/increase in outcome The evidence suggests X results in a slight reduction/increase in outcome" [ref=e1005]:
+                    - paragraph [ref=e1006]: X may reduce/increase outcome slightly
+                    - paragraph [ref=e1007]: The evidence suggests X reduces/increases outcome slightly
+                    - paragraph [ref=e1008]: X may result in a slight reduction/increase in outcome
+                    - paragraph [ref=e1009]: The evidence suggests X results in a slight reduction/increase in outcome
+                - row "Trivial, small unimportant effect or no effect X may result in little to no difference in outcome The evidence suggests that X results in little to no difference in outcome X may not reduce/increase outcome The evidence suggests that X does not reduce/increase outcome" [ref=e1010]:
+                  - cell "Trivial, small unimportant effect or no effect" [ref=e1011]
+                  - cell "X may result in little to no difference in outcome The evidence suggests that X results in little to no difference in outcome X may not reduce/increase outcome The evidence suggests that X does not reduce/increase outcome" [ref=e1012]:
+                    - paragraph [ref=e1013]: X may result in little to no difference in outcome
+                    - paragraph [ref=e1014]: The evidence suggests that X results in little to no difference in outcome
+                    - paragraph [ref=e1015]: X may not reduce/increase outcome
+                    - paragraph [ref=e1016]: The evidence suggests that X does not reduce/increase outcome
+                - row "Very low certainty of the evidence" [ref=e1017]:
+                  - cell "Very low certainty of the evidence" [ref=e1018]
+                - row "Any effect The evidence is very uncertain about the effect of X on outcome X may reduce/increase/have little to no effect on outcome but the evidence is very uncertain" [ref=e1019]:
+                  - cell "Any effect" [ref=e1020]
+                  - cell "The evidence is very uncertain about the effect of X on outcome X may reduce/increase/have little to no effect on outcome but the evidence is very uncertain" [ref=e1021]:
+                    - paragraph [ref=e1022]: The evidence is very uncertain about the effect of X on outcome
+                    - paragraph [ref=e1023]: X may reduce/increase/have little to no effect on outcome but the evidence is very uncertain
+            - paragraph [ref=e1024]: Another common mistake is to reach conclusions that go beyond the evidence. Often this is done implicitly, without referring to the additional information or judgements that are used in reaching conclusions about the implications of a review for practice. Even when additional information and explicit judgements support conclusions about the implications of a review for practice, review authors rarely conduct systematic reviews of the additional information. Furthermore, implications for practice are often dependent on specific circumstances and values that must be taken into consideration. As we have noted, review authors should always be cautious when drawing conclusions about implications for practice and they should not make recommendations.
+            - heading "15.7 Chapter information#section-15-7" [level=2] [ref=e1025]
+            - paragraph [ref=e1026]:
+              - strong [ref=e1027]: "Authors:"
+              - text: Holger J Schünemann, Gunn E Vist, Julian PT Higgins, Nancy Santesso, Jonathan J Deeks, Paul Glasziou, Elie Akl, Gordon H Guyatt; on behalf of the Cochrane GRADEing Methods Group
+            - paragraph [ref=e1028]:
+              - strong [ref=e1029]: "Acknowledgements:"
+              - text: Andrew Oxman, Jonathan Sterne, Michael Borenstein and Rob Scholten contributed text to earlier versions of this chapter.
+            - paragraph [ref=e1030]:
+              - strong [ref=e1031]: "Funding:"
+              - text: This work was in part supported by funding from the Michael G DeGroote Cochrane Canada Centre and the Ontario Ministry of Health. JJD receives support from the National Institute for Health Research (NIHR) Birmingham Biomedical Research Centre at the University Hospitals Birmingham NHS Foundation Trust and the University of Birmingham. JPTH receives support from the NIHR Biomedical Research Centre at University Hospitals Bristol NHS Foundation Trust and the University of Bristol. The views expressed are those of the author(s) and not necessarily those of the NHS, the NIHR or the Department of Health.
+            - heading "15.8 References#section-15-8" [level=2] [ref=e1032]
+            - paragraph [ref=e1033]:
+              - text: Aguilar MI, Hart R. Oral anticoagulants for preventing stroke in patients with non-valvular atrial fibrillation and no previous history of stroke or transient ischemic attacks.
+              - emphasis [ref=e1034]: Cochrane Database of Systematic Reviews
+              - text: 2005;
+              - strong [ref=e1035]: "3"
+              - text: ": CD001927."
+            - paragraph [ref=e1036]:
+              - text: Aguilar MI, Hart R, Pearce LA. Oral anticoagulants versus antiplatelet therapy for preventing stroke in patients with non-valvular atrial fibrillation and no history of stroke or transient ischemic attacks.
+              - emphasis [ref=e1037]: Cochrane Database of Systematic Reviews
+              - text: 2007;
+              - strong [ref=e1038]: "3"
+              - text: ": CD006186."
+            - paragraph [ref=e1039]:
+              - text: Akl EA, Gunukula S, Barba M, Yosuico VE, van Doormaal FF, Kuipers S, Middeldorp S, Dickinson HO, Bryant A, Schünemann H. Parenteral anticoagulation in patients with cancer who have no therapeutic or prophylactic indication for anticoagulation.
+              - emphasis [ref=e1040]: Cochrane Database of Systematic Reviews
+              - text: 2011a;
+              - strong [ref=e1041]: "1"
+              - text: ": CD006652."
+            - paragraph [ref=e1042]:
+              - text: Akl EA, Oxman AD, Herrin J, Vist GE, Terrenato I, Sperati F, Costiniuk C, Blank D, Schünemann H. Using alternative statistical formats for presenting risks and risk reductions.
+              - emphasis [ref=e1043]: Cochrane Database of Systematic Reviews
+              - text: 2011b;
+              - strong [ref=e1044]: "3"
+              - text: ": CD006776."
+            - paragraph [ref=e1045]:
+              - text: "Alonso-Coello P, Schünemann HJ, Moberg J, Brignardello-Petersen R, Akl EA, Davoli M, Treweek S, Mustafa RA, Rada G, Rosenbaum S, Morelli A, Guyatt GH, Oxman AD, Group GW. GRADE Evidence to Decision (EtD) frameworks: a systematic and transparent approach to making well informed healthcare choices. 1: Introduction."
+              - emphasis [ref=e1046]: BMJ
+              - text: 2016;
+              - strong [ref=e1047]: "353"
+              - text: ": i2016."
+            - paragraph [ref=e1048]:
+              - text: Altman DG. Confidence intervals for the number needed to treat.
+              - emphasis [ref=e1049]: BMJ
+              - text: 1998;
+              - strong [ref=e1050]: "317"
+              - text: ": 1309-1312."
+            - paragraph [ref=e1051]:
+              - text: Atkins D, Best D, Briss PA, Eccles M, Falck-Ytter Y, Flottorp S, Guyatt GH, Harbour RT, Haugh MC, Henry D, Hill S, Jaeschke R, Leng G, Liberati A, Magrini N, Mason J, Middleton P, Mrukowicz J, O'Connell D, Oxman AD, Phillips B, Schünemann HJ, Edejer TT, Varonen H, Vist GE, Williams JW, Jr., Zaza S. Grading quality of evidence and strength of recommendations.
+              - emphasis [ref=e1052]: BMJ
+              - text: 2004;
+              - strong [ref=e1053]: "328"
+              - text: ": 1490."
+            - paragraph [ref=e1054]:
+              - text: Brown P, Brunnhuber K, Chalkidou K, Chalmers I, Clarke M, Fenton M, Forbes C, Glanville J, Hicks NJ, Moody J, Twaddle S, Timimi H, Young P. How to formulate research recommendations.
+              - emphasis [ref=e1055]: BMJ
+              - text: 2006;
+              - strong [ref=e1056]: "333"
+              - text: ": 804-806."
+            - paragraph [ref=e1057]:
+              - text: "Cates C. Confidence intervals for the number needed to treat: Pooling numbers needed to treat may not be reliable."
+              - emphasis [ref=e1058]: BMJ
+              - text: 1999;
+              - strong [ref=e1059]: "318"
+              - text: ": 1764-1765."
+            - paragraph [ref=e1060]:
+              - text: Clarke MJ, Broderick C, Hopewell S, Juszczak E, Eisinga A. Compression stockings for preventing deep vein thrombosis in airline passengers.
+              - emphasis [ref=e1061]: Cochrane Database of Systematic Reviews
+              - text: 2016;
+              - strong [ref=e1062]: "9"
+              - text: ": CD004002."
+            - paragraph [ref=e1063]:
+              - text: Cohen J.
+              - emphasis [ref=e1064]: Statistical Power Analysis in the Behavioral Sciences
+              - text: ". 2nd edition ed. Hillsdale (NJ): Lawrence Erlbaum Associates, Inc.; 1988."
+            - paragraph [ref=e1065]:
+              - text: Coleman T, Chamberlain C, Davey MA, Cooper SE, Leonardi-Bee J. Pharmacological interventions for promoting smoking cessation during pregnancy.
+              - emphasis [ref=e1066]: Cochrane Database of Systematic Reviews
+              - text: 2015;
+              - strong [ref=e1067]: "12"
+              - text: ": CD010078."
+            - paragraph [ref=e1068]:
+              - text: Dans AM, Dans L, Oxman AD, Robinson V, Acuin J, Tugwell P, Dennis R, Kang D. Assessing equity in clinical practice guidelines.
+              - emphasis [ref=e1069]: Journal of Clinical Epidemiology
+              - text: 2007;
+              - strong [ref=e1070]: "60"
+              - text: ": 540-546."
+            - paragraph [ref=e1071]:
+              - text: Friedman LM, Furberg CD, DeMets DL.
+              - emphasis [ref=e1072]: Fundamentals of Clinical Trials
+              - text: ". 2nd edition ed. Littleton (MA): John Wright PSG, Inc.; 1985."
+            - paragraph [ref=e1073]:
+              - text: "Friedrich JO, Adhikari NK, Beyene J. The ratio of means method as an alternative to mean differences for analyzing continuous outcome variables in meta-analysis: a simulation study."
+              - emphasis [ref=e1074]: BMC Medical Research Methodology
+              - text: 2008;
+              - strong [ref=e1075]: "8"
+              - text: ": 32."
+            - paragraph [ref=e1076]:
+              - text: Furukawa T. From effect size into number needed to treat.
+              - emphasis [ref=e1077]: Lancet
+              - text: 1999;
+              - strong [ref=e1078]: "353"
+              - text: ": 1680."
+            - paragraph [ref=e1079]: "Graham R, Mancher M, Wolman DM, Greenfield S, Steinberg E. Committee on Standards for Developing Trustworthy Clinical Practice Guidelines, Board on Health Care Services: Clinical Practice Guidelines We Can Trust. Washington, DC: National Academies Press; 2011."
+            - paragraph [ref=e1080]:
+              - text: "Guyatt G, Oxman AD, Akl EA, Kunz R, Vist G, Brozek J, Norris S, Falck-Ytter Y, Glasziou P, DeBeer H, Jaeschke R, Rind D, Meerpohl J, Dahm P, Schünemann HJ. GRADE guidelines: 1. Introduction-GRADE evidence profiles and summary of findings tables."
+              - emphasis [ref=e1081]: Journal of Clinical Epidemiology
+              - text: 2011a;
+              - strong [ref=e1082]: "64"
+              - text: ": 383-394."
+            - paragraph [ref=e1083]:
+              - text: Guyatt GH, Juniper EF, Walter SD, Griffith LE, Goldstein RS. Interpreting treatment effects in randomised trials.
+              - emphasis [ref=e1084]: BMJ
+              - text: 1998;
+              - strong [ref=e1085]: "316"
+              - text: ": 690-693."
+            - paragraph [ref=e1086]:
+              - text: "Guyatt GH, Oxman AD, Vist GE, Kunz R, Falck-Ytter Y, Alonso-Coello P, Schünemann HJ. GRADE: an emerging consensus on rating quality of evidence and strength of recommendations."
+              - emphasis [ref=e1087]: BMJ
+              - text: 2008;
+              - strong [ref=e1088]: "336"
+              - text: ": 924-926."
+            - paragraph [ref=e1089]:
+              - text: "Guyatt GH, Oxman AD, Kunz R, Woodcock J, Brozek J, Helfand M, Alonso-Coello P, Falck-Ytter Y, Jaeschke R, Vist G, Akl EA, Post PN, Norris S, Meerpohl J, Shukla VK, Nasser M, Schünemann HJ. GRADE guidelines: 8. Rating the quality of evidence--indirectness."
+              - emphasis [ref=e1090]: Journal of Clinical Epidemiology
+              - text: 2011b;
+              - strong [ref=e1091]: "64"
+              - text: ": 1303-1310."
+            - paragraph [ref=e1092]:
+              - text: "Guyatt GH, Oxman AD, Santesso N, Helfand M, Vist G, Kunz R, Brozek J, Norris S, Meerpohl J, Djulbegovic B, Alonso-Coello P, Post PN, Busse JW, Glasziou P, Christensen R, Schünemann HJ. GRADE guidelines: 12. Preparing summary of findings tables-binary outcomes."
+              - emphasis [ref=e1093]: Journal of Clinical Epidemiology
+              - text: 2013a;
+              - strong [ref=e1094]: "66"
+              - text: ": 158-172."
+            - paragraph [ref=e1095]:
+              - text: "Guyatt GH, Thorlund K, Oxman AD, Walter SD, Patrick D, Furukawa TA, Johnston BC, Karanicolas P, Akl EA, Vist G, Kunz R, Brozek J, Kupper LL, Martin SL, Meerpohl JJ, Alonso-Coello P, Christensen R, Schünemann HJ. GRADE guidelines: 13. Preparing summary of findings tables and evidence profiles-continuous outcomes."
+              - emphasis [ref=e1096]: Journal of Clinical Epidemiology
+              - text: 2013b;
+              - strong [ref=e1097]: "66"
+              - text: ": 173-183."
+            - paragraph [ref=e1098]:
+              - text: Hawe P, Shiell A, Riley T, Gold L. Methods for exploring implementation variation and local context within a cluster randomised community intervention trial.
+              - emphasis [ref=e1099]: Journal of Epidemiology and Community Health
+              - text: 2004;
+              - strong [ref=e1100]: "58"
+              - text: ": 788-793."
+            - paragraph [ref=e1101]:
+              - text: Hoffrage U, Lindsey S, Hertwig R, Gigerenzer G. Medicine. Communicating statistical information.
+              - emphasis [ref=e1102]: Science
+              - text: 2000;
+              - strong [ref=e1103]: "290"
+              - text: ": 2261-2262."
+            - paragraph [ref=e1104]:
+              - text: Jaeschke R, Singer J, Guyatt GH. Measurement of health status. Ascertaining the minimal clinically important difference.
+              - emphasis [ref=e1105]: Controlled Clinical Trials
+              - text: 1989;
+              - strong [ref=e1106]: "10"
+              - text: ": 407-415."
+            - paragraph [ref=e1107]:
+              - text: "Johnston B, Thorlund K, Schünemann H, Xie F, Murad M, Montori V, Guyatt G. Improving the interpretation of health-related quality of life evidence in meta-analysis: The application of minimal important difference units. ."
+              - emphasis [ref=e1108]: Health Outcomes and Qualithy of Life
+              - text: 2010;
+              - strong [ref=e1109]: "11"
+              - text: ": 116."
+            - paragraph [ref=e1110]:
+              - text: "Karanicolas PJ, Smith SE, Kanbur B, Davies E, Guyatt GH. The impact of prophylactic dexamethasone on nausea and vomiting after laparoscopic cholecystectomy: a systematic review and meta-analysis."
+              - emphasis [ref=e1111]: Annals of Surgery
+              - text: 2008;
+              - strong [ref=e1112]: "248"
+              - text: ": 751-762."
+            - paragraph [ref=e1113]:
+              - text: Lumley J, Oliver SS, Chamberlain C, Oakley L. Interventions for promoting smoking cessation during pregnancy.
+              - emphasis [ref=e1114]: Cochrane Database of Systematic Reviews
+              - text: 2004;
+              - strong [ref=e1115]: "4"
+              - text: ": CD001055."
+            - paragraph [ref=e1116]:
+              - text: McQuay HJ, Moore RA. Using numerical results from systematic reviews in clinical practice.
+              - emphasis [ref=e1117]: Annals of Internal Medicine
+              - text: 1997;
+              - strong [ref=e1118]: "126"
+              - text: ": 712-720."
+            - paragraph [ref=e1119]:
+              - text: "Resnicow K, Cross D, Wynder E. The Know Your Body program: a review of evaluation studies."
+              - emphasis [ref=e1120]: Bulletin of the New York Academy of Medicine
+              - text: 1993;
+              - strong [ref=e1121]: "70"
+              - text: ": 188-207."
+            - paragraph [ref=e1122]:
+              - text: Robinson J, Biley FC, Dolk H. Therapeutic touch for anxiety disorders.
+              - emphasis [ref=e1123]: Cochrane Database of Systematic Reviews
+              - text: 2007;
+              - strong [ref=e1124]: "3"
+              - text: ": CD006240."
+            - paragraph [ref=e1125]:
+              - text: "Rothwell PM. External validity of randomised controlled trials: \"to whom do the results of this trial apply?\"."
+              - emphasis [ref=e1126]: Lancet
+              - text: 2005;
+              - strong [ref=e1127]: "365"
+              - text: ": 82-93."
+            - paragraph [ref=e1128]:
+              - text: "Santesso N, Carrasco-Labra A, Langendam M, Brignardello-Petersen R, Mustafa RA, Heus P, Lasserson T, Opiyo N, Kunnamo I, Sinclair D, Garner P, Treweek S, Tovey D, Akl EA, Tugwell P, Brozek JL, Guyatt G, Schünemann HJ. Improving GRADE evidence tables part 3: detailed guidance for explanatory footnotes supports creating and understanding GRADE certainty in the evidence judgments."
+              - emphasis [ref=e1129]: Journal of Clinical Epidemiology
+              - text: 2016;
+              - strong [ref=e1130]: "74"
+              - text: ": 28-39."
+            - paragraph [ref=e1131]:
+              - text: Schünemann HJ, Puhan M, Goldstein R, Jaeschke R, Guyatt GH. Measurement properties and interpretability of the Chronic respiratory disease questionnaire (CRQ).
+              - emphasis [ref=e1132]: "COPD: Journal of Chronic Obstructive Pulmonary Disease"
+              - text: 2005;
+              - strong [ref=e1133]: "2"
+              - text: ": 81-89."
+            - paragraph [ref=e1134]:
+              - text: Schünemann HJ, Guyatt GH. Commentary--goodbye M(C)ID! Hello MID, where do you come from?
+              - emphasis [ref=e1135]: Health Services Research
+              - text: 2005;
+              - strong [ref=e1136]: "40"
+              - text: ": 593-597."
+            - paragraph [ref=e1137]:
+              - text: "Schünemann HJ, Fretheim A, Oxman AD. Improving the use of research evidence in guideline development: 13. Applicability, transferability and adaptation."
+              - emphasis [ref=e1138]: Health Research Policy and Systems
+              - text: 2006;
+              - strong [ref=e1139]: "4"
+              - text: ": 25."
+            - paragraph [ref=e1140]:
+              - text: Schünemann HJ. Methodological idiosyncracies, frameworks and challenges of non-pharmaceutical and non-technical treatment interventions.
+              - emphasis [ref=e1141]: Zeitschrift für Evidenz, Fortbildung und Qualität im Gesundheitswesen
+              - text: 2013;
+              - strong [ref=e1142]: "107"
+              - text: ": 214-220."
+            - paragraph [ref=e1143]:
+              - text: Schünemann HJ, Tugwell P, Reeves BC, Akl EA, Santesso N, Spencer FA, Shea B, Wells G, Helfand M. Non-randomized studies as a source of complementary, sequential or replacement evidence for randomized controlled trials in systematic reviews on the effects of interventions.
+              - emphasis [ref=e1144]: Research Synthesis Methods
+              - text: 2013;
+              - strong [ref=e1145]: "4"
+              - text: ": 49-62."
+            - paragraph [ref=e1146]:
+              - text: "Schünemann HJ, Wiercioch W, Etxeandia I, Falavigna M, Santesso N, Mustafa R, Ventresca M, Brignardello-Petersen R, Laisaar KT, Kowalski S, Baldeh T, Zhang Y, Raid U, Neumann I, Norris SL, Thornton J, Harbour R, Treweek S, Guyatt G, Alonso-Coello P, Reinap M, Brozek J, Oxman A, Akl EA. Guidelines 2.0: systematic development of a comprehensive checklist for a successful guideline enterprise."
+              - emphasis [ref=e1147]: "CMAJ: Canadian Medical Association Journal"
+              - text: 2014;
+              - strong [ref=e1148]: "186"
+              - text: ": E123-142."
+            - paragraph [ref=e1149]:
+              - text: "Schünemann HJ. Interpreting GRADE's levels of certainty or quality of the evidence: GRADE for statisticians, considering review information size or less emphasis on imprecision?"
+              - emphasis [ref=e1150]: Journal of Clinical Epidemiology
+              - text: 2016;
+              - strong [ref=e1151]: "75"
+              - text: ": 6-15."
+            - paragraph [ref=e1152]:
+              - text: Smeeth L, Haines A, Ebrahim S. Numbers needed to treat derived from meta-analyses--sometimes informative, usually misleading.
+              - emphasis [ref=e1153]: BMJ
+              - text: 1999;
+              - strong [ref=e1154]: "318"
+              - text: ": 1548-1551."
+            - paragraph [ref=e1155]:
+              - text: "Sun X, Briel M, Busse JW, You JJ, Akl EA, Mejza F, Bala MM, Bassler D, Mertz D, Diaz-Granados N, Vandvik PO, Malaga G, Srinathan SK, Dahm P, Johnston BC, Alonso-Coello P, Hassouneh B, Walter SD, Heels-Ansdell D, Bhatnagar N, Altman DG, Guyatt GH. Credibility of claims of subgroup effects in randomised controlled trials: systematic review."
+              - emphasis [ref=e1156]: BMJ
+              - text: 2012;
+              - strong [ref=e1157]: "344"
+              - text: ": e1553."
+            - paragraph [ref=e1158]:
+              - text: "Zhang Y, Akl EA, Schünemann HJ. Using systematic reviews in guideline development: the GRADE approach."
+              - emphasis [ref=e1159]: Research Synthesis Methods
+              - text: "2018a: doi: 10.1002/jrsm.1313."
+            - paragraph [ref=e1160]:
+              - text: "Zhang Y, Alonso-Coello P, Guyatt GH, Yepes-Nunez JJ, Akl EA, Hazlewood G, Pardo-Hernandez H, Etxeandia-Ikobaltzeta I, Qaseem A, Williams JW, Jr., Tugwell P, Flottorp S, Chang Y, Zhang Y, Mustafa RA, Rojas MX, Schünemann HJ. GRADE Guidelines: 19. Assessing the certainty of evidence in the importance of outcomes or values and preferences-Risk of bias and indirectness."
+              - emphasis [ref=e1161]: Journal of Clinical Epidemiology
+              - text: "2018b: doi: 10.1016/j.jclinepi.2018.1001.1013."
+            - paragraph [ref=e1162]:
+              - text: "Zhang Y, Alonso Coello P, Guyatt G, Yepes-Nunez JJ, Akl EA, Hazlewood G, Pardo-Hernandez H, Etxeandia-Ikobaltzeta I, Qaseem A, Williams JW, Jr., Tugwell P, Flottorp S, Chang Y, Zhang Y, Mustafa RA, Rojas MX, Xie F, Schünemann HJ. GRADE Guidelines: 20. Assessing the certainty of evidence in the importance of outcomes or values and preferences - Inconsistency, Imprecision, and other Domains."
+              - emphasis [ref=e1163]: Journal of Clinical Epidemiology
+              - text: "2018c: doi: 10.1016/j.jclinepi.2018.1005.1011."
+            - paragraph [ref=e1164]
+    - generic [ref=e1165]:
+      - generic [ref=e1167]:
+        - generic [ref=e1168]:
+          - link "Cochrane" [ref=e1170] [cursor=pointer]:
+            - /url: /
+            - img "Cochrane" [ref=e1171]
+          - generic [ref=e1172]:
+            - text: Trusted evidence.
+            - text: Informed decisions.
+            - text: Better health.
+        - paragraph [ref=e1174]:
+          - text: 11-13 Cavendish Square
+          - text: London
+          - text: W1G 0AN
+          - text: United Kingdom
+        - generic [ref=e1175]:
+          - list [ref=e1176]:
+            - listitem [ref=e1177]:
+              - link "Contact us" [ref=e1178] [cursor=pointer]:
+                - /url: /contact-us
+            - listitem [ref=e1179]:
+              - link "News" [ref=e1180] [cursor=pointer]:
+                - /url: /about-us/news
+            - listitem [ref=e1181]:
+              - link "Press office" [ref=e1182] [cursor=pointer]:
+                - /url: /about-us/news/press-office
+            - listitem [ref=e1183]:
+              - link "About us" [ref=e1184] [cursor=pointer]:
+                - /url: /about-us
+            - listitem [ref=e1185]:
+              - link "Jobs" [ref=e1186] [cursor=pointer]:
+                - /url: /about-us/jobs
+            - listitem [ref=e1187]:
+              - link "Cochrane Library" [ref=e1188] [cursor=pointer]:
+                - /url: https://www.cochranelibrary.com/
+          - generic [ref=e1189]:
+            - link "Facebook icon" [ref=e1190] [cursor=pointer]:
+              - /url: https://links.cochrane.org/facebook
+              - img "Facebook icon" [ref=e1191]
+            - link "YouTube icon" [ref=e1192] [cursor=pointer]:
+              - /url: https://links.cochrane.org/youtube
+              - img "YouTube icon" [ref=e1193]
+            - link "Instagram icon" [ref=e1194] [cursor=pointer]:
+              - /url: https://links.cochrane.org/instagram
+              - img "Instagram icon" [ref=e1195]
+            - link "LinkedIn icon" [ref=e1196] [cursor=pointer]:
+              - /url: https://links.cochrane.org/linkedin
+              - img "LinkedIn icon" [ref=e1197]
+            - link "Bluesky icon" [ref=e1198] [cursor=pointer]:
+              - /url: https://links.cochrane.org/bsky
+              - img "Bluesky icon" [ref=e1199]
+      - generic [ref=e1200]: The Cochrane Collaboration is a charity (no. 1045921) and a company limited by guarantee (no. 03044323) registered in England & Wales. VAT registration number GB 718 2127 49.
+      - generic [ref=e1201]:
+        - text: Copyright © 2026 The Cochrane Collaboration
+        - generic [ref=e1202]:
+          - link "Website Terms & Conditions" [ref=e1203] [cursor=pointer]:
+            - /url: /website-terms-and-conditions
+          - text: "|"
+          - link "Disclaimer" [ref=e1204] [cursor=pointer]:
+            - /url: /privacy-policy#disclaimer
+          - text: "|"
+          - link "Privacy" [ref=e1205] [cursor=pointer]:
+            - /url: /privacy-policy
+          - text: "|"
+          - link "Cookie policy" [ref=e1206] [cursor=pointer]:
+            - /url: /privacy-policy#cookies-policy
+          - text: "| Cookie settings"
+  - generic [ref=e1208]:
+    - heading "Our use of cookies" [level=4] [ref=e1209]
+    - paragraph [ref=e1210]:
+      - text: We use necessary cookies to make our site work. We'd also like to set optional analytics cookies to help us improve it. We won't set optional cookies unless you enable them. Using this tool will set a cookie on your device to remember your preferences. You can always change your cookie preferences at any time by clicking on the 'Cookies settings' link in the footer of every page.
+      - text: For more detailed information about the cookies we use, see our
+      - link "Cookies page" [ref=e1211] [cursor=pointer]:
+        - /url: https://www.cochrane.org/cookies-policy
+      - text: .
+    - generic [ref=e1212] [cursor=pointer]: Accept all
+    - generic [ref=e1213] [cursor=pointer]: Configure
+  - status [ref=e1214]
+  - status [ref=e1215]

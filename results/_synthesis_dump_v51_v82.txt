@@ -1,0 +1,460 @@
+=== after_action_learning_loop_2026-05-19_v78 ===
+WHY: This variation adds an after-action review layer to reTruth so each run learns from its own intent, actual behavior, source failures, productive surprises, and next-run improvements.
+PIPELINE: 1. Search broad lead pool for evidence, working examples, failures, postmortems, retrospectives, and review methods.
+2. Open candidates directly with `playwright-cli`; record final URL, visible title, and quote.
+3. Build `aar-ledger.md` with source class, browser status, quote, intended outcome, actual outcome, difference, sustain item, improve/initiate item, next-iteration test, and route hint.
+4. Before synthesis, log lane expectations and evidence thresholds.
+5. After lane return, log findings, absences, blocked sources, dead links, mismatches, and drift.
+6. Compare intended and actual outc
+GAINS: 
+RISK: 
+NEXT: 
+
+=== assumption_testing_matrix_2026-05-19_v80 ===
+WHY: This variation adds an assumption-testing pass before convergence so reTruth does not recommend ideas that depend on critical but weakly evidenced assumptions.
+PIPELINE: 1. Search broad lead pool for methods, working examples, failures, repositories, datasets, stakeholder evidence, and assumption-testing guidance.
+2. Open candidates directly with `playwright-cli`; record final URL, visible title, browser status, and quote.
+3. Build `assumption-ledger.md` with assumption, importance, existing evidence, risk level, test type, evidence to collect, gate decision, and route hint.
+4. Identify critical assumptions where success depends on belief rather than evidence.
+5. Route assumptions to lanes: Scholar for method/evidence assumptions, Community for implementation/
+GAINS: 
+RISK: 
+NEXT: 
+
+=== attribution_fidelity_auditor_2026-05-19_v59 ===
+WHY: Quote-backed claims can still be misleading when the quote is attached after the model already formed the claim. This variation turns attribution into an audit target, not formatting requirement.
+
+This should improve:
+
+- source trustworthiness
+- citation honesty
+- claim-source dependency tracing
+- reduced post-rationalized evidence
+- stronger synthesis confidence
+- better auditability for high-stakes topics
+PIPELINE: 
+GAINS: 
+RISK: 
+NEXT: 
+
+=== calibration_lattice_2026-05-19_v51 ===
+WHY: Search-first systems often produce answers that sound calibrated without exposing why. That makes overconfidence hard to detect. Calibration Lattice fixes this by forcing each lane to expose confidence basis and movement conditions. User gets clearer picture of what is robust, what is conditional, and what evidence would change answer.
+PIPELINE: 1. Parse brief into topic, lens, output goal, domain, effort, exclusions, likely uncertainty classes, and overconfidence-sensitive decisions.
+2. Create workspace with lane files, `calibration-rubric.md`, `calibration.md`, `verification.md`, `synthesis.md`, and `re-fan.md`.
+3. Write shared calibration rubric before spawning lanes.
+4. Spawn scholar, community, and edge lanes in parallel with rubric attached.
+5. Each lane performs query planning, candidate retrieval, source selection, and finding extraction.
+6. Each lane calibrates every finding: confidence level, attribution strength, uncertaint
+GAINS: 
+RISK: 
+NEXT: 
+
+=== citation_chaining_lattice_2026-05-19_v71 ===
+WHY: This variation inserts a citation lattice between initial search and lane synthesis so strong seeds generate structured backward, forward, and sibling expansion paths.
+PIPELINE: 1. Search broad lead pool for initial candidate sources.
+2. Open candidates directly with `playwright-cli` and identify which can function as anchors.
+3. Build `citation-lattice.md` with anchor metadata, chain directions, yield, and stop signals.
+4. Expand each strong anchor through backward, forward, and sibling chaining.
+5. Record whether chains yield novel evidence, redundancy, access failures, or terminology mutations.
+6. Route chain outputs by lane:
+   - scholar = evidence-rich papers, reviews, and methods chains
+   - community = maintainer, repo, benchmark, migration, and postmortem trai
+GAINS: 
+RISK: 
+NEXT: 
+
+=== complexity_tree_router_2026-05-19_v61 ===
+WHY: Search-first pipelines waste effort when every question gets same depth. Some asks need quick exact retrieval. Others need document-level or corpus-level summarization before drilling down. Complexity Tree Router makes route choice explicit.
+
+This should improve:
+
+- cost efficiency
+- latency on simple asks
+- abstraction matching
+- long-document handling
+- global-to-local retrieval
+- cleaner re-fan targeting
+PIPELINE: 
+GAINS: 
+RISK: 
+NEXT: 
+
+=== context_domain_router_2026-05-19_v81 ===
+WHY: This variation adds a context-classification pass before convergence so reTruth matches response mode to reality instead of forcing every topic into same research behavior.
+PIPELINE: 1. Search broad lead pool for decision-context frameworks, working examples, failures, repositories, datasets, and uncertainty guidance.
+2. Open candidates directly with `playwright-cli`; record final URL, visible title, browser status, and quote.
+3. Build `domain-ledger.md` with subproblem, domain, why this domain, wrong-response risk, required response, and route hint.
+4. Decompose brief into claim clusters or subproblems before lane convergence.
+5. Classify each cluster as clear, complicated, complex, chaotic, or disorder.
+6. Match response to domain: clear gets best-practice checks, compli
+GAINS: 
+RISK: 
+NEXT: 
+
+=== contradiction_reconciliation_matrix_2026-05-19_v70 ===
+WHY: This variation inserts an explicit contradiction matrix before synthesis so disagreements are grouped, tested, routed, and either reconciled or preserved.
+PIPELINE: 1. Search broad lead pool for supportive, critical, null, failure, and contrarian leads.
+2. Open candidates directly with `playwright-cli`; record final URL, visible quote, claim direction, and source context.
+3. Build `contradiction-matrix.md` from browser-read conflicts.
+4. Classify each conflict axis: method, population, timeframe, metric, context, interpretation, or source quality.
+5. Test whether disagreement is caused by context mismatch, version drift, evidence-tier difference, retelling, or true unresolved conflict.
+6. Route conflicts:
+   - scholar = study design, certainty, evidence-q
+GAINS: 
+RISK: 
+NEXT: 
+
+=== coverage_map_planner_2026-05-19_v53 ===
+WHY: Many research systems mistake repeated success in one slice of the space for overall thoroughness. Coverage Map Planner forces each lane to prove it sampled the topic geometry more deliberately. This should reduce silent blind spots, improve gap-targeted follow-up, and give user a clearer view of where answer is strong versus thin.
+PIPELINE: 1. Parse brief into topic, lens, output goal, domain, effort, exclusions, likely subtopics, source classes, and decision angles.
+2. Create workspace with lane files, `coverage-map.md`, `coverage-log.md`, `verification.md`, `synthesis.md`, and `re-fan.md`.
+3. Write shared coverage schema before spawning lanes.
+4. Spawn scholar, community, and edge lanes in parallel with coverage schema attached.
+5. Each lane designs lane-specific coverage grid before full search.
+6. Query planning happens per coverage cell, not only by generic search step.
+7. Candidate retrieval logs which cell each source targ
+GAINS: 
+RISK: 
+NEXT: 
+
+=== disconfirmation_engine_2026-05-19_v56 ===
+WHY: Search-first research still fails when early retrieved evidence is plausible but wrong, one-sided, ambiguous, noisy, or source-route mismatched. Disconfirmation Engine treats contradiction search as part of retrieval rather than a late synthesis concern.
+
+This should improve:
+
+- robustness against first-hit bias
+- clearer handling of disputed topics
+- suppression of noisy or misinformation-prone sources
+- better ambiguity reporting
+- stronger synthesis confidence calibration
+- more precise re-fa
+PIPELINE: 
+GAINS: 
+RISK: 
+NEXT: 
+
+=== double_diamond_grounding_2026-05-19_v76 ===
+WHY: This variation adds a Double Diamond control loop to reTruth so creative option generation happens after grounded problem discovery and before explicit delivery testing.
+PIPELINE: 1. Search broad lead pool across academic, practitioner, repository, dataset, forum, and adjacent-field sources.
+2. Open candidates directly with `playwright-cli`; record final URL, visible title, and quote.
+3. Build `diamond-ledger.md` with source class, browser status, quote, diamond phase, problem signal, option signal, test signal, divergence value, and convergence readiness.
+4. Discover: collect problem, user, mechanism, failure, and adjacent inspiration evidence without choosing a solution.
+5. Define: cluster source-backed problem frames and drop ungrounded frames.
+6. Develop: route opti
+GAINS: 
+RISK: 
+NEXT: 
+
+=== evidence_budget_router_2026-05-19_v54 ===
+WHY: Original reTruth is strong at avoiding premature convergence, but broad search can drift into equal-effort retrieval across unequal questions. Budget routing adds discipline: spend more where uncertainty drops, stop where results repeat, and expose exactly where an additional search unit would matter.
+
+This should improve:
+
+- search efficiency on broad topics
+- auditability of why retrieval continued or stopped
+- resistance to low-yield source chasing
+- clearer synthesis of unresolved claims
+- b
+PIPELINE: 
+GAINS: 
+RISK: 
+NEXT: 
+
+=== evidence_chain_planner_2026-05-19_v60 ===
+WHY: Broad questions often require linked evidence, not single strong sources. Flat retrieval can find plausible passages but miss bridge facts, hidden dependencies, or distractors. Evidence Chain Planner makes multi-hop support explicit before synthesis.
+
+This should improve:
+
+- complex question coverage
+- bridge-fact retrieval
+- distractor pruning
+- claim dependency visibility
+- chain-level re-fan
+- lower false confidence from isolated hits
+PIPELINE: 
+GAINS: 
+RISK: 
+NEXT: 
+
+=== evidence_freshness_clock_2026-05-19_v75 ===
+WHY: This variation adds a freshness clock before synthesis so evidence is weighted by topic pace, update signal, and decay risk instead of date alone.
+PIPELINE: 1. Parse topic pace, harm domain, tool/version exposure, and likely decay modes.
+2. Search broad lead pool across source classes and time windows.
+3. Open candidates directly with `playwright-cli`.
+4. Build `freshness-clock.md` with source date, last updated, topic pace, freshness status, update signal, and decay risk.
+5. Separate older sources into foundation, historical context, stale guidance, superseded method/tool claim, or unresolved unknown.
+6. Re-search high-impact aging/stale claims in fast-moving topics.
+7. Route freshness problems by lane:
+   - scholar = new studies, methods, update
+GAINS: 
+RISK: 
+NEXT: 
+
+=== evidence_gap_mapper_2026-05-19_v67 ===
+WHY: Adds map-first accounting for evidence density, true gaps, search gaps, access gaps, quality gaps, and lane gaps before synthesis.
+PIPELINE: 1. Parse brief into evidence-map axes.
+2. Search broad lead pool across academic, practitioner, edge, and gap-map sources.
+3. Register every lead before opening.
+4. Open candidates with `playwright-cli`.
+5. Build `gap-map.md` cells with density, included sources, rejected/blocked sources, quote, and gap type.
+6. Classify gaps as true, search, access, quality, or lane gaps.
+7. Route cells: method gaps to Scholar, artifact/failure gaps to Community, lane/analogue gaps to Edge.
+8. Require every lane finding to cite a gap-map cell and state whether it fills or confirms a gap.
+9. Audit that empty c
+GAINS: 
+RISK: - Gap maps can over-document absences and slow synthesis.
+- Search gaps may be mistaken for true gaps.
+- Dense low-quality cells can look more important than sparse high-quality cells.
+NEXT: 
+
+=== evidence_graph_router_2026-05-19_v58 ===
+WHY: Many research questions are relationship questions, not isolated-fact questions. Flat retrieval can miss how sources, methods, artifacts, and contradictions connect. Evidence Graph Router makes relationships first-class so synthesis can answer both local claim questions and global sensemaking questions.
+
+This should improve:
+
+- global topic coverage
+- evidence coherence
+- cross-source relationship tracing
+- contradiction localization
+- cross-lane transfer
+- community-level synthesis
+PIPELINE: 
+GAINS: 
+RISK: 
+NEXT: 
+
+=== incentive_bias_ledger_2026-05-19_v74 ===
+WHY: This variation adds an incentive ledger before synthesis so source weighting accounts for funding, disclosure, beneficiary, and plausible bias pathway.
+PIPELINE: 1. Parse incentive risk, stakeholders, claim beneficiaries, harm domain, and advocacy/vendor pressure.
+2. Search broad lead pool for supportive, critical, null, failure, and edge leads.
+3. Open candidates directly with `playwright-cli`.
+4. Build `incentive-ledger.md` with source class, claim direction, beneficiary, disclosure, funder role, incentive vector, bias pathway, and weight effect.
+5. Assess how incentives could plausibly alter design, conduct, analysis, reporting, omission, or framing.
+6. Route by lane:
+   - scholar = funding, conflicts, trial/reporting bias, missing results
+   - comm
+GAINS: 
+RISK: 
+NEXT: 
+
+=== information_scent_router_2026-05-19_v65 ===
+WHY: Adds explicit effort allocation before lane work. Leads are not treated equally; they are scored by information scent, corroboration potential, and extraction cost.
+PIPELINE: 1. Parse brief into source classes and likely scent cues.
+2. Search broad lead pool across academic, practitioner, and edge surfaces.
+3. Open each candidate with `playwright-cli`.
+4. Record final URL, title, visible quote, source class, scent cues, extraction cost, and corroboration potential in `scent-ledger.md`.
+5. Score each lead with plain-language priority: strong scent + corroboration - extraction cost.
+6. Route high-method leads to Scholar, high-action leads to Community, and weak-but-upside leads to Edge.
+7. Discard low-scent/high-cost leads unless needed to cover a known gap.
+8. Lanes
+GAINS: 
+RISK: - Scent scoring can overvalue familiar terms.
+- Low-scent sources may contain important disconfirming evidence.
+- Extraction cost can bias against PDFs, archives, or non-English material.
+NEXT: 
+
+=== lateral_verification_loop_2026-05-19_v68 ===
+WHY: Adds source-identity, corroboration, and original-context checks before routing leads into lane findings.
+PIPELINE: 1. Parse brief for verification risk and source-authority needs.
+2. Search broad lead pool across academic, practitioner, and edge surfaces.
+3. Register each candidate before opening.
+4. Open each candidate with `playwright-cli` and capture visible text, quote, source producer, and failure state.
+5. Build `lateral-ledger.md` with who/evidence/other-sources/original-context fields.
+6. Run SIFT-style loop: Stop, Investigate, Find better coverage, Trace original context.
+7. Route leads by verdict: pass, fragile, fail, blocked.
+8. Lanes cite lateral-ledger IDs and use only pass or explicitly flagg
+GAINS: 
+RISK: - Slower than direct lane fan-out.
+- Can over-penalize useful firsthand field notes with weak institutional identity.
+- Tracing original context may fail on archived or dynamic sources.
+NEXT: 
+
+=== need_to_knowledge_broker_2026-05-19_v77 ===
+WHY: This variation adds a need-to-knowledge broker before lane synthesis so reTruth does not invent technical answers without a source-backed need, existing-knowledge scan, stakeholder map, and transfer path.
+PIPELINE: 1. Search broad lead pool for needs, publications, patents, repositories, datasets, prototypes, stakeholder evidence, implementation paths, and market/practice signals.
+2. Open candidates directly with `playwright-cli`; record final URL, visible title, and quote.
+3. Build `ntk-ledger.md` with source class, browser status, quote, NtK phase, need statement, existing-knowledge status, stakeholders, transfer mechanism, gate decision, and route hint.
+4. Gate 1 — Need: reject supply-push ideas where technical answers are searching for a question.
+5. Gate 2 — Existing knowledge: search publications, 
+GAINS: 
+RISK: 
+NEXT: 
+
+=== premortem_failure_oracle_2026-05-19_v79 ===
+WHY: This variation adds a premortem pass before convergence so reTruth searches for why its final recommendation may fail before presenting it as robust.
+PIPELINE: 1. Search broad lead pool for evidence, working examples, failure reports, dissent, risk guidance, and weak assumptions.
+2. Open candidates directly with `playwright-cli`; record final URL, visible title, and quote.
+3. Build `premortem-ledger.md` with assumed answer, imagined failure, failure cause, evidence supporting risk, evidence weakening risk, mitigation, and route hint.
+4. Generate high-impact failure modes before synthesis finalization.
+5. Route failure modes to lanes: Scholar for method/evidence failure, Community for implementation/adoption failure, Edge for blind spots and neglected
+GAINS: 
+RISK: 
+NEXT: 
+
+=== problem_decomposition_ladder_2026-05-19_v82 ===
+WHY: This variation adds a problem-framing and decomposition pass before lane fan-out so reTruth searches from grounded problem branches instead of user-provided solution language.
+PIPELINE: 1. Search broad lead pool for problem-framing guidance, issue-tree methods, root-cause approaches, working examples, failures, repositories, and datasets.
+2. Open candidates directly with `playwright-cli`; record final URL, visible title, browser status, and quote.
+3. Build `problem-ladder.md` with initial statement, ladder move, reframed problem, affected people, impact, unknowns, MECE status, and route hint.
+4. Move up with why-questions to expose broader purpose and hidden framing.
+5. Move down with how-questions to expose concrete subproblems and testable work units.
+6. Split branches with
+GAINS: 
+RISK: 
+NEXT: 
+
+=== query_berrypicking_router_2026-05-19_v66 ===
+WHY: Adds an auditable query-evolution layer before lane work. Search terms mutate only from browser-read source text, not snippets or agent intuition.
+PIPELINE: 1. Parse brief into seed vocabulary and likely source classes.
+2. Search broad seed pool.
+3. Register every lead before opening.
+4. Open each candidate with `playwright-cli`.
+5. Build `berry-ledger.md` with quote, discovered terms, hooks, extraction cost, and route hint.
+6. Mutate queries from browser-read evidence only.
+7. Route branches: method/citation to Scholar, artifact/failure to Community, odd-term/dissent/analogue to Edge.
+8. Lanes cite berry-ledger IDs and query branches in every finding.
+9. Audit branch provenance: no snippet-only mutations, no orphan branch, no silent dead branch.
+
+GAINS: 
+RISK: - Branch explosion if every term becomes a query.
+- Early weak sources can steer vocabulary badly.
+- Quote extraction failures can make promising leads unusable.
+NEXT: 
+
+=== query_route_lattice_2026-05-19_v55 ===
+WHY: Broad research often fails because the first query is too vague. Even strong lanes can duplicate effort, skip hidden subquestions, or return impressive but uneven evidence. Query Route Lattice makes the question structure visible before retrieval begins.
+
+This should improve:
+
+- coverage of multi-part topics
+- source-route precision
+- reduced duplicated lane searches
+- clearer unresolved-gap reporting
+- better targeted re-fan
+- stronger synthesis traceability
+PIPELINE: 
+GAINS: 
+RISK: 
+NEXT: 
+
+=== recovery_branch_matrix_2026-05-19_v52 ===
+WHY: Hard research runs rarely fail for one reason. Some fail because search terms are bad, others because source baskets are too narrow, others because evidence looks promising but collapses on inspection. Generic retries waste time by repeating same mistake. Recovery Branch Matrix makes recovery path depend on failure type, which should improve efficiency and produce better debugging signals for future runs.
+PIPELINE: 1. Parse brief into topic, lens, output goal, domain, effort, exclusions, likely failure modes, and likely fallback routes.
+2. Create workspace with lane files, `recovery-matrix.md`, `branch-log.md`, `verification.md`, `synthesis.md`, and `re-fan.md`.
+3. Write shared recovery matrix before lane search starts.
+4. Spawn scholar, community, and edge lanes in parallel with recovery matrix attached.
+5. Each lane performs query planning, candidate retrieval, source selection, and finding extraction.
+6. After each lane stage, lane checks for failure types: query failure, basket failure, evidence weak
+GAINS: 
+RISK: 
+NEXT: 
+
+=== reflection_trigger_router_2026-05-19_v57 ===
+WHY: Fixed retrieval can waste searches on easy claims and under-search hard claims. Reflection Trigger Router makes lanes retrieve when evidence gaps become visible, not because the initial budget says so.
+
+This should improve:
+
+- fewer unnecessary searches
+- better long-answer coverage
+- targeted retrieval for weak passages
+- clearer source sufficiency decisions
+- stronger query regeneration
+- better stop conditions
+PIPELINE: 
+GAINS: 
+RISK: 
+NEXT: 
+
+=== rejection_flow_auditor_2026-05-19_v64 ===
+WHY: Adds first-class accounting for rejected leads and excluded sources.
+PIPELINE: 1. Search broad lead pool.
+2. Register every candidate before opening.
+3. Open each source with `playwright-cli`.
+4. Record browser status, final URL, title, quote, include/exclude verdict.
+5. Build PRISMA-like screening flow counts.
+6. Route included and rejected leads to lanes.
+7. Lanes write findings and exclusion notes.
+8. Audit count math and quote presence.
+9. Synthesize included evidence plus rejection patterns.
+GAINS: 
+RISK: - More bookkeeping.
+- Can overfocus on rejects.
+- Slower than v63.
+NEXT: 
+
+=== saturation_stop_rule_2026-05-19_v73 ===
+WHY: This variation adds a saturation ledger so search stops only when marginal yield, redundancy, precision collapse, access limits, and missed-source risk are visible.
+PIPELINE: 1. Parse topic breadth, harm domain, source density, and missed-source cost.
+2. Search broad lead pool across supportive, critical, null, failure, and edge routes.
+3. Open candidates directly with `playwright-cli`.
+4. Build `saturation-ledger.md` by search round.
+5. Track sources opened, included findings, new relevant records, redundancy, blocked/dead records, precision signal, scarcity caution, missed-source risk, and stop decision.
+6. Continue, pivot, stop, or preserve gap based on ledger state.
+7. Apply scarcity override for sparse, contested, or high-harm domains.
+8. Route saturation judg
+GAINS: 
+RISK: 
+NEXT: 
+
+=== search_prior_matrix_2026-05-19_v62 ===
+WHY: Search-first rewrite of gnosis. Keeps three lane outputs but delays lane identity until shared prior matrix exists.
+PIPELINE: 1. Parse brief into topic, domain, decision type, risk, effort.
+2. Run broad web search before any lane spawns.
+3. Build `prior-matrix.md` with quote-bearing claim seeds.
+4. Tag uncertainty type: method, practice, frame, verification.
+5. Route cells to Scholar, Community, Edge resolvers.
+6. Lanes resolve assigned cells and may create justified new cells.
+7. Audit URL liveness, quote match, cell coverage, and edge redundancy.
+8. Synthesize by prior outcome: confirmed, weakened, reversed, new, unknown.
+GAINS: 
+RISK: - Shared prior matrix may reduce edge creativity.
+- Bad initial search can bias all lanes.
+- Matrix creation adds upfront cost.
+NEXT: 
+
+=== search_provenance_spine_2026-05-19_v72 ===
+WHY: This variation inserts a provenance spine before lane synthesis so meaningful search actions, inclusions, exclusions, mismatches, and route changes become first-class evidence.
+PIPELINE: 1. Search broad lead pool.
+2. Open candidates directly with `playwright-cli`.
+3. Record meaningful actions in `provenance-spine.md`.
+4. Preserve query, interface, final URL, quote, decision, and reason for each non-trivial step.
+5. Keep failed, blocked, mismatched, and rerouted steps instead of hiding them.
+6. Route provenance-rich material by lane.
+7. Audit whether another agent could reconstruct search path.
+8. Synthesize findings plus path, exclusions, failures, and reproducibility gaps.
+GAINS: 
+RISK: 
+NEXT: 
+
+=== source_reading_lattice_2026-05-19_v63 ===
+WHY: Rewrites gnosis so source reading is an orchestrator gate before lane fan-out.
+PIPELINE: 1. Parse brief.
+2. Search for candidate leads.
+3. Open candidate sources in browser with `playwright-cli`.
+4. Extract title, final URL, visible text, and quote.
+5. Build `source-ledger.md`.
+6. Route opened sources to Scholar, Community, Edge.
+7. Require lane findings to cite ledger ids.
+8. Audit final URL and quote against captured page text.
+9. Synthesize source-read claims and rejected leads.
+GAINS: 
+RISK: - Slower upfront.
+- Some pages block automation.
+- Shared ledger may reduce lane independence.
+NEXT: 
+
+=== triangulation_confidence_matrix_2026-05-19_v69 ===
+WHY: Adds shared claim confidence matrix before synthesis. Claims are sorted by source diversity, independence, evidence type, bias risk, and confidence tier.
+PIPELINE: 1. Parse brief for claim types and confidence needs.
+2. Search broad lead pool across lanes and corroboration surfaces.
+3. Register leads, then open candidates with `playwright-cli`.
+4. Build `confidence-matrix.md` with source diversity, independence, evidence type, bias risk, and tier.
+5. Classify claims as robust, supported, fragile, exploratory, or drop.
+6. Route method/synthesis claims to Scholar, firsthand/practice claims to Community, exploratory analogues to Edge.
+7. Require every lane finding to cite matrix ID and tier.
+8. Audit that robust claims have independent/cross-class support a
+GAINS: 
+RISK: - Extra matrix bookkeeping.
+- False precision if tiers look more objective than they are.
+- Weak but original firsthand claims may be underweighted.
+NEXT: 

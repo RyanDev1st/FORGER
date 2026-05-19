@@ -1,0 +1,482 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - link "DuckDuckGo home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e9]: DuckDuckGo
+          - generic [ref=e15]:
+            - combobox "Search privately" [ref=e17]: arxiv adaptive rag query complexity retrieval
+            - button "search" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e25]:
+              - banner [ref=e26]:
+                - img [ref=e27]
+                - paragraph [ref=e28]: Upgrade to our browser.
+              - generic [ref=e29]:
+                - generic [ref=e30]:
+                  - img [ref=e31]
+                  - generic [ref=e32]:
+                    - img [ref=e33]
+                    - img [ref=e34]
+                - paragraph [ref=e35]:
+                  - generic [ref=e36]:
+                    - text: Try the
+                    - strong [ref=e37]: DuckDuckGo Browser.
+                    - text: Fast. Free. Private.
+                - link "Download Browser" [ref=e38] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/windows?origin=funnel_browser_searchresults__popover
+                  - img [ref=e39]
+                  - generic [ref=e41]: Download Browser
+              - paragraph [ref=e44]:
+                - generic [ref=e45]: Free
+            - button [ref=e47] [cursor=pointer]:
+              - img [ref=e48]
+          - button "Open menu" [ref=e50] [cursor=pointer]:
+            - generic [ref=e51]: Open menu
+            - img [ref=e52]
+      - navigation [ref=e58]:
+        - list [ref=e59]:
+          - listitem [ref=e60]:
+            - link "All" [ref=e61] [cursor=pointer]:
+              - /url: /?q=arxiv+adaptive+rag+query+complexity+retrieval&ia=web
+              - img [ref=e62]
+              - text: All
+          - listitem [ref=e64]:
+            - link "Images" [ref=e65] [cursor=pointer]:
+              - /url: /?q=arxiv+adaptive+rag+query+complexity+retrieval&ia=images&iax=images
+          - listitem [ref=e66]:
+            - link "Videos" [ref=e67] [cursor=pointer]:
+              - /url: /?q=arxiv+adaptive+rag+query+complexity+retrieval&ia=videos&iax=videos
+          - listitem [ref=e68]:
+            - link "News" [ref=e69] [cursor=pointer]:
+              - /url: /?q=arxiv+adaptive+rag+query+complexity+retrieval&ia=news&iar=news
+          - listitem [ref=e70]:
+            - link "Maps" [ref=e71] [cursor=pointer]:
+              - /url: /?q=arxiv+adaptive+rag+query+complexity+retrieval&iaxm=maps
+        - list [ref=e72]:
+          - listitem [ref=e73]:
+            - link "Duck.ai" [ref=e75] [cursor=pointer]:
+              - /url: /?q=arxiv+adaptive+rag+query+complexity+retrieval&ia=chat
+              - img [ref=e76]
+              - text: Duck.ai
+          - listitem [ref=e79]:
+            - button "Search Settings ✀" [ref=e81] [cursor=pointer]:
+              - img [ref=e82]
+              - generic [ref=e84]: Search Settings
+              - generic [ref=e87]: ✀
+    - generic [ref=e92]:
+      - navigation [ref=e94]:
+        - generic [ref=e97] [cursor=pointer]:
+          - generic [ref=e105]: Protected
+          - img [ref=e106]: ▼
+        - generic [ref=e110] [cursor=pointer]:
+          - generic [ref=e113]:
+            - switch "✓" [ref=e114]: ✓
+            - generic [ref=e116]: Vietnam (en)
+          - img [ref=e117]: ▼
+        - generic [ref=e121] [cursor=pointer]:
+          - generic [ref=e122]: "Safe search: moderate"
+          - img [ref=e123]: ▼
+        - generic [ref=e127] [cursor=pointer]:
+          - generic [ref=e128]: Any time
+          - img [ref=e129]: ▼
+      - generic [ref=e132]:
+        - list [ref=e133]:
+          - listitem [ref=e134]:
+            - article [ref=e135] [cursor=pointer]:
+              - button [ref=e137]:
+                - img [ref=e138]
+              - generic [ref=e142]:
+                - link "Search domain arxiv.org" [ref=e144]:
+                  - /url: /?q=arxiv%20adaptive%20rag%20query%20complexity%20retrieval+site:arxiv.org
+                  - img [ref=e146]
+                - generic [ref=e147]:
+                  - paragraph [ref=e148]: arXiv.org
+                  - link "https://arxiv.org › abs › 2403.14403" [ref=e149]:
+                    - /url: https://arxiv.org/abs/2403.14403
+                    - paragraph [ref=e151]:
+                      - generic [ref=e152]: https://arxiv.org
+                      - generic [ref=e153]: › abs › 2403.14403
+              - 'heading "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language ..." [level=2] [ref=e155]':
+                - 'link "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language ..." [ref=e156]':
+                  - /url: https://arxiv.org/abs/2403.14403
+                  - generic [ref=e157]: "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language ..."
+              - generic [ref=e162]: In this work, we propose a novel adaptive QA framework, that can dynamically select the most suitable strategy for (retrieval-augmented) LLMs from the simplest to the most sophisticated ones based on the query complexity.
+              - list [ref=e165]:
+                - listitem [ref=e166]:
+                  - 'link "View PDF arXiv:2403.14403v2 [cs.CL] 28 Mar 2024 Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity" [ref=e167]':
+                    - /url: https://arxiv.org/pdf/2403.14403
+                    - heading "View PDF" [level=3] [ref=e168]
+                    - paragraph [ref=e169]:
+                      - generic [ref=e170]: "arXiv:2403.14403v2 [cs.CL] 28 Mar 2024 Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity"
+                - listitem [ref=e171]:
+                  - link "2403.14403V2 In this work, we propose a novel adaptive QA framework, that can dynamically select the most suitable strategy for (retrieval-augmented) LLMs from the simplest to the most sophisticated ones based on the query complexity." [ref=e172]:
+                    - /url: https://arxiv.org/abs/2403.14403v2
+                    - heading "2403.14403V2" [level=3] [ref=e173]
+                    - paragraph [ref=e174]:
+                      - generic [ref=e175]: In this work, we propose a novel adaptive QA framework, that can dynamically select the most suitable strategy for (retrieval-augmented) LLMs from the simplest to the most sophisticated ones based on the query complexity.
+                - listitem [ref=e176]:
+                  - 'link "Other Formats Other Formats - Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language ..." [ref=e177]':
+                    - /url: https://arxiv.org/format/2403.14403
+                    - heading "Other Formats" [level=3] [ref=e178]
+                    - paragraph [ref=e179]:
+                      - generic [ref=e180]: "Other Formats - Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language ..."
+                - listitem [ref=e181]:
+                  - 'link "TeX Source TeX Source - Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language ..." [ref=e182]':
+                    - /url: https://arxiv.org/src/2403.14403
+                    - heading "TeX Source" [level=3] [ref=e183]
+                    - paragraph [ref=e184]:
+                      - generic [ref=e185]: "TeX Source - Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language ..."
+                - listitem [ref=e186]:
+                  - link "Login If you've never logged in to arXiv.org Register for the first time Registration is required to submit or update papers, but is not necessary to view them." [ref=e187]:
+                    - /url: https://arxiv.org/login
+                    - heading "Login" [level=3] [ref=e188]
+                    - paragraph [ref=e189]:
+                      - generic [ref=e190]: If you've never logged in to arXiv.org Register for the first time Registration is required to submit or update papers, but is not necessary to view them.
+                - listitem [ref=e191]:
+                  - 'link "Recent Bizyukova, Sofia I. R. Conceição, Paulo R. C. Lopes, Reem Abdel Salam, Mary Adewunmi, Zhiyong Lu Subjects: Computation and Language (cs.CL); Information Retrieval (cs.IR)" [ref=e192]':
+                    - /url: https://arxiv.org/list/cs.CL/recent
+                    - heading "Recent" [level=3] [ref=e193]
+                    - paragraph [ref=e194]:
+                      - generic [ref=e195]: "Bizyukova, Sofia I. R. Conceição, Paulo R. C. Lopes, Reem Abdel Salam, Mary Adewunmi, Zhiyong Lu Subjects: Computation and Language (cs.CL); Information Retrieval (cs.IR)"
+          - listitem [ref=e196]:
+            - article [ref=e197] [cursor=pointer]:
+              - button [ref=e199]:
+                - img [ref=e200]
+              - generic [ref=e204]:
+                - link "Search domain aclanthology.org" [ref=e206]:
+                  - /url: /?q=arxiv%20adaptive%20rag%20query%20complexity%20retrieval+site:aclanthology.org
+                  - img [ref=e208]
+                - generic [ref=e209]:
+                  - paragraph [ref=e210]: ACL Anthology
+                  - link "https://aclanthology.org › 2024.naacl-long.389" [ref=e211]:
+                    - /url: https://aclanthology.org/2024.naacl-long.389/
+                    - paragraph [ref=e213]:
+                      - generic [ref=e214]: https://aclanthology.org
+                      - generic [ref=e215]: › 2024.naacl-long.389
+              - 'heading "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language ..." [level=2] [ref=e217]':
+                - 'link "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language ..." [ref=e218]':
+                  - /url: https://aclanthology.org/2024.naacl-long.389/
+                  - generic [ref=e219]: "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language ..."
+              - generic [ref=e223]:
+                - text: 4 days ago·
+                - generic [ref=e224]: In this work, we propose a novel adaptive QA framework that can dynamically select the most suitable strategy for (retrieval-augmented) LLMs from the simplest to the most sophisticated ones based on the query complexity.
+          - listitem [ref=e225]:
+            - article [ref=e226] [cursor=pointer]:
+              - button [ref=e228]:
+                - img [ref=e229]
+              - generic [ref=e233]:
+                - link "Search domain github.com" [ref=e235]:
+                  - /url: /?q=arxiv%20adaptive%20rag%20query%20complexity%20retrieval+site:github.com
+                  - img [ref=e237]
+                - generic [ref=e238]:
+                  - paragraph [ref=e239]: Github
+                  - link "https://github.com › starsuzi › Adaptive-RAG" [ref=e240]:
+                    - /url: https://github.com/starsuzi/Adaptive-RAG
+                    - paragraph [ref=e242]:
+                      - generic [ref=e243]: https://github.com
+                      - generic [ref=e244]: › starsuzi › Adaptive-RAG
+              - heading "GitHub - starsuzi/Adaptive-RAG" [level=2] [ref=e246]:
+                - link "GitHub - starsuzi/Adaptive-RAG" [ref=e247]:
+                  - /url: https://github.com/starsuzi/Adaptive-RAG
+                  - generic [ref=e248]: GitHub - starsuzi/Adaptive-RAG
+              - generic [ref=e253]: In this work, we propose a novel adaptive QA framework that can dynamically select the most suitable strategy for (retrieval-augmented) LLMs from the simplest to the most sophisticated ones based on the query complexity.
+          - listitem [ref=e254]:
+            - article [ref=e255] [cursor=pointer]:
+              - button [ref=e257]:
+                - img [ref=e258]
+              - generic [ref=e262]:
+                - link "Search domain mdpi.com" [ref=e264]:
+                  - /url: /?q=arxiv%20adaptive%20rag%20query%20complexity%20retrieval+site:www.mdpi.com
+                  - img [ref=e266]
+                - generic [ref=e267]:
+                  - paragraph [ref=e268]: MDPI
+                  - link "https://www.mdpi.com › 2076-3417 › 14 › 23 › 11014" [ref=e269]:
+                    - /url: https://www.mdpi.com/2076-3417/14/23/11014
+                    - paragraph [ref=e271]:
+                      - generic [ref=e272]: https://www.mdpi.com
+                      - generic [ref=e273]: › 2076-3417 › 14 › 23 › 11014
+              - 'heading "Layered Query Retrieval: An Adaptive Framework for Retrieval ... - MDPI" [level=2] [ref=e275]':
+                - 'link "Layered Query Retrieval: An Adaptive Framework for Retrieval ... - MDPI" [ref=e276]':
+                  - /url: https://www.mdpi.com/2076-3417/14/23/11014
+                  - generic [ref=e277]: "Layered Query Retrieval: An Adaptive Framework for Retrieval ... - MDPI"
+              - generic [ref=e281]:
+                - text: Nov 27, 2024·
+                - generic [ref=e282]: In this work, we address the limitations of query and complexity classification in Adaptive-RAG by proposing a framework for categorizing simple and complex queries, termed Layered Query Retrieval (LQR).
+          - listitem [ref=e283]:
+            - article [ref=e284] [cursor=pointer]:
+              - button [ref=e286]:
+                - img [ref=e287]
+              - generic [ref=e291]:
+                - link "Search domain huggingface.co" [ref=e293]:
+                  - /url: /?q=arxiv%20adaptive%20rag%20query%20complexity%20retrieval+site:huggingface.co
+                  - img [ref=e295]
+                - generic [ref=e296]:
+                  - paragraph [ref=e297]: Hugging Face
+                  - link "https://huggingface.co › papers › 2403.14403" [ref=e298]:
+                    - /url: https://huggingface.co/papers/2403.14403
+                    - paragraph [ref=e300]:
+                      - generic [ref=e301]: https://huggingface.co
+                      - generic [ref=e302]: › papers › 2403.14403
+              - 'heading "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language ..." [level=2] [ref=e304]':
+                - 'link "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language ..." [ref=e305]':
+                  - /url: https://huggingface.co/papers/2403.14403
+                  - generic [ref=e306]: "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language ..."
+              - generic [ref=e311]: In this work, we propose a novel adaptive QA framework, that can dynamically select the most suitable strategy for (retrieval-augmented) LLMs from the simplest to the most sophisticated ones based on the query complexity.
+          - listitem [ref=e312]:
+            - article [ref=e313] [cursor=pointer]:
+              - button [ref=e315]:
+                - img [ref=e316]
+              - generic [ref=e320]:
+                - link "Search domain semanticscholar.org" [ref=e322]:
+                  - /url: /?q=arxiv%20adaptive%20rag%20query%20complexity%20retrieval+site:www.semanticscholar.org
+                  - img [ref=e324]
+                - generic [ref=e325]:
+                  - paragraph [ref=e326]: Semantic Scholar
+                  - link "https://www.semanticscholar.org › paper › Adaptive-RAG:-Learning-to-Adapt-Retrieval-Augmented-Jeong-Baek › e5e8c6ac537e0f5b5db14170bc232d6f9e641bbc" [ref=e327]:
+                    - /url: https://www.semanticscholar.org/paper/Adaptive-RAG:-Learning-to-Adapt-Retrieval-Augmented-Jeong-Baek/e5e8c6ac537e0f5b5db14170bc232d6f9e641bbc
+                    - paragraph [ref=e329]:
+                      - generic [ref=e330]: https://www.semanticscholar.org
+                      - generic [ref=e331]: › paper › Adaptive-RAG:-Learning-to-Adapt-Retrieval-Augmented-Jeong-Baek › e5e8c6ac537e0f5b5db14170bc232d6f9e641bbc
+              - 'heading "[PDF] Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large ..." [level=2] [ref=e333]':
+                - 'link "[PDF] Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large ..." [ref=e334]':
+                  - /url: https://www.semanticscholar.org/paper/Adaptive-RAG:-Learning-to-Adapt-Retrieval-Augmented-Jeong-Baek/e5e8c6ac537e0f5b5db14170bc232d6f9e641bbc
+                  - generic [ref=e335]: "[PDF] Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large ..."
+              - generic [ref=e340]: In this work, we propose a novel adaptive QA framework that can dynamically select the most suitable strategy for (retrieval-augmented) LLMs from the simplest to the most sophisticated ones based on the query complexity.
+          - listitem [ref=e341]:
+            - article [ref=e342] [cursor=pointer]:
+              - button [ref=e344]:
+                - img [ref=e345]
+              - generic [ref=e349]:
+                - link "Search domain openreview.net" [ref=e351]:
+                  - /url: /?q=arxiv%20adaptive%20rag%20query%20complexity%20retrieval+site:openreview.net
+                  - img [ref=e353]
+                - generic [ref=e354]:
+                  - paragraph [ref=e355]: OpenReview
+                  - link "https://openreview.net › pdf?id=eqlRvIeOyYzc" [ref=e356]:
+                    - /url: https://openreview.net/pdf?id=eqlRvIeOyYzc
+                    - paragraph [ref=e358]:
+                      - generic [ref=e359]: https://openreview.net
+                      - generic [ref=e360]: › pdf?id=eqlRvIeOyYzc
+              - 'heading "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language ..." [level=2] [ref=e362]':
+                - 'link "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language ..." [ref=e363]':
+                  - /url: https://openreview.net/pdf?id=eqlRvIeOyYzc
+                  - generic [ref=e364]: "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language ..."
+              - generic [ref=e369]: We validate our model on a set of open-domain QA datasets, covering multiple query complexities, and show that ours en-hances the overall eficiency and accuracy of QA systems, compared to relevant baselines including the adaptive retrieval approaches.
+          - listitem [ref=e370]:
+            - article [ref=e371] [cursor=pointer]:
+              - button [ref=e373]:
+                - img [ref=e374]
+              - generic [ref=e378]:
+                - link "Search domain emergentmind.com" [ref=e380]:
+                  - /url: /?q=arxiv%20adaptive%20rag%20query%20complexity%20retrieval+site:www.emergentmind.com
+                  - img [ref=e382]
+                - generic [ref=e383]:
+                  - paragraph [ref=e384]: Emergent Mind
+                  - link "https://www.emergentmind.com › papers › 2403.14403" [ref=e385]:
+                    - /url: https://www.emergentmind.com/papers/2403.14403
+                    - paragraph [ref=e387]:
+                      - generic [ref=e388]: https://www.emergentmind.com
+                      - generic [ref=e389]: › papers › 2403.14403
+              - 'heading "Adaptive-RAG: Adaptive Retrieval in QA - Emergent Mind" [level=2] [ref=e391]':
+                - 'link "Adaptive-RAG: Adaptive Retrieval in QA - Emergent Mind" [ref=e392]':
+                  - /url: https://www.emergentmind.com/papers/2403.14403
+                  - generic [ref=e393]: "Adaptive-RAG: Adaptive Retrieval in QA - Emergent Mind"
+              - generic [ref=e398]: "The paper \"Adaptive-RAG: Learning to Adapt Retrieval-Augmented LLMs through Question Complexity\" presents a novel adaptive framework for improving open-domain question answering (QA) systems by dynamically selecting appropriate retrieval strategies based on query complexity."
+          - listitem [ref=e399]:
+            - article [ref=e400] [cursor=pointer]:
+              - button [ref=e402]:
+                - img [ref=e403]
+              - generic [ref=e407]:
+                - link "Search domain link.springer.com" [ref=e409]:
+                  - /url: /?q=arxiv%20adaptive%20rag%20query%20complexity%20retrieval+site:link.springer.com
+                  - img [ref=e411]
+                - generic [ref=e412]:
+                  - paragraph [ref=e413]: Springer
+                  - link "https://link.springer.com › article › 10.1007 › s41019-025-00335-5" [ref=e414]:
+                    - /url: https://link.springer.com/article/10.1007/s41019-025-00335-5
+                    - paragraph [ref=e416]:
+                      - generic [ref=e417]: https://link.springer.com
+                      - generic [ref=e418]: › article › 10.1007 › s41019-025-00335-5
+              - 'heading "Retrieval-Augmented Generation for AI-Generated Content: A Survey" [level=2] [ref=e420]':
+                - 'link "Retrieval-Augmented Generation for AI-Generated Content: A Survey" [ref=e421]':
+                  - /url: https://link.springer.com/article/10.1007/s41019-025-00335-5
+                  - generic [ref=e422]: "Retrieval-Augmented Generation for AI-Generated Content: A Survey"
+              - generic [ref=e427]: "Jeong S, Baek J, Cho S et al (2024) Adaptive-rag: learning to adapt retrieval-augmented large language models through question complexity. arXiv:2403.14403 Zhang F, Chen B et al (2023) Repocoder: repository-level code completion through iterative retrieval and generation."
+          - listitem [ref=e428]:
+            - article [ref=e429] [cursor=pointer]:
+              - button [ref=e431]:
+                - img [ref=e432]
+              - generic [ref=e436]:
+                - link "Search domain geeksforgeeks.org" [ref=e438]:
+                  - /url: /?q=arxiv%20adaptive%20rag%20query%20complexity%20retrieval+site:www.geeksforgeeks.org
+                  - img [ref=e440]
+                - generic [ref=e441]:
+                  - paragraph [ref=e442]: GeeksForGeeks
+                  - link "https://www.geeksforgeeks.org › artificial-intelligence › adaptive-retrieval-augmented-generation" [ref=e443]:
+                    - /url: https://www.geeksforgeeks.org/artificial-intelligence/adaptive-retrieval-augmented-generation/
+                    - paragraph [ref=e445]:
+                      - generic [ref=e446]: https://www.geeksforgeeks.org
+                      - generic [ref=e447]: › artificial-intelligence › adaptive-retrieval-augmented-generation
+              - heading "Adaptive Retrieval Augmented Generation - GeeksforGeeks" [level=2] [ref=e449]:
+                - link "Adaptive Retrieval Augmented Generation - GeeksforGeeks" [ref=e450]:
+                  - /url: https://www.geeksforgeeks.org/artificial-intelligence/adaptive-retrieval-augmented-generation/
+                  - generic [ref=e451]: Adaptive Retrieval Augmented Generation - GeeksforGeeks
+              - generic [ref=e455]:
+                - text: Oct 9, 2025·
+                - generic [ref=e456]: Adaptive RAG enhances Retrieval Augmented Generation systems by the analyzing the complexity of the input query and then selecting the most appropriate retrieval strategy which ensures optimal performance with less computation.
+        - button "More results" [ref=e459] [cursor=pointer]
+    - list [ref=e462]:
+      - button "Close menu" [ref=e463] [cursor=pointer]:
+        - generic [ref=e464]: Close menu
+        - img [ref=e465]
+      - list [ref=e467]:
+        - listitem [ref=e468]: Search
+        - listitem [ref=e469]:
+          - link "Homepage" [ref=e470] [cursor=pointer]:
+            - /url: https://start.duckduckgo.com/
+        - listitem [ref=e471]:
+          - link "Themes" [ref=e472] [cursor=pointer]:
+            - /url: /settings#appearance
+        - listitem [ref=e473]:
+          - link "Settings" [ref=e474] [cursor=pointer]:
+            - /url: /settings
+      - list [ref=e475]:
+        - listitem [ref=e476]: Share Feedback
+        - listitem [ref=e477]:
+          - generic [ref=e480]:
+            - button "Positive feedback" [ref=e481] [cursor=pointer]:
+              - img [ref=e482]
+            - button "Negative feedback" [ref=e485] [cursor=pointer]:
+              - img [ref=e486]
+      - list [ref=e489]:
+        - listitem [ref=e490]: Downloads
+        - listitem [ref=e491]:
+          - link "iOS Browser" [ref=e492] [cursor=pointer]:
+            - /url: https://apps.apple.com/app/duckduckgo-private-browser/id663592361?platform=iphone&pt=866401&mt=8&ct=serp-atb-serp
+        - listitem [ref=e493]:
+          - link "Android Browser" [ref=e494] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=utm_campaign%3Dserp-atb-serp%26origin%3Dfunnel_playstore_searchresults
+        - listitem [ref=e495]:
+          - link "Mac Browser" [ref=e496] [cursor=pointer]:
+            - /url: /mac?origin=funnel_browser_searchresults
+        - listitem [ref=e497]:
+          - link "Windows Browser" [ref=e498] [cursor=pointer]:
+            - /url: /windows?origin=funnel_browser_searchresults
+        - listitem [ref=e499]: Browser Extensions
+      - list [ref=e500]:
+        - listitem [ref=e501]: More From DuckDuckGo
+        - listitem [ref=e502]:
+          - generic [ref=e505]:
+            - button "Dismiss promotion" [ref=e506] [cursor=pointer]:
+              - img [ref=e507]
+            - generic [ref=e509]:
+              - paragraph [ref=e511]:
+                - img [ref=e512]
+                - text: Upgrade to our Private Browser
+              - paragraph [ref=e523]: Fast. Secure. Free.
+            - link "Download Browser" [ref=e524] [cursor=pointer]:
+              - /url: /windows
+              - img [ref=e525]
+              - text: Download Browser
+        - listitem [ref=e527]:
+          - link "Duck.ai" [ref=e528] [cursor=pointer]:
+            - /url: https://duck.ai
+        - listitem [ref=e529]:
+          - link "Email Protection" [ref=e530] [cursor=pointer]:
+            - /url: /email
+        - listitem [ref=e531]:
+          - link "Newsletter" [ref=e532] [cursor=pointer]:
+            - /url: /newsletter
+        - listitem [ref=e533]:
+          - link "Blog" [ref=e534] [cursor=pointer]:
+            - /url: /blog
+        - listitem [ref=e535]:
+          - link "Podcast" [ref=e536] [cursor=pointer]:
+            - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+        - listitem [ref=e537]:
+          - link "Collaborations" [ref=e538] [cursor=pointer]:
+            - /url: /collaborations
+      - list [ref=e539]:
+        - listitem [ref=e540]: Learn More
+        - listitem [ref=e541]:
+          - link "What’s New" [ref=e542] [cursor=pointer]:
+            - /url: /updates
+        - listitem [ref=e543]:
+          - link "Compare Privacy" [ref=e544] [cursor=pointer]:
+            - /url: /compare-privacy
+        - listitem [ref=e545]:
+          - link "About Our Browser" [ref=e546] [cursor=pointer]:
+            - /url: /app
+        - listitem [ref=e547]:
+          - link "About DuckDuckGo" [ref=e548] [cursor=pointer]:
+            - /url: /about
+      - list [ref=e549]:
+        - listitem [ref=e550]: Other Resources
+        - listitem [ref=e551]:
+          - link "Help" [ref=e552] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages
+        - listitem [ref=e553]:
+          - link "Community" [ref=e554] [cursor=pointer]:
+            - /url: https://www.reddit.com/r/duckduckgo/
+        - listitem [ref=e555]:
+          - link "Careers" [ref=e556] [cursor=pointer]:
+            - /url: /careers
+        - listitem [ref=e557]:
+          - link "Privacy Policy" [ref=e558] [cursor=pointer]:
+            - /url: /privacy
+        - listitem [ref=e559]:
+          - link "Terms of Service" [ref=e560] [cursor=pointer]:
+            - /url: /terms
+        - listitem [ref=e561]:
+          - link "Press Kit" [ref=e562] [cursor=pointer]:
+            - /url: /press
+        - listitem [ref=e563]:
+          - link "Advertise on Search" [ref=e564] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages/company/advertise-on-duckduckgo-search
+  - generic [ref=e568]:
+    - generic [ref=e570]:
+      - img [ref=e571]
+      - generic [ref=e581]:
+        - heading "Introducing DuckDuckGo Collaborations" [level=3] [ref=e582]
+        - paragraph [ref=e583]: Expertly crafted products for people who give a duck about privacy.
+      - link "See More" [ref=e584] [cursor=pointer]:
+        - /url: https://duckduckgo.com/collaborations
+    - generic [ref=e586]:
+      - generic [ref=e587]:
+        - heading "Learn More" [level=3] [ref=e588]
+        - list [ref=e589]:
+          - listitem [ref=e590]:
+            - link "What's New" [ref=e591] [cursor=pointer]:
+              - /url: https://duckduckgo.com/updates
+          - listitem [ref=e592]:
+            - link "About Browser" [ref=e593] [cursor=pointer]:
+              - /url: https://duckduckgo.com/app
+          - listitem [ref=e594]:
+            - link "Compare Privacy" [ref=e595] [cursor=pointer]:
+              - /url: https://duckduckgo.com/compare-privacy
+          - listitem [ref=e596]:
+            - link "Help Pages" [ref=e597] [cursor=pointer]:
+              - /url: https://duckduckgo.com/duckduckgo-help-pages/
+      - generic [ref=e598]:
+        - heading "Get More" [level=3] [ref=e599]
+        - list [ref=e600]:
+          - listitem [ref=e601]:
+            - link "Email Protection" [ref=e602] [cursor=pointer]:
+              - /url: https://duckduckgo.com/email
+          - listitem [ref=e603]:
+            - generic [ref=e604]:
+              - link "Podcast" [ref=e606] [cursor=pointer]:
+                - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+              - generic [ref=e607]:
+                - text: "&"
+                - link "Newsletter" [ref=e608] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/newsletter
+          - listitem [ref=e609]:
+            - link "Collaborations" [ref=e610] [cursor=pointer]:
+              - /url: https://duckduckgo.com/collaborations
+  - button "Share Feedback" [ref=e615] [cursor=pointer]

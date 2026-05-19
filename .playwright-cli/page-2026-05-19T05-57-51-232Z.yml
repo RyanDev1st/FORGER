@@ -1,0 +1,331 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#content"
+    - generic [ref=e5]:
+      - link "Cornell University" [ref=e7] [cursor=pointer]:
+        - /url: https://www.cornell.edu/
+        - img "Cornell University" [ref=e8]
+      - link "Learn about arXiv becoming an independent nonprofit." [ref=e10] [cursor=pointer]:
+        - /url: https://tech.cornell.edu/arxiv/
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - text: We gratefully acknowledge support from the Simons Foundation,
+          - link "member institutions" [ref=e13] [cursor=pointer]:
+            - /url: https://info.arxiv.org/about/ourmembers.html
+          - text: ", and all contributors."
+        - link "Donate" [ref=e14] [cursor=pointer]:
+          - /url: https://info.arxiv.org/about/donate.html
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - link "arxiv logo" [ref=e17] [cursor=pointer]:
+          - /url: /
+          - img "arxiv logo" [ref=e18]
+        - generic [ref=e19]: ">"
+        - link "cs" [ref=e20] [cursor=pointer]:
+          - /url: /list/cs/recent
+        - generic [ref=e21]: ">"
+        - text: arXiv:2212.08037
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - textbox "Search term or terms" [ref=e26]:
+            - /placeholder: Search...
+          - paragraph [ref=e27]:
+            - link "Help" [ref=e28] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help
+            - text: "|"
+            - link "Advanced Search" [ref=e29] [cursor=pointer]:
+              - /url: https://arxiv.org/search/advanced
+        - combobox "Field to search" [ref=e31]:
+          - option "All fields" [selected]
+          - option "Title"
+          - option "Author"
+          - option "Abstract"
+          - option "Comments"
+          - option "Journal reference"
+          - option "ACM classification"
+          - option "MSC classification"
+          - option "Report number"
+          - option "arXiv identifier"
+          - option "DOI"
+          - option "ORCID"
+          - option "arXiv author ID"
+          - option "Help pages"
+          - option "Full text"
+        - button "Search" [ref=e32] [cursor=pointer]
+  - main [ref=e33]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - heading "Computer Science > Computation and Language" [level=1] [ref=e38]
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - text: "[Submitted on 15 Dec 2022 ("
+            - link "v1" [ref=e42] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2212.08037v1
+            - text: ), last revised 10 Feb 2023 (this version, v2)]
+          - 'heading "Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models" [level=1] [ref=e43]'
+          - generic [ref=e44]:
+            - link "Bernd Bohnet" [ref=e45] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Bohnet,+B
+            - text: ","
+            - link "Vinh Q. Tran" [ref=e46] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Tran,+V+Q
+            - text: ","
+            - link "Pat Verga" [ref=e47] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Verga,+P
+            - text: ","
+            - link "Roee Aharoni" [ref=e48] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Aharoni,+R
+            - text: ","
+            - link "Daniel Andor" [ref=e49] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Andor,+D
+            - text: ","
+            - link "Livio Baldini Soares" [ref=e50] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Soares,+L+B
+            - text: ","
+            - link "Massimiliano Ciaramita" [ref=e51] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Ciaramita,+M
+            - text: ","
+            - link "Jacob Eisenstein" [ref=e52] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Eisenstein,+J
+            - text: ","
+            - link "Kuzman Ganchev" [ref=e53] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Ganchev,+K
+            - text: ","
+            - link "Jonathan Herzig" [ref=e54] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Herzig,+J
+            - text: ","
+            - link "Kai Hui" [ref=e55] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Hui,+K
+            - text: ","
+            - link "Tom Kwiatkowski" [ref=e56] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Kwiatkowski,+T
+            - text: ","
+            - link "Ji Ma" [ref=e57] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Ma,+J
+            - text: ","
+            - link "Jianmo Ni" [ref=e58] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Ni,+J
+            - text: ","
+            - link "Lierni Sestorain Saralegui" [ref=e59] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Saralegui,+L+S
+            - text: ","
+            - link "Tal Schuster" [ref=e60] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Schuster,+T
+            - text: ","
+            - link "William W. Cohen" [ref=e61] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Cohen,+W+W
+            - text: ","
+            - link "Michael Collins" [ref=e62] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Collins,+M
+            - text: ","
+            - link "Dipanjan Das" [ref=e63] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Das,+D
+            - text: ","
+            - link "Donald Metzler" [ref=e64] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Metzler,+D
+            - text: ","
+            - link "Slav Petrov" [ref=e65] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Petrov,+S
+            - text: ","
+            - link "Kellie Webster" [ref=e66] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Webster,+K
+          - blockquote [ref=e67]: Large language models (LLMs) have shown impressive results while requiring little or no direct supervision. Further, there is mounting evidence that LLMs may have potential in information-seeking scenarios. We believe the ability of an LLM to attribute the text that it generates is likely to be crucial in this setting. We formulate and study Attributed QA as a key first step in the development of attributed LLMs. We propose a reproducible evaluation framework for the task and benchmark a broad set of architectures. We take human annotations as a gold standard and show that a correlated automatic metric is suitable for development. Our experimental work gives concrete answers to two key questions (How to measure attribution?, and How well do current state-of-the-art methods perform on attribution?), and give some hints as to how to address a third (How to build LLMs with attribution?).
+          - table "Additional metadata" [ref=e69]:
+            - rowgroup [ref=e70]:
+              - 'row "Subjects: Computation and Language (cs.CL)" [ref=e71]':
+                - cell "Subjects:" [ref=e72]
+                - cell "Computation and Language (cs.CL)" [ref=e73]
+              - 'row "Cite as: arXiv:2212.08037 [cs.CL]" [ref=e74]':
+                - cell "Cite as:" [ref=e75]
+                - cell "arXiv:2212.08037 [cs.CL]" [ref=e76]:
+                  - generic [ref=e77]:
+                    - link "arXiv:2212.08037" [ref=e78] [cursor=pointer]:
+                      - /url: https://arxiv.org/abs/2212.08037
+                    - text: "[cs.CL]"
+              - row "(or arXiv:2212.08037v2 [cs.CL] for this version)" [ref=e79]:
+                - cell [ref=e80]
+                - cell "(or arXiv:2212.08037v2 [cs.CL] for this version)" [ref=e81]:
+                  - text: (or
+                  - generic [ref=e82]:
+                    - link "arXiv:2212.08037v2" [ref=e83] [cursor=pointer]:
+                      - /url: https://arxiv.org/abs/2212.08037v2
+                    - text: "[cs.CL]"
+                  - text: for this version)
+              - row "https://doi.org/10.48550/arXiv.2212.08037 Focus to learn more" [ref=e84]:
+                - cell [ref=e85]
+                - cell "https://doi.org/10.48550/arXiv.2212.08037 Focus to learn more" [ref=e86]:
+                  - link "https://doi.org/10.48550/arXiv.2212.08037" [ref=e87] [cursor=pointer]:
+                    - /url: https://doi.org/10.48550/arXiv.2212.08037
+                  - button "Focus to learn more" [ref=e89]:
+                    - generic [ref=e91]: Focus to learn more
+        - generic [ref=e92]:
+          - heading "Submission history" [level=2] [ref=e93]
+          - text: "From: Kellie Webster ["
+          - link "view email" [ref=e94] [cursor=pointer]:
+            - /url: /show-email/ce7e3bb2/2212.08037
+          - text: "]"
+          - strong [ref=e95]:
+            - link "[v1]" [ref=e96] [cursor=pointer]:
+              - /url: /abs/2212.08037v1
+          - text: Thu, 15 Dec 2022 18:45:29 UTC (36 KB)
+          - strong [ref=e97]: "[v2]"
+          - text: Fri, 10 Feb 2023 20:04:05 UTC (46 KB)
+      - generic [ref=e98]:
+        - generic [ref=e99]:
+          - heading "Access Paper:" [level=2] [ref=e100]
+          - list [ref=e101]:
+            - listitem [ref=e102]:
+              - link "View PDF" [ref=e103] [cursor=pointer]:
+                - /url: /pdf/2212.08037
+            - listitem [ref=e104]:
+              - link "TeX Source" [ref=e105] [cursor=pointer]:
+                - /url: /src/2212.08037
+          - link "view license" [ref=e107] [cursor=pointer]:
+            - /url: http://creativecommons.org/licenses/by/4.0/
+            - generic [ref=e108]: view license
+        - generic [ref=e109]:
+          - text: "Current browse context:"
+          - generic [ref=e110]: cs.CL
+          - generic [ref=e111]:
+            - link "< prev" [ref=e113] [cursor=pointer]:
+              - /url: /prevnext?id=2212.08037&function=prev&context=cs.CL
+            - text: "|"
+            - link "next >" [ref=e115] [cursor=pointer]:
+              - /url: /prevnext?id=2212.08037&function=next&context=cs.CL
+          - generic [ref=e116]:
+            - link "new" [ref=e117] [cursor=pointer]:
+              - /url: /list/cs.CL/new
+            - text: "|"
+            - link "recent" [ref=e118] [cursor=pointer]:
+              - /url: /list/cs.CL/recent
+            - text: "|"
+            - link "2022-12" [ref=e119] [cursor=pointer]:
+              - /url: /list/cs.CL/2022-12
+          - generic [ref=e120]:
+            - text: "Change to browse by:"
+            - link "cs" [ref=e122] [cursor=pointer]:
+              - /url: /abs/2212.08037?context=cs
+        - generic [ref=e123]:
+          - heading "References & Citations" [level=3] [ref=e124]
+          - list [ref=e125]:
+            - listitem [ref=e126]:
+              - link "NASA ADS" [ref=e127] [cursor=pointer]:
+                - /url: https://ui.adsabs.harvard.edu/abs/arXiv:2212.08037
+            - listitem [ref=e128]:
+              - link "Google Scholar" [ref=e129] [cursor=pointer]:
+                - /url: https://scholar.google.com/scholar_lookup?arxiv_id=2212.08037
+            - listitem [ref=e130]:
+              - link "Semantic Scholar" [ref=e131] [cursor=pointer]:
+                - /url: https://api.semanticscholar.org/arXiv:2212.08037
+        - generic [ref=e132]: export BibTeX citation
+        - generic [ref=e133]:
+          - heading "Bookmark" [level=3] [ref=e135]
+          - link "BibSonomy logo" [ref=e136] [cursor=pointer]:
+            - /url: "http://www.bibsonomy.org/BibtexHandler?requTask=upload&url=https://arxiv.org/abs/2212.08037&description=Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models"
+            - img "BibSonomy logo" [ref=e137]
+          - link "Reddit logo" [ref=e138] [cursor=pointer]:
+            - /url: "https://reddit.com/submit?url=https://arxiv.org/abs/2212.08037&title=Attributed Question Answering: Evaluation and Modeling for Attributed Large Language Models"
+            - img "Reddit logo" [ref=e139]
+      - generic [ref=e141]:
+        - radio "Bibliographic Tools" [checked] [ref=e142]
+        - generic [ref=e143] [cursor=pointer]: Bibliographic Tools
+        - generic [ref=e144]:
+          - heading "Bibliographic and Citation Tools" [level=1] [ref=e145]
+          - generic [ref=e146]:
+            - generic [ref=e147]:
+              - generic [ref=e149]:
+                - checkbox "Bibliographic Explorer Toggle"
+                - generic [ref=e151]: Bibliographic Explorer Toggle
+              - generic [ref=e152]:
+                - text: Bibliographic Explorer
+                - emphasis [ref=e153]:
+                  - text: (
+                  - link "What is the Explorer?" [ref=e154] [cursor=pointer]:
+                    - /url: https://info.arxiv.org/labs/showcase.html#arxiv-bibliographic-explorer
+                  - text: )
+            - generic [ref=e155]:
+              - generic [ref=e157]:
+                - checkbox "Connected Papers"
+                - generic [ref=e159]: Connected Papers Toggle
+              - generic [ref=e160]:
+                - text: Connected Papers
+                - emphasis [ref=e161]:
+                  - text: (
+                  - link "What is Connected Papers?" [ref=e162] [cursor=pointer]:
+                    - /url: https://www.connectedpapers.com/about
+                  - text: )
+            - generic [ref=e163]:
+              - generic [ref=e165]:
+                - checkbox "Litmaps"
+                - generic [ref=e167]: Litmaps Toggle
+              - generic [ref=e168]:
+                - text: Litmaps
+                - emphasis [ref=e169]:
+                  - text: (
+                  - link "What is Litmaps?" [ref=e170] [cursor=pointer]:
+                    - /url: https://www.litmaps.co/
+                  - text: )
+            - generic [ref=e171]:
+              - generic [ref=e173]:
+                - checkbox "scite Smart Citations"
+                - generic [ref=e175]: scite.ai Toggle
+              - generic [ref=e176]:
+                - text: scite Smart Citations
+                - emphasis [ref=e177]:
+                  - text: (
+                  - link "What are Smart Citations?" [ref=e178] [cursor=pointer]:
+                    - /url: https://www.scite.ai/
+                  - text: )
+        - radio "Code, Data, Media" [ref=e182]
+        - generic [ref=e183] [cursor=pointer]: Code, Data, Media
+        - radio "Demos" [ref=e184]
+        - generic [ref=e185] [cursor=pointer]: Demos
+        - radio "Related Papers" [ref=e186]
+        - generic [ref=e187] [cursor=pointer]: Related Papers
+        - radio "About arXivLabs" [ref=e188]
+        - generic [ref=e189] [cursor=pointer]: About arXivLabs
+      - generic [ref=e190]:
+        - link "Which authors of this paper are endorsers?" [ref=e191] [cursor=pointer]:
+          - /url: /auth/show-endorsers/2212.08037
+        - text: "|"
+        - link "Disable MathJax" [ref=e192] [cursor=pointer]:
+          - /url: javascript:setMathjaxCookie()
+        - text: (
+        - link "What is MathJax?" [ref=e193] [cursor=pointer]:
+          - /url: https://info.arxiv.org/help/mathjax.html
+        - text: )
+  - contentinfo [ref=e194]:
+    - navigation "Secondary" [ref=e195]:
+      - generic [ref=e197]:
+        - list [ref=e199]:
+          - listitem [ref=e200]:
+            - link "About" [ref=e201] [cursor=pointer]:
+              - /url: https://info.arxiv.org/about
+          - listitem [ref=e202]:
+            - link "Help" [ref=e203] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help
+        - list [ref=e205]:
+          - listitem [ref=e206]:
+            - link "Contact" [ref=e208] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help/contact.html
+          - listitem [ref=e209]:
+            - link "Subscribe" [ref=e211] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help/subscribe
+      - generic [ref=e213]:
+        - list [ref=e215]:
+          - listitem [ref=e216]:
+            - link "Copyright" [ref=e217] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help/license/index.html
+          - listitem [ref=e218]:
+            - link "Privacy Policy" [ref=e219] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help/policies/privacy_policy.html
+        - list [ref=e221]:
+          - listitem [ref=e222]:
+            - link "Web Accessibility Assistance" [ref=e223] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help/web_accessibility.html
+          - listitem [ref=e224]:
+            - paragraph [ref=e225]:
+              - link "arXiv Operational Status" [ref=e226] [cursor=pointer]:
+                - /url: https://status.arxiv.org
+                - text: arXiv Operational Status

@@ -1,0 +1,2083 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - banner [ref=e9]:
+      - generic [ref=e10]:
+        - button "Menu" [ref=e12] [cursor=pointer]:
+          - img [ref=e14]
+        - heading "LESSWRONG" [level=2] [ref=e17]:
+          - link "LESSWRONG" [ref=e18] [cursor=pointer]:
+            - /url: /
+        - generic [ref=e19]:
+          - button [ref=e24] [cursor=pointer]:
+            - img [ref=e26]
+          - button "Login" [ref=e30] [cursor=pointer]:
+            - generic [ref=e32]: Login
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - generic [ref=e47]:
+          - link "Disguised Queries" [ref=e52] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e53]: Disguised Queries
+          - generic [ref=e56]: 5 min read
+        - generic [ref=e59]:
+          - generic [ref=e62]:
+            - generic [ref=e64]:
+              - link [ref=e66] [cursor=pointer]:
+                - /url: /s/SGB7Y5WERh4skwtnb/p/WBw8dDkAWohFjWQSk
+                - button [ref=e67]:
+                  - img [ref=e69]
+              - link "A Human's Guide to Words" [ref=e74] [cursor=pointer]:
+                - /url: /s/SGB7Y5WERh4skwtnb
+              - link [ref=e76] [cursor=pointer]:
+                - /url: /s/SGB7Y5WERh4skwtnb/p/yFDKvfN6D87Tf5J9f
+                - button [ref=e77]:
+                  - img [ref=e79]
+            - generic [ref=e83]:
+              - generic [ref=e85]:
+                - link "Philosophy of Language" [ref=e88] [cursor=pointer]:
+                  - /url: /w/philosophy-of-language
+                  - generic [ref=e89]: Philosophy of Language
+                - link "Parables & Fables" [ref=e92] [cursor=pointer]:
+                  - /url: /w/parables-and-fables
+                  - generic [ref=e93]: Parables & Fables
+                - link "Frontpage" [ref=e94] [cursor=pointer]:
+                  - /url: /posts/5conQhfa4rgb4SaWx/site-guide-personal-blogposts-vs-frontpage-posts
+                  - generic [ref=e96]: Frontpage
+              - link [ref=e99] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e100]
+              - generic [ref=e104]:
+                - button [ref=e107] [cursor=pointer]:
+                  - generic [ref=e108]:
+                    - img
+                - heading "195" [level=1] [ref=e112]
+                - button [ref=e115] [cursor=pointer]:
+                  - generic [ref=e116]:
+                    - img
+              - img [ref=e119] [cursor=pointer]
+            - generic [ref=e123]:
+              - heading "Disguised Queries" [level=1] [ref=e125]:
+                - link "Disguised Queries" [ref=e126] [cursor=pointer]:
+                  - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries
+                  - text: Disguised
+                  - generic [ref=e127]: Queries
+              - generic [ref=e128]:
+                - generic [ref=e130]:
+                  - text: by
+                  - link "Eliezer Yudkowsky" [ref=e134] [cursor=pointer]:
+                    - /url: /users/eliezer_yudkowsky?from=post_header
+                - time [ref=e138]: 9th Feb 2008
+          - generic [ref=e143]:
+            - paragraph [ref=e144]: "Imagine that you have a peculiar job in a peculiar factory: Your task is to take objects from a mysterious conveyor belt, and sort the objects into two bins. When you first arrive, Susan the Senior Sorter explains to you that blue egg-shaped objects are called \"bleggs\" and go in the \"blegg bin\", while red cubes are called \"rubes\" and go in the \"rube bin\"."
+            - paragraph [ref=e145]: Once you start working, you notice that bleggs and rubes differ in ways besides color and shape. Bleggs have fur on their surface, while rubes are smooth. Bleggs flex slightly to the touch; rubes are hard. Bleggs are opaque; the rube's surface slightly translucent.
+            - paragraph [ref=e146]: Soon after you begin working, you encounter a blegg shaded an unusually dark blue—in fact, on closer examination, the color proves to be purple, halfway between red and blue.
+            - paragraph [ref=e147]: Yet wait! Why are you calling this object a "blegg"? A "blegg" was originally defined as blue and egg-shaped—the qualification of blueness appears in the very name "blegg", in fact. This object is not blue. One of the necessary qualifications is missing; you should call this a "purple egg-shaped object", not a "blegg".
+            - paragraph [ref=e148]: But it so happens that, in addition to being purple and egg-shaped, the object is also furred, flexible, and opaque. So when you saw the object, you thought, "Oh, a strangely colored blegg." It certainly isn't a rube... right?
+            - paragraph [ref=e149]: Still, you aren't quite sure what to do next. So you call over Susan the Senior Sorter.
+            - paragraph
+            - blockquote [ref=e150]:
+              - paragraph [ref=e151]:
+                - text: "\"Oh, yes, it's a blegg,\" Susan says, \"you can put it in the blegg bin.\""
+                - text: You start to toss the purple blegg into the blegg bin, but pause for a moment. "Susan," you say, "how do you
+                - emphasis [ref=e152]: know
+                - text: this is a blegg?"
+                - text: Susan looks at you oddly. "Isn't it obvious? This object may be purple, but it's still egg-shaped, furred, flexible, and opaque, like all the other bleggs. You've got to expect a few color defects. Or is this one of those philosophical conundrums, like 'How do you know the world wasn't created five minutes ago complete with false memories?' In a philosophical sense I'm not
+                - emphasis [ref=e153]: absolutely certain
+                - text: that this is a blegg, but it seems like a good guess."
+                - text: "\"No, I mean...\" You pause, searching for words. \""
+                - emphasis [ref=e154]: Why
+                - text: is there a blegg bin and a rube bin? What's the
+                - emphasis [ref=e155]: difference
+                - text: between bleggs and rubes?"
+                - text: "\"Bleggs are blue and egg-shaped, rubes are red and cube-shaped,\" Susan says patiently. \"You got the standard orientation lecture, right?\""
+                - text: "\"Why do bleggs and rubes"
+                - emphasis [ref=e156]: need
+                - text: to be sorted?"
+                - text: "\"Er... because otherwise they'd be all mixed up?\" says Susan. \"Because nobody will pay us to sit around all day and"
+                - emphasis [ref=e157]: not
+                - text: sort bleggs and rubes?"
+                - text: "\"Who originally determined that the first blue egg-shaped object was a 'blegg', and how did they determine that?\""
+                - text: Susan shrugs. "I suppose you could just as easily call the red cube-shaped objects 'bleggs' and the blue egg-shaped objects 'rubes', but it seems easier to remember this way."
+                - text: You think for a moment. "Suppose a completely mixed-up object came off the conveyor. Like, an orange sphere-shaped furred translucent object with writhing green tentacles. How could I tell whether it was a blegg or a rube?"
+                - text: "\"Wow, no one's ever found an object"
+                - emphasis [ref=e158]: that
+                - text: mixed up," says Susan, "but I guess we'd take it to the sorting scanner."
+                - text: "\"How does the sorting scanner work?\" you inquire. \"X-rays? Magnetic resonance imaging? Fast neutron transmission spectroscopy?\""
+                - text: "\"I'm told it works by Bayes's Rule, but I don't quite understand how,\" says Susan. \"I like to say it, though. Bayes Bayes Bayes Bayes Bayes.\""
+                - text: "\"What does the sorting scanner"
+                - emphasis [ref=e159]: tell
+                - text: you?"
+                - text: "\"It tells you whether to put the object into the blegg bin or the rube bin. That's why it's called a sorting scanner.\""
+                - text: At this point you fall silent.
+                - text: "\"Incidentally,\" Susan says casually, \"it may interest you to know that bleggs contain small nuggets of vanadium ore, and rubes contain shreds of palladium, both of which are useful industrially.\""
+                - text: "\"Susan, you are pure evil.\""
+                - text: "\"Thank you.\""
+            - paragraph [ref=e160]:
+              - text: "So now it seems we've discovered the heart and essence of bleggness: a blegg is an object that contains a nugget of vanadium ore. Surface characteristics, like blue color and furredness, do not"
+              - emphasis [ref=e161]: determine
+              - text: whether an object is a blegg; surface characteristics only matter because they help you
+              - emphasis [ref=e162]: infer
+              - text: whether an object is a blegg, that is, whether the object contains vanadium.
+            - paragraph [ref=e163]: "Containing vanadium is a necessary and sufficient definition: all bleggs contain vanadium and everything that contains vanadium is a blegg: \"blegg\" is just a shorthand way of saying \"vanadium-containing object.\" Right?"
+            - paragraph [ref=e164]: "Not so fast, says Susan: Around 98% of bleggs contain vanadium, but 2% contain palladium instead. To be precise (Susan continues) around 98% of blue egg-shaped furred flexible opaque objects contain vanadium. For unusual bleggs, it may be a different percentage: 95% of purple bleggs contain vanadium, 92% of hard bleggs contain vanadium, etc."
+            - paragraph [ref=e165]: Now suppose you find a blue egg-shaped furred flexible opaque object, an ordinary blegg in every visible way, and just for kicks you take it to the sorting scanner, and the scanner says "palladium"—this is one of the rare 2%. Is it a blegg?
+            - paragraph [ref=e166]: At first you might answer that, since you intend to throw this object in the rube bin, you might as well call it a "rube". However, it turns out that almost all bleggs, if you switch off the lights, glow faintly in the dark; while almost all rubes do not glow in the dark. And the percentage of bleggs that glow in the dark is not significantly different for blue egg-shaped furred flexible opaque objects that contain palladium, instead of vanadium. Thus, if you want to guess whether the object glows like a blegg, or remains dark like a rube, you should guess that it glows like a blegg.
+            - paragraph [ref=e167]:
+              - text: So is the object
+              - emphasis [ref=e168]: really
+              - text: a blegg or a rube?
+            - paragraph [ref=e169]: On one hand, you'll throw the object in the rube bin no matter what else you learn. On the other hand, if there are any unknown characteristics of the object you need to infer, you'll infer them as if the object were a blegg, not a rube—group it into the similarity cluster of blue egg-shaped furred flexible opaque things, and not the similarity cluster of red cube-shaped smooth hard translucent things.
+            - paragraph [ref=e170]: The question "Is this object a blegg?" may stand in for different queries on different occasions.
+            - paragraph [ref=e171]:
+              - text: If it weren't standing in for
+              - emphasis [ref=e172]: some
+              - text: query, you'd have no reason to care.
+            - paragraph [ref=e173]:
+              - link "Is atheism a \"religion\"" [ref=e175] [cursor=pointer]:
+                - /url: /lw/lo/uncritical_supercriticality
+              - text: "?"
+              - link "Is transhumanism a \"cult\"" [ref=e177] [cursor=pointer]:
+                - /url: /lw/md/cultish_countercultishness
+              - text: "? People who argue that atheism is a religion \"because it states beliefs about God\" are really trying to argue (I think) that the reasoning methods used in atheism are on a par with the reasoning methods used in religion, or that atheism is no safer than religion in terms of the probability of causally engendering violence, etc... What's really at stake is an atheist's claim of substantial difference and superiority relative to religion, which the religious person is trying to reject by denying the difference rather than the superiority(!)"
+            - paragraph [ref=e178]:
+              - text: "But that's not the a priori irrational part: The a priori irrational part is where, in the course of the argument, someone pulls out a dictionary and looks up the definition of \"atheism\" or \"religion\". (And yes, it's just as silly whether an atheist or religionist does it.) How could a dictionary"
+              - emphasis [ref=e179]: possibly
+              - text: decide whether an empirical cluster of atheists is really substantially different from an empirical cluster of theologians? How can reality vary with the meaning of a word? The points in thingspace don't move around when we redraw a boundary.
+            - paragraph [ref=e180]:
+              - text: But people often don't
+              - emphasis [ref=e181]: realize
+              - text: that their argument about where to draw a definitional boundary, is really a dispute over whether to infer a characteristic shared by most things inside an empirical cluster...
+            - paragraph [ref=e182]: Hence the phrase, "disguised query".
+        - generic [ref=e186]:
+          - generic [ref=e187]:
+            - heading "New to LessWrong?" [level=2] [ref=e188]
+            - button [ref=e189] [cursor=pointer]:
+              - img [ref=e191]
+          - paragraph [ref=e194]:
+            - link "Getting Started" [ref=e195] [cursor=pointer]:
+              - /url: /about
+          - paragraph [ref=e196]:
+            - link "FAQ" [ref=e197] [cursor=pointer]:
+              - /url: /faq
+          - paragraph [ref=e198]:
+            - link "Library" [ref=e199] [cursor=pointer]:
+              - /url: /library
+        - generic [ref=e203]:
+          - generic [ref=e206]:
+            - button [ref=e208] [cursor=pointer]:
+              - generic [ref=e209]:
+                - img
+            - heading "195" [level=1] [ref=e212]
+            - button [ref=e214] [cursor=pointer]:
+              - generic [ref=e215]:
+                - img
+          - generic [ref=e217]:
+            - 'link "Previous: The Cluster Structure of Thingspace 32 comments166 karma" [ref=e220] [cursor=pointer]':
+              - /url: /s/SGB7Y5WERh4skwtnb/p/WBw8dDkAWohFjWQSk
+              - generic [ref=e221]:
+                - generic [ref=e222]: "Previous:"
+                - generic [ref=e223]: The Cluster Structure of Thingspace
+                - generic [ref=e224]:
+                  - generic [ref=e225]: 32 comments
+                  - generic [ref=e226]: 166 karma
+            - generic [ref=e229]:
+              - 'link "Next: Neural Categories 17 comments67 karma" [ref=e230] [cursor=pointer]':
+                - /url: /s/SGB7Y5WERh4skwtnb/p/yFDKvfN6D87Tf5J9f
+                - generic [ref=e231]:
+                  - generic [ref=e232]: "Next:"
+                  - generic [ref=e233]: Neural Categories
+                  - generic [ref=e234]:
+                    - generic [ref=e235]: 17 comments
+                    - generic [ref=e236]: 67 karma
+              - generic [ref=e238]: Log in to save where you left off
+          - generic [ref=e239]:
+            - generic [ref=e241]: Mentioned in
+            - generic [ref=e242]:
+              - generic [ref=e244]:
+                - generic [ref=e246]: "572"
+                - 'link "Diseased thinking: dissolving questions about disease" [ref=e250] [cursor=pointer]':
+                  - /url: /posts/895quRDaK6gR2rM82/diseased-thinking-dissolving-questions-about-disease
+              - generic [ref=e252]:
+                - generic [ref=e254]: "317"
+                - link "How An Algorithm Feels From Inside" [ref=e258] [cursor=pointer]:
+                  - /url: /posts/yA4gF5KrboK2m2Xu7/how-an-algorithm-feels-from-inside
+              - generic [ref=e260]:
+                - generic [ref=e262]: "255"
+                - link "37 Ways That Words Can Be Wrong" [ref=e266] [cursor=pointer]:
+                  - /url: /posts/FaJaCgqBKphrDzDSj/37-ways-that-words-can-be-wrong
+              - generic [ref=e268]:
+                - generic [ref=e270]: "182"
+                - link "What Is The Alignment Problem?" [ref=e274] [cursor=pointer]:
+                  - /url: /posts/dHNKtQ3vTBxTfTPxu/what-is-the-alignment-problem
+              - generic [ref=e276]:
+                - generic [ref=e278]: "164"
+                - link "Dissolving the Question" [ref=e282] [cursor=pointer]:
+                  - /url: /posts/Mc6QcrsbH5NRXbCRX/dissolving-the-question
+            - link "Load More (5/32)" [ref=e283] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e287]:
+          - link "Disguised Queries" [ref=e288] [cursor=pointer]:
+            - /url: "#"
+          - link "39 Psychohistorian3" [ref=e290] [cursor=pointer]:
+            - /url: "#k57JsaXEXN22ZvXXe"
+            - generic [ref=e291]:
+              - generic [ref=e292]: "39"
+              - generic [ref=e293]: Psychohistorian3
+          - link "10 kbladythinks" [ref=e295] [cursor=pointer]:
+            - /url: "#buRxmdpHmPKHNLJ4m"
+            - generic [ref=e296]:
+              - generic [ref=e297]: "10"
+              - generic [ref=e298]: kbladythinks
+          - link "2 papetoast" [ref=e300] [cursor=pointer]:
+            - /url: "#r44NgdbAJpnmTtaBc"
+            - generic [ref=e301]:
+              - generic [ref=e302]: "2"
+              - generic [ref=e303]: papetoast
+          - link "3 TGGP4" [ref=e305] [cursor=pointer]:
+            - /url: "#RPNd6izqzQ7eWkFD8"
+            - generic [ref=e306]:
+              - generic [ref=e307]: "3"
+              - generic [ref=e308]: TGGP4
+          - link "1 Caledonian2" [ref=e310] [cursor=pointer]:
+            - /url: "#yZpY5dhkKbA5bHNWv"
+            - generic [ref=e311]:
+              - generic [ref=e312]: "1"
+              - generic [ref=e313]: Caledonian2
+          - link "13 Richard_Hollerith2" [ref=e315] [cursor=pointer]:
+            - /url: "#cu2vrjb9ChrWXQ3Fe"
+            - generic [ref=e316]:
+              - generic [ref=e317]: "13"
+              - generic [ref=e318]: Richard_Hollerith2
+          - link "-4 james_gnz" [ref=e320] [cursor=pointer]:
+            - /url: "#tkL9eRzv6zyZP6YfW"
+            - generic [ref=e321]:
+              - generic [ref=e322]: "-4"
+              - generic [ref=e323]: james_gnz
+          - link "15 ec429" [ref=e325] [cursor=pointer]:
+            - /url: "#mL68WKiRrbyDhZbur"
+            - generic [ref=e326]:
+              - generic [ref=e327]: "15"
+              - generic [ref=e328]: ec429
+          - link "3 kbladythinks" [ref=e330] [cursor=pointer]:
+            - /url: "#rhw58sH7RJEESGafx"
+            - generic [ref=e331]:
+              - generic [ref=e332]: "3"
+              - generic [ref=e333]: kbladythinks
+          - link "2 lessdazed" [ref=e335] [cursor=pointer]:
+            - /url: "#KzHMjpbHwTh9BSSP5"
+            - generic [ref=e336]:
+              - generic [ref=e337]: "2"
+              - generic [ref=e338]: lessdazed
+          - link "11 Nick_Tarleton" [ref=e340] [cursor=pointer]:
+            - /url: "#pdKkyp5KsFANkqKbT"
+            - generic [ref=e341]:
+              - generic [ref=e342]: "11"
+              - generic [ref=e343]: Nick_Tarleton
+          - link "3 ignoramus" [ref=e345] [cursor=pointer]:
+            - /url: "#xkgX7ZLgb3Zyhihem"
+            - generic [ref=e346]:
+              - generic [ref=e347]: "3"
+              - generic [ref=e348]: ignoramus
+          - link "-3 Tsujigiri" [ref=e350] [cursor=pointer]:
+            - /url: "#xh2RadQdgFTPmijor"
+            - generic [ref=e351]:
+              - generic [ref=e352]: "-3"
+              - generic [ref=e353]: Tsujigiri
+          - link "1 ignoramus" [ref=e355] [cursor=pointer]:
+            - /url: "#Gb5e4RqYEBMEBcgQE"
+            - generic [ref=e356]:
+              - generic [ref=e357]: "1"
+              - generic [ref=e358]: ignoramus
+          - link "-1 Tsujigiri" [ref=e360] [cursor=pointer]:
+            - /url: "#ocqZ74Yf8NmTDMPZp"
+            - generic [ref=e361]:
+              - generic [ref=e362]: "-1"
+              - generic [ref=e363]: Tsujigiri
+          - link "5 TheOtherDave" [ref=e365] [cursor=pointer]:
+            - /url: "#nrnDLHSiLzh2C7u7G"
+            - generic [ref=e366]:
+              - generic [ref=e367]: "5"
+              - generic [ref=e368]: TheOtherDave
+          - link "3 DanArmak" [ref=e370] [cursor=pointer]:
+            - /url: "#ZhmhykPfk7pknE96f"
+            - generic [ref=e371]:
+              - generic [ref=e372]: "3"
+              - generic [ref=e373]: DanArmak
+          - link "-13 Tsujigiri" [ref=e375] [cursor=pointer]:
+            - /url: "#F4uEP7vzsnuLu4uKc"
+            - generic [ref=e376]:
+              - generic [ref=e377]: "-13"
+              - generic [ref=e378]: Tsujigiri
+          - link "1 TheOtherDave" [ref=e380] [cursor=pointer]:
+            - /url: "#zFgA8yGHve6nSv4Pr"
+            - generic [ref=e381]:
+              - generic [ref=e382]: "1"
+              - generic [ref=e383]: TheOtherDave
+          - link "-7 Tsujigiri" [ref=e385] [cursor=pointer]:
+            - /url: "#rX3ARGJHj3823Rpbk"
+            - generic [ref=e386]:
+              - generic [ref=e387]: "-7"
+              - generic [ref=e388]: Tsujigiri
+          - link "1 TheOtherDave" [ref=e390] [cursor=pointer]:
+            - /url: "#P2eXsHceXbpFPzsas"
+            - generic [ref=e391]:
+              - generic [ref=e392]: "1"
+              - generic [ref=e393]: TheOtherDave
+          - link "-3 Tsujigiri" [ref=e395] [cursor=pointer]:
+            - /url: "#qBjNYxnSAaoGGK5QL"
+            - generic [ref=e396]:
+              - generic [ref=e397]: "-3"
+              - generic [ref=e398]: Tsujigiri
+          - link "3 TheOtherDave" [ref=e400] [cursor=pointer]:
+            - /url: "#oBBBanHYQFqW7Lqdu"
+            - generic [ref=e401]:
+              - generic [ref=e402]: "3"
+              - generic [ref=e403]: TheOtherDave
+          - link "-1 Tsujigiri" [ref=e405] [cursor=pointer]:
+            - /url: "#fiZadShcezPPx4aX5"
+            - generic [ref=e406]:
+              - generic [ref=e407]: "-1"
+              - generic [ref=e408]: Tsujigiri
+          - link "4 TheOtherDave" [ref=e410] [cursor=pointer]:
+            - /url: "#hJ4EmGxFpPLMzz9N8"
+            - generic [ref=e411]:
+              - generic [ref=e412]: "4"
+              - generic [ref=e413]: TheOtherDave
+          - link "0 Tsujigiri" [ref=e415] [cursor=pointer]:
+            - /url: "#k8d6YoXjB2eDJjeqr"
+            - generic [ref=e416]:
+              - generic [ref=e417]: "0"
+              - generic [ref=e418]: Tsujigiri
+          - link "2 TheOtherDave" [ref=e420] [cursor=pointer]:
+            - /url: "#AG57YWLiZYLsEvfm2"
+            - generic [ref=e421]:
+              - generic [ref=e422]: "2"
+              - generic [ref=e423]: TheOtherDave
+          - link "3 nshepperd" [ref=e425] [cursor=pointer]:
+            - /url: "#F6PSxuyqfBrgXKhAK"
+            - generic [ref=e426]:
+              - generic [ref=e427]: "3"
+              - generic [ref=e428]: nshepperd
+          - link "4 MixedNuts" [ref=e430] [cursor=pointer]:
+            - /url: "#nQHeFPxiNWXX3aDF7"
+            - generic [ref=e431]:
+              - generic [ref=e432]: "4"
+              - generic [ref=e433]: MixedNuts
+          - link "2 Tsujigiri" [ref=e435] [cursor=pointer]:
+            - /url: "#QTMiupqz4QZscn3Qj"
+            - generic [ref=e436]:
+              - generic [ref=e437]: "2"
+              - generic [ref=e438]: Tsujigiri
+          - link "3 MixedNuts" [ref=e440] [cursor=pointer]:
+            - /url: "#sp9DK3znxjsHbn2GR"
+            - generic [ref=e441]:
+              - generic [ref=e442]: "3"
+              - generic [ref=e443]: MixedNuts
+          - link "8 Vaniver" [ref=e445] [cursor=pointer]:
+            - /url: "#EX55B6qkvR3NPobxz"
+            - generic [ref=e446]:
+              - generic [ref=e447]: "8"
+              - generic [ref=e448]: Vaniver
+          - link "1 Ezekiel" [ref=e450] [cursor=pointer]:
+            - /url: "#EqBYve6zH45mFpBjX"
+            - generic [ref=e451]:
+              - generic [ref=e452]: "1"
+              - generic [ref=e453]: Ezekiel
+          - link "0 Tsujigiri" [ref=e455] [cursor=pointer]:
+            - /url: "#8YDXHrysoT8jtd32P"
+            - generic [ref=e456]:
+              - generic [ref=e457]: "0"
+              - generic [ref=e458]: Tsujigiri
+          - link "0 Tsujigiri" [ref=e460] [cursor=pointer]:
+            - /url: "#FPwQDFWMfEy9BiaSM"
+            - generic [ref=e461]:
+              - generic [ref=e462]: "0"
+              - generic [ref=e463]: Tsujigiri
+          - link "7 Vaniver" [ref=e465] [cursor=pointer]:
+            - /url: "#DgSDgAZvrAPmvh4WC"
+            - generic [ref=e466]:
+              - generic [ref=e467]: "7"
+              - generic [ref=e468]: Vaniver
+          - link "11 [anonymous]" [ref=e470] [cursor=pointer]:
+            - /url: "#nviiFJe6e2FEvcTL7"
+            - generic [ref=e471]:
+              - generic [ref=e472]: "11"
+              - generic [ref=e473]: "[anonymous]"
+          - link "2 TheOtherDave" [ref=e475] [cursor=pointer]:
+            - /url: "#DmG84nYeApEFDz8Tx"
+            - generic [ref=e476]:
+              - generic [ref=e477]: "2"
+              - generic [ref=e478]: TheOtherDave
+          - link "1 wedrifid" [ref=e480] [cursor=pointer]:
+            - /url: "#8dmvekvBbqPYxvEHj"
+            - generic [ref=e481]:
+              - generic [ref=e482]: "1"
+              - generic [ref=e483]: wedrifid
+          - link "0 TheOtherDave" [ref=e485] [cursor=pointer]:
+            - /url: "#tuasvBspSFPXZvyLT"
+            - generic [ref=e486]:
+              - generic [ref=e487]: "0"
+              - generic [ref=e488]: TheOtherDave
+          - link "1 wedrifid" [ref=e490] [cursor=pointer]:
+            - /url: "#Zj43Q46MzNdbPCWgT"
+            - generic [ref=e491]:
+              - generic [ref=e492]: "1"
+              - generic [ref=e493]: wedrifid
+          - link "0 TheOtherDave" [ref=e495] [cursor=pointer]:
+            - /url: "#zqqdrEfLATHaKA8KN"
+            - generic [ref=e496]:
+              - generic [ref=e497]: "0"
+              - generic [ref=e498]: TheOtherDave
+          - link "1 wedrifid" [ref=e500] [cursor=pointer]:
+            - /url: "#TzazSPdtyRtWwdRvu"
+            - generic [ref=e501]:
+              - generic [ref=e502]: "1"
+              - generic [ref=e503]: wedrifid
+          - link "1 TheOtherDave" [ref=e505] [cursor=pointer]:
+            - /url: "#r7TotEG878u4mue39"
+            - generic [ref=e506]:
+              - generic [ref=e507]: "1"
+              - generic [ref=e508]: TheOtherDave
+          - link "0 wedrifid" [ref=e510] [cursor=pointer]:
+            - /url: "#yYwxvjvSZx79mEiAm"
+            - generic [ref=e511]:
+              - generic [ref=e512]: "0"
+              - generic [ref=e513]: wedrifid
+          - link "0 Vaniver" [ref=e515] [cursor=pointer]:
+            - /url: "#Jfx7GSw4dnktaHww6"
+            - generic [ref=e516]:
+              - generic [ref=e517]: "0"
+              - generic [ref=e518]: Vaniver
+          - link "0 wedrifid" [ref=e520] [cursor=pointer]:
+            - /url: "#RKHPCuw2mFtTA5cHo"
+            - generic [ref=e521]:
+              - generic [ref=e522]: "0"
+              - generic [ref=e523]: wedrifid
+          - link "0 TheOtherDave" [ref=e525] [cursor=pointer]:
+            - /url: "#czgjWT5yvfDoCrJbL"
+            - generic [ref=e526]:
+              - generic [ref=e527]: "0"
+              - generic [ref=e528]: TheOtherDave
+          - link "0 Vaniver" [ref=e530] [cursor=pointer]:
+            - /url: "#BLioroNKDQqaSgp3f"
+            - generic [ref=e531]:
+              - generic [ref=e532]: "0"
+              - generic [ref=e533]: Vaniver
+          - link "0 wedrifid" [ref=e535] [cursor=pointer]:
+            - /url: "#u39MMmcZYf8ymJTiq"
+            - generic [ref=e536]:
+              - generic [ref=e537]: "0"
+              - generic [ref=e538]: wedrifid
+          - link "0 Vaniver" [ref=e540] [cursor=pointer]:
+            - /url: "#mHaPRCLnawb8NDw7e"
+            - generic [ref=e541]:
+              - generic [ref=e542]: "0"
+              - generic [ref=e543]: Vaniver
+          - link "0 wedrifid" [ref=e545] [cursor=pointer]:
+            - /url: "#k5xpyPMWnCfcpAfRt"
+            - generic [ref=e546]:
+              - generic [ref=e547]: "0"
+              - generic [ref=e548]: wedrifid
+          - link "0 ArisKatsaris" [ref=e550] [cursor=pointer]:
+            - /url: "#RpyHjmcuaxhbY3537"
+            - generic [ref=e551]:
+              - generic [ref=e552]: "0"
+              - generic [ref=e553]: ArisKatsaris
+          - link "0 ArisKatsaris" [ref=e555] [cursor=pointer]:
+            - /url: "#gRP6oJJHTz8ybmKLc"
+            - generic [ref=e556]:
+              - generic [ref=e557]: "0"
+              - generic [ref=e558]: ArisKatsaris
+          - link "1 TheOtherDave" [ref=e560] [cursor=pointer]:
+            - /url: "#vgKpPsiuh3J3G4zH7"
+            - generic [ref=e561]:
+              - generic [ref=e562]: "1"
+              - generic [ref=e563]: TheOtherDave
+          - link "4 Tsujigiri" [ref=e565] [cursor=pointer]:
+            - /url: "#8wNyFvusspD7whteP"
+            - generic [ref=e566]:
+              - generic [ref=e567]: "4"
+              - generic [ref=e568]: Tsujigiri
+          - link "0 [anonymous]" [ref=e570] [cursor=pointer]:
+            - /url: "#prm4PBBu67yDpzKcQ"
+            - generic [ref=e571]:
+              - generic [ref=e572]: "0"
+              - generic [ref=e573]: "[anonymous]"
+          - link "0 TheOtherDave" [ref=e575] [cursor=pointer]:
+            - /url: "#P8qSGsqDQvwqQg2S4"
+            - generic [ref=e576]:
+              - generic [ref=e577]: "0"
+              - generic [ref=e578]: TheOtherDave
+          - link "0 juliawise" [ref=e580] [cursor=pointer]:
+            - /url: "#R63vJ6Qac8WB2a6Fh"
+            - generic [ref=e581]:
+              - generic [ref=e582]: "0"
+              - generic [ref=e583]: juliawise
+          - link "0 raptortech97" [ref=e585] [cursor=pointer]:
+            - /url: "#6H6KWf2m8QKRAK3Ae"
+            - generic [ref=e586]:
+              - generic [ref=e587]: "0"
+              - generic [ref=e588]: raptortech97
+          - link "1 Ezekiel" [ref=e590] [cursor=pointer]:
+            - /url: "#QexazH6NkX8wQR2nL"
+            - generic [ref=e591]:
+              - generic [ref=e592]: "1"
+              - generic [ref=e593]: Ezekiel
+          - link "1 [anonymous]" [ref=e595] [cursor=pointer]:
+            - /url: "#XEnSJnbijrQBGy8ox"
+            - generic [ref=e596]:
+              - generic [ref=e597]: "1"
+              - generic [ref=e598]: "[anonymous]"
+          - link "0 Swimmer963 (Miranda Dixon-Luinenburg)" [ref=e600] [cursor=pointer]:
+            - /url: "#osBc7ycYxkDrJukwg"
+            - generic [ref=e601]:
+              - generic [ref=e602]: "0"
+              - generic [ref=e603]: Swimmer963 (Miranda Dixon-Luinenburg)
+          - link "0 Swimmer963 (Miranda Dixon-Luinenburg)" [ref=e605] [cursor=pointer]:
+            - /url: "#TrNpTE8uDpnZBWkd7"
+            - generic [ref=e606]:
+              - generic [ref=e607]: "0"
+              - generic [ref=e608]: Swimmer963 (Miranda Dixon-Luinenburg)
+          - link "0 [anonymous]" [ref=e610] [cursor=pointer]:
+            - /url: "#p9fKSjqf7tevehSWL"
+            - generic [ref=e611]:
+              - generic [ref=e612]: "0"
+              - generic [ref=e613]: "[anonymous]"
+          - link "0 dlthomas" [ref=e615] [cursor=pointer]:
+            - /url: "#RiCug97Qh3cfLRsKy"
+            - generic [ref=e616]:
+              - generic [ref=e617]: "0"
+              - generic [ref=e618]: dlthomas
+          - link "0 [anonymous]" [ref=e620] [cursor=pointer]:
+            - /url: "#48jj2QF85Pshz5Qcz"
+            - generic [ref=e621]:
+              - generic [ref=e622]: "0"
+              - generic [ref=e623]: "[anonymous]"
+          - link "0 dlthomas" [ref=e625] [cursor=pointer]:
+            - /url: "#2oGS7CLTHYM9XXyr5"
+            - generic [ref=e626]:
+              - generic [ref=e627]: "0"
+              - generic [ref=e628]: dlthomas
+          - link "0 [anonymous]" [ref=e630] [cursor=pointer]:
+            - /url: "#En76HqTxfdgurbck5"
+            - generic [ref=e631]:
+              - generic [ref=e632]: "0"
+              - generic [ref=e633]: "[anonymous]"
+          - link "-1 Swimmer963 (Miranda Dixon-Luinenburg)" [ref=e635] [cursor=pointer]:
+            - /url: "#MhS4HhfnLESrnxusZ"
+            - generic [ref=e636]:
+              - generic [ref=e637]: "-1"
+              - generic [ref=e638]: Swimmer963 (Miranda Dixon-Luinenburg)
+          - link "0 [anonymous]" [ref=e640] [cursor=pointer]:
+            - /url: "#EMr3WWjH2QHiojBbB"
+            - generic [ref=e641]:
+              - generic [ref=e642]: "0"
+              - generic [ref=e643]: "[anonymous]"
+          - link "-2 Swimmer963 (Miranda Dixon-Luinenburg)" [ref=e645] [cursor=pointer]:
+            - /url: "#Dy8CbZfeopXg8Y3CJ"
+            - generic [ref=e646]:
+              - generic [ref=e647]: "-2"
+              - generic [ref=e648]: Swimmer963 (Miranda Dixon-Luinenburg)
+          - link "0 [anonymous]" [ref=e650] [cursor=pointer]:
+            - /url: "#3E4LTEeDgPCAxEMd3"
+            - generic [ref=e651]:
+              - generic [ref=e652]: "0"
+              - generic [ref=e653]: "[anonymous]"
+          - link "0 Swimmer963 (Miranda Dixon-Luinenburg)" [ref=e655] [cursor=pointer]:
+            - /url: "#cdS5bn85FfYY6mYJx"
+            - generic [ref=e656]:
+              - generic [ref=e657]: "0"
+              - generic [ref=e658]: Swimmer963 (Miranda Dixon-Luinenburg)
+          - link "0 [anonymous]" [ref=e660] [cursor=pointer]:
+            - /url: "#dM5HyRGc86fLi4Xff"
+            - generic [ref=e661]:
+              - generic [ref=e662]: "0"
+              - generic [ref=e663]: "[anonymous]"
+          - link "1 Swimmer963 (Miranda Dixon-Luinenburg)" [ref=e665] [cursor=pointer]:
+            - /url: "#6TNqDutcyQ4rpFPHM"
+            - generic [ref=e666]:
+              - generic [ref=e667]: "1"
+              - generic [ref=e668]: Swimmer963 (Miranda Dixon-Luinenburg)
+          - link "0 [anonymous]" [ref=e670] [cursor=pointer]:
+            - /url: "#xBeK8cp8vgcLRJCRv"
+            - generic [ref=e671]:
+              - generic [ref=e672]: "0"
+              - generic [ref=e673]: "[anonymous]"
+          - link "0 Swimmer963 (Miranda Dixon-Luinenburg)" [ref=e675] [cursor=pointer]:
+            - /url: "#gfBhrcmznoSLG4LAA"
+            - generic [ref=e676]:
+              - generic [ref=e677]: "0"
+              - generic [ref=e678]: Swimmer963 (Miranda Dixon-Luinenburg)
+          - link "0 [anonymous]" [ref=e680] [cursor=pointer]:
+            - /url: "#AHLpiPb6vq5uvAnuB"
+            - generic [ref=e681]:
+              - generic [ref=e682]: "0"
+              - generic [ref=e683]: "[anonymous]"
+          - link "1 orthonormal" [ref=e685] [cursor=pointer]:
+            - /url: "#StEYCHdencgMDT543"
+            - generic [ref=e686]:
+              - generic [ref=e687]: "1"
+              - generic [ref=e688]: orthonormal
+          - link "0 [anonymous]" [ref=e690] [cursor=pointer]:
+            - /url: "#npjqKKAHHM4764z4F"
+            - generic [ref=e691]:
+              - generic [ref=e692]: "0"
+              - generic [ref=e693]: "[anonymous]"
+          - link "3 orthonormal" [ref=e695] [cursor=pointer]:
+            - /url: "#YwZ75anjMpE693wmw"
+            - generic [ref=e696]:
+              - generic [ref=e697]: "3"
+              - generic [ref=e698]: orthonormal
+          - link "0 [anonymous]" [ref=e700] [cursor=pointer]:
+            - /url: "#xNdk3Y3wq5HrHZtDZ"
+            - generic [ref=e701]:
+              - generic [ref=e702]: "0"
+              - generic [ref=e703]: "[anonymous]"
+          - link "0 orthonormal" [ref=e705] [cursor=pointer]:
+            - /url: "#vncgxMysc9Zu4onj6"
+            - generic [ref=e706]:
+              - generic [ref=e707]: "0"
+              - generic [ref=e708]: orthonormal
+          - link "0 [anonymous]" [ref=e710] [cursor=pointer]:
+            - /url: "#fHkMenBHCo7G7WKJy"
+            - generic [ref=e711]:
+              - generic [ref=e712]: "0"
+              - generic [ref=e713]: "[anonymous]"
+          - link "4 orthonormal" [ref=e715] [cursor=pointer]:
+            - /url: "#JpXewfsXTP3DQ6Rg8"
+            - generic [ref=e716]:
+              - generic [ref=e717]: "4"
+              - generic [ref=e718]: orthonormal
+          - link "3 [anonymous]" [ref=e720] [cursor=pointer]:
+            - /url: "#9ux3CZBnviMekCy2z"
+            - generic [ref=e721]:
+              - generic [ref=e722]: "3"
+              - generic [ref=e723]: "[anonymous]"
+          - link "0 orthonormal" [ref=e725] [cursor=pointer]:
+            - /url: "#dsoDn3CpuDo6qfe9o"
+            - generic [ref=e726]:
+              - generic [ref=e727]: "0"
+              - generic [ref=e728]: orthonormal
+          - link "0 Bound_up" [ref=e730] [cursor=pointer]:
+            - /url: "#aqc4BgqxuBET6ur4q"
+            - generic [ref=e731]:
+              - generic [ref=e732]: "0"
+              - generic [ref=e733]: Bound_up
+          - link "1 Richard_Kennaway" [ref=e735] [cursor=pointer]:
+            - /url: "#8C8h33rAbA84iAttM"
+            - generic [ref=e736]:
+              - generic [ref=e737]: "1"
+              - generic [ref=e738]: Richard_Kennaway
+          - link "2 Good_Burning_Plastic" [ref=e740] [cursor=pointer]:
+            - /url: "#qapf3E5mNJBd43A3s"
+            - generic [ref=e741]:
+              - generic [ref=e742]: "2"
+              - generic [ref=e743]: Good_Burning_Plastic
+          - link "0 Bound_up" [ref=e745] [cursor=pointer]:
+            - /url: "#XbjrQwbaQ6LFFiEtM"
+            - generic [ref=e746]:
+              - generic [ref=e747]: "0"
+              - generic [ref=e748]: Bound_up
+          - link "2 Richard_Kennaway" [ref=e750] [cursor=pointer]:
+            - /url: "#8ZjKtgigGJbWay3H2"
+            - generic [ref=e751]:
+              - generic [ref=e752]: "2"
+              - generic [ref=e753]: Richard_Kennaway
+          - link "0 Bound_up" [ref=e755] [cursor=pointer]:
+            - /url: "#w5fbDbEG2YQbKXNYW"
+            - generic [ref=e756]:
+              - generic [ref=e757]: "0"
+              - generic [ref=e758]: Bound_up
+          - link "1 tlhonmey" [ref=e760] [cursor=pointer]:
+            - /url: "#EogxMG2xtJLPMyC8R"
+            - generic [ref=e761]:
+              - generic [ref=e762]: "1"
+              - generic [ref=e763]: tlhonmey
+          - link "8 Konrad2" [ref=e765] [cursor=pointer]:
+            - /url: "#j4Tiv2sq27QacxdkF"
+            - generic [ref=e766]:
+              - generic [ref=e767]: "8"
+              - generic [ref=e768]: Konrad2
+          - link "1 Ari" [ref=e770] [cursor=pointer]:
+            - /url: "#YHafrKHDmGmWGynvy"
+            - generic [ref=e771]:
+              - generic [ref=e772]: "1"
+              - generic [ref=e773]: Ari
+          - link "2 tcpkac" [ref=e775] [cursor=pointer]:
+            - /url: "#Q4YT9f566yMREkic5"
+            - generic [ref=e776]:
+              - generic [ref=e777]: "2"
+              - generic [ref=e778]: tcpkac
+          - link "6 Joseph_Knecht" [ref=e780] [cursor=pointer]:
+            - /url: "#QEw49ELZ2eqsp9igN"
+            - generic [ref=e781]:
+              - generic [ref=e782]: "6"
+              - generic [ref=e783]: Joseph_Knecht
+          - link "0 TGGP4" [ref=e785] [cursor=pointer]:
+            - /url: "#EhiSs8abokp5truJD"
+            - generic [ref=e786]:
+              - generic [ref=e787]: "0"
+              - generic [ref=e788]: TGGP4
+          - link "8 Rolf_Nelson2" [ref=e790] [cursor=pointer]:
+            - /url: "#W2be277unjuEeeT87"
+            - generic [ref=e791]:
+              - generic [ref=e792]: "8"
+              - generic [ref=e793]: Rolf_Nelson2
+          - link "1 Doug_S." [ref=e795] [cursor=pointer]:
+            - /url: "#ZzR4WhMRum94zX4do"
+            - generic [ref=e796]:
+              - generic [ref=e797]: "1"
+              - generic [ref=e798]: Doug_S.
+          - link "-1 metahacker" [ref=e800] [cursor=pointer]:
+            - /url: "#DsQzPZkbDyc9rYiP8"
+            - generic [ref=e801]:
+              - generic [ref=e802]: "-1"
+              - generic [ref=e803]: metahacker
+          - link "0 TGGP4" [ref=e805] [cursor=pointer]:
+            - /url: "#usokK7nnorPH8Jg7v"
+            - generic [ref=e806]:
+              - generic [ref=e807]: "0"
+              - generic [ref=e808]: TGGP4
+          - link "18 Julia_Galef" [ref=e810] [cursor=pointer]:
+            - /url: "#upXsEwjSdMgx4W2Bk"
+            - generic [ref=e811]:
+              - generic [ref=e812]: "18"
+              - generic [ref=e813]: Julia_Galef
+          - link "1 David_Gerard" [ref=e815] [cursor=pointer]:
+            - /url: "#iHkg7nJmazTmQDkjb"
+            - generic [ref=e816]:
+              - generic [ref=e817]: "1"
+              - generic [ref=e818]: David_Gerard
+          - link "0 Dojan" [ref=e820] [cursor=pointer]:
+            - /url: "#qZtNtS4aDDLdpZcsW"
+            - generic [ref=e821]:
+              - generic [ref=e822]: "0"
+              - generic [ref=e823]: Dojan
+          - link "0 Anders_H" [ref=e825] [cursor=pointer]:
+            - /url: "#wE4xBtakNtMDaLHRA"
+            - generic [ref=e826]:
+              - generic [ref=e827]: "0"
+              - generic [ref=e828]: Anders_H
+        - generic [ref=e834]:
+          - generic [ref=e835]:
+            - generic [ref=e836]: New Comment
+            - generic [ref=e840]:
+              - generic [ref=e849]:
+                - textbox [ref=e850]
+                - generic: Type here! Use '/' for editor commands.
+                - generic [ref=e851]:
+                  - button "Sort column" [ref=e852] [cursor=pointer]:
+                    - img [ref=e853]
+                  - button "Add column" [ref=e855] [cursor=pointer]:
+                    - img [ref=e856]
+                - button "Add row" [ref=e858] [cursor=pointer]:
+                  - img [ref=e859]
+              - generic [ref=e862]:
+                - button "Submit" [ref=e863] [cursor=pointer]:
+                  - generic [ref=e864]: Submit
+                - button [ref=e866] [cursor=pointer]:
+                  - img [ref=e868]
+          - generic [ref=e870]:
+            - generic [ref=e872]:
+              - text: 108 comments, sorted by
+              - generic [ref=e873]: oldest
+            - generic [ref=e874]:
+              - text: "Click to highlight new comments since:"
+              - time [ref=e876] [cursor=pointer]: Today at 4:19 PM
+          - generic [ref=e877]:
+            - generic [ref=e878]:
+              - text: Some comments are truncated due to high volume.
+              - generic [ref=e879]: (⌘F to expand all)
+            - generic [ref=e882] [cursor=pointer]:
+              - img [ref=e883]
+              - generic [ref=e886]: Change truncation settings
+          - generic [ref=e887]:
+            - generic [ref=e888]:
+              - generic [ref=e891]:
+                - generic [ref=e892]:
+                  - generic [ref=e893] [cursor=pointer]:
+                    - text: "["
+                    - generic [ref=e894]: "-"
+                    - text: "]"
+                  - link "Psychohistorian3" [ref=e897] [cursor=pointer]:
+                    - /url: /users/psychohistorian3
+                  - link "18y" [ref=e899] [cursor=pointer]:
+                    - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=k57JsaXEXN22ZvXXe
+                    - time [ref=e901]: 18y
+                  - generic [ref=e902]:
+                    - generic [ref=e904]:
+                      - button [ref=e906] [cursor=pointer]:
+                        - generic [ref=e907]:
+                          - img
+                      - generic [ref=e909]: "39"
+                      - button [ref=e911] [cursor=pointer]:
+                        - generic [ref=e912]:
+                          - img
+                    - generic [ref=e913]:
+                      - button [ref=e915] [cursor=pointer]:
+                        - img [ref=e918]
+                      - generic [ref=e921]: "1"
+                      - button [ref=e923] [cursor=pointer]:
+                        - img [ref=e926]
+                - generic [ref=e929]:
+                  - paragraph [ref=e930]: While the advisory against using a dictionary to resolve such arguments are true, a lot of arguments stem from confusion or disagreement over the meaning of words. Based on the work I've done in philosophy, this type of disagreement probably covers 50% of philosophical debates, with about 2% of the participants in such debates admitting that that is what they disagree about.
+                  - paragraph [ref=e931]: For example, "Most atheists believe in the divinity of Christ" could be resolved easily without recourse to the empirical world. If I believe that it is possible for someone to be an atheist and believe in the divinity of Christ, then I am using atheist to mean something very different from its actual meaning.
+                  - paragraph [ref=e932]: As you wrote earlier, using words invokes connotations regardless of whether a newly assigned definition merits the same connotations. Some on the far left have defined "racism" to mean "is White and lives in the USA." Appealing to a dictionary is useful in an argument with such a person because it prevents them from using a very charged word inappropriately. Similar tricks occur with "fascism," "freedom," "democracy," and many other such words.
+                  - paragraph [ref=e933]: Bas... (read more)
+                - generic [ref=e934]:
+                  - generic [ref=e936] [cursor=pointer]: Reply
+                  - img [ref=e941] [cursor=pointer]
+              - generic [ref=e948]:
+                - generic [ref=e953]:
+                  - generic [ref=e954]:
+                    - generic [ref=e955] [cursor=pointer]:
+                      - text: "["
+                      - generic [ref=e956]: "-"
+                      - text: "]"
+                    - link "kbladythinks" [ref=e959] [cursor=pointer]:
+                      - /url: /users/kbladythinks
+                    - link "7y" [ref=e961] [cursor=pointer]:
+                      - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=buRxmdpHmPKHNLJ4m
+                      - time [ref=e963]: 7y
+                    - generic [ref=e964]:
+                      - generic [ref=e966]:
+                        - button [ref=e968] [cursor=pointer]:
+                          - generic [ref=e969]:
+                            - img
+                        - generic [ref=e971]: "10"
+                        - button [ref=e973] [cursor=pointer]:
+                          - generic [ref=e974]:
+                            - img
+                      - generic [ref=e975]:
+                        - button [ref=e977] [cursor=pointer]:
+                          - img [ref=e980]
+                        - generic [ref=e983]: "1"
+                        - button [ref=e985] [cursor=pointer]:
+                          - img [ref=e988]
+                  - generic [ref=e993]:
+                    - paragraph [ref=e994]: In colloge, I led a book discussion group about ethics. Most participants had read the book.
+                    - paragraph [ref=e995]: Everyone in the group agreed that ethics and morals were different.
+                    - paragraph [ref=e996]: They even agreed on HOW they were different (internal/personal vs group/societal, arrived at vs proscribed, philosophical vs legal).
+                    - paragraph [ref=e997]: They REFUSED to agree, however, on what term referred to which distinction.
+                    - paragraph [ref=e998]: Sigh...
+                  - generic [ref=e999]:
+                    - generic [ref=e1001] [cursor=pointer]: Reply
+                    - img [ref=e1006] [cursor=pointer]
+                - generic [ref=e1016] [cursor=pointer]:
+                  - generic:
+                    - generic [ref=e1017]: "2"
+                    - generic [ref=e1018]: papetoast
+                    - time [ref=e1020]: 3y
+                    - generic [ref=e1021]: In that case, tabooing the word is probably better than bringing the dictionary to show that the other person's use of words are against common sense (assuming you want to actually reach a consensus, but if youre more about winning the argument then bring the dictionary is probably better?)
+            - generic [ref=e1025]:
+              - generic [ref=e1026]:
+                - generic [ref=e1027] [cursor=pointer]:
+                  - text: "["
+                  - generic [ref=e1028]: "-"
+                  - text: "]"
+                - link "TGGP4" [ref=e1031] [cursor=pointer]:
+                  - /url: /users/tggp4
+                - link "18y" [ref=e1033] [cursor=pointer]:
+                  - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=RPNd6izqzQ7eWkFD8
+                  - time [ref=e1035]: 18y
+                - generic [ref=e1036]:
+                  - generic [ref=e1038]:
+                    - button [ref=e1040] [cursor=pointer]:
+                      - generic [ref=e1041]:
+                        - img
+                    - generic [ref=e1043]: "3"
+                    - button [ref=e1045] [cursor=pointer]:
+                      - generic [ref=e1046]:
+                        - img
+                  - generic [ref=e1047]:
+                    - button [ref=e1049] [cursor=pointer]:
+                      - img [ref=e1052]
+                    - generic [ref=e1055]: "0"
+                    - button [ref=e1057] [cursor=pointer]:
+                      - img [ref=e1060]
+              - paragraph [ref=e1064]:
+                - text: Based on the work I've done in philosophy, this type of disagreement probably covers 50% of philosophical debates, with about 2% of the participants in such debates admitting that that is what they disagree about. Someone remind me against why I'm supposed to
+                - link "take philosophy seriously" [ref=e1067] [cursor=pointer]:
+                  - /url: http://www.overcomingbias.com/2007/10/a-priori.html#comment-85860152
+                - text: .
+              - generic [ref=e1068]:
+                - generic [ref=e1070] [cursor=pointer]: Reply
+                - img [ref=e1075] [cursor=pointer]
+            - generic [ref=e1085]:
+              - generic [ref=e1086]:
+                - generic [ref=e1087] [cursor=pointer]:
+                  - text: "["
+                  - generic [ref=e1088]: "-"
+                  - text: "]"
+                - link "Caledonian2" [ref=e1091] [cursor=pointer]:
+                  - /url: /users/caledonian2
+                - link "18y" [ref=e1093] [cursor=pointer]:
+                  - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=yZpY5dhkKbA5bHNWv
+                  - time [ref=e1095]: 18y
+                - generic [ref=e1096]:
+                  - generic [ref=e1098]:
+                    - button [ref=e1100] [cursor=pointer]:
+                      - generic [ref=e1101]:
+                        - img
+                    - generic [ref=e1103]: "1"
+                    - button [ref=e1105] [cursor=pointer]:
+                      - generic [ref=e1106]:
+                        - img
+                  - generic [ref=e1107]:
+                    - button [ref=e1109] [cursor=pointer]:
+                      - img [ref=e1112]
+                    - generic [ref=e1115]: "0"
+                    - button [ref=e1117] [cursor=pointer]:
+                      - img [ref=e1120]
+              - generic [ref=e1123]:
+                - paragraph [ref=e1124]: Because if no one takes philosophy seriously, the philosophers will have nothing at all.
+                - paragraph [ref=e1125]: Will you take that away from them? They have so little as it is.
+              - generic [ref=e1126]:
+                - generic [ref=e1128] [cursor=pointer]: Reply
+                - img [ref=e1133] [cursor=pointer]
+            - generic [ref=e1140]:
+              - generic [ref=e1143]:
+                - generic [ref=e1144]:
+                  - generic [ref=e1145] [cursor=pointer]:
+                    - text: "["
+                    - generic [ref=e1146]: "-"
+                    - text: "]"
+                  - link "Richard_Hollerith2" [ref=e1149] [cursor=pointer]:
+                    - /url: /users/richard_hollerith2
+                  - link "18y" [ref=e1151] [cursor=pointer]:
+                    - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=cu2vrjb9ChrWXQ3Fe
+                    - time [ref=e1153]: 18y
+                  - generic [ref=e1154]:
+                    - generic [ref=e1156]:
+                      - button [ref=e1158] [cursor=pointer]:
+                        - generic [ref=e1159]:
+                          - img
+                      - generic [ref=e1161]: "13"
+                      - button [ref=e1163] [cursor=pointer]:
+                        - generic [ref=e1164]:
+                          - img
+                    - generic [ref=e1165]:
+                      - button [ref=e1167] [cursor=pointer]:
+                        - img [ref=e1170]
+                      - generic [ref=e1173]: "0"
+                      - button [ref=e1175] [cursor=pointer]:
+                        - img [ref=e1178]
+                - generic [ref=e1181]:
+                  - paragraph [ref=e1182]: Is atheism a "religion"? Is transhumanism a "cult"?
+                  - paragraph [ref=e1183]: My favorite example is, Is a fetus a person?
+                - generic [ref=e1184]:
+                  - generic [ref=e1186] [cursor=pointer]: Reply
+                  - img [ref=e1191] [cursor=pointer]
+              - generic [ref=e1200]:
+                - generic [ref=e1203] [cursor=pointer]:
+                  - generic:
+                    - generic [ref=e1204]: "-4"
+                    - generic [ref=e1205]: james_gnz
+                    - time [ref=e1207]: 15y
+                    - generic [ref=e1208]: "Quote: My favorite example is, Is a fetus a person? I can answer this one: A foetus is not a person prior to 20 weeks gestation (18 weeks of pregnancy), but may be a person from that point onwards. A body with one mind is one person. A body with two minds is two people (conjoint twins). A body with three minds would be three people. A heart transplant does not switch a person into a different body. A lung transplant does not switch a person into a different body. A brain transplant (and therefore a mind transplant) would switch a person into a different body. It is minds, not bodies, that defines people. The mind exists, if at all, in the brain, or more specifically the cerebral cortex. The cerebral cortex begins to develop connections no earlier than 20 weeks gestation, therefore there is not a person before this time (though the body does have reflexes). 'Brain Waves' When??? http://eileen.250x.com/Main/Einstein/Brain_Waves.htm Margaret Sykes"
+                - generic [ref=e1209]:
+                  - generic [ref=e1211]:
+                    - generic [ref=e1214]:
+                      - generic [ref=e1215]:
+                        - generic [ref=e1216] [cursor=pointer]:
+                          - text: "["
+                          - generic [ref=e1217]: "-"
+                          - text: "]"
+                        - link "ec429" [ref=e1220] [cursor=pointer]:
+                          - /url: /users/ec429
+                        - link "15y" [ref=e1222] [cursor=pointer]:
+                          - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=mL68WKiRrbyDhZbur
+                          - time [ref=e1224]: 15y
+                        - generic [ref=e1225]:
+                          - generic [ref=e1227]:
+                            - button [ref=e1229] [cursor=pointer]:
+                              - generic [ref=e1230]:
+                                - img
+                            - generic [ref=e1232]: "15"
+                            - button [ref=e1234] [cursor=pointer]:
+                              - generic [ref=e1235]:
+                                - img
+                          - generic [ref=e1236]:
+                            - button [ref=e1238] [cursor=pointer]:
+                              - img [ref=e1241]
+                            - generic [ref=e1244]: "0"
+                            - button [ref=e1246] [cursor=pointer]:
+                              - img [ref=e1249]
+                      - generic [ref=e1252]:
+                        - paragraph [ref=e1253]: That doesn't answer the question "Is a fœtus a person", it just supplies a definition of "person", which may or may not be relevant to any given query.
+                        - paragraph [ref=e1254]: Suppose my real query is "Can a fœtus talk?" Now, just because I choose to define "person" in such a way that most "person"s can talk, and in such a way that a fœtus classes as a "person", that doesn't make the probability that a fœtus can talk any different to if I'd defined "person" differently.
+                        - paragraph [ref=e1255]:
+                          - text: The whole point of these examples of disguised queries is that if you find yourself trying to answer them,
+                          - emphasis [ref=e1256]: you're doing it wrong
+                          - text: .
+                        - paragraph [ref=e1257]:
+                          - emphasis [ref=e1258]: Suppose we call the horse's tail a leg.
+                      - generic [ref=e1259]:
+                        - generic [ref=e1261] [cursor=pointer]: Reply
+                        - img [ref=e1266] [cursor=pointer]
+                    - generic [ref=e1278] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1279]: "3"
+                        - generic [ref=e1280]: kbladythinks
+                        - time [ref=e1282]: 7y
+                        - generic [ref=e1283]: I was told once that I was clearly not a college graduate. After some digging, he explained that I took the time to define the terms in a discussion, whereas college grads knew the definitions of words, and so didn't take the time to agree on them. Can't agree with him about that.
+                  - generic [ref=e1287] [cursor=pointer]:
+                    - generic:
+                      - generic [ref=e1288]: "2"
+                      - generic [ref=e1289]: lessdazed
+                      - time [ref=e1291]: 15y
+                      - generic [ref=e1292]: Hi, welcome!
+            - generic [ref=e1293]:
+              - generic [ref=e1296]:
+                - generic [ref=e1297]:
+                  - generic [ref=e1298] [cursor=pointer]:
+                    - text: "["
+                    - generic [ref=e1299]: "-"
+                    - text: "]"
+                  - link "Nick_Tarleton" [ref=e1302] [cursor=pointer]:
+                    - /url: /users/nick_tarleton
+                  - link "18y" [ref=e1304] [cursor=pointer]:
+                    - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=pdKkyp5KsFANkqKbT
+                    - time [ref=e1306]: 18y
+                  - generic [ref=e1307]:
+                    - generic [ref=e1309]:
+                      - button [ref=e1311] [cursor=pointer]:
+                        - generic [ref=e1312]:
+                          - img
+                      - generic [ref=e1314]: "11"
+                      - button [ref=e1316] [cursor=pointer]:
+                        - generic [ref=e1317]:
+                          - img
+                    - generic [ref=e1318]:
+                      - button [ref=e1320] [cursor=pointer]:
+                        - img [ref=e1323]
+                      - generic [ref=e1326]: "0"
+                      - button [ref=e1328] [cursor=pointer]:
+                        - img [ref=e1331]
+                - generic [ref=e1334]:
+                  - paragraph [ref=e1335]: People who argue that atheism is a religion "because it states beliefs about God" are really trying to argue (I think) that the reasoning methods used in atheism are on a par with the reasoning methods used in religion, or that atheism is no safer than religion in terms of the probability of causally engendering violence, etc...
+                  - paragraph [ref=e1336]: Or they're applying a Fully General Counterargument without actually trying to make any substantive point, or realizing that they should be?
+                - generic [ref=e1337]:
+                  - generic [ref=e1339] [cursor=pointer]: Reply
+                  - img [ref=e1344] [cursor=pointer]
+              - generic [ref=e1351]:
+                - generic [ref=e1353]:
+                  - generic [ref=e1356] [cursor=pointer]:
+                    - generic:
+                      - generic [ref=e1357]: "3"
+                      - generic [ref=e1358]: ignoramus
+                      - time [ref=e1360]: 14y
+                      - generic [ref=e1361]: "Indeed. For example: [...] I think that Jesus' response is a non sequitur (a well designed one (by using a technique similar to equivocation), which is why it makes for such good \"blocking\" technique). So there's no disguised query, since Jesus isn't querying at all, he's just trying to \"win\" the argument."
+                  - generic [ref=e1364]:
+                    - generic [ref=e1367] [cursor=pointer]:
+                      - generic:
+                        - generic [ref=e1368]: "-3"
+                        - generic [ref=e1369]: Tsujigiri
+                        - time [ref=e1371]: 14y
+                        - generic [ref=e1372]: There is a similarity between Christians and many atheists in their moral philosophy, however. Atheists may not believe in God, but I think they mostly adhere to the 10 commandments. At least Christians can say they follow their moral philosophy because God told them so. What reason do atheists have?
+                    - generic [ref=e1373]:
+                      - generic [ref=e1375]:
+                        - generic [ref=e1378] [cursor=pointer]:
+                          - generic:
+                            - generic [ref=e1379]: "1"
+                            - generic [ref=e1380]: ignoramus
+                            - time [ref=e1382]: 14y
+                            - generic [ref=e1383]: I was actually just trying to say that Eliezer gave a bad example of a disguised query. As for moral philosophy, it can be considered a science. So atheists that believe in morality should value it as any other science (for it's usefulness etc). Well, hm, atheists need not be fans of science. So they can be moral because they enjoy it, or simply because "why the heck not".
+                        - generic [ref=e1389] [cursor=pointer]:
+                          - generic:
+                            - generic [ref=e1390]: "-1"
+                            - generic [ref=e1391]: Tsujigiri
+                            - time [ref=e1393]: 14y
+                            - generic [ref=e1394]: I wouldn't call moral philosophy a science. If we both independently invented an imaginary creature, neither would be correct. They are simply the creatures we've arbitrarily created. There is no science of moral philosophy anymore than there is a science of inventing an imaginary creature. I'd say to be science there needs to be the ability to test whether something is valid. There is no such test for the validity of morals anymore than there is a test for the validity of an imaginary creature.
+                      - generic [ref=e1395]:
+                        - generic [ref=e1398] [cursor=pointer]:
+                          - generic:
+                            - generic [ref=e1399]: "5"
+                            - generic [ref=e1400]: TheOtherDave
+                            - time [ref=e1402]: 14y
+                            - generic [ref=e1403]: "You have that backwards. Moral people follow their moral philosophy because they believe it's the right thing to do, whether they are Christian or atheist or neither. Some moral people also believe God has told them to do certain things, and use those beliefs to help them select a moral philosophy. Those people are moral and religious. Other moral people don't believe that, and select a moral philosophy without the aid of that belief. Those people are moral and atheist. Some immoral people believe that God has told them to do certain things. Those people are immoral and religious. Some immoral people don't believe that. Those people are immoral and atheist. Incidentally, I know no atheists (whether moral or not) who adhere to the Talmudic version of the first commandment. But then, since you are talking about the ten commandments in a Christian rather than Jewish context, I suppose you don't subscribe to the Talmudic version anyway a. (cf http://en.wikipedia.org/wiki/Ten_Commandments#Two_texts_with_numbering_schemes) EDIT: I should probably also say explicitly that I don't mean to assert here that nobody follows the ten commandments simply because they believe God told them to... perhaps some people do. But someone who doesn't think the ten commandments are the right thing to do and does them anyway simply because God told them to is not a moral person, but rather a devout or God-fearing person. (e.g., Abraham setting out to sacrifice his son)."
+                        - generic [ref=e1404]:
+                          - generic [ref=e1409] [cursor=pointer]:
+                            - generic:
+                              - generic [ref=e1410]: "3"
+                              - generic [ref=e1411]: DanArmak
+                              - time [ref=e1413]: 14y
+                              - generic [ref=e1414]: I also know no atheists who adhere to the second commandment (make no graven image), the fourth (no "work" on Shabbath), or the tenth (do not covet).
+                          - generic [ref=e1418] [cursor=pointer]:
+                            - generic:
+                              - generic [ref=e1419]: "-13"
+                              - generic [ref=e1420]: Tsujigiri
+                              - time [ref=e1422]: 14y
+                      - generic [ref=e1423]:
+                        - generic [ref=e1426]:
+                          - generic [ref=e1427]:
+                            - generic [ref=e1428] [cursor=pointer]:
+                              - text: "["
+                              - generic [ref=e1429]: "-"
+                              - text: "]"
+                            - generic [ref=e1431]: "[anonymous]"
+                            - link "14y" [ref=e1433] [cursor=pointer]:
+                              - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=nviiFJe6e2FEvcTL7
+                              - time [ref=e1435]: 14y
+                            - generic [ref=e1436]:
+                              - generic [ref=e1438]:
+                                - button [ref=e1440] [cursor=pointer]:
+                                  - generic [ref=e1441]:
+                                    - img
+                                - generic [ref=e1443]: "11"
+                                - button [ref=e1445] [cursor=pointer]:
+                                  - generic [ref=e1446]:
+                                    - img
+                              - generic [ref=e1447]:
+                                - button [ref=e1449] [cursor=pointer]:
+                                  - img [ref=e1452]
+                                - generic [ref=e1455]: "0"
+                                - button [ref=e1457] [cursor=pointer]:
+                                  - img [ref=e1460]
+                          - generic [ref=e1463]:
+                            - blockquote [ref=e1464]:
+                              - paragraph [ref=e1465]: Atheists may not believe in God, but I think they mostly adhere to the 10 commandments.
+                            - paragraph [ref=e1466]: I think you're just trying to say that atheists follow moral expectations of modern Christian-influenced culture, but taken literally, the statement's nonsense.
+                            - paragraph [ref=e1467]:
+                              - text: I mean, look at the
+                              - link "Ten Commandments" [ref=e1470] [cursor=pointer]:
+                                - /url: http://en.wikipedia.org/wiki/Ten_Commandments
+                              - text: ":"
+                            - blockquote [ref=e1471]:
+                              - list [ref=e1472]:
+                                - listitem [ref=e1473]: Thou shalt have no other gods before me.
+                                - listitem [ref=e1474]: Thou shalt not make unto thee any graven image (...).
+                                - listitem [ref=e1475]: Thou shalt not take the name of the Lord thy God in vain (...).
+                                - listitem [ref=e1476]: Remember the sabbath day, to keep it holy. (...)
+                                - listitem [ref=e1477]: Honour thy father and thy mother (...).
+                                - listitem [ref=e1478]: Thou shalt not kill.
+                                - listitem [ref=e1479]: Thou shalt not commit adultery.
+                                - listitem [ref=e1480]: Thou shalt not steal.
+                                - listitem [ref=e1481]: Thou shalt not bear false witness against thy neighbour.
+                                - listitem [ref=e1482]:
+                                  - text: Thou shalt not covet thy neighbour's house, (...)
+                                  - link "nor his ass" [ref=e1485] [cursor=pointer]:
+                                    - /url: http://www.youtube.com/watch?v=vdQ-BVG4ZHg
+                                  - text: ", nor any thing that is thy neighbour's."
+                            - paragraph [ref=e1486]: The first 4 are blatantly ignored, 6 is famously problematic, 9 and 10 are mostly ignored (via gossip, status seeking, greed and so on) and finally 7 and 8 might be typically obeyed, but minor theft (especial anonymous) is common and adultery has at least 10% base rates.
+                            - paragraph [ref=e1487]: How is this a "mostly adhered"? (Obviously, Christians and atheists don't really differ in their behavior here.)
+                          - generic [ref=e1488]:
+                            - generic [ref=e1490] [cursor=pointer]: Reply
+                            - img [ref=e1495] [cursor=pointer]
+                        - generic [ref=e1502]:
+                          - generic [ref=e1504]:
+                            - generic [ref=e1507] [cursor=pointer]:
+                              - generic:
+                                - generic [ref=e1508]: "2"
+                                - generic [ref=e1509]: TheOtherDave
+                                - time [ref=e1511]: 14y
+                                - generic [ref=e1512]: In the interests of charitable reading, I took them to mean "atheists adhere to the ten commandments about as well as Christians do".
+                            - generic [ref=e1515]:
+                              - generic [ref=e1518] [cursor=pointer]:
+                                - generic:
+                                  - generic [ref=e1519]: "1"
+                                  - generic [ref=e1520]: wedrifid
+                                  - time [ref=e1522]: 14y
+                                  - generic [ref=e1523]: I looked through them and I was surprised at how little I break them. 4 is way off, of course and I'll honour my father and mother to the extend they damn well earn it (rather a lot as it turns out). The thing is going by the standards that I actually held for following all those commandments when I was Christian I could have expected to be violating all over the place. I'm particularly disappointed with No. 7. I've been making a damn fine effort to be living in sin as much as conveniently possible but since I have yet to sleep with a married woman I seem to be clean on that one. Going by the actual commandment I'm probably even ok with 3. The "swearing" thing seems to be totally blown out of proportion.
+                              - generic [ref=e1526]:
+                                - generic [ref=e1529] [cursor=pointer]:
+                                  - generic:
+                                    - generic [ref=e1530]: "0"
+                                    - generic [ref=e1531]: TheOtherDave
+                                    - time [ref=e1533]: 14y
+                                    - generic [ref=e1534]: "Personally I break some of them more often than I'd like, but then again I did so when I identified as an Orthodox Jew as well. Of course, if I were to take this seriously, I'd get bogged down in definitional issues pretty quickly. For example, I've slept with a married man (married to someone else, I mean), so I guess I've violated #7... or at least, he did. OTOH, given that everyone involved was aware of the situation and OK with it, I don't consider that any of us were doing anything wrong in the process. But a certain kind of religious person would say that my beliefs about what's right and wrong don't matter. Of course, I would disagree."
+                                - generic [ref=e1535]:
+                                  - generic [ref=e1537]:
+                                    - generic [ref=e1540] [cursor=pointer]:
+                                      - generic:
+                                        - generic [ref=e1541]: "1"
+                                        - generic [ref=e1542]: wedrifid
+                                        - time [ref=e1544]: 14y
+                                        - generic [ref=e1545]: I suppose you do technically scrape through in adhering to No. 7 as it is presented in that wikipedia passage based on two technicalities. That it it is only adultery if you sleep with a married woman and that being the partner of the adulterer doesn't qualify. (I'm a little skeptical of that passage actually). Come to think of it you may get a reprieve for a third exception if it is the case that the other guy was married to a guy (ambiguous).
+                                    - generic [ref=e1551] [cursor=pointer]:
+                                      - generic:
+                                        - generic [ref=e1552]: "0"
+                                        - generic [ref=e1553]: TheOtherDave
+                                        - time [ref=e1555]: 14y
+                                        - generic [ref=e1556]: The guy in question was married to a woman at the time. Agreed about the technicalities.
+                                  - generic [ref=e1557]:
+                                    - generic [ref=e1560] [cursor=pointer]:
+                                      - generic:
+                                        - generic [ref=e1561]: "1"
+                                        - generic [ref=e1562]: wedrifid
+                                        - time [ref=e1564]: 14y
+                                        - generic [ref=e1565]: It's 6, isn't it! (Dexter has that problem too - I recommend following his example and at least chanelling it into vigilantism.)
+                                    - generic [ref=e1568]:
+                                      - generic [ref=e1571] [cursor=pointer]:
+                                        - generic:
+                                          - generic [ref=e1572]: "1"
+                                          - generic [ref=e1573]: TheOtherDave
+                                          - time [ref=e1575]: 14y
+                                          - generic [ref=e1576]: Well, I kill all the time... most people I know do. But if we adopt the conventional practice of translating "lo tirtzoch" as "don't murder", and further adopt the conventional practice of not labeling killings we're morally OK with as "murder", then I squeak by here as well... I'm basically OK with all the killing I've done. I've never actually watched Dexter, but I gather it's about someone compelled to murder people who chooses to murder only people where the world is improved by their death? Hrm. I'm not sure I agree. Certainly, if I'm going to murder someone, it should be the least valuable person I can find. Which might turn out to be myself. The question for me is how reliable my judgment is on the matter. If I'm not a reliable judge, I should recuse myself from judgement. Perhaps I should assemble a committee to decide on my victims.
+                                      - generic [ref=e1577]:
+                                        - generic [ref=e1579]:
+                                          - generic [ref=e1582] [cursor=pointer]:
+                                            - generic:
+                                              - generic [ref=e1583]: "0"
+                                              - generic [ref=e1584]: wedrifid
+                                              - time [ref=e1586]: 14y
+                                              - generic [ref=e1587]: That doesn't sound like a convention that the quite fits with culture or spirit of the holy law in question or of the culture which would create such a law.
+                                          - generic [ref=e1590]:
+                                            - generic [ref=e1593] [cursor=pointer]:
+                                              - generic:
+                                                - generic [ref=e1594]: "0"
+                                                - generic [ref=e1595]: Vaniver
+                                                - time [ref=e1597]: 14y
+                                                - generic [ref=e1598]: Huh? The Israelites were for killing people during wartime, and the various cultures that interpreted that law all bent it to exclude the deaths they wanted to cause.
+                                            - generic [ref=e1601]:
+                                              - generic [ref=e1604] [cursor=pointer]:
+                                                - generic:
+                                                  - generic [ref=e1605]: "0"
+                                                  - generic [ref=e1606]: wedrifid
+                                                  - time [ref=e1608]: 14y
+                                                  - generic [ref=e1609]: Oh, of course you take into account what the Israelites considered murder, and whatever meaning they would have embedded into whatever word it was that is translated into murder or kill. But what we cannot reasonably do is plug in our moral values around killing. Being as we are a culture of immoral infidels by the standards of the law in question! (Gentiles too come to think of it.) What we consider moral killings is damn near irrelevant.
+                                              - generic [ref=e1610]:
+                                                - generic [ref=e1615] [cursor=pointer]:
+                                                  - generic:
+                                                    - generic [ref=e1616]: "0"
+                                                    - generic [ref=e1617]: TheOtherDave
+                                                    - time [ref=e1619]: 14y
+                                                    - generic [ref=e1620]: (nods) As noted elsewhere, you're of course right. I was being snarky in the general direction of my Yeshiva upbringing, at the expense of accuracy. Bad Dave. No biscuit.
+                                                - generic [ref=e1621]:
+                                                  - generic [ref=e1624] [cursor=pointer]:
+                                                    - generic:
+                                                      - generic [ref=e1625]: "0"
+                                                      - generic [ref=e1626]: Vaniver
+                                                      - time [ref=e1628]: 14y
+                                                      - generic [ref=e1629]: It's not clear to me what you mean here. I took TheOtherDave to be interpreting "lo tirtzoch" as "socially disapproved killing is socially disapproved," which is vacuous on purpose. That is, a culture that would create such a law is a culture of homo hypocritus. To put it another way, the convention of how you interpret a law is more important that the written content of the law, and so the relevant question is if the Israelites saw "lo tirtzoch" as absolutely opposed to killing or not. (I would imagine not, as there were several crimes which mandated the community collectively kill the person who committed the crime!)
+                                                  - generic [ref=e1632]:
+                                                    - generic [ref=e1635] [cursor=pointer]:
+                                                      - generic:
+                                                        - generic [ref=e1636]: "0"
+                                                        - generic [ref=e1637]: wedrifid
+                                                        - time [ref=e1639]: 14y
+                                                        - generic [ref=e1640]: I thought that was about what I said.
+                                                    - generic [ref=e1646] [cursor=pointer]:
+                                                      - generic:
+                                                        - generic [ref=e1647]: "0"
+                                                        - generic [ref=e1648]: Vaniver
+                                                        - time [ref=e1650]: 14y
+                                                        - generic [ref=e1651]: "I got the opposite impression from two sources: First, I saw the culture and spirit of the drafters of such a law to be self-serving / relativist / hypocritical, and so thought the convention was the embodiment of that. Your claim that the convention didn't fit with the culture suggested to me that you thought the Israelites saw the law as unchanging and unbendable. Second, the comment that claimed what we consider moral was irrelevant struck me as evidence for the previous suggestion, that there is a moral standard set at one time and not changing, rather than us modeling the Israelites' exmaple by bending the definitions to suit our purposes. It's plausible we agree except are using different definitions for things like culture and spirit, but also plausible we don't agree on key ideas here."
+                                        - generic [ref=e1655] [cursor=pointer]:
+                                          - generic:
+                                            - generic [ref=e1656]: "0"
+                                            - generic [ref=e1657]: wedrifid
+                                            - time [ref=e1659]: 14y
+                                            - generic [ref=e1660]: In what I've seen of Dexter the most ethically grey kill was of a pedophile who was stalking his step-daughter (and that's a murder I'd be comfortable committing!). The rest were all murderers who were highly likely to kill again. For my part I would prefer to live in a world in which other people don't go around being vigilantes and also don't want to be a vigilante myself. Because frankly it isn't my problem and it isn't worth the risk or the effort it would take me.
+                                        - generic [ref=e1664] [cursor=pointer]:
+                                          - generic:
+                                            - generic [ref=e1665]: "0"
+                                            - generic [ref=e1666]: ArisKatsaris
+                                            - time [ref=e1668]: 14y
+                                            - generic [ref=e1669]: "Slightly more specific and slightly less consequentialistic than that. He chooses to kill only other murderers, and usually only cold-blooded murderers who are unrepentant and likely to murder again, (example: one time he stopped when he realized his selected victim had only murdered the person that had raped him in prison). But it's not about improving the world really, sometimes he even sabotages the police investigation just so he can have these people to himself."
+                                        - generic [ref=e1670]:
+                                          - generic [ref=e1673] [cursor=pointer]:
+                                            - generic:
+                                              - generic [ref=e1674]: "0"
+                                              - generic [ref=e1675]: ArisKatsaris
+                                              - time [ref=e1677]: 14y
+                                              - generic [ref=e1678]: I think the general idea is that by "murder" the concept of 'do not kill people without it being prescribed by the law' is meant -- with the rest of Mosaic law indicating in which cases it was okay to kill people nonetheless. So killing insects doesn't count (because they're not people), nor being a state executioner counts (because it's prescribed by the law).
+                                          - generic [ref=e1684] [cursor=pointer]:
+                                            - generic:
+                                              - generic [ref=e1685]: "1"
+                                              - generic [ref=e1686]: TheOtherDave
+                                              - time [ref=e1688]: 14y
+                                              - generic [ref=e1689]: Yeah, you're right. I was being snarky in the general direction of my Yeshiva upbringing, at the expense of accuracy.
+                          - generic [ref=e1690]:
+                            - generic [ref=e1693] [cursor=pointer]:
+                              - generic:
+                                - generic [ref=e1694]: "4"
+                                - generic [ref=e1695]: Tsujigiri
+                                - time [ref=e1697]: 14y
+                                - generic [ref=e1698]: I'll have to concede that atheists moral beliefs don't mostly adhere to the 10 commandments. The point I wished to make was that many of the moral philosophies of rationalists are very similar to their Christian counterparts. I believe the similarity is mostly due to the culture they were brought up in rather than whether they believe God exists or not. You might even consider God to be irrelevant to the issue.
+                            - generic [ref=e1699]:
+                              - generic [ref=e1704] [cursor=pointer]:
+                                - generic:
+                                  - generic [ref=e1705]: "0"
+                                  - generic [ref=e1707]: "[anonymous]"
+                                  - time [ref=e1709]: 14y
+                                  - generic [ref=e1710]: "Agreed. Obligatory Moldbug link (warning: long, and only first in a series) for an interesting derivation of (some) modern morality as atheistic Christianity."
+                              - generic [ref=e1714] [cursor=pointer]:
+                                - generic:
+                                  - generic [ref=e1715]: "0"
+                                  - generic [ref=e1716]: TheOtherDave
+                                  - time [ref=e1718]: 14y
+                                  - generic [ref=e1719]: I certainly agree that many people's moral beliefs are shaped and constrained by their culture, and that God is irrelevant to this, as is belief in God.
+                          - generic [ref=e1723] [cursor=pointer]:
+                            - generic:
+                              - generic [ref=e1724]: "0"
+                              - generic [ref=e1725]: juliawise
+                              - time [ref=e1727]: 14y
+                              - generic [ref=e1728]: Upvoted for the 10th commandment link.
+                      - generic [ref=e1732] [cursor=pointer]:
+                        - generic:
+                          - generic [ref=e1733]: "0"
+                          - generic [ref=e1734]: raptortech97
+                          - time [ref=e1736]: 14y
+                          - generic [ref=e1737]: Maybe because they have decided that a specific moral philosophy would be most useful?
+                      - generic [ref=e1741] [cursor=pointer]:
+                        - generic:
+                          - generic [ref=e1742]: "1"
+                          - generic [ref=e1743]: Ezekiel
+                          - time [ref=e1745]: 14y
+                          - generic [ref=e1746]: "Nitpick: Only half of the Ten Commandments are nice humanitarian commandments like \"don't murder\". The other half are all about how humans should interact with God, and I don't think most atheists put much weight behind \"you will not make for yourself any statue or any picture of the sky above or the earth below or the water that is beneath the earth\". [...] They can say that, but unless they already have a moral philosophy that gives God moral authority (or states that Hell is to be avoided, or justifies gratitude for Creation, or...) that's not actually a reason."
+                      - generic [ref=e1747]:
+                        - generic [ref=e1750] [cursor=pointer]:
+                          - generic:
+                            - generic [ref=e1751]: "1"
+                            - generic [ref=e1753]: "[anonymous]"
+                            - time [ref=e1755]: 14y
+                            - generic [ref=e1756]: Well, for myself, it's because game theory says the world works better when people aren't dicks to one another, and because empathy (intuitive and rational) allow me to put myself in other peoples' shoes, and to appreciate that it's good to try to help them when I can, since they're very much like myself. I have desires and goals, and so do they, and mine aren't particularly more important simply because they're mine.
+                        - generic [ref=e1762] [cursor=pointer]:
+                          - generic:
+                            - generic [ref=e1763]: "0"
+                            - generic [ref=e1764]: Swimmer963 (Miranda Dixon-Luinenburg)
+                            - time [ref=e1766]: 14y
+                            - generic [ref=e1767]: This is the base of my whole moral philosophy, too. And you know what? There are people who actually disagree with it! Responses I've gotten from people in discussions have ranged from "I don't give a shit about other people, they're not me" to "you can't think like that, you need to think selfishly, because otherwise everyone will trample on you."
+                      - generic [ref=e1768]:
+                        - generic [ref=e1771] [cursor=pointer]:
+                          - generic:
+                            - generic [ref=e1772]: "0"
+                            - generic [ref=e1773]: Swimmer963 (Miranda Dixon-Luinenburg)
+                            - time [ref=e1775]: 14y
+                            - generic [ref=e1776]: Lots of reasons. It's pretty much built into the human brain that being nice to your friends and neighbours is helpful to long-term survival, so most people get pleasant feelings from doing something they consider 'good', and feel guilty after doing something they consider 'bad'. You don't need the Commandments themselves. ...Oh and the whole idea that it's better to live in a society where everyone follows laws like "don't murder"...even if you personally could benefit from murdering the people who you didn't like, you don't want everyone else murdering people too, and so it makes sense, as a society, to teach children that 'murder is bad'.
+                        - generic [ref=e1779]:
+                          - generic [ref=e1782] [cursor=pointer]:
+                            - generic:
+                              - generic [ref=e1783]: "0"
+                              - generic [ref=e1785]: "[anonymous]"
+                              - time [ref=e1787]: 14y
+                              - generic [ref=e1788]: "Are these reasons to not kill people or steal? Can I propose a test? Suppose that it were built into the human brain that being cruel to your friends and neighbors is helpful to long-term survival (bear with me on the evolutionary implausibility of this), and so must people get pleasant feelings from doing things they consider cruel, and feel guilty after doing nice things. Suppose all that were true: would you then have good reasons to to be cruel? If not, then how are they reasons to be nice?"
+                          - generic [ref=e1789]:
+                            - generic [ref=e1791]:
+                              - generic [ref=e1794] [cursor=pointer]:
+                                - generic:
+                                  - generic [ref=e1795]: "0"
+                                  - generic [ref=e1796]: dlthomas
+                                  - time [ref=e1798]: 14y
+                                  - generic [ref=e1799]: You would clearly have reasons; whether they are good reasons depends how you're measuring "good".
+                              - generic [ref=e1802]:
+                                - generic [ref=e1805] [cursor=pointer]:
+                                  - generic:
+                                    - generic [ref=e1806]: "0"
+                                    - generic [ref=e1808]: "[anonymous]"
+                                    - time [ref=e1810]: 14y
+                                    - generic [ref=e1811]: We might want to distinguish here between reasons to do something and reasons why one does something. So imagine we discover that the color green makes people want to compromise, so we paint a boardroom green. During a meeting, the chairperson decides to compromise. Even if the chairperson knows about the study, and is being affected by the green walls in a decisive way (such that the greenness of the walls is the reason why he or she compromises), could the chairperson take the greenness of the walls as a reason to compromise?
+                                - generic [ref=e1814]:
+                                  - generic [ref=e1817] [cursor=pointer]:
+                                    - generic:
+                                      - generic [ref=e1818]: "0"
+                                      - generic [ref=e1819]: dlthomas
+                                      - time [ref=e1821]: 14y
+                                      - generic [ref=e1822]: A reasonable distinction, but I don't think it quite maps onto the issue at hand. You said to suppose "people get pleasant feelings from doing things they consider cruel, and feel guilty after doing nice things". If one has a goal to feel pleasant feelings, and is structured in that manner, then that is reason to be cruel, not just reason why they would be cruel.
+                                  - generic [ref=e1825]:
+                                    - generic [ref=e1828] [cursor=pointer]:
+                                      - generic:
+                                        - generic [ref=e1829]: "0"
+                                        - generic [ref=e1831]: "[anonymous]"
+                                        - time [ref=e1833]: 14y
+                                        - generic [ref=e1834]: Agreed, but so much is packed into that 'if'. We all seek pleasure, but not one of us believes it is an unqualified good. The implication of Swimmer's post was that atheists have reasons to obey the ten commandments (well, 4 or 5 of them) comparable in formal terms to the reasons Christians have (God'll burn me if I don't, or whatever). That is, the claim seems to be that atheists can justify their actions. Now, if someone does something nice for me, and I ask her why she did that, she can reply with some facts about evolutionary biology. This might explain her behavior, but it doesn't justify it. If we imagine someone committing a murder and then telling us something about her (perhaps defective) neurobiology, we might take this to explain their behavior, but never to justify it. We would never say 'Yeah, I guess now that you make those observations about your brain, it was reasonable of you to kill that guy." The point is that the murderer hasn't just given us a bad reason, she hasn't given us a reason at all. We cannot call her rational if this is all she has.
+                                    - generic [ref=e1837]:
+                                      - generic [ref=e1840] [cursor=pointer]:
+                                        - generic:
+                                          - generic [ref=e1841]: "-1"
+                                          - generic [ref=e1842]: Swimmer963 (Miranda Dixon-Luinenburg)
+                                          - time [ref=e1844]: 14y
+                                          - generic [ref=e1845]: I didn't claim that, and if I implied it, it was by accident. (Although I do think that a lot of atheists have just as strong if not stronger reasons to obey certain moral rules, the examples I gave weren't those examples.) I was trying to point out that if someone decides one day to stop believing in God, and realizes that this means God won't smite them if they break one of the Ten Commandments, that doesn't mean they'll go out and murder someone. Their moral instincts, and the positive/negative reinforcement to obey them (i.e. pleasure or guilt), keep existing regardless of external laws. [...] So we ask her why, and she says "oh, he took the seat that I wanted on the bus three weeks in a row, and his humming is annoying, and he always copies my exams." Which might not be a good reason to murder someone according to you, with your normal neurobiology–you would content yourself with fuming and making rude comments about him to your friends–but she considers it a good reason, because her mental 'brakes' are off.
+                                      - generic [ref=e1851] [cursor=pointer]:
+                                        - generic:
+                                          - generic [ref=e1852]: "0"
+                                          - generic [ref=e1854]: "[anonymous]"
+                                          - time [ref=e1856]: 14y
+                                          - generic [ref=e1857]: Right, we agree on that. But if the apostate thereafter has no reason to regard themselves as morally responsible, then their moral behavior is no longer fully rational. They're sort of going through the motions. [...] The question here isn't about good vs. bad reasons, but between admissible vs. inadmissible reasons. Hearsay is often a bad reason to believe that Peter shot Paul, but it is a reason. It counts as evidence. If that's all you have, then you're not reasoning well, but you are reasoning. The number of planets orbiting the star furthest from the sun is not a reason to believe Peter shot Paul. It's not that it's a bad reason. It's just totally inadmissible. If that's all you have, then you're not reasoning badly, you're just not reasoning at all.
+                            - generic [ref=e1858]:
+                              - generic [ref=e1861] [cursor=pointer]:
+                                - generic:
+                                  - generic [ref=e1862]: "-2"
+                                  - generic [ref=e1863]: Swimmer963 (Miranda Dixon-Luinenburg)
+                                  - time [ref=e1865]: 14y
+                                  - generic [ref=e1866]: It's a hard world to visualize, but if cruelty-tendencies evolved because people survived better by being cruel, then cruelty works in that world, and society would be dysfunctional if there were rules against it (imagine our world having rules against being nice, ever!), and to me, something being useful is a good reason to do it. If we ever came across that species, no doubt we'd be appalled, but the universe isn't appalled. Not unless you believe that morality exists in itself, independently of brains...which I don't. [...] If there were an entire society built out of people like this, then probably quite a lot of minor day-to-day cruelty would go on, and there would be rationalized Laws, like the Ten Commandments, justifying why being cruel was so important, and there would be social customs and structures and etiquette involved in making sure the right kind of cruelty happened at the right times... I'm not saying that our brain's evolutionary capacity for empathy is the ultimate perfect moral theory. But I do think that all those moral theories, perfect or ultimate or not, exist because our brains evolved to have the little voice of empathy. Which means that if you take away the Ten Commandments, most people won't stop being nice to people they care about. (Being nice to strangers or members of an outgroup is a completely different matter...there seems to be a mechanism for turning off empathy towards groups of strangers, and plenty of societies have produced people who were very nice to their friends and neighbors, and barbaric towards everyone else.) Most atheists don't accept deontological moral theories–i.e. any theory that talks about a set of a priori rules of what's right versus wrong. But morality doesn't go away. If you reason it out starting from what our brains already tell us, you end up with utilitarian theories ("I like being happy, and I'm capable of empathy, so I think other people must like being happy too, and since my perfect world woul
+                              - generic [ref=e1869]:
+                                - generic [ref=e1872] [cursor=pointer]:
+                                  - generic:
+                                    - generic [ref=e1873]: "0"
+                                    - generic [ref=e1875]: "[anonymous]"
+                                    - time [ref=e1877]: 14y
+                                    - generic [ref=e1878]: "So we agree that one might have a reason to do something because it's recommended by moral theories. What I'm questioning is whether or not you can have a reason to do something on the basis of brain mechanisms or if you can have reason to adopt a moral theory on the basis of brain mechanisms. And I don't mean 'good' reasons, I mean admissible reasons. Imagine someone thinking to themselves: 'Well, my brain is structured in such and such a way as a result of evolution, so I think I'll kill this completely innocent guy over here.' Is he thinking rationally? And concerning the adoption of a moral theory: [...] There's a missing inference here from wanting to be happy to wanting other people to be happy. Can you explain how you think this argument gets filled out? As it stands, it's not valid. Likewise: [...] Why should the fact that other people want something motivate me? It doesn't follow from the fact that my wanting something motivates me, that another person's wanting that thing should motivate me. In both these arguments there's a missing step which, I think, is pertinent to the problem above: the fact that I am motivated to X doesn't even give me reason to X, much less a reason to pursue the desires of other people."
+                                - generic [ref=e1881]:
+                                  - generic [ref=e1884] [cursor=pointer]:
+                                    - generic:
+                                      - generic [ref=e1885]: "0"
+                                      - generic [ref=e1886]: Swimmer963 (Miranda Dixon-Luinenburg)
+                                      - time [ref=e1888]: 14y
+                                      - generic [ref=e1889]: Beliefs don't feel like beliefs, they feel like the way the world is. Likewise with brain structures. If someone is a sociopath (in short, their brain mechanism for empathy is broken) and they decide they want to kill someone for reasons X and Y, are they being any more irrational than someone who volunteers at a soup kitchen because seeing people smile when he hands them their food makes him feel fulfilled? [...] Sorry for not being clear. The inference is that "empathy", the ability to step into someone else's shoes and imagine being them, is an innate ability that most humans have, leads you to think that other people are like you...when they feel pleasure, it's like your pleasure, and when they feel pain, it's like your pain, and there's a hypothetical world where you could have been them. I don't think this hypothetical is something that's taught by moral theories, because I remember reasoning with it as a child when I'd had basically no exposure to formal moral theories, only the standard "that wasn't nice, you should apologize." If you could have been them, you want the same things for them that you'd want for yourself. I think this is immediately obvious for family members and friends...do you want your mother to be happy? Your children?
+                                  - generic [ref=e1892]:
+                                    - generic [ref=e1895] [cursor=pointer]:
+                                      - generic:
+                                        - generic [ref=e1896]: "0"
+                                        - generic [ref=e1898]: "[anonymous]"
+                                        - time [ref=e1900]: 14y
+                                        - generic [ref=e1901]: "Perhaps on some level this is right, but the fact that I can assess the truth of my beliefs means that they don't feel like the way the world is in an important respect. They feel like things that are true and false. The way the world is has no truth value. Very small children have problem with this distinction, but so far as I can tell almost all healthy adults do not believe that their beliefs are identical with the world. ETA: That sounded jerky. I didn't intend any covert meanness, and please forgive any appearance of that. [...] I think I really don't understand your question. Could you explain the idea behind this a little better? My objection was that there are reasons to do things, and reasons why we do things, and while all reasons to do things are also reasons why, there are reasons why that are not reasons to do things. For example, having a micro-stroke might be the reason why I drive my car over an embankment, but it's not a reason to drive one's car over an embankment. No rational person could say to themselves \"Huh, I just had a micro-stroke. I guess that means I should drive over this embankment.\" [...] Sure, but I take myself to have moral reasons for this. I may feel this way because of my biology, but my biology is never itself a reason for me to do anything."
+                                    - generic [ref=e1902]:
+                                      - generic [ref=e1904]:
+                                        - generic [ref=e1907] [cursor=pointer]:
+                                          - generic:
+                                            - generic [ref=e1908]: "1"
+                                            - generic [ref=e1909]: Swimmer963 (Miranda Dixon-Luinenburg)
+                                            - time [ref=e1911]: 14y
+                                            - generic [ref=e1912]: "OK, let me give you a better example. When you look at something, a lot of very complex hardware packed into your retina, optic nerve, and visual cortex, a lot of hard-won complexity optimized over millions of years, is going all out analyzing the data and presenting you with comprehensible shapes, colour, and movement, as well as helpful recognizing objects for you. When you look at something, are you aware of all that happening? Or do you just see it? (Disclaimer: if you've read a lot about neuroscience, it's quite possible that sometimes you do think about your visual processing centres while you're looking at something. But the average person wouldn't, and the average person probably doesn't think 'well, there go my empathy centres again' when they see an old lady having trouble with her grocery bag and feel a desire to help her.) [...] Okay, let's try to unpack this. In my example, we have a sociopath who wants to murder someone. The reason why he wants to murder someone, when most people don't, is because there's a centre in his brain that's broken and so hasn't learned to see the world from another's perspective, thus hasn't internalized any social morality because it doesn't make sense to him...basically, people are objects to him, so why not kill them. His reason to murder someone is because, let's say, they're dating a girl he wants to date. Most non-sociopaths wouldn't consider that a reason to murder anyone, but the reason why they wouldn't is because they have an innate understanding that other people feel pain, of the concept of fairness, etc, and were thus capable of learning more complex moral rules as well. [...] The way I see it, the biology aspect is both necessary and sufficient for this kind of behaviour. Someone without the requisite biology wouldn't be a good parent or friend because they'd see no reason to make an effort (unless they were deliberately \"faking it\" to benefit from that person). And an ordinary human being raised with no ex"
+                                        - generic [ref=e1915]:
+                                          - generic [ref=e1918] [cursor=pointer]:
+                                            - generic:
+                                              - generic [ref=e1919]: "0"
+                                              - generic [ref=e1921]: "[anonymous]"
+                                              - time [ref=e1923]: 14y
+                                              - generic [ref=e1924]: "I just see it. I'm aware on some abstract level, but I never think about this when I see things, and I don't take it into account when I confidently believe what I see. \"His reason to murder someone is because, let's say, they're dating a girl he wants to date. Most non-sociopaths wouldn't consider that a reason to murder anyone\" I guess I'd disagree with the second claim, or at least I'd want to qualify it. Having a broken brain center is an inadmissible reason to kill someone. If that's the only explanation someone could give (or that we could supply them) then we wouldn't even hold them responsible for their actions. But dating your beloved really is a reason to kill someone. It's a very bad reason, all things considered, but it is a reason. In this case, the killer would be held responsible. \"The way I see it, the biology aspect is both necessary and sufficient for this kind of behaviour. \" Necessary, we agree. Sufficient is, I think, too much, especially if we're relying on evolutionary explanations, which should never stand in without qualification for psychological, much less rational explanations. After all, I could come to hate my family if our relationship soured. This happens to many, many people who are not significantly different from me in this biological respect. An ordinary human being raised with no exposure to moral rules in an extremely strange counterfactual: no person I have ever met, or ever heard of, is like this. I would probably say that there's not really any sense in which they were 'raised' at all. Could they have friends? Is that so morally neutral an idea that one could learn it while leaning nothing of loyalty? I really don't think I can imagine a rational, language-using human adult who hasn't been exposed to moral rules. So the 'necessity' case is granted. We agree there. The 'sufficiency' case is very problematic. I don't think you could even have learned a first language without being exposed to moral rules, and if you never"
+                                          - generic [ref=e1927]:
+                                            - generic [ref=e1930] [cursor=pointer]:
+                                              - generic:
+                                                - generic [ref=e1931]: "0"
+                                                - generic [ref=e1932]: Swimmer963 (Miranda Dixon-Luinenburg)
+                                                - time [ref=e1934]: 14y
+                                                - generic [ref=e1935]: "A weak example of this: someone from a society that doesn't have any explicit moral rules, i.e. 'Ten Commandments.' They might follow laws, but but the laws aren't explained 'A is the right thing to do' or 'B is wrong'. Strong version: someone whose parents never told them 'don't do that, that's wrong/mean/bad/etc' or 'you should do this, because it's the right thing/what good people do/etc.' Someone raised in that context would probably be strange, and kind of undisciplined, and probably pretty thoughtless about the consequences of actions, and might include only a small number of people in their 'circle of empathy'...but I don't think they'd be incapable of having friends/being nice.'"
+                                            - generic [ref=e1941] [cursor=pointer]:
+                                              - generic:
+                                                - generic [ref=e1942]: "0"
+                                                - generic [ref=e1944]: "[anonymous]"
+                                                - time [ref=e1946]: 14y
+                                                - generic [ref=e1947]: "I can see a case like this, but morality is a much broader idea than can be captured by a list of divine commands and similar such things. Even Christians, Jews, and Muslims would say that the ten commandments are just a sort of beginning, and not all on their own sufficient to be moral ideas. [...] Huh, we have pretty different intuitions about this: I have a hard time imagining how you'd even get a human being out of that situation. I mean, animals, even really crappy ones like rats, can be empathetic toward one another. But there's no morality in a rat, and we would never think to praise or blame one for its behavior. Empathy itself is necessary for morality, but far from sufficient."
+                                      - generic [ref=e1948]:
+                                        - generic [ref=e1951] [cursor=pointer]:
+                                          - generic:
+                                            - generic [ref=e1952]: "1"
+                                            - generic [ref=e1953]: orthonormal
+                                            - time [ref=e1955]: 14y
+                                            - generic [ref=e1956]: Relevant LW post.
+                                        - generic [ref=e1959]:
+                                          - generic [ref=e1962] [cursor=pointer]:
+                                            - generic:
+                                              - generic [ref=e1963]: "0"
+                                              - generic [ref=e1965]: "[anonymous]"
+                                              - time [ref=e1967]: 14y
+                                              - generic [ref=e1968]: "That post is in need of some serious editing: I genuinely couldn't tell if it was on the whole agreeing with what I was saying or not. I have a puzzle for you: suppose we lived in a universe which is entirely deterministic. From the present state of the universe, all future states could be computed. Would that mean that deliberation in which we try to come to a decision about what to do is meaningless, impossible, or somehow undermined? Or would this make no difference?"
+                                          - generic [ref=e1971]:
+                                            - generic [ref=e1974] [cursor=pointer]:
+                                              - generic:
+                                                - generic [ref=e1975]: "3"
+                                                - generic [ref=e1976]: orthonormal
+                                                - time [ref=e1978]: 14y
+                                                - generic [ref=e1979]: That post didn't have a conclusion, because EY wanted to get much further into his Metaethics sequence before offering one. [...] It makes no difference. In fact, many-worlds is a deterministic universe; it just so happens there are different versions of future-you who experience/do different things, so it's not "deterministic from your viewpoint".
+                                            - generic [ref=e1982]:
+                                              - generic [ref=e1985] [cursor=pointer]:
+                                                - generic:
+                                                  - generic [ref=e1986]: "0"
+                                                  - generic [ref=e1988]: "[anonymous]"
+                                                  - time [ref=e1990]: 14y
+                                                  - generic [ref=e1991]: "So I'd like to argue that it makes at least a little difference. When we engage in practical deliberation, when we think about what to do, we are thinking about what is possible and about ourselves as sources of what is possible. No one deliberates about the necessary, or about anything over which we have no control: we don't deliberate about what the size of the sun should be, or whether or not modus tollens should be valid. If we realize that the universe is deterministic, then we may still decide that we can deliberate, but we do now qualify this as a matter of 'viewpoints' or something like that. So the little difference this makes is in the way we qualify the idea of deliberation. So do you agree that there is at least this little difference? Perhaps it is inconsequential, but it does mean that we learn something about what it means to deliberate when we learn we are living in a deterministic universe as opposed to one with a bunch of spontaneous free causes running around."
+                                              - generic [ref=e1994]:
+                                                - generic [ref=e1997] [cursor=pointer]:
+                                                  - generic:
+                                                    - generic [ref=e1998]: "0"
+                                                    - generic [ref=e1999]: orthonormal
+                                                    - time [ref=e2001]: 14y
+                                                    - generic [ref=e2002]: It all adds up to normality. Everything you do when making a decision is something a deterministic agent can do, and a deterministic agent that deliberates well will (on average) experience higher expected value than deterministic agents that deliberate poorly. You're getting closer to the sequence of posts that covers this in more detail, so I'll just say that I endorse what's said in this sequence.
+                                                - generic [ref=e2005]:
+                                                  - generic [ref=e2008] [cursor=pointer]:
+                                                    - generic:
+                                                      - generic [ref=e2009]: "0"
+                                                      - generic [ref=e2011]: "[anonymous]"
+                                                      - time [ref=e2013]: 14y
+                                                      - generic [ref=e2014]: "What is normality exactly? It's not the ideas and intuitions I came to the table with, unless the theory actually proposes to teach me nothing. My questions is this: \"what do I learn when I learn that the universe is deterministic?\" Do I learn anything that has to do with deliberation? One reasonable answer (and one way to explain the normality point) would just be 'no, it has nothing to do with action.' But this would strike many people as odd, since we recognize in our deliberation a distinction between future events we can bring about or prevent, and future states we cannot bring about or prevent. [...] I find I have an extremely hard time understanding some of the arguments in that sequence, after several attempts. I would dearly love to have some of it explained in response to my questions. I find this argument in parcticular to be very confusing: [...] This argument (which reappears in the 'timeless control' article) seems to hang on a very weird idea of 'changing the future'. No one I have ever talked to believes that they can literally change a future moment from having one property to having another, and that this change is distinct from a change that takes place over an extent of time. I certainly don't see how anyone could take this as a way to treat the world as undetermined. This seems like very much a strawman view, born from an equivocation on the word 'change'. But I expect I am missing something (perhaps something revealed later on in the more technical stage of the article). Can you help me?"
+                                                  - generic [ref=e2017]:
+                                                    - generic [ref=e2020] [cursor=pointer]:
+                                                      - generic:
+                                                        - generic [ref=e2021]: "4"
+                                                        - generic [ref=e2022]: orthonormal
+                                                        - time [ref=e2024]: 14y
+                                                        - generic [ref=e2025]: "I meant that learning the universe is deterministic should not turn one into a fatalist who doesn't care about making good decisions (which is the intuition that many people have about determinism), because goals and choices mean something even in a deterministic universe. As an analogy, note that all of the agents in my decision theory sequence are deterministic (with one kind-of exception: they can make a deterministic choice to adopt a mixed strategy), but some of them characteristically do better than others. Regarding the \"changing the future\" idea, let's think of what it means in the context of two deterministic computer programs playing chess. It is a fact that only one game actually gets played, but many alternate moves are explored in hypotheticals (within the programs) along the way. When one program decides to make a particular move, it's not that \"the future changed\" (since someone with a faster computer could have predicted in advance what moves the programs make, the future is in that sense fixed), but rather that of all the hypothetical moves it explored, the program chose one according to a particular set of criteria. Other programs would have chosen another moves in those circumstances, which would have led to different games in the end. When you or I are deciding what to do, the different hypothetical options all feel like they're on an equal basis, because we haven't figured out what to choose. That doesn't mean that different possible futures are all real, and that all but one vanish when we make our decision. The hypothetical futures exist on our map, not in the territory; it may be that no version of you anywhere chooses option X, even though you considered it. Does that make more sense?"
+                                                    - generic [ref=e2028]:
+                                                      - generic [ref=e2031] [cursor=pointer]:
+                                                        - generic:
+                                                          - generic [ref=e2032]: "3"
+                                                          - generic [ref=e2034]: "[anonymous]"
+                                                          - time [ref=e2036]: 14y
+                                                          - generic [ref=e2037]: "A fair point, though I would be interested to hear how the algorithm described in DT relate to action (it can't be that they describe action, since we needn't act on the output of a DT, especially given that we're often akratic). When the metaethics sequence, for all the trouble I have with its arguments, gets into an account of free will, I don't generally find myself in disagreement. I've been looking over that and the physics sequences in the last couple of days, and I think I've found the point where I need to do some more reading: I think I just don't believe either that the universe is timeless, or that it's a block universe. So I should read Barbour's book. Thanks, buy the way for posting that DT series, and for answering my questions. Both have been very helpful. [...] It does, but I find myself, as I said, unable to grant the premise that statements about the future have truth value. I think I do just need to read up on this view of time."
+                                                      - generic [ref=e2043] [cursor=pointer]:
+                                                        - generic:
+                                                          - generic [ref=e2044]: "0"
+                                                          - generic [ref=e2045]: orthonormal
+                                                          - time [ref=e2047]: 14y
+                                                          - generic [ref=e2048]: You're welcome! [...] Yeah, a human who consciously endorses a particular decision theory is not the same sort of agent as a simple algorithm that runs that decision theory. But that has more to do with the messy psychology of human beings than with decision theory in its abstract mathematical form.
+                      - generic [ref=e2049]:
+                        - generic [ref=e2052] [cursor=pointer]:
+                          - generic:
+                            - generic [ref=e2053]: "0"
+                            - generic [ref=e2054]: Bound_up
+                            - time [ref=e2056]: 11y
+                            - generic [ref=e2057]: Christians allegedly follow the commandments because God told them to. They do what God told them to because of desire to avoid punishment, desire to obtain reward, desire to fulfill their perceived duty, or desire to express their love. They fulfill these desires because it makes them feel good/happy. Atheists do whatever they do, most of them for the same reason, cut out the idea of it being centered around a personality who effects their happiness. Harry said he preferred achieving things over happiness, but I can't help thinking that if he had sacrificed his potential, he wouldn't really have been happy about it, no matter how many friends he had. At the end of the day, happiness drives at least most people, and in theory, all (when they make their decisions through careful consideration, and not just to fulfill some role or habit. As we know, this is rare, and in reality, most people can not trace their decisions' motivation to their happiness or anyone's, or to any other consistent value; so I opine).
+                        - generic [ref=e2060]:
+                          - generic [ref=e2063] [cursor=pointer]:
+                            - generic:
+                              - generic [ref=e2064]: "1"
+                              - generic [ref=e2065]: Richard_Kennaway
+                              - time [ref=e2067]: 11y
+                              - generic [ref=e2068]: That sounds like a hidden tautology-by-definition. What is happiness? That which people act to obtain. Why do people act? To obtain happiness. Whatever someone does, you can say after the fact that they did it to make themselves happy.
+                          - generic [ref=e2069]:
+                            - generic [ref=e2074] [cursor=pointer]:
+                              - generic:
+                                - generic [ref=e2075]: "2"
+                                - generic [ref=e2076]: Good_Burning_Plastic
+                                - time [ref=e2078]: 11y
+                                - generic [ref=e2079]: It is a state of mind. So saying that someone is driven by happiness is not tautological -- it means that they have a perceptually determined utility function.
+                            - generic [ref=e2080]:
+                              - generic [ref=e2083] [cursor=pointer]:
+                                - generic:
+                                  - generic [ref=e2084]: "0"
+                                  - generic [ref=e2085]: Bound_up
+                                  - time [ref=e2087]: 11y
+                                  - generic [ref=e2088]: I think Plastic's got it. I don't think happiness is defined as whatever people act to obtain. It's something most people fail at with some regularity. I mean, just look at Elsa, yah?
+                              - generic [ref=e2091]:
+                                - generic [ref=e2094] [cursor=pointer]:
+                                  - generic:
+                                    - generic [ref=e2095]: "2"
+                                    - generic [ref=e2096]: Richard_Kennaway
+                                    - time [ref=e2098]: 11y
+                                    - generic [ref=e2099]: Er, Elsa)? Um, what?
+                                - generic [ref=e2105] [cursor=pointer]:
+                                  - generic:
+                                    - generic [ref=e2106]: "0"
+                                    - generic [ref=e2107]: Bound_up
+                                    - time [ref=e2109]: 11y
+                                    - generic [ref=e2110]: Precisely! Full of noble desires, and of self-destructive means to achieve them. Her efforts for happiness are wonderfully demonstrative of the failure systemic to like efforts conceived in ignorance.
+                - generic [ref=e2114] [cursor=pointer]:
+                  - generic:
+                    - generic [ref=e2115]: "1"
+                    - generic [ref=e2116]: tlhonmey
+                    - time [ref=e2118]: 7y
+                    - generic [ref=e2119]: Or they're not spelling out their evidence because it seems obvious to them and therefore (in their minds) should be obvious to you as well and need no explanation. I know many Atheists for whom their belief in no god is indeed a religion. They arrived at their belief not through reason and weighing the evidence but through the same kind of blind acceptance of someone else's cached values that religionists engage in. They fall into the same traps of treating "arguments as soldiers" as do the religionists. They make the same kind of circular, bad arguments in favour of their own point of view. Since these people also tend to be the most vocal, militant Atheists they are the ones that vocal Theists run up against the most often. As a result Theists, upon encountering a rational Atheist are at least as perplexed as an Atheist encountering one of the rare, rational Theists and the two often end up talking past each other due to not realising that the assumed common frame of reference they're each trying to use for communication isn't actually common.
+            - generic [ref=e2123]:
+              - generic [ref=e2124]:
+                - generic [ref=e2125] [cursor=pointer]:
+                  - text: "["
+                  - generic [ref=e2126]: "-"
+                  - text: "]"
+                - link "Konrad2" [ref=e2129] [cursor=pointer]:
+                  - /url: /users/konrad2
+                - link "18y" [ref=e2131] [cursor=pointer]:
+                  - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=j4Tiv2sq27QacxdkF
+                  - time [ref=e2133]: 18y
+                - generic [ref=e2134]:
+                  - generic [ref=e2136]:
+                    - button [ref=e2138] [cursor=pointer]:
+                      - generic [ref=e2139]:
+                        - img
+                    - generic [ref=e2141]: "8"
+                    - button [ref=e2143] [cursor=pointer]:
+                      - generic [ref=e2144]:
+                        - img
+                  - generic [ref=e2145]:
+                    - button [ref=e2147] [cursor=pointer]:
+                      - img [ref=e2150]
+                    - generic [ref=e2153]: "0"
+                    - button [ref=e2155] [cursor=pointer]:
+                      - img [ref=e2158]
+              - paragraph [ref=e2162]: "Summary: Aristotelianism considered harmful; Hilbert Space is the new industry standard."
+              - generic [ref=e2163]:
+                - generic [ref=e2165] [cursor=pointer]: Reply
+                - img [ref=e2170] [cursor=pointer]
+            - generic [ref=e2180]:
+              - generic [ref=e2181]:
+                - generic [ref=e2182] [cursor=pointer]:
+                  - text: "["
+                  - generic [ref=e2183]: "-"
+                  - text: "]"
+                - link "Ari" [ref=e2186] [cursor=pointer]:
+                  - /url: /users/ari
+                - link "18y" [ref=e2188] [cursor=pointer]:
+                  - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=YHafrKHDmGmWGynvy
+                  - time [ref=e2190]: 18y
+                - generic [ref=e2191]:
+                  - generic [ref=e2193]:
+                    - button [ref=e2195] [cursor=pointer]:
+                      - generic [ref=e2196]:
+                        - img
+                    - generic [ref=e2198]: "1"
+                    - button [ref=e2200] [cursor=pointer]:
+                      - generic [ref=e2201]:
+                        - img
+                  - generic [ref=e2202]:
+                    - button [ref=e2204] [cursor=pointer]:
+                      - img [ref=e2207]
+                    - generic [ref=e2210]: "0"
+                    - button [ref=e2212] [cursor=pointer]:
+                      - img [ref=e2215]
+              - generic [ref=e2218]:
+                - blockquote [ref=e2219]: The question "Is this object a blegg?" may stand in for different queries on different occasions. If it weren't standing in for some query, you'd have no reason to care.
+                - paragraph [ref=e2220]: Basically, this is pragmatism in a nutshell -- right?
+                - paragraph [ref=e2221]: Cheers, Ari
+              - generic [ref=e2222]:
+                - generic [ref=e2224] [cursor=pointer]: Reply
+                - img [ref=e2229] [cursor=pointer]
+            - generic [ref=e2239]:
+              - generic [ref=e2240]:
+                - generic [ref=e2241] [cursor=pointer]:
+                  - text: "["
+                  - generic [ref=e2242]: "-"
+                  - text: "]"
+                - link "tcpkac" [ref=e2245] [cursor=pointer]:
+                  - /url: /users/tcpkac
+                - link "18y" [ref=e2247] [cursor=pointer]:
+                  - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=Q4YT9f566yMREkic5
+                  - time [ref=e2249]: 18y
+                - generic [ref=e2250]:
+                  - generic [ref=e2252]:
+                    - button [ref=e2254] [cursor=pointer]:
+                      - generic [ref=e2255]:
+                        - img
+                    - generic [ref=e2257]: "2"
+                    - button [ref=e2259] [cursor=pointer]:
+                      - generic [ref=e2260]:
+                        - img
+                  - generic [ref=e2261]:
+                    - button [ref=e2263] [cursor=pointer]:
+                      - img [ref=e2266]
+                    - generic [ref=e2269]: "0"
+                    - button [ref=e2271] [cursor=pointer]:
+                      - img [ref=e2274]
+              - paragraph [ref=e2278]: Excellent post, however, "But people often don't realize that their argument about where to draw a definitional boundary, is really a dispute over whether to infer a characteristic shared by most things inside an empirical cluster..." Indeed so, but there are other aspects. Humans also have obsessions with (a) how far your cluster is from mine (kinship or the lack of it) (b) given one empirical cluster, how can I pick a characteristic, however minor, which will allow me to split it into 'us vs them' (Robber's Cave). So when you get to discussing whether an uploaded human brain is part of the cluster 'human', those are the considerations which will be foremost.
+              - generic [ref=e2279]:
+                - generic [ref=e2281] [cursor=pointer]: Reply
+                - img [ref=e2286] [cursor=pointer]
+            - generic [ref=e2296]:
+              - generic [ref=e2297]:
+                - generic [ref=e2298] [cursor=pointer]:
+                  - text: "["
+                  - generic [ref=e2299]: "-"
+                  - text: "]"
+                - link "Joseph_Knecht" [ref=e2302] [cursor=pointer]:
+                  - /url: /users/joseph_knecht
+                - link "18y" [ref=e2304] [cursor=pointer]:
+                  - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=QEw49ELZ2eqsp9igN
+                  - time [ref=e2306]: 18y
+                - generic [ref=e2307]:
+                  - generic [ref=e2309]:
+                    - button [ref=e2311] [cursor=pointer]:
+                      - generic [ref=e2312]:
+                        - img
+                    - generic [ref=e2314]: "6"
+                    - button [ref=e2316] [cursor=pointer]:
+                      - generic [ref=e2317]:
+                        - img
+                  - generic [ref=e2318]:
+                    - button [ref=e2320] [cursor=pointer]:
+                      - img [ref=e2323]
+                    - generic [ref=e2326]: "0"
+                    - button [ref=e2328] [cursor=pointer]:
+                      - img [ref=e2331]
+              - paragraph [ref=e2335]: "Or more concisely: sharp distinctions regarding fuzzy concepts are meaningless."
+              - generic [ref=e2336]:
+                - generic [ref=e2338] [cursor=pointer]: Reply
+                - img [ref=e2343] [cursor=pointer]
+            - generic [ref=e2353]:
+              - generic [ref=e2354]:
+                - generic [ref=e2355] [cursor=pointer]:
+                  - text: "["
+                  - generic [ref=e2356]: "-"
+                  - text: "]"
+                - link "TGGP4" [ref=e2359] [cursor=pointer]:
+                  - /url: /users/tggp4
+                - link "18y" [ref=e2361] [cursor=pointer]:
+                  - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=EhiSs8abokp5truJD
+                  - time [ref=e2363]: 18y
+                - generic [ref=e2364]:
+                  - generic [ref=e2366]:
+                    - button [ref=e2368] [cursor=pointer]:
+                      - generic [ref=e2369]:
+                        - img
+                    - generic [ref=e2371]: "0"
+                    - button [ref=e2373] [cursor=pointer]:
+                      - generic [ref=e2374]:
+                        - img
+                  - generic [ref=e2375]:
+                    - button [ref=e2377] [cursor=pointer]:
+                      - img [ref=e2380]
+                    - generic [ref=e2383]: "0"
+                    - button [ref=e2385] [cursor=pointer]:
+                      - img [ref=e2388]
+              - generic [ref=e2391]:
+                - paragraph [ref=e2392]:
+                  - text: My favorite example is, Is a fetus a person?
+                  - link "Yes, but it's still okay to murder them" [ref=e2395] [cursor=pointer]:
+                    - /url: http://entitledtoanopinion.wordpress.com/2008/02/09/rhymes-with-shmashmortion
+                  - text: .
+                - paragraph [ref=e2396]:
+                  - text: Micha Gertner has an interesting essay on pragmatism & economics
+                  - link "here" [ref=e2399] [cursor=pointer]:
+                    - /url: http://distributedrepublic.net/archives/2008/01/04/pragmatism-and-economics
+                  - text: .
+              - generic [ref=e2400]:
+                - generic [ref=e2402] [cursor=pointer]: Reply
+                - img [ref=e2407] [cursor=pointer]
+            - generic [ref=e2417]:
+              - generic [ref=e2418]:
+                - generic [ref=e2419] [cursor=pointer]:
+                  - text: "["
+                  - generic [ref=e2420]: "-"
+                  - text: "]"
+                - link "Rolf_Nelson2" [ref=e2423] [cursor=pointer]:
+                  - /url: /users/rolf_nelson2
+                - link "18y" [ref=e2425] [cursor=pointer]:
+                  - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=W2be277unjuEeeT87
+                  - time [ref=e2427]: 18y
+                - generic [ref=e2428]:
+                  - generic [ref=e2430]:
+                    - button [ref=e2432] [cursor=pointer]:
+                      - generic [ref=e2433]:
+                        - img
+                    - generic [ref=e2435]: "8"
+                    - button [ref=e2437] [cursor=pointer]:
+                      - generic [ref=e2438]:
+                        - img
+                  - generic [ref=e2439]:
+                    - button [ref=e2441] [cursor=pointer]:
+                      - img [ref=e2444]
+                    - generic [ref=e2447]: "0"
+                    - button [ref=e2449] [cursor=pointer]:
+                      - img [ref=e2452]
+              - generic [ref=e2455]:
+                - paragraph [ref=e2456]: What's really at stake is an atheist's claim of substantial difference and superiority relative to religion
+                - paragraph [ref=e2457]: Often semantics matter because laws and contracts are written in words. When "Congress shall make no law respecting an establishment of religion", it's sometimes advantageous to claim that you're not a religion, or that your enemy is a religion. If churches get preferential tax treatment, it may be advantageous to claim that you're a church.
+              - generic [ref=e2458]:
+                - generic [ref=e2460] [cursor=pointer]: Reply
+                - img [ref=e2465] [cursor=pointer]
+            - generic [ref=e2475]:
+              - generic [ref=e2476]:
+                - generic [ref=e2477] [cursor=pointer]:
+                  - text: "["
+                  - generic [ref=e2478]: "-"
+                  - text: "]"
+                - link "Doug_S." [ref=e2481] [cursor=pointer]:
+                  - /url: /users/doug_s
+                - link "18y" [ref=e2483] [cursor=pointer]:
+                  - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=ZzR4WhMRum94zX4do
+                  - time [ref=e2485]: 18y
+                - generic [ref=e2486]:
+                  - generic [ref=e2488]:
+                    - button [ref=e2490] [cursor=pointer]:
+                      - generic [ref=e2491]:
+                        - img
+                    - generic [ref=e2493]: "1"
+                    - button [ref=e2495] [cursor=pointer]:
+                      - generic [ref=e2496]:
+                        - img
+                  - generic [ref=e2497]:
+                    - button [ref=e2499] [cursor=pointer]:
+                      - img [ref=e2502]
+                    - generic [ref=e2505]: "0"
+                    - button [ref=e2507] [cursor=pointer]:
+                      - img [ref=e2510]
+              - generic [ref=e2513]:
+                - paragraph [ref=e2514]: Often semantics matter because laws and contracts are written in words.
+                - paragraph [ref=e2515]: What he said.
+              - generic [ref=e2516]:
+                - generic [ref=e2518] [cursor=pointer]: Reply
+                - img [ref=e2523] [cursor=pointer]
+            - generic [ref=e2533]:
+              - generic [ref=e2534]:
+                - generic [ref=e2535] [cursor=pointer]:
+                  - text: "["
+                  - generic [ref=e2536]: "-"
+                  - text: "]"
+                - link "metahacker" [ref=e2539] [cursor=pointer]:
+                  - /url: /users/metahacker
+                - link "18y" [ref=e2541] [cursor=pointer]:
+                  - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=DsQzPZkbDyc9rYiP8
+                  - time [ref=e2543]: 18y
+                - generic [ref=e2544]:
+                  - generic [ref=e2546]:
+                    - button [ref=e2548] [cursor=pointer]:
+                      - generic [ref=e2549]:
+                        - img
+                    - generic [ref=e2551]: "-1"
+                    - button [ref=e2553] [cursor=pointer]:
+                      - generic [ref=e2554]:
+                        - img
+                  - generic [ref=e2555]:
+                    - button [ref=e2557] [cursor=pointer]:
+                      - img [ref=e2560]
+                    - generic [ref=e2563]: "0"
+                    - button [ref=e2565] [cursor=pointer]:
+                      - img [ref=e2568]
+              - generic [ref=e2571]:
+                - paragraph [ref=e2572]: I'm having problems with the word "is" in your description.
+                - paragraph [ref=e2573]: This is not intended as a snarky comment...
+              - generic [ref=e2574]:
+                - generic [ref=e2576] [cursor=pointer]: Reply
+                - img [ref=e2581] [cursor=pointer]
+            - generic [ref=e2591]:
+              - generic [ref=e2592]:
+                - generic [ref=e2593] [cursor=pointer]:
+                  - text: "["
+                  - generic [ref=e2594]: "-"
+                  - text: "]"
+                - link "TGGP4" [ref=e2597] [cursor=pointer]:
+                  - /url: /users/tggp4
+                - link "18y" [ref=e2599] [cursor=pointer]:
+                  - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=usokK7nnorPH8Jg7v
+                  - time [ref=e2601]: 18y
+                - generic [ref=e2602]:
+                  - generic [ref=e2604]:
+                    - button [ref=e2606] [cursor=pointer]:
+                      - generic [ref=e2607]:
+                        - img
+                    - generic [ref=e2609]: "0"
+                    - button [ref=e2611] [cursor=pointer]:
+                      - generic [ref=e2612]:
+                        - img
+                  - generic [ref=e2613]:
+                    - button [ref=e2615] [cursor=pointer]:
+                      - img [ref=e2618]
+                    - generic [ref=e2621]: "0"
+                    - button [ref=e2623] [cursor=pointer]:
+                      - img [ref=e2626]
+              - paragraph [ref=e2630]:
+                - text: Rolf, have you been reading
+                - link "Unqualified Reservations" [ref=e2633] [cursor=pointer]:
+                  - /url: http://unqualified-reservations.blogspot.com/2007/06/separation-of-information-and-security.html
+                - text: "?"
+              - generic [ref=e2634]:
+                - generic [ref=e2636] [cursor=pointer]: Reply
+                - img [ref=e2641] [cursor=pointer]
+            - generic [ref=e2651]:
+              - generic [ref=e2652]:
+                - generic [ref=e2653] [cursor=pointer]:
+                  - text: "["
+                  - generic [ref=e2654]: "-"
+                  - text: "]"
+                - link "Julia_Galef" [ref=e2657] [cursor=pointer]:
+                  - /url: /users/julia_galef
+                - link "16y" [ref=e2659] [cursor=pointer]:
+                  - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=upXsEwjSdMgx4W2Bk
+                  - time [ref=e2661]: 16y
+                - generic [ref=e2662]:
+                  - generic [ref=e2664]:
+                    - button [ref=e2666] [cursor=pointer]:
+                      - generic [ref=e2667]:
+                        - img
+                    - generic [ref=e2669]: "18"
+                    - button [ref=e2671] [cursor=pointer]:
+                      - generic [ref=e2672]:
+                        - img
+                  - generic [ref=e2673]:
+                    - button [ref=e2675] [cursor=pointer]:
+                      - img [ref=e2678]
+                    - generic [ref=e2681]: "0"
+                    - button [ref=e2683] [cursor=pointer]:
+                      - img [ref=e2686]
+              - generic [ref=e2689]:
+                - paragraph [ref=e2690]: This was a really clarifying post for me. I had gotten to the point of noticing that "What is X?" debates were really just debates over the definition of X, but I hadn't yet taken the next step of asking why people care about how X is defined.
+                - paragraph [ref=e2691]: I think another great example of a disguised query is the recurring debate, "Is this art?" People have really widely varying definitions of "art" (e.g., some people's definition includes "aesthetically interesting," other people's definition merely requires "conceptually interesting") -- and in one sense, once both parties explain how they use the word "art," the debate should resolve pretty quickly.
+                - paragraph [ref=e2692]: But of course, since it's a disguised query, the question "Is this art?" should really be followed up with the question "Why does it matter?" As far as I can tell, the disguised query in this case is usually "does this deserve to be taken seriously?" which can be translated in practice into, "Is this the sort of thing that deserves to be exhibited in a gallery?" And that's certainly a real, non-semantic debate. But we can have that debate without ev... (read more)
+              - generic [ref=e2693]:
+                - generic [ref=e2695] [cursor=pointer]: Reply
+                - img [ref=e2700] [cursor=pointer]
+            - generic [ref=e2710]:
+              - generic [ref=e2711]:
+                - generic [ref=e2712] [cursor=pointer]:
+                  - text: "["
+                  - generic [ref=e2713]: "-"
+                  - text: "]"
+                - link "David_Gerard" [ref=e2716] [cursor=pointer]:
+                  - /url: /users/david_gerard
+                - link "15y" [ref=e2718] [cursor=pointer]:
+                  - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=iHkg7nJmazTmQDkjb
+                  - time [ref=e2720]: 15y
+                - generic [ref=e2721]:
+                  - generic [ref=e2723]:
+                    - button [ref=e2725] [cursor=pointer]:
+                      - generic [ref=e2726]:
+                        - img
+                    - generic [ref=e2728]: "1"
+                    - button [ref=e2730] [cursor=pointer]:
+                      - generic [ref=e2731]:
+                        - img
+                  - generic [ref=e2732]:
+                    - button [ref=e2734] [cursor=pointer]:
+                      - img [ref=e2737]
+                    - generic [ref=e2740]: "0"
+                    - button [ref=e2742] [cursor=pointer]:
+                      - img [ref=e2745]
+              - paragraph [ref=e2749]: "I like this post because it shows the usefulness of one of my favourite questions to answer a question with: \"What's it for?\" What use do you have for the answer to your question?"
+              - generic [ref=e2750]:
+                - generic [ref=e2752] [cursor=pointer]: Reply
+                - img [ref=e2757] [cursor=pointer]
+            - generic [ref=e2767]:
+              - generic [ref=e2768]:
+                - generic [ref=e2769] [cursor=pointer]:
+                  - text: "["
+                  - generic [ref=e2770]: "-"
+                  - text: "]"
+                - link "Dojan" [ref=e2773] [cursor=pointer]:
+                  - /url: /users/dojan
+                - link "15y" [ref=e2775] [cursor=pointer]:
+                  - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=qZtNtS4aDDLdpZcsW
+                  - time [ref=e2777]: 15y
+                - generic [ref=e2778]:
+                  - generic [ref=e2780]:
+                    - button [ref=e2782] [cursor=pointer]:
+                      - generic [ref=e2783]:
+                        - img
+                    - generic [ref=e2785]: "0"
+                    - button [ref=e2787] [cursor=pointer]:
+                      - generic [ref=e2788]:
+                        - img
+                  - generic [ref=e2789]:
+                    - button [ref=e2791] [cursor=pointer]:
+                      - img [ref=e2794]
+                    - generic [ref=e2797]: "0"
+                    - button [ref=e2799] [cursor=pointer]:
+                      - img [ref=e2802]
+              - paragraph [ref=e2806]:
+                - text: "When I have discussions of the philosophical kind, I have learned that it often pays of to start with defining the words being used: For example, I recall one discussion where I defined Evil as a shorthand for \"all corporations and institutions that try to compete by opposing the existence and legitimacy of competitors and newcomers instead of by trying to offer a better product, like"
+                - link "Microsoft" [ref=e2809] [cursor=pointer]:
+                  - /url: http://www.google.se/imgres?q=linux+terrorism&hl=sv&sa=X&nord=1&biw=1680&bih=938&tbm=isch&prmd=imvns&tbnid=ruThZal5hhdh7M:&imgrefurl=http://thebeezspeaks.blogspot.com/2008/09/geen-stijl-is-communist-website.html&docid=fciKcoikIvxc4M&imgurl=http://i.i.com.com/cnwk.1d/i/bto/20090129/linux_usage_among_terrorists.gif&w=300&h=250&ei=Mf6wTvXCLvHU4QSJnOXHAQ&zoom=1
+                - text: "\", and one other discussion where I defined Evil as \"Working for Sauron or Saruman or Morgoth\", i.e very different. I would never (that is, I try... (read more)"
+              - generic [ref=e2810]:
+                - generic [ref=e2812] [cursor=pointer]: Reply
+                - img [ref=e2817] [cursor=pointer]
+            - generic [ref=e2827]:
+              - generic [ref=e2828]:
+                - generic [ref=e2829] [cursor=pointer]:
+                  - text: "["
+                  - generic [ref=e2830]: "-"
+                  - text: "]"
+                - link "Anders_H" [ref=e2833] [cursor=pointer]:
+                  - /url: /users/anders_h
+                - link "10y" [ref=e2835] [cursor=pointer]:
+                  - /url: /posts/4FcxgdvdQP45D6Skg/disguised-queries?commentId=wE4xBtakNtMDaLHRA
+                  - time [ref=e2837]: 10y
+                - generic [ref=e2838]:
+                  - generic [ref=e2840]:
+                    - button [ref=e2842] [cursor=pointer]:
+                      - generic [ref=e2843]:
+                        - img
+                    - generic [ref=e2845]: "0"
+                    - button [ref=e2847] [cursor=pointer]:
+                      - generic [ref=e2848]:
+                        - img
+                  - generic [ref=e2849]:
+                    - button [ref=e2851] [cursor=pointer]:
+                      - img [ref=e2854]
+                    - generic [ref=e2857]: "0"
+                    - button [ref=e2859] [cursor=pointer]:
+                      - img [ref=e2862]
+              - generic [ref=e2865]:
+                - paragraph [ref=e2866]: I run the Less Wrong meetup group in Palo Alto. After we announced the events at Meetup.com, we often get a lot of guests who are interested in rationality but who have not read the LW sequences. I have an idea for a introductory session where we have the participants do a sorting exercise. Therefore, I am interested in getting 3D printed versions of rubes, bleggs and other items references in this post.
+                - paragraph [ref=e2867]: Does anyone have any thoughts on how to do this cheaply? Is there sufficient interest in this to get a kickstarter running? I expect that these items may be of interest to other Less Wrong meetup groups, and possibly to CFAR workshops and/or schools?
+              - generic [ref=e2868]:
+                - generic [ref=e2870] [cursor=pointer]: Reply
+                - img [ref=e2875] [cursor=pointer]
+          - link "Moderation Log" [ref=e2884] [cursor=pointer]:
+            - /url: /moderation
+        - generic [ref=e2888]:
+          - generic [ref=e2889]:
+            - generic [ref=e2890]:
+              - text: More from
+              - link "Eliezer Yudkowsky" [ref=e2892] [cursor=pointer]:
+                - /url: /users/eliezer_yudkowsky
+            - generic [ref=e2896]:
+              - generic [ref=e2898]: "165"
+              - link "A relatively brief explanation of Boltzmann Brains" [ref=e2903] [cursor=pointer]:
+                - /url: /posts/v8MSczS3CuoqMmTFw/a-relatively-brief-explanation-of-boltzmann-brains
+              - link "Eliezer Yudkowsky" [ref=e2908] [cursor=pointer]:
+                - /url: /users/eliezer_yudkowsky
+              - time [ref=e2911] [cursor=pointer]: 2d
+              - generic [ref=e2914] [cursor=pointer]:
+                - img [ref=e2915]
+                - generic [ref=e2918]: "98"
+            - generic [ref=e2923]:
+              - generic [ref=e2925]: "299"
+              - link "The Owned Ones" [ref=e2930] [cursor=pointer]:
+                - /url: /posts/xmWSnxJ5qfYRD9PfR/the-owned-ones
+              - link "Eliezer Yudkowsky" [ref=e2935] [cursor=pointer]:
+                - /url: /users/eliezer_yudkowsky
+              - time [ref=e2938] [cursor=pointer]: 7d
+              - generic [ref=e2941] [cursor=pointer]:
+                - img [ref=e2942]
+                - generic [ref=e2945]: "45"
+            - generic [ref=e2950]:
+              - generic [ref=e2952]: "337"
+              - generic [ref=e2955]:
+                - link "Irretrievability; or, Murphy's Curse of Oneshotness upon ASI" [ref=e2957] [cursor=pointer]:
+                  - /url: /posts/fbrz9xhKpEeTKw5zL/irretrievability-or-murphy-s-curse-of-oneshotness-upon-asi
+                - link [ref=e2963] [cursor=pointer]:
+                  - /url: /recommendations
+                  - img [ref=e2964]
+              - link "Eliezer Yudkowsky" [ref=e2972] [cursor=pointer]:
+                - /url: /users/eliezer_yudkowsky
+              - time [ref=e2975] [cursor=pointer]: 4d
+              - generic [ref=e2978] [cursor=pointer]:
+                - img [ref=e2979]
+                - generic [ref=e2982]: "126"
+            - link "View more" [ref=e2985] [cursor=pointer]:
+              - /url: /users/eliezer_yudkowsky
+          - generic [ref=e2986]:
+            - generic [ref=e2987]: Curated and popular this week
+            - generic [ref=e2991]:
+              - generic [ref=e2993]: "203"
+              - generic [ref=e2996]:
+                - 'link "My hobby: running deranged surveys" [ref=e2998] [cursor=pointer]':
+                  - /url: /posts/fQz6afpcZhdMdYzgE/my-hobby-running-deranged-surveys
+                - link [ref=e3004] [cursor=pointer]:
+                  - /url: /recommendations
+                  - img [ref=e3005]
+              - link "leogao" [ref=e3013] [cursor=pointer]:
+                - /url: /users/leogao
+              - time [ref=e3016] [cursor=pointer]: 4h
+              - generic [ref=e3019] [cursor=pointer]:
+                - img [ref=e3020]
+                - generic [ref=e3023]: "35"
+            - generic [ref=e3028]:
+              - generic [ref=e3030]: "337"
+              - generic [ref=e3033]:
+                - link "Irretrievability; or, Murphy's Curse of Oneshotness upon ASI" [ref=e3035] [cursor=pointer]:
+                  - /url: /posts/fbrz9xhKpEeTKw5zL/irretrievability-or-murphy-s-curse-of-oneshotness-upon-asi
+                - link [ref=e3041] [cursor=pointer]:
+                  - /url: /recommendations
+                  - img [ref=e3042]
+              - link "Eliezer Yudkowsky" [ref=e3050] [cursor=pointer]:
+                - /url: /users/eliezer_yudkowsky
+              - time [ref=e3053] [cursor=pointer]: 4d
+              - generic [ref=e3056] [cursor=pointer]:
+                - img [ref=e3057]
+                - generic [ref=e3060]: "126"
+            - generic [ref=e3065]:
+              - generic [ref=e3067]: "299"
+              - link "The Owned Ones" [ref=e3072] [cursor=pointer]:
+                - /url: /posts/xmWSnxJ5qfYRD9PfR/the-owned-ones
+              - link "Eliezer Yudkowsky" [ref=e3077] [cursor=pointer]:
+                - /url: /users/eliezer_yudkowsky
+              - time [ref=e3080] [cursor=pointer]: 7d
+              - generic [ref=e3083] [cursor=pointer]:
+                - img [ref=e3084]
+                - generic [ref=e3087]: "45"
+      - link "108 Comments" [ref=e3091] [cursor=pointer]:
+        - /url: "#comments"
+        - img [ref=e3092]
+        - text: "108"
+        - generic [ref=e3094]: Comments
+  - generic [ref=e3097]: x
+  - alert [ref=e3098]
+  - listbox "Typeahead menu"
+  - listbox "Typeahead menu"
+  - iframe [ref=e3099]:
+    
+  - button "Open Intercom Messenger" [ref=e3100] [cursor=pointer]:
+    - img [ref=e3102]
+    - generic:
+      - img

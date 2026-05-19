@@ -1,0 +1,410 @@
+- generic [ref=e5]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e11]:
+        - img "U.S. flag" [ref=e12]
+        - paragraph [ref=e13]: An official website of the United States government
+        - button "Here's how you know" [ref=e14] [cursor=pointer]
+      - banner [ref=e15]:
+        - generic [ref=e17]:
+          - link "NCBI Logo" [ref=e19] [cursor=pointer]:
+            - /url: /
+            - img "NIH NLM Logo" [ref=e20]
+          - link "Log in" [ref=e22] [cursor=pointer]:
+            - /url: https://account.ncbi.nlm.nih.gov?back_url=https%3A%2F%2Fwww.ncbi.nlm.nih.gov%2Fbooks%2FNBK154461%2F
+      - navigation "access keys":
+        - link "Access keys" [ref=e23] [cursor=pointer]:
+          - /url: https://www.ncbi.nlm.nih.gov/guide/browsers/#ncbi_accesskeys
+        - link "NCBI Homepage" [ref=e24] [cursor=pointer]:
+          - /url: https://www.ncbi.nlm.nih.gov
+        - link "MyNCBI Homepage" [ref=e25] [cursor=pointer]:
+          - /url: /myncbi/
+        - link "Main Content" [ref=e26] [cursor=pointer]:
+          - /url: "#maincontent"
+        - link "Main Navigation" [ref=e27] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e28]:
+      - heading "Bookshelf" [level=1] [ref=e30]:
+        - link "Bookshelf" [ref=e31] [cursor=pointer]:
+          - /url: /books/
+      - generic [ref=e32]:
+        - generic [ref=e34]:
+          - generic: Search database
+          - combobox "Search database" [ref=e35]:
+            - option "Books" [selected]
+            - option "All Databases"
+            - option "Assembly"
+            - option "Biocollections"
+            - option "BioProject"
+            - option "BioSample"
+            - option "Books"
+            - option "ClinVar"
+            - option "Conserved Domains"
+            - option "dbGaP"
+            - option "dbVar"
+            - option "Gene"
+            - option "Genome"
+            - option "GEO DataSets"
+            - option "GEO Profiles"
+            - option "GTR"
+            - option "Identical Protein Groups"
+            - option "MedGen"
+            - option "MeSH"
+            - option "NLM Catalog"
+            - option "Nucleotide"
+            - option "OMIM"
+            - option "PMC"
+            - option "Protein"
+            - option "Protein Clusters"
+            - option "Protein Family Models"
+            - option "PubChem BioAssay"
+            - option "PubChem Compound"
+            - option "PubChem Substance"
+            - option "PubMed"
+            - option "SNP"
+            - option "SRA"
+            - option "Structure"
+            - option "Taxonomy"
+            - option "ToolKit"
+            - option "ToolKitAll"
+            - option "ToolKitBookgh"
+          - generic [ref=e36]:
+            - generic: Search term
+            - textbox "Search term" [ref=e39]
+            - button "Search" [ref=e40] [cursor=pointer]
+        - list [ref=e41]:
+          - listitem [ref=e42]:
+            - link "Browse Titles" [ref=e43] [cursor=pointer]:
+              - /url: /books/browse/
+          - listitem [ref=e44]:
+            - link "Advanced" [ref=e45] [cursor=pointer]:
+              - /url: /books/advanced/
+          - listitem [ref=e46]:
+            - link "Help" [ref=e47] [cursor=pointer]:
+              - /url: /books/NBK3833/
+          - listitem [ref=e48]:
+            - link "Disclaimer" [ref=e49] [cursor=pointer]:
+              - /url: https://www.ncbi.nlm.nih.gov/books/about/disclaimer/
+  - generic:
+    - generic:
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - text: < Prev
+          - link "Next >" [ref=e53] [cursor=pointer]:
+            - /url: /books/n/methresbias/fm.s1/
+        - generic [ref=e54]:
+          - generic [ref=e56]:
+            - 'link "Cover of Assessing Risk of Bias and Confounding in Observational Studies of Interventions or Exposures: Further Development of the RTI Item Bank" [ref=e57] [cursor=pointer]':
+              - /url: https://effectivehealthcare.ahrq.gov
+              - 'img "Cover of Assessing Risk of Bias and Confounding in Observational Studies of Interventions or Exposures: Further Development of the RTI Item Bank" [ref=e58]'
+            - generic [ref=e59]:
+              - 'heading "Assessing Risk of Bias and Confounding in Observational Studies of Interventions or Exposures: Further Development of the RTI Item Bank" [level=1] [ref=e60]'
+              - paragraph [ref=e61]: Methods Research Reports
+              - paragraph [ref=e62]: "Investigators: Meera Viswanathan, PhD, Nancy D Berkman, PhD, Donna M Dryden, PhD, and Lisa Hartling, PhD."
+              - button "Author Information and Affiliations" [ref=e63] [cursor=pointer]: Author Information and Affiliations
+              - generic [ref=e65]:
+                - text: "Rockville (MD):"
+                - link "Agency for Healthcare Research and Quality (US)" [ref=e66] [cursor=pointer]:
+                  - /url: https://effectivehealthcare.ahrq.gov
+                - text: ; 2013 Aug.
+                - generic [ref=e67]: "Report No.: 13-EHC106-EF"
+              - list [ref=e69]:
+                - listitem [ref=e70]:
+                  - link "Copyright and Permissions" [ref=e72] [cursor=pointer]:
+                    - /url: "#_ncbi_dlg_cpyrght_NBK154461"
+              - generic [ref=e75]:
+                - generic: Search term
+                - textbox "Search term" [ref=e77]
+                - button "Search this book" [ref=e78] [cursor=pointer]
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - heading "Structured Abstract" [level=2] [ref=e81]
+              - generic [ref=e82]:
+                - heading "Objectives:" [level=4] [ref=e83]
+                - paragraph [ref=e84]: To develop a framework for the assessment of the risk of bias and confounding against causality from a body of observational evidence, and to refine a tool to aid in identifying risk of bias, confounding, and precision in individual studies.
+              - generic [ref=e85]:
+                - heading "Methods:" [level=4] [ref=e86]
+                - paragraph [ref=e87]: In conjunction with a Working Group, we sought to develop an overarching approach to assess the effect of confounding across the body of observational study evidence and within individual studies. We sought feedback from Working Group members on critical sources of bias most common to each observational study design type. We then refined and reduced the set of “core” questions that would most likely be necessary for evaluating risk of bias and confounding concerns for each design and refined the instructions provided to users to improve clarity and usefulness.
+              - generic [ref=e88]:
+                - heading "Results:" [level=4] [ref=e89]
+                - paragraph [ref=e90]: We developed a framework that identifies additional steps necessary to evaluate the validity of causal claims in observational studies of benefits and harms from interventions. With the help of the Working Group, we narrowed the list of RTI Item Bank questions for evaluating risk of bias and precision from 29 to 16. Working Group members also provided their opinion of the most important questions for assessing risk of bias for four common observational study design types.
+              - generic [ref=e91]:
+                - heading "Conclusions:" [level=4] [ref=e92]
+                - paragraph [ref=e93]: "Attributing causality to interventions from such evidence requires prespecification of anticipated sources of confounding prior to the review, followed by appraisal of potential confounders at three levels: outcomes, studies, and the body of evidence. We propose a substantial expansion in the critical appraisal of confounding when systematic reviews include observational studies for evaluation of benefits or harms of interventions. Questions about burden, reliability, and validity remain to be answered. Consensus around specific items necessary for evaluating risk of bias for different types of observational study designs does not yet exist."
+            - generic [ref=e94]:
+              - heading "Contents" [level=2] [ref=e95]
+              - list [ref=e97]:
+                - listitem [ref=e98]:
+                  - link "Expand All" [ref=e99]:
+                    - /url: "#"
+                - listitem [ref=e100]:
+                  - link "Collapse All" [ref=e101] [cursor=pointer]:
+                    - /url: "#"
+              - list [ref=e102]:
+                - listitem [ref=e103]:
+                  - link "Preface" [ref=e104] [cursor=pointer]:
+                    - /url: /books/n/methresbias/fm.s1/
+                - listitem [ref=e105]:
+                  - link "Acknowledgments" [ref=e106] [cursor=pointer]:
+                    - /url: /books/n/methresbias/fm.ack/
+                - listitem [ref=e107]:
+                  - link "Workgroup Members" [ref=e108] [cursor=pointer]:
+                    - /url: /books/n/methresbias/fm.s2/
+                - listitem [ref=e109]:
+                  - link "Peer Reviewers" [ref=e110] [cursor=pointer]:
+                    - /url: /books/n/methresbias/fm.s3/
+                - listitem [ref=e111]:
+                  - link "Introduction" [ref=e113] [cursor=pointer]:
+                    - /url: /books/n/methresbias/introduction/
+                  - list [ref=e114]:
+                    - listitem [ref=e115]:
+                      - link "Empirical Assessments of Risk of Bias" [ref=e116] [cursor=pointer]:
+                        - /url: /books/n/methresbias/introduction/#introduction.s1
+                    - listitem [ref=e117]:
+                      - link "Need for a Revised Approach to Evaluating Observational Studies" [ref=e118] [cursor=pointer]:
+                        - /url: /books/n/methresbias/introduction/#introduction.s2
+                    - listitem [ref=e119]:
+                      - link "Earlier Phases of Development" [ref=e120] [cursor=pointer]:
+                        - /url: /books/n/methresbias/introduction/#introduction.s3
+                    - listitem [ref=e121]:
+                      - link "Project Objectives" [ref=e122] [cursor=pointer]:
+                        - /url: /books/n/methresbias/introduction/#introduction.s4
+                - listitem [ref=e123]:
+                  - link "Methods" [ref=e124] [cursor=pointer]:
+                    - /url: /books/n/methresbias/methods/
+                - listitem [ref=e125]:
+                  - link "Results" [ref=e127] [cursor=pointer]:
+                    - /url: /books/n/methresbias/results/
+                  - list [ref=e128]:
+                    - listitem [ref=e129]:
+                      - link "Expand the Analytic Framework To Consider Sources of Confounding" [ref=e130] [cursor=pointer]:
+                        - /url: /books/n/methresbias/results/#results.s1
+                    - listitem [ref=e131]:
+                      - link "Identify the Source of Bias and Confounding Specific to Each Included Design" [ref=e132] [cursor=pointer]:
+                        - /url: /books/n/methresbias/results/#results.s2
+                    - listitem [ref=e133]:
+                      - link "Assess Individual Studies for Risk of Bias and Potential Confounders" [ref=e134] [cursor=pointer]:
+                        - /url: /books/n/methresbias/results/#results.s3
+                    - listitem [ref=e135]:
+                      - link "Consider Competing Hypotheses for Observational Studies" [ref=e136] [cursor=pointer]:
+                        - /url: /books/n/methresbias/results/#results.s4
+                - listitem [ref=e137]:
+                  - link "Discussion" [ref=e139] [cursor=pointer]:
+                    - /url: /books/n/methresbias/discussion/
+                  - list [ref=e140]:
+                    - listitem [ref=e141]:
+                      - link "Recommendations for Future Methods Development" [ref=e142] [cursor=pointer]:
+                        - /url: /books/n/methresbias/discussion/#discussion.s1
+                - listitem [ref=e143]:
+                  - link "References" [ref=e144] [cursor=pointer]:
+                    - /url: /books/n/methresbias/references.rl1/
+                - listitem [ref=e145]:
+                  - link "Appendix A Approaches to Assessing the Risk of Bias in Studies" [ref=e146] [cursor=pointer]:
+                    - /url: /books/n/methresbias/appa/
+                - listitem [ref=e147]:
+                  - link "Appendix B Taxonomy on Study Design" [ref=e148] [cursor=pointer]:
+                    - /url: /books/n/methresbias/appb/
+                - listitem [ref=e149]:
+                  - link "Appendix C Item Bank for Assessing Risk of Bias and Confounding for Observational Studies of Interventions or Exposures" [ref=e150] [cursor=pointer]:
+                    - /url: /books/n/methresbias/appc/
+              - list [ref=e152]:
+                - listitem [ref=e153]:
+                  - link "Expand All" [ref=e154]:
+                    - /url: "#"
+                - listitem [ref=e155]:
+                  - link "Collapse All" [ref=e156] [cursor=pointer]:
+                    - /url: "#"
+            - paragraph [ref=e158]:
+              - text: "Prepared for: Agency for Healthcare Research and Quality, U.S. Department of Health and Human Services"
+              - button "1" [ref=e159] [cursor=pointer]:
+                - superscript [ref=e160]: "1"
+              - text: ", Contract No. 290-2007-10056-I. Prepared by: RTI International–University of North Carolina at Chapel Hill Evidence-based Practice Center, Research Triangle Park, NC, University of Alberta Evidence-based Practice Center, Edmonton, Canada"
+            - generic [ref=e161]:
+              - heading "Suggested citation:" [level=4] [ref=e162]
+              - paragraph [ref=e163]:
+                - text: "Viswanathan M, Berkman ND, Dryden DM, Hartling L. Assessing Risk of Bias and Confounding in Observational Studies of Interventions or Exposures: Further Development of the RTI Item Bank. Methods Research Report. (Prepared by RTI–UNC Evidence-based Practice Center under Contract No. 290-2007-10056-I). AHRQ Publication No. 13-EHC106-EF. Rockville, MD: Agency for Healthcare Research and Quality; August 2013."
+                - link "www.effectivehealthcare.ahrq.gov/reports/final.cfm" [ref=e164] [cursor=pointer]:
+                  - /url: http://www.effectivehealthcare.ahrq.gov/reports/final.cfm
+                - text: .
+            - generic [ref=e165]:
+              - paragraph [ref=e166]: This report is based on research conducted by the RTI–UNC Evidence-based Practice Center, (EPC) under contract to the Agency for Healthcare Research and Quality (AHRQ), Rockville, MD (Contract No. 290-2007-10056-I). The findings and conclusions in this document are those of the authors, who are responsible for its contents; the findings and conclusions do not necessarily represent the views of AHRQ. Therefore, no statement in this report should be construed as an official position of AHRQ or of the U.S. Department of Health and Human Services.
+              - paragraph [ref=e167]: The information in this report is intended to help health care decisionmakers—patients and clinicians, health system leaders, and policymakers, among others—make well informed decisions and thereby improve the quality of health care services. This report is not intended to be a substitute for the application of clinical judgment. Anyone who makes decisions concerning the provision of clinical care should consider this report in the same way as any medical reference and in conjunction with all other pertinent information, i.e., in the context of available resources and circumstances presented by individual patients.
+              - paragraph [ref=e168]: This report may be used, in whole or in part, as the basis for development of clinical practice guidelines and other quality enhancement tools, or as a basis for reimbursement and coverage policies. AHRQ or U.S. Department of Health and Human Services endorsement of such derivative products may not be stated or implied.
+              - paragraph [ref=e169]: None of the investigators have any affiliations or financial involvement that conflicts with material presented in this report.
+            - generic [ref=e171]:
+              - term [ref=e172]: "1"
+              - definition [ref=e173]:
+                - paragraph [ref=e175]:
+                  - text: 540 Gaither Road, Rockville, MD 20850;
+                  - link "www .ahrq.gov" [ref=e176] [cursor=pointer]:
+                    - /url: http://www.ahrq.gov
+                    - text: www
+                    - text: .ahrq.gov
+        - generic [ref=e178]:
+          - link "Copyright Notice" [ref=e180] [cursor=pointer]:
+            - /url: /books/about/copyright/
+          - generic [ref=e181]:
+            - text: "Bookshelf ID: NBK154461"
+            - generic [ref=e182]:
+              - text: "PMID:"
+              - link "24006553" [ref=e183] [cursor=pointer]:
+                - /url: https://pubmed.ncbi.nlm.nih.gov/24006553
+          - generic [ref=e184]:
+            - text: < Prev
+            - link "Next >" [ref=e185] [cursor=pointer]:
+              - /url: /books/n/methresbias/fm.s1/
+      - generic [ref=e186]:
+        - list [ref=e189]:
+          - listitem [ref=e190]:
+            - button "Share on Facebook" [ref=e191] [cursor=pointer]
+          - listitem [ref=e192]:
+            - button "Share on Twitter" [ref=e193] [cursor=pointer]
+        - generic [ref=e194]:
+          - generic [ref=e195]:
+            - heading "Views" [level=3] [ref=e197]
+            - button "Show/hide content" [expanded] [ref=e198] [cursor=pointer]
+          - list [ref=e201]:
+            - listitem [ref=e202]:
+              - link "PubReader" [ref=e203] [cursor=pointer]:
+                - /url: /books/NBK154461/?report=reader
+            - listitem [ref=e204]:
+              - link "Print View" [ref=e205] [cursor=pointer]:
+                - /url: /books/NBK154461/?report=printable
+            - listitem [ref=e206]:
+              - link "Cite this Page" [ref=e207] [cursor=pointer]:
+                - /url: "#_ncbi_dlg_citbx_NBK154461"
+            - listitem [ref=e208]:
+              - link "PDF version of this title" [ref=e209] [cursor=pointer]:
+                - /url: /books/n/methresbias/pdf/
+              - text: (900K)
+        - generic [ref=e210]:
+          - generic [ref=e211]:
+            - heading "Other titles in these collections" [level=3] [ref=e213]
+            - button "Show/hide content" [expanded] [ref=e214] [cursor=pointer]
+          - list [ref=e217]:
+            - listitem [ref=e218]:
+              - link "AHRQ Methods for Effective Health Care" [ref=e219] [cursor=pointer]:
+                - /url: /books/n/methodscollect/
+            - listitem [ref=e220]:
+              - link "Health Services/Technology Assessment Texts (HSTAT)" [ref=e221] [cursor=pointer]:
+                - /url: /books/n/hstatcollect/
+        - generic [ref=e222]:
+          - generic [ref=e223]:
+            - heading "Related information" [level=3] [ref=e225]
+            - button "Show/hide content" [expanded] [ref=e226] [cursor=pointer]
+          - list [ref=e229]:
+            - listitem [ref=e230]:
+              - button "NLM Catalog" [ref=e231] [cursor=pointer]
+        - generic [ref=e232]:
+          - generic [ref=e233]:
+            - heading "Similar articles in PubMed" [level=3] [ref=e235]
+            - button "Show/hide content" [expanded] [ref=e236] [cursor=pointer]
+          - generic [ref=e238]:
+            - list [ref=e239]:
+              - listitem [ref=e240]:
+                - button "Folic acid supplementation and malaria susceptibility and severity among people taking antifolate antimalarial drugs in endemic areas." [ref=e241] [cursor=pointer]
+                - generic [ref=e242]: "[Cochrane Database Syst Rev. 2022]"
+              - listitem [ref=e243]:
+                - button "Development of the RTI item bank on risk of bias and precision of observational studies." [ref=e244] [cursor=pointer]
+                - generic [ref=e245]: "[J Clin Epidemiol. 2012]"
+              - listitem [ref=e246]:
+                - 'button "Recovery schools for improving behavioral and academic outcomes among students in recovery from substance use disorders: a systematic review." [ref=e247] [cursor=pointer]'
+                - generic [ref=e248]: "[Campbell Syst Rev. 2018]"
+              - listitem [ref=e249]:
+                - 'button "Review Safety interventions for the prevention of accidents at work: A systematic review." [ref=e250] [cursor=pointer]'
+                - generic [ref=e251]: "[Campbell Syst Rev. 2022]"
+              - listitem [ref=e252]:
+                - button "Comparison of tools for assessing the methodological quality of primary and secondary studies in health technology assessment reports in Germany." [ref=e253] [cursor=pointer]
+                - generic [ref=e254]: "[GMS Health Technol Assess. 2010]"
+            - link "See reviews..." [ref=e255] [cursor=pointer]:
+              - /url: /sites/entrez?db=pubmed&cmd=link&linkname=pubmed_pubmed_reviews&uid=24006553
+            - link "See all..." [ref=e256] [cursor=pointer]:
+              - /url: /sites/entrez?db=pubmed&cmd=link&linkname=pubmed_pubmed&uid=24006553
+        - generic [ref=e257]:
+          - generic [ref=e258]:
+            - heading "Recent Activity" [level=3] [ref=e260]
+            - button "Show/hide content" [expanded] [ref=e261] [cursor=pointer]
+          - generic [ref=e264]:
+            - generic [ref=e265]:
+              - link "Clear" [ref=e266] [cursor=pointer]:
+                - /url: javascript:historyDisplayState('ClearHT')
+              - link "Turn Off" [ref=e267] [cursor=pointer]:
+                - /url: javascript:historyDisplayState('HTOff')
+            - list [ref=e268]:
+              - button "Assessing Risk of Bias and Confounding in Observational Studies of Interventions..." [ref=e269]:
+                - link "Assessing Risk of Bias and Confounding in Observational Studies of Interventions..." [ref=e270] [cursor=pointer]:
+                  - /url: /portal/utils/pageresolver.fcgi?recordid=6a0c17f07baa3e06c7e89dc7
+            - link "See more..." [ref=e272] [cursor=pointer]:
+              - /url: /sites/myncbi/recentactivity
+  - generic [ref=e274]:
+    - generic [ref=e275]:
+      - generic [ref=e276]: Follow NCBI
+      - generic [ref=e278]:
+        - link "Twitter" [ref=e279] [cursor=pointer]:
+          - /url: https://twitter.com/ncbi
+          - img "Twitter" [ref=e280]
+        - link "Facebook" [ref=e281] [cursor=pointer]:
+          - /url: https://www.facebook.com/ncbi.nlm
+          - img "Facebook" [ref=e282]
+        - link "LinkedIn" [ref=e283] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/ncbinlm
+          - img "LinkedIn" [ref=e284]
+        - link "GitHub" [ref=e285] [cursor=pointer]:
+          - /url: https://github.com/ncbi
+          - img "GitHub" [ref=e286]
+        - link "Blog" [ref=e289] [cursor=pointer]:
+          - /url: https://ncbiinsights.ncbi.nlm.nih.gov/
+          - img "NCBI Insights Blog" [ref=e290]
+    - generic [ref=e293]:
+      - generic [ref=e294]:
+        - generic [ref=e295]:
+          - paragraph [ref=e296]:
+            - link "Connect with NLM" [ref=e297] [cursor=pointer]:
+              - /url: https://www.nlm.nih.gov/socialmedia/index.html
+          - list [ref=e298]:
+            - listitem [ref=e299]:
+              - link "Twitter" [ref=e300] [cursor=pointer]:
+                - /url: https://twitter.com/NLM_NIH
+                - img "Twitter" [ref=e301]
+            - listitem [ref=e307]:
+              - link "Facebook" [ref=e308] [cursor=pointer]:
+                - /url: https://www.facebook.com/nationallibraryofmedicine
+                - img "Facebook" [ref=e309]
+            - listitem [ref=e314]:
+              - link "Youtube" [ref=e315] [cursor=pointer]:
+                - /url: https://www.youtube.com/user/NLMNIH
+                - img "Youtube" [ref=e316]
+        - paragraph [ref=e321]:
+          - text: National Library of Medicine
+          - link "8600 Rockville Pike Bethesda, MD 20894" [ref=e322] [cursor=pointer]:
+            - /url: https://www.google.com/maps/place/8600+Rockville+Pike,+Bethesda,+MD+20894/@38.9959508,-77.101021,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c95e25765ddb:0x19156f88b27635b8!8m2!3d38.9959508!4d-77.0988323
+            - text: 8600 Rockville Pike
+            - text: Bethesda, MD 20894
+        - paragraph [ref=e324]:
+          - link "Web Policies" [ref=e325] [cursor=pointer]:
+            - /url: https://www.nlm.nih.gov/web_policies.html
+          - link "FOIA" [ref=e326] [cursor=pointer]:
+            - /url: https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office
+          - link "HHS Vulnerability Disclosure" [ref=e327] [cursor=pointer]:
+            - /url: https://www.hhs.gov/vulnerability-disclosure-policy/index.html
+        - paragraph [ref=e329]:
+          - link "Help" [ref=e330] [cursor=pointer]:
+            - /url: https://support.nlm.nih.gov/?pagename=bookshelf%3Abooks%3Abook-toc%3A%2FNBK154461%2F
+          - link "Accessibility" [ref=e331] [cursor=pointer]:
+            - /url: https://www.nlm.nih.gov/accessibility.html
+          - link "Careers" [ref=e332] [cursor=pointer]:
+            - /url: https://www.nlm.nih.gov/careers/careers.html
+      - navigation [ref=e335]:
+        - list [ref=e336]:
+          - listitem [ref=e337]:
+            - link "NLM" [ref=e338] [cursor=pointer]:
+              - /url: //www.nlm.nih.gov/
+          - listitem [ref=e339]:
+            - link "NIH" [ref=e340] [cursor=pointer]:
+              - /url: https://www.nih.gov/
+          - listitem [ref=e341]:
+            - link "HHS" [ref=e342] [cursor=pointer]:
+              - /url: https://www.hhs.gov/
+          - listitem [ref=e343]:
+            - link "USA.gov" [ref=e344] [cursor=pointer]:
+              - /url: https://www.usa.gov/

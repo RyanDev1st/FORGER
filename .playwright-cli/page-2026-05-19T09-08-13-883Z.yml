@@ -1,0 +1,427 @@
+- generic [ref=e2]:
+  - list:
+    - listitem:
+      - link "Skip to main content" [ref=e3] [cursor=pointer]:
+        - /url: "#genesis-content"
+    - listitem:
+      - link "Skip to header right navigation" [ref=e4] [cursor=pointer]:
+        - /url: "#nav-header-right"
+    - listitem:
+      - link "Skip to site footer" [ref=e5] [cursor=pointer]:
+        - /url: "#site-footer"
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - link "Farnam Street Logo" [ref=e9] [cursor=pointer]:
+          - /url: https://fs.blog/
+          - img "Farnam Street Logo" [ref=e10]
+        - paragraph [ref=e11]: Farnam Street
+        - paragraph [ref=e12]: Mastering the best of what other people have already figured out
+      - navigation "Header Right" [ref=e14]:
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - link "Newsletter" [ref=e17] [cursor=pointer]:
+              - /url: https://fs.blog/newsletter/
+              - generic [ref=e18]: Newsletter
+          - listitem [ref=e19]:
+            - link "Sponsor" [ref=e20] [cursor=pointer]:
+              - /url: https://fs.blog/sponsor/
+              - generic [ref=e21]: Sponsor
+          - listitem [ref=e22]:
+            - link "Podcast" [ref=e23] [cursor=pointer]:
+              - /url: https://fs.blog/knowledge-project-podcast/
+              - generic [ref=e24]: Podcast
+          - listitem [ref=e25]:
+            - link "Articles" [ref=e26] [cursor=pointer]:
+              - /url: https://fs.blog/blog/
+              - generic [ref=e27]: Articles
+          - listitem [ref=e28]:
+            - link "Log In" [ref=e29] [cursor=pointer]:
+              - /url: https://fs.blog/?memberful_endpoint=auth
+              - generic [ref=e30]: Log In
+          - listitem [ref=e31]:
+            - button "Search" [ref=e32] [cursor=pointer]:
+              - generic [ref=e33]: Search
+              - img [ref=e34]
+          - listitem [ref=e36]:
+            - link "Become a Member" [ref=e37] [cursor=pointer]:
+              - /url: https://fs.blog/membership/
+              - generic [ref=e38]: Become a Member
+  - main [ref=e41]:
+    - generic [ref=e43]:
+      - link "Tweet" [ref=e44] [cursor=pointer]:
+        - /url: https://twitter.com/share?url=https://fs.blog/ooda-loop/&text=The%20OODA%20Loop%3A%20How%20Fighter%20Pilots%20Make%20Fast%20and%20Accurate%20Decisions
+        - generic [ref=e45]:
+          - img [ref=e47]
+          - generic [ref=e49]: Tweet
+      - link "Email" [ref=e50] [cursor=pointer]:
+        - /url: mailto:?subject=Your%20friend%20has%20shared%20an%20article%20with%20you.&body=The%20OODA%20Loop%3A%20How%20Fighter%20Pilots%20Make%20Fast%20and%20Accurate%20Decisions%0D%0Ahttps%3A%2F%2Ffs.blog%2Fooda-loop%2F%0D%0A
+        - generic [ref=e51]:
+          - img [ref=e53]
+          - generic [ref=e55]: Email
+      - link "LinkedIn" [ref=e56] [cursor=pointer]:
+        - /url: https://www.linkedin.com/shareArticle?mini=true&url=https://fs.blog/ooda-loop/
+        - generic [ref=e57]:
+          - img [ref=e59]
+          - generic [ref=e61]: LinkedIn
+      - link "Print" [ref=e62] [cursor=pointer]:
+        - /url: ""
+        - generic [ref=e63]:
+          - img [ref=e65]
+          - generic [ref=e67]: Print
+    - 'article "The OODA Loop: How Fighter Pilots Make Fast and Accurate Decisions" [ref=e68]':
+      - generic [ref=e69]:
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - link "Decision Making" [ref=e72] [cursor=pointer]:
+              - /url: https://fs.blog/category/decision-making/
+            - text: ","
+            - link "Mental Models" [ref=e73] [cursor=pointer]:
+              - /url: https://fs.blog/category/mental-models/
+            - text: ","
+            - link "Uncategorized" [ref=e74] [cursor=pointer]:
+              - /url: https://fs.blog/category/uncategorized/
+          - generic [ref=e75]: "|"
+          - generic [ref=e76]: "Reading Time: 10 minutes"
+        - 'heading "The OODA Loop: How Fighter Pilots Make Fast and Accurate Decisions" [level=1] [ref=e77]'
+        - generic [ref=e78]:
+          - paragraph [ref=e79]:
+            - emphasis [ref=e80]: The OODA Loop is a four-step process for making effective decisions in high-stakes situations. It involves collecting relevant information, recognizing potential biases, deciding, and acting, then repeating the process with new information. Read on to learn how to use the OODA Loop.
+          - paragraph [ref=e81]: When we want to learn how to make rational decisions under pressure, it can be helpful to look at the techniques people use in extreme situations. If they work in the most drastic scenarios, they have a good chance of being effective in more typical ones.
+          - paragraph [ref=e82]:
+            - strong [ref=e83]:
+              - text: Because they’re developed and tested in the relentless laboratory of conflict, military
+              - link "mental models" [ref=e84] [cursor=pointer]:
+                - /url: https://fs.blog/mental-models/
+              - text: have practical applications far beyond their original context.
+            - text: If they didn’t work, they would be quickly replaced by alternatives. Military leaders and strategists invest a great deal of time and resources into developing decision-making processes.
+          - paragraph [ref=e85]: One such military mental model is the OODA Loop. Developed by strategist and U.S. Air Force Colonel John Boyd, the OODA Loop is a practical concept designed to function as the foundation of rational thinking in confusing or chaotic situations. “OODA” stands for “Observe, Orient, Decide, and Act.”
+          - blockquote [ref=e86]:
+            - paragraph [ref=e87]:
+              - text: “
+              - emphasis [ref=e88]: What is strategy? A mental tapestry of changing intentions for harmonizing and focusing our efforts as a basis for realizing some aim or purpose in an unfolding and often unforeseen world of many bewildering events and many contending interests.
+              - text: ” —John Boyd
+          - paragraph [ref=e89]: "***"
+          - heading "The Four parts of the OODA Loop" [level=2] [ref=e90]
+          - paragraph [ref=e91]: Let’s break down the four parts of the OODA Loop and see how they fit together.
+          - paragraph [ref=e92]: Don’t forget the “Loop” part. The process is intended to be repeated again and again until a conflict finishes. Each repetition provides more information to inform the next one, making it a feedback loop.
+          - paragraph [ref=e93]:
+            - strong [ref=e94]: "1: Observe"
+          - paragraph [ref=e95]: Step one is to observe the situation with the aim of building the most accurate and comprehensive picture of it possible.
+          - paragraph [ref=e96]: "For example, a fighter pilot might consider the following factors in a broad, fluid way:"
+          - list [ref=e97]:
+            - listitem [ref=e98]: What is immediately affecting me?
+            - listitem [ref=e99]: What is affecting my opponent?
+            - listitem [ref=e100]: What could affect either of us later on?
+            - listitem [ref=e101]: Can I make any predictions?
+            - listitem [ref=e102]: How accurate were my prior predictions?
+          - paragraph [ref=e103]: Information alone is insufficient. The observation stage requires converting information into an overall picture with overarching meaning that places it in context. A particularly vital skill is the capacity to identify which information is just noise and irrelevant for the current decision.
+          - paragraph [ref=e104]:
+            - strong [ref=e105]: If you want to make good decisions, you need to master the art of observing your environment.
+            - text: For a fighter pilot, that involves factors like the weather conditions and what their opponent is doing. In your workplace, that might include factors like regulations, available resources, relationships with other people, and your
+            - link "current state of mind" [ref=e106] [cursor=pointer]:
+              - /url: https://fs.blog/2019/01/how-not-to-be-stupid/
+            - text: .
+          - paragraph [ref=e107]: To give an example, consider a doctor meeting with a patient in the emergency room for the first time to identify how to treat them. Their first priority is figuring out what information they need to collect, then collecting it. They might check the patient’s records, ask other staff about the admission, ask the patient questions, check vital signs such as blood pressure, and order particular diagnostic tests. Doctors learn to pick up on subtle cues that can be telling of particular conditions, such as a patient’s speech patterns, body language, what they’ve brought with them to the hospital, and even their smell. In some cases, the absence (rather than presence) of certain cues is also important. At the same time, a doctor needs to discard irrelevant information, then put all the pieces together before they can treat the patient.
+          - paragraph [ref=e108]:
+            - strong [ref=e109]: "2: Orient"
+          - paragraph [ref=e110]:
+            - text: “
+            - emphasis [ref=e111]: Orientation isn’t just a state you’re in; it’s a process. You’re always orienting.
+            - text: ” —John Boyd
+          - paragraph [ref=e112]:
+            - text: The second stage of the OODA Loop, orient, is less intuitive than the other steps. However, it’s worth taking the effort to understand it rather than skipping it. Boyd referred to it as the
+            - emphasis [ref=e113]: schwerpunkt
+            - text: ", meaning “the main emphasis” in German."
+          - paragraph [ref=e114]: To orient yourself is to recognize any barriers that might interfere with the other parts of the OODA Loop.
+          - paragraph [ref=e115]:
+            - strong [ref=e116]:
+              - text: Orientation means connecting yourself with
+              - link "reality" [ref=e117] [cursor=pointer]:
+                - /url: https://www.farnamstreetblog.com/2016/02/joseph-tussman/
+              - text: and seeing the world as it really is, as free as possible from the influence of cognitive biases and shortcuts.
+            - text: You can give yourself an edge over the competition by making sure you always orient before making a decision, instead of just jumping in.
+          - paragraph [ref=e118]: "Boyd maintained that properly orienting yourself can be enough to overcome an initial disadvantage, such as fewer resources or less information, to outsmart an opponent. He identified the following four main barriers that impede our view of objective information:"
+          - list [ref=e119]:
+            - listitem [ref=e120]: Our cultural traditions – we don’t realize how much of what we consider universal behavior is actually culturally prescribed
+            - listitem [ref=e121]: Our genetic heritage – we all have certain constraints
+            - listitem [ref=e122]: Our ability to analyze and synthesize – if we haven’t practiced and developed our thinking skills, we tend to fall back on old habits
+            - listitem [ref=e123]: The influx of new information – it is hard to make sense of observations when the situation keeps changing
+          - paragraph [ref=e124]:
+            - text: Prior to
+            - link "Charlie Munger’s" [ref=e125] [cursor=pointer]:
+              - /url: https://fs.blog/intellectual-giants/charlie-munger/
+            - text: "popularization of the concept of building a toolbox of mental models, Boyd advocated a similar approach for pilots to help them better navigate the orient stage of the OODA Loop. He recommended a process of “deductive destruction”: paying attention to your own assumptions and biases, then finding fundamental mental models to replace them."
+          - paragraph [ref=e126]:
+            - text: Similar to using a
+            - link "decision journal" [ref=e127] [cursor=pointer]:
+              - /url: https://fs.blog/2014/02/decision-journal/
+            - text: ", deductive destruction ensures you always learn from past mistakes and don’t keep on repeating them. In one talk, Boyd employed a brilliant metaphor for developing a latticework of mental models. He compared it to building a snowmobile, a vehicle comprising elements of several different devices, such as the caterpillar treads of a tank, skis, the outboard motor of a boat, and the handlebars of a bike."
+          - paragraph [ref=e128]: "Individually, each of these items isn’t enough to move you around. But combined they create a functional vehicle. As Boyd put it:"
+          - blockquote [ref=e129]:
+            - paragraph [ref=e130]:
+              - emphasis [ref=e131]: A loser is someone (individual or group) who cannot build snowmobiles when facing uncertainty and unpredictable change; whereas a winner is someone (individual or group) who can build snowmobiles, and employ them in an appropriate fashion, when facing uncertainty and unpredictable change.
+          - paragraph [ref=e132]:
+            - text: To orient yourself, you have to build a metaphorical snowmobile by combining practical concepts from different disciplines. (For more on mental models, we literally wrote
+            - link "the book" [ref=e133] [cursor=pointer]:
+              - /url: http://fs.blog/tgmm
+            - text: on them.) Although Boyd is regarded as a military strategist, he didn’t confine himself to any particular discipline. His theories encompass ideas drawn from various disciplines, including mathematical logic, biology, psychology, thermodynamics, game theory, anthropology, and physics. Boyd described his approach as a “
+            - emphasis [ref=e134]: scheme of pulling things apart (analysis) and putting them back together (synthesis) in new combinations to find how apparently unrelated ideas and actions can be related to one another
+            - text: .”
+          - paragraph [ref=e135]:
+            - strong [ref=e136]: "3: Decide"
+          - paragraph [ref=e137]: There are no surprises here. The previous two steps provide the groundwork you need to make an informed decision. If there are multiple options at hand, you need to use your observation and orientation to select one.
+          - paragraph [ref=e138]:
+            - text: Boyd cautioned against first-conclusion bias, explaining that we cannot keep making the same decision again and again. This part of the loop needs to be flexible and open to
+            - link "Bayesian updating" [ref=e139] [cursor=pointer]:
+              - /url: https://fs.blog/2018/09/bayess-theorem/
+            - text: . In some of his notes, Boyd described this step as the hypothesis stage. The implication is that we should test the decisions we make at this point in the loop, spotting their flaws and including any issues in future observation stages
+          - paragraph [ref=e140]:
+            - strong [ref=e141]: "4: Act"
+          - paragraph [ref=e142]: There’s a difference between making decisions and enacting decisions. Once you make up your mind, it’s time to take action.
+          - paragraph [ref=e143]: By taking action, you test your decision out. The results will hopefully indicate whether it was a good one or not, providing information for when you cycle back to the first part of the OODA Loop and begin observing anew.
+          - paragraph [ref=e144]: "***"
+          - heading "Why the OODA Loop works" [level=2] [ref=e145]
+          - paragraph [ref=e146]:
+            - text: “
+            - emphasis [ref=e147]: The ability to operate at a faster tempo or rhythm than an adversary enables one to fold the adversary back inside himself so that he can neither appreciate nor keep up with what is going on. He will become disoriented and confused.
+            - text: ” —John Boyd
+          - paragraph [ref=e148]: We’ve identified three key benefits of using the OODA Loop.
+          - paragraph [ref=e149]:
+            - strong [ref=e150]: "1: Deliberate speed"
+          - paragraph [ref=e151]: As we’ve established, fighter pilots have to make many decisions in fast succession. They don’t have time to list pros and cons or to consider every available avenue. Once the OODA Loop becomes part of their mental toolboxes, they should be able to cycle through it in a matter of seconds.
+          - paragraph [ref=e152]: Speed is a crucial element of military decision-making. Using the OODA Loop in everyday life, we probably have a little more time than a fighter pilot would. But Boyd emphasized the value of being decisive, taking initiative, and staying autonomous. These are universal assets and apply to many situations.
+          - paragraph [ref=e153]:
+            - strong [ref=e154]: "2: Comfort with uncertainty"
+          - paragraph [ref=e155]: There’s no such thing as total certainty. If you’re making a decision at all, it’s because something is uncertain. But uncertainty does not always have to equate to risk.
+          - paragraph [ref=e156]:
+            - text: A fighter pilot is in a precarious situation, one in which where there will be gaps in their knowledge. They cannot read the mind of the opponent and might have incomplete information about the weather conditions and surrounding environment. They can, however, take into account key factors such as the opponent’s type of airplane and what their maneuvers reveal about their intentions and level of training. If the opponent uses an unexpected strategy, is equipped with a new type of weapon or airplane, or behaves in an irrational way, the pilot must accept the accompanying uncertainty. However, Boyd belabored the point that
+            - strong [ref=e157]: uncertainty is irrelevant if we have the right filters in place.
+          - paragraph [ref=e158]: If we can’t cope with uncertainty, we end up stuck in the observation stage. This sometimes happens when we know we need to make a decision, but we’re scared of getting it wrong. So we keep on reading books and articles, asking people for advice, listening to podcasts, and so on.
+          - paragraph [ref=e159]: Acting under uncertainty is unavoidable. If we do have the right filters, we can factor uncertainty into the observation stage. We can leave a margin of error. We can recognize the elements that are within our control and those that are not.
+          - paragraph [ref=e160]: "In presentations, Boyd referred to three key principles to support his ideas: Gödel’s theorems, Heisenberg’s Uncertainty Principle, and the Second Law of Thermodynamics. Of course, we’re using these principles in a different way from their initial purpose and in a simplified, non-literal form."
+          - paragraph [ref=e161]:
+            - strong [ref=e162]: Gödel’s theorems
+            - text: indicate any mental model we have of reality will omit certain information and that Bayesian updating must be used to bring it in line with reality. For fighter pilots, their understanding of what is going on during a battle will always have gaps. Identifying this fundamental uncertainty gives it less power over us.
+          - paragraph [ref=e163]:
+            - text: The second concept Boyd referred to is
+            - strong [ref=e164]: Heisenberg’s Uncertainty Principle
+            - text: . In its simplest form, this principle describes the limit of the precision with which pairs of physical properties can be understood. We cannot know the position and the velocity of a body at the same time. We can know either its location or its speed, but not both.
+          - paragraph [ref=e165]: Boyd moved the concept of the Uncertainty Principle from particles to planes. If a pilot focuses too hard on where an enemy plane is, they will lose track of where it is going and vice versa. Trying harder to track the two variables will actually lead to more inaccuracy!
+          - paragraph [ref=e166]:
+            - text: Finally, Boyd made use of the
+            - strong [ref=e167]: Second Law of Thermodynamics
+            - text: . In a closed system,
+            - link "entropy" [ref=e168] [cursor=pointer]:
+              - /url: https://fs.blog/2018/11/entropy/
+            - text: always increases and everything moves towards chaos. Energy spreads out and becomes disorganized.
+          - paragraph [ref=e169]: Although Boyd’s notes do not specify the exact applications, his inference appears to be that a fighter pilot must be an open system or they will fail. They must draw “energy” (information) from outside themselves or the situation will become chaotic. They should also aim to cut their opponent off, forcing them to become a closed system.
+          - paragraph [ref=e170]:
+            - strong [ref=e171]: "3: Unpredictability"
+          - paragraph [ref=e172]: When you act fast enough, other people view you as unpredictable. They can’t figure out the logic behind your decisions.
+          - paragraph [ref=e173]:
+            - text: Boyd recommended making unpredictable changes in speed and direction, writing, “
+            - emphasis [ref=e174]: We should operate at a faster tempo than our adversaries or inside our adversaries[’] time scales.…Such activity will make us appear ambiguous (non predictable) [and] thereby generate confusion and disorder among our adversaries.
+            - text: ” He even helped design planes that were better equipped to make those unpredictable changes.
+          - paragraph [ref=e175]: For the same reason that you can’t run the same play seventy times in a football game, rigid military strategies often become useless after a few uses, or even one iteration, as opponents learn to recognize and counter them. The OODA Loop can be endlessly used because it is a formless strategy, unconnected to any particular maneuvers.
+          - paragraph [ref=e176]:
+            - text: We know that Boyd was influenced by Sun Tzu (he owned seven thoroughly annotated copies of
+            - emphasis [ref=e177]: The Art of War
+            - text: ) and drew many ideas from the ancient strategist. Sun Tzu depicts war as a game of deception where the best strategy is that which an opponent cannot preempt.
+          - paragraph [ref=e178]: "***"
+          - heading "Forty Second Boyd" [level=2] [ref=e179]
+          - paragraph [ref=e180]:
+            - text: “
+            - emphasis [ref=e181]: Let your plans be dark and impenetrable as night, and when you move, fall like a thunderbolt.
+            - text: ” —Sun Tzu
+          - paragraph [ref=e182]: "Boyd was no armchair strategist. He developed his ideas through extensive experience as a fighter pilot. His nickname “Forty Second Boyd” speaks to his expertise: Boyd could win any aerial battle in less than forty seconds."
+          - paragraph [ref=e183]:
+            - text: In a tribute written after Boyd’s death, General C.C. Krulak described him as “
+            - emphasis [ref=e184]: a towering intellect who made unsurpassed contributions to the American art of war. Indeed, he was one of the central architects of the reform of military thought.…From John Boyd we learned about competitive decision-making on the battlefield—compressing time, using time as an ally.
+            - text: ”
+          - paragraph [ref=e185]: Reflecting Robert Greene’s maxim that everything is material, Boyd spent his career observing people and organizations. How do they adapt to changeable environments in conflicts, business, and other situations?
+          - paragraph [ref=e186]: Over time, he deduced that these situations are characterized by uncertainty. Dogmatic, rigid theories are unsuitable for chaotic situations. Rather than trying to rise through the military ranks, Boyd focused on using his position as a colonel to compose a theory of the universal logic of war.
+          - paragraph [ref=e187]:
+            - text: Boyd was known to ask his mentees the poignant question, “
+            - strong [ref=e188]:
+              - emphasis [ref=e189]: Do you want to be someone, or do you want to do something?
+            - text: ” In his own life, he certainly focused on the latter path and, as a result, left us ideas with tangible value. The OODA Loop is just one of many.
+          - paragraph [ref=e190]: Boyd developed the OODA Loop with fighter pilots in mind, but like all good mental models, it works in other fields beyond combat. It’s used in intelligence agencies. It’s used by lawyers, doctors, businesspeople, politicians, law enforcement, marketers, athletes, coaches, and more.
+          - paragraph [ref=e191]: If you have to work fast, you might want to learn a thing or two from fighter pilots. For them, a split-second of hesitation can cost them their lives. As anyone who has ever watched Top Gun knows, pilots have a lot of decisions and processes to juggle when they’re in dogfights (close-range aerial battles). Pilots move at high speeds and need to avoid enemies while tracking them and keeping a contextual knowledge of objectives, terrains, fuel, and other key variables.
+          - paragraph [ref=e192]: And as any pilot who has been in one will tell you, dogfights are nasty. No one wants them to last longer than necessary because every second increases the risk of something going wrong. Pilots have to rely on their decision-making skills—they can’t just follow a schedule or to-do list to know what to do.
+          - paragraph [ref=e193]: "***"
+          - heading "Applying the OODA Loop" [level=2] [ref=e194]
+          - paragraph [ref=e195]:
+            - text: “
+            - emphasis [ref=e196]: We can’t just look at our own personal experiences or use the same mental recipes over and over again; we’ve got to look at other disciplines and activities and relate or connect them to what we know from our experiences and the strategic world we live in.
+            - text: ” —John Boyd
+          - paragraph [ref=e197]:
+            - text: "In sports, there is an adage that carries over to business quite well: “Speed kills.”"
+            - strong [ref=e198]: If you are able to be nimble, assess the ever-changing environment, and adapt quickly, you’ll always carry the advantage over any opponents.
+          - paragraph [ref=e199]: Start applying the OODA Loop to your day-to-day decisions and watch what happens. You’ll start to notice things that you would have been oblivious to before. Before jumping to your first conclusion, you’ll pause to consider your biases, take in additional information, and be more thoughtful of consequences.
+          - paragraph [ref=e200]: As with anything you practice, if you do it right, the more you do it, the better you’ll get. You’ll start making better decisions to your full potential. You’ll see more rapid progress. And as John Boyd would prescribe, you’ll start to do something in your life, and not just be somebody.
+          - paragraph [ref=e201]: "***"
+          - paragraph [ref=e202]:
+            - emphasis [ref=e203]: We hope you’ve enjoyed our three week exploration of perspectives on decision making. We think there is value in juxtaposing different ideas to help us learn. Stay tuned for more topic specific series in the future.
+      - generic [ref=e205]:
+        - paragraph [ref=e206]: Read Next
+        - generic [ref=e207]:
+          - generic [ref=e208]:
+            - 'link "Next Post: John Stuart Mill’s Philosophy of Equality" [ref=e209] [cursor=pointer]':
+              - /url: https://fs.blog/john-stuart-mills-equality/
+              - generic [ref=e210]: "Next Post:"
+              - generic [ref=e211]: John Stuart Mill’s Philosophy of Equality
+            - text: Sometimes in the debates about how to improve equality in our society, the reason why we should desire equality gets lost. In his classic …
+          - img [ref=e214]
+  - contentinfo [ref=e216]:
+    - generic [ref=e220]:
+      - heading "Discover What You’re Missing" [level=4] [ref=e221]
+      - heading "Get the weekly email full of actionable ideas and insights you can use at work and home." [level=2] [ref=e225]
+      - separator [ref=e228]
+      - generic [ref=e230]:
+        - paragraph [ref=e232]: "As seen on:"
+        - generic [ref=e235]:
+          - figure [ref=e238]:
+            - img "New York Times logo" [ref=e239]
+          - figure [ref=e242]:
+            - img "Wall Street Journal logo" [ref=e243]
+          - figure [ref=e246]
+          - figure [ref=e249]
+    - generic [ref=e251]:
+      - generic [ref=e253]:
+        - generic [ref=e254]:
+          - paragraph [ref=e255]:
+            - strong [ref=e256]: Articles
+          - navigation "Footer Articles" [ref=e257]:
+            - list [ref=e258]:
+              - listitem [ref=e259]:
+                - link "Mental Models" [ref=e260] [cursor=pointer]:
+                  - /url: https://fs.blog/category/mental-models/
+                  - generic [ref=e261]: Mental Models
+              - listitem [ref=e262]:
+                - link "Decision Making" [ref=e263] [cursor=pointer]:
+                  - /url: https://fs.blog/category/decision-making/
+                  - generic [ref=e264]: Decision Making
+              - listitem [ref=e265]:
+                - link "Learning" [ref=e266] [cursor=pointer]:
+                  - /url: https://fs.blog/category/learning/
+                  - generic [ref=e267]: Learning
+              - listitem [ref=e268]:
+                - link "Book Recommendations" [ref=e269] [cursor=pointer]:
+                  - /url: https://fs.blog/category/books/book-recommendations/
+                  - generic [ref=e270]: Book Recommendations
+              - listitem [ref=e271]:
+                - link "All Articles" [ref=e272] [cursor=pointer]:
+                  - /url: https://fs.blog/blog/
+                  - generic [ref=e273]: All Articles
+        - generic [ref=e274]:
+          - paragraph [ref=e275]:
+            - strong [ref=e276]: Podcast
+          - navigation "Footer Podcast" [ref=e277]:
+            - list [ref=e278]:
+              - listitem [ref=e279]:
+                - link "Latest Episodes" [ref=e280] [cursor=pointer]:
+                  - /url: https://fs.blog/knowledge-project-podcast/
+                  - generic [ref=e281]: Latest Episodes
+              - listitem [ref=e282]:
+                - link "Organized by Theme" [ref=e283] [cursor=pointer]:
+                  - /url: https://fs.blog/episodes/
+                  - generic [ref=e284]: Organized by Theme
+              - listitem [ref=e285]:
+                - link "ChatBot" [ref=e286] [cursor=pointer]:
+                  - /url: https://fs.blog/knowledge-project-podcast-chat/
+                  - generic [ref=e287]: ChatBot
+        - generic [ref=e288]:
+          - paragraph [ref=e289]:
+            - strong [ref=e290]: Books
+          - navigation "Footer Books" [ref=e291]:
+            - list [ref=e292]:
+              - listitem [ref=e293]:
+                - link "Clear Thinking" [ref=e294] [cursor=pointer]:
+                  - /url: https://fs.blog/clear/
+                  - generic [ref=e295]: Clear Thinking
+              - listitem [ref=e296]:
+                - link "The Great Mental Models" [ref=e297] [cursor=pointer]:
+                  - /url: https://fs.blog/tgmm/
+                  - generic [ref=e298]: The Great Mental Models
+              - listitem [ref=e299]:
+                - link "All Books" [ref=e300] [cursor=pointer]:
+                  - /url: https://fs.blog/books/
+                  - generic [ref=e301]: All Books
+        - generic [ref=e302]:
+          - paragraph [ref=e303]:
+            - strong [ref=e304]: Newsletter
+          - navigation "Footer Newsletter" [ref=e305]:
+            - list [ref=e306]:
+              - listitem [ref=e307]:
+                - link "Archive" [ref=e308] [cursor=pointer]:
+                  - /url: https://fs.blog/brain-food/
+                  - generic [ref=e309]: Archive
+              - listitem [ref=e310]:
+                - link "Sign Up" [ref=e311] [cursor=pointer]:
+                  - /url: https://fs.blog/newsletter
+                  - generic [ref=e312]: Sign Up
+        - generic [ref=e313]:
+          - paragraph [ref=e314]:
+            - strong [ref=e315]: About
+          - navigation "Footer About" [ref=e316]:
+            - list [ref=e317]:
+              - listitem [ref=e318]:
+                - link "About Shane" [ref=e319] [cursor=pointer]:
+                  - /url: https://fs.blog/about/
+                  - generic [ref=e320]: About Shane
+              - listitem [ref=e321]:
+                - link "Speaking" [ref=e322] [cursor=pointer]:
+                  - /url: https://fs.blog/speaking/
+                  - generic [ref=e323]: Speaking
+              - listitem [ref=e324]:
+                - link "Inquire about Sponsorship" [ref=e325] [cursor=pointer]:
+                  - /url: https://fs.blog/sponsor/
+                  - generic [ref=e326]: Inquire about Sponsorship
+      - separator [ref=e330]
+      - generic [ref=e332]:
+        - generic [ref=e335]:
+          - figure [ref=e337]:
+            - img "Farnam Street Logo" [ref=e338]
+          - generic [ref=e339]:
+            - paragraph [ref=e340]:
+              - text: © 2026 Farnam Street Media Inc. All Rights Reserved.
+              - text: Proudly powered by
+              - link "WordPress" [ref=e341] [cursor=pointer]:
+                - /url: https://wordpress.com/
+              - text: . Hosted by
+              - link "Pressable" [ref=e342] [cursor=pointer]:
+                - /url: https://pressable.com/?utm_source=Automattic&utm_medium=rpc&utm_campaign=Concierge%20Referral&utm_term=concierge
+              - text: . See our
+              - link "Privacy Policy" [ref=e343] [cursor=pointer]:
+                - /url: https://fs.blog/privacy-policy/
+              - text: .
+            - navigation "Social Icons" [ref=e344]:
+              - list [ref=e345]:
+                - listitem [ref=e346]:
+                  - link [ref=e347] [cursor=pointer]:
+                    - /url: https://www.facebook.com/FarnamStreet/
+                    - img [ref=e351]
+                - listitem [ref=e353]:
+                  - link [ref=e354] [cursor=pointer]:
+                    - /url: https://x.com/ShaneParrish
+                - listitem [ref=e355]:
+                  - link [ref=e356] [cursor=pointer]:
+                    - /url: http://www.youtube.com/c/TheKnowledgeProject
+                    - img [ref=e360]
+                - listitem [ref=e362]:
+                  - link [ref=e363] [cursor=pointer]:
+                    - /url: https://www.instagram.com/farnamstreet/
+                    - img [ref=e367]
+                - listitem [ref=e369]:
+                  - link [ref=e370] [cursor=pointer]:
+                    - /url: https://fs.blog/feed/
+                    - img [ref=e374]
+        - paragraph [ref=e377]:
+          - text: We’re
+          - link "Syrus Partners" [ref=e378] [cursor=pointer]:
+            - /url: https://syruspartners.com/
+          - text: .
+          - text: We buy amazing businesses.
+      - separator [ref=e382]
+      - paragraph [ref=e383]: Farnam Street participates in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising commissions by linking to Amazon.

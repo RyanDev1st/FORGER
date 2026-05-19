@@ -1,0 +1,288 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#content"
+    - generic [ref=e5]:
+      - link "Cornell University" [ref=e7] [cursor=pointer]:
+        - /url: https://www.cornell.edu/
+        - img "Cornell University" [ref=e8]
+      - link "Learn about arXiv becoming an independent nonprofit." [ref=e10] [cursor=pointer]:
+        - /url: https://tech.cornell.edu/arxiv/
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - text: We gratefully acknowledge support from the Simons Foundation,
+          - link "member institutions" [ref=e13] [cursor=pointer]:
+            - /url: https://info.arxiv.org/about/ourmembers.html
+          - text: ", and all contributors."
+        - link "Donate" [ref=e14] [cursor=pointer]:
+          - /url: https://info.arxiv.org/about/donate.html
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - link "arxiv logo" [ref=e17] [cursor=pointer]:
+          - /url: /
+          - img "arxiv logo" [ref=e18]
+        - generic [ref=e19]: ">"
+        - link "cs" [ref=e20] [cursor=pointer]:
+          - /url: /list/cs/recent
+        - generic [ref=e21]: ">"
+        - text: arXiv:2504.13079
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - textbox "Search term or terms" [ref=e26]:
+            - /placeholder: Search...
+          - paragraph [ref=e27]:
+            - link "Help" [ref=e28] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help
+            - text: "|"
+            - link "Advanced Search" [ref=e29] [cursor=pointer]:
+              - /url: https://arxiv.org/search/advanced
+        - combobox "Field to search" [ref=e31]:
+          - option "All fields" [selected]
+          - option "Title"
+          - option "Author"
+          - option "Abstract"
+          - option "Comments"
+          - option "Journal reference"
+          - option "ACM classification"
+          - option "MSC classification"
+          - option "Report number"
+          - option "arXiv identifier"
+          - option "DOI"
+          - option "ORCID"
+          - option "arXiv author ID"
+          - option "Help pages"
+          - option "Full text"
+        - button "Search" [ref=e32] [cursor=pointer]
+  - main [ref=e33]:
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - heading "Computer Science > Computation and Language" [level=1] [ref=e38]
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - text: "[Submitted on 17 Apr 2025 ("
+            - link "v1" [ref=e42] [cursor=pointer]:
+              - /url: https://arxiv.org/abs/2504.13079v1
+            - text: ), last revised 12 Aug 2025 (this version, v2)]
+          - heading "Retrieval-Augmented Generation with Conflicting Evidence" [level=1] [ref=e43]
+          - generic [ref=e44]:
+            - link "Han Wang" [ref=e45] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Wang,+H
+            - text: ","
+            - link "Archiki Prasad" [ref=e46] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Prasad,+A
+            - text: ","
+            - link "Elias Stengel-Eskin" [ref=e47] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Stengel-Eskin,+E
+            - text: ","
+            - link "Mohit Bansal" [ref=e48] [cursor=pointer]:
+              - /url: https://arxiv.org/search/cs?searchtype=author&query=Bansal,+M
+          - blockquote [ref=e49]: Large language model (LLM) agents are increasingly employing retrieval-augmented generation (RAG) to improve the factuality of their responses. However, in practice, these systems often need to handle ambiguous user queries and potentially conflicting information from multiple sources while also suppressing inaccurate information from noisy or irrelevant documents. Prior work has generally studied and addressed these challenges in isolation, considering only one aspect at a time, such as handling ambiguity or robustness to noise and misinformation. We instead consider multiple factors simultaneously, proposing (i) RAMDocs (Retrieval with Ambiguity and Misinformation in Documents), a new dataset that simulates complex and realistic scenarios for conflicting evidence for a user query, including ambiguity, misinformation, and noise; and (ii) MADAM-RAG, a multi-agent approach in which LLM agents debate over the merits of an answer over multiple rounds, allowing an aggregator to collate responses corresponding to disambiguated entities while discarding misinformation and noise, thereby handling diverse sources of conflict jointly. We demonstrate the effectiveness of MADAM-RAG using both closed and open-source models on AmbigDocs -- which requires presenting all valid answers for ambiguous queries -- improving over strong RAG baselines by up to 11.40% and on FaithEval -- which requires suppressing misinformation -- where we improve by up to 15.80% (absolute) with Llama3.3-70B-Instruct. Furthermore, we find that RAMDocs poses a challenge for existing RAG baselines (Llama3.3-70B-Instruct only obtains 32.60 exact match score). While MADAM-RAG begins to address these conflicting factors, our analysis indicates that a substantial gap remains especially when increasing the level of imbalance in supporting evidence and misinformation.
+          - table "Additional metadata" [ref=e51]:
+            - rowgroup [ref=e52]:
+              - 'row "Comments: COLM 2025, Data and Code: this https URL" [ref=e53]':
+                - cell "Comments:" [ref=e54]
+                - 'cell "COLM 2025, Data and Code: this https URL" [ref=e55]':
+                  - text: "COLM 2025, Data and Code:"
+                  - link "this https URL" [ref=e56] [cursor=pointer]:
+                    - /url: https://github.com/HanNight/RAMDocs
+              - 'row "Subjects: Computation and Language (cs.CL); Artificial Intelligence (cs.AI)" [ref=e57]':
+                - cell "Subjects:" [ref=e58]
+                - cell "Computation and Language (cs.CL); Artificial Intelligence (cs.AI)" [ref=e59]
+              - 'row "Cite as: arXiv:2504.13079 [cs.CL]" [ref=e60]':
+                - cell "Cite as:" [ref=e61]
+                - cell "arXiv:2504.13079 [cs.CL]" [ref=e62]:
+                  - generic [ref=e63]:
+                    - link "arXiv:2504.13079" [ref=e64] [cursor=pointer]:
+                      - /url: https://arxiv.org/abs/2504.13079
+                    - text: "[cs.CL]"
+              - row "(or arXiv:2504.13079v2 [cs.CL] for this version)" [ref=e65]:
+                - cell [ref=e66]
+                - cell "(or arXiv:2504.13079v2 [cs.CL] for this version)" [ref=e67]:
+                  - text: (or
+                  - generic [ref=e68]:
+                    - link "arXiv:2504.13079v2" [ref=e69] [cursor=pointer]:
+                      - /url: https://arxiv.org/abs/2504.13079v2
+                    - text: "[cs.CL]"
+                  - text: for this version)
+              - row "https://doi.org/10.48550/arXiv.2504.13079 Focus to learn more" [ref=e70]:
+                - cell [ref=e71]
+                - cell "https://doi.org/10.48550/arXiv.2504.13079 Focus to learn more" [ref=e72]:
+                  - link "https://doi.org/10.48550/arXiv.2504.13079" [ref=e73] [cursor=pointer]:
+                    - /url: https://doi.org/10.48550/arXiv.2504.13079
+                  - button "Focus to learn more" [ref=e75]:
+                    - generic [ref=e77]: Focus to learn more
+        - generic [ref=e78]:
+          - heading "Submission history" [level=2] [ref=e79]
+          - text: "From: Han Wang ["
+          - link "view email" [ref=e80] [cursor=pointer]:
+            - /url: /show-email/2288b341/2504.13079
+          - text: "]"
+          - strong [ref=e81]:
+            - link "[v1]" [ref=e82] [cursor=pointer]:
+              - /url: /abs/2504.13079v1
+          - text: Thu, 17 Apr 2025 16:46:11 UTC (299 KB)
+          - strong [ref=e83]: "[v2]"
+          - text: Tue, 12 Aug 2025 17:53:18 UTC (301 KB)
+      - generic [ref=e84]:
+        - generic [ref=e85]:
+          - heading "Access Paper:" [level=2] [ref=e86]
+          - list [ref=e87]:
+            - listitem [ref=e88]:
+              - link "View PDF" [ref=e89] [cursor=pointer]:
+                - /url: /pdf/2504.13079
+            - listitem [ref=e90]:
+              - link "HTML (experimental)" [ref=e91] [cursor=pointer]:
+                - /url: https://arxiv.org/html/2504.13079v2
+            - listitem [ref=e92]:
+              - link "TeX Source" [ref=e93] [cursor=pointer]:
+                - /url: /src/2504.13079
+          - link "view license" [ref=e95] [cursor=pointer]:
+            - /url: http://arxiv.org/licenses/nonexclusive-distrib/1.0/
+        - generic [ref=e96]:
+          - text: "Current browse context:"
+          - generic [ref=e97]: cs.CL
+          - generic [ref=e98]:
+            - link "< prev" [ref=e100] [cursor=pointer]:
+              - /url: /prevnext?id=2504.13079&function=prev&context=cs.CL
+            - text: "|"
+            - link "next >" [ref=e102] [cursor=pointer]:
+              - /url: /prevnext?id=2504.13079&function=next&context=cs.CL
+          - generic [ref=e103]:
+            - link "new" [ref=e104] [cursor=pointer]:
+              - /url: /list/cs.CL/new
+            - text: "|"
+            - link "recent" [ref=e105] [cursor=pointer]:
+              - /url: /list/cs.CL/recent
+            - text: "|"
+            - link "2025-04" [ref=e106] [cursor=pointer]:
+              - /url: /list/cs.CL/2025-04
+          - generic [ref=e107]:
+            - text: "Change to browse by:"
+            - generic [ref=e108]:
+              - link "cs" [ref=e109] [cursor=pointer]:
+                - /url: /abs/2504.13079?context=cs
+              - link "cs.AI" [ref=e110] [cursor=pointer]:
+                - /url: /abs/2504.13079?context=cs.AI
+        - generic [ref=e111]:
+          - heading "References & Citations" [level=3] [ref=e112]
+          - list [ref=e113]:
+            - listitem [ref=e114]:
+              - link "NASA ADS" [ref=e115] [cursor=pointer]:
+                - /url: https://ui.adsabs.harvard.edu/abs/arXiv:2504.13079
+            - listitem [ref=e116]:
+              - link "Google Scholar" [ref=e117] [cursor=pointer]:
+                - /url: https://scholar.google.com/scholar_lookup?arxiv_id=2504.13079
+            - listitem [ref=e118]:
+              - link "Semantic Scholar" [ref=e119] [cursor=pointer]:
+                - /url: https://api.semanticscholar.org/arXiv:2504.13079
+        - generic [ref=e120]: export BibTeX citation
+        - generic [ref=e121]:
+          - heading "Bookmark" [level=3] [ref=e123]
+          - link "BibSonomy logo" [ref=e124] [cursor=pointer]:
+            - /url: http://www.bibsonomy.org/BibtexHandler?requTask=upload&url=https://arxiv.org/abs/2504.13079&description=Retrieval-Augmented Generation with Conflicting Evidence
+            - img "BibSonomy logo" [ref=e125]
+          - link "Reddit logo" [ref=e126] [cursor=pointer]:
+            - /url: https://reddit.com/submit?url=https://arxiv.org/abs/2504.13079&title=Retrieval-Augmented Generation with Conflicting Evidence
+            - img "Reddit logo" [ref=e127]
+      - generic [ref=e129]:
+        - radio "Bibliographic Tools" [checked] [ref=e130]
+        - generic [ref=e131] [cursor=pointer]: Bibliographic Tools
+        - generic [ref=e132]:
+          - heading "Bibliographic and Citation Tools" [level=1] [ref=e133]
+          - generic [ref=e134]:
+            - generic [ref=e135]:
+              - generic [ref=e137]:
+                - checkbox "Bibliographic Explorer Toggle"
+                - generic [ref=e139]: Bibliographic Explorer Toggle
+              - generic [ref=e140]:
+                - text: Bibliographic Explorer
+                - emphasis [ref=e141]:
+                  - text: (
+                  - link "What is the Explorer?" [ref=e142] [cursor=pointer]:
+                    - /url: https://info.arxiv.org/labs/showcase.html#arxiv-bibliographic-explorer
+                  - text: )
+            - generic [ref=e143]:
+              - generic [ref=e145]:
+                - checkbox "Connected Papers"
+                - generic [ref=e147]: Connected Papers Toggle
+              - generic [ref=e148]:
+                - text: Connected Papers
+                - emphasis [ref=e149]:
+                  - text: (
+                  - link "What is Connected Papers?" [ref=e150] [cursor=pointer]:
+                    - /url: https://www.connectedpapers.com/about
+                  - text: )
+            - generic [ref=e151]:
+              - generic [ref=e153]:
+                - checkbox "Litmaps"
+                - generic [ref=e155]: Litmaps Toggle
+              - generic [ref=e156]:
+                - text: Litmaps
+                - emphasis [ref=e157]:
+                  - text: (
+                  - link "What is Litmaps?" [ref=e158] [cursor=pointer]:
+                    - /url: https://www.litmaps.co/
+                  - text: )
+            - generic [ref=e159]:
+              - generic [ref=e161]:
+                - checkbox "scite Smart Citations"
+                - generic [ref=e163]: scite.ai Toggle
+              - generic [ref=e164]:
+                - text: scite Smart Citations
+                - emphasis [ref=e165]:
+                  - text: (
+                  - link "What are Smart Citations?" [ref=e166] [cursor=pointer]:
+                    - /url: https://www.scite.ai/
+                  - text: )
+        - radio "Code, Data, Media" [ref=e170]
+        - generic [ref=e171] [cursor=pointer]: Code, Data, Media
+        - radio "Demos" [ref=e172]
+        - generic [ref=e173] [cursor=pointer]: Demos
+        - radio "Related Papers" [ref=e174]
+        - generic [ref=e175] [cursor=pointer]: Related Papers
+        - radio "About arXivLabs" [ref=e176]
+        - generic [ref=e177] [cursor=pointer]: About arXivLabs
+      - generic [ref=e178]:
+        - link "Which authors of this paper are endorsers?" [ref=e179] [cursor=pointer]:
+          - /url: /auth/show-endorsers/2504.13079
+        - text: "|"
+        - link "Disable MathJax" [ref=e180] [cursor=pointer]:
+          - /url: javascript:setMathjaxCookie()
+        - text: (
+        - link "What is MathJax?" [ref=e181] [cursor=pointer]:
+          - /url: https://info.arxiv.org/help/mathjax.html
+        - text: )
+  - contentinfo [ref=e182]:
+    - navigation "Secondary" [ref=e183]:
+      - generic [ref=e185]:
+        - list [ref=e187]:
+          - listitem [ref=e188]:
+            - link "About" [ref=e189] [cursor=pointer]:
+              - /url: https://info.arxiv.org/about
+          - listitem [ref=e190]:
+            - link "Help" [ref=e191] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help
+        - list [ref=e193]:
+          - listitem [ref=e194]:
+            - link "Contact" [ref=e196] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help/contact.html
+          - listitem [ref=e197]:
+            - link "Subscribe" [ref=e199] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help/subscribe
+      - generic [ref=e201]:
+        - list [ref=e203]:
+          - listitem [ref=e204]:
+            - link "Copyright" [ref=e205] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help/license/index.html
+          - listitem [ref=e206]:
+            - link "Privacy Policy" [ref=e207] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help/policies/privacy_policy.html
+        - list [ref=e209]:
+          - listitem [ref=e210]:
+            - link "Web Accessibility Assistance" [ref=e211] [cursor=pointer]:
+              - /url: https://info.arxiv.org/help/web_accessibility.html
+          - listitem [ref=e212]:
+            - paragraph [ref=e213]:
+              - link "arXiv Operational Status" [ref=e214] [cursor=pointer]:
+                - /url: https://status.arxiv.org
+                - text: arXiv Operational Status

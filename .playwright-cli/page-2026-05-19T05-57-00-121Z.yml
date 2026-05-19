@@ -1,0 +1,457 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - link "DuckDuckGo home" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e9]: DuckDuckGo
+          - generic [ref=e15]:
+            - combobox "Search privately" [ref=e17]: arxiv source attribution retrieval augmented generation faithfulness
+            - button "search" [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - generic [ref=e25]:
+              - banner [ref=e26]:
+                - img [ref=e27]
+                - paragraph [ref=e28]: Upgrade to our browser.
+              - generic [ref=e29]:
+                - generic [ref=e30]:
+                  - img [ref=e31]
+                  - generic [ref=e32]:
+                    - img [ref=e33]
+                    - img [ref=e34]
+                - paragraph [ref=e35]:
+                  - generic [ref=e36]:
+                    - text: Try the
+                    - strong [ref=e37]: DuckDuckGo Browser.
+                    - text: Fast. Free. Private.
+                - link "Download Browser" [ref=e38] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/windows?origin=funnel_browser_searchresults__popover
+                  - img [ref=e39]
+                  - generic [ref=e41]: Download Browser
+              - paragraph [ref=e44]:
+                - generic [ref=e45]: Free
+            - button [ref=e47] [cursor=pointer]:
+              - img [ref=e48]
+          - button "Open menu" [ref=e50] [cursor=pointer]:
+            - generic [ref=e51]: Open menu
+            - img [ref=e52]
+      - navigation [ref=e58]:
+        - list [ref=e59]:
+          - listitem [ref=e60]:
+            - link "All" [ref=e61] [cursor=pointer]:
+              - /url: /?q=arxiv+source+attribution+retrieval+augmented+generation+faithfulness&ia=web
+              - img [ref=e62]
+              - text: All
+          - listitem [ref=e64]:
+            - link "Images" [ref=e65] [cursor=pointer]:
+              - /url: /?q=arxiv+source+attribution+retrieval+augmented+generation+faithfulness&ia=images&iax=images
+          - listitem [ref=e66]:
+            - link "Videos" [ref=e67] [cursor=pointer]:
+              - /url: /?q=arxiv+source+attribution+retrieval+augmented+generation+faithfulness&ia=videos&iax=videos
+          - listitem [ref=e68]:
+            - link "News" [ref=e69] [cursor=pointer]:
+              - /url: /?q=arxiv+source+attribution+retrieval+augmented+generation+faithfulness&ia=news&iar=news
+          - listitem [ref=e70]:
+            - link "Maps" [ref=e71] [cursor=pointer]:
+              - /url: /?q=arxiv+source+attribution+retrieval+augmented+generation+faithfulness&iaxm=maps
+        - list [ref=e72]:
+          - listitem [ref=e73]:
+            - link "Duck.ai" [ref=e75] [cursor=pointer]:
+              - /url: /?q=arxiv+source+attribution+retrieval+augmented+generation+faithfulness&ia=chat
+              - img [ref=e76]
+              - text: Duck.ai
+          - listitem [ref=e79]:
+            - button "Search Settings ✀" [ref=e81] [cursor=pointer]:
+              - img [ref=e82]
+              - generic [ref=e84]: Search Settings
+              - generic [ref=e87]: ✀
+    - generic [ref=e92]:
+      - navigation [ref=e94]:
+        - generic [ref=e97] [cursor=pointer]:
+          - generic [ref=e105]: Protected
+          - img [ref=e106]: ▼
+        - generic [ref=e110] [cursor=pointer]:
+          - generic [ref=e113]:
+            - switch "✓" [ref=e114]: ✓
+            - generic [ref=e116]: Vietnam (en)
+          - img [ref=e117]: ▼
+        - generic [ref=e121] [cursor=pointer]:
+          - generic [ref=e122]: "Safe search: moderate"
+          - img [ref=e123]: ▼
+        - generic [ref=e127] [cursor=pointer]:
+          - generic [ref=e128]: Any time
+          - img [ref=e129]: ▼
+      - generic [ref=e132]:
+        - list [ref=e133]:
+          - listitem [ref=e134]:
+            - article [ref=e135] [cursor=pointer]:
+              - button [ref=e137]:
+                - img [ref=e138]
+              - generic [ref=e142]:
+                - link "Search domain arxiv.org" [ref=e144]:
+                  - /url: /?q=arxiv%20source%20attribution%20retrieval%20augmented%20generation%20faithfulness+site:arxiv.org
+                  - img [ref=e146]
+                - generic [ref=e147]:
+                  - paragraph [ref=e148]: arXiv.org
+                  - link "https://arxiv.org › abs › 2412.18004" [ref=e149]:
+                    - /url: https://arxiv.org/abs/2412.18004
+                    - paragraph [ref=e151]:
+                      - generic [ref=e152]: https://arxiv.org
+                      - generic [ref=e153]: › abs › 2412.18004
+              - heading "Correctness is not Faithfulness in RAG Attributions" [level=2] [ref=e155]:
+                - link "Correctness is not Faithfulness in RAG Attributions" [ref=e156]:
+                  - /url: https://arxiv.org/abs/2412.18004
+                  - generic [ref=e157]: Correctness is not Faithfulness in RAG Attributions
+              - generic [ref=e161]:
+                - text: Dec 23, 2024·
+                - generic [ref=e162]: To establish trust in attributed answers, we must examine both citation correctness and citation faithfulness. In this work, we first disentangle the notions of citation correctness and faithfulness, which have been applied inconsistently in previous studies.
+          - listitem [ref=e163]:
+            - article [ref=e164] [cursor=pointer]:
+              - button [ref=e166]:
+                - img [ref=e167]
+              - generic [ref=e171]:
+                - link "Search domain dl.acm.org" [ref=e173]:
+                  - /url: /?q=arxiv%20source%20attribution%20retrieval%20augmented%20generation%20faithfulness+site:dl.acm.org
+                  - img [ref=e175]
+                - generic [ref=e176]:
+                  - paragraph [ref=e177]: ACM Digital Library
+                  - link "https://dl.acm.org › doi › 10.1145 › 3731120.3744592" [ref=e178]:
+                    - /url: https://dl.acm.org/doi/10.1145/3731120.3744592
+                    - paragraph [ref=e180]:
+                      - generic [ref=e181]: https://dl.acm.org
+                      - generic [ref=e182]: › doi › 10.1145 › 3731120.3744592
+              - heading "Correctness is not Faithfulness in Retrieval Augmented Generation ..." [level=2] [ref=e184]:
+                - link "Correctness is not Faithfulness in Retrieval Augmented Generation ..." [ref=e185]:
+                  - /url: https://dl.acm.org/doi/10.1145/3731120.3744592
+                  - generic [ref=e186]: Correctness is not Faithfulness in Retrieval Augmented Generation ...
+              - generic [ref=e190]:
+                - text: Jul 18, 2025·
+                - generic [ref=e191]: Through experimentation, we reveal prevalent post-rationalization issues, finding that up to 57% of citations lack faithfulness. This undermines reliable attribution and may result in misplaced trust, highlighting a critical gap in current LLM-based IR systems.
+          - listitem [ref=e192]:
+            - article [ref=e193] [cursor=pointer]:
+              - button [ref=e195]:
+                - img [ref=e196]
+              - generic [ref=e200]:
+                - link "Search domain github.com" [ref=e202]:
+                  - /url: /?q=arxiv%20source%20attribution%20retrieval%20augmented%20generation%20faithfulness+site:github.com
+                  - img [ref=e204]
+                - generic [ref=e205]:
+                  - paragraph [ref=e206]: Github
+                  - link "https://github.com › Chava-Sai › Evaluating-Faithfulness-and-Attribution-in-Retrieval-Augmented-Generation-Systems" [ref=e207]:
+                    - /url: https://github.com/Chava-Sai/Evaluating-Faithfulness-and-Attribution-in-Retrieval-Augmented-Generation-Systems
+                    - paragraph [ref=e209]:
+                      - generic [ref=e210]: https://github.com
+                      - generic [ref=e211]: › Chava-Sai › Evaluating-Faithfulness-and-Attribution-in-Retrieval-Augmented-Generation-Systems
+              - heading "Chava-Sai/Evaluating-Faithfulness-and-Attribution-in-Retrieval ... - GitHub" [level=2] [ref=e213]:
+                - link "Chava-Sai/Evaluating-Faithfulness-and-Attribution-in-Retrieval ... - GitHub" [ref=e214]:
+                  - /url: https://github.com/Chava-Sai/Evaluating-Faithfulness-and-Attribution-in-Retrieval-Augmented-Generation-Systems
+                  - generic [ref=e215]: Chava-Sai/Evaluating-Faithfulness-and-Attribution-in-Retrieval ... - GitHub
+              - generic [ref=e220]: Contribute to Chava-Sai/Evaluating-Faithfulness-and-Attribution-in-Retrieval-Augmented-Generation-Systems development by creating an account on GitHub.
+          - listitem [ref=e221]:
+            - article [ref=e222] [cursor=pointer]:
+              - button [ref=e224]:
+                - img [ref=e225]
+              - generic [ref=e229]:
+                - link "Search domain semanticscholar.org" [ref=e231]:
+                  - /url: /?q=arxiv%20source%20attribution%20retrieval%20augmented%20generation%20faithfulness+site:www.semanticscholar.org
+                  - img [ref=e233]
+                - generic [ref=e234]:
+                  - paragraph [ref=e235]: Semantic Scholar
+                  - link "https://www.semanticscholar.org › paper › Correctness-is-not-Faithfulness-in-RAG-Attributions-Wallat-Heuss › 90c55bcadb753290921be6f70c6bc4439d7d146d" [ref=e236]:
+                    - /url: https://www.semanticscholar.org/paper/Correctness-is-not-Faithfulness-in-RAG-Attributions-Wallat-Heuss/90c55bcadb753290921be6f70c6bc4439d7d146d
+                    - paragraph [ref=e238]:
+                      - generic [ref=e239]: https://www.semanticscholar.org
+                      - generic [ref=e240]: › paper › Correctness-is-not-Faithfulness-in-RAG-Attributions-Wallat-Heuss › 90c55bcadb753290921be6f70c6bc4439d7d146d
+              - heading "Correctness is not Faithfulness in RAG Attributions" [level=2] [ref=e242]:
+                - link "Correctness is not Faithfulness in RAG Attributions" [ref=e243]:
+                  - /url: https://www.semanticscholar.org/paper/Correctness-is-not-Faithfulness-in-RAG-Attributions-Wallat-Heuss/90c55bcadb753290921be6f70c6bc4439d7d146d
+                  - generic [ref=e244]: Correctness is not Faithfulness in RAG Attributions
+              - generic [ref=e248]:
+                - text: Dec 23, 2024·
+                - generic [ref=e249]: Our findings suggest that current attributed answers often lack citation faithfulness (up to 57 percent of the citations), highlighting the need to evaluate correctness and faithfulness for trustworthy attribution in language models.
+          - listitem [ref=e250]:
+            - article [ref=e251] [cursor=pointer]:
+              - button [ref=e253]:
+                - img [ref=e254]
+              - generic [ref=e258]:
+                - link "Search domain aclanthology.org" [ref=e260]:
+                  - /url: /?q=arxiv%20source%20attribution%20retrieval%20augmented%20generation%20faithfulness+site:aclanthology.org
+                  - img [ref=e262]
+                - generic [ref=e263]:
+                  - paragraph [ref=e264]: ACL Anthology
+                  - link "https://aclanthology.org › 2025.acl-long.1062.pdf" [ref=e265]:
+                    - /url: https://aclanthology.org/2025.acl-long.1062.pdf
+                    - paragraph [ref=e267]:
+                      - generic [ref=e268]: https://aclanthology.org
+                      - generic [ref=e269]: › 2025.acl-long.1062.pdf
+              - 'heading "PDF FaithfulRAG: Fact-Level Conict Modeling for Context-Faithful Retrieval ..." [level=2] [ref=e271]':
+                - 'link "PDF FaithfulRAG: Fact-Level Conict Modeling for Context-Faithful Retrieval ..." [ref=e272]':
+                  - /url: https://aclanthology.org/2025.acl-long.1062.pdf
+                  - generic [ref=e273]:
+                    - generic [ref=e274]: PDF
+                    - text: "FaithfulRAG: Fact-Level Conict Modeling for Context-Faithful Retrieval ..."
+              - generic [ref=e279]: In this paper, we propose a novel RAG model (FaithfulRAG) that achieves context faithfulness while maintaining accurate knowledge integration.
+          - listitem [ref=e280]:
+            - article [ref=e281] [cursor=pointer]:
+              - button [ref=e283]:
+                - img [ref=e284]
+              - generic [ref=e288]:
+                - link "Search domain aimodels.fyi" [ref=e290]:
+                  - /url: /?q=arxiv%20source%20attribution%20retrieval%20augmented%20generation%20faithfulness+site:www.aimodels.fyi
+                  - img [ref=e292]
+                - generic [ref=e293]:
+                  - paragraph [ref=e294]: aimodels.fyi
+                  - link "https://www.aimodels.fyi › papers › arxiv › correctness-is-not-faithfulness-rag-attributions" [ref=e295]:
+                    - /url: https://www.aimodels.fyi/papers/arxiv/correctness-is-not-faithfulness-rag-attributions
+                    - paragraph [ref=e297]:
+                      - generic [ref=e298]: https://www.aimodels.fyi
+                      - generic [ref=e299]: › papers › arxiv › correctness-is-not-faithfulness-rag-attributions
+              - heading "Correctness is not Faithfulness in RAG Attributions | AI Research Paper ..." [level=2] [ref=e301]:
+                - link "Correctness is not Faithfulness in RAG Attributions | AI Research Paper ..." [ref=e302]:
+                  - /url: https://www.aimodels.fyi/papers/arxiv/correctness-is-not-faithfulness-rag-attributions
+                  - generic [ref=e303]: Correctness is not Faithfulness in RAG Attributions | AI Research Paper ...
+              - generic [ref=e307]:
+                - text: Dec 25, 2024·
+                - generic [ref=e308]: Correctness means the cited information matches what's in the source. Faithfulness means the AI actually used that source to generate its answer, rather than making up an answer and then finding a source that happens to agree.
+          - listitem [ref=e309]:
+            - article [ref=e310] [cursor=pointer]:
+              - button [ref=e312]:
+                - img [ref=e313]
+              - generic [ref=e317]:
+                - link "Search domain huggingface.co" [ref=e319]:
+                  - /url: /?q=arxiv%20source%20attribution%20retrieval%20augmented%20generation%20faithfulness+site:huggingface.co
+                  - img [ref=e321]
+                - generic [ref=e322]:
+                  - paragraph [ref=e323]: Hugging Face
+                  - link "https://huggingface.co › papers › 2406.13663" [ref=e324]:
+                    - /url: https://huggingface.co/papers/2406.13663
+                    - paragraph [ref=e326]:
+                      - generic [ref=e327]: https://huggingface.co
+                      - generic [ref=e328]: › papers › 2406.13663
+              - heading "Model Internals-based Answer Attribution for Trustworthy Retrieval ..." [level=2] [ref=e330]:
+                - link "Model Internals-based Answer Attribution for Trustworthy Retrieval ..." [ref=e331]:
+                  - /url: https://huggingface.co/papers/2406.13663
+                  - generic [ref=e332]: Model Internals-based Answer Attribution for Trustworthy Retrieval ...
+              - generic [ref=e336]:
+                - text: Jun 21, 2024·
+                - generic [ref=e337]: Our qualitative evaluation highlights the faithfulness of MIRAGE's attributions and underscores the promising application of model internals for RAG answer attribution.
+          - listitem [ref=e338]:
+            - article [ref=e339] [cursor=pointer]:
+              - button [ref=e341]:
+                - img [ref=e342]
+              - generic [ref=e346]:
+                - link "Search domain mdpi.com" [ref=e348]:
+                  - /url: /?q=arxiv%20source%20attribution%20retrieval%20augmented%20generation%20faithfulness+site:www.mdpi.com
+                  - img [ref=e350]
+                - generic [ref=e351]:
+                  - paragraph [ref=e352]: MDPI
+                  - link "https://www.mdpi.com › 2504-2289 › 9 › 12 › 320" [ref=e353]:
+                    - /url: https://www.mdpi.com/2504-2289/9/12/320
+                    - paragraph [ref=e355]:
+                      - generic [ref=e356]: https://www.mdpi.com
+                      - generic [ref=e357]: › 2504-2289 › 9 › 12 › 320
+              - heading "A Systematic Literature Review of Retrieval-Augmented Generation ... - MDPI" [level=2] [ref=e359]:
+                - link "A Systematic Literature Review of Retrieval-Augmented Generation ... - MDPI" [ref=e360]:
+                  - /url: https://www.mdpi.com/2504-2289/9/12/320
+                  - generic [ref=e361]: A Systematic Literature Review of Retrieval-Augmented Generation ... - MDPI
+              - generic [ref=e365]:
+                - text: Dec 12, 2025·
+                - generic [ref=e366]: Over the past five years, Large Language Models (LLMs) have transformed how researchers and practitioners process text. Retrieval-Augmented Generation (RAG) addresses key shortcomings of these models—such as hallucinated facts, outdated world knowledge, and the challenges of knowledge-intensive or domain-specific queries—by enabling a generative model to query an external corpus at ...
+          - listitem [ref=e367]:
+            - article [ref=e368] [cursor=pointer]:
+              - button [ref=e370]:
+                - img [ref=e371]
+              - generic [ref=e375]:
+                - link "Search domain researchgate.net" [ref=e377]:
+                  - /url: /?q=arxiv%20source%20attribution%20retrieval%20augmented%20generation%20faithfulness+site:www.researchgate.net
+                  - img [ref=e379]
+                - generic [ref=e380]:
+                  - paragraph [ref=e381]: ResearchGate
+                  - link "https://www.researchgate.net › publication › 384973858_Evaluation_of_Attribution_Bias_in_Retrieval-Augmented_Large_Language_Models" [ref=e382]:
+                    - /url: https://www.researchgate.net/publication/384973858_Evaluation_of_Attribution_Bias_in_Retrieval-Augmented_Large_Language_Models
+                    - paragraph [ref=e384]:
+                      - generic [ref=e385]: https://www.researchgate.net
+                      - generic [ref=e386]: › publication › 384973858_Evaluation_of_Attribution_Bias_in_Retrieval-Augmented_Large_Language_Models
+              - heading "(PDF) Evaluation of Attribution Bias in Retrieval-Augmented Large ..." [level=2] [ref=e388]:
+                - link "(PDF) Evaluation of Attribution Bias in Retrieval-Augmented Large ..." [ref=e389]:
+                  - /url: https://www.researchgate.net/publication/384973858_Evaluation_of_Attribution_Bias_in_Retrieval-Augmented_Large_Language_Models
+                  - generic [ref=e390]: (PDF) Evaluation of Attribution Bias in Retrieval-Augmented Large ...
+              - generic [ref=e394]:
+                - text: Oct 16, 2024·
+                - generic [ref=e395]: We define and examine two aspects in the evaluation of LLMs in RAG pipelines, namely attribution sensitivity and bias with respect to authorship information.
+          - listitem [ref=e396]:
+            - article [ref=e397] [cursor=pointer]:
+              - button [ref=e399]:
+                - img [ref=e400]
+              - generic [ref=e404]:
+                - link "Search domain gsarti.com" [ref=e406]:
+                  - /url: /?q=arxiv%20source%20attribution%20retrieval%20augmented%20generation%20faithfulness+site:gsarti.com
+                  - img [ref=e408]
+                - generic [ref=e409]:
+                  - paragraph [ref=e410]: gsarti.com
+                  - link "https://gsarti.com › publication › mirage" [ref=e411]:
+                    - /url: https://gsarti.com/publication/mirage/
+                    - paragraph [ref=e413]:
+                      - generic [ref=e414]: https://gsarti.com
+                      - generic [ref=e415]: › publication › mirage
+              - heading "Model Internals-based Answer Attribution for Trustworthy Retrieval ..." [level=2] [ref=e417]:
+                - link "Model Internals-based Answer Attribution for Trustworthy Retrieval ..." [ref=e418]:
+                  - /url: https://gsarti.com/publication/mirage/
+                  - generic [ref=e419]: Model Internals-based Answer Attribution for Trustworthy Retrieval ...
+              - generic [ref=e424]: Our qualitative evaluation highlights the faithfulness of MIRAGE's attributions and underscores the promising application of model internals for RAG answer attribution.
+        - button "More results" [ref=e427] [cursor=pointer]
+    - list [ref=e430]:
+      - button "Close menu" [ref=e431] [cursor=pointer]:
+        - generic [ref=e432]: Close menu
+        - img [ref=e433]
+      - list [ref=e435]:
+        - listitem [ref=e436]: Search
+        - listitem [ref=e437]:
+          - link "Homepage" [ref=e438] [cursor=pointer]:
+            - /url: https://start.duckduckgo.com/
+        - listitem [ref=e439]:
+          - link "Themes" [ref=e440] [cursor=pointer]:
+            - /url: /settings#appearance
+        - listitem [ref=e441]:
+          - link "Settings" [ref=e442] [cursor=pointer]:
+            - /url: /settings
+      - list [ref=e443]:
+        - listitem [ref=e444]: Share Feedback
+        - listitem [ref=e445]:
+          - generic [ref=e448]:
+            - button "Positive feedback" [ref=e449] [cursor=pointer]:
+              - img [ref=e450]
+            - button "Negative feedback" [ref=e453] [cursor=pointer]:
+              - img [ref=e454]
+      - list [ref=e457]:
+        - listitem [ref=e458]: Downloads
+        - listitem [ref=e459]:
+          - link "iOS Browser" [ref=e460] [cursor=pointer]:
+            - /url: https://apps.apple.com/app/duckduckgo-private-browser/id663592361?platform=iphone&pt=866401&mt=8&ct=serp-atb-serp
+        - listitem [ref=e461]:
+          - link "Android Browser" [ref=e462] [cursor=pointer]:
+            - /url: https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&referrer=utm_campaign%3Dserp-atb-serp%26origin%3Dfunnel_playstore_searchresults
+        - listitem [ref=e463]:
+          - link "Mac Browser" [ref=e464] [cursor=pointer]:
+            - /url: /mac?origin=funnel_browser_searchresults
+        - listitem [ref=e465]:
+          - link "Windows Browser" [ref=e466] [cursor=pointer]:
+            - /url: /windows?origin=funnel_browser_searchresults
+        - listitem [ref=e467]: Browser Extensions
+      - list [ref=e468]:
+        - listitem [ref=e469]: More From DuckDuckGo
+        - listitem [ref=e470]:
+          - generic [ref=e473]:
+            - button "Dismiss promotion" [ref=e474] [cursor=pointer]:
+              - img [ref=e475]
+            - generic [ref=e477]:
+              - paragraph [ref=e479]:
+                - img [ref=e480]
+                - text: Upgrade to our Private Browser
+              - paragraph [ref=e491]: Fast. Secure. Free.
+            - link "Download Browser" [ref=e492] [cursor=pointer]:
+              - /url: /windows
+              - img [ref=e493]
+              - text: Download Browser
+        - listitem [ref=e495]:
+          - link "Duck.ai" [ref=e496] [cursor=pointer]:
+            - /url: https://duck.ai
+        - listitem [ref=e497]:
+          - link "Email Protection" [ref=e498] [cursor=pointer]:
+            - /url: /email
+        - listitem [ref=e499]:
+          - link "Newsletter" [ref=e500] [cursor=pointer]:
+            - /url: /newsletter
+        - listitem [ref=e501]:
+          - link "Blog" [ref=e502] [cursor=pointer]:
+            - /url: /blog
+        - listitem [ref=e503]:
+          - link "Podcast" [ref=e504] [cursor=pointer]:
+            - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+        - listitem [ref=e505]:
+          - link "Collaborations" [ref=e506] [cursor=pointer]:
+            - /url: /collaborations
+      - list [ref=e507]:
+        - listitem [ref=e508]: Learn More
+        - listitem [ref=e509]:
+          - link "What’s New" [ref=e510] [cursor=pointer]:
+            - /url: /updates
+        - listitem [ref=e511]:
+          - link "Compare Privacy" [ref=e512] [cursor=pointer]:
+            - /url: /compare-privacy
+        - listitem [ref=e513]:
+          - link "About Our Browser" [ref=e514] [cursor=pointer]:
+            - /url: /app
+        - listitem [ref=e515]:
+          - link "About DuckDuckGo" [ref=e516] [cursor=pointer]:
+            - /url: /about
+      - list [ref=e517]:
+        - listitem [ref=e518]: Other Resources
+        - listitem [ref=e519]:
+          - link "Help" [ref=e520] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages
+        - listitem [ref=e521]:
+          - link "Community" [ref=e522] [cursor=pointer]:
+            - /url: https://www.reddit.com/r/duckduckgo/
+        - listitem [ref=e523]:
+          - link "Careers" [ref=e524] [cursor=pointer]:
+            - /url: /careers
+        - listitem [ref=e525]:
+          - link "Privacy Policy" [ref=e526] [cursor=pointer]:
+            - /url: /privacy
+        - listitem [ref=e527]:
+          - link "Terms of Service" [ref=e528] [cursor=pointer]:
+            - /url: /terms
+        - listitem [ref=e529]:
+          - link "Press Kit" [ref=e530] [cursor=pointer]:
+            - /url: /press
+        - listitem [ref=e531]:
+          - link "Advertise on Search" [ref=e532] [cursor=pointer]:
+            - /url: /duckduckgo-help-pages/company/advertise-on-duckduckgo-search
+  - generic [ref=e536]:
+    - generic [ref=e538]:
+      - img [ref=e539]
+      - generic [ref=e554]:
+        - heading "Get Our Windows Browser" [level=3] [ref=e555]
+        - paragraph [ref=e556]: Protect your data as you search, browse, and use AI.
+      - link "Download" [ref=e557] [cursor=pointer]:
+        - /url: https://duckduckgo.com/windows?origin=funnel_browser_searchresults__footercard
+        - img [ref=e558]
+        - text: Download
+    - generic [ref=e561]:
+      - generic [ref=e562]:
+        - heading "Learn More" [level=3] [ref=e563]
+        - list [ref=e564]:
+          - listitem [ref=e565]:
+            - link "What's New" [ref=e566] [cursor=pointer]:
+              - /url: https://duckduckgo.com/updates
+          - listitem [ref=e567]:
+            - link "About Browser" [ref=e568] [cursor=pointer]:
+              - /url: https://duckduckgo.com/app
+          - listitem [ref=e569]:
+            - link "Compare Privacy" [ref=e570] [cursor=pointer]:
+              - /url: https://duckduckgo.com/compare-privacy
+          - listitem [ref=e571]:
+            - link "Help Pages" [ref=e572] [cursor=pointer]:
+              - /url: https://duckduckgo.com/duckduckgo-help-pages/
+      - generic [ref=e573]:
+        - heading "Get More" [level=3] [ref=e574]
+        - list [ref=e575]:
+          - listitem [ref=e576]:
+            - link "Email Protection" [ref=e577] [cursor=pointer]:
+              - /url: https://duckduckgo.com/email
+          - listitem [ref=e578]:
+            - generic [ref=e579]:
+              - link "Podcast" [ref=e581] [cursor=pointer]:
+                - /url: https://insideduckduckgo.substack.com/?showWelcome=true
+              - generic [ref=e582]:
+                - text: "&"
+                - link "Newsletter" [ref=e583] [cursor=pointer]:
+                  - /url: https://duckduckgo.com/newsletter
+          - listitem [ref=e584]:
+            - link "Collaborations" [ref=e585] [cursor=pointer]:
+              - /url: https://duckduckgo.com/collaborations
+  - button "Share Feedback" [ref=e590] [cursor=pointer]

@@ -1,0 +1,347 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - article [ref=e3]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - heading "Civic Online Reasoning" [level=1] [ref=e9]
+          - paragraph [ref=e11]: Students are confused about how to evaluate online information. We all are. The COR curriculum provides free lessons and assessments that help you teach students to evaluate online information that affects them, their communities, and the world.
+          - link "View curriculum collections" [ref=e13] [cursor=pointer]:
+            - /url: /curriculum/?tab=collections
+            - button "View curriculum collections" [ref=e14]:
+              - generic [ref=e16]: View curriculum collections
+          - generic [ref=e17]:
+            - heading "As featured in" [level=4] [ref=e18]
+            - generic [ref=e19]:
+              - figure [ref=e22]:
+                - img [ref=e24]
+              - figure [ref=e27]:
+                - img [ref=e29]
+              - figure [ref=e32]:
+                - img [ref=e34]
+              - figure [ref=e37]:
+                - img [ref=e39]
+        - generic [ref=e40]:
+          - img [ref=e42]
+          - button [ref=e50]:
+            - img [ref=e52]
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - generic [ref=e59]:
+            - figure:
+              - img [ref=e61]
+          - generic [ref=e63]:
+            - generic [ref=e64]:
+              - img [ref=e66]
+              - img [ref=e69]
+              - img [ref=e72]
+            - heading "Free lessons and assessments for today’s educators" [level=2] [ref=e75]
+            - paragraph [ref=e77]: Download a single lesson or the full curriculum. Either way, you get classroom-ready materials. Integrate lesson plans into existing curriculum or teach as a separate module.
+            - link "Explore curriculum" [ref=e79] [cursor=pointer]:
+              - /url: /curriculum/
+              - button "Explore curriculum" [ref=e80]:
+                - generic [ref=e82]: Explore curriculum
+        - generic [ref=e87]:
+          - link "lesson Start Here Intro to What's the Evidence?" [ref=e89] [cursor=pointer]:
+            - /url: /curriculum/lessons/intro-to-whats-the-evidence/
+            - generic [ref=e90]:
+              - generic [ref=e91]:
+                - generic [ref=e92]:
+                  - generic [ref=e94]: lesson
+                  - generic [ref=e96]: Start Here
+                - heading "Intro to What's the Evidence?" [level=3] [ref=e97]
+              - img [ref=e102]
+          - link "lesson Start Here Intro to Lateral Reading" [ref=e137] [cursor=pointer]:
+            - /url: /curriculum/lessons/intro-to-lateral-reading/
+            - generic [ref=e138]:
+              - generic [ref=e139]:
+                - generic [ref=e140]:
+                  - generic [ref=e142]: lesson
+                  - generic [ref=e144]: Start Here
+                - heading "Intro to Lateral Reading" [level=3] [ref=e145]
+              - img [ref=e150]
+          - link "lesson Popular Click Restraint" [ref=e180] [cursor=pointer]:
+            - /url: /curriculum/lessons/click-restraint/
+            - generic [ref=e181]:
+              - generic [ref=e182]:
+                - generic [ref=e183]:
+                  - generic [ref=e185]: lesson
+                  - generic [ref=e187]: Popular
+                - heading "Click Restraint" [level=3] [ref=e188]
+              - img [ref=e193]
+      - generic [ref=e199]:
+        - generic [ref=e200]:
+          - generic [ref=e201]:
+            - img [ref=e203]
+            - img [ref=e206]
+            - img [ref=e209]
+          - heading "Check out our latest videos" [level=2] [ref=e212]
+        - generic [ref=e216]:
+          - link "Classroom Example 2019-12-03 Civic Online Reasoning in Action Watch the video" [ref=e219] [cursor=pointer]:
+            - /url: /videos/civic-online-reasoning-in-action/
+            - generic [ref=e222]:
+              - figure:
+                - img [ref=e224]
+            - generic [ref=e226]:
+              - generic [ref=e227]:
+                - generic [ref=e229]: Classroom Example
+                - generic [ref=e230]: 2019-12-03
+              - heading "Civic Online Reasoning in Action" [level=3] [ref=e231]
+              - button "Watch the video" [ref=e233]:
+                - generic [ref=e235]: Watch the video
+          - 'link "Skill Explainer 2020-02-07 How to Find Better Information Online: Click Restraint Watch the video" [ref=e239] [cursor=pointer]':
+            - /url: /videos/better-info-click-restraint/
+            - generic [ref=e242]:
+              - figure:
+                - img [ref=e244]
+            - generic [ref=e246]:
+              - generic [ref=e247]:
+                - generic [ref=e249]: Skill Explainer
+                - generic [ref=e250]: 2020-02-07
+              - 'heading "How to Find Better Information Online: Click Restraint" [level=3] [ref=e251]'
+              - button "Watch the video" [ref=e253]:
+                - generic [ref=e255]: Watch the video
+          - link "Classroom Example 2020-01-29 Civic Online Reasoning in the Classroom Watch the video" [ref=e259] [cursor=pointer]:
+            - /url: /videos/civic-online-reasoning-in-the-classroom/
+            - generic [ref=e262]:
+              - figure:
+                - img [ref=e264]
+            - generic [ref=e266]:
+              - generic [ref=e267]:
+                - generic [ref=e269]: Classroom Example
+                - generic [ref=e270]: 2020-01-29
+              - heading "Civic Online Reasoning in the Classroom" [level=3] [ref=e271]
+              - button "Watch the video" [ref=e273]:
+                - generic [ref=e275]: Watch the video
+        - link "Browse all" [ref=e278] [cursor=pointer]:
+          - /url: /videos/?category=Crash+Course
+          - button "Browse all" [ref=e279]:
+            - generic [ref=e281]: Browse all
+      - generic [ref=e288]:
+        - generic [ref=e289]:
+          - paragraph [ref=e291]: “ From history teachers to educational technology specialists to librarians in our district, those who have become familiar with Civic Online Reasoning are using the lessons and assessments to engage students in combating misinformation and to provide a skill set to foster empowered citizenship in the digital age.”
+          - generic [ref=e292]:
+            - generic [ref=e293]:
+              - figure:
+                - img "Mark Gomez" [ref=e295]
+            - generic [ref=e297]:
+              - heading "Mark Gomez" [level=3] [ref=e298]
+              - text: History & Social Science Curriculum Specialist, Salinas Union High School District
+        - figure [ref=e300]:
+          - img "Students in classroom on laptop computers" [ref=e302]
+      - generic [ref=e306]:
+        - generic [ref=e307]:
+          - generic [ref=e308]:
+            - img [ref=e310]
+            - img [ref=e313]
+            - img [ref=e316]
+          - heading "COR in the news" [level=2] [ref=e319]
+          - paragraph [ref=e321]:
+            - text: Read what
+            - emphasis [ref=e322]: The Wall Street Journal
+            - text: ","
+            - emphasis [ref=e323]: The New York Times
+            - text: ","
+            - emphasis [ref=e324]: Time
+            - text: magazine and others are writing about COR.
+        - generic [ref=e325]:
+          - link "2022-03-05 How to Tell News Fact from Fiction, Even During a War Read the article" [ref=e327] [cursor=pointer]:
+            - /url: /in-the-news/read-about-our-research-in-lincoln-nebraska-public/
+            - figure [ref=e331]:
+              - img [ref=e333]
+            - generic [ref=e334]:
+              - generic [ref=e336]: 2022-03-05
+              - heading "How to Tell News Fact from Fiction, Even During a War" [level=3] [ref=e337]
+              - button "Read the article" [ref=e339]:
+                - generic [ref=e341]: Read the article
+          - link "2022-03-07 Fighting Disinformation Can Feel Like a Lost Cause. It Isn’t. Read the article" [ref=e344] [cursor=pointer]:
+            - /url: /in-the-news/jay-caspian-kang-highlights-shegs-research-on-civic/
+            - figure [ref=e348]:
+              - img [ref=e350]
+            - generic [ref=e351]:
+              - generic [ref=e353]: 2022-03-07
+              - heading "Fighting Disinformation Can Feel Like a Lost Cause. It Isn’t." [level=3] [ref=e354]
+              - button "Read the article" [ref=e356]:
+                - generic [ref=e358]: Read the article
+          - link "2018-08-09 How Your Brain Tricks You Into Believing Fake News Read the article" [ref=e361] [cursor=pointer]:
+            - /url: /in-the-news/how-your-brain-tricks-you-into-believing-fake-news/
+            - figure [ref=e365]:
+              - img [ref=e367]
+            - generic [ref=e368]:
+              - generic [ref=e370]: 2018-08-09
+              - heading "How Your Brain Tricks You Into Believing Fake News" [level=3] [ref=e371]
+              - button "Read the article" [ref=e373]:
+                - generic [ref=e375]: Read the article
+        - link "Read more news" [ref=e377] [cursor=pointer]:
+          - /url: /in-the-news/
+          - button "Read more news" [ref=e378]:
+            - generic [ref=e380]: Read more news
+      - generic [ref=e384]:
+        - generic [ref=e385]:
+          - img [ref=e387]
+          - img [ref=e390]
+          - img [ref=e393]
+        - heading "Research-based curriculum" [level=2] [ref=e396]
+        - generic [ref=e398]:
+          - paragraph [ref=e400]: Our approach rests on peer-reviewed research. Based on observations of professional fact checkers at the nation’s leading news outlets, we identified a set of questions and strategies that should guide online evaluation.
+          - generic [ref=e401]:
+            - heading "When you come across information online, you should ask:" [level=4] [ref=e402]
+            - list [ref=e403]:
+              - listitem [ref=e404]:
+                - generic [ref=e405]: 1. Who’s behind the information?
+              - listitem [ref=e407]:
+                - generic [ref=e408]: 2. What’s the evidence?
+              - listitem [ref=e410]:
+                - generic [ref=e411]: 3. What do other sources say?
+          - link "Read the research" [ref=e414] [cursor=pointer]:
+            - /url: /research/
+            - button "Read the research" [ref=e415]:
+              - generic [ref=e417]: Read the research
+      - generic [ref=e420]:
+        - generic [ref=e421]:
+          - generic [ref=e422]:
+            - img [ref=e424]
+            - img [ref=e427]
+            - img [ref=e430]
+          - heading "Our work is ongoing" [level=2] [ref=e433]
+        - generic [ref=e434]:
+          - link "Updates Aug 11, 2025 Teaching and Learning How to Use Wikipedia Wisely Read the post" [ref=e436] [cursor=pointer]:
+            - /url: /blog/wikipedia-is-a-well-known-widely-used-but-often-mi/
+            - generic [ref=e437]:
+              - generic [ref=e438]:
+                - generic [ref=e440]: Updates
+                - generic [ref=e441]: Aug 11, 2025
+              - heading "Teaching and Learning How to Use Wikipedia Wisely" [level=3] [ref=e442]
+              - button "Read the post" [ref=e444]:
+                - generic [ref=e446]: Read the post
+          - link "Updates Jun 11, 2025 New Curriculum Materials for the Civics Classroom Read the post" [ref=e449] [cursor=pointer]:
+            - /url: /blog/new-curriculum-materials-for-the-civics-classroom/
+            - generic [ref=e450]:
+              - generic [ref=e451]:
+                - generic [ref=e453]: Updates
+                - generic [ref=e454]: Jun 11, 2025
+              - heading "New Curriculum Materials for the Civics Classroom" [level=3] [ref=e455]
+              - button "Read the post" [ref=e457]:
+                - generic [ref=e459]: Read the post
+          - link "Teaching Tips May 03, 2023 A Civic Online Reasoning Module for High School Read the post" [ref=e462] [cursor=pointer]:
+            - /url: /blog/module-for-high-school/
+            - generic [ref=e463]:
+              - generic [ref=e464]:
+                - generic [ref=e466]: Teaching Tips
+                - generic [ref=e467]: May 03, 2023
+              - heading "A Civic Online Reasoning Module for High School" [level=3] [ref=e468]
+              - button "Read the post" [ref=e470]:
+                - generic [ref=e472]: Read the post
+        - link "Visit blog" [ref=e474] [cursor=pointer]:
+          - /url: /blog/
+          - button "Visit blog" [ref=e475]:
+            - generic [ref=e477]: Visit blog
+      - generic [ref=e480]:
+        - generic [ref=e481]:
+          - figure:
+            - img [ref=e483]
+        - generic [ref=e485]:
+          - generic [ref=e486]:
+            - img [ref=e488]
+            - img [ref=e491]
+            - img [ref=e494]
+          - heading "Visit our video library" [level=3] [ref=e497]
+          - paragraph [ref=e499]: Dive deeper into COR concepts, see lessons in action, and more.
+          - link "Browse now" [ref=e500] [cursor=pointer]:
+            - /url: /videos/
+            - button "Browse now" [ref=e501]:
+              - generic [ref=e503]: Browse now
+  - generic:
+    - button "Close modal"
+    - generic:
+      - generic:
+        - button:
+          - generic:
+            - img
+  - contentinfo [ref=e504]:
+    - generic [ref=e506]:
+      - generic [ref=e508]:
+        - img [ref=e510]
+        - generic [ref=e554]: Developed by
+        - img [ref=e556]
+        - generic [ref=e565]:
+          - link [ref=e566] [cursor=pointer]:
+            - /url: https://www.facebook.com/DigitalInquiryGroup/
+            - img [ref=e568]
+          - link [ref=e570] [cursor=pointer]:
+            - /url: https://twitter.com/InquiryGroup
+            - img [ref=e572]
+          - link [ref=e574] [cursor=pointer]:
+            - /url: https://www.youtube.com/@DigitalInquiryGroup
+            - img [ref=e576]
+      - generic [ref=e578]:
+        - generic [ref=e579]:
+          - generic [ref=e580]:
+            - list [ref=e581]:
+              - listitem [ref=e582]:
+                - link "Curriculum" [ref=e583] [cursor=pointer]:
+                  - /url: /curriculum/
+                  - generic [ref=e584]: Curriculum
+              - listitem [ref=e585]:
+                - link "What's at Stake?" [ref=e586] [cursor=pointer]:
+                  - /url: /whats-at-stake/
+                  - generic [ref=e587]: What's at Stake?
+              - listitem [ref=e588]:
+                - link "In the News" [ref=e589] [cursor=pointer]:
+                  - /url: /in-the-news/
+                  - generic [ref=e590]: In the News
+              - listitem [ref=e591]:
+                - link "Research" [ref=e592] [cursor=pointer]:
+                  - /url: /research/
+                  - generic [ref=e593]: Research
+              - listitem [ref=e594]:
+                - link "About" [ref=e595] [cursor=pointer]:
+                  - /url: /about/
+                  - generic [ref=e596]: About
+            - list [ref=e597]:
+              - listitem [ref=e598]:
+                - link "Blog" [ref=e599] [cursor=pointer]:
+                  - /url: /blog/
+                  - generic [ref=e600]: Blog
+              - listitem [ref=e601]:
+                - link "Contact" [ref=e602] [cursor=pointer]:
+                  - /url: /contact/
+                  - generic [ref=e603]: Contact
+              - listitem [ref=e604]:
+                - link "Videos" [ref=e605] [cursor=pointer]:
+                  - /url: /videos/
+                  - generic [ref=e606]: Videos
+              - listitem [ref=e607]:
+                - link "Creative Commons" [ref=e608] [cursor=pointer]:
+                  - /url: /creative-commons/
+                  - generic [ref=e609]: Creative Commons
+              - listitem [ref=e610]:
+                - button "Sign in / Sign up" [ref=e611] [cursor=pointer]:
+                  - generic [ref=e613]: Sign in / Sign up
+          - generic [ref=e615]:
+            - paragraph [ref=e617]: Stay up to date with the latest from COR, delivered straight to your inbox.
+            - generic [ref=e618]:
+              - generic [ref=e619]:
+                - generic [ref=e620]: Email Address
+                - textbox "Email Address" [ref=e621]:
+                  - /placeholder: example@site.com
+              - button "Submit" [ref=e622] [cursor=pointer]:
+                - generic [ref=e624]: Submit
+        - generic [ref=e626]:
+          - img [ref=e628]
+          - paragraph [ref=e642]: Please consider supporting us through a tax-deductible donation.
+          - link "Make a donation" [ref=e643] [cursor=pointer]:
+            - /url: https://www.paypal.com/donate/?hosted_button_id=QFLYH2H9EM89U
+            - button "Make a donation" [ref=e644]:
+              - generic [ref=e646]: Make a donation
+        - generic [ref=e647]:
+          - generic [ref=e648]:
+            - text: Email us at
+            - link "info@inquirygroup.org" [ref=e649] [cursor=pointer]:
+              - /url: mailto:info@inquirygroup.org
+          - generic [ref=e650]:
+            - list [ref=e651]:
+              - listitem [ref=e652]:
+                - link "Privacy Policy" [ref=e653] [cursor=pointer]:
+                  - /url: https://inquirygroup.org/privacy-policy
+                  - generic [ref=e654]: Privacy Policy
+            - generic [ref=e655]: © Digital Inquiry Group
