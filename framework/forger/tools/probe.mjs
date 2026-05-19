@@ -1,10 +1,12 @@
-#!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
 import crypto from 'node:crypto';
 import { spawnSync } from 'node:child_process';
+import { pathToFileURL } from 'node:url';
 import { appendProbeResult } from '../_lib/ledger.mjs';
+
+const entryUrl = process.argv[1] ? pathToFileURL(process.argv[1]).href : null;
 
 export async function runProbe({ workspace, assumptionId, probeType, cmd, expected = '', timeoutMs = 60000 }) {
   const sandbox = path.join(workspace, 'probe-sandbox', assumptionId);
@@ -34,7 +36,7 @@ export async function runProbe({ workspace, assumptionId, probeType, cmd, expect
   return result;
 }
 
-if (process.argv[1] && import.meta.url === `file://${process.argv[1]}`) {
+if (entryUrl && import.meta.url === entryUrl) {
   const argv = process.argv.slice(2);
   const args = {};
   for (let i = 0; i < argv.length; i++) {
@@ -56,5 +58,5 @@ if (process.argv[1] && import.meta.url === `file://${process.argv[1]}`) {
     timeoutMs: Number(args['timeout-ms'] || 60000),
   });
   console.log(JSON.stringify(r, null, 2));
-  process.exit(0);
+  process.exit(r.passed ? 0 : 1);
 }

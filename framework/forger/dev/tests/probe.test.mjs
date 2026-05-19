@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeAll } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
@@ -11,7 +11,7 @@ describe('probe', () => {
     const r = await runProbe({
       workspace: ws,
       assumptionId: 'a-1',
-      probeType: 'script',
+      probeType: 'api_test',
       cmd: 'node -e "process.exit(0)"',
     });
     expect(r.passed).toBe(true);
@@ -23,7 +23,9 @@ describe('probe', () => {
   it('records failing result', async () => {
     const ws = fs.mkdtempSync(path.join(os.tmpdir(), 'forger-probe-'));
     const r = await runProbe({
-      workspace: ws, assumptionId: 'a-2', probeType: 'script',
+      workspace: ws,
+      assumptionId: 'a-2',
+      probeType: 'api_test',
       cmd: 'node -e "process.exit(7)"',
     });
     expect(r.passed).toBe(false);

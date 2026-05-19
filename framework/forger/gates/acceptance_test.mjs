@@ -1,8 +1,10 @@
-#!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { pathToFileURL } from 'node:url';
 import { readYaml, appendJsonl } from '../_lib/ledger.mjs';
+
+const entryUrl = process.argv[1] ? pathToFileURL(process.argv[1]).href : null;
 
 function runSubprocess(cmd, { timeoutMs = 300000 } = {}) {
   const start = Date.now();
@@ -71,7 +73,7 @@ export async function runAcceptance({ workspace }) {
   return { required_passed, required_failed, subjective_pending };
 }
 
-if (process.argv[1] && import.meta.url === `file://${process.argv[1]}`) {
+if (entryUrl && import.meta.url === entryUrl) {
   const args = Object.fromEntries(
     process.argv.slice(2).reduce((acc, v, i, a) => {
       if (v.startsWith('--')) acc.push([v.slice(2), a[i + 1]]);
