@@ -1,0 +1,15 @@
+# schema: ../schemas/claim_ledger_entry.schema.yaml
+- id: clm-example
+  source_id: src-example
+  lane: production
+  claim_text: 'Concise claim extracted from a source.'
+  verbatim_quote: 'Short exact quote supporting the claim.'
+  severity: medium
+  dow_criterion_refs:
+    - sc-m-1
+  entailment: directly_supported
+  mechanism: 'Why the claim matters.'
+  probe_id: probe-example
+  intended_use: primary
+  status: open
+  re_entry: 1
