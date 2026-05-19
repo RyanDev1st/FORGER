@@ -34,6 +34,7 @@ for (const sf of skillFiles) {
     seen.add(rel);
     const candidates = [
       path.resolve(path.dirname(sf), rel),
+      path.resolve(path.dirname(sf), '..', rel),
       path.resolve(root, rel),
     ];
     if (!candidates.some(p => fs.existsSync(p))) {
