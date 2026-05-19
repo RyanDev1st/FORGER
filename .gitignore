@@ -1,26 +1,48 @@
-# Keep the public branch intentionally minimal.
-*
+# This repository root is a local development workspace.
+# Current workspace files stay local-only, but new unlisted folders/files can be
+# added later with: git add . && git commit && git push origin main
 
-!.gitignore
-!README.md
-
-# Explicit local/sensitive paths.
+# Secrets and environment files
 .env
 .env.*
+
+# Dependencies and package-manager output
 node_modules/
 .node_modules/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.cache/
+dist/
+build/
 
-# Keep Playwright folders local; do not publish their contents.
+# Playwright/local browser output
 .playwright/
 .playwright-cli/
 playwright/
 
+# Agent/local assistant state
 .claude/
 CLAUDE.md
 claude.md
 
-framework/
+# Current development workspace contents
+ARCHITECTURE.md
+LICENSE
+ruvector.db
+data/
+examples/
+FORGER/
 FORGER framework/
+framework/
 IPBC/
 results/
 reTruth/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+*.log
