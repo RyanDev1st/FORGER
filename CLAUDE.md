@@ -28,6 +28,16 @@ Build a framework that empowers AIs to explore, learn, and synthesize knowledge 
 | `reTruth/skills/gnosis/edge-finder.md` | High-variance lane mandate (contrarian, analogues, anti-redundancy bigram check) |
 | `reTruth/skills/gnosis/references/` | Reserved for skill-local calibration examples (currently empty; seeded manually) |
 | `reTruth/references/examples/` | Hand-curated example outputs used by lane subagents as quality targets |
+| `framework/FORGER.md` | Original condensed research findings that the FORGER framework operationalizes |
+| `framework/forger/DESIGN.md` | FORGER source-of-truth design specification |
+| `framework/forger/SKILL.md` | FORGER orchestrator skill (single agent loop, drives 7-phase pipeline) |
+| `framework/forger/phases/` | Per-phase skills (contract / find / observe / recombine / grill / execute / retain) |
+| `framework/forger/schemas/` | JSON Schemas (YAML) for DoW, ledgers, risk map, failure hypotheses, probes, retro notes |
+| `framework/forger/_lib/` | Shared helpers (config, ledger I/O, KB, playwright, reviewer router) |
+| `framework/forger/gates/` | Phase-exit validators (agent-invoked; block phase exit on failure) |
+| `framework/forger/tools/` | Agent-invoked utilities (filter, probe, update_kb; never block) |
+| `framework/forger/hooks/` | Harness-invoked hooks registered in settings.json (tier firewall, post_code, done-means-ran) |
+| `framework/forger/knowledge/{domain}/` | Persistent per-domain knowledge base — version-tracked |
 
 **Root policy:** only `CLAUDE.md`, `README.md`, `Summary.md`, `.gitignore`, and documented config files at repo root. All other artifacts live under their respective feature directories.
 
