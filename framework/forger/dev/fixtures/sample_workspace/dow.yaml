@@ -18,22 +18,22 @@ audience:
 
 hard_constraints:
   - id: hc-1
-    description: 'Constraint statement.'
-    verification_method: 'How a human or test can verify.'
-    threshold: 'Optional measurable bound.'
+    description: 'Sample fixture constraint that always passes.'
+    verification_method: 'node -e "process.exit(0)"'
+    threshold: '0'
 
 success_criteria_measurable:
   - id: sc-m-1
-    metric: 'e.g. p95 latency'
-    threshold: '< 100ms'
-    test_method: 'Command or protocol that measures this.'
+    metric: 'sample arithmetic'
+    threshold: '1+1==2'
+    test_method: 'node -e "if(1+1===2) process.exit(0); else process.exit(1)"'
 
 success_criteria_subjective: []
 
 unacceptable_failure_modes:
   - id: ufm-1
-    description: 'What must never happen.'
-    detection_method: 'How to know it happened.'
+    description: 'Sample failure mode that must NOT trigger.'
+    detection_method: 'node -e "process.exit(1)"'
     safety_critical: false
 
 reframe_memo:
