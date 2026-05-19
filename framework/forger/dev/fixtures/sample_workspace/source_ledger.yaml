@@ -1,0 +1,20 @@
+- id: src-example
+  url: 'https://example.com'
+  title: 'Example Domain'
+  lane: production
+  accessed_at: '2026-05-19T00:00:00Z'
+  ttl_days: 90
+  expires_at: '2026-08-17T00:00:00Z'
+  quality_scores: { authority: 5, recency: 5, reproducibility: 5, implementation_relevance: 5, independence: 5, conflict_of_interest: 5 }
+  composite_score: 5
+  flags: []
+- id: src-dead
+  url: 'https://this-domain-does-not-exist-forger-test.invalid'
+  title: 'Intentionally dead'
+  lane: community
+  accessed_at: '2026-05-19T00:00:00Z'
+  ttl_days: 90
+  expires_at: '2026-08-17T00:00:00Z'
+  quality_scores: { authority: 1, recency: 1, reproducibility: 1, implementation_relevance: 1, independence: 1, conflict_of_interest: 5 }
+  composite_score: 1.67
+  flags: []
