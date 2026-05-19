@@ -1,0 +1,14 @@
+# schema: ../schemas/failure_hypothesis.schema.yaml
+- id: fh-1
+  hypothesis: 'This artifact can fail when the main assumption is false.'
+  what_disproves: 'A concrete counterexample or failed acceptance test.'
+  minimal_test: 'Smallest test that could reveal the failure.'
+  severity_if_wrong: high
+  confidence: 3
+  reviewer_provider: ''
+  reviewer_model: ''
+  reviewer_tier: acceptable
+  blind: false
+  status: open
+  counter_evidence_refs: []
+  resolution_test_id: ''
