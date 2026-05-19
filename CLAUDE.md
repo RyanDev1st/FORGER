@@ -21,13 +21,7 @@ Build a framework that empowers AIs to explore, learn, and synthesize knowledge 
 | `README.md` | Project overview |
 | `ARCHITECTURE.md` | High-level synthesis of architecture and lanes |
 | `reTruth/` | Framework container — holds skill, mandates, calibration examples, and topic workspaces |
-| `reTruth/skills/gnosis/SKILL.md` | Gnosis orchestrator skill (pipeline: parse → spawn → validate → audit → synthesize → re-fan) |
-| `reTruth/skills/gnosis/SKILL-synthesis.md` | Orchestrator companion: Step 4a audit (HEAD + quote + bigram + lineage + independence), Step 4c contradictions stub, Step 5 robustness_ladder synthesis |
-| `reTruth/skills/gnosis/scholar-dive.md` | Academic lane mandate (peer-reviewed sources, source basket, CRAAP gate) |
-| `reTruth/skills/gnosis/community-search.md` | Practitioner lane mandate (war stories, debates, datasets, domain classification) |
-| `reTruth/skills/gnosis/edge-finder.md` | High-variance lane mandate (contrarian, analogues, anti-redundancy bigram check) |
-| `reTruth/skills/gnosis/references/` | Reserved for skill-local calibration examples (currently empty; seeded manually) |
-| `reTruth/references/examples/` | Hand-curated example outputs used by lane subagents as quality targets |
+| `reTruth/_archive/gnosis-v1/` | Archived gnosis v1 (replaced by `framework/forger/phases/find/`) |
 | `framework/FORGER.md` | Original condensed research findings that the FORGER framework operationalizes |
 | `framework/forger/DESIGN.md` | FORGER source-of-truth design specification |
 | `framework/forger/SKILL.md` | FORGER orchestrator skill (single agent loop, drives 7-phase pipeline) |
@@ -55,7 +49,7 @@ Follow Anthropic’s **explore → plan → implement → verify** loop. Skip pl
 
 ### File size (hard cap)
 
-- No source file may exceed **200 lines** (imports and blank lines count). Exception: data; lane / skill mandate specs in `reTruth/skills/gnosis/` (sub-agent definitions, ≤500 lines).
+- No source file may exceed **200 lines** (imports and blank lines count). Exception: data; lane / skill mandate specs in `framework/forger/phases/` and `framework/forger/SKILL.md` (sub-agent and orchestrator definitions, ≤500 lines).
 - If a change would exceed the applicable cap: split into additional files in the **same feature folder** (next section). Never bypass the cap with comments or string concatenation.
 
 ### Feature folders (colocation)
@@ -99,16 +93,13 @@ If verification fails, fix or report the failure with the failing command and er
 
 ## Orchestration (multi-agent)
 
-- **Architecture:** The orchestrator (`SKILL.md`) **never** reads lane mandate files directly; they are injected into subagents at spawn time to keep context clean.
-- **Workflow:** Enforce the orchestrator pipeline: parse → spawn → validate → synthesize → re-fan.
-- **Subagent lanes:** Spawn up to 3 parallel lanes: `scholar-dive` (academic), `community-search` (practitioner + datasets/repos), and `edge-finder` (high-variance/anti-redundancy).
-- **Return Format:** All lanes strictly enforce a two-part return format: structured summary + raw evidence appendix, with a verbatim quote per finding for the audit hook.
-- **Volume contract:** Floor 5, target 8–10, ceiling 12–15 per lane. Below floor → pivot strategy (related researchable topic, flagged).
-- **Retry:** Hybrid — attempt 1 inline same turn, attempts 2 and 3 delayed 5 min each via harness scheduler. After 3 failures lane is `under-sourced` and run continues.
-- **Verification audit:** HEAD-request each cited URL; curl + grep the verbatim quote against page text. Failures flag findings (do not delete). Spawns no extra subagents.
+See `framework/forger/DESIGN.md` §3 and §6 for the current pipeline.
+Multi-agent fan-out happens only inside FIND (mode-aware: 1, 2, or 3 lanes)
+and inside GRILL (1 reviewer in standard, 2 in deep). Max 4 concurrent
+threads. Orchestrator never reads lane mandates directly — they are
+filesystem-injected at subagent spawn time.
+
 - After tasks are **confirmed with the user**, respond **AYE** once that turn (team convention).
-- **Max four concurrent threads** (orchestrator + 3 subagents). Do not fan out beyond four.
-- After 3 inline retries the lane is reported `under-sourced` and the run continues with partial results. Codex fallback (`codex-rescue`) is opt-in only — invoke explicitly when the user requests it.
 - RTK (token reduction) hooks: `~/.claude/RTK.md`
 
 ## Git and delivery
