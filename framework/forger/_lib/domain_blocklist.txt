@@ -1,0 +1,2 @@
+# one host per line, e.g.
+# scraperfarm.example
