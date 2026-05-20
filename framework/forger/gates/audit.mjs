@@ -105,17 +105,52 @@ export async function runAudit({ workspace, skipNetwork = false }) {
     }
   }
 
-  // Write flags back to ledgers
-  for (const s of sources) {
-    if (flagsBySource[s.id]) s.flags = [...new Set([...(s.flags || []), ...flagsBySource[s.id]])];
-  }
+  // Lane-floor advisory: warn when a lane has fewer claims than its floor and
+  // its closing-block comment did not declare itself under_sourced. Floors per
+  // DESIGN §7: production=5, community=5, frontier=3.
+  const laneFloors = { production: 5, community: 5, frontier: 3 };
+  const claimsByLane = {};
   for (const c of claims) {
-    if (flagsByClaim[c.id]) {
-      c.flags = [...new Set([...(c.flags || []), ...flagsByClaim[c.id]])];
+    if (!c.lane) continue;
+    claimsByLane[c.lane] = (claimsByLane[c.lane] || 0) + 1;
+  }
+  const rawSource = fs.existsSync(sourcePath) ? fs.readFileSync(sourcePath, 'utf8') : '';
+  function laneUnderSourced(lane) {
+    const re = new RegExp(`#\\s*lane:\\s*${lane}[\\s\\S]*?#\\s*under_sourced:\\s*true`, 'i');
+    return re.test(rawSource);
+  }
+  for (const [lane, floor] of Object.entries(laneFloors)) {
+    const count = claimsByLane[lane] || 0;
+    if (count > 0 && count < floor && !laneUnderSourced(lane)) {
+      warnings.push({ kind: 'lane-under-floor', lane, count, floor });
     }
   }
-  if (fs.existsSync(sourcePath)) writeYaml(sourcePath, sources);
-  if (fs.existsSync(claimPath))  writeYaml(claimPath, claims);
+
+  // Merge new flags; only rewrite ledger files when something actually changed
+  // so YAML comments (schema headers + lane-summary closing blocks) survive a
+  // no-op audit pass.
+  let sourcesChanged = false;
+  for (const s of sources) {
+    if (!flagsBySource[s.id]) continue;
+    const before = new Set(s.flags || []);
+    const merged = new Set([...before, ...flagsBySource[s.id]]);
+    if (merged.size !== before.size) {
+      s.flags = [...merged];
+      sourcesChanged = true;
+    }
+  }
+  let claimsChanged = false;
+  for (const c of claims) {
+    if (!flagsByClaim[c.id]) continue;
+    const before = new Set(c.flags || []);
+    const merged = new Set([...before, ...flagsByClaim[c.id]]);
+    if (merged.size !== before.size) {
+      c.flags = [...merged];
+      claimsChanged = true;
+    }
+  }
+  if (sourcesChanged && fs.existsSync(sourcePath)) writeYaml(sourcePath, sources);
+  if (claimsChanged  && fs.existsSync(claimPath))  writeYaml(claimPath, claims);
 
   return {
     passed: errors.length === 0,
