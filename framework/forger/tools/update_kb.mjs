@@ -46,10 +46,13 @@ export async function runUpdateKb({ workspace, pluginRoot = defaultPluginRoot, n
                 ? readYaml(path.join(workspace, 'claim_ledger.yaml')) || [] : [];
 
   let proven_claims_merged = 0;
+  let ttl_overrides_applied = 0;
   for (const id of retro.proven_claim_ids || []) {
     const claim = wsClm.find(c => c.id === id);
     if (!claim) continue;
-    const ttl = (retro.ttl_overrides && retro.ttl_overrides[id]) || idx.default_ttl_days;
+    const override = retro.ttl_overrides && retro.ttl_overrides[id];
+    const ttl = override || idx.default_ttl_days;
+    if (override) ttl_overrides_applied++;
     const expires = new Date(now.getTime() + ttl * 86400000).toISOString();
     const upserted = { ...claim, expires_at: expires };
     const ix = clm.findIndex(c => c.id === id);
@@ -95,6 +98,10 @@ export async function runUpdateKb({ workspace, pluginRoot = defaultPluginRoot, n
   const last3 = tel.slice(-3);
   if (last3.length === 3 && last3.every(l => l.status === 'shipped')) {
     idx.shortcut_eligible = true;
+  } else if (last3.some(l => l.status === 'escalated' || l.status === 'abandoned')) {
+    // Symmetric reset per shortcut_eligibility.md: any non-shipped status in the
+    // last 3 breaks the streak and revokes shortcut eligibility.
+    idx.shortcut_eligible = false;
   }
 
   writeYaml(idxPath, idx);
@@ -103,7 +110,7 @@ export async function runUpdateKb({ workspace, pluginRoot = defaultPluginRoot, n
   writeYaml(fmPath, fm);
   if (!fs.existsSync(archPath)) fs.writeFileSync(archPath, '# Working architectures\n', 'utf8');
 
-  return { proven_claims_merged, status: retro.status };
+  return { proven_claims_merged, ttl_overrides_applied, status: retro.status };
 }
 
 if (entryUrl && import.meta.url === entryUrl) {
