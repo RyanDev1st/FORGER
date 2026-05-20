@@ -36,8 +36,8 @@ material parked behind the firewall.
 
 - `workspaces/{slug}/dow.yaml` — read-only. The Definition of Work.
   Tier 1 ideas must address at least one of its acceptance criteria
-  (`hard_criteria[]`, `soft_metrics[]`). Tier 3 proposals challenge an
-  assumption listed under `dow.assumptions[]`.
+  (`hard_constraints[]`, `success_criteria_measurable[]`). Tier 3
+  proposals challenge an assumption listed under `dow.assumptions[]`.
 - `workspaces/{slug}/source_ledger.yaml` — read-only. Provides the
   audit trail behind every `clm-*` reference you cite.
 - `workspaces/{slug}/claim_ledger.yaml` — read-only here. The element
@@ -235,7 +235,7 @@ YAML-style body. Required fields:
 ## <idea-slug>: <short title>
 
 idea: <prose, 1-3 sentences describing what the recombination is>
-addresses_dow_criteria: [<id>, ...]   # hard_criteria or soft_metrics ids
+addresses_dow_criteria: [<id>, ...]   # hard_constraints / success_criteria_measurable / unacceptable_failure_modes ids
 claim_refs: [<clm-id>, <clm-id>, ...]  # ≥ 2 entries (gate 3)
 mechanism_fit_check:
   source_domain_mechanism: <how it worked in source>
