@@ -196,9 +196,11 @@ does not read those mandate files.
 
 ### 8. EXECUTE — `forger-execute` (with fact-gap re-entry into FIND)
 
-Invoke `forger-execute` with the workspace path. EXECUTE runs the TDD
-micro-cycle loop (red → green → refactor → record) until every required
-acceptance entry in `acceptance_results.jsonl` passes. The
+Invoke `forger-execute` with the workspace path. EXECUTE picks one of
+three artifact branches by `dow.artifact.type`: TDD micro-cycle for
+code/system, ledger-coverage for `research_report`, rubric + screenshot
+for `design`. EXECUTE then runs the chosen branch's loop until every
+required acceptance entry in `acceptance_results.jsonl` passes. The
 `hooks/enforce_done_means_ran.mjs` Stop hook prevents claims of completion
 without the acceptance file being populated; you do not need to invoke the
 hook — the Claude Code harness fires it.
@@ -288,9 +290,9 @@ scan when verifying a run in progress.
 |------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | forger-contract  | `dow.yaml`, `reframe_memo.md`                                                                 | DoW validates via `_lib/ledger.mjs::validateDoW`.                                                     |
 | forger-find      | `source_ledger.yaml`, `claim_ledger.yaml`, `find_summary.md`                                  | `gates/audit.mjs --workspace <path>` exit 0.                                                          |
-| forger-observe   | `risk_map.yaml`, `ground_truth_brief.md`                                                      | Every `severity ≥ high` assumption has `status ∈ {probed_ok, waived, verified}`.                      |
+| forger-observe   | `risk_map.yaml`, `ground_truth_brief.md`                                                      | Every `severity ≥ high` assumption has `status ∈ {probed_ok, waived, verified}`. In deep mode: no waivers (every high/critical must be `probed_ok` or `verified`). No `claim_ledger.yaml` entry may remain `status: blocked` at exit. |
 | forger-recombine | `recombine.md`                                                                                | ≥1 Tier 1 idea; mechanism-fit check populated.                                                        |
-| forger-grill     | `failure_hypotheses.yaml`                                                                     | Every open hypothesis ∈ `{accepted_test_added, rejected_with_counter_evidence, escalated}`. Deep mode requires 2 reviewer runs (one blind). |
+| forger-grill     | `failure_hypotheses.yaml`                                                                     | Every open hypothesis ∈ `{accepted_test_added, rejected_with_counter_evidence, escalated}`. Deep mode requires `reviewer_tier ≥ good` AND ≥ 1 hypothesis with `blind: true`. |
 | forger-execute   | `acceptance_results.jsonl`                                                                    | `gates/acceptance_test.mjs --workspace <path>` exit 0 (`required_failed: 0`).                         |
 | forger-retain    | `retro_note.yaml`; `knowledge/{domain_slug}/index.yaml` written or updated                    | Retro note validates.                                                                                 |
 
