@@ -22,9 +22,9 @@ Build a framework that empowers AIs to explore, learn, and synthesize knowledge 
 | `ARCHITECTURE.md` | High-level synthesis of architecture and lanes |
 | `reTruth/` | Framework container — holds skill, mandates, calibration examples, and topic workspaces |
 | `reTruth/_archive/gnosis-v1/` | Archived gnosis v1 (replaced by `framework/forger/skills/forger/phases/find/`) |
-| `framework/FORGER.md` | Original condensed research findings that the FORGER framework operationalizes |
-| `framework/forger/DESIGN.md` | FORGER source-of-truth design specification |
-| `framework/forger/SKILL.md` | FORGER orchestrator skill (single agent loop, drives 7-phase pipeline) |
+| `framework/FORGER.md` | Research notes pushed to GitHub to demonstrate the framework's grounding (not agent-facing) |
+| `framework/forger/_archive/` | Historical build-spec snapshots (e.g. `design-2026-05-19.md`); not agent-facing |
+| `framework/forger/SKILL.md` | FORGER orchestrator skill (single agent loop, drives 7-phase pipeline) — agent source of truth |
 | `framework/forger/skills/forger/phases/` | Per-phase skills (contract / find / observe / recombine / grill / execute / retain) |
 | `framework/forger/skills/forger/modes/` | Mode configs (quick / standard / deep) |
 | `framework/forger/skills/real_search/` | Cross-phase callable browser-driven page-read protocol |
@@ -95,7 +95,7 @@ If verification fails, fix or report the failure with the failing command and er
 
 ## Orchestration (multi-agent)
 
-See `framework/forger/DESIGN.md` §3 and §6 for the current pipeline.
+See `framework/forger/SKILL.md` and each phase's `skills/forger/phases/*/SKILL.md` for the current pipeline.
 Multi-agent fan-out happens only inside FIND (mode-aware: 1, 2, or 3 lanes)
 and inside GRILL (1 reviewer in standard, 2 in deep). Max 4 concurrent
 threads. Orchestrator never reads lane mandates directly — they are

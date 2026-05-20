@@ -443,7 +443,7 @@ framework/forger/                               # repo location
 ├── manifest.json                               # Plugin metadata, hook registration
 ├── SKILL.md                                    # Orchestrator (drives 7-phase pipeline)
 ├── README.md
-├── DESIGN.md                                   # Source-of-truth design spec
+├── _archive/                                   # Historical build-spec snapshots (not agent-facing)
 ├── package.json                                # Node deps, npm scripts
 ├── schemas/                                    # JSON Schemas (YAML)
 │   ├── definition_of_works.schema.yaml
