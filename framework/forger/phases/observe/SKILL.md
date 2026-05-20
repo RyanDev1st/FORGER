@@ -66,8 +66,10 @@ An OBSERVE run is not complete until all five gates pass:
 1. **`risk_map.yaml` schema validates.** `_lib/ledger.mjs::validateRiskMap`
    returns `{ valid: true }` for the written file.
 2. **Every assumption with `severity` ∈ {high, critical} has `status` ∈
-   {probed_ok, waived, verified}.** Trivial / low / medium assumptions
-   may stay `unresolved`.
+   {probed_ok, waived, verified}.** Trivial/low/medium assumptions must
+   reach `verified` via source-or-reasoning resolution per step 3;
+   `unresolved` is permitted at exit only when an explicit
+   waiver/escalation note is appended.
 3. **In deep mode: no waivers allowed.** Every high/critical assumption
    must be `probed_ok` or `verified`. `meta.mode == "deep"` makes
    `status: waived` a gate failure. Standard and quick modes accept
@@ -78,8 +80,8 @@ An OBSERVE run is not complete until all five gates pass:
 5. **Blocked-claim resolution.** No `claim_ledger.yaml` entry remains
    `status: blocked` at exit. Each must be one of: `probed_ok`,
    `probed_fail` (with downstream handling — see step 6), severity
-   downgraded (with rationale appended to the claim's `mechanism` or to
-   a new note), or escalated to the user.
+   downgraded (with rationale appended to the claim's `mechanism`), or
+   escalated to the user.
 
 ---
 
