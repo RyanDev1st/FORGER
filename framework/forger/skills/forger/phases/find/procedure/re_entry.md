@@ -81,15 +81,33 @@ Do not rewrite the original `find_summary.md` content; append only.
 
 ### R7. Exit
 
+Walk the self-audit checklist from `SKILL.md` and record each item's
+outcome as a structured `self_audit` field on the telemetry line. The
+re-entry-specific item (`re_entry_tags_present`) is the load-bearing
+one here: every new entry must carry the `re_entry: {n}` tag.
+
 Append a telemetry line to `workspaces/{slug}/telemetry.jsonl`:
 
-  `{phase: 'find', mode: <mode>, re_entry: <n>, lanes_ran: ['production'],
-    claims_added: <N>, blocked_critical_added: <N>, audit_passed: <bool>,
-    ts: <ISO8601>}`
-
-Walk the self-audit checklist from `SKILL.md`. The re-entry-specific item
-(item 6) is the load-bearing one: every new entry must carry the
-`re_entry: {n}` tag.
+```json
+{
+  "phase": "find",
+  "mode": "<mode>",
+  "re_entry": "<n>",
+  "lanes_ran": ["production"],
+  "claims_added": "<N>",
+  "blocked_critical_added": "<N>",
+  "audit_passed": true,
+  "self_audit": {
+    "audit_gate_passed": true,
+    "lanes_reached_floor_or_pivoted": true,
+    "find_summary_complete": true,
+    "ledgers_ajv_valid": true,
+    "telemetry_appended": true,
+    "re_entry_tags_present": true
+  },
+  "ts": "<ISO8601>"
+}
+```
 
 Return control to the orchestrator. The orchestrator re-invokes EXECUTE,
 which retries the loop with the augmented ledgers.

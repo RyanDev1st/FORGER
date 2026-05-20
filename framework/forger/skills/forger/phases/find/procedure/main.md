@@ -176,13 +176,41 @@ Write `workspaces/{slug}/find_summary.md`. Required sections:
 
 ## 11. Exit
 
+Walk the self-audit checklist from `SKILL.md` (six items) **and** record
+the outcome of each item as a structured `self_audit` field in the
+telemetry line. The `enforce_phase_self_audit.mjs` hook reads this
+field and blocks the next phase if any item is `false` or the field is
+absent — the structured emit is not optional.
+
 Append one telemetry line to `workspaces/{slug}/telemetry.jsonl`:
 
-  `{phase: 'find', mode: <mode>, lanes_ran: [...], claims_total: <N>,
-    blocked_critical: <N>, under_sourced_lanes: [...], audit_passed: <bool>,
-    ts: <ISO8601>}`
+```json
+{
+  "phase": "find",
+  "mode": "<mode>",
+  "lanes_ran": ["..."],
+  "claims_total": "<N>",
+  "blocked_critical": "<N>",
+  "under_sourced_lanes": ["..."],
+  "audit_passed": true,
+  "self_audit": {
+    "audit_gate_passed": true,
+    "lanes_reached_floor_or_pivoted": true,
+    "find_summary_complete": true,
+    "ledgers_ajv_valid": true,
+    "telemetry_appended": true,
+    "re_entry_tags_present": null
+  },
+  "ts": "<ISO8601>"
+}
+```
 
-Walk the self-audit checklist from `SKILL.md` (six items). Only after the
-checklist is clean, return control to the orchestrator. The orchestrator
-routes to OBSERVE (if any blocked critical claims exist or mode requires
-probes) or to RECOMBINE (otherwise, in quick mode with a clean audit).
+Sub-fields use `true` when the checklist item passed, `false` when it
+failed (do not silently omit — `false` triggers the hook with a precise
+error message naming the item). Use `null` for items that do not apply
+to this run (e.g., `re_entry_tags_present` is `null` on cold runs).
+
+After the line is appended, return control to the orchestrator. The
+orchestrator routes to OBSERVE (if any blocked critical claims exist or
+mode requires probes) or to RECOMBINE (otherwise, in quick mode with a
+clean audit).
