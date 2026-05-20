@@ -289,5 +289,8 @@ implementation), FIND runs in **re-entry mode**:
 - `gates/audit.mjs` — final audit (HEAD + quote-grep + lineage + bigram +
   independence).
 - `tools/filter.mjs` — mechanical pre-filter used inside each lane.
+- `skills/real_search/SKILL.md` — every lane page fetch routes through this
+  skill (browser-driven `playwright-cli` + cloakbrowser + progressive read).
+  Lanes never call `playwright-cli` directly.
 - `schemas/source_ledger_entry.schema.yaml` — source entry schema.
 - `schemas/claim_ledger_entry.schema.yaml` — claim entry schema.

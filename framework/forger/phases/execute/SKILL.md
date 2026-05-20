@@ -198,7 +198,9 @@ reality, or a required threshold was never sourced.
 1. Optionally call `tools/probe.mjs --workspace <path>
    --assumption-id <id> --type web_search --cmd "<query>"` to
    confirm the gap is real (a transient flake or fixture defect is
-   not a gap).
+   not a gap). The `web_search` probe command must drive the
+   `forger-real-search` skill (see `skills/real_search/SKILL.md`);
+   never spawn `playwright-cli` directly from EXECUTE.
 2. Write `workspaces/{slug}/dow_addendum_{n}.yaml` — a single
    narrowed `success_criterion_measurable` covering only the missing
    fact. `n` is the re-entry counter starting at 1.
@@ -243,6 +245,8 @@ before claiming completion in your final response.
   evidence integrity check during fact-gap re-entry.
 - `tools/probe.mjs` — invoked optionally before fact-gap re-entry to
   confirm a gap is real rather than transient.
+- `skills/real_search/SKILL.md` — canonical fetcher for any
+  `web_search` probe and for the fact-gap re-entry's FIND call.
 - `hooks/enforce_done_means_ran.mjs` — Stop hook; reads
   `acceptance_results.jsonl` and blocks premature completion.
 - `hooks/post_code.mjs` — PostToolUse hook; runs linter and per-

@@ -158,7 +158,9 @@ For each high/critical assumption with `resolution_required` ≥
   Choose one of the six probe patterns in
   `refs/probe_design_patterns.md` (script / repo_clone / web_search /
   prototype_fn / benchmark / api_test). The pattern's `--cmd` shape and
-  evidence-capture notes are the design contract.
+  evidence-capture notes are the design contract. For `web_search` probes
+  the `--cmd` must drive the `forger-real-search` skill (see
+  `skills/real_search/SKILL.md`); never spawn `playwright-cli` directly.
 - **Invoke `tools/probe.mjs`:**
 
   `node tools/probe.mjs --workspace <path> --assumption-id <id> --type <type> --cmd "<command>" [--timeout-ms <N>]`
@@ -255,6 +257,8 @@ RECOMBINE.
   api_test) with command shapes, evidence-capture, and pitfalls.
 - `tools/probe.mjs` — the probe runner. Sandboxes commands per
   assumption, validates and appends to `probe_results.jsonl`.
+- `skills/real_search/SKILL.md` — canonical fetcher invoked by every
+  `web_search` probe; OBSERVE never spawns `playwright-cli` directly.
 - `_lib/ledger.mjs` — `validateRiskMap`, `readYaml`, `writeYaml`,
   `appendProbeResult`.
 - `schemas/risk_map.schema.yaml` — risk map schema. Top-level requires
