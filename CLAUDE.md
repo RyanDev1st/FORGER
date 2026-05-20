@@ -26,6 +26,7 @@ Build a framework that empowers AIs to explore, learn, and synthesize knowledge 
 | `framework/forger/DESIGN.md` | FORGER source-of-truth design specification |
 | `framework/forger/SKILL.md` | FORGER orchestrator skill (single agent loop, drives 7-phase pipeline) |
 | `framework/forger/phases/` | Per-phase skills (contract / find / observe / recombine / grill / execute / retain) |
+| `framework/forger/skills/` | Cross-phase callable skills (`real_search` browser-driven page-read protocol) |
 | `framework/forger/schemas/` | JSON Schemas (YAML) for DoW, ledgers, risk map, failure hypotheses, probes, retro notes |
 | `framework/forger/_lib/` | Shared helpers (config, ledger I/O, KB, playwright, reviewer router) |
 | `framework/forger/gates/` | Phase-exit validators (agent-invoked; block phase exit on failure) |

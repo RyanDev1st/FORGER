@@ -68,7 +68,7 @@ mechanisms** that the mainstream sources would miss. Treat the DoW as the
 *context* for your search, not the search target.
 
 ### Step 2 — Browser-driven exploration
-Use playwright-cli + cloakbrowser. Never use the --browser flag.
+Use the `forger-real-search` skill for every page fetch (see `skills/real_search/SKILL.md`).
 
 Search strategies that produce the highest-signal hits for this lane:
   - For every mainstream claim the production lane *would* find, search for
