@@ -10,7 +10,8 @@
     "./phases/recombine/SKILL.md",
     "./phases/grill/SKILL.md",
     "./phases/execute/SKILL.md",
-    "./phases/retain/SKILL.md"
+    "./phases/retain/SKILL.md",
+    "./skills/real_search/SKILL.md"
   ],
   "commands": [
     { "name": "forger", "description": "Run the FORGER pipeline on a task" },

@@ -49,7 +49,7 @@ to cluster around *failure modes* and *implementation gotchas*; prioritize
 those.
 
 ### Step 2 — Browser-driven exploration
-Use playwright-cli + cloakbrowser. Never use the --browser flag.
+Use the `forger-real-search` skill for every page fetch (see `skills/real_search/SKILL.md`).
 
 Search strategies that produce the highest-signal hits for this lane:
   - Stack Overflow tag pages sorted by votes for the past year

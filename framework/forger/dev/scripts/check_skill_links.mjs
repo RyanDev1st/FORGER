@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '..', '..');
 
-const LINK_RE = /\b((refs|gates|tools|schemas|templates|lanes|_lib|hooks)\/[A-Za-z0-9_./-]+\.(md|mjs|yaml|jsonl|json|txt))\b/g;
+const LINK_RE = /\b((refs|gates|tools|schemas|templates|lanes|_lib|hooks|phases|dev|skills|modes)\/[A-Za-z0-9_./-]+\.(md|mjs|yaml|jsonl|json|txt))\b/g;
 
 function walk(dir, accept = () => true) {
   const out = [];
@@ -20,7 +20,10 @@ function walk(dir, accept = () => true) {
   return out;
 }
 
-const skillFiles = walk(path.join(root, 'phases'), p => p.endsWith('.md'));
+const skillFiles = [
+  ...walk(path.join(root, 'phases'), p => p.endsWith('.md')),
+  ...walk(path.join(root, 'skills'), p => p.endsWith('.md')),
+];
 const orchestratorSkill = path.join(root, 'SKILL.md');
 if (fs.existsSync(orchestratorSkill)) skillFiles.push(orchestratorSkill);
 

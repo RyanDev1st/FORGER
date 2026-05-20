@@ -40,7 +40,7 @@ Read DoW. Extract every:
 Compute the set of dow_criterion_refs you must cover. This is your search target.
 
 ### Step 2 — Browser-driven exploration
-Use playwright-cli + cloakbrowser. Never use the --browser flag.
+Use the `forger-real-search` skill for every page fetch (see `skills/real_search/SKILL.md`).
 
 For each search:
   - Start broad, narrow toward your target dow_criterion_refs
