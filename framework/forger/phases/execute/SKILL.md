@@ -20,7 +20,7 @@ coherent-sounding implementation — completion is gated by
 
 You operate inside one of three artifact branches: **code/system**,
 **research_report**, or **design**. The branch is determined by the
-`artifact_type` field set in CONTRACT and recorded in `dow.yaml`. The
+`artifact.type` field set in CONTRACT and recorded in `dow.yaml`. The
 three branches share the same gates and the same exit contract; only the
 build procedure differs.
 
@@ -38,7 +38,7 @@ the built artifact in its target location plus a complete
 - `workspaces/{slug}/dow.yaml` — read-only. The Definition of Works.
   Drives every gate: `success_criteria_measurable`, `hard_constraints`,
   `unacceptable_failure_modes`, and (for documentation) the
-  `artifact_type` and `success_criteria_subjective` lists.
+  `artifact.type` and `success_criteria_subjective` lists.
 - `workspaces/{slug}/source_ledger.yaml` and
   `workspaces/{slug}/claim_ledger.yaml` — read-only. Audited evidence
   that grounded RECOMBINE. Research reports cite into these; code/system
@@ -62,7 +62,8 @@ the built artifact in its target location plus a complete
 ## Outputs
 
 - **Artifact files** (code, design, report, etc.) in their target
-  locations as declared by the DoW artifact specification.
+  locations as declared by `dow.artifact` (`type` + `description`,
+  optionally `format`).
 - `workspaces/{slug}/acceptance_results.jsonl` — one JSON line per
   criterion checked. The schema mirrors the writes performed by
   `gates/acceptance_test.mjs`:
@@ -108,7 +109,7 @@ An EXECUTE run is not complete until all four gates pass:
 ## Procedure
 
 The procedure has three artifact branches and a shared fact-gap
-re-entry path. Run only the branch matching `dow.artifact_type`. The
+re-entry path. Run only the branch matching `dow.artifact.type`. The
 branches converge at step "Update acceptance_results.jsonl per
 criterion".
 
@@ -148,7 +149,7 @@ Loop until `gates/acceptance_test.mjs` exits 0.
 ### Branch B — research_report
 
 1. Draft sections per the artifact specification embedded in
-   `dow.artifact_spec` (section list, target length, audience).
+   `dow.artifact.description` (section list, target length, audience).
 2. Each section's claims must reference `claim_ledger.yaml` entries
    with `entailment: directly_supported`. **No critical claim may
    sit at `weakly_supported` or lower in the report.** A claim with
@@ -169,7 +170,7 @@ budget exhaustion path differs from Branch A.
 
 ### Branch C — design
 
-1. Generate the design artifact per `dow.artifact_spec` (surfaces,
+1. Generate the design artifact per `dow.artifact.description` (surfaces,
    user flows, asset list).
 2. Acceptance criteria for designs include **rubric scoring**
    (each criterion in `dow.success_criteria_measurable` carries a
