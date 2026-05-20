@@ -14,6 +14,8 @@ npm run validate:schemas
 npm test
 npm run install:plugin -- --dry-run     # preview hook merge
 npm run install:plugin                  # actually merge into ~/.claude/settings.json
+npm run setup:browser -- --dry-run      # opt-in: preview cloakbrowser install plan
+npm run setup:browser                   # opt-in: download cloakbrowser + write .playwright/cli.config.json
 ```
 
 ## Use
