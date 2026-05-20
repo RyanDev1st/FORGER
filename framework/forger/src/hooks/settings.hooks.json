@@ -9,6 +9,15 @@
             "command": "node \"${CLAUDE_PLUGIN_ROOT}/forger/src/hooks/enforce_tier_firewall.mjs\""
           }
         ]
+      },
+      {
+        "matcher": "Task",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/forger/src/hooks/enforce_phase_self_audit.mjs\""
+          }
+        ]
       }
     ],
     "PostToolUse": [

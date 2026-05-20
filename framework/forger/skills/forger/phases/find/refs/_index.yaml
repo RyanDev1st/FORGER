@@ -17,6 +17,10 @@ refs:
       conflict_of_interest) and need an anchor for what 4 vs 5 means in
       this specific dimension.
     triggers: [source_scoring, dimension_anchor_needed]
+    worked_examples:
+      - "You're scoring a vendor's official docs page. Authority feels like 5 but the page was last updated 2 years ago. Recency = 3? 2? — load to anchor."
+      - "GitHub repo with 2k stars, last commit 8 months ago, active CI. Implementation_relevance is high but you're unsure if 4 or 5 — load."
+      - "Conference talk transcript from 2024 by the library author. Independence and conflict_of_interest cells are non-obvious — load."
 
   - file: severity_calibration.md
     summary: Severity table (trivial/low/medium/high/critical) plus worked examples for borderline claims.
@@ -25,6 +29,10 @@ refs:
       severity dominates, OR the claim sits between two severity levels
       and the lane mandate's table is not enough to decide.
     triggers: [severity_ambiguous, multi_field_claim, borderline_severity]
+    worked_examples:
+      - "Claim affects a `hard_constraint` (= critical) AND a `success_criteria_subjective` (= medium). Take higher: critical. Verify by loading."
+      - "Claim is background context that an `unacceptable_failure_mode` indirectly depends on. Low? Medium? — load to walk the decision."
+      - "Claim describes a behaviour that's 'obvious to anyone in the domain' but you're not sure if it really is. Trivial vs low — load."
 
   - file: entailment_calibration.md
     summary: Entailment decision tree (directly_supported / weakly_supported / extrapolated / contradicted / unverified / speculative) plus 6 worked examples.
@@ -34,6 +42,10 @@ refs:
       `extrapolated`, OR a quote is partially contradicted by adjacent
       text on the same page.
     triggers: [entailment_ambiguous, weak_vs_extrapolated, partial_contradiction]
+    worked_examples:
+      - "Quote says 'X is faster than Y in our benchmark'. Your claim says 'X is faster than Y'. Same? Or are you extrapolating beyond the benchmark scope? — load."
+      - "Quote says 'we recommend X for most use cases'. Your claim says 'X is the right choice here'. Weak support or extrapolation? — load."
+      - "Quote partially supports the claim but a paragraph later on the same page partially contradicts it. Contradicted? Weakly_supported with a flag? — load."
 
   - file: pivot_procedure.md
     summary: 5-step pivot procedure for under-sourced topics — pick a proxy that still informs the DoW.
@@ -43,6 +55,9 @@ refs:
       reflexively — only when V2 of `procedure/main.md` step 6 trips.
       Edge lane skips this entirely; edge "no findings" is a clean exit.
     triggers: [under_sourced, pivot_required]
+    worked_examples:
+      - "Production lane hit 2 of 5 floor. Domain is bleeding-edge GPU drivers. Pivot to adjacent stable GPU API docs that still inform the constraint? — load."
+      - "Community lane found 0 forum threads matching the exact framework. War stories from the predecessor framework still apply? — load to walk the pivot decision."
 
   - file: read_content_rules.md
     summary: Progressive page-read protocol (SKIM → SCAN → DEEP) and chunk-selection heuristics for long pages.
@@ -52,3 +67,6 @@ refs:
       DEEP-read vs SCAN vs SKIM. The real_search skill cross-references
       this file; load it before your first long-page fetch in a run.
     triggers: [long_page_fetch, progressive_read_strategy]
+    worked_examples:
+      - "Wikipedia article on a topic — likely sections: intro (DEEP), history (SKIM), references (SCAN for citation chains). Load to confirm the heuristic for this domain."
+      - "API reference page with 40 endpoints, you only need 2 — load to decide which sections to DEEP vs which to ignore entirely."
