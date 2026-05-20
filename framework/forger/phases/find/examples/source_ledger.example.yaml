@@ -1,7 +1,7 @@
 # schema: ../../../schemas/source_ledger_entry.schema.yaml
-# Worked example: a source_ledger.yaml after a standard-mode FIND run on a
-# Node.js streaming question. Two lanes ran (production + community), plus a
-# single frontier entry to show shape (deep-mode artifact carried forward).
+# Worked example: a source_ledger.yaml after a deep-mode FIND run on a
+# Node.js streaming question. All three lanes ran (production + community +
+# frontier), with the frontier entry seeded as a tier-2 seed for OBSERVE.
 # Every entry passes schemas/source_ledger_entry.schema.yaml.
 
 - id: src-node-stream-docs
@@ -115,7 +115,7 @@
 # ---LANE_SUMMARY---
 # lane: production
 # findings_count: 3
-# mode: standard
+# mode: deep
 # pivot_taken: false
 # pivot_proxy_topic: ''
 # under_sourced: false
@@ -124,7 +124,7 @@
 # ---LANE_SUMMARY---
 # lane: community
 # findings_count: 2
-# mode: standard
+# mode: deep
 # pivot_taken: false
 # pivot_proxy_topic: ''
 # under_sourced: false
@@ -133,7 +133,7 @@
 # ---LANE_SUMMARY---
 # lane: frontier
 # findings_count: 1
-# mode: standard
+# mode: deep
 # pivot_taken: false
 # pivot_proxy_topic: ''
 # under_sourced: false

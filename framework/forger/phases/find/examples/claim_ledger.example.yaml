@@ -1,8 +1,9 @@
 # schema: ../../../schemas/claim_ledger_entry.schema.yaml
-# Worked example: a claim_ledger.yaml from the same standard-mode FIND run as
-# source_ledger.example.yaml. Each claim points to a source_id that exists in
-# that file. Severity and entailment are diverse on purpose so the file
-# doubles as a calibration reference.
+# Worked example: a claim_ledger.yaml from the same deep-mode FIND run as
+# source_ledger.example.yaml (all three lanes present). Each claim points to a
+# source_id that exists in that file. Severity, entailment, and status are
+# diverse on purpose so the file doubles as a calibration reference and
+# exercises FIND gate 3 via the trailing `status: blocked` critical entry.
 
 - id: clm-pipeline-error-propagation
   source_id: src-node-stream-docs
@@ -131,3 +132,24 @@
     Background note for the implementation; not a contested point.
   intended_use: primary
   status: open
+
+- id: clm-destroyed-writable-rate
+  source_id: src-gh-issue-stream-leak
+  lane: community
+  claim_text: |
+    Under sustained short-lived connection churn (>= 500 conn/s) the
+    destroyed-writable leak grows fast enough to OOM a default-heap Node
+    process within minutes.
+  verbatim_quote: 'memory grows until process exits'
+  severity: critical
+  dow_criterion_refs: [ufm-1]
+  entailment: weakly_supported
+  mechanism: |
+    Quantitative rate is extrapolated from the qualitative quote; the
+    severity is critical because the failure mode is exactly what the
+    DoW marks as unacceptable, but the entailment is not strong enough
+    to anchor the claim. FIND gate 3 (critical claim at non-
+    `directly_supported` entailment) forces this entry to `blocked` so
+    OBSERVE must probe it before it can flow into RECOMBINE.
+  intended_use: primary
+  status: blocked
