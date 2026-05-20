@@ -175,6 +175,32 @@ Map the answer to `meta.mode` and `meta.mode_picked_by`:
   directory) → `deep`
 - else → `standard`
 
+### 5.5. Confirm scope before writing DoW
+
+Before invoking step 6, echo a three-bullet scope summary to the user and
+**wait for explicit confirmation** ("yes", "ship it", "looks right" — or
+the user explicitly edits the scope). Format:
+
+> Here's what I'll build:
+>
+> - **Artifact:** {one-line artifact summary, drawn from your draft `artifact.description`}
+> - **Audience:** {`audience.who` + `audience.use_case`}
+> - **Must-haves:** {bullet list of `hard_constraints[].description`}
+>
+> Confirm to proceed, or tell me what's off.
+
+If the user edits any field, fold the edit into the running draft and ask
+the question again. If the user says "looks right" or anything affirmative,
+proceed to step 6. **Skip this step only when running in autonomous mode**
+(see "Autonomous mode" at the foot of this skill); autonomous mode writes
+the DoW immediately and logs a confirmation-skipped note in
+`reframe_memo.md` so a later reviewer can audit the trade-off.
+
+This step exists because socratic clarifications (step 2) and the reframe
+(step 3) elicit *fragments*; nothing prior to this point asks the user
+"is the assembled whole right?" Without explicit confirmation, the DoW
+the agent persists may not match the artifact the user expected.
+
 ### 6. Write DoW
 
 Open `templates/dow.template.yaml` as your starting structure. Fill every
