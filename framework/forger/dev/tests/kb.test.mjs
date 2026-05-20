@@ -7,7 +7,7 @@ import {
   isShortcutEligible,
   countShippedTasks,
   computeCoverage,
-} from '../../_lib/kb.mjs';
+} from '../../src/lib/kb.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const fixture = path.resolve(here, '..', 'fixtures', 'sample_kb_domain');

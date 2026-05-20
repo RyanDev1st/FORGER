@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { invokeReviewer, __resetForTests } from '../../_lib/reviewer_router.mjs';
+import { invokeReviewer, __resetForTests } from '../../src/lib/reviewer_router.mjs';
 
 beforeEach(() => {
   delete process.env.OPENAI_API_KEY;

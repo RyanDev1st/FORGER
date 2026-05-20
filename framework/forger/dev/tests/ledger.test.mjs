@@ -15,7 +15,7 @@ import {
   writeYaml,
   appendJsonl,
   readJsonl,
-} from '../../_lib/ledger.mjs';
+} from '../../src/lib/ledger.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '..', '..');

@@ -4,7 +4,7 @@ import {
   skim,
   shouldPromote,
   readWithBudget,
-} from '../../_lib/read_progressive.mjs';
+} from '../../src/lib/read_progressive.mjs';
 
 const MINI_HTML = `
 <html>

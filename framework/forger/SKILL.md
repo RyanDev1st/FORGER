@@ -49,7 +49,7 @@ mid-run, the next run can read the workspace and pick up.
 You produce no artifact files of your own. You produce:
 
 - A per-task workspace at `workspaces/{slug}-{date}/` (scaffolded by
-  `dev/scripts/new_workspace.mjs`; phase skills overwrite the seeded files).
+  `src/dev/new_workspace.mjs`; phase skills overwrite the seeded files).
 - A final user-facing summary message at the end of the run (path, status,
   token budget vs. mode budget, telemetry line count).
 
@@ -72,7 +72,7 @@ Receive the user's task description as the argument to `/forger`. Compute:
 
 - **`slug`** — kebab-case noun phrase summarising the task, lowercase,
   alphanumeric plus hyphen, ≤40 characters. Strip leading and trailing
-  hyphens. The same slugify rule lives in `dev/scripts/new_workspace.mjs`;
+  hyphens. The same slugify rule lives in `src/dev/new_workspace.mjs`;
   the script will re-slugify whatever you pass, so you can be a little
   loose.
 - **`date`** — local date in `YYYY-MM-DD`.
@@ -85,7 +85,7 @@ as `meta.user_query_verbatim`.
 Invoke the scaffolder:
 
 ```
-node dev/scripts/new_workspace.mjs --slug <slug> --date <date> --query "<verbatim task>"
+node src/dev/new_workspace.mjs --slug <slug> --date <date> --query "<verbatim task>"
 ```
 
 The script:
@@ -113,13 +113,13 @@ writes `dow.yaml` and overwrites the placeholder `reframe_memo.md`.
 - `workspaces/{slug}-{date}/dow.yaml` exists.
 - `workspaces/{slug}-{date}/reframe_memo.md` exists.
 - DoW validates against `schemas/definition_of_works.schema.yaml` via
-  `_lib/ledger.mjs::validateDoW`. On validation failure, surface the AJV
+  `src/lib/ledger.mjs::validateDoW`. On validation failure, surface the AJV
   error path + message to the user and halt the run; do not silently patch.
 
 Read `dow.yaml` once after CONTRACT exits and cache `meta.mode` and
 `meta.domain_slug` in your scratch — every downstream phase consumes them.
-Load `modes/quick.yaml`, `modes/standard.yaml`, or `modes/deep.yaml` per
-the picked mode (`_lib/config.mjs::loadMode` if available) to obtain the
+Load `skills/forger/modes/quick.yaml`, `skills/forger/modes/standard.yaml`, or `skills/forger/modes/deep.yaml` per
+the picked mode (`src/lib/config.mjs::loadMode` if available) to obtain the
 mode's `token_budget_cold` (used by the telemetry rule in step 11).
 
 ### 4. FIND — `forger-find`
@@ -136,7 +136,7 @@ mandate files. FIND is the only phase that fans out beyond orchestrator + 1.
 - `workspaces/{slug}-{date}/source_ledger.yaml` exists.
 - `workspaces/{slug}-{date}/claim_ledger.yaml` exists.
 - `workspaces/{slug}-{date}/find_summary.md` exists.
-- Audit gate passes: run `gates/audit.mjs --workspace <path>` and require
+- Audit gate passes: run `src/gates/audit.mjs --workspace <path>` and require
   exit code 0. FIND runs this internally as its step 8; the orchestrator
   re-runs it as the phase-exit check.
 
@@ -154,7 +154,7 @@ threshold the mode requires, and writes the ground-truth brief.
 **Phase-exit waits.** Before moving on:
 
 - `workspaces/{slug}-{date}/risk_map.yaml` exists and validates against
-  the risk-map schema via `_lib/ledger.mjs`.
+  the risk-map schema via `src/lib/ledger.mjs`.
 - `workspaces/{slug}-{date}/ground_truth_brief.md` exists.
 - Every assumption with `severity` ≥ `high` has `status` in the set
   `{probed_ok, waived, verified}`. Any assumption still `unverified` at
@@ -201,7 +201,7 @@ three artifact branches by `dow.artifact.type`: TDD micro-cycle for
 code/system, ledger-coverage for `research_report`, rubric + screenshot
 for `design`. EXECUTE then runs the chosen branch's loop until every
 required acceptance entry in `acceptance_results.jsonl` passes. The
-`hooks/enforce_done_means_ran.mjs` Stop hook prevents claims of completion
+`src/hooks/enforce_done_means_ran.mjs` Stop hook prevents claims of completion
 without the acceptance file being populated; you do not need to invoke the
 hook — the Claude Code harness fires it.
 
@@ -225,7 +225,7 @@ a *fact-gap* status rather than a pass. When you see this:
 
 - `workspaces/{slug}-{date}/acceptance_results.jsonl` shows every required
   acceptance criterion as a passing entry. Confirm via
-  `gates/acceptance_test.mjs --workspace <path>`; require exit 0
+  `src/gates/acceptance_test.mjs --workspace <path>`; require exit 0
   (`required_failed: 0`).
 
 ### 9. RETAIN — `forger-retain`
@@ -233,12 +233,12 @@ a *fact-gap* status rather than a pass. When you see this:
 Invoke `forger-retain` with the workspace path. RETAIN writes the
 retrospective note, then merges promotable claims and failed assumptions
 into the per-domain knowledge base under
-`knowledge/{domain_slug}/` via `tools/update_kb.mjs`.
+`knowledge/{domain_slug}/` via `src/cli/update_kb.mjs`.
 
 **Phase-exit waits.** Before emitting the final summary:
 
 - `workspaces/{slug}-{date}/retro_note.yaml` exists and validates via
-  `_lib/ledger.mjs::validateRetroNote` (or the retro-note schema directly).
+  `src/lib/ledger.mjs::validateRetroNote` (or the retro-note schema directly).
 - `knowledge/{domain_slug}/index.yaml` exists or was updated. Check
   `mtime` against the start of the RETAIN invocation as a soft signal that
   the KB merge ran; the script itself returns success/failure that RETAIN
@@ -288,12 +288,12 @@ scan when verifying a run in progress.
 
 | Phase            | Required files (under `workspaces/{slug}-{date}/`)                                            | Extra gate                                                                                            |
 |------------------|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| forger-contract  | `dow.yaml`, `reframe_memo.md`                                                                 | DoW validates via `_lib/ledger.mjs::validateDoW`.                                                     |
-| forger-find      | `source_ledger.yaml`, `claim_ledger.yaml`, `find_summary.md`                                  | `gates/audit.mjs --workspace <path>` exit 0.                                                          |
+| forger-contract  | `dow.yaml`, `reframe_memo.md`                                                                 | DoW validates via `src/lib/ledger.mjs::validateDoW`.                                                     |
+| forger-find      | `source_ledger.yaml`, `claim_ledger.yaml`, `find_summary.md`                                  | `src/gates/audit.mjs --workspace <path>` exit 0.                                                          |
 | forger-observe   | `risk_map.yaml`, `ground_truth_brief.md`                                                      | Every `severity ≥ high` assumption has `status ∈ {probed_ok, waived, verified}`. In deep mode: no waivers (every high/critical must be `probed_ok` or `verified`). No `claim_ledger.yaml` entry may remain `status: blocked` at exit. |
 | forger-recombine | `recombine.md`                                                                                | ≥1 Tier 1 idea; mechanism-fit check populated.                                                        |
 | forger-grill     | `failure_hypotheses.yaml`                                                                     | Every open hypothesis ∈ `{accepted_test_added, rejected_with_counter_evidence, escalated}`. Deep mode requires `reviewer_tier ≥ good` AND ≥ 1 hypothesis with `blind: true`. |
-| forger-execute   | `acceptance_results.jsonl`                                                                    | `gates/acceptance_test.mjs --workspace <path>` exit 0 (`required_failed: 0`).                         |
+| forger-execute   | `acceptance_results.jsonl`                                                                    | `src/gates/acceptance_test.mjs --workspace <path>` exit 0 (`required_failed: 0`).                         |
 | forger-retain    | `retro_note.yaml`; `knowledge/{domain_slug}/index.yaml` written or updated                    | Retro note validates.                                                                                 |
 
 ---
@@ -329,15 +329,15 @@ counting existing files in the workspace, not from in-memory state.
 
 ## Cross-references
 
-- `dev/scripts/new_workspace.mjs` — workspace scaffolder invoked in step 2.
-- `tools/update_kb.mjs` — KB merge invoked by RETAIN.
-- `gates/audit.mjs` — FIND phase-exit audit (HEAD + quote-grep + lineage).
-- `gates/acceptance_test.mjs` — EXECUTE phase-exit acceptance check.
-- `hooks/enforce_done_means_ran.mjs` — harness-fired Stop hook that blocks
+- `src/dev/new_workspace.mjs` — workspace scaffolder invoked in step 2.
+- `src/cli/update_kb.mjs` — KB merge invoked by RETAIN.
+- `src/gates/audit.mjs` — FIND phase-exit audit (HEAD + quote-grep + lineage).
+- `src/gates/acceptance_test.mjs` — EXECUTE phase-exit acceptance check.
+- `src/hooks/enforce_done_means_ran.mjs` — harness-fired Stop hook that blocks
   premature completion claims when acceptance is unsatisfied.
-- `_lib/ledger.mjs` — schema validators used at every phase-exit wait.
-- `_lib/config.mjs` — mode loader and shared configuration helpers.
-- `modes/quick.yaml`, `modes/standard.yaml`, `modes/deep.yaml` — mode
+- `src/lib/ledger.mjs` — schema validators used at every phase-exit wait.
+- `src/lib/config.mjs` — mode loader and shared configuration helpers.
+- `skills/forger/modes/quick.yaml`, `skills/forger/modes/standard.yaml`, `skills/forger/modes/deep.yaml` — mode
   configs (lanes, budgets, gates). Loaded after CONTRACT picks a mode.
 - `schemas/definition_of_works.schema.yaml` — DoW schema validated at
   CONTRACT exit.

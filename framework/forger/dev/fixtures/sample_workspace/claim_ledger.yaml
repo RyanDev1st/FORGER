@@ -1,22 +1,28 @@
 - id: clm-example
   source_id: src-example
   lane: production
-  claim_text: 'This domain is for use in illustrative examples.'
-  verbatim_quote: 'This domain is for use in illustrative examples in documents.'
+  claim_text: This domain is for use in illustrative examples.
+  verbatim_quote: This domain is for use in illustrative examples in documents.
   severity: low
-  dow_criterion_refs: [sc-m-1]
+  dow_criterion_refs:
+    - sc-m-1
   entailment: directly_supported
-  mechanism: 'Demo claim for fixture.'
+  mechanism: Demo claim for fixture.
   intended_use: primary
   status: open
+  flags:
+    - quote-not-found
 - id: clm-orphan
   source_id: src-missing
   lane: production
-  claim_text: 'Orphan claim referencing missing source.'
-  verbatim_quote: 'Orphan claim referencing missing source.'
+  claim_text: Orphan claim referencing missing source.
+  verbatim_quote: Orphan claim referencing missing source.
   severity: medium
-  dow_criterion_refs: [sc-m-1]
+  dow_criterion_refs:
+    - sc-m-1
   entailment: directly_supported
-  mechanism: 'Used to test the orphan-claim flag.'
+  mechanism: Used to test the orphan-claim flag.
   intended_use: primary
   status: open
+  flags:
+    - orphan-claim

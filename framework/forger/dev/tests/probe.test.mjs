@@ -2,8 +2,8 @@ import { describe, it, expect } from 'vitest';
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
-import { runProbe } from '../../tools/probe.mjs';
-import { readJsonl } from '../../_lib/ledger.mjs';
+import { runProbe } from '../../src/cli/probe.mjs';
+import { readJsonl } from '../../src/lib/ledger.mjs';
 
 describe('probe', () => {
   it('runs a script and records passing result', async () => {

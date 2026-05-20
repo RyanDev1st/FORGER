@@ -37,7 +37,7 @@ and reads content**:
 
 Do **not** invoke it for:
 
-- HEAD-only liveness checks — use `_lib/playwright.mjs::headRequest` directly.
+- HEAD-only liveness checks — use `src/lib/playwright.mjs::headRequest` directly.
 - Pages already inside the local KB (`knowledge/{domain_slug}/`) — those are
   cached and trusted.
 
@@ -63,16 +63,16 @@ These rules are blocking. Violating them means the run is invalid.
 
 1. **No `--browser` flag.** Use `playwright-cli` or `playwright-cli snapshot`
    directly. The local stealth binary is pre-configured via
-   `.playwright/cli.config.json` (written by `dev/scripts/setup_browser.mjs`).
+   `.playwright/cli.config.json` (written by `src/dev/setup_browser.mjs`).
    Never pass `--browser=chrome`, `--browser=chromium`, or similar.
 2. **No custom `child_process` wrappers.** Do not write Node scripts that
    spawn `playwright-cli` themselves. Use the standard commands surfaced by
-   `_lib/playwright.mjs` (`headRequest`, `openPageViaPlaywrightCli`) and the
-   stage helpers in `_lib/read_progressive.mjs` (`skim`, `scan`, `deep`,
+   `src/lib/playwright.mjs` (`headRequest`, `openPageViaPlaywrightCli`) and the
+   stage helpers in `src/lib/read_progressive.mjs` (`skim`, `scan`, `deep`,
    `readWithBudget`). Those are the only sanctioned entry points.
 3. **Verbatim quote rule.** Every quote captured for a claim must be ≤25 words
    and **must be present in the fetched page text** (grep test:
-   `_lib/playwright.mjs::grepQuote`). If you cannot grep it, you cannot use
+   `src/lib/playwright.mjs::grepQuote`). If you cannot grep it, you cannot use
    it — drop the quote, do not paraphrase and pretend it was literal.
 
 ---
@@ -81,7 +81,7 @@ These rules are blocking. Violating them means the run is invalid.
 
 ### Step 1 — Liveness check (cheap)
 
-Call `_lib/playwright.mjs::headRequest(url)`. Require a 2xx or 3xx status.
+Call `src/lib/playwright.mjs::headRequest(url)`. Require a 2xx or 3xx status.
 On 4xx/5xx/network failure, return early with reason; do not spawn the
 browser.
 
@@ -94,7 +94,7 @@ if (head.status === 0 || head.status >= 400) {
 
 ### Step 2 — SKIM (≤ 500 tokens)
 
-Call `_lib/read_progressive.mjs::skim(url)`. Returns title, h1-h3, first and
+Call `src/lib/read_progressive.mjs::skim(url)`. Returns title, h1-h3, first and
 last paragraph. Cost is one cheap HTML fetch.
 
 Decision via `shouldPromote(skim_result, claim_target)`:
@@ -102,11 +102,11 @@ Decision via `shouldPromote(skim_result, claim_target)`:
 - promote=true → continue to SCAN.
 - promote=false → return SKIM blob now, mark `stage_reached: 'skim'`.
 
-See `phases/find/refs/read_content_rules.md` for promotion criteria.
+See `skills/forger/phases/find/refs/read_content_rules.md` for promotion criteria.
 
 ### Step 3 — SCAN (≤ 2000 tokens, cumulative ≤ 2500)
 
-Call `_lib/read_progressive.mjs::scan(url)`. Uses the snapshot from
+Call `src/lib/read_progressive.mjs::scan(url)`. Uses the snapshot from
 `playwright-cli snapshot <url>` (the accessibility tree). Returns every
 heading + paragraph + code/table/figure block.
 
@@ -117,13 +117,13 @@ Decision via `shouldPromote(scan_result, claim_target)`:
 
 ### Step 4 — DEEP (≤ remaining budget, cumulative ≤ 6000)
 
-Call `_lib/read_progressive.mjs::deep(url)`. Full reader-mode prose with
+Call `src/lib/read_progressive.mjs::deep(url)`. Full reader-mode prose with
 nav/footer/ads stripped. Returns text + images (alt-text + adjacency to
 prose). No extra fetch — the snapshot already had everything.
 
 ### Step 5 — Visual content surfacing (no extra budget)
 
-`_lib/read_progressive.mjs::annotateVisuals(deep_result)` flags an image as
+`src/lib/read_progressive.mjs::annotateVisuals(deep_result)` flags an image as
 **surfaced** when prose contains
 `/see figure|see fig\.|figure \d+|pipeline|architecture|as shown|algorithm \d+|equation \d+/i`
 AND the snapshot already captured image refs. **No extra tokens are spent at
@@ -176,7 +176,7 @@ The skill never deletes findings — it surfaces flags and lets the caller
 
 ## Cross-references
 
-- `_lib/playwright.mjs` — `headRequest`, `openPageViaPlaywrightCli`, `grepQuote`.
-- `_lib/read_progressive.mjs` — `skim`, `scan`, `deep`, `shouldPromote`, `readWithBudget`, `annotateVisuals`.
-- `phases/find/refs/read_content_rules.md` — full promotion criteria, worked example, anti-pattern.
-- `dev/scripts/setup_browser.mjs` — opt-in installer for cloakbrowser + `.playwright/cli.config.json`.
+- `src/lib/playwright.mjs` — `headRequest`, `openPageViaPlaywrightCli`, `grepQuote`.
+- `src/lib/read_progressive.mjs` — `skim`, `scan`, `deep`, `shouldPromote`, `readWithBudget`, `annotateVisuals`.
+- `skills/forger/phases/find/refs/read_content_rules.md` — full promotion criteria, worked example, anti-pattern.
+- `src/dev/setup_browser.mjs` — opt-in installer for cloakbrowser + `.playwright/cli.config.json`.

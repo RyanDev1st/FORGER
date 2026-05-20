@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
 import { fileURLToPath } from 'node:url';
-import { runSetupBrowser, pickAsset, binaryPathFor, buildConfig } from '../../dev/scripts/setup_browser.mjs';
+import { runSetupBrowser, pickAsset, binaryPathFor, buildConfig } from '../../src/dev/setup_browser.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const fixture = path.resolve(here, '..', 'fixtures', 'cloakbrowser-release.json');

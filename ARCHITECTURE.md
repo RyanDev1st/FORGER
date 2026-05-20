@@ -23,7 +23,7 @@ The orchestrator (`framework/forger/SKILL.md`) drives a sequential phase walk. S
 **Concurrency cap:** 4 concurrent threads (orchestrator + max 3 subagents during deep-mode FIND). No other phase fans out beyond orchestrator + 1. **Re-entry:** EXECUTE may re-invoke FIND in single-lane mode (production only, target=3, no frontier) up to 2× to close fact gaps; 3rd attempt escalates.
 
 ## 4. FIND Lanes (the only fan-out point)
-FIND spawns lanes per mode. Lanes are subagents with isolated context — the orchestrator never reads lane mandates; they are filesystem-injected at spawn from `phases/find/lanes/{lane}.md`.
+FIND spawns lanes per mode. Lanes are subagents with isolated context — the orchestrator never reads lane mandates; they are filesystem-injected at spawn from `framework/forger/skills/forger/phases/find/lanes/{lane}.md`.
 
 | Lane | Mandate file | Quick mode | Standard mode | Deep mode | Floor (claims) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -36,31 +36,31 @@ Source criteria differ by lane: production = official docs / peer-reviewed / ven
 ## 5. State, Schemas, and the Knowledge Base
 Per-task state lives at `framework/forger/workspaces/{slug}-{date}/`. Same topic + same date collisions resolve by appending `-v2`, `-v3`. Workspaces are gitignored runtime state; the persistent layer is `framework/forger/knowledge/{domain_slug}/` (version-tracked).
 
-Every workspace artifact is JSON-Schema-validated via `_lib/ledger.mjs` against schemas in `framework/forger/schemas/`:
+Every workspace artifact is JSON-Schema-validated via `src/lib/ledger.mjs` against schemas in `framework/forger/schemas/`:
 - `definition_of_works.schema.yaml` (DoW)
 - `source_ledger_entry.schema.yaml`, `claim_ledger_entry.schema.yaml`
 - `risk_map.schema.yaml`, `probe_result.schema.yaml`
 - `failure_hypothesis.schema.yaml`, `retro_note.schema.yaml`
 
-KB self-evolves: `tools/update_kb.mjs` merges proven claims with TTL stamps (default 90d; overridable per claim type — 30d fast-moving libs, 365d algorithmic), appends failed assumptions to `failure_memory.yaml`, and flips `index.yaml.shortcut_eligible: true` after 3 consecutive shipped tasks. When eligible AND coverage ≥ 0.80, FIND serves from cache and skips lane fan-out entirely.
+KB self-evolves: `src/cli/update_kb.mjs` merges proven claims with TTL stamps (default 90d; overridable per claim type — 30d fast-moving libs, 365d algorithmic), appends failed assumptions to `failure_memory.yaml`, and flips `index.yaml.shortcut_eligible: true` after 3 consecutive shipped tasks. When eligible AND coverage ≥ 0.80, FIND serves from cache and skips lane fan-out entirely.
 
 ## 6. Cognitive Filtration: Gates, Hooks, Audit
 Three enforcement layers replace gnosis's G0–G9 sequence:
 
 ### Layer A — Per-phase Gates (agent-invoked; block phase exit)
-- `gates/audit.mjs` — HEAD-request every source URL, literal grep of each `verbatim_quote` against fetched page text, lineage (`source_id` exists), bigram anti-redundancy (frontier vs production+community ≥30% overlap → `redundant-with-other-lane`), independence advisory (critical claims need ≥2 independent sources).
-- `gates/acceptance_test.mjs` — runs every DoW `test_method`, `verification_method`, `detection_method`; writes one line per criterion to `acceptance_results.jsonl`.
+- `src/gates/audit.mjs` — HEAD-request every source URL, literal grep of each `verbatim_quote` against fetched page text, lineage (`source_id` exists), bigram anti-redundancy (frontier vs production+community ≥30% overlap → `redundant-with-other-lane`), independence advisory (critical claims need ≥2 independent sources).
+- `src/gates/acceptance_test.mjs` — runs every DoW `test_method`, `verification_method`, `detection_method`; writes one line per criterion to `acceptance_results.jsonl`.
 
 ### Layer B — Harness-fired Hooks (registered in settings.json)
-- `hooks/post_code.mjs` (PostToolUse) — re-validates any workspace YAML touched by Edit/Write.
-- `hooks/enforce_tier_firewall.mjs` (PreToolUse) — bigram-matches proposed writes against un-promoted Tier 2/3 ideas (`promoted_at: null`); blocks the write at 60% overlap. Prevents speculative-idea leakage into the production artifact.
-- `hooks/enforce_done_means_ran.mjs` (Stop) — refuses Stop if any completion claim ("done", "shipped", "all tests pass", ✓) appears in the transcript while required acceptance criteria are still unproven.
+- `src/hooks/post_code.mjs` (PostToolUse) — re-validates any workspace YAML touched by Edit/Write.
+- `src/hooks/enforce_tier_firewall.mjs` (PreToolUse) — bigram-matches proposed writes against un-promoted Tier 2/3 ideas (`promoted_at: null`); blocks the write at 60% overlap. Prevents speculative-idea leakage into the production artifact.
+- `src/hooks/enforce_done_means_ran.mjs` (Stop) — refuses Stop if any completion claim ("done", "shipped", "all tests pass", ✓) appears in the transcript while required acceptance criteria are still unproven.
 
 ### Layer C — Reviewer Router (priority-gated cross-model GRILL)
-`_lib/reviewer_router.mjs` picks the highest-priority working API key that differs from the current session's provider; falls back to a Claude Code subagent spawn with a different model in the same family. Tier requirement per mode: quick=any (or skipped via `mode.grill_required: false`); standard=≥acceptable; deep=≥good AND ≥1 hypothesis from a blind reviewer (sees only the DoW).
+`src/lib/reviewer_router.mjs` picks the highest-priority working API key that differs from the current session's provider; falls back to a Claude Code subagent spawn with a different model in the same family. Tier requirement per mode: quick=any (or skipped via `mode.grill_required: false`); standard=≥acceptable; deep=≥good AND ≥1 hypothesis from a blind reviewer (sees only the DoW).
 
 ## 7. Modes
-Three mode configs at `framework/forger/modes/{quick,standard,deep}.yaml` control lane fan-out, probe severity threshold, reviewer tier, and Tier 2/3 allowance:
+Three mode configs at `framework/forger/skills/forger/modes/{quick,standard,deep}.yaml` control lane fan-out, probe severity threshold, reviewer tier, and Tier 2/3 allowance:
 
 | Mode | Lanes | Probe threshold | Reviewer tier | Tier 2 | Tier 3 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -75,18 +75,18 @@ The framework ships as a Claude Code plugin. Layout under `framework/forger/`:
 
 ```
 SKILL.md                                  # orchestrator
-phases/{contract,find,observe,recombine,grill,execute,retain}/SKILL.md
-phases/find/lanes/{production,community,frontier}.md   # subagent-only
-phases/*/refs/                            # calibration material (read at runtime)
-phases/*/examples/                        # schema-valid sample artifacts
+skills/forger/phases/{contract,find,observe,recombine,grill,execute,retain}/SKILL.md
+skills/forger/phases/find/lanes/{production,community,frontier}.md   # subagent-only
+skills/forger/phases/*/refs/                  # calibration material (read at runtime)
+skills/forger/phases/*/examples/              # schema-valid sample artifacts
 schemas/                                  # AJV-validated JSON schemas (YAML)
 templates/                                # round-trip-validated artifact templates
 modes/                                    # mode configs (quick/standard/deep)
-_lib/                                     # config, ledger I/O, KB, reviewer router
-gates/                                    # phase-exit validators
-tools/                                    # agent-invoked utilities (filter, probe, update_kb)
-hooks/                                    # harness-fired hooks + settings.hooks.json
-dev/scripts/                              # install, validators, scaffolders
+src/lib/                                  # config, ledger I/O, KB, reviewer router
+src/gates/                                # phase-exit validators
+src/cli/                                  # agent-invoked utilities (filter, probe, update_kb)
+src/hooks/                                # harness-fired hooks + settings.hooks.json
+src/dev/                                  # install, validators, scaffolders
 knowledge/{domain_slug}/                  # persistent KB, version-tracked
 workspaces/{slug}-{date}/                 # runtime state, gitignored
 ```
@@ -94,7 +94,7 @@ workspaces/{slug}-{date}/                 # runtime state, gitignored
 Install: `npm install && npm run install:plugin` (use `-- --dry-run` to preview hook merge into `~/.claude/settings.json`).
 
 ## 9. Capacity Exception
-Skill spec files in `framework/forger/SKILL.md` and `framework/forger/phases/**/SKILL.md` (plus lane mandate files under `phases/find/lanes/`) are exempted from the project's 200-line source-file cap and carry a 500-line soft cap, reflecting their nature as detailed agent specifications.
+Skill spec files in `framework/forger/SKILL.md` and `framework/forger/skills/forger/phases/**/SKILL.md` (plus lane mandate files under `skills/forger/phases/find/lanes/`) are exempted from the project's 200-line source-file cap and carry a 500-line soft cap, reflecting their nature as detailed agent specifications.
 
 ---
 

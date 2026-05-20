@@ -2,8 +2,8 @@ import { describe, it, expect } from 'vitest';
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
-import { runUpdateKb } from '../../tools/update_kb.mjs';
-import { writeYaml, readYaml } from '../../_lib/ledger.mjs';
+import { runUpdateKb } from '../../src/cli/update_kb.mjs';
+import { writeYaml, readYaml } from '../../src/lib/ledger.mjs';
 
 describe('update_kb', () => {
   it('merges proven claims into a fresh domain KB and stamps expires_at', async () => {

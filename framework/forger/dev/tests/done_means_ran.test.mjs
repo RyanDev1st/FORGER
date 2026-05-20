@@ -2,8 +2,8 @@ import { describe, it, expect } from 'vitest';
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
-import { checkDoneMeansRan } from '../../hooks/enforce_done_means_ran.mjs';
-import { writeYaml, appendJsonl } from '../../_lib/ledger.mjs';
+import { checkDoneMeansRan } from '../../src/hooks/enforce_done_means_ran.mjs';
+import { writeYaml, appendJsonl } from '../../src/lib/ledger.mjs';
 
 function baseDow() {
   return {
