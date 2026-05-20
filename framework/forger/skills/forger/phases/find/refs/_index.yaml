@@ -1,0 +1,54 @@
+# FIND refs router — load-on-demand catalogue.
+#
+# The phase SKILL.md and lane mandates point here before reading any
+# ref. Load only entries whose `triggers` match the current situation.
+# Loading every ref reflexively defeats the router pattern.
+#
+# Schema: each entry is { file, summary, load_when (prose), triggers (tags) }.
+# Tags are agent-facing; trigger by literal match against your current
+# decision context.
+
+refs:
+  - file: quality_rubric.md
+    summary: 6-dimension × 6-level source-scoring rubric with concrete anchors per cell.
+    load_when: >
+      You are about to score a source on the six dimensions (authority,
+      recency, reproducibility, implementation_relevance, independence,
+      conflict_of_interest) and need an anchor for what 4 vs 5 means in
+      this specific dimension.
+    triggers: [source_scoring, dimension_anchor_needed]
+
+  - file: severity_calibration.md
+    summary: Severity table (trivial/low/medium/high/critical) plus worked examples for borderline claims.
+    load_when: >
+      A claim affects more than one DoW field and you are unsure which
+      severity dominates, OR the claim sits between two severity levels
+      and the lane mandate's table is not enough to decide.
+    triggers: [severity_ambiguous, multi_field_claim, borderline_severity]
+
+  - file: entailment_calibration.md
+    summary: Entailment decision tree (directly_supported / weakly_supported / extrapolated / contradicted / unverified / speculative) plus 6 worked examples.
+    load_when: >
+      The verbatim quote does not literally state the claim but seems to
+      imply it, OR you are deciding between `weakly_supported` and
+      `extrapolated`, OR a quote is partially contradicted by adjacent
+      text on the same page.
+    triggers: [entailment_ambiguous, weak_vs_extrapolated, partial_contradiction]
+
+  - file: pivot_procedure.md
+    summary: 5-step pivot procedure for under-sourced topics — pick a proxy that still informs the DoW.
+    load_when: >
+      Your lane is below floor after honest search (steps 2-5 of the
+      production / community lane procedure exhausted). Do not load
+      reflexively — only when V2 of `procedure/main.md` step 6 trips.
+      Edge lane skips this entirely; edge "no findings" is a clean exit.
+    triggers: [under_sourced, pivot_required]
+
+  - file: read_content_rules.md
+    summary: Progressive page-read protocol (SKIM → SCAN → DEEP) and chunk-selection heuristics for long pages.
+    load_when: >
+      You are about to fetch a long page (>3 screens) via the
+      `forger-real-search` skill and need to decide which sections to
+      DEEP-read vs SCAN vs SKIM. The real_search skill cross-references
+      this file; load it before your first long-page fetch in a run.
+    triggers: [long_page_fetch, progressive_read_strategy]
