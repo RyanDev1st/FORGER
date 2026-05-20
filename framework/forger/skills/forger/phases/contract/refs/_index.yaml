@@ -1,0 +1,57 @@
+# CONTRACT refs router — load-on-demand catalogue.
+#
+# Phase SKILL.md and procedure files point here before reading any ref.
+# Load only entries whose `triggers` match the current situation.
+
+refs:
+  - file: vagueness_detectors.md
+    summary: 5 canonical vagueness categories + which DoW field each detector populates.
+    load_when: >
+      You have just received the user query and need to decide which
+      categories of clarification to ask about. Load at the start of
+      step 1 of `procedure/main.md` unless you've already internalized
+      the five categories from a prior run this session.
+    triggers: [vagueness_scan, step_1_start]
+    worked_examples:
+      - "User says 'help me build something for tracking my workouts' — artifact type is unclear (app? spreadsheet? watch face?). Detector 1 trips."
+      - "User says 'make my code faster' — success criteria missing (faster by how much? at what cost?). Detector 2 trips."
+      - "User says 'a dashboard, but secure' — ambiguous constraint (what threat model?). Detector 3 trips."
+
+  - file: socratic_patterns.md
+    summary: 4 Socratic patterns (maieutics, elenchus, aporia, dialectic) with question stems and worked examples.
+    load_when: >
+      You are about to ask a clarifying question and want to pick the
+      pattern that fits the kind of fog you are clearing. Especially
+      useful when the user's last answer was vague or contradicted an
+      earlier answer.
+    triggers: [crafting_question, vague_user_reply, contradiction_detected]
+    worked_examples:
+      - "User claims X is required but earlier said X is optional — elenchus (cross-examination) fits."
+      - "User has no idea what they want — maieutics (drawing out latent knowledge) fits."
+      - "User wants two incompatible properties — aporia (productive impasse) fits."
+
+  - file: reframe_examples.md
+    summary: 5 reframe patterns (simplification, constraint, adjacent, inversion, time) with worked examples.
+    load_when: >
+      You are at step 3 of `procedure/main.md` and need to generate at
+      least one alternative framing. If the original framing already
+      seems strong, still load to confirm you considered the canonical
+      five patterns.
+    triggers: [step_3_reframe, alternative_framing_needed]
+    worked_examples:
+      - "User asks for a real-time analytics dashboard — adjacent reframe: 'batch-with-low-latency dashboard' may meet the real need at a fraction of the cost."
+      - "User asks for a 99.99% uptime SLA — constraint reframe: 'what would have to be true for 99.9% to be enough?'"
+      - "User asks for an AI agent — inversion reframe: 'what would the simplest non-AI version look like?'"
+
+  - file: mode_select_heuristic.md
+    summary: Full auto-rule decision tree for `mode_picked_by: auto` plus worked examples for borderline domains.
+    load_when: >
+      You are at step 5 of `procedure/main.md`, the user answered "You
+      choose", and you need to apply the auto-rule. Especially useful
+      when the domain sits between familiar and novel, or when one
+      failure mode is borderline safety-critical.
+    triggers: [auto_mode_pick, borderline_domain, borderline_safety_critical]
+    worked_examples:
+      - "Domain has a knowledge dir but `shortcut_eligible: false` — auto rule says `standard`. Load to verify edge case."
+      - "User query mentions a payment flow — is that safety-critical (financial loss = irreversible)? Load to walk the criterion."
+      - "Novel domain but the task is a one-page summary — does novelty alone force `deep`? Load."
