@@ -1,36 +1,36 @@
-# FORGER v2 — Philosophical Foundation & Architectural Specification
+# FORGER — Philosophical Foundation & Architectural Specification
 
-**A Test-Gated, Execution-Centric Framework for Grounded AI Creativity**
+A test-gated, execution-centric framework for grounded AI creativity.
 
-Final Architecture · May 2026
-
----
-
-## Prologue: The Epistemic Problem FORGER Exists to Solve
-
-In March 2026, Chacón Sartori published a landmark paper identifying what he called the **Bidirectional Coherence Paradox**: the phenomenon whereby an AI agent's internally consistent explanations systematically diverge from empirical reality, such that *greater explanatory coherence may obscure rather than reveal the agent's actual epistemic relationship to the domain*. Across controlled experiments in compiler optimization and hyperparameter tuning, he documented a 61-percentage-point swing: in low-observability domains, LLMs acted successfully while misidentifying the mechanisms that produced their success; in high-observability domains, they generated explanations that accurately tracked observable causal structure yet failed to translate those diagnoses into effective intervention.
-
-This paradox is not an edge case. It is the central failure mode of AI-driven creative work. An agent proposes a facial emotion recognition system with plausible architecture, real citations, and confident reasoning—and it fails when built because the mechanisms don't transfer, the API doesn't exist in that form, or the cited source was describing a different problem. The output *looks* grounded. It *passes* review. But it doesn't *work*.
-
-Sartori's solution is the **Epistemic Triangle**: evaluating artificial epistemic agents requires not one criterion but three—**coherence** (does the explanation hold together logically?), **grounding** (does it correspond to physical reality?), and **a proper basing relation** (does the explanation actually link to the action taken?). FORGER is the operationalization of this tripartite framework. Every phase, every gate, every invariant exists to ensure that coherence, grounding, and proper basing are independently verified before any artifact is declared complete.
+v0.1 shipped. May 2026.
 
 ---
 
-## Part I: The Philosophy
+## Why FORGER exists
 
-### 1.1 The First Principle: AI Cannot Trust Its Training Data
+In March 2026, Chacón Sartori published a paper on what he called the Bidirectional Coherence Paradox: an AI agent's internally consistent explanations systematically diverge from empirical reality, so that better explanations can actually hide the agent's real epistemic relationship to the domain. His controlled experiments in compiler optimization and hyperparameter tuning showed a 61-point swing. In low-observability domains, models acted successfully while misidentifying the mechanisms that produced their success. In high-observability domains, they generated explanations that tracked observable causal structure but failed to translate those diagnoses into effective intervention.
 
-Large language models are—as Bender, Gebru, and colleagues framed it—"stochastic parrots": systems that produce plausible-seeming text without understanding its meaning. But the deeper problem is not that they parrot. The problem is that their training data is a snapshot of a world that has already moved on. APIs are deprecated. Libraries shift. Working repositories go stale. Benchmarks are superseded. The model's internal knowledge is, at best, an orientation device—never a source of truth.
+This is not an edge case. It is the central failure mode of AI-driven creative work. An agent proposes a facial emotion recognition system with plausible architecture, real citations, and confident reasoning. It fails when built because the mechanisms don't transfer, the API doesn't exist in that form, or the cited source was describing a different problem. The output looks grounded. It passes review. It doesn't work.
 
-This principle was recognized early by the user and is the philosophical core of the entire lineage from reTruth through FORGER. **Inspiration must come from the live world.** Not from training data. Not from memory. From `playwright-cli` + `cloakbrowser` contacting real websites, real documentation, real GitHub repositories, real forum discussions—*today*.
+Sartori's answer is the Epistemic Triangle. Evaluating an AI epistemic agent needs three criteria, not one: coherence (does the explanation hold together?), grounding (does it correspond to physical reality?), and a proper basing relation (does the explanation actually link to the action taken?). FORGER runs this triangle. Every phase, every gate, every invariant exists to confirm coherence, grounding, and basing independently before any artifact is called complete.
 
-### 1.2 The Second Principle: Humans Create by Learning First, Then Adding Spices
+---
 
-Graham Wallas, in his 1926 work *The Art of Thought*, identified four stages that every creative act passes through: **Preparation** (gathering knowledge and defining the problem), **Incubation** (unconscious processing), **Illumination** (the flash of insight), and **Verification** (testing and refining the idea). This model has held sway for a century because it describes something universal about how the human mind produces novel, working ideas.
+## Part I: The philosophy
 
-A mathematician does not invent new theorems from nothing. She studies existing proofs. She solves hundreds of problems. She reads Euler and Gauss. Only after years of absorbing and internalizing does she produce original work—and even then, her theorems stand on the shoulders of everything she studied.
+### 1.1 AI cannot trust its training data
 
-A chef does not invent fusion cuisine by imagining flavors in a vacuum. She cooks the classics fifty times each. She understands why certain combinations work at the chemical level. Then—and only then—she adds her own spices.
+Large language models are, as Bender and Gebru framed it, "stochastic parrots": systems that produce plausible-seeming text without understanding its meaning. But the deeper problem is not that they parrot. It's that their training data is a snapshot of a world that has already moved on. APIs deprecate. Libraries shift. Working repos go stale. Benchmarks get superseded. The model's internal knowledge is at best an orientation device, never a source of truth.
+
+This was the original insight that drove reTruth and now FORGER. Inspiration has to come from the live world, not from training-data residue. `playwright-cli` + `cloakbrowser` contact real websites, real documentation, real GitHub repos, real forum discussions, today.
+
+### 1.2 Humans learn first, then add spice
+
+Graham Wallas, in his 1926 book *The Art of Thought*, identified four stages of creative work: Preparation (gathering knowledge and defining the problem), Incubation (unconscious processing), Illumination (the flash of insight), and Verification (testing and refining). The model has held for a century because it describes something real about how human minds produce novel, working ideas.
+
+A mathematician does not invent new theorems from nothing. She studies existing proofs. She solves hundreds of problems. She reads Euler and Gauss. Only after years of absorbing does she produce original work, and her theorems still rest on what she studied.
+
+A chef does not invent fusion cuisine by imagining flavors in a vacuum. She cooks the classics fifty times each. She understands why certain combinations work at the chemical level. Then she adds her own spices.
 
 The human sequence is:
 
@@ -38,272 +38,231 @@ The human sequence is:
 Inspiration → Learn → Practice → Master → Recombine → Verify → Ship
 ```
 
-FORGER enforces this sequence structurally. The AI cannot skip to recombination. It must first find real sources. It must study them. It must probe its own understanding. Only then may it create.
+FORGER enforces this sequence structurally. The agent cannot skip to recombination. It has to find real sources, study them, probe its own understanding. Only then can it create.
 
-### 1.3 The Third Principle: Creativity Is Combination, Not Conjuration
+### 1.3 Creativity is combination, not conjuration
 
-Margaret Boden's taxonomy of computational creativity identifies three forms: **combinational** (novel combinations of familiar ideas), **exploratory** (working within an existing conceptual space to find new possibilities), and **transformational** (changing the enabling constraints of the conceptual space itself).
+Margaret Boden's taxonomy of computational creativity names three forms: combinational (novel combinations of familiar ideas), exploratory (new possibilities within an existing conceptual space), and transformational (changing the enabling constraints of the conceptual space itself).
 
-The critical insight—one that FORGER operationalizes directly—is that **all three forms start from existing knowledge**. Even transformational creativity, which appears to break rules, does so by first understanding which rules exist and why. Boden's own later work identified that transformational creativity arises specifically from changes in the "enabling constraints" of a conceptual space.
+The point FORGER builds on: all three start from existing knowledge. Even transformational creativity, which looks like rule-breaking, starts by understanding which rules exist and why. Boden's later work argued that transformational creativity arises specifically from changes in the "enabling constraints" of a conceptual space.
 
-Fauconnier and Turner's **Conceptual Blending** framework provides the cognitive mechanism: novel concepts emerge when two or more input mental spaces are selectively projected into a blended space, producing emergent structure not present in either input alone. This is not magic. It is a search problem over grounded elements—precisely what FORGER's RECOMBINE phase operationalizes.
+Fauconnier and Turner's Conceptual Blending framework gives the cognitive mechanism. Novel concepts emerge when two input mental spaces project selectively into a blended space, producing structure not present in either input alone. It's a search problem over grounded elements. That is what FORGER's RECOMBINE phase does.
 
-### 1.4 The Fourth Principle: The Harness Is the Product
+### 1.4 The harness is the product
 
-The VILA-Lab analysis of Claude Code's source code revealed that only 1.6% of the system is AI decision logic. The remaining 98.4% is deterministic infrastructure—permission gates, context management, tool routing, recovery logic, hooks, and compaction routines. The agent loop itself is trivial: a simple while-loop.
+VILA-Lab's analysis of Claude Code's source code found that only 1.6% of the system is AI decision logic. The remaining 98.4% is deterministic infrastructure: permission gates, context management, tool routing, recovery logic, hooks, compaction. The agent loop itself is a trivial while-loop.
 
-Alenezi's 2026 reference architecture for production-grade LLM agents formalizes this: the architecture separates **cognitive reasoning from execution using typed tool interfaces**, with state management and policy enforcement as first-class concerns. The BDI model—Beliefs (world state and memory), Desires (goals and constraints), Intentions (adopted plans and tool calls)—provides the control skeleton that modern generative agents can inherit, "separating free-form generation from governed behavior."
+Alenezi's 2026 reference architecture for production-grade LLM agents formalizes this. The architecture separates cognitive reasoning from execution using typed tool interfaces, with state management and policy enforcement as first-class concerns. The BDI model — Beliefs (world state and memory), Desires (goals and constraints), Intentions (adopted plans and tool calls) — gives the control skeleton that modern generative agents can inherit, "separating free-form generation from governed behavior."
 
-**The harness is the product.** The scripts, hooks, gates, contracts, and ledgers are the framework. The agent's creativity is bounded and directed by the harness, not replaced by it.
+The harness is the product. Scripts, hooks, gates, contracts, ledgers. The agent's creativity is bounded and directed by the harness, not replaced by it.
 
-### 1.5 The Fifth Principle: Intent Must Be Clarified Before It Can Be Executed
+### 1.5 Intent has to be clarified before it can be executed
 
-The RECAP benchmark (2026) captures the fundamental challenge of agentic planning: real-world dialogues are ambiguous, underspecified, or dynamic. Intent drift, vagueness, and mixed-goal conversations are the norm, not the exception. A survey of LLM alignment research confirms that users' natural language expressions are "inherently fuzzy, ambiguous, and uncertain, leading to challenges such as vagueness, polysemy, and contextual ambiguity."
+The RECAP benchmark (2026) captures the problem: real-world dialogues are ambiguous, underspecified, or dynamic. Intent drift, vagueness, and mixed-goal conversations are the norm. A survey of LLM alignment research confirms that users' natural-language expressions are "inherently fuzzy, ambiguous, and uncertain, leading to challenges such as vagueness, polysemy, and contextual ambiguity."
 
-The Socratic Method Revisited framework (2026) demonstrates that classical Socratic elements—Elenchus (critical refutation), Maieutics (knowledge elicitation), Aporia (constructive doubt), and Dialectic (collaborative synthesis)—can be systematically integrated into human-LLM interactions, "turning confident-but-wrong outputs into testable claims that must be justified, challenged, and revised."
+The Socratic Method Revisited framework (2026) shows that classical Socratic moves — Elenchus (critical refutation), Maieutics (knowledge elicitation), Aporia (constructive doubt), Dialectic (collaborative synthesis) — integrate into human-LLM interactions and "turn confident-but-wrong outputs into testable claims that must be justified, challenged, and revised."
 
-The Nous agent (2026) reframes the entire problem: instead of the human painstakingly teaching the AI, the AI intelligently guides the human, actively probing for information to resolve its uncertainty about user intent. The core mechanism is an information-theoretic reward signal: information gain from dialogue as the reduction of Shannon entropy over a structured task space.
+The Nous agent (2026) flips the framing. Instead of the human painstakingly teaching the AI, the AI guides the human, probing for information to resolve its uncertainty about user intent. The core mechanism is an information-theoretic reward: information gain from dialogue as the reduction of Shannon entropy over a structured task space.
 
-This is what FORGER's CONTRACT phase operationalizes: before any research begins, the framework detects vagueness, resolves ambiguity, clarifies intent, and produces a machine-readable Definition of Works that serves as the single source of truth for every subsequent phase.
+FORGER's CONTRACT phase runs this. Before any research begins, the framework detects vagueness, resolves ambiguity, clarifies intent, and produces a machine-readable Definition of Works that becomes the single source of truth for every later phase.
 
-### 1.6 The Sixth Principle: Knowledge Must Self-Evolve or Stagnate
+### 1.6 Knowledge has to self-evolve or it stagnates
 
-The EvolveMem architecture (May 2026) demonstrates that truly adaptive memory requires co-evolution at two levels: the stored knowledge and the retrieval mechanism that queries it. Self-evolving software agents (Robol & Giorgini, 2026) combine BDI reasoning with LLMs to enable autonomous evolution of goals, reasoning, and executable code, with an automated evolution module that operates alongside the agent's reasoning loop.
+The EvolveMem architecture (May 2026) shows that adaptive memory needs co-evolution at two levels: the stored knowledge and the retrieval mechanism that queries it. Self-evolving software agents (Robol & Giorgini, 2026) combine BDI reasoning with LLMs to enable autonomous evolution of goals, reasoning, and executable code, with an evolution module that runs alongside the agent's reasoning loop.
 
-FORGER's RETAIN phase implements this principle: every task that succeeds contributes its verified knowledge to a persistent, version-tracked knowledge base. Failed assumptions are recorded alongside successful ones—often more valuable. After three successful tasks in the same domain, the framework auto-generates shortcuts that reduce token consumption by ~60%. The system gets better with every use.
+FORGER's RETAIN phase runs this. Every task that succeeds contributes its verified knowledge to a persistent, version-tracked KB. Failed assumptions are recorded alongside successful ones — often more valuable. After three successful tasks in the same domain, the framework auto-generates shortcuts that drop token consumption by roughly 60%. The system gets better with every use.
 
 ---
 
-## Part II: The Architecture
+## Part II: The architecture
 
-### 2.1 Architectural Overview
+### 2.1 Architectural overview
 
-FORGER is a **seven-phase, plugin-native pipeline** orchestrated through a single agent loop with deterministic script hooks. It is not a multi-agent system. Following the 2026 research consensus—Anthropic's finding that multi-agent systems consume 3-10x more tokens than single-agent approaches, OneFlow's demonstration that single agents can match heterogeneous workflows with KV cache efficiency advantages—FORGER uses **one capable agent**, with skills loaded on demand and a second model from a different model family invoked only for adversarial review in the GRILL phase.
+FORGER is a seven-phase, plugin-native pipeline orchestrated through a single agent loop with deterministic script hooks. It is not a multi-agent system. Following the 2026 research consensus (Anthropic found multi-agent systems consume 3-10× the tokens of single-agent approaches; OneFlow showed single agents can match heterogeneous workflows with KV cache efficiency advantages), FORGER uses one capable agent, with skills loaded on demand and a second model from a different family invoked only for adversarial review in GRILL.
 
 ```
 ┌──────────────────────────────────────────────────────────────────────────────┐
-│                          FORGER v2 ARCHITECTURE                                 │
-│                                                                                 │
-│                         ┌─────────────────────┐                                 │
-│                         │   DEFINITION OF     │                                 │
-│                         │      WORKS          │                                 │
-│                         │  (Single Source     │                                 │
-│                         │    of Truth)        │                                 │
-│                         └──────────┬──────────┘                                 │
-│                                    │                                            │
-│  ┌──────────┐  ┌──────────┐  ┌────┴─────┐  ┌──────────┐  ┌──────────┐         │
-│  │ CONTRACT │─▶│   FIND   │─▶│ OBSERVE  │─▶│RECOMBINE │─▶│  GRILL   │         │
-│  │  Clarify │  │  Ground  │  │Internalize│  │  Create  │  │ Falsify  │         │
-│  │  Intent  │  │ (Source  │  │ & Probe   │  │ (Tiered  │  │ (Cross-  │         │
-│  │(Socratic)│  │ Ledger)  │  │(Risk Map) │  │Blending) │  │  Model)  │         │
-│  └──────────┘  └──────────┘  └──────────┘  └─────┬────┘  └─────┬────┘         │
-│                                                   │              │             │
-│                   ┌───────────────────────────────┘              │             │
-│                   ▼                                              ▼             │
-│  ┌──────────┐  ┌──────────┐                              (gate: pass)          │
-│  │ RETAIN   │◀─┤ EXECUTE  │◀─────────────────────────────────┘                 │
-│  │ Persist  │  │Build/Test│                                                     │
-│  │Knowledge │  │  Prove   │                                                     │
-│  └──────────┘  └──────────┘                                                     │
-│                                                                                 │
-│  ════════════════════════════════════════════════════════════════════════════   │
-│  EPISTEMIC TRIANGLE (Chacón Sartori, 2026):                                     │
-│  • Coherence: Does the explanation hold together logically?                     │
-│  • Grounding: Does it correspond to physical reality (live sources + probes)?   │
-│  • Proper Basing: Does the explanation actually link to the action taken?       │
-│                                                                                 │
-│  ARCHITECTURAL INVARIANTS:                                                       │
-│  • Done Means Ran              • No claim without evidence or label              │
-│  • Test critical, skip trivial  • Tier 2/3 cannot leak into execution            │
-│  • Cross-model review           • Knowledge self-evolves                         │
-└──────────────────────────────────────────────────────────────────────────────────┘
+│                          FORGER ARCHITECTURE                                 │
+│                                                                              │
+│                         ┌─────────────────────┐                              │
+│                         │   DEFINITION OF     │                              │
+│                         │      WORKS          │                              │
+│                         │  (Single Source     │                              │
+│                         │    of Truth)        │                              │
+│                         └──────────┬──────────┘                              │
+│                                    │                                         │
+│  ┌──────────┐  ┌──────────┐  ┌────┴─────┐  ┌──────────┐  ┌──────────┐        │
+│  │ CONTRACT │─▶│   FIND   │─▶│ OBSERVE  │─▶│RECOMBINE │─▶│  GRILL   │        │
+│  │  Clarify │  │  Ground  │  │Internalize│ │  Create  │  │ Falsify  │        │
+│  │  Intent  │  │ (Source  │  │ & Probe  │  │ (Tiered  │  │ (Cross-  │        │
+│  │(Socratic)│  │ Ledger)  │  │(Risk Map)│  │Blending) │  │  Model)  │        │
+│  └──────────┘  └──────────┘  └──────────┘  └─────┬────┘  └─────┬────┘        │
+│                                                  │             │             │
+│                   ┌──────────────────────────────┘             │             │
+│                   ▼                                            ▼             │
+│  ┌──────────┐  ┌──────────┐                            (gate: pass)          │
+│  │ RETAIN   │◀─┤ EXECUTE  │◀───────────────────────────────┘                 │
+│  │ Persist  │  │Build/Test│                                                  │
+│  │Knowledge │  │  Prove   │                                                  │
+│  └──────────┘  └──────────┘                                                  │
+│                                                                              │
+│  EPISTEMIC TRIANGLE (Chacón Sartori, 2026):                                  │
+│  • Coherence: Does the explanation hold together logically?                  │
+│  • Grounding: Does it correspond to physical reality (live sources+probes)?  │
+│  • Proper Basing: Does the explanation actually link to the action taken?    │
+│                                                                              │
+│  ARCHITECTURAL INVARIANTS:                                                   │
+│  • Done Means Ran              • No claim without evidence or label          │
+│  • Test critical, skip trivial  • Tier 2/3 cannot leak into execution        │
+│  • Cross-model review           • Knowledge self-evolves                     │
+└──────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### 2.2 The Epistemic Triangle as Architectural Organizing Principle
+### 2.2 The Epistemic Triangle as architectural organizing principle
 
-Sartori's tripartite framework is not merely philosophical inspiration—it maps directly onto FORGER's phase architecture:
+Sartori's framework is not just inspiration. It maps onto FORGER's phase architecture:
 
 | Epistemic Criterion | Question | FORGER Phase(s) That Verify It |
 |---------------------|----------|-------------------------------|
-| **Coherence** | Does the explanation hold together logically? | RECOMBINE (mechanism-fit test), GRILL (reviewer checks reasoning) |
-| **Grounding** | Does it correspond to physical reality? | FIND (live web sources), OBSERVE (runtime probes), EXECUTE (acceptance tests) |
-| **Proper Basing** | Does the explanation actually link to the action taken? | audit.sh (claim-to-source tracing), GRILL (falsification tests), EXECUTE (Done Means Ran) |
+| Coherence | Does the explanation hold together logically? | RECOMBINE (mechanism-fit test), GRILL (reviewer checks reasoning) |
+| Grounding | Does it correspond to physical reality? | FIND (live web sources), OBSERVE (runtime probes), EXECUTE (acceptance tests) |
+| Proper Basing | Does the explanation actually link to the action taken? | `src/gates/audit.mjs` (claim-to-source trace), GRILL (falsification tests), EXECUTE (Done Means Ran) |
 
-Every phase gate in FORGER is traceable to at least one leg of the Epistemic Triangle. No single leg can pass the framework alone.
+Every phase gate traces to at least one leg of the triangle. No single leg can pass the framework alone.
 
-### 2.3 The Wallas-Boden Pipeline: Human Creativity, Made Structural
+### 2.3 The Wallas-Boden pipeline: human creativity, made structural
 
-FORGER's phase sequence directly instantiates the Wallas creative process, extended with Boden's creativity taxonomy and grounded by Sartori's epistemic requirements:
+FORGER's phase sequence runs Wallas's creative process, extended with Boden's creativity taxonomy and grounded by Sartori's epistemic requirements:
 
 | Wallas Stage | FORGER Phase | Boden Creativity Type | Epistemic Function |
 |-------------|-------------|----------------------|-------------------|
-| **Preparation** | CONTRACT + FIND | — | Define the problem; gather real-world evidence |
-| **Incubation** | OBSERVE | — | Deepen understanding; surface hidden assumptions; probe the riskiest unknowns |
-| **Illumination** | RECOMBINE | Combinational / Exploratory / Transformational (tiered) | Generate novel ideas from grounded elements; conceptual blending with mechanism-fit verification |
-| **Verification** | GRILL + EXECUTE | — | Falsification review (cross-model); acceptance testing against Definition of Works |
-| **(Extended)** | RETAIN | — | Persist verified knowledge; self-evolve for future tasks |
+| Preparation | CONTRACT + FIND | — | Define the problem; gather real-world evidence |
+| Incubation | OBSERVE | — | Deepen understanding; surface hidden assumptions; probe the riskiest unknowns |
+| Illumination | RECOMBINE | Combinational / Exploratory / Transformational (tiered) | Generate novel ideas from grounded elements; conceptual blending with mechanism-fit verification |
+| Verification | GRILL + EXECUTE | — | Falsification review (cross-model); acceptance testing against Definition of Works |
+| (Extended) | RETAIN | — | Persist verified knowledge; self-evolve for future tasks |
 
 ---
 
-## Phase 0: CONTRACT — Socratic Intent Clarification
+## Phase 0: CONTRACT — Socratic intent clarification
 
-### 0.1 Architectural Purpose
+### 0.1 Architectural purpose
 
-The CONTRACT phase is the architectural answer to the "intention expression gap"—the fundamental difficulty humans face in conveying complex, high-dimensional thoughts to AI. Before any research begins, before any source is consulted, the framework must ensure that user intent is fully clarified, problem framing is explicit, and success criteria are machine-checkable.
+CONTRACT is FORGER's answer to the "intention expression gap": the difficulty humans face conveying complex, high-dimensional thoughts to AI. Before any research begins, before any source gets consulted, the framework has to confirm that user intent is clarified, problem framing is explicit, and success criteria are machine-checkable.
 
-This phase draws directly from three 2026 research threads:
+The phase pulls from three 2026 research threads:
 
-1. **ClarifySTL**: detection of vague expressions that indicate underspecified information, followed by targeted clarification queries to guide users in supplementing requirements until all necessary details are provided.
+1. ClarifySTL: detection of vague expressions, then targeted clarification queries that guide users in supplementing requirements until all necessary details are provided.
+2. RECAP: reframing user-agent dialogues into concise representations of user goals, capturing ambiguity, intent drift, vagueness, and mixed-goal conversations.
+3. The Nous agent: active probing for information to resolve uncertainty about user intent, with information gain from dialogue as the intrinsic reward signal.
 
-2. **RECAP**: reframing user-agent dialogues into concise representations of user goals, capturing ambiguity, intent drift, vagueness, and mixed-goal conversations.
+### 0.2 Intent clarification
 
-3. **The Nous agent**: active probing for information to resolve uncertainty about user intent, with information gain from dialogue as the intrinsic reward signal.
+When the user provides a task description, the CONTRACT agent does not just accept it. It interrogates it.
 
-### 0.2 The Intent Clarification Sub-Phase
+Step 1: vagueness detection. The agent scans the input for underspecified elements: unclear artifact type, missing success criteria, ambiguous constraints, unstated assumptions, mixed goals.
 
-When the user provides a task description, the CONTRACT agent does not simply accept it. It interrogates it.
+Step 2: Socratic elicitation. For each detected vagueness, the agent generates targeted clarification queries using the four classical Socratic moves:
 
-**Step 1: Vagueness Detection.** The agent scans the user's input for underspecified elements:
-- **Unclear artifact type**: "Build me something for..." → What exactly? Code? Design? Research report? Architecture?
-- **Missing success criteria**: "Make it good" → What does "good" mean? Measurable how?
-- **Ambiguous constraints**: "It should be fast" → What latency threshold? Under what load?
-- **Unstated assumptions**: Any domain, platform, or audience assumptions the user hasn't articulated
-- **Mixed goals**: Multiple objectives that may conflict
-
-**Step 2: Socratic Elicitation.** For each detected vagueness, the agent generates targeted clarification queries using the four classical Socratic elements:
-
-| Socratic Element | Function | Example Query |
+| Socratic Move | Function | Example |
 |-----------------|----------|---------------|
-| **Maieutics** (knowledge elicitation) | Draw out unstated knowledge the user possesses | "When you say 'emotion recognition,' are you thinking of real-time video processing, or batch analysis of stored images? What's the end context?" |
-| **Elenchus** (critical refutation) | Test whether the user's framing holds up under scrutiny | "You mentioned using a CNN. If we reframe: what problem are we actually solving that requires deep learning? Could a simpler approach work?" |
-| **Aporia** (constructive doubt) | Surface productive uncertainty | "I'm not sure I understand the constraint. You need this to run on-device—does that mean mobile, embedded, or just local server? The architecture choice depends entirely on this." |
-| **Dialectic** (collaborative synthesis) | Build toward shared understanding | "So if I'm understanding correctly: you need real-time facial emotion recognition running on a mobile device, offline, with <100ms latency. The output is one of 7 emotion labels. Is that right?" |
+| Maieutics (knowledge elicitation) | Draw out unstated knowledge the user has | "When you say 'emotion recognition,' are you thinking of real-time video, or batch analysis of stored images?" |
+| Elenchus (critical refutation) | Test whether the framing holds up under scrutiny | "You mentioned using a CNN. What problem are we actually solving that requires deep learning? Could a simpler approach work?" |
+| Aporia (constructive doubt) | Surface productive uncertainty | "I'm not sure I understand the constraint. You need this to run on-device — does that mean mobile, embedded, or just local server? The architecture choice depends entirely on this." |
+| Dialectic (collaborative synthesis) | Build toward shared understanding | "So: you need real-time facial emotion recognition running on a mobile device, offline, with <100ms latency, output is one of 7 emotion labels. Right?" |
 
-**Step 3: Problem Reframing.** Before finalizing the contract, the agent performs the senior engineer's most important move: challenging the problem statement itself. The question: "What would have to be true for the simplest possible solution to work?"
+Step 3: problem reframing. Before finalizing the contract, the agent does the senior engineer's most important move: challenging the problem statement itself. The question: "What would have to be true for the simplest possible solution to work?" The agent generates at least one alternative framing (simplification, constraint, adjacent). Both framings persist in the contract.
 
-The agent generates at least one alternative problem framing:
-- **Simplification reframe**: Can the same outcome be achieved with less complexity?
-- **Constraint reframe**: Are all stated constraints actually non-negotiable?
-- **Adjacent reframe**: Is this really an X problem, or is it better framed as a Y problem?
+Step 4: scope confirmation. Before writing the DoW, the agent echoes a three-bullet scope summary (artifact, audience, must-haves) and waits for explicit user confirmation. Autonomous mode skips this and logs the skip in the reframe memo. Added in v0.1 after the dolphin-physiology coherence test revealed CONTRACT could otherwise persist a DoW the user wouldn't recognize.
 
-The original framing and the best alternative are both preserved in the contract. The agent may proceed with the original, but the reframe is documented for traceability.
+Step 5: contract finalization. The output is the Definition of Works, a machine-readable YAML document validated by `src/lib/ledger.mjs::validateDoW`. Its schema covers artifact spec, audience, hard constraints with verification methods, measurable success criteria with thresholds, subjective criteria with measurement protocols, unacceptable failure modes, and the work mode selection.
 
-**Step 4: Contract Finalization.** The output of CONTRACT is the **Definition of Works**—a machine-readable YAML document that serves as the single source of truth for every subsequent phase. Its schema includes:
+### 0.3 The reframe memo
 
-- **Artifact specification**: type, format, description
-- **Audience and use case**: who this is for and how they will use it
-- **Hard constraints**: each with a measurable verification method
-- **Measurable success criteria**: quantitative thresholds and test methods
-- **Subjective criteria**: with measurement protocols
-- **Unacceptable failure modes**: what must never happen
-- **Work mode selection**: quick, standard, or deep, with rationale
-
-### 0.3 The Reframe Memo
-
-For every task, the agent produces a **Reframe Memo** documenting:
-- The user's original framing
-- At least one alternative problem framing
-- The trade-off rationale for the chosen framing
-- What would need to be true for a simpler approach to work
-
-This memo persists through the entire pipeline. If the EXECUTE phase reveals that the original framing was the source of failure, the reframe provides an immediate fallback.
-
-### 0.4 Autonomous vs. Interactive Mode
-
-| Mode | Contract Behavior |
-|------|-------------------|
-| **Interactive** | Agent presents clarification queries to user; user responds; contract is co-created |
-| **Autonomous** | Agent writes the contract using conservative assumptions; all assumptions are documented as explicit risks; agent proceeds without blocking |
-
-In autonomous mode, any assumption that cannot be verified is tagged with a risk level and proceeds—but the assumption is recorded, not buried.
+For every task, the agent writes a reframe memo with the user's original framing, at least one alternative framing, the trade-off rationale, and what would need to be true for a simpler approach to work. The memo persists through the pipeline. If EXECUTE reveals that the original framing was the source of failure, the reframe is the fallback.
 
 ---
 
 ## Phase 1: FIND — Ground
 
-### 1.1 Architectural Purpose
+### 1.1 Architectural purpose
 
-FIND operationalizes the *grounding* leg of the Epistemic Triangle. The agent uses `playwright-cli` + `cloakbrowser` to contact real websites, real documentation, real repositories—today. It builds a **Structured Source Ledger** with multi-dimensional quality scoring and a **Claim Ledger** with severity ratings.
+FIND runs the grounding leg of the Epistemic Triangle. The agent contacts real websites, real documentation, real repos, today. It builds a Source Ledger with multi-dimensional quality scoring and a Claim Ledger with severity ratings.
 
-### 1.2 Multi-Source Exploration Architecture
+All page fetches route through the `forger-real-search` skill (`framework/forger/skills/real_search/SKILL.md`). The skill wraps `playwright-cli` + `cloakbrowser`, enforces the no-`--browser`-flag rule, and applies the progressive read library at `src/lib/read_progressive.mjs` (SKIM → SCAN → DEEP staged by claim density and token budget). Lanes never spawn `playwright-cli` directly.
 
-Two parallel lanes using live browser automation:
+### 1.2 Multi-source exploration architecture
 
-| Lane | Focus | Source Types |
-|------|-------|-------------|
-| **Production Lane** | Official documentation, peer-reviewed papers, working repositories, reproducible benchmarks | Documentation sites, GitHub repos with CI badges, arXiv, conference proceedings |
-| **Community Lane** | Practitioner reports, forum discussions, war stories, known failure cases | Stack Overflow, GitHub Issues, Reddit, Hacker News |
+Lane fan-out is mode-aware. Lanes live as filesystem-injected subagent mandates at `framework/forger/skills/forger/phases/find/lanes/{lane}.md`.
 
-Each lane navigates dynamically—following links, expanding threads, scraping content. This is **exploration, not keyword search**.
+| Lane | Quick | Standard | Deep | Source types |
+|------|-------|----------|------|-------------|
+| production | ✓ (target 5) | ✓ (8-10) | ✓ (12-15) | Official docs, peer-reviewed papers, working repos with CI, vendor RFCs, reproducible benchmarks |
+| community | — | ✓ (8-10) | ✓ (8-10) | Stack Overflow, GitHub Issues, Reddit, HN, blog war stories, public talks, podcasts |
+| frontier | — | — | ✓ (5-7) | Contrarian takes, "considered harmful" essays, cross-domain analogues, debates. Every claim flagged `intended_use: tier2_seed`. |
 
-### 1.3 Source Quality Architecture
+Each lane navigates dynamically — following links, expanding threads, reading the page. Exploration, not keyword search.
 
-A deterministic `filter.sh` script performs mechanical checks: URL liveness, domain blocklist, date extraction, repository health indicators. It does **not** judge credibility or truth.
+### 1.3 Source quality
 
-The LLM then scores each surviving source on six independent dimensions:
+A deterministic CLI tool at `src/cli/filter.mjs` does the mechanical checks: URL liveness, domain blocklist, date extraction, repo health indicators. It does not judge credibility or truth.
 
-| Dimension | Question |
-|-----------|----------|
-| **Authority** | Is this source authoritative in its domain? |
-| **Recency** | Is the information current? (with TTL) |
-| **Reproducibility** | Can the claims be independently verified? |
-| **Implementation Relevance** | How directly does this inform implementation? |
-| **Independence** | Is this an independent source or derived? |
-| **Conflict of Interest** | Does the source have incentives to mislead? |
+The LLM then scores each surviving source on six independent dimensions: authority, recency, reproducibility, implementation relevance, independence, conflict of interest. Each is 0-5; composite is the mean.
 
-### 1.4 Claim Severity Architecture
+### 1.4 Claim severity
 
 Not all claims need equal proof. FORGER uses a five-level severity model:
 
-| Severity | Meaning | Required Support |
+| Severity | Meaning | Required support |
 |----------|---------|------------------|
-| **Trivial** | Wrongness has no project impact | No citation needed |
-| **Low** | Minor inconvenience if wrong | At least one source |
-| **Medium** | Moderate rework if wrong | Source + reasoning |
-| **High** | Significant rework if wrong | Source + probe (or human waiver) |
-| **Critical** | Project fails if wrong | Source + probe + acceptance test (or waiver) |
+| Trivial | Wrongness has no project impact | No citation needed |
+| Low | Minor inconvenience if wrong | At least one source |
+| Medium | Moderate rework if wrong | Source + reasoning |
+| High | Significant rework if wrong | Source + probe (or human waiver) |
+| Critical | Project fails if wrong | Source + probe + acceptance test (or waiver) |
 
-Every claim extracted from sources carries a severity rating tied back to the Definition of Works. A claim is "critical" not because it sounds important, but because the contract says the project fails if it's wrong.
+A claim is critical because the contract says the project fails if it's wrong, not because it sounds important.
 
-### 1.5 Entailment Architecture
+### 1.5 Entailment
 
-The claim ledger includes explicit entailment status:
+The claim ledger carries explicit entailment status:
 
-| Entailment Status | Meaning |
+| Status | Meaning |
 |-------------------|---------|
-| **directly_supported** | The source explicitly states this claim |
-| **weakly_supported** | The source implies or suggests this claim |
-| **extrapolated** | The claim extends beyond what the source states |
-| **contradicted** | The source contradicts this claim |
-| **unverified** | The claim has not been checked against the source |
-| **speculative** | The claim is hypothetical, not evidence-based |
+| directly_supported | The source explicitly states this claim |
+| weakly_supported | The source implies or suggests it |
+| extrapolated | The claim extends beyond what the source states |
+| contradicted | The source contradicts the claim |
+| unverified | Not yet checked against the source |
+| speculative | Hypothetical, not evidence-based |
 
-Critical claims with entailment status `weakly_supported`, `extrapolated`, or worse are blocked from proceeding.
+Critical claims with entailment worse than `directly_supported` get tagged `status: blocked`. OBSERVE has to resolve every blocked claim before exit (probe to `probed_ok`/`probed_fail`, downgrade severity with rationale, or escalate).
+
+### 1.6 Audit
+
+`src/gates/audit.mjs` runs after lanes return: HEAD-request every source URL, literal grep of each `verbatim_quote` against fetched page text, lineage check (`source_id` exists in source ledger), bigram anti-redundancy for frontier vs production+community (≥30% overlap flags `redundant-with-other-lane`), independence advisory (critical claims should have ≥2 independent sources), lane-floor warning (under floor and not marked `under_sourced`). The audit preserves YAML comments by skipping writeback when no flags change.
 
 ---
 
-## Phase 2: OBSERVE — Internalize & Probe
+## Phase 2: OBSERVE — Internalize & probe
 
-### 2.1 Architectural Purpose
+### 2.1 Architectural purpose
 
-OBSERVE corresponds to Wallas's *Incubation* stage. The agent deepens its understanding through mechanism extraction, Feynman-style explanation, risk mapping, and—critically—**mandatory runtime probes on every high and critical assumption**.
+OBSERVE corresponds to Wallas's Incubation. The agent deepens understanding through mechanism extraction, Feynman-style explanation, risk mapping, and mandatory runtime probes on every high and critical assumption.
 
-### 2.2 Mechanism Extraction
+### 2.2 Mechanism extraction
 
-From the Ground-Truth Brief and Claim Ledger, the agent extracts:
-- **Core mechanisms**: What causal processes make this work?
-- **Domain constraints**: Data requirements, latency limits, scalability boundaries
-- **Known failure modes**: What breaks, and under what conditions?
+From the ground-truth brief and claim ledger, the agent extracts core mechanisms (what causal processes make this work?), domain constraints, and known failure modes.
 
-### 2.3 The Feynman Gate
+### 2.3 The Feynman gate
 
-The agent explains the entire domain in simple terms—no jargon without definition, no assumptions without stating them. This is a comprehension check. If the explanation breaks down, the agent has not internalized the material.
+The agent explains the entire domain in simple terms. No jargon without inline definition, no assumptions without stating them. Minimum 200 words. If the explanation breaks down, the agent has not internalized the material and re-reads the claim ledger.
 
-### 2.4 The Risk Map
+### 2.4 The risk map
 
-Every unverified assumption is listed with severity and required resolution:
+Every unverified assumption lands in `risk_map.yaml` with a severity and a `resolution_required` field:
 
-| Severity | Required Resolution |
+| Severity | Required resolution |
 |----------|---------------------|
 | Trivial | None |
 | Low | Source citation |
@@ -311,228 +270,257 @@ Every unverified assumption is listed with severity and required resolution:
 | High | Source + probe (or human waiver) |
 | Critical | Source + probe + acceptance test (or human waiver) |
 
-### 2.5 The Probe Architecture
+### 2.5 Probe architecture
 
-For every `high` or `critical` unresolved assumption, the agent writes a probe—the smallest test that can falsify the assumption. There is no arbitrary line limit. The mandate is: **smallest test that can falsify**.
+For every high or critical unresolved assumption, the agent writes a probe — the smallest test that can falsify it. No arbitrary line limit. The mandate is: smallest test that can falsify.
 
-A probe may be:
-- A short script testing API behavior
-- A full repository clone and test suite run
-- A small benchmark
-- A targeted web search for a specific fact
-- A prototype function with measured output
+Probe types (per `src/cli/probe.mjs`): `script`, `repo_clone`, `web_search`, `prototype_fn`, `benchmark`, `api_test`. `web_search` probes drive the `forger-real-search` skill, never `playwright-cli` directly.
 
-**The probe gate**: Zero unresolved `high` or `critical` assumptions without either a passed probe or a documented human waiver. This is not optional. It is the architectural expression of Sartori's proper basing relation—the agent cannot claim to understand something it hasn't tested.
+The probe gate: zero unresolved high/critical assumptions without a passed probe or a documented waiver. Deep mode forbids waivers entirely. The agent cannot claim to understand something it hasn't tested.
 
 ---
 
 ## Phase 3: RECOMBINE — Create
 
-### 3.1 Architectural Purpose
+### 3.1 Architectural purpose
 
-RECOMBINE corresponds to Wallas's *Illumination*. The agent generates creative solutions through conceptual blending of grounded elements. The tiered model allows exploration beyond proven territory while keeping execution safe.
+RECOMBINE corresponds to Wallas's Illumination. The agent generates creative solutions through conceptual blending of grounded elements. The tiered model allows exploration beyond proven territory while keeping execution safe.
 
-### 3.2 Element Catalog
+### 3.2 Element catalog
 
-From the verified knowledge, the agent extracts discrete "cognitive building blocks"—patterns, algorithms, techniques, design principles—each traceable to a source.
+From verified claims, the agent extracts discrete cognitive building blocks — patterns, algorithms, techniques, design principles — each traceable to a source.
 
-### 3.3 The Mechanism-Fit Test
+### 3.3 The mechanism-fit test
 
-For every creative combination, the agent must answer: **Does the causal mechanism that made this work in the source domain still apply in the target domain?**
+For every creative combination the agent answers: does the causal mechanism that made this work in the source domain still apply in the target domain?
 
-This is the architectural answer to grounded hallucination. Two true claims can combine into a false idea if the mechanism that connects them doesn't transfer. The mechanism-fit test is the gate that catches this.
+This is the architectural answer to grounded hallucination. Two true claims can combine into a false idea if the mechanism connecting them doesn't transfer. The mechanism-fit test catches that.
 
-### 3.4 Tiered Creativity Model
+### 3.4 Tiered creativity model
 
-| Tier | Description | Execution Permission |
+| Tier | Description | Execution permission |
 |------|-------------|---------------------|
-| **Tier 1 — Grounded Recombination** | Combines proven elements; full source lineage; mechanism-fit verified | ✓ SAFE TO EXECUTE |
-| **Tier 2 — Frontier Speculation** | Extends beyond direct evidence; includes concrete validation plan | ⚠ SAFE TO EXPLORE (validation required before building) |
-| **Tier 3 — Transformational Proposal** | Challenges domain assumptions | 🚫 HUMAN APPROVAL REQUIRED |
+| Tier 1 — Grounded Recombination | Proven elements; full source lineage; mechanism-fit verified | SAFE TO EXECUTE |
+| Tier 2 — Frontier Speculation | Extends beyond direct evidence; concrete validation plan | SAFE TO EXPLORE (validation required before building) |
+| Tier 3 — Transformational Proposal | Challenges domain assumptions | HUMAN APPROVAL REQUIRED |
 
-### 3.5 The Speculation Firewall
+### 3.5 The speculation firewall
 
-Tier 2 and Tier 3 ideas are **structurally prevented** from entering the primary execution path. They are written to separate files and clearly tagged. No Tier 2 or Tier 3 idea may become part of the deliverable unless: (a) its validation plan is completed and passes, or (b) a human explicitly promotes it.
+Tier 2 and Tier 3 ideas live in separate files (`tier2_speculation.md`, `tier3_proposals.md`) and are structurally blocked from entering the primary execution path. The PreToolUse hook at `src/hooks/enforce_tier_firewall.mjs` bigram-matches proposed writes against un-promoted Tier 2/3 ideas (`promoted_at: null`); 60% overlap blocks the write with exit 2. No Tier 2 or Tier 3 idea becomes part of the deliverable unless its validation plan passes, or a human explicitly promotes it by setting `promoted_at`.
 
 ---
 
-## Phase 4: GRILL — Falsification Review
+## Phase 4: GRILL — Falsification review
 
-### 4.1 Architectural Purpose
+### 4.1 Architectural purpose
 
-GRILL corresponds to the beginning of Wallas's *Verification*. A cross-model adversarial reviewer—from a **different model family**—attempts to break the proposal. The reviewer does not score. The reviewer tries to kill.
+GRILL is the start of Wallas's Verification. A cross-model adversarial reviewer from a different model family tries to break the proposal. The reviewer does not score. The reviewer tries to kill.
 
-### 4.2 The audit.sh Gate
+### 4.2 The audit gate
 
-Before any LLM review, a deterministic script mechanically verifies:
-- Every cited URL is live (HEAD request)
-- Every verbatim quote exists on the page (fuzzy grep)
-- Claims with weak entailment are flagged
+Before any LLM review, `src/gates/audit.mjs` mechanically re-runs on the workspace: every cited URL is live, every verbatim quote exists on the page, weak-entailment critical claims are flagged. The script does not judge truth. It judges traceability.
 
-The script does not judge truth. It judges traceability.
+### 4.3 Reviewer router
 
-### 4.3 Dual-Reviewer Architecture (Deep Forge)
+`src/lib/reviewer_router.mjs` picks the highest-priority working API key that differs from the current session's provider. With no keys it falls back to a Claude Code subagent spawn with a different model in the same family. Tier requirement per mode: quick = any (or skipped via `mode.grill_required: false`); standard = ≥ acceptable; deep = ≥ good AND ≥ 1 hypothesis from a blind reviewer.
+
+### 4.4 Dual-reviewer architecture (Deep Forge)
 
 | Reviewer | Sees | Function |
 |----------|------|----------|
-| **Internal Adversary** | Proposal + Source Ledger + Claim Ledger | Checks reasoning, claim support, mechanism validity |
-| **Blind Adversary** | Definition of Works only | Independently searches; identifies alternative approaches and missing assumptions |
+| Internal Adversary | Proposal + Source Ledger + Claim Ledger | Checks reasoning, claim support, mechanism validity |
+| Blind Adversary | Definition of Works only | Independently searches; identifies alternative approaches and missing assumptions |
 
-### 4.4 Failure Hypothesis Format
+### 4.5 Failure hypothesis format
 
-The reviewer produces, for each major concern:
-- What would make this idea fail?
-- What evidence would disprove it?
-- What minimal test can check it?
-- Severity if wrong (critical / high / medium / low)
-- Confidence in the hypothesis
-
-The executor must resolve every failure hypothesis: accept and add the suggested test, reject with counter-evidence from the Source Ledger, or escalate to human.
+For each substantive concern the reviewer outputs: what would make this idea fail, what evidence would disprove it, what minimal test can check it, severity if wrong (critical/high/medium/low), confidence (0-5). The executor resolves every failure hypothesis: accept and add the suggested test (`status: accepted_test_added`), reject with counter-evidence from the source ledger (`status: rejected_with_counter_evidence`), or escalate (`status: escalated`). No `status: open` may remain at exit.
 
 ---
 
-## Phase 5: EXECUTE — Build, Run, Fix, Prove
+## Phase 5: EXECUTE — Build, run, fix, prove
 
-### 5.1 Architectural Purpose
+### 5.1 Architectural purpose
 
-EXECUTE is the center of gravity. This is where Wallas's *Verification* becomes concrete. The agent builds the artifact and proves it works against the Definition of Works.
+EXECUTE is the center of gravity. Wallas's Verification becomes concrete. The agent builds the artifact and proves it works against the Definition of Works.
 
-### 5.2 TDD Micro-Cycles (for Code)
+### 5.2 TDD micro-cycles (for code)
 
 ```
 Cycle:
-  1. Write failing test
-  2. Write minimal code to pass
-  3. Run all tests + linter (post_code.sh hook)
-  4. If all pass → summarize delta → next cycle
+  1. Write failing test (RED)
+  2. Write minimal code to pass (GREEN)
+  3. Run all tests + linter (PostToolUse fires src/hooks/post_code.mjs)
+  4. If all pass → summarize delta → next cycle (IMPROVE)
   5. If test fails after 2 fix attempts → pause, web-search error, fix, retry
   6. If still failing after 3 attempts → escalate
 ```
 
-### 5.3 The Acceptance Test Suite
+### 5.3 Branches for non-code artifacts
 
-All measurable success criteria from the Definition of Works are converted into automated tests. Subjective criteria get measurement protocols.
+EXECUTE picks branch by `dow.artifact.type`:
 
-### 5.4 The "Done Means Ran" Rule
+- code / system → TDD micro-cycle above
+- research_report → every claim in the report references a claim-ledger entry; no critical claim at entailment worse than `directly_supported`; `src/gates/audit.mjs` re-runs against the report text
+- design → rubric scoring + screenshot/user-flow review
 
-The agent **cannot** claim completion unless:
+### 5.4 The acceptance test suite
 
-| Artifact Type | Requirement |
+All measurable success criteria from the Definition of Works convert into automated tests via `src/gates/acceptance_test.mjs`, which writes one line per criterion to `acceptance_results.jsonl`. Subjective criteria get measurement protocols.
+
+### 5.5 The "Done Means Ran" rule
+
+The agent cannot claim completion unless:
+
+| Artifact type | Requirement |
 |---------------|-------------|
 | Code / System | Artifact has been executed successfully AND acceptance tests pass |
-| Research Report | All claims are ledger-verified with directly_supported entailment; no critical claims are weakly supported |
+| Research Report | All claims ledger-verified with `directly_supported` entailment; no critical claims weakly supported |
 | Design | Artifact checked against rubric or tested with screenshots/user-flow review |
-| Any | If execution is impossible, the reason is documented and escalated—not hidden |
+| Any | If execution is impossible, the reason is documented and escalated, not hidden |
 
-This rule is the architectural expression of Sartori's proper basing relation. An explanation alone is not enough. The action must be taken, and its result must match the explanation.
+The Stop hook at `src/hooks/enforce_done_means_ran.mjs` enforces this. If the transcript contains a completion claim ("done", "shipped", "all tests pass", ✓) while required acceptance criteria are still unproven, the hook exits 2 and blocks Stop. The proper-basing leg of Sartori's triangle in code: an explanation alone is not enough; the action has to be taken, and its result has to match the explanation.
 
----
+### 5.6 Fact-gap re-entry to FIND
 
-## Phase 6: RETAIN — Knowledge Persistence & Self-Evolution
-
-### 6.1 Architectural Purpose
-
-RETAIN implements the BDI-LLM self-evolution pattern: only validated, working knowledge enters the persistent knowledge base. Failure memory is preserved alongside success.
-
-### 6.2 What Gets Stored
-
-- **Proven claims**: those that passed probes and acceptance tests, with TTL
-- **Working architectures**: with version pins and dependency constraints
-- **Failure memory**: assumptions that proved wrong, with the lesson learned
-- **Source quality assessments**: so future tasks can skip re-evaluation
-
-### 6.3 Self-Evolution Triggers
-
-After 3 successful tasks in the same domain:
-- The framework auto-generates a Quick Forge shortcut
-- Future tasks skip FIND (cached sources) and shorten OBSERVE (known probes already passed)
-- Token consumption drops ~60%
+If acceptance fails and the agent diagnoses the failure as a missing fact rather than a code bug, it writes `dow_addendum_{n}.yaml` (a single narrowed criterion) and re-invokes `forger-find` in single-lane mode (production only, target 3, no frontier). Cap: 2 re-entries per task. The 3rd escalates.
 
 ---
 
-## Part III: Work Modes
+## Phase 6: RETAIN — Knowledge persistence & self-evolution
 
-| Mode | Trigger | Token Budget (Cold) | Key Difference |
+### 6.1 Architectural purpose
+
+RETAIN runs the BDI-LLM self-evolution pattern. Only validated, working knowledge enters the persistent KB. Failure memory persists alongside success.
+
+### 6.2 What gets stored
+
+- Proven claims: those that passed probes and acceptance tests, with TTL (default 90d; overridable per claim type — 30d for fast-moving libs, 365d for algorithmic)
+- Working architectures: with version pins and dependency constraints
+- Failure memory: assumptions that proved wrong, with the lesson learned
+- Source quality assessments: so future tasks can skip re-evaluation
+
+### 6.3 Self-evolution triggers
+
+`src/cli/update_kb.mjs` merges proven claims into `knowledge/{domain}/claim_ledger.yaml` with `expires_at` stamps, appends failed assumptions to `failure_memory.yaml`, and tracks the last 3 task statuses. If all 3 are `shipped`, `index.yaml.shortcut_eligible` flips to true. If any is `escalated` or `abandoned`, the flag flips back to false. When eligible AND DoW coverage ≥ 0.80, FIND serves from cache and skips lane fan-out entirely. Token consumption drops roughly 60%.
+
+---
+
+## Part III: Work modes
+
+| Mode | Trigger | Token budget (cold) | Key difference |
 |------|---------|---------------------|----------------|
-| **Quick Forge** | Simple tasks, well-known domain, cached knowledge | ~5,000–6,000 | FIND loads from KB; OBSERVE probes trimmed; GRILL optional; RECOMBINE Tier 1 only |
-| **Standard Forge** | Default | ~22,000 | Full pipeline; single cross-model reviewer in GRILL |
-| **Deep Forge** | Novel domain, high stakes, overnight autonomy | ~35,000 | Dual-reviewer GRILL; all high+critical assumptions probed with no waivers; extended acceptance suite |
+| Quick Forge | Simple tasks, well-known domain, cached knowledge | ~5,000-6,000 | FIND loads from KB; OBSERVE probes trimmed; GRILL optional; RECOMBINE Tier 1 only |
+| Standard Forge | Default | ~22,000 | Full pipeline; single cross-model reviewer in GRILL |
+| Deep Forge | Novel domain, high stakes, overnight autonomy | ~35,000 | Dual-reviewer GRILL; all high+critical assumptions probed with no waivers; extended acceptance suite |
+
+CONTRACT asks the plain-language mode question (Fast / Normal / Thorough / You choose). "You choose" runs the auto-rule: shortcut-eligible familiar domain → quick; ≥1 safety-critical failure mode OR novel domain → deep; else → standard.
 
 ---
 
-## Part IV: Architectural Invariants
+## Part IV: Architectural invariants
 
-These are non-negotiable. Every design decision in the plugin implementation must satisfy them.
+Non-negotiable. Every design decision in the plugin has to satisfy them.
 
-| # | Invariant | Epistemic Basis |
+| # | Invariant | Epistemic basis |
 |---|-----------|-----------------|
-| 1 | **Done Means Ran.** Completion cannot be claimed without execution and passing tests, or a documented reason why execution was impossible. | Proper Basing |
-| 2 | **No Claim Without Evidence or Label.** Every claim must end in a passed test, a sourced constraint, or an explicit "speculative" tag. | Grounding |
-| 3 | **Test Critical, Skip Trivial.** Only high and critical assumptions require probes. Trivial claims need no citation. This prevents over-verification paralysis. | Efficiency constraint |
-| 4 | **Tier 2/3 Firewall.** No speculative or transformational idea may enter the primary execution path without explicit promotion. | Grounding |
-| 5 | **Cross-Model Review for Standard and Deep modes.** The reviewer must be from a different model family. | Coherence verification |
-| 6 | **Mechanism-Fit Before Recombination.** Every creative combination must pass: does the causal mechanism transfer? | Grounding + Coherence |
-| 7 | **Knowledge Self-Evolves.** Every completed task must update the KB. After 3 tasks in the same domain, shortcuts become available. | Efficiency |
-| 8 | **Scripts Are Mechanical Only.** No script performs judgment. All qualitative assessment is LLM-driven with structured output. | Architectural hygiene |
-| 9 | **Definition of Works Is the Single Source of Truth.** Every gate, every probe, every acceptance test traces back to this contract. | Coherence |
+| 1 | Done Means Ran. Completion cannot be claimed without execution and passing tests, or a documented reason why execution was impossible. | Proper Basing |
+| 2 | No Claim Without Evidence or Label. Every claim has to end in a passed test, a sourced constraint, or an explicit "speculative" tag. | Grounding |
+| 3 | Test Critical, Skip Trivial. Only high and critical assumptions need probes. Trivial claims need no citation. Prevents over-verification paralysis. | Efficiency |
+| 4 | Tier 2/3 Firewall. No speculative or transformational idea may enter the primary execution path without explicit promotion. | Grounding |
+| 5 | Cross-Model Review for Standard and Deep. Reviewer is from a different model family. | Coherence verification |
+| 6 | Mechanism-Fit Before Recombination. Every creative combination passes: does the causal mechanism transfer? | Grounding + Coherence |
+| 7 | Knowledge Self-Evolves. Every completed task updates the KB. After 3 tasks in the same domain, shortcuts become available. | Efficiency |
+| 8 | Scripts Are Mechanical Only. No script performs judgment. All qualitative assessment is LLM-driven with structured output. | Architectural hygiene |
+| 9 | Definition of Works Is the Single Source of Truth. Every gate, probe, and acceptance test traces back to this contract. | Coherence |
 
 ---
 
-## Part V: Plugin Filesystem
+## Part V: Plugin filesystem (v0.1 shipped)
 
 ```
-~/.claude/plugins/forger/
-├── manifest.json                    # Plugin metadata, hook registration
-├── SKILL.md                         # Progressive disclosure entry point
-├── modes/                           # Work mode configurations
-│   ├── quick.yaml
-│   ├── standard.yaml
-│   └── deep.yaml
-├── phases/                          # Phase skill definitions
-│   ├── contract.md                  # Socratic intent clarification
-│   ├── find.md                      # Ground: live web research
-│   ├── observe.md                   # Internalize & probe
-│   ├── recombine.md                 # Tiered creative blending
-│   ├── grill.md                     # Cross-model falsification review
-│   ├── execute.md                   # Build, run, fix, prove
-│   └── retain.md                    # Knowledge persistence & evolution
-├── hooks/                           # Deterministic scripts
-│   ├── filter.sh                    # Mechanical source filtering
-│   ├── probe.sh                     # Execute probe in target environment
-│   ├── audit.sh                     # Claim-to-source mechanical trace
-│   ├── acceptance_test.sh           # Run acceptance suite
-│   ├── post_code.sh                 # Linter + test runner hook
-│   └── update_kb.sh                 # Knowledge persistence with TTL
-├── templates/                       # Structured output schemas
-│   ├── definition_of_works.yaml
-│   ├── source_ledger_entry.yaml
-│   ├── claim_ledger_entry.yaml
-│   ├── failure_hypothesis.yaml
-│   ├── risk_map.yaml
-│   └── retro_note.yaml
-└── knowledge/                       # Persistent, version-tracked KB
-    └── {domain-slug}/
-        ├── index.yaml
-        ├── ground_truth_brief.md
-        ├── source_ledger.yaml
-        ├── working_architectures.md
-        └── failure_memory.yaml
+~/.claude/plugins/forger/                       # installed location
+framework/forger/                               # repo location
+├── manifest.json                               # Plugin metadata, hook registration
+├── SKILL.md                                    # Orchestrator (drives 7-phase pipeline)
+├── README.md
+├── DESIGN.md                                   # Source-of-truth design spec
+├── package.json                                # Node deps, npm scripts
+├── schemas/                                    # JSON Schemas (YAML)
+│   ├── definition_of_works.schema.yaml
+│   ├── source_ledger_entry.schema.yaml
+│   ├── claim_ledger_entry.schema.yaml
+│   ├── failure_hypothesis.schema.yaml
+│   ├── probe_result.schema.yaml
+│   ├── risk_map.schema.yaml
+│   └── retro_note.schema.yaml
+├── templates/                                  # Round-trip-validated artifact templates
+├── skills/
+│   ├── forger/                                 # Forger plugin skill bundle
+│   │   ├── modes/{quick,standard,deep}.yaml
+│   │   └── phases/
+│   │       ├── contract/
+│   │       ├── find/
+│   │       │   ├── SKILL.md
+│   │       │   ├── lanes/{production,community,frontier}.md
+│   │       │   ├── refs/ (quality / severity / entailment / pivot / read_content_rules)
+│   │       │   └── examples/
+│   │       ├── observe/
+│   │       ├── recombine/
+│   │       ├── grill/
+│   │       ├── execute/
+│   │       └── retain/
+│   └── real_search/                            # Cross-phase browser-driven page-read skill
+│       └── SKILL.md
+├── src/
+│   ├── lib/                                    # Shared helpers (config, ledger I/O, KB, playwright, reviewer router, progressive read)
+│   │   ├── ledger.mjs
+│   │   ├── kb.mjs
+│   │   ├── playwright.mjs
+│   │   ├── reviewer_router.mjs
+│   │   ├── read_progressive.mjs
+│   │   └── adapters/                           # Provider adapters for reviewer router
+│   ├── gates/                                  # Phase-exit validators (block on failure)
+│   │   ├── audit.mjs
+│   │   └── acceptance_test.mjs
+│   ├── cli/                                    # Agent-invoked utilities (never block)
+│   │   ├── filter.mjs
+│   │   ├── probe.mjs
+│   │   └── update_kb.mjs
+│   └── hooks/                                  # Harness-fired hooks (registered in settings.json)
+│       ├── post_code.mjs
+│       ├── enforce_tier_firewall.mjs
+│       ├── enforce_done_means_ran.mjs
+│       └── settings.hooks.json
+├── dev/
+│   ├── scripts/                                # install.mjs, setup_browser.mjs, validators
+│   ├── tests/                                  # vitest suite
+│   └── fixtures/
+├── workspaces/{slug}-{date}/                   # Runtime state, gitignored
+└── knowledge/{domain_slug}/                    # Persistent, version-tracked KB
+    ├── index.yaml
+    ├── source_ledger.yaml
+    ├── claim_ledger.yaml
+    ├── failure_memory.yaml
+    ├── working_architectures.md
+    └── telemetry.jsonl
 ```
+
+Install: `cd framework/forger && npm install && npm run install:plugin`. Opt-in browser setup: `npm run setup:browser`. Inside Claude Code: `/forger <task>` for full pipeline; `/forger:contract <task>` for CONTRACT only.
 
 ---
 
-## Epilogue: What FORGER Is and Is Not
+## Epilogue: what FORGER is and is not
 
-**FORGER is:**
+FORGER is:
 - A framework that forces AI to contact reality before it creates
 - A pipeline that separates grounding from recombination, and verification from both
-- A harness where 98.4% of the value is in the deterministic infrastructure—contracts, hooks, gates, ledgers, and audits
+- A harness where 98.4% of the value lives in deterministic infrastructure — contracts, hooks, gates, ledgers, audits
 - A system that gets better with every use through persistent, version-tracked knowledge
 
-**FORGER is not:**
+FORGER is not:
 - A guarantee of correctness (no framework can be)
 - A creativity suppressor (the tiered model explicitly allows speculation within labeled boundaries)
 - A replacement for human judgment on high-stakes, one-way-door decisions
 - A lightweight tool for trivial tasks (use simpler patterns when the stakes are low)
 
-The framework is **ready for prototype implementation**. The next step is to build the minimum working spine—Contract → Grounding → Risk Map → Recombine → Execute → Done Means Ran → Retain—and test it on real tasks. The architecture will prove itself not in theory, but in whether it prevents the agent from producing plausible, well-cited, confidently-reasoned output that fails the moment someone tries to build it.
+v0.1 ships with 51 tests passing, 7 schemas + 7 templates round-trip-validated, 7 example phase artifacts schema-clean, and all skill cross-references resolving. The framework's real test is whether it stops the agent from producing plausible, well-cited, confidently-reasoned output that breaks the moment someone tries to build it. The dolphin-physiology coherence test was the first one. The next few will tell us if it generalizes.
