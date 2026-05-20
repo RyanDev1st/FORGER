@@ -25,10 +25,17 @@ function getRequiredCriteria(dow) {
 export async function checkDoneMeansRan({ workspace, recentText, transcriptPath }) {
   if (!workspace || !fs.existsSync(workspace)) return { block: false };
   let text = recentText || '';
-  if (!text && transcriptPath && fs.existsSync(transcriptPath)) {
-    text = fs.readFileSync(transcriptPath, 'utf8').split('\n').slice(-200).join('\n');
+  let transcriptMissing = false;
+  if (!text && transcriptPath) {
+    if (fs.existsSync(transcriptPath)) {
+      text = fs.readFileSync(transcriptPath, 'utf8').split('\n').slice(-200).join('\n');
+    } else {
+      transcriptMissing = true;
+    }
   }
-  if (!isCompletionClaim(text)) return { block: false };
+  if (!isCompletionClaim(text)) {
+    return transcriptMissing ? { block: false, transcript_missing: true } : { block: false };
+  }
 
   const dowPath = path.join(workspace, 'dow.yaml');
   if (!fs.existsSync(dowPath)) {
@@ -63,6 +70,12 @@ if (entryUrl && import.meta.url === entryUrl) {
       workspace: process.env.FORGER_WORKSPACE || '',
       transcriptPath: parsed.transcript_path,
     });
+    if (r.transcript_missing) {
+      console.error(JSON.stringify({
+        level: 'warn', code: 'transcript_missing',
+        message: `done_means_ran could not read transcript_path '${parsed.transcript_path}'; completion claims will not be detected this turn.`,
+      }));
+    }
     if (r.block) {
       console.error(JSON.stringify({
         level: 'error', code: 'done_means_ran', message: r.reason,

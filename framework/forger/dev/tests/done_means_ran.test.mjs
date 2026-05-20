@@ -46,4 +46,13 @@ describe('done_means_ran', () => {
     const r = await checkDoneMeansRan({ workspace: ws, recentText: 'All tests pass — done.' });
     expect(r.block).toBe(false);
   });
+
+  it('reports missing transcript path so callers see the silent no-op', async () => {
+    const ws = fs.mkdtempSync(path.join(os.tmpdir(), 'forger-dmr-'));
+    writeYaml(path.join(ws, 'dow.yaml'), baseDow());
+    const bogus = path.join(ws, 'does-not-exist.txt');
+    const r = await checkDoneMeansRan({ workspace: ws, transcriptPath: bogus });
+    expect(r.block).toBe(false);
+    expect(r.transcript_missing).toBe(true);
+  });
 });
