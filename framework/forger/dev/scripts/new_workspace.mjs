@@ -41,16 +41,20 @@ while (fs.existsSync(base + suffix)) {
 const ws = base + suffix;
 fs.mkdirSync(ws, { recursive: true });
 
+// YAML/JSONL files seeded so downstream readers see a valid empty container.
+// Markdown placeholders left empty so phase skills can Write fresh without
+// hitting the harness's "must Read before Write" guard on prefilled files.
 const seeds = {
   'source_ledger.yaml':       '[]\n',
   'claim_ledger.yaml':        '[]\n',
   'failure_hypotheses.yaml':  '[]\n',
-  'tier2_speculation.md':     '# Tier 2 Speculation\n',
-  'tier3_proposals.md':       '# Tier 3 Proposals\n',
-  'recombine.md':             '# Recombine (Tier 1)\n',
-  'find_summary.md':          '# Find Summary\n',
-  'grill_report.md':          '# Grill Report\n',
-  'ground_truth_brief.md':    '# Ground-Truth Brief\n',
+  'tier2_speculation.md':     '',
+  'tier3_proposals.md':       '',
+  'recombine.md':             '',
+  'find_summary.md':          '',
+  'grill_report.md':          '',
+  'ground_truth_brief.md':    '',
+  'reframe_memo.md':          '',
   'acceptance_results.jsonl': '',
   'probe_results.jsonl':      '',
   'telemetry.jsonl':          '',
@@ -59,8 +63,5 @@ const seeds = {
 for (const [name, body] of Object.entries(seeds)) {
   fs.writeFileSync(path.join(ws, name), body, 'utf8');
 }
-
-fs.writeFileSync(path.join(ws, 'reframe_memo.md'),
-  '# Reframe Memo\n\n(CONTRACT writes this.)\n', 'utf8');
 
 console.log(JSON.stringify({ workspace: ws, slug, date, query: args.query || '' }, null, 2));
