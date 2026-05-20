@@ -21,17 +21,18 @@ Build a framework that empowers AIs to explore, learn, and synthesize knowledge 
 | `README.md` | Project overview |
 | `ARCHITECTURE.md` | High-level synthesis of architecture and lanes |
 | `reTruth/` | Framework container — holds skill, mandates, calibration examples, and topic workspaces |
-| `reTruth/_archive/gnosis-v1/` | Archived gnosis v1 (replaced by `framework/forger/phases/find/`) |
+| `reTruth/_archive/gnosis-v1/` | Archived gnosis v1 (replaced by `framework/forger/skills/forger/phases/find/`) |
 | `framework/FORGER.md` | Original condensed research findings that the FORGER framework operationalizes |
 | `framework/forger/DESIGN.md` | FORGER source-of-truth design specification |
 | `framework/forger/SKILL.md` | FORGER orchestrator skill (single agent loop, drives 7-phase pipeline) |
-| `framework/forger/phases/` | Per-phase skills (contract / find / observe / recombine / grill / execute / retain) |
-| `framework/forger/skills/` | Cross-phase callable skills (`real_search` browser-driven page-read protocol) |
+| `framework/forger/skills/forger/phases/` | Per-phase skills (contract / find / observe / recombine / grill / execute / retain) |
+| `framework/forger/skills/forger/modes/` | Mode configs (quick / standard / deep) |
+| `framework/forger/skills/real_search/` | Cross-phase callable browser-driven page-read protocol |
 | `framework/forger/schemas/` | JSON Schemas (YAML) for DoW, ledgers, risk map, failure hypotheses, probes, retro notes |
-| `framework/forger/_lib/` | Shared helpers (config, ledger I/O, KB, playwright, reviewer router) |
-| `framework/forger/gates/` | Phase-exit validators (agent-invoked; block phase exit on failure) |
-| `framework/forger/tools/` | Agent-invoked utilities (filter, probe, update_kb; never block) |
-| `framework/forger/hooks/` | Harness-invoked hooks registered in settings.json (tier firewall, post_code, done-means-ran) |
+| `framework/forger/src/lib/` | Shared helpers (config, ledger I/O, KB, playwright, reviewer router) |
+| `framework/forger/src/gates/` | Phase-exit validators (agent-invoked; block phase exit on failure) |
+| `framework/forger/src/cli/` | Agent-invoked utilities (filter, probe, update_kb; never block) |
+| `framework/forger/src/hooks/` | Harness-invoked hooks registered in settings.json (tier firewall, post_code, done-means-ran) |
 | `framework/forger/knowledge/{domain}/` | Persistent per-domain knowledge base — version-tracked |
 
 **Root policy:** only `CLAUDE.md`, `README.md`, `Summary.md`, `.gitignore`, and documented config files at repo root. All other artifacts live under their respective feature directories.
@@ -50,7 +51,7 @@ Follow Anthropic’s **explore → plan → implement → verify** loop. Skip pl
 
 ### File size (hard cap)
 
-- No source file may exceed **200 lines** (imports and blank lines count). Exception: data; lane / skill mandate specs in `framework/forger/phases/` and `framework/forger/SKILL.md` (sub-agent and orchestrator definitions, ≤500 lines).
+- No source file may exceed **200 lines** (imports and blank lines count). Exception: data; lane / skill mandate specs in `framework/forger/skills/forger/phases/`, including `framework/forger/skills/forger/phases/find/lanes/`, and `framework/forger/SKILL.md` (sub-agent and orchestrator definitions, ≤1500 lines).
 - If a change would exceed the applicable cap: split into additional files in the **same feature folder** (next section). Never bypass the cap with comments or string concatenation.
 
 ### Feature folders (colocation)

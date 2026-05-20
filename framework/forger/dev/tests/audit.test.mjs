@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { runAudit } from '../../gates/audit.mjs';
+import { runAudit } from '../../src/gates/audit.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const ws = path.resolve(here, '..', 'fixtures', 'sample_workspace');

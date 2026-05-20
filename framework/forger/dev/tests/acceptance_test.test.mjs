@@ -3,8 +3,8 @@ import path from 'node:path';
 import fs from 'node:fs';
 import os from 'node:os';
 import { fileURLToPath } from 'node:url';
-import { runAcceptance } from '../../gates/acceptance_test.mjs';
-import { writeYaml } from '../../_lib/ledger.mjs';
+import { runAcceptance } from '../../src/gates/acceptance_test.mjs';
+import { writeYaml } from '../../src/lib/ledger.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 

@@ -101,7 +101,7 @@ killed session resumes by reading workspace YAMLs.
 Orchestrator never reads lane mandates, grill adversary mandate, or any subagent-only instruction file. They live on the filesystem and are injected at spawn time:
 
 ```js
-const mandate = fs.readFileSync('phases/find/lanes/production.md', 'utf8');
+const mandate = fs.readFileSync('skills/forger/phases/find/lanes/production.md', 'utf8');
 spawnSubagent({ prompt: `You are the Production Lane subagent...\n\n${mandate}\n\n...`, ... });
 ```
 
@@ -122,12 +122,12 @@ framework/forger/                          # dev = ship layout (copy to ~/.claud
 │
 ├── SKILL.md                               # orchestrator entry, drives pipeline
 │
-├── modes/
+├── skills/forger/modes/
 │   ├── quick.yaml                         # production lane only, ~6k tokens 
 │   ├── standard.yaml                      # +community lane, ~22k, single reviewer
 │   └── deep.yaml                          # +frontier, dual reviewer, ~35k
 │                                         
-├── phases/
+├── skills/forger/phases/
 │   ├── contract/
 │   │   ├── SKILL.md                       # socratic clarification + mode pick
 │   │   ├── refs/
@@ -217,22 +217,22 @@ framework/forger/                          # dev = ship layout (copy to ~/.claud
 │   ├── failure_hypotheses.template.yaml
 │   └── retro_note.template.yaml
 │
-├── hooks/                                 # HARNESS-invoked (settings.json)
+├── src/hooks/                                 # HARNESS-invoked (settings.json)
 │   ├── settings.hooks.json                # installer merges this into ~/.claude/settings.json
 │   ├── post_code.mjs                      # PostToolUse: Edit/Write/NotebookEdit
 │   ├── enforce_tier_firewall.mjs          # PreToolUse: Edit/Write/Bash
 │   └── enforce_done_means_ran.mjs         # Stop
 │
-├── gates/                                 # AGENT-invoked, block phase exit on failure
+├── src/gates/                                 # AGENT-invoked, block phase exit on failure
 │   ├── audit.mjs                          # ends FIND + GRILL phases
 │   └── acceptance_test.mjs                # ends EXECUTE phase
 │
-├── tools/                                 # AGENT-invoked utilities, never block
+├── src/cli/                                 # AGENT-invoked utilities, never block
 │   ├── filter.mjs                         # used by FIND lanes
 │   ├── probe.mjs                          # used by OBSERVE and EXECUTE
 │   └── update_kb.mjs                      # used by RETAIN
 │
-├── _lib/                                  # shared helpers
+├── src/lib/                                  # shared helpers
 │   ├── config.mjs                         # mode + .env loader
 │   ├── ledger.mjs                         # AJV validators + YAML I/O
 │   ├── reviewer_router.mjs                # priority-gate router for GRILL
@@ -270,21 +270,21 @@ framework/forger/                          # dev = ship layout (copy to ~/.claud
 │       ├── claim_ledger.yaml              # appended by FIND lanes
 │       ├── find_summary.md                # written at FIND exit
 │       ├── risk_map.yaml                  # written by OBSERVE
-│       ├── probe_results.jsonl            # appended by tools/probe.mjs
+│       ├── probe_results.jsonl            # appended by src/cli/probe.mjs
 │       ├── recombine.md                   # Tier 1 ideas
 │       ├── tier2_speculation.md           # firewalled from execution
 │       ├── tier3_proposals.md             # firewalled, needs user promote
 │       ├── failure_hypotheses.yaml        # written by GRILL reviewer
 │       ├── grill_report.md
-│       ├── acceptance_results.jsonl       # appended by gates/acceptance_test.mjs
+│       ├── acceptance_results.jsonl       # appended by src/gates/acceptance_test.mjs
 │       ├── retro_note.yaml                # written by RETAIN
 │       ├── telemetry.jsonl                # one line per phase exit
 │       └── hook_log.jsonl                 # every hook/gate/tool invocation
 │
-└── dev/                                   # NOT shipped to plugin install
+└── src/dev/                               # NOT shipped to plugin install
     ├── tests/                             # vitest
     │   ├── schemas.test.mjs               # AJV self-validation per schema
-    │   ├── ledger.test.mjs                # _lib/ledger.mjs unit tests
+    │   ├── ledger.test.mjs                # src/lib/ledger.mjs unit tests
     │   ├── reviewer_router.test.mjs       # priority gate logic tests
     │   ├── kb.test.mjs                    # TTL + shortcut detection
     │   ├── gates_audit.test.mjs           # audit gate end-to-end
@@ -293,10 +293,9 @@ framework/forger/                          # dev = ship layout (copy to ~/.claud
     │   ├── sample_dow.yaml
     │   ├── sample_source_ledger.yaml
     │   └── sample_failed_acceptance.jsonl
-    └── scripts/
-        ├── install.mjs                    # symlink or copy to ~/.claude/plugins/forger
-        ├── validate_all_schemas.mjs       # AJV-validates every schema + every template
-        └── new_workspace.mjs              # scaffolds a per-task workspace
+    ├── install.mjs                        # symlink or copy to ~/.claude/plugins/forger
+    ├── validate_all_schemas.mjs           # AJV-validates every schema + every template
+    └── new_workspace.mjs                  # scaffolds a per-task workspace
 
 # Adjacent (not inside framework/forger/):
 reTruth/_archive/gnosis-v1/                # old gnosis, frozen for reference
@@ -681,17 +680,17 @@ Procedure:
 1. Parse `/forger <task description>`. Compute `slug` (kebab-case, ≤40 chars) and `date` (local YYYY-MM-DD).
 2. Resolve workspace path: `framework/forger/workspaces/{slug}-{date}/` (append `-v2`, `-v3` on collision).
 3. Invoke `forger-contract` skill. Wait for `dow.yaml` to exist and pass schema validation.
-4. Invoke `forger-find` skill. Pass workspace path. Wait for `source_ledger.yaml`, `claim_ledger.yaml`, `find_summary.md` to exist and pass `gates/audit.mjs`.
+4. Invoke `forger-find` skill. Pass workspace path. Wait for `source_ledger.yaml`, `claim_ledger.yaml`, `find_summary.md` to exist and pass `src/gates/audit.mjs`.
 5. Invoke `forger-observe`. Pass workspace path. Wait for `risk_map.yaml` to exist; every assumption with severity ≥ high must have status ∈ {probed_ok, waived, verified}.
 6. Invoke `forger-recombine`. Pass workspace path. Wait for `recombine.md` to exist with ≥1 Tier 1 idea; mechanism-fit check populated.
 7. Invoke `forger-grill`. Pass workspace path. Wait for `failure_hypotheses.yaml` to exist; all open hypotheses must resolve to `accepted_test_added`, `rejected_with_counter_evidence`, or `escalated`. In deep mode require two reviewer runs (one with blind=true).
 8. Invoke `forger-execute`. Pass workspace path. Skill loops TDD micro-cycles until `acceptance_results.jsonl` shows all required entries passing. On fact-gap probe failure: write `dow_addendum_{n}.yaml`, re-invoke `forger-find` in single-lane mode (production only, target=3, no frontier), up to 2 re-entries; 3rd escalates.
-9. Invoke `forger-retain`. Pass workspace path. Wait for `retro_note.yaml` to exist and pass schema validation; `tools/update_kb.mjs` merges into KB.
+9. Invoke `forger-retain`. Pass workspace path. Wait for `retro_note.yaml` to exist and pass schema validation; `src/cli/update_kb.mjs` merges into KB.
 10. Emit final summary to user: workspace path, status (shipped/escalated/abandoned), token budget used vs. mode budget, telemetry line count.
 
 Cap: 4 concurrent threads (orchestrator + max 3 subagents during FIND deep mode). No other phase fans out beyond orchestrator + 1.
 
-### 6.2 CONTRACT (`phases/contract/SKILL.md`)
+### 6.2 CONTRACT (`skills/forger/phases/contract/SKILL.md`)
 
 Purpose: turn a user query into a machine-readable Definition of Works. Surface vagueness via socratic elements (maieutics, elenchus, aporia, dialectic). Produce reframe memo. Pick mode.
 
@@ -745,7 +744,7 @@ Exit: control returns to orchestrator when both files exist and DoW schema valid
 
 Autonomous mode (no human): skip socratic questions; write DoW with conservative assumptions; every unverified field tagged with risk level in `assumptions`; mode defaults to `standard`.
 
-### 6.3 FIND (`phases/find/SKILL.md`)
+### 6.3 FIND (`skills/forger/phases/find/SKILL.md`)
 
 Purpose: ground every DoW criterion in live, citable, quote-verified sources. Mode-aware lane fan-out.
 
@@ -762,11 +761,11 @@ Gates:
 1. AJV validation of both ledgers passes.
 2. Every lane that ran reached floor (production=5, community=5, frontier=3) OR pivoted OR is marked `under-sourced` after 3 retries.
 3. Every `severity: critical` claim either has `entailment: directly_supported` (clean) OR is tagged `status: blocked` with `dow_criterion_refs` pointing to known mechanism IDs. (Resolution deferred to OBSERVE — see §6.4.)
-4. `gates/audit.mjs` passes (HEAD, quote-grep, schema, lineage, independence; bigram only if ≥2 lanes ran).
+4. `src/gates/audit.mjs` passes (HEAD, quote-grep, schema, lineage, independence; bigram only if ≥2 lanes ran).
 
-Procedure (full text in `phases/find/SKILL.md`):
+Procedure (full text in `skills/forger/phases/find/SKILL.md`):
 
-1. Load DoW. Read `meta.mode`. Load `modes/{mode}.yaml` to get `lanes` list.
+1. Load DoW. Read `meta.mode`. Load `skills/forger/modes/{mode}.yaml` to get `lanes` list.
 2. **KB shortcut check:**
    - Load `knowledge/{domain_slug}/index.yaml` if exists.
    - If `shortcut_eligible == true`: load cached `source_ledger.yaml` and `claim_ledger.yaml`, prune expired entries (`expires_at < now`).
@@ -790,7 +789,7 @@ Procedure (full text in `phases/find/SKILL.md`):
    - Attempt 2: schedule via `ScheduleWakeup(delaySeconds=300)` in /loop mode, else `CronCreate` one-shot. Persist retry counter at `workspaces/{slug}/.retry-{lane}`.
    - Attempt 3: same as 2.
    - After 3 fails: mark lane `under-sourced` in `find_summary.md`, continue.
-8. Run `gates/audit.mjs --workspace <path>`:
+8. Run `src/gates/audit.mjs --workspace <path>`:
    - HEAD-request every URL; flag `link-dead` if not 2xx/3xx within 5s.
    - For every claim, `curl -s <url>` (no JS render) → grep `verbatim_quote` literally; flag `quote-not-found` if miss.
    - If ≥2 lanes ran: bigram anti-redundancy for frontier lane vs production+community; overlap ≥30% → flag `redundant-with-other-lane`.
@@ -815,7 +814,7 @@ Re-entry mode (called from EXECUTE): single-lane (production), target=3, no fron
 
 Each `lanes/{lane}.md` is a complete subagent instruction file. See §7 for the production lane mandate as worked example; community and frontier follow the same template with different source criteria and search strategies.
 
-### 6.4 OBSERVE (`phases/observe/SKILL.md`)
+### 6.4 OBSERVE (`skills/forger/phases/observe/SKILL.md`)
 
 Purpose: internalize the grounded material, write the Feynman gate, build the risk map, run probes for every high/critical assumption.
 
@@ -827,7 +826,7 @@ Inputs:
 Outputs:
 - `workspaces/{slug}/ground_truth_brief.md` (Feynman explanation)
 - `workspaces/{slug}/risk_map.yaml`
-- Appends to `workspaces/{slug}/probe_results.jsonl` (via `tools/probe.mjs`)
+- Appends to `workspaces/{slug}/probe_results.jsonl` (via `src/cli/probe.mjs`)
 
 Gates:
 1. `risk_map.yaml` schema validates.
@@ -849,13 +848,13 @@ Procedure:
      - critical → source+probe+acceptance_test (or waiver in standard/quick only)
 4. **Probe loop.** For each high/critical assumption with `resolution_required` ≥ source+probe:
    - Design smallest test that can falsify (see `refs/probe_design_patterns.md`).
-   - Invoke `tools/probe.mjs --workspace <path> --assumption-id <id> --type <script|repo_clone|web_search|prototype_fn|benchmark|api_test> --cmd <...>` with timeout.
+   - Invoke `src/cli/probe.mjs --workspace <path> --assumption-id <id> --type <script|repo_clone|web_search|prototype_fn|benchmark|api_test> --cmd <...>` with timeout.
    - Tool appends to `probe_results.jsonl`. Update assumption `status` from probe result: pass → `probed_ok`; fail → `probed_fail`.
 5. **Waiver handling** (standard/quick only): if probe is impossible or cost-prohibitive, set `status: waived` and `waiver_reason: "<explicit text>"`. Probably escalates to user. Deep mode forbids waivers.
-6. **Blocked-claim sweep.** For every claim with `status: blocked` from FIND: create a corresponding risk_map assumption with `resolution_required: source+probe`, run the probe via `tools/probe.mjs`, update the claim's `status` to `probed_ok`/`probed_fail`. If probe fails repeatedly, downgrade claim severity with rationale or escalate.
+6. **Blocked-claim sweep.** For every claim with `status: blocked` from FIND: create a corresponding risk_map assumption with `resolution_required: source+probe`, run the probe via `src/cli/probe.mjs`, update the claim's `status` to `probed_ok`/`probed_fail`. If probe fails repeatedly, downgrade claim severity with rationale or escalate.
 7. Final check: re-validate `risk_map.yaml`. Every high/critical assumption resolved. No `status: blocked` claims remain. Exit.
 
-### 6.5 RECOMBINE (`phases/recombine/SKILL.md`)
+### 6.5 RECOMBINE (`skills/forger/phases/recombine/SKILL.md`)
 
 Purpose: produce creative solutions by recombining grounded elements. Three tiers, with the Tier 2/3 firewall.
 
@@ -903,7 +902,7 @@ Procedure:
 5. **Firewall reminder.** Do not edit or write any file outside `recombine.md` based on Tier 2/3 content. The PreToolUse hook will block such writes.
 6. Exit when Tier 1 has ≥1 idea and all gates pass.
 
-### 6.6 GRILL (`phases/grill/SKILL.md`)
+### 6.6 GRILL (`skills/forger/phases/grill/SKILL.md`)
 
 Purpose: cross-model adversarial review. Try to kill the proposal.
 
@@ -918,7 +917,7 @@ Outputs:
 Gates:
 1. AJV validates `failure_hypotheses.yaml`.
 2. Every hypothesis with `severity_if_wrong` ∈ {high, critical} has `status` ∈ {accepted_test_added, rejected_with_counter_evidence, escalated}.
-3. `gates/audit.mjs` re-runs on all artifacts; no new audit failures.
+3. `src/gates/audit.mjs` re-runs on all artifacts; no new audit failures.
 4. `reviewer_tier` recorded in every failure_hypothesis entry; mode-required tier met:
    - quick: any tier (or skipped entirely if `mode.grill_required: false`)
    - standard: ≥ acceptable
@@ -926,9 +925,9 @@ Gates:
 
 Procedure:
 
-1. Re-run `gates/audit.mjs --workspace <path>` to confirm artifacts still pass mechanical checks.
+1. Re-run `src/gates/audit.mjs --workspace <path>` to confirm artifacts still pass mechanical checks.
 2. Compose adversary prompt from `refs/adversary_mandate.md` + all workspace artifacts.
-3. Call `_lib/reviewer_router.mjs::invokeReviewer(systemPrompt, userPrompt, {blind: false})`. Capture `{tier, response, reviewer_meta}`.
+3. Call `src/lib/reviewer_router.mjs::invokeReviewer(systemPrompt, userPrompt, {blind: false})`. Capture `{tier, response, reviewer_meta}`.
 4. Parse response → append entries to `failure_hypotheses.yaml`. Each entry tagged with `reviewer_provider`, `reviewer_model`, `reviewer_tier`, `blind: false`.
 5. **Deep mode only:** call reviewer again with `refs/blind_adversary_mandate.md` (sees only DoW). Parse response, append with `blind: true`.
 6. **Resolution loop.** For each failure_hypothesis with `status: open`:
@@ -940,7 +939,7 @@ Procedure:
 7. Write `grill_report.md` summarizing accepted tests, rejected hypotheses, escalations.
 8. Exit.
 
-### 6.7 EXECUTE (`phases/execute/SKILL.md`)
+### 6.7 EXECUTE (`skills/forger/phases/execute/SKILL.md`)
 
 Purpose: build the artifact and prove it works against the DoW.
 
@@ -968,14 +967,14 @@ Procedure:
 5. If test fails:
    - 2 retry attempts inline with web-search if error is library-specific.
    - 3rd retry: escalate.
-6. After test passes: invoke `gates/acceptance_test.mjs --workspace <path>` to update `acceptance_results.jsonl`.
+6. After test passes: invoke `src/gates/acceptance_test.mjs --workspace <path>` to update `acceptance_results.jsonl`.
 7. Loop until all measurable criteria pass.
 
 **For research_report artifacts:**
 
 1. Draft sections per artifact specification.
 2. Each section's claims must reference claim_ledger entries with `entailment: directly_supported` (no critical claims at `weakly_supported`).
-3. Run `gates/audit.mjs` on the report (extends to grep section claims against ledger).
+3. Run `src/gates/audit.mjs` on the report (extends to grep section claims against ledger).
 4. Update `acceptance_results.jsonl` per criterion (acceptance criteria for reports include: ledger coverage, no broken citations, no critical claims at weak entailment).
 
 **For design artifacts:**
@@ -986,15 +985,15 @@ Procedure:
 
 **Fact-gap re-entry to FIND:**
 
-If `gates/acceptance_test.mjs` fails AND the agent diagnoses the failure as a missing fact rather than a code bug (typically: a documented behavior doesn't match runtime reality, or a required threshold was never sourced):
-1. Optionally call `tools/probe.mjs` to confirm the gap is real (not transient).
+If `src/gates/acceptance_test.mjs` fails AND the agent diagnoses the failure as a missing fact rather than a code bug (typically: a documented behavior doesn't match runtime reality, or a required threshold was never sourced):
+1. Optionally call `src/cli/probe.mjs` to confirm the gap is real (not transient).
 2. Write `workspaces/{slug}/dow_addendum_{n}.yaml` (single narrowed criterion).
 3. Re-invoke `forger-find` in single-lane mode (production only, target=3, no frontier).
 4. Cap: 2 re-entries per task; 3rd escalates to user (Done Means Ran will block stop anyway).
 
-Exit: orchestrator returns when `gates/acceptance_test.mjs` exits 0 (all required criteria pass).
+Exit: orchestrator returns when `src/gates/acceptance_test.mjs` exits 0 (all required criteria pass).
 
-### 6.8 RETAIN (`phases/retain/SKILL.md`)
+### 6.8 RETAIN (`skills/forger/phases/retain/SKILL.md`)
 
 Purpose: persist what was learned. Update the KB. Decay what's stale.
 
@@ -1002,11 +1001,11 @@ Inputs: every workspace artifact + final status.
 
 Outputs:
 - `workspaces/{slug}/retro_note.yaml`
-- Mutations to `knowledge/{domain_slug}/` (via `tools/update_kb.mjs`)
+- Mutations to `knowledge/{domain_slug}/` (via `src/cli/update_kb.mjs`)
 
 Gates:
 1. `retro_note.yaml` schema validates.
-2. `tools/update_kb.mjs` returns exit 0.
+2. `src/cli/update_kb.mjs` returns exit 0.
 
 Procedure:
 
@@ -1016,7 +1015,7 @@ Procedure:
 4. Identify `working_architecture_ref` if applicable: path to a written architecture doc in the workspace.
 5. Set `ttl_overrides` if any sources need non-default TTL (fast-moving libs get 30d).
 6. Write `retro_note.yaml`. Validate.
-7. Invoke `tools/update_kb.mjs --workspace <path>`:
+7. Invoke `src/cli/update_kb.mjs --workspace <path>`:
    - Tool merges proven claims into `knowledge/{domain}/claim_ledger.yaml` with `expires_at` stamp.
    - Tool merges underlying sources into `knowledge/{domain}/source_ledger.yaml`.
    - Tool appends failed assumptions to `knowledge/{domain}/failure_memory.yaml`.
@@ -1030,7 +1029,7 @@ Procedure:
 
 ## 7. Lane mandates (worked example: production)
 
-Full text of `phases/find/lanes/production.md`. Community and frontier follow the same template; only the "Source criteria for this lane" and "Search strategies" sections differ. Length is unconstrained per D5.
+Full text of `skills/forger/phases/find/lanes/production.md`. Community and frontier follow the same template; only the "Source criteria for this lane" and "Search strategies" sections differ. Length is unconstrained per D5.
 
 ```markdown
 # Production Lane Mandate
@@ -1084,9 +1083,9 @@ For each search:
   - Capture URL, page title, and one or more candidate quotes per claim
 
 ### Step 3 — Mechanical filter
-For each candidate source: invoke tools/filter.mjs.
+For each candidate source: invoke src/cli/filter.mjs.
 
-  node ../../../tools/filter.mjs --workspace <path> --urls <jsonfile>
+  node ../../../src/cli/filter.mjs --workspace <path> --urls <jsonfile>
 
 filter.mjs checks: HEAD-request 2xx/3xx, domain not blocklisted, repo health if
 github URL (stars > 0 OR last_commit < 2y). Rejected sources go to your notes,
@@ -1195,11 +1194,11 @@ Frontier lane (`frontier.md`) differs at:
 
 | Category | Where | Invoked by | Blocks? |
 |---|---|---|---|
-| **hooks** | `hooks/*.mjs` | Claude Code harness (settings.json) | Yes if exit 2 (PreToolUse, Stop) |
-| **gates** | `gates/*.mjs` | Agent skill via Bash tool | Yes if exit 1 (phase exit blocked) |
-| **tools** | `tools/*.mjs` | Agent skill via Bash tool | No (returns data; never blocks) |
+| **hooks** | `src/hooks/*.mjs` | Claude Code harness (settings.json) | Yes if exit 2 (PreToolUse, Stop) |
+| **gates** | `src/gates/*.mjs` | Agent skill via Bash tool | Yes if exit 1 (phase exit blocked) |
+| **tools** | `src/cli/*.mjs` | Agent skill via Bash tool | No (returns data; never blocks) |
 
-### 8.2 hooks/post_code.mjs (PostToolUse)
+### 8.2 src/hooks/post_code.mjs (PostToolUse)
 
 ```
 Trigger: settings.json matcher "Edit|Write|NotebookEdit"
@@ -1214,7 +1213,7 @@ Outputs: stdout = optional advisory; stderr = error
 Exit:    0 always (PostToolUse is advisory)
 ```
 
-### 8.3 hooks/enforce_tier_firewall.mjs (PreToolUse)
+### 8.3 src/hooks/enforce_tier_firewall.mjs (PreToolUse)
 
 ```
 Trigger: settings.json matcher "Edit|Write|Bash"
@@ -1234,7 +1233,7 @@ Outputs: stderr = structured JSON {level: 'error', code: 'tier_firewall',
 Exit:    0 = allow; 2 = block (Claude Code reprompts agent)
 ```
 
-### 8.4 hooks/enforce_done_means_ran.mjs (Stop)
+### 8.4 src/hooks/enforce_done_means_ran.mjs (Stop)
 
 ```
 Trigger: Stop hook (every stop attempt)
@@ -1255,16 +1254,16 @@ Action:
         explicit reason.
   6. Else exit 0.
 Outputs: stderr = structured JSON {level, code, message: "Done Means Ran:
-                                   <criterion_id> not passing. Run gates/
+                                   <criterion_id> not passing. Run src/gates/
                                    acceptance_test.mjs or fix and re-run.",
                                    suggested_action}
 Exit:    0 = allow stop; 2 = block (Claude Code reprompts agent)
 ```
 
-### 8.5 gates/audit.mjs
+### 8.5 src/gates/audit.mjs
 
 ```
-Invocation: node gates/audit.mjs --workspace <path> [--phase find|grill]
+Invocation: node src/gates/audit.mjs --workspace <path> [--phase find|grill]
 Action:
   1. AJV-validate source_ledger.yaml and claim_ledger.yaml against schemas.
   2. For each source: HEAD-request URL (5s timeout); flag link-dead on
@@ -1285,10 +1284,10 @@ Exit:    0 = passed; 1 = schema validation failed or critical missing fields
                        (phase cannot exit)
 ```
 
-### 8.6 gates/acceptance_test.mjs
+### 8.6 src/gates/acceptance_test.mjs
 
 ```
-Invocation: node gates/acceptance_test.mjs --workspace <path>
+Invocation: node src/gates/acceptance_test.mjs --workspace <path>
 Inputs:     workspaces/{slug}/dow.yaml
 Action:
   1. For each entry in dow.success_criteria_measurable:
@@ -1311,10 +1310,10 @@ Outputs: stdout summary {required_passed, required_failed, subjective_pending}
 Exit:    0 = all required passed; 1 = any required failed
 ```
 
-### 8.7 tools/filter.mjs
+### 8.7 src/cli/filter.mjs
 
 ```
-Invocation: node tools/filter.mjs --workspace <path> --urls <jsonfile>
+Invocation: node src/cli/filter.mjs --workspace <path> --urls <jsonfile>
 Inputs:     JSON array of {url, candidate_title, lane} from a FIND lane
 Action:     Mechanical only (invariant 8):
   - HEAD-request URL (5s); reject on non-2xx/3xx
@@ -1329,10 +1328,10 @@ Outputs: stdout JSON {kept: [{url, title, accessed_at, github_meta?}],
 Exit:    0 always
 ```
 
-### 8.8 tools/probe.mjs
+### 8.8 src/cli/probe.mjs
 
 ```
-Invocation: node tools/probe.mjs --workspace <path> --assumption-id <id>
+Invocation: node src/cli/probe.mjs --workspace <path> --assumption-id <id>
                                   --type <type> --cmd <inline-command>
                                   [--timeout-ms 60000]
 Action:
@@ -1357,10 +1356,10 @@ Exit:    0 if probe ran successfully (regardless of pass/fail);
          1 if probe couldn't execute (timeout, sandbox failure)
 ```
 
-### 8.9 tools/update_kb.mjs
+### 8.9 src/cli/update_kb.mjs
 
 ```
-Invocation: node tools/update_kb.mjs --workspace <path>
+Invocation: node src/cli/update_kb.mjs --workspace <path>
 Inputs:     workspaces/{slug}/retro_note.yaml,
             workspaces/{slug}/source_ledger.yaml,
             workspaces/{slug}/claim_ledger.yaml
@@ -1390,14 +1389,14 @@ Exit:    0 on success; 1 on schema fail or write error
 
 ---
 
-## 9. `_lib/` shared utilities
+## 9. `src/lib/` shared utilities
 
-### 9.1 `_lib/config.mjs`
+### 9.1 `src/lib/config.mjs`
 
 ```
 Exports:
   getConfig(workspacePath) -> {
-    mode,                  // loaded from modes/{mode}.yaml
+    mode,                  // loaded from skills/forger/modes/{mode}.yaml
     env,                   // loaded from .env via dotenv
     schemaPaths,           // map schema name -> absolute path
     kbPath,                // knowledge/{domain_slug}
@@ -1408,7 +1407,7 @@ Exports:
   resolveDomainPath(domainSlug) -> path
 ```
 
-### 9.2 `_lib/ledger.mjs`
+### 9.2 `src/lib/ledger.mjs`
 
 ```
 Exports:
@@ -1435,7 +1434,7 @@ Exports:
 AJV instance is module-singleton with all schemas pre-loaded.
 ```
 
-### 9.3 `_lib/reviewer_router.mjs`
+### 9.3 `src/lib/reviewer_router.mjs`
 
 ```
 Exports:
@@ -1465,7 +1464,7 @@ Algorithm (see §10 for full):
   9. tag result with achieved tier
 ```
 
-### 9.4 `_lib/playwright.mjs`
+### 9.4 `src/lib/playwright.mjs`
 
 ```
 Exports:
@@ -1478,7 +1477,7 @@ NEVER passes --browser flag (per CLAUDE.md project rule).
 Uses PLAYWRIGHT_MCP_EXECUTABLE_PATH from env if set.
 ```
 
-### 9.5 `_lib/kb.mjs`
+### 9.5 `src/lib/kb.mjs`
 
 ```
 Exports:
@@ -1489,10 +1488,10 @@ Exports:
   countShippedTasks(slug, lastN=3) -> integer
   computeCoverage(domainClaims, dowCriterionIds) -> number 0..1
 
-All writes validated against their schemas via _lib/ledger.mjs.
+All writes validated against their schemas via src/lib/ledger.mjs.
 ```
 
-### 9.6 `_lib/adapters/`
+### 9.6 `src/lib/adapters/`
 
 Each adapter exports:
 
@@ -1516,7 +1515,7 @@ Adapter implementations are small (~50-100 lines each). They wrap the provider's
 
 ## 10. Reviewer router — priority gate
 
-User-defined priority gate logic (D3). Code lives in `_lib/reviewer_router.mjs`.
+User-defined priority gate logic (D3). Code lives in `src/lib/reviewer_router.mjs`.
 
 ```js
 // Pseudocode for invokeReviewer:
@@ -1586,7 +1585,7 @@ function invokeReviewer(systemPrompt, userPrompt, opts = {}) {
 }
 ```
 
-Tier priority order (config, edit in `_lib/config.mjs`):
+Tier priority order (config, edit in `src/lib/config.mjs`):
 
 ```yaml
 tier_priority:
@@ -1637,7 +1636,7 @@ Standard mode with only 'weak' available → GRILL emits a warning to user and c
 
 ## 11. Modes (full configs)
 
-### `modes/quick.yaml`
+### `skills/forger/modes/quick.yaml`
 
 ```yaml
 mode: quick
@@ -1656,7 +1655,7 @@ done_means_ran_strict: true
 extended_acceptance_suite: false
 ```
 
-### `modes/standard.yaml`
+### `skills/forger/modes/standard.yaml`
 
 ```yaml
 mode: standard
@@ -1675,7 +1674,7 @@ done_means_ran_strict: true
 extended_acceptance_suite: false
 ```
 
-### `modes/deep.yaml`
+### `skills/forger/modes/deep.yaml`
 
 ```yaml
 mode: deep
@@ -1704,14 +1703,14 @@ Reproducing the table from §3 of `FORGER.md`, with the exact enforcement locati
 
 | # | Invariant | Enforcement |
 |---|-----------|-------------|
-| 1 | **Done Means Ran** | `hooks/enforce_done_means_ran.mjs` (Stop hook) — blocks stop unless `acceptance_results.jsonl` has all required criteria passing |
-| 2 | **No Claim Without Evidence or Label** | `gates/audit.mjs` + AJV schema validation — claim missing entailment, verbatim_quote, or severity fails validation |
+| 1 | **Done Means Ran** | `src/hooks/enforce_done_means_ran.mjs` (Stop hook) — blocks stop unless `acceptance_results.jsonl` has all required criteria passing |
+| 2 | **No Claim Without Evidence or Label** | `src/gates/audit.mjs` + AJV schema validation — claim missing entailment, verbatim_quote, or severity fails validation |
 | 3 | **Test Critical, Skip Trivial** | OBSERVE SKILL.md procedure step 3 — severity table dictates `resolution_required`; trivial/low need no probes |
-| 4 | **Tier 2/3 Firewall** | `hooks/enforce_tier_firewall.mjs` (PreToolUse) — blocks Edit/Write/Bash with content traceable only to tier2/3 files without `promoted_at` |
-| 5 | **Cross-Model Review (standard + deep)** | `_lib/reviewer_router.mjs` priority gate; GRILL SKILL.md gate 4 enforces `reviewer_tier ≥ mode.grill_min_reviewer_tier` |
+| 4 | **Tier 2/3 Firewall** | `src/hooks/enforce_tier_firewall.mjs` (PreToolUse) — blocks Edit/Write/Bash with content traceable only to tier2/3 files without `promoted_at` |
+| 5 | **Cross-Model Review (standard + deep)** | `src/lib/reviewer_router.mjs` priority gate; GRILL SKILL.md gate 4 enforces `reviewer_tier ≥ mode.grill_min_reviewer_tier` |
 | 6 | **Mechanism-Fit Before Recombination** | RECOMBINE SKILL.md gate 2 — every Tier 1 idea has populated `mechanism_fit_check` with `fit_verdict ∈ {ok, partial}` |
-| 7 | **Knowledge Self-Evolves** | `tools/update_kb.mjs` after every task; shortcut detection in `_lib/kb.mjs::isShortcutEligible` |
-| 8 | **Scripts Are Mechanical Only** | Convention enforced by review: only `_lib/reviewer_router.mjs` may invoke an LLM, and only when called from GRILL skill. `dev/scripts/validate_all_schemas.mjs` lints hook/gate/tool sources for LLM-invocation patterns. |
+| 7 | **Knowledge Self-Evolves** | `src/cli/update_kb.mjs` after every task; shortcut detection in `src/lib/kb.mjs::isShortcutEligible` |
+| 8 | **Scripts Are Mechanical Only** | Convention enforced by review: only `src/lib/reviewer_router.mjs` may invoke an LLM, and only when called from GRILL skill. `src/dev/validate_all_schemas.mjs` lints hook/gate/tool sources for LLM-invocation patterns. |
 | 9 | **Definition of Works Is the Single Source of Truth** | DoW is read-only after CONTRACT exits; reframe-during-execute writes `dow.v2.yaml` and pauses for user; every gate references `dow_criterion_refs` |
 
 ---
@@ -1721,31 +1720,31 @@ Reproducing the table from §3 of `FORGER.md`, with the exact enforcement locati
 v0.1 build order. Each step has a verification gate. Build incrementally; don't skip.
 
 1. **Scaffold root.** Create `framework/forger/` (done). Add `README.md`, `manifest.json`, `package.json`, `.env.example`, `.gitignore`. Verify: `node -e "require('./framework/forger/package.json')"` works.
-2. **Write all 7 schemas** in `schemas/`. Verify: `dev/scripts/validate_all_schemas.mjs` self-validates every schema against JSON Schema meta-schema.
+2. **Write all 7 schemas** in `schemas/`. Verify: `src/dev/validate_all_schemas.mjs` self-validates every schema against JSON Schema meta-schema.
 3. **Write all templates** in `templates/` matching schemas. Verify: each template AJV-validates against its schema.
-4. **Implement `_lib/ledger.mjs`** (AJV + YAML I/O). Verify: `dev/tests/ledger.test.mjs` passes (load every template, validate, round-trip write).
-5. **Implement `_lib/config.mjs`** (mode loader, .env loader). Verify: load each mode YAML and assert keys.
-6. **Implement `_lib/kb.mjs`** (KB I/O + TTL + shortcut). Verify: `dev/tests/kb.test.mjs` passes.
-7. **Implement `_lib/playwright.mjs`** (cloakbrowser wrapper). Verify: `headRequest('https://example.com')` returns 200.
-8. **Implement `gates/audit.mjs`** + tests. Verify against `dev/fixtures/sample_source_ledger.yaml`.
-9. **Implement `tools/filter.mjs`** + tests.
-10. **Implement `tools/probe.mjs`** + tests (sandbox + timeout).
-11. **Implement `gates/acceptance_test.mjs`** + tests.
-12. **Implement `tools/update_kb.mjs`** + tests.
-13. **Implement `_lib/reviewer_router.mjs`** + 1 adapter (subagent_fallback first; no key needed). Verify: tier='acceptable' branch works end-to-end.
+4. **Implement `src/lib/ledger.mjs`** (AJV + YAML I/O). Verify: `dev/tests/ledger.test.mjs` passes (load every template, validate, round-trip write).
+5. **Implement `src/lib/config.mjs`** (mode loader, .env loader). Verify: load each mode YAML and assert keys.
+6. **Implement `src/lib/kb.mjs`** (KB I/O + TTL + shortcut). Verify: `dev/tests/kb.test.mjs` passes.
+7. **Implement `src/lib/playwright.mjs`** (cloakbrowser wrapper). Verify: `headRequest('https://example.com')` returns 200.
+8. **Implement `src/gates/audit.mjs`** + tests. Verify against `dev/fixtures/sample_source_ledger.yaml`.
+9. **Implement `src/cli/filter.mjs`** + tests.
+10. **Implement `src/cli/probe.mjs`** + tests (sandbox + timeout).
+11. **Implement `src/gates/acceptance_test.mjs`** + tests.
+12. **Implement `src/cli/update_kb.mjs`** + tests.
+13. **Implement `src/lib/reviewer_router.mjs`** + 1 adapter (subagent_fallback first; no key needed). Verify: tier='acceptable' branch works end-to-end.
 14. **Add remaining adapters** (openai, gemini, anthropic, ...) as stubs that throw 'not implemented' until tested with a real key.
-15. **Implement `hooks/post_code.mjs`** + register in `hooks/settings.hooks.json`.
-16. **Implement `hooks/enforce_tier_firewall.mjs`** + register.
-17. **Implement `hooks/enforce_done_means_ran.mjs`** + register.
-18. **Write `phases/contract/SKILL.md`** + refs + examples. Verify: agent can run CONTRACT standalone and produce valid DoW.
-19. **Write `phases/find/SKILL.md`** + lane mandates (production.md fully fleshed, community.md and frontier.md following same template) + refs. Verify: spawn a 1-lane FIND run on a simple DoW.
-20. **Write `phases/observe/SKILL.md`** + refs + examples.
-21. **Write `phases/recombine/SKILL.md`** + refs.
-22. **Write `phases/grill/SKILL.md`** + refs (including adversary_mandate.md).
-23. **Write `phases/execute/SKILL.md`** + refs.
-24. **Write `phases/retain/SKILL.md`** + refs.
+15. **Implement `src/hooks/post_code.mjs`** + register in `src/hooks/settings.hooks.json`.
+16. **Implement `src/hooks/enforce_tier_firewall.mjs`** + register.
+17. **Implement `src/hooks/enforce_done_means_ran.mjs`** + register.
+18. **Write `skills/forger/phases/contract/SKILL.md`** + refs + examples. Verify: agent can run CONTRACT standalone and produce valid DoW.
+19. **Write `skills/forger/phases/find/SKILL.md`** + lane mandates (production.md fully fleshed, community.md and frontier.md following same template) + refs. Verify: spawn a 1-lane FIND run on a simple DoW.
+20. **Write `skills/forger/phases/observe/SKILL.md`** + refs + examples.
+21. **Write `skills/forger/phases/recombine/SKILL.md`** + refs.
+22. **Write `skills/forger/phases/grill/SKILL.md`** + refs (including adversary_mandate.md).
+23. **Write `skills/forger/phases/execute/SKILL.md`** + refs.
+24. **Write `skills/forger/phases/retain/SKILL.md`** + refs.
 25. **Write orchestrator `SKILL.md`** at root.
-26. **Write `dev/scripts/install.mjs`**: copies/symlinks `framework/forger/` to `~/.claude/plugins/forger/`, merges `hooks/settings.hooks.json` into `~/.claude/settings.json` after showing diff.
+26. **Write `src/dev/install.mjs`**: copies/symlinks `framework/forger/` to `~/.claude/plugins/forger/`, merges `src/hooks/settings.hooks.json` into `~/.claude/settings.json` after showing diff.
 27. **End-to-end smoke test:** run `/forger` on a trivial task (e.g. "write a Node.js function that parses ISO8601 dates"). Confirm: workspace created, all phase artifacts produced, acceptance test passes, KB updated, Done Means Ran enforced.
 
 Each step is one commit. CLAUDE.md project rule "Commit every turn" applies.
@@ -1760,7 +1759,7 @@ These were surfaced but deferred. Document them so they don't get forgotten.
 - **Probe sandboxing on Windows.** Node `child_process.spawn` with timeout + cwd is the v0.1 implementation. Long-term: containerized probes (Docker) for hostile code. Out of scope for v0.1.
 - **KB merge conflicts across concurrent tasks on same domain.** Locking via `knowledge/{domain}/.lock` file (advisory). v0.1: assume one task at a time per domain.
 - **Reviewer router caching.** Cache `ping()` results within a session to avoid repeat checks. v0.1: ping every time.
-- **Adapter for codex CLI.** Implemented as `_lib/adapters/codex_cli.mjs` that shells out to the `codex` command; tested only if codex is on PATH.
+- **Adapter for codex CLI.** Implemented as `src/lib/adapters/codex_cli.mjs` that shells out to the `codex` command; tested only if codex is on PATH.
 - **Multi-language post_code linter dispatch.** v0.1: detect `package.json` → run npm script `lint`; detect `pyproject.toml` → run ruff; else skip. Add languages as needed.
 - **Browser usage in audit.** Quote-grep is currently `curl + grep`, no JS render. For JS-rendered pages, audit can't verify quotes. v0.1: accept this; mark JS-rendered sources with `flags: [js-rendered]`. Future: optional playwright-cli render path for high-stakes claims.
 - **Gnosis archival.** Move `reTruth/skills/gnosis/` to `reTruth/_archive/gnosis-v1/` after FIND ships. Not a code change; just file move + CLAUDE.md update.
@@ -1775,7 +1774,7 @@ These were surfaced but deferred. Document them so they don't get forgotten.
 - **Lane** — One of three FIND subagents: production / community / frontier. Mode-aware.
 - **Severity** — 5-level (trivial/low/medium/high/critical) tag on a claim, tied to a DoW criterion.
 - **Entailment** — 6-level grade of how strongly a source supports a claim (directly_supported / weakly_supported / extrapolated / contradicted / unverified / speculative).
-- **Probe** — Smallest test that can falsify an assumption. Runs in sandbox via `tools/probe.mjs`.
+- **Probe** — Smallest test that can falsify an assumption. Runs in sandbox via `src/cli/probe.mjs`.
 - **Tier 1/2/3** — Creativity tier per Boden. T1 = grounded recombination. T2 = speculation with validation plan. T3 = transformational. Firewalled.
 - **Done Means Ran** — Invariant 1. No completion without execution + passing acceptance tests.
 - **KB shortcut** — When `index.yaml.shortcut_eligible == true` and cached sources cover ≥80% of DoW criteria, FIND skips lane fan-out.

@@ -4,18 +4,18 @@
   "description": "Test-gated, execution-centric framework for grounded AI creativity.",
   "skills": [
     "./SKILL.md",
-    "./phases/contract/SKILL.md",
-    "./phases/find/SKILL.md",
-    "./phases/observe/SKILL.md",
-    "./phases/recombine/SKILL.md",
-    "./phases/grill/SKILL.md",
-    "./phases/execute/SKILL.md",
-    "./phases/retain/SKILL.md",
+    "./skills/forger/phases/contract/SKILL.md",
+    "./skills/forger/phases/find/SKILL.md",
+    "./skills/forger/phases/observe/SKILL.md",
+    "./skills/forger/phases/recombine/SKILL.md",
+    "./skills/forger/phases/grill/SKILL.md",
+    "./skills/forger/phases/execute/SKILL.md",
+    "./skills/forger/phases/retain/SKILL.md",
     "./skills/real_search/SKILL.md"
   ],
   "commands": [
     { "name": "forger", "description": "Run the FORGER pipeline on a task" },
     { "name": "forger:contract", "description": "Run CONTRACT phase only" }
   ],
-  "hooks_template": "./hooks/settings.hooks.json"
+  "hooks_template": "./src/hooks/settings.hooks.json"
 }

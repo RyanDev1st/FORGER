@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
-import { checkTierFirewall } from '../../hooks/enforce_tier_firewall.mjs';
+import { checkTierFirewall } from '../../src/hooks/enforce_tier_firewall.mjs';
 
 describe('tier_firewall', () => {
   it('blocks Write whose content matches an un-promoted Tier 2 entry', async () => {

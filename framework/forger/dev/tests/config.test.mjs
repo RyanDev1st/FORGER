@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { loadMode, getConfig } from '../../_lib/config.mjs';
+import { loadMode, getConfig } from '../../src/lib/config.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 

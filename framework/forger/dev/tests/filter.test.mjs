@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { filterUrls } from '../../tools/filter.mjs';
+import { filterUrls } from '../../src/cli/filter.mjs';
 
 describe('filter', () => {
   it('keeps live, non-blocklisted URLs', async () => {

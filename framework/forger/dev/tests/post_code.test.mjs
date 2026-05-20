@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
-import { runPostCode } from '../../hooks/post_code.mjs';
+import { runPostCode } from '../../src/hooks/post_code.mjs';
 
 describe('post_code', () => {
   it('validates a YAML workspace artifact if schema mapping known', async () => {
