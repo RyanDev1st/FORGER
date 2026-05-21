@@ -59,7 +59,8 @@ if (entryUrl && import.meta.url === entryUrl) {
     let parsed = {};
     try { parsed = JSON.parse(payload); } catch {}
     const toolName = parsed.tool_name || parsed.tool || '';
-    if (toolName && toolName !== 'Task') {
+    const PHASE_DISPATCH_TOOLS = new Set(['Task', 'Skill']);
+    if (toolName && !PHASE_DISPATCH_TOOLS.has(toolName)) {
       process.exit(0);
     }
     const workspace = process.env.FORGER_WORKSPACE || '';
