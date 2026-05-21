@@ -15,12 +15,18 @@ hard rules live in SKILL.md.
 ## 0. Bootstrap precondition (mandatory)
 
 Before parsing the user's task description, verify the framework is
-installed in the current session. Inspect the available-skills list
-for all seven phase slugs:
+installed in the current session. Inspect the available-**agents**
+list (Task tool subagent_type values) for all 10 required slugs and
+the available-skills list for `forger-real-search`:
 
 ```
-forger-contract  forger-find  forger-observe  forger-recombine
-forger-grill     forger-execute  forger-retain
+Agents (10):
+  forger-contract  forger-find  forger-observe  forger-recombine
+  forger-grill     forger-execute  forger-retain
+  forger-lane-production  forger-lane-community  forger-lane-frontier
+
+Skills (1):
+  forger-real-search
 ```
 
 If **any** slug is missing, HALT per `SKILL.md` → "Bootstrap
@@ -28,9 +34,11 @@ precondition". Emit `status: aborted_phase_unavailable` and stop. Do
 not scaffold the workspace. Do not write any artifact yourself. Do
 not "do FORGER manually" — that is the canonical failure mode.
 
-If all seven are present, paste the confirmation into chat
-(e.g., "Phase skills available: forger-contract, …, forger-retain")
-and proceed to step 1.
+If all 11 are present, paste the confirmation into chat
+(e.g., "FORGER agents available: forger-contract, … 10 total;
+forger-real-search skill available.") and walk the orchestrator
+pre-flight checklist (`SKILL.md` → "Pre-flight checklist") before
+proceeding to step 1.
 
 ## 1. Parse invocation
 
@@ -76,13 +84,10 @@ invocation receives this path as its primary argument.
 
 ## 3. CONTRACT — `forger-contract`
 
-Invoke `forger-contract` via the platform's subagent-dispatch
-mechanism (Task tool with `subagent_type: forger-contract` if the
-framework is registered as agents; Skill tool if registered as
-skills — see `manifest.json`). Pass the workspace path and the
-verbatim task description. CONTRACT runs socratic clarification,
-reframe, mode pick, scope confirmation, then writes `dow.yaml` and
-`reframe_memo.md`.
+Invoke via Task tool with `subagent_type: forger-contract`. Pass
+the workspace path and the verbatim task description in the prompt.
+CONTRACT runs socratic clarification, reframe, mode pick, scope
+confirmation, then writes `dow.yaml` and `reframe_memo.md`.
 
 **Evidence requirement.** Paste the phase return summary into chat.
 
@@ -106,12 +111,14 @@ step 11).
 
 ## 4. FIND — `forger-find`
 
-Invoke `forger-find` with the workspace path. FIND reads
+Invoke via Task tool with `subagent_type: forger-find`. Pass the
+workspace path in the prompt. FIND reads
 `dow.yaml`, loads the mode config, runs the KB shortcut check
 (conditional), and (on a cold run) fans out 1, 2, or 3 research
-lanes in parallel inside its own context. FIND itself handles the
-filesystem injection of its lane mandate files into the lane
-subagents at spawn time — the orchestrator does not read those
+lanes in parallel inside its own context. Each lane is its own
+registered agent (`forger-lane-production`, `forger-lane-community`,
+`forger-lane-frontier`); FIND issues one Task call per active lane.
+The orchestrator does not spawn lanes itself and does not read lane
 mandate files. FIND is the only phase that fans out beyond
 orchestrator + 1.
 
@@ -133,7 +140,8 @@ but not fatal — the audit script's exit code is the authority.
 
 ## 5. OBSERVE — `forger-observe`
 
-Invoke `forger-observe` with the workspace path. OBSERVE
+Invoke via Task tool with `subagent_type: forger-observe`. Pass the
+workspace path in the prompt. OBSERVE
 internalises the claim ledger, builds the risk map, probes
 assumptions at the severity threshold the mode requires, and
 writes the ground-truth brief.
@@ -153,7 +161,8 @@ writes the ground-truth brief.
 
 ## 6. RECOMBINE — `forger-recombine`
 
-Invoke `forger-recombine` with the workspace path. RECOMBINE
+Invoke via Task tool with `subagent_type: forger-recombine`. Pass
+the workspace path in the prompt. RECOMBINE
 produces Tier 1 ideas (anchored, mechanism-fitted) and, in
 `standard` or `deep` modes, optionally Tier 2 speculation and
 (deep only) Tier 3 proposals.
@@ -172,7 +181,8 @@ produces Tier 1 ideas (anchored, mechanism-fitted) and, in
 
 If `mode.grill_required: false` (quick-mode default), record the
 intentional skip in telemetry and proceed to step 8. Otherwise
-invoke `forger-grill` with the workspace path. GRILL runs the
+invoke via Task tool with `subagent_type: forger-grill`. Pass the
+workspace path in the prompt. GRILL runs the
 cross-model adversarial review against the chosen Tier 1 design
 and handles the filesystem injection of the adversary mandates
 into the reviewer subagents.
@@ -193,7 +203,8 @@ into the reviewer subagents.
 
 ## 8. EXECUTE — `forger-execute` (with fact-gap re-entry dispatch)
 
-Invoke `forger-execute` with the workspace path. EXECUTE picks
+Invoke via Task tool with `subagent_type: forger-execute`. Pass the
+workspace path in the prompt. EXECUTE picks
 one of three artifact branches by `dow.artifact.type`: TDD
 micro-cycle for code/system, ledger-coverage for
 `research_report`, rubric + screenshot for `design`. EXECUTE
@@ -220,7 +231,9 @@ fact-gap):
 
 ## 9. RETAIN — `forger-retain`
 
-Invoke `forger-retain` with the workspace path. RETAIN writes
+Invoke via Task tool with `subagent_type: forger-retain`. Pass the
+workspace path and the final status string
+(`shipped`/`escalated`/`abandoned`) in the prompt. RETAIN writes
 the retrospective note, then merges promotable claims and failed
 assumptions into the per-domain knowledge base under
 `knowledge/{domain_slug}/` via `src/cli/update_kb.mjs`.

@@ -36,14 +36,22 @@ paragraph is what each lane subagent reads as context. Save to a transient
 brief file or pass inline at spawn time — lane subagents do not read the
 DoW directly.
 
-## 4. Spawn lanes (parallel, same turn)
+## 4. Spawn lanes (parallel, same turn) — Task tool with lane agents
 
 For each lane in the `lanes` list from step 1, issue **one Task call** in
-the same turn. The Task call carries:
+the same turn. The Task call uses the agent's registered subagent_type:
 
-- the lane mandate, **filesystem-injected** from `lanes/{lane}.md` — the
-  orchestrator never reads the lane file directly into its own context;
-  it passes the file path so the subagent loads it under its own context
+| Mode lane name | Task `subagent_type`        |
+| -------------- | --------------------------- |
+| `production`   | `forger-lane-production`    |
+| `community`    | `forger-lane-community`     |
+| `frontier`     | `forger-lane-frontier`      |
+
+The lane mandate is the agent's own system prompt (registered via the
+agent file under `lanes/{lane}.md`). FIND does **not** filesystem-inject
+the mandate at spawn time anymore — the agent definition carries it.
+The prompt FIND passes in each Task call must contain:
+
 - the DoW path (`workspaces/{slug}/dow.yaml`)
 - the workspace path (`workspaces/{slug}/`)
 - the output ledger paths (`workspaces/{slug}/source_ledger.yaml`,
@@ -51,11 +59,15 @@ the same turn. The Task call carries:
 - the mode (verbatim from `dow.meta.mode`)
 - the effort budget from `skills/forger/modes/{mode}.yaml`
   (`token_budget_cold`)
+- the lane brief composed in step 3
 
-**Concurrent thread cap = 4** (orchestrator + up to 3 lanes). Never fan out
-beyond four. Available lane mandates: `lanes/production.md`,
-`lanes/community.md`, and `lanes/frontier.md` (file name `frontier.md`,
-user-facing name **edge**). The mode file decides which run.
+**Concurrent thread cap.** FIND itself counts as 1 of the orchestrator's
+4 threads; lanes claim 1-3 of the remaining 3. Never fan out beyond
+3 lanes in a single FIND turn. The mode file decides which lanes run;
+quick=1, standard=2, deep=3.
+
+Issue all lane Task calls in a single assistant turn so they run in
+parallel; otherwise the harness will serialise them.
 
 ## 5. Wait for all lane Tasks to return
 

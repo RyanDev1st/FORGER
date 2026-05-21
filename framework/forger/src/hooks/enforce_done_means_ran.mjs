@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { readYaml, readJsonl } from '../lib/ledger.mjs';
+import { checkPhaseSelfAudit } from './enforce_phase_self_audit.mjs';
 
 const entryUrl = process.argv[1] ? pathToFileURL(process.argv[1]).href : null;
 const COMPLETION_PATTERNS = [
@@ -57,6 +58,17 @@ export async function checkDoneMeansRan({ workspace, recentText, transcriptPath 
       missing,
     };
   }
+
+  const phaseAudit = checkPhaseSelfAudit({ workspace });
+  if (phaseAudit.block) {
+    return {
+      block: true,
+      reason: `Done Means Ran: last phase '${phaseAudit.phase}' has an unclean self_audit. ${phaseAudit.reason}`,
+      failed_items: phaseAudit.failed_items || null,
+      last_phase: phaseAudit.phase,
+    };
+  }
+
   return { block: false };
 }
 
@@ -77,9 +89,16 @@ if (entryUrl && import.meta.url === entryUrl) {
       }));
     }
     if (r.block) {
+      const isPhaseAudit = !!r.last_phase;
       console.error(JSON.stringify({
-        level: 'error', code: 'done_means_ran', message: r.reason,
-        suggested_action: 'Run src/gates/acceptance_test.mjs and fix any failing criteria before claiming completion.',
+        level: 'error',
+        code: isPhaseAudit ? 'done_means_ran_phase_self_audit' : 'done_means_ran',
+        message: r.reason,
+        failed_items: r.failed_items || null,
+        last_phase: r.last_phase || null,
+        suggested_action: isPhaseAudit
+          ? 'Re-spawn the last phase agent; it must append a clean self_audit struct before completion can be claimed.'
+          : 'Run src/gates/acceptance_test.mjs and fix any failing criteria before claiming completion.',
       }));
       process.exit(2);
     }

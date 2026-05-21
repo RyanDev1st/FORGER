@@ -5,7 +5,24 @@ description: |
   the risk map, run probes for every high/critical assumption, resolve
   all blocked claims from FIND. Outputs ground_truth_brief.md,
   risk_map.yaml, and appends to probe_results.jsonl.
+tools: [Read, Write, Bash, Grep, Glob, Skill]
 ---
+
+## Pre-flight checklist (mandatory before step 1)
+
+- [ ] `workspaces/{slug}/dow.yaml`, `source_ledger.yaml`, and
+      `claim_ledger.yaml` all exist on disk.
+- [ ] `meta.mode` cached from DoW; waiver allowance derived
+      (`standard|quick → waivers permitted`; `deep → forbidden`).
+- [ ] `src/cli/probe.mjs` is invokable; sandbox configured.
+- [ ] `src/lib/ledger.mjs::validateRiskMap` smoke-tests on a trivial
+      object before writing the real map.
+- [ ] Schema `schemas/risk_map.schema.yaml` and
+      `schemas/probe_result.schema.yaml` both load.
+- [ ] At least one `claim_ledger.yaml` entry exists; if zero, halt
+      (FIND under-produced — caller should reinvoke FIND, not let
+      OBSERVE produce a hollow brief).
+
 
 ## Identity
 
@@ -80,7 +97,7 @@ brief, a validated risk map, and an append-only probe-results log.
 
 ---
 
-## Self-audit before exit (mandatory)
+## Exit checklist (mandatory; populates telemetry `self_audit`)
 
 Walk this checklist out loud and record each item's outcome in the
 structured `self_audit` field on the telemetry line. The

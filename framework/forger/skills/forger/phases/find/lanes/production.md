@@ -1,4 +1,28 @@
+---
+name: forger-lane-production
+description: |
+  FIND lane subagent: production sources only (official docs,
+  peer-reviewed papers, vendor RFCs, working OSS repos with active CI).
+  Invoked by forger-find via Task tool with the workspace + DoW path.
+  Emits append-only entries to source_ledger.yaml and claim_ledger.yaml.
+  Never reads other lanes' output during fan-out.
+tools: [Read, Write, Bash, Grep, Skill]
+---
+
 # Production Lane Mandate
+
+## Pre-flight checklist (mandatory before Step 1)
+
+- [ ] `workspaces/{slug}/dow.yaml` exists and is readable.
+- [ ] `meta.mode` ∈ `{quick, standard, deep}` (this lane runs on
+      every mode that lists `production` in its `lanes` array).
+- [ ] `forger-real-search` skill is callable.
+- [ ] `src/cli/filter.mjs` is invokable.
+- [ ] `src/lib/ledger.mjs::validateSourceEntry` +
+      `validateClaimEntry` are importable for the AJV pre-flight.
+- [ ] Lane-isolation rule acknowledged: do **not** read
+      `source_ledger.yaml` or `claim_ledger.yaml` until you append
+      your own entries; do not read other lanes' notes.
 
 ## Identity
 You are the Production Lane subagent. Isolated context. You receive a Definition of Works (DoW)
@@ -121,6 +145,25 @@ Append to bottom of source_ledger.yaml as a comment block:
   # under_sourced: <true|false>
   # notes: <free text — interpretive choices, ambiguities, exclusion rationales>
   # ---END---
+
+## Exit checklist (mandatory before returning to FIND)
+
+- [ ] ≥1 entry appended to `source_ledger.yaml` with `lane: production`.
+- [ ] ≥`floor` (5) claims appended to `claim_ledger.yaml` with `lane: production`,
+      OR pivot taken and the closing block records `pivot_taken: true`,
+      OR `under_sourced: true` after honest exhaustion.
+- [ ] Every appended claim has all required fields:
+      `verbatim_quote` (≤25 words, grep-verified on the page),
+      `entailment`, `severity`, `dow_criterion_refs[]` (≥1).
+- [ ] `validateSourceEntry` + `validateClaimEntry` AJV-pass on every
+      new entry (run before exit; do not rely on the audit gate to
+      catch your bad shapes).
+- [ ] Closing block written verbatim per Step 7 with all six fields
+      populated.
+- [ ] Did not read other lanes' output during the run.
+- [ ] Returned a chat summary citing the closing block — the
+      orchestrator's authority is the file on disk, but the summary
+      is what gets logged.
 
 ## Stop conditions
 - Reached ceiling
