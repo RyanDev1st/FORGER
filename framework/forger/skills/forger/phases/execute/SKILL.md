@@ -5,7 +5,29 @@ description: |
   Definition of Works. TDD micro-cycles for code; ledger-coverage check
   for research reports; rubric + screenshot for designs. Gated by
   Done Means Ran.
+tools: [Read, Write, Edit, Bash, Grep, Glob, Skill]
 ---
+
+## Pre-flight checklist (mandatory before D1)
+
+- [ ] All prior-phase artifacts present: `dow.yaml`,
+      `source_ledger.yaml`, `claim_ledger.yaml`, `risk_map.yaml`,
+      `recombine.md`, `failure_hypotheses.yaml`.
+- [ ] `failure_hypotheses.yaml` contains zero entries with
+      `status: open` (GRILL exited unclean; halt and surface).
+- [ ] `dow.artifact.type` resolved (`code|system|research_report|design|spec|other`)
+      and matching branch procedure loaded.
+- [ ] `src/gates/acceptance_test.mjs` is invokable; smoke-test on an
+      empty results file produces a controlled non-zero exit (proves
+      the gate is wired).
+- [ ] `enforce_done_means_ran.mjs` Stop hook is active for this
+      session (otherwise completion claims are unprotected).
+- [ ] Re-entry counter computed from existing
+      `dow_addendum_*.yaml` files; cap = 2.
+- [ ] (Code/system branch only) Subphase router decision recorded:
+      B1 (TDD), B2 (spec_and_tasks), or B3 (walking_skeleton). Quick
+      mode forces B1.
+
 
 ## Identity
 
@@ -76,10 +98,27 @@ gates.
    you diagnose the failure as a *missing fact* (not a code bug),
    read `procedure/fact_gap_re_entry.md`. Re-entry cap = 2; 3rd
    attempt escalates.
-6. **Calibration references.** The three `refs/*.md` files
-   (tdd_micro_cycle, done_means_ran_rubric, escalation_protocol) are
-   loaded on-demand. Before reading any ref, scan `refs/_index.yaml`
-   and load only entries whose `triggers` match.
+6. **Subphase router (code/system branch only).** When the code/system
+   branch fires, before entering the per-criterion TDD loop, walk
+   `procedure/subphase_router.md` once. It reads `dow.yaml` and
+   `risk_map.yaml` and picks one of three build subphases:
+   - **B1.** Direct TDD via `refs/tdd_micro_cycle.md` (default).
+   - **B2.** Spec-and-Tasks decomposition via `refs/spec_and_tasks.md`
+     when criteria are multi or ordered.
+   - **B3.** Walking-skeleton outside-in via `refs/walking_skeleton.md`
+     when risk_map flags a new component or new integration.
+   The router writes `subphase_chosen` and `router_reason` to the
+   EXECUTE telemetry line. Quick mode forces B1.
+7. **Futility detector (inside TDD retry policy).** Between retry 1
+   and retry 2 inside `refs/tdd_micro_cycle.md` step 5, consult
+   `refs/futility_detector.md` for the same-diff-twice and
+   no-progress-two-cycles checks. Escalates one retry earlier when
+   the stuck signal is clear.
+8. **Calibration references.** All `refs/*.md` files
+   (tdd_micro_cycle, done_means_ran_rubric, escalation_protocol,
+   spec_and_tasks, walking_skeleton, futility_detector) are loaded
+   on-demand. Before reading any ref, scan `refs/_index.yaml` and
+   load only entries whose `triggers` match.
 
 ---
 
@@ -94,7 +133,7 @@ gates.
 
 ---
 
-## Self-audit before exit (mandatory)
+## Exit checklist (mandatory; populates telemetry `self_audit`)
 
 Walk this checklist out loud and emit a structured `self_audit` field
 on the telemetry line. The `enforce_phase_self_audit.mjs` hook blocks
@@ -118,14 +157,21 @@ not return until clean.
 ## Cross-references
 
 - `procedure/main.md` — branch dispatch + shared exit.
-- `procedure/branch_code.md` — TDD micro-cycles (code/system).
+- `procedure/branch_code.md` — TDD micro-cycles (code/system) with subphase router step 0.
 - `procedure/branch_research.md` — ledger-coverage check (research_report).
 - `procedure/branch_design.md` — rubric + screenshot review (design).
 - `procedure/fact_gap_re_entry.md` — re-entry triggers + dow_addendum mechanics.
+- `procedure/subphase_router.md` — B1/B2/B3 selection for code/system branch.
 - `refs/_index.yaml` — catalogue of calibration refs.
-- `refs/tdd_micro_cycle.md` — RED-GREEN-IMPROVE loop.
+- `refs/tdd_micro_cycle.md` — RED-GREEN-IMPROVE loop (B1 / inner cycle of B2 and B3).
+- `refs/spec_and_tasks.md` — B2 subphase: spec.md + impl_plan.md + tasks.yaml.
+- `refs/walking_skeleton.md` — B3 subphase: thinnest end-to-end slice.
+- `refs/futility_detector.md` — early-escalate stuck-loop check inside TDD step 5.
 - `refs/done_means_ran_rubric.md` — completion checklist per artifact branch.
 - `refs/escalation_protocol.md` — when and how to escalate.
+- `schemas/tasks.schema.yaml` — light schema for B2 task ledgers.
+- `src/lib/diff_hash.mjs` — structural diff hash helper used by futility detector.
+- `legacy/execute/` — pre-MVP snapshot of this phase, for reference only.
 - `src/gates/acceptance_test.mjs` — writes `acceptance_results.jsonl`; exits 0 when all required criteria pass.
 - `src/gates/audit.mjs` — re-run on research_report branch + during fact-gap re-entry.
 - `src/cli/probe.mjs` — invoked optionally before fact-gap re-entry.

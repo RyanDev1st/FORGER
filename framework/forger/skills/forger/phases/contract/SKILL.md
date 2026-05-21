@@ -5,7 +5,25 @@ description: |
   of Works via socratic clarification, reframe, and mode pick. Use when a
   user invokes /forger:contract or as part of /forger orchestration.
   Outputs workspaces/{slug}/dow.yaml (schema-validated) and reframe_memo.md.
+tools: [Read, Write, Bash, Grep, AskUserQuestion]
 ---
+
+## Pre-flight checklist (mandatory before step 1)
+
+Walk before doing any work. Halt and surface the failing item to the
+orchestrator if any check fails; do not improvise.
+
+- [ ] Orchestrator passed a `workspace` path that exists on disk.
+- [ ] Orchestrator passed a verbatim `user_query` argument (non-empty).
+- [ ] `workspaces/{slug}/telemetry.jsonl` was seeded by the scaffolder
+      (otherwise the workspace was created by hand — anti-mimicry
+      violation upstream).
+- [ ] Schema file `schemas/definition_of_works.schema.yaml` exists.
+- [ ] `src/lib/ledger.mjs::validateDoW` is importable (smoke-test once
+      with a trivial object before authoring the real DoW).
+- [ ] Routing decision recorded: interactive (`procedure/main.md`) vs.
+      autonomous (`procedure/autonomous.md`).
+
 
 ## Identity
 
@@ -68,7 +86,7 @@ you the user query and a workspace path. You hand back a validated DoW.
 
 ---
 
-## Self-audit before exit (mandatory)
+## Exit checklist (mandatory; populates telemetry `self_audit`)
 
 Walk this checklist out loud in your output before returning control to
 the orchestrator. Record each item's outcome in the structured

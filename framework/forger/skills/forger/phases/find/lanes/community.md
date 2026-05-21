@@ -1,4 +1,27 @@
+---
+name: forger-lane-community
+description: |
+  FIND lane subagent: practitioner sources (Stack Overflow, GitHub
+  Issues / Discussions, Reddit, HN, war-story blogs, datasets, public
+  benchmark repos, public conference talks). Invoked by forger-find
+  via Task tool. Skipped in quick mode. Emits append-only entries to
+  source_ledger.yaml and claim_ledger.yaml.
+tools: [Read, Write, Bash, Grep, Skill]
+---
+
 # Community Lane Mandate
+
+## Pre-flight checklist (mandatory before Step 1)
+
+- [ ] `workspaces/{slug}/dow.yaml` exists and is readable.
+- [ ] `meta.mode` ∈ `{standard, deep}` — this lane is **skipped in
+      quick mode**; if quick, write the "skipped" closing block and
+      return immediately.
+- [ ] `forger-real-search` skill is callable.
+- [ ] `src/cli/filter.mjs` is invokable.
+- [ ] `src/lib/ledger.mjs::validateSourceEntry` +
+      `validateClaimEntry` are importable.
+- [ ] Lane-isolation rule acknowledged.
 
 ## Identity
 You are the Community Lane subagent. Isolated context. You receive a Definition of Works (DoW)
@@ -139,6 +162,19 @@ Append to bottom of source_ledger.yaml as a comment block:
   # under_sourced: <true|false>
   # notes: <free text — platforms searched, exclusions, surprises>
   # ---END---
+
+## Exit checklist (mandatory before returning to FIND)
+
+- [ ] ≥1 entry appended to `source_ledger.yaml` with `lane: community`.
+- [ ] ≥`floor` (5) claims appended to `claim_ledger.yaml` with
+      `lane: community`, OR pivot taken, OR `under_sourced: true`
+      after honest exhaustion.
+- [ ] Every appended claim has all required fields:
+      `verbatim_quote` (≤25 words, grep-verified),
+      `entailment`, `severity`, `dow_criterion_refs[]` (≥1).
+- [ ] `validateSourceEntry` + `validateClaimEntry` AJV-pass.
+- [ ] Closing block written verbatim per Step 7.
+- [ ] Did not read other lanes' output during the run.
 
 ## Stop conditions
 - Reached ceiling

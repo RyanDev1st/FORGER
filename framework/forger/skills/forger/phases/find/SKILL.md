@@ -7,7 +7,31 @@ description: |
   (community + production + edge, where "edge" is the user-facing name for
   the `frontier` lane). Outputs source_ledger.yaml, claim_ledger.yaml,
   find_summary.md.
+tools: [Read, Write, Bash, Grep, Glob, Task, Skill]
 ---
+
+## Pre-flight checklist (mandatory before step 1)
+
+Halt and surface the failing item to the orchestrator if any check
+fails. Do not silently substitute defaults.
+
+- [ ] `workspaces/{slug}/dow.yaml` exists and validates against the
+      DoW schema (`src/lib/ledger.mjs::validateDoW`).
+- [ ] `meta.mode` ∈ `{quick, standard, deep}` and
+      `meta.domain_slug` is set.
+- [ ] Mode YAML `skills/forger/modes/{mode}.yaml` loadable; `lanes`
+      list resolved.
+- [ ] Lane agents are registered for every lane in the list:
+      `forger-lane-production`, `forger-lane-community`,
+      `forger-lane-frontier` (deep only). If any required lane agent
+      is missing, HALT — do not fall back to file-injection.
+- [ ] `forger-real-search` skill is callable (lanes will invoke it).
+- [ ] Routing decision recorded: cold (`procedure/main.md`) vs.
+      KB-shortcut (`procedure/kb_shortcut.md`) vs.
+      re-entry (`procedure/re_entry.md`).
+- [ ] Concurrency budget understood: orchestrator + ≤3 lanes
+      (`Task` calls in a single turn).
+
 
 ## Identity
 
@@ -86,7 +110,7 @@ A FIND run is not complete until all four gates pass:
 
 ---
 
-## Self-audit before exit (mandatory)
+## Exit checklist (mandatory; populates telemetry `self_audit`)
 
 Walk this checklist out loud in your output before returning control to the
 orchestrator. The checklist is not a suggestion — partial-execution drift
@@ -111,8 +135,12 @@ return control until the checklist is clean.
 - `procedure/re_entry.md` — re-entry mode (load only when called by EXECUTE).
 - `refs/_index.yaml` — catalogue of calibration refs with trigger conditions.
 - `lanes/production.md`, `lanes/community.md`, `lanes/frontier.md` —
-  subagent-injected lane mandates. Documented as user-facing names:
-  production, community, **edge** (file: `frontier.md`).
+  registered agents (`forger-lane-production`,
+  `forger-lane-community`, `forger-lane-frontier`). Documented as
+  user-facing names: production, community, **edge** (file:
+  `frontier.md`). Invoked via Task tool with the matching
+  `subagent_type`. Mandate text lives in each file's body and
+  serves as the agent's system prompt — no runtime injection.
 - `skills/real_search/SKILL.md` — every page fetch routes through this
   skill (browser-driven `playwright-cli` + cloakbrowser + progressive
   read). Lanes never call `playwright-cli` directly.

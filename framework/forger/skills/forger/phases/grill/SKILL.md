@@ -6,7 +6,26 @@ description: |
   Executor resolves every open failure hypothesis. Deep mode runs an
   additional blind reviewer. Outputs failure_hypotheses.yaml +
   grill_report.md.
+tools: [Read, Write, Edit, Bash, Grep, Task]
 ---
+
+## Pre-flight checklist (mandatory before step 1)
+
+- [ ] `dow.yaml`, `source_ledger.yaml`, `claim_ledger.yaml`,
+      `risk_map.yaml`, `recombine.md` all present.
+- [ ] `recombine.md` has ≥1 Tier 1 idea with populated
+      `mechanism_fit_check` (otherwise reviewer has nothing to attack).
+- [ ] Mode flags resolved: `grill_required`,
+      `grill_blind_reviewer`, `grill_min_reviewer_tier`.
+- [ ] If `grill_required: false` (quick), record skip telemetry and
+      return immediately — do not run any reviewer.
+- [ ] `src/lib/reviewer_router.mjs::invokeReviewer` is importable and
+      a reviewer of `mode.grill_min_reviewer_tier` or better is
+      available (otherwise escalate, do not silently downgrade tier).
+- [ ] `src/gates/audit.mjs` runs cleanly on the current ledgers
+      *before* the reviewer is invoked (a flagged audit means the
+      reviewer would be attacking dirty evidence).
+
 
 ## Identity
 
@@ -93,7 +112,7 @@ RECOMBINE produced plus the mode config. You return a validated
 
 ---
 
-## Self-audit before exit (mandatory)
+## Exit checklist (mandatory; populates telemetry `self_audit`)
 
 Walk this checklist out loud and emit a structured `self_audit` field
 on the telemetry line. The `enforce_phase_self_audit.mjs` hook blocks

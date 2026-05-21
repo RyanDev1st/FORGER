@@ -1,9 +1,12 @@
 {
   "name": "forger",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Test-gated, execution-centric framework for grounded AI creativity.",
   "skills": [
     "./SKILL.md",
+    "./skills/real_search/SKILL.md"
+  ],
+  "agents": [
     "./skills/forger/phases/contract/SKILL.md",
     "./skills/forger/phases/find/SKILL.md",
     "./skills/forger/phases/observe/SKILL.md",
@@ -11,7 +14,9 @@
     "./skills/forger/phases/grill/SKILL.md",
     "./skills/forger/phases/execute/SKILL.md",
     "./skills/forger/phases/retain/SKILL.md",
-    "./skills/real_search/SKILL.md"
+    "./skills/forger/phases/find/lanes/production.md",
+    "./skills/forger/phases/find/lanes/community.md",
+    "./skills/forger/phases/find/lanes/frontier.md"
   ],
   "commands": [
     { "name": "forger", "description": "Run the FORGER pipeline on a task" },

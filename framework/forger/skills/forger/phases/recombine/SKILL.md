@@ -5,7 +5,23 @@ description: |
   and Tier 3 (transformational) ideas from verified mechanisms. Enforce
   the mechanism-fit test and Tier 2/3 firewall. Outputs recombine.md,
   optionally tier2_speculation.md and tier3_proposals.md.
+tools: [Read, Write, Edit, Bash, Grep, Glob]
 ---
+
+## Pre-flight checklist (mandatory before step 1)
+
+- [ ] `dow.yaml`, `source_ledger.yaml`, `claim_ledger.yaml`,
+      `risk_map.yaml`, `ground_truth_brief.md` all present.
+- [ ] `claim_ledger.yaml` contains ≥1 entry with
+      `entailment: directly_supported` (otherwise Tier 1 cannot be
+      anchored; halt and ask the orchestrator to re-run FIND).
+- [ ] Mode `recombine_tiers_allowed` resolved:
+      quick=[1], standard=[1,2], deep=[1,2,3].
+- [ ] `enforce_tier_firewall.mjs` PreToolUse hook is active for this
+      session (verify via writing a dummy non-Tier-2 string and
+      confirming no block). If hook absent, halt — Tier 2/3 work
+      cannot be safely produced without firewall protection.
+
 
 ## Identity
 
@@ -76,7 +92,7 @@ with a populated mechanism-fit block.
 
 ---
 
-## Self-audit before exit (mandatory)
+## Exit checklist (mandatory; populates telemetry `self_audit`)
 
 Walk this checklist out loud and emit a structured `self_audit` field
 on the telemetry line. The `enforce_phase_self_audit.mjs` hook blocks

@@ -85,29 +85,51 @@ collapses if you cheat on any of them. Treat each as non-negotiable.
 
 ## Bootstrap precondition (run before step 1)
 
-Before parsing the user's task description, verify that the phase
-skills are mechanically invokable in this session. You must do this
-once per `/forger` invocation, before scaffolding any workspace.
+Before parsing the user's task description, verify the framework is
+mechanically installed in this session. You must do this once per
+`/forger` invocation, before scaffolding any workspace.
 
-**Probe.** Inspect the current session's available-skills list (the
-`<system-reminder>` block listing skills) for the seven slugs above.
-If every slug is present, the framework is installed; proceed to
-step 1.
+**Probe.** Inspect the current session's available-agents list (the
+`<system-reminder>` block listing agent types for the Task tool).
+The framework registers each phase and each lane as an **agent**
+(via `manifest.json → agents[]`), not a skill — only the
+orchestrator (`forger`) and `forger-real-search` are skills.
 
-If **any** slug is missing, the framework is not installed in this
-session. HALT immediately with this message:
+Required agent slugs (in order):
+
+1. `forger-contract`
+2. `forger-find`
+3. `forger-observe`
+4. `forger-recombine`
+5. `forger-grill`
+6. `forger-execute`
+7. `forger-retain`
+8. `forger-lane-production`
+9. `forger-lane-community`
+10. `forger-lane-frontier`
+
+Required skill slugs:
+
+- `forger-real-search` (callable via Skill tool by FIND lanes and
+  OBSERVE/EXECUTE probes)
+
+If every required slug is present, the framework is installed;
+proceed to step 1.
+
+If **any** slug is missing, HALT immediately with this message:
 
 ```
 FORGER framework not installed in this session.
 
-Missing phase skills: <comma-separated slugs of missing phases>
+Missing agents: <comma-separated slugs of missing agents>
+Missing skills: <comma-separated slugs of missing skills>
 
 Install via your platform's plugin loader so the orchestrator can
-invoke each phase as an isolated subagent. See
-framework/forger/manifest.json for the skill list. The orchestrator
-is not permitted to substitute its own work for a missing phase;
-doing so produces ungrounded artifacts and silently bypasses every
-gate the framework relies on.
+invoke each phase and lane as an isolated subagent via the Task
+tool. See framework/forger/manifest.json for the registration list.
+The orchestrator is not permitted to substitute its own work for a
+missing phase or lane; doing so produces ungrounded artifacts and
+silently bypasses every gate the framework relies on.
 
 Status: aborted_phase_unavailable
 ```
@@ -125,17 +147,30 @@ itself into the pipeline.
 
 ---
 
-## Phase invocation mechanic
+## Phase invocation mechanic (Task tool, agents only)
 
 When the bootstrap precondition passes, you invoke each phase via the
-mechanism your platform exposes for isolated-context subagents. In
-Claude Code that is the **Task tool** with `subagent_type` set to the
-phase slug (or via the **Skill tool** if the platform routes phase
-skills through Skill — see `manifest.json`). You **do not** copy the
-phase's SKILL.md into your own context and follow it line-by-line:
-that erases the context isolation the architecture depends on.
+**Task tool** with `subagent_type` set to the phase slug. No other
+mechanism is sanctioned. Concretely:
 
-Every phase invocation passes:
+```
+Task({
+  subagent_type: "forger-contract",
+  description: "CONTRACT phase",
+  prompt: "Run the CONTRACT phase against workspace <path>.\n\n" +
+          "User query (verbatim): <query>\n\n" +
+          "Read your agent system prompt and follow it precisely. " +
+          "Append a telemetry line to <path>/telemetry.jsonl before " +
+          "returning. Return a short summary citing the files you wrote."
+})
+```
+
+You **do not** copy the phase's SKILL.md into your own context and
+follow it line-by-line: that erases the context isolation the
+architecture depends on and bypasses the
+`enforce_phase_self_audit.mjs` PreToolUse(Task|Skill) hook.
+
+Every phase invocation passes (in the `prompt`):
 
 - the workspace path (`workspaces/{slug}-{date}/`);
 - the verbatim user query (for CONTRACT only — downstream phases read
@@ -143,18 +178,58 @@ Every phase invocation passes:
 - the mode (read from `dow.yaml` after CONTRACT exits);
 - any phase-specific argument the procedure file calls for.
 
-Wait for the phase to return. Read the phase's chat summary. Then
-**verify on disk** that the phase wrote its required artifact files
+Wait for the Task to return. Read the agent's chat summary. Then
+**verify on disk** that the agent wrote its required artifact files
 (see "Phase exit waits" table below). Run the phase-exit gate
 command if one is listed; paste its exit code into chat. Append the
-phase's telemetry line to your running token total. Only then proceed
-to the next phase.
+phase's telemetry line to your running token total. Only then issue
+the next phase's Task call.
 
-The `enforce_phase_self_audit.mjs` PreToolUse(Task) hook fires before
-your *next* Task call and reads the last phase telemetry line; if the
-`self_audit` field is missing or contains `false`, the hook blocks
-the next phase. The hook is the structural enforcement; your own
-checks are the verification layer above it.
+The `enforce_phase_self_audit.mjs` PreToolUse(Task|Skill) hook fires
+before your *next* Task or Skill call and reads the last phase
+telemetry line; if the `self_audit` field is missing or contains
+`false`, the hook blocks the next phase. The hook is the structural
+enforcement; your own checks are the verification layer above it.
+
+**RETAIN exception.** RETAIN is the last phase. After it returns,
+there is no next Task call to trigger the hook on the RETAIN line.
+Treat RETAIN's exit checklist as the load-bearing structural check;
+the Stop hook (`enforce_done_means_ran.mjs`) catches any leftover
+completion violation.
+
+**Lane fan-out (inside FIND).** FIND is the only phase that fans out
+beyond a single subagent. FIND issues one Task call per active lane
+(`forger-lane-production`, `forger-lane-community`,
+`forger-lane-frontier`) in a single turn. The orchestrator does not
+spawn the lanes itself; FIND does. The orchestrator's concurrency
+budget (≤4 threads) bounds the fan-out: FIND counts as 1 thread, and
+its lanes count as 1-3 additional threads.
+
+---
+
+## Pre-flight checklist (mandatory before step 1 of `procedure/main.md`)
+
+Run after the bootstrap precondition passes, before parsing the user
+task. Halt if any check fails.
+
+- [ ] All 10 required agent slugs present (see Bootstrap section).
+- [ ] `forger-real-search` skill present.
+- [ ] `src/dev/new_workspace.mjs` is executable (`node --version`
+      reports ≥18; the scaffolder uses ES modules).
+- [ ] `src/gates/audit.mjs` and `src/gates/acceptance_test.mjs` are
+      executable.
+- [ ] `src/lib/ledger.mjs` exports `validateDoW`, `validateRiskMap`,
+      `validateFailureHypothesis`, `validateRetroNote`,
+      `validateSourceEntry`, `validateClaimEntry`.
+- [ ] Hook bundle registered (`src/hooks/settings.hooks.json` loaded
+      by the platform). Confirm:
+      `enforce_tier_firewall`, `enforce_phase_self_audit`,
+      `post_code`, `enforce_done_means_ran`.
+- [ ] Disk write permissions to `workspaces/` and
+      `knowledge/{domain}/`.
+- [ ] If the user query references `--resume <workspace>`, that
+      workspace exists with a non-empty `telemetry.jsonl`. Skip
+      scaffolding (step 2) and route to the first unfinished phase.
 
 ---
 
@@ -208,13 +283,15 @@ phase in order, unless the active mode YAML explicitly sets
    returns, before invoking the next). Pauses for user confirmation
    to continue or abandon.
 4. **Subagent-only files (do not read).** Lane mandate files
-   (`skills/forger/phases/find/lanes/*.md`) and the GRILL adversary
-   mandates (`skills/forger/phases/grill/refs/adversary_mandate.md`,
-   `blind_adversary_mandate.md`) exist for the phase skills to inject
-   into their own subagents at spawn time. Pulling them into the
-   orchestrator's context would pollute it and break the phase
-   boundary. If you find yourself wanting to read one, you are in the
-   wrong phase.
+   (`skills/forger/phases/find/lanes/*.md`) are now registered as
+   agents (`forger-lane-production` etc.); their bodies are the
+   subagent system prompts the platform supplies at spawn time. The
+   GRILL adversary mandates
+   (`skills/forger/phases/grill/refs/adversary_mandate.md`,
+   `blind_adversary_mandate.md`) are still passed through GRILL to
+   the reviewer subagent. Pulling either into the orchestrator's
+   context would pollute it and break the phase boundary. If you
+   find yourself wanting to read one, you are in the wrong phase.
 5. **Phase SKILL.md files (do not read into orchestrator context).**
    Each phase's own SKILL.md and procedure files belong to that
    phase. Reading them into the orchestrator's context erases the

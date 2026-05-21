@@ -5,7 +5,27 @@ description: |
   working architectures to the per-domain knowledge base. Trigger
   self-evolution (KB shortcut eligibility). Output retro_note.yaml;
   mutate knowledge/{domain}.
+tools: [Read, Write, Bash, Grep]
 ---
+
+## Pre-flight checklist (mandatory before step 1)
+
+- [ ] All prior-phase artifacts present: `dow.yaml`,
+      `source_ledger.yaml`, `claim_ledger.yaml`, `risk_map.yaml`,
+      `acceptance_results.jsonl`, `telemetry.jsonl`.
+- [ ] `acceptance_results.jsonl` is non-empty AND
+      `node src/gates/acceptance_test.mjs --workspace <path>` exits 0
+      (otherwise EXECUTE did not actually finish — halt and surface).
+- [ ] Orchestrator passed a final status string ∈
+      `{shipped, escalated, abandoned}`. Without it, RETAIN cannot
+      set KB counters correctly.
+- [ ] `knowledge/{dow.meta.domain_slug}/` directory exists or
+      `src/cli/update_kb.mjs` will create it; verify the script is
+      invokable.
+- [ ] `src/lib/ledger.mjs::validateRetroNote` smoke-tests on a
+      trivial object.
+- [ ] Schema `schemas/retro_note.schema.yaml` loads.
+
 
 ## Identity
 
@@ -92,13 +112,14 @@ procedure files. Always:
 
 ---
 
-## Self-audit before exit (mandatory)
+## Exit checklist (mandatory; populates telemetry `self_audit`)
 
 Walk this checklist out loud and emit a structured `self_audit` field
-on the telemetry line. The `enforce_phase_self_audit.mjs` hook blocks
-any next-phase work on missing or failed items (RETAIN is the last
-phase, but the hook still fires if the orchestrator turns into a
-follow-up task).
+on the telemetry line. RETAIN is the last phase, so the
+`enforce_phase_self_audit.mjs` PreToolUse(Task|Skill) hook may not
+fire after this run — the Stop hook
+(`enforce_done_means_ran.mjs`) is the final safety net. Treat the
+self-audit as the load-bearing structural check, not the hook.
 
 1. `validateRetroNote` returned `{ valid: true }`?
 2. `src/cli/update_kb.mjs --workspace <path>` exit code 0?

@@ -1,4 +1,28 @@
+---
+name: forger-lane-frontier
+description: |
+  FIND lane subagent: high-variance / contrarian sources (refutation
+  papers, contrarian essays, cross-domain analogues, outlier
+  benchmarks, debate threads). Runs only in deep mode; returns
+  immediately with a "mode-gated" closing block otherwise. Invoked
+  by forger-find via Task tool. Every claim sets
+  intended_use: tier2_seed.
+tools: [Read, Write, Bash, Grep, Skill]
+---
+
 # Frontier Lane Mandate
+
+## Pre-flight checklist (mandatory before Mode gate)
+
+- [ ] `workspaces/{slug}/dow.yaml` exists and is readable.
+- [ ] `meta.mode` checked. If `mode != deep`, skip everything below
+      and write the mode-gated closing block (see "Mode gate"
+      section), then return — do not run any search.
+- [ ] (Deep mode only) `forger-real-search` skill callable.
+- [ ] (Deep mode only) `src/cli/filter.mjs` invokable.
+- [ ] (Deep mode only) `src/lib/ledger.mjs::validateSourceEntry` +
+      `validateClaimEntry` importable.
+- [ ] Lane-isolation rule acknowledged.
 
 ## Mode gate (first line, read before doing anything else)
 
@@ -159,6 +183,24 @@ Append to bottom of source_ledger.yaml as a comment block:
   # notes: <free text — debates surfaced, contrarian framings considered,
   #         cross-disciplinary analogues found>
   # ---END---
+
+## Exit checklist (mandatory before returning to FIND)
+
+- [ ] If mode-gated (non-deep): exactly one closing block written,
+      `findings_count: 0`, `under_sourced: false`, no entries
+      appended. Return cleanly.
+- [ ] If deep: ≥`floor` (3) claims appended, OR pivot taken, OR
+      `under_sourced: true` after honest exhaustion.
+- [ ] Every appended claim sets `intended_use: tier2_seed` explicitly.
+- [ ] Every appended claim has `verbatim_quote` (≤25 words,
+      grep-verified), `entailment`, `severity`, `dow_criterion_refs[]`.
+- [ ] `validateSourceEntry` + `validateClaimEntry` AJV-pass on every
+      new entry.
+- [ ] Closing block written verbatim per Step 7.
+- [ ] Did not read other lanes' output during the run.
+- [ ] Bigram-overlap with mainstream consensus claims acknowledged
+      as the audit gate's concern — frontier claims that restate the
+      mainstream do not belong in this lane.
 
 ## Stop conditions
 - Reached ceiling (10)
