@@ -26,6 +26,7 @@ describe('config', () => {
   it('getConfig assembles config from a workspace path', () => {
     const cfg = getConfig({ workspacePath: '/tmp/ws-fake', mode: 'standard' });
     expect(cfg.mode.lanes).toEqual(['production', 'community']);
-    expect(cfg.pluginRoot).toMatch(/forger$/);
+    expect(cfg.pluginRoot).toBe(path.resolve(here, '..', '..'));
+    expect(cfg.schemaPaths.dow).toBe(path.join(cfg.pluginRoot, 'schemas', 'definition_of_works.schema.yaml'));
   });
 });

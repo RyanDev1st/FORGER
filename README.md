@@ -123,15 +123,24 @@ Most agents just take your prompt and start guessing. FORGER acts more like a pa
 Prerequisites: [Node.js](https://nodejs.org/) v20+ · [Python](https://www.python.org/) 3.10+ · [Playwright](https://playwright.dev/)
 
 ```bash
-# 1. Install the framework globally
-npm install -g forger-framework
+# 1. Install deps
+npm install
 
-# 2. Navigate to your workspace
-cd my-project
+# 2. Preview Claude Code hook install
+npm run install:plugin -- --dry-run
 
-# 3. Initialize & Deploy FORGER
-forger init --mode standard
+# 3. Install plugin into Claude Code
+npm run install:plugin
+
+# 4. Optional browser setup
+npm run setup:browser
 ```
+
+### Install notes
+
+- Plugin installs into `~/.claude/plugins/forger`
+- Hook settings merge into `~/.claude/settings.json`
+- Marketplace listing is separate from local install; submit source through Anthropic's plugin directory flow after the repo is public
 
 ### Work Modes
 
