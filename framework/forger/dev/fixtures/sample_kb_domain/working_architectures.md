@@ -1,1 +1,0 @@
-# Working architectures for sample

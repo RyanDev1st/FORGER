@@ -1,9 +1,0 @@
-- id: clm-a
-  source_id: src-a
-  lane: production
-  claim_text: 'X holds.'
-  verbatim_quote: 'X holds for all valid inputs.'
-  severity: high
-  dow_criterion_refs: [sc-m-1]
-  entailment: directly_supported
-  status: verified
