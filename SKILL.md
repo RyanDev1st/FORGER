@@ -126,7 +126,7 @@ Missing skills: <comma-separated slugs of missing skills>
 
 Install via your platform's plugin loader so the orchestrator can
 invoke each phase and lane as an isolated subagent via the Task
-tool. See framework/forger/manifest.json for the registration list.
+tool. See manifest.json for the registration list.
 The orchestrator is not permitted to substitute its own work for a
 missing phase or lane; doing so produces ungrounded artifacts and
 silently bypasses every gate the framework relies on.
