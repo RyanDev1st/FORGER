@@ -1,48 +1,7 @@
-# This repository root is a local development workspace.
-# Current workspace files stay local-only, but new unlisted folders/files can be
-# added later with: git add . && git commit && git push origin main
-
-# Secrets and environment files
-.env
-.env.*
-
-# Dependencies and package-manager output
 node_modules/
-.node_modules/
-__pycache__/
-.pytest_cache/
-.ruff_cache/
-.mypy_cache/
-.cache/
-dist/
-build/
-
-# Playwright/local browser output
-.playwright/
-.playwright-cli/
-playwright/
-
-# Agent/local assistant state
-.claude/
-CLAUDE.md
-claude.md
-
-# Current development workspace contents
-ARCHITECTURE.md
-LICENSE
-ruvector.db
-data/
-examples/
-FORGER/
-FORGER framework/
-framework/
-IPBC/
-results/
-reTruth/
-
-# OS/editor noise
-.DS_Store
-Thumbs.db
-*.tmp
-*.temp
-*.log
+.env
+.env.local
+workspaces/
+**/probe-sandbox/
+**/.retry-*
+**/hook_log.jsonl

@@ -1,0 +1,12 @@
+domain_slug: sample
+created_at: '2026-05-19T00:00:00Z'
+last_updated_at: '2026-05-19T00:00:00Z'
+tasks_completed: 3
+tasks_shipped: 3
+tasks_escalated: 0
+tasks_abandoned: 0
+shortcut_eligible: true
+shortcut_coverage: 0.85
+default_ttl_days: 90
+known_sources: [src-a, src-b]
+known_failure_patterns: []

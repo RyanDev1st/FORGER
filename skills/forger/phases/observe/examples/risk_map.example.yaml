@@ -1,0 +1,122 @@
+# schema: ../../../schemas/risk_map.schema.yaml
+# Worked example: a risk_map.yaml after a standard-mode OBSERVE run on the
+# same Node.js streaming DoW used by the FIND examples. Five assumptions
+# span every severity level. Pairings respect the OBSERVE gates:
+#   - high / critical → probed_ok (probes ran via src/cli/probe.mjs)
+#   - trivial / low / medium → verified (cleared by ledger reasoning)
+# All evidence_refs point to plausible clm-* ids carried over from
+# claim_ledger.example.yaml; mechanism source_refs point to src-* ids from
+# source_ledger.example.yaml.
+
+mechanisms:
+  - id: mech-pipeline-error-propagation
+    name: 'stream.pipeline forwards errors to the final callback'
+    description: |
+      Errors raised by any stream in a stream.pipeline chain are surfaced
+      to the chain's final callback, removing the need for per-stage
+      error listeners and eliminating the silent-error failure mode.
+    source_refs: [src-node-stream-docs, src-so-stream-pipeline-error]
+
+  - id: mech-automatic-backpressure
+    name: 'pipe() honours backpressure automatically'
+    description: |
+      A Readable pauses automatically once its downstream Writable returns
+      false from .write(), so callers using pipe() or pipeline() inherit
+      backpressure without writing custom flow-control code.
+    source_refs: [src-node-stream-backpressure-guide]
+
+  - id: mech-destroyed-writable-leak
+    name: 'Writing to a destroyed Writable can leak memory'
+    description: |
+      Pipelines whose Writable destination was destroyed mid-flight retain
+      buffered chunks until process exit, producing a slow memory growth
+      under repeated short-lived connections.
+    source_refs: [src-gh-issue-stream-leak]
+
+known_failure_modes:
+  - id: fm-silent-pipeline-error
+    description: 'Errors swallowed because no final callback was wired'
+    conditions: |
+      stream.pipeline invoked without a callback argument under default
+      Node.js settings; an upstream error fires, the chain rejects, the
+      process crashes or the request hangs depending on caller wiring.
+    detection_method: |
+      Integration test that pipes a Readable which always errors and
+      asserts the orchestrating handler observes the error path.
+
+  - id: fm-throughput-regression
+    description: 'Sustained-throughput drop below the DoW threshold'
+    conditions: |
+      A new transform stream is inserted that does synchronous work on
+      every chunk, or a downstream Writable does blocking I/O without
+      yielding to the event loop.
+    detection_method: |
+      Continuous benchmark that records p95 throughput per release; alert
+      when the moving average drops more than 10% from the prior release.
+
+  - id: fm-malformed-markdown-output
+    description: 'Output passes our formatter but fails CommonMark parse'
+    conditions: |
+      Edge inputs (e.g., nested fenced code with mismatched fence
+      lengths) trigger a formatter branch that emits non-conforming
+      markup.
+    detection_method: |
+      The hc-3 CommonMark parse check on every fixture; CI fails on any
+      parse error.
+
+assumptions:
+  - id: asm-pipeline-callback-mandatory
+    description: |
+      We assume stream.pipeline behaves identically in our target Node.js
+      LTS as documented — errors flow to the final callback and the chain
+      tears down cleanly. If this is wrong the silent-error failure mode
+      (fm-silent-pipeline-error) reappears.
+    severity: critical
+    evidence_refs: [clm-pipeline-error-propagation, clm-pipeline-error-handler-required]
+    resolution_required: source+probe+acceptance_test
+    status: probed_ok
+    probe_id: pr-a1b2c3d4
+
+  - id: asm-destroyed-writable-leak-magnitude
+    description: |
+      We assume the destroyed-writable leak reported in community issues
+      grows at a rate that our long-running benchmark can detect within
+      one minute under our planned load. If the leak is slower than that,
+      our regression canary will miss it.
+    severity: high
+    evidence_refs: [clm-destroyed-writable-leak]
+    resolution_required: source+probe
+    status: probed_ok
+    probe_id: pr-e5f6a7b8
+
+  - id: asm-streams-state-machine-tooling
+    description: |
+      We assume that the contrarian framing — "Node streams need
+      dedicated tooling to reason about" — does not block our artifact,
+      because our pipeline is shallow (three stages) and the team has
+      already used pipeline() in adjacent services.
+    severity: medium
+    evidence_refs: [clm-stream-state-machine-debate]
+    resolution_required: source+reasoning
+    status: verified
+
+  - id: asm-undici-pattern-transferable
+    description: |
+      We assume the await-drain-before-resolve pattern used in the undici
+      PR transfers to our wrapper because our wrapper is also a
+      promise-around-stream. The pattern is captured in the design notes
+      for RECOMBINE.
+    severity: low
+    evidence_refs: [clm-undici-pipeline-fix]
+    resolution_required: source
+    status: verified
+
+  - id: asm-readable-default-encoding
+    description: |
+      We assume Readable streams return Buffer objects unless setEncoding
+      is called — definitional in the Node.js docs and uncontested in the
+      ledger.
+    severity: trivial
+    evidence_refs: [clm-stream-encoding-default]
+    resolution_required: none
+    status: verified

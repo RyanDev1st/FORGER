@@ -1,0 +1,44 @@
+# RETAIN refs router — load-on-demand catalogue.
+#
+# Phase SKILL.md and procedure files point here before reading any ref.
+# Load only entries whose `triggers` match the current situation.
+
+refs:
+  - file: kb_write_rules.md
+    summary: Qualification rules for proven claims, failed assumptions, and working architectures; how each maps to a check inside update_kb.mjs.
+    load_when: >
+      You are at step 2 of `procedure/main.md` and unsure whether a
+      claim qualifies as proven (`status ∈ {verified, probed_ok}` is
+      necessary but not sufficient — must also be referenced by a
+      passing acceptance criterion). Also load when computing
+      `working_architecture_ref` and unsure whether a doc qualifies.
+    triggers: [step_2_proven_claims, working_architecture_question, kb_write_unclear]
+    worked_examples:
+      - "Claim has status `verified` and was used by RECOMBINE but no acceptance criterion exercised it directly. Proven? — load (probably no)."
+      - "Workspace has both an `architecture.md` and a `diagrams/` folder. Which is the `working_architecture_ref`? — load for the disambiguation rule."
+      - "Failed assumption was probed_fail but EXECUTE worked around it without changing the artifact. Still 'failed' for the KB? — load."
+
+  - file: ttl_defaults.md
+    summary: Default TTL (90 days), suggested overrides per claim category (fast-moving lib 30d, algorithmic 365d, internal docs 180d), worked example of three overrides.
+    load_when: >
+      You are at step 5 of `procedure/main.md` and a claim's source
+      is one of the override categories (fast-moving lib, algorithmic
+      constant, internal docs), OR a claim's source has a
+      domain-specific volatility you cannot map to the defaults.
+    triggers: [step_5_ttl_overrides, claim_source_special_volatility]
+    worked_examples:
+      - "Claim cites the OpenAI API docs (changes monthly). Override needed — load to confirm the suggested 30d and the reason format."
+      - "Claim cites a published cryptography paper from 2018. Override needed (math doesn't expire)? — load."
+
+  - file: shortcut_eligibility.md
+    summary: How a domain becomes shortcut-eligible (3 consecutive `shipped`), how a single failure breaks the streak (symmetric reset), and how the flag interacts with the last-3 status check inside update_kb.mjs.
+    load_when: >
+      You are looking at the current `shortcut_eligible` value in
+      the domain `index.yaml` and trying to predict what the KB
+      writer will set it to. Especially useful when this task is
+      `escalated` or `abandoned` and you want to confirm the streak
+      will reset.
+    triggers: [shortcut_eligibility_prediction, status_non_shipped, streak_check]
+    worked_examples:
+      - "Domain has tasks_shipped=8 and `shortcut_eligible: true`. This task escalated. Flag flips to false? — load to confirm."
+      - "Domain has tasks_shipped=2 (no `shortcut_eligible: true` yet). This task ships. Does the flag flip now or after the next? — load."

@@ -1,0 +1,42 @@
+$schema: 'http://json-schema.org/draft-07/schema#'
+$id: 'forger://schemas/source_ledger_entry'
+type: object
+required: [id, url, lane, accessed_at, ttl_days, quality_scores]
+properties:
+  id:          { type: string, pattern: '^src-[a-z0-9-]+$' }
+  url:         { type: string, format: uri }
+  title:       { type: string }
+  lane:        { enum: [production, community, frontier] }
+  accessed_at: { type: string, format: 'date-time' }
+  ttl_days:    { type: integer, minimum: 1, default: 90 }
+  expires_at:  { type: string, format: 'date-time' }
+  quality_scores:
+    type: object
+    additionalProperties: false
+    required:
+      - authority
+      - recency
+      - reproducibility
+      - implementation_relevance
+      - independence
+      - conflict_of_interest
+    properties:
+      authority:                { type: integer, minimum: 0, maximum: 5 }
+      recency:                  { type: integer, minimum: 0, maximum: 5 }
+      reproducibility:          { type: integer, minimum: 0, maximum: 5 }
+      implementation_relevance: { type: integer, minimum: 0, maximum: 5 }
+      independence:             { type: integer, minimum: 0, maximum: 5 }
+      conflict_of_interest:     { type: integer, minimum: 0, maximum: 5 }
+  composite_score: { type: number, minimum: 0, maximum: 5 }
+  flags:
+    type: array
+    items:
+      enum:
+        - link-dead
+        - quote-not-found
+        - redundant-with-other-lane
+        - domain-blocked
+        - paywall
+        - orphan-claim
+  notes: { type: string }
+  re_entry: { type: integer, minimum: 1 }

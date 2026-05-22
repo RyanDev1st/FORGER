@@ -1,178 +1,341 @@
-<div align="center">
-  <img src="https://via.placeholder.com/120x120/000000/FFFFFF?text=F" alt="FORGER Logo" width="120" />
-</div>
-
 <h1 align="center">FORGER v2</h1>
 
 <p align="center">
-  <strong>A Test-Gated, Execution-Centric Framework for Grounded AI Creativity.</strong>
-</p>
-
-<h2 align="center">COMING-SOON</h2>
-
-<p align="center">
-  <a href="#-the-problem-the-paradox"><img src="https://img.shields.io/badge/Paradox-Solved-000000?style=for-the-badge" alt="Paradox Solved" /></a>
-  <a href="#-architecture"><img src="https://img.shields.io/badge/Architecture-7_Phase-000000?style=for-the-badge" alt="Architecture" /></a>
-  <a href="#quick-start"><img src="https://img.shields.io/badge/License-MIT-000000?style=for-the-badge" alt="License" /></a>
-  <a href="#community"><img src="https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=for-the-badge&logo=discord" alt="Discord" /></a>
+  <strong>An execution-gated framework that forces AI to ground its work in reality before it ships anything.</strong>
 </p>
 
 <p align="center">
-  <em>We've all been there. You ask an AI to design a system. It pings its built-in web search, scrapes a two-sentence summary, and hallucinates the rest. It hands you a beautiful architecture complete with citations. Then you try to actually build it. The concepts don't fit together, and half the APIs it cited were deprecated three years ago. You just wasted three days chasing a ghost because the AI built a sandcastle in its head.</em>
+  <a href="#what-forger-is">What it is</a> ·
+  <a href="#how-it-works">How it works</a> ·
+  <a href="#the-execute-pipeline">EXECUTE</a> ·
+  <a href="#demos">Demos</a> ·
+  <a href="#quickstart">Quickstart</a> ·
+  <a href="docs/README.md">Full docs</a>
 </p>
 
----
+<p align="center">
+  <img src="https://img.shields.io/badge/Pipeline-7_Phase-000000?style=for-the-badge" alt="7-Phase Pipeline" />
+  <img src="https://img.shields.io/badge/Done_Means-Ran-000000?style=for-the-badge" alt="Done Means Ran" />
+  <img src="https://img.shields.io/badge/Cross_Model-Review-000000?style=for-the-badge" alt="Cross Model Review" />
+  <img src="https://img.shields.io/badge/License-MIT-000000?style=for-the-badge" alt="License" />
+</p>
 
-## ⚡ The Problem: Toy Search and the Coherence Paradox
-
-Researchers call this the **Bidirectional Coherence Paradox** (Chacón Sartori, 2026). Just because an AI explains an idea logically doesn't mean that idea survives contact with the physical world.
-
-**AI cannot trust its training data.** Knowledge drifts. The world moves on. But relying on built-in AI web search doesn't fix the problem. Standard AI search tools are heavily constrained toys. They get blocked by Cloudflare, they trip over JavaScript-heavy sites, and they summarize snippets instead of reading actual source code.
-
-We built **FORGER** to rip that out.
-
-FORGER forces the AI to use `playwright-cli` and `cloakbrowser`. It doesn't query a sanitized search API. It opens a real, stealth browser. It navigates to the actual documentation. It bypasses bot protections, reads the full DOM, and extracts the unvarnished truth. It hits reality before it writes a single line of production code.
+> Status: pre-release. The architecture is locked. Public packaging is being rebuilt against the Claude Code plugin layout (see [FORGER_FLAWS.md](framework/FORGER_FLAWS.md) for the open list).
 
 ---
 
-## 💎 The Philosophy: Grounded Creativity
+## The problem in one paragraph
 
-FORGER isn't just a coding bot. It is a framework for **general research and ideation**.
+You ask an AI to design a system. It scrapes a snippet, fills the gaps from memory, and writes a beautiful architecture with citations. The APIs were renamed two years ago. The benchmarks were retracted. Three days later you are still chasing a hallucination wrapped in confidence. The output passed every soft review because it was internally coherent. It just did not match the world.
 
-Most AI frameworks drift too far and rely on broken ideation models. Ask a standard agent to build a facial emotion recognition system, and it doesn't ground itself in working projects. It hallucinates architectures and gives you a confident fantasy. You try to build it, and it fails.
-
-**AI cannot do creative work purely from trained knowledge.**
-
-Think about how humans create. We don't pull ideas from the void. A mathematician learns calculus from textbooks. She grinds through hundreds of proofs. She reads Euler and Gauss. Only after years of absorbing, practicing, and internalizing does she write original theorems. She masters the concepts, and then adds her own spin.
-
-FORGER forces an AI to do the exact same thing. It makes the agent act like a strict human researcher: **Open a real browser. Find real work. Study it. Master the pieces. Then, and only then, innovate.**
-
-Evaluating these agents takes three criteria. Every FORGER gate enforces the Epistemic Triangle (Chacón Sartori, 2026):
-
-1. 🧩 **Coherence:** Does the idea actually hold together logically?
-2. 🌍 **Grounding:** Does it match physical reality? (Tested via stealth browsers and runtime probes)
-3. 🔗 **Proper Basing:** Does the explanation link to the final action? (*Done Means Ran*)
-
-Creativity is combination, not magic. Inspiration has to come from the real world.
+FORGER exists to stop that specific failure mode. It is a harness around the agent, not a smarter agent. The harness blocks completion until the work has touched the real internet, survived an adversarial reviewer from a different model family, and actually run.
 
 ---
 
-## 🏗 Architecture
+## What FORGER is
 
-FORGER uses a deterministic harness with a Belief-Desire-Intention (BDI) split. **The harness is the product.**
+FORGER is a seven-phase pipeline that runs on top of an LLM agent (currently Claude Code; the plugin layout is portable). Each phase has a deterministic gate. You cannot skip phases. You cannot self-grade. The only way to get an artifact out of FORGER is to satisfy every gate.
+
+The three things FORGER guarantees on a successful run:
+
+| Guarantee | Mechanism |
+| --- | --- |
+| **Grounded** in live sources | `playwright-cli` + `cloakbrowser` open real pages; no search-API snippets |
+| **Reviewed** by an outsider | The GRILL phase invokes a model from a different family that tries to break the proposal |
+| **Ran** | EXECUTE refuses to mark the task done until the artifact has been executed and acceptance tests pass |
+
+The three things FORGER explicitly is **not**:
+
+- A correctness oracle. It catches the failure modes it is built for. It will not catch every bug.
+- A creativity suppressor. Speculative ideas are allowed; they live in a separate tier and cannot reach production without explicit promotion.
+- A lightweight wrapper for trivial tasks. Use `forger init --mode quick` for those, or skip the framework entirely.
+
+---
+
+## Why use it
+
+If any of these sound familiar, FORGER is meant for you:
+
+- You have asked an agent to build something non-trivial and watched it ship a hallucinated architecture.
+- You spend more time verifying agent output than you would have spent writing the code.
+- You want to run agents overnight and trust the artifact in the morning.
+- You are doing research synthesis and need every claim to trace to a real source.
+
+If you are pair-programming small refactors with an agent, FORGER is overkill. Use it when the cost of being subtly wrong is higher than the cost of running a longer pipeline.
+
+---
+
+## How it works
 
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────┐
-│                          FORGER v2 ARCHITECTURE                                 │
-│                                                                                 │
-│                         ┌─────────────────────┐                                 │
-│                         │   DEFINITION OF     │                                 │
-│                         │      WORKS          │                                 │
-│                         │  (Single Source     │                                 │
-│                         │    of Truth)        │                                 │
-│                         └──────────┬──────────┘                                 │
-│                                    │                                            │
-│  ┌──────────┐  ┌──────────┐  ┌────┴─────┐  ┌──────────┐  ┌──────────┐         │
+│                            FORGER v2 PIPELINE                                  │
+│                                                                                │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐         │
 │  │ CONTRACT │─▶│   FIND   │─▶│ OBSERVE  │─▶│RECOMBINE │─▶│  GRILL   │         │
-│  │  Clarify │  │  Ground  │  │Internalize│  │  Create  │  │ Falsify  │         │
-│  │  Intent  │  │ (Source  │  │ & Probe   │  │ (Tiered  │  │ (Cross-  │         │
-│  │(Socratic)│  │ Ledger)  │  │(Risk Map) │  │Blending) │  │  Model)  │         │
+│  │ Clarify  │  │  Ground  │  │ Internal │  │  Tiered  │  │  Cross-  │         │
+│  │ intent   │  │  in live │  │ probes,  │  │ blending │  │  model   │         │
+│  │ Socratic │  │  sources │  │ risk map │  │ + firewall│ │ attack  │         │
 │  └──────────┘  └──────────┘  └──────────┘  └─────┬────┘  └─────┬────┘         │
-│                                                   │              │             │
-│                   ┌───────────────────────────────┘              │             │
-│                   ▼                                              ▼             │
-│  ┌──────────┐  ┌──────────┐                              (gate: pass)          │
-│  │ RETAIN   │◀─┤ EXECUTE  │◀─────────────────────────────────┘                 │
-│  │ Persist  │  │Build/Test│                                                     │
-│  │Knowledge │  │  Prove   │                                                     │
-│  └──────────┘  └──────────┘                                                     │
-│                                                                                 │
-│  ════════════════════════════════════════════════════════════════════════════   │
-│  EPISTEMIC TRIANGLE (Chacón Sartori, 2026):                                     │
-│  • Coherence: Does the explanation hold together logically?                     │
-│  • Grounding: Does it correspond to physical reality (live sources + probes)?   │
-│  • Proper Basing: Does the explanation actually link to the action taken?       │
-│                                                                                 │
-│  ARCHITECTURAL INVARIANTS:                                                       │
-│  • Done Means Ran              • No claim without evidence or label              │
-│  • Test critical, skip trivial  • Tier 2/3 cannot leak into execution            │
-│  • Cross-model review           • Knowledge self-evolves                         │
-└──────────────────────────────────────────────────────────────────────────────────┘
+│                                                  │              │             │
+│                   ┌──────────────────────────────┘              │             │
+│                   ▼                                             ▼             │
+│  ┌──────────┐  ┌──────────┐                            (gate: hypotheses     │
+│  │ RETAIN   │◀─┤ EXECUTE  │◀──────────────────────────  resolved)            │
+│  │ Persist  │  │ Build →  │                                                   │
+│  │ wins +   │  │ Run →    │                                                   │
+│  │ failures │  │ Prove    │                                                   │
+│  └──────────┘  └──────────┘                                                   │
+│                                                                                │
+│   Single Source of Truth: Definition of Works (YAML, produced in CONTRACT)    │
+└──────────────────────────────────────────────────────────────────────────────┘
 ```
 
----
+Each phase resolves one question:
 
-## ⚙️ The 7-Phase Pipeline
+| Phase | The question it answers |
+| --- | --- |
+| **0. CONTRACT** | What are we actually building, and how will we know it works? |
+| **1. FIND** | What does the world already know about this, in writing, today? |
+| **2. OBSERVE** | Which of our beliefs survive a real test? |
+| **3. RECOMBINE** | What is the best idea we can assemble from verified parts? |
+| **4. GRILL** | Why might this idea be wrong? Can another model break it? |
+| **5. EXECUTE** | Does the artifact actually run and pass the acceptance suite? |
+| **6. RETAIN** | What did we learn that future runs in this domain can skip? |
 
-Most agents just take your prompt and start guessing. FORGER acts more like a paranoid senior engineer. You don't get to skip steps.
-
-| Phase | Action | Operation |
-| :--- | :--- | :--- |
-| **0. CONTRACT** | **Clarify Intent** | The agent questions the request. It detects vagueness, asks Socratic questions, and locks down a hard `Definition of Works`. |
-| **1. FIND** | **Ground Reality** | **No API search.** The agent opens `cloakbrowser` via Playwright. It reads full GitHub issues, renders JS docs, and builds a Source Ledger. |
-| **2. OBSERVE** | **Probe Assumptions** | Internalizes the mechanics. Builds Risk Maps. It writes and runs tiny scripts (**probes**) to falsify the riskiest assumptions. |
-| **3. RECOMBINE** | **Tiered Sandbox** | Synthesizes answers from validated parts. Highly speculative ideas get firewalled into "Tier 2/3" files so they don't break the build. |
-| **4. GRILL** | **Falsification Review**| A **Blind Cross-Model Adversary** (a completely different model family) attacks the proposal to break its logic. |
-| **5. EXECUTE** | **Build & Prove** | Micro-cycles of TDD execution. Enforces the golden rule: **Done Means Ran**. If it doesn't pass the tests, it isn't done. |
-| **6. RETAIN** | **Persist Knowledge** | Stores verified architectures and explicitly remembers failures. Next time around, it skips the slow parts and runs 60% faster. |
+For the full philosophy and per-phase reference, see [docs/02-how-it-works.md](docs/02-how-it-works.md) and [docs/03-phases.md](docs/03-phases.md).
 
 ---
 
-## 🚀 Quickstart
+## The EXECUTE pipeline
 
-Prerequisites: [Node.js](https://nodejs.org/) v20+ · [Python](https://www.python.org/) 3.10+ · [Playwright](https://playwright.dev/)
+EXECUTE is the phase that fails the most and matters the most. It runs its own micro-loop, separate from the outer pipeline. Most agents skip this loop entirely and announce success after writing code that compiled.
+
+```text
+┌────────────────────────────────────────────────────────────────────────────┐
+│                       EXECUTE PHASE (Phase 5)                              │
+│                                                                            │
+│   Enter with: validated Tier-1 proposal + Definition of Works + tests      │
+│                                                                            │
+│            ┌─────────────────────┐                                         │
+│            │  Acceptance Suite   │  ← compiled from Definition of Works    │
+│            │  (auto-generated +  │     in CONTRACT                         │
+│            │   hand-curated)     │                                         │
+│            └──────────┬──────────┘                                         │
+│                       │                                                    │
+│                       ▼                                                    │
+│        ┌────────────────────────────┐                                      │
+│        │   TDD MICRO-CYCLE (loop)   │                                      │
+│        └────────────┬───────────────┘                                      │
+│                     │                                                      │
+│                     ▼                                                      │
+│           ┌──────────────────┐                                             │
+│   ┌──────▶│ 1. Write failing │                                             │
+│   │       │    test          │                                             │
+│   │       └────────┬─────────┘                                             │
+│   │                ▼                                                       │
+│   │       ┌──────────────────┐                                             │
+│   │       │ 2. Write minimal │                                             │
+│   │       │    code to pass  │                                             │
+│   │       └────────┬─────────┘                                             │
+│   │                ▼                                                       │
+│   │       ┌──────────────────┐    fail (≤2)                                │
+│   │       │ 3. Run tests +   │────────────────┐                            │
+│   │       │    linter        │                │                            │
+│   │       └────────┬─────────┘                ▼                            │
+│   │                │ pass             ┌───────────────┐                    │
+│   │                │                  │ Patch + retry │                    │
+│   │                ▼                  └───────┬───────┘                    │
+│   │       ┌──────────────────┐                │                            │
+│   │       │ 4. Summarise     │                │                            │
+│   │       │    delta to log  │                │                            │
+│   │       └────────┬─────────┘                ▼                            │
+│   │                ▼                  fail again (≥3)                      │
+│   │       ┌──────────────────┐        ┌────────────────────┐               │
+│   └───────│ next behaviour?  │  yes   │ Web-search exact   │               │
+│           │ continue cycle   │        │ error → fix → retry│               │
+│           └────────┬─────────┘        └─────────┬──────────┘               │
+│                    │ no                         │                          │
+│                    ▼                            ▼                          │
+│           ┌────────────────────┐         still failing?                    │
+│           │ Run full           │         ┌──────────────┐                  │
+│           │ acceptance suite   │         │  ESCALATE    │                  │
+│           └─────────┬──────────┘         │  → human or  │                  │
+│                     │                    │    abort     │                  │
+│           pass      │      fail          └──────────────┘                  │
+│        ┌────────────┴────────────┐                                         │
+│        ▼                         ▼                                         │
+│  ┌────────────┐          ┌─────────────────┐                               │
+│  │ DONE       │          │ Re-enter        │                               │
+│  │ MEANS RAN  │          │ TDD micro-cycle │                               │
+│  │ → RETAIN   │          │ with failure as │                               │
+│  └────────────┘          │ next test       │                               │
+│                          └─────────────────┘                               │
+│                                                                            │
+│   Invariants enforced here:                                                │
+│   • No "complete" claim without a green acceptance suite                   │
+│   • No silent skip of failing tests                                        │
+│   • Tier-2/3 ideas blocked from this loop unless promoted                  │
+└────────────────────────────────────────────────────────────────────────────┘
+```
+
+Two rules govern this loop:
+
+1. **Done Means Ran.** The artifact must have executed and passed acceptance, or the agent must document why execution was impossible. "I'm confident it works" is not a valid exit.
+2. **Failures become tests.** Every test failure that gets fixed leaves behind a regression test. The acceptance suite grows during EXECUTE; it never shrinks.
+
+For research and design artifacts the loop is the same, but the acceptance criteria differ. A research report passes EXECUTE when every claim is ledger-verified with `directly_supported` entailment. A design passes when the rubric is satisfied and screenshots match the spec.
+
+---
+
+## Demos
+
+Four short walkthroughs are in [docs/04-examples.md](docs/04-examples.md). Quick previews below.
+
+### CONTRACT — turning a vague ask into a contract
+
+**You type:**
+> "Build me an emotion recognition thing for my app."
+
+**FORGER asks back:**
+> 1. What runs the inference: device, server, or both?
+> 2. Real-time video, single images, or audio?
+> 3. Which emotions, and what counts as right?
+> 4. What is the worst acceptable latency at p95?
+> 5. Is "good" measured against FER+, AffectNet, or your own labels?
+
+**You answer in one paragraph.** FORGER writes a `definition_of_works.yaml` with measurable acceptance criteria and a reframe memo that asks whether you actually need deep learning or whether facial-action-unit detection would do. The reframe is recorded even if you stick with the original framing.
+
+### FIND — what real grounding looks like
+
+Instead of a search API summary, FIND opens GitHub Issues, scrolls JS-rendered docs, follows code references, and produces:
+
+```yaml
+- url: https://github.com/serengil/deepface/issues/1207
+  domain: github.com
+  authority: high                 # repo with active CI, named maintainers
+  recency: 2025-11               # within TTL for ML libs
+  reproducibility: verified       # repro steps in the issue
+  quote: "FER backend returns logits, not softmaxed probabilities."
+  severity_for_dow: critical      # contradicts assumption in CONTRACT
+  entailment: directly_supported
+```
+
+Every claim ties back to one of the rows in the Source Ledger. Anything `weakly_supported` cannot be load-bearing in EXECUTE.
+
+### GRILL — the adversary tries to kill it
+
+The proposal goes to a reviewer in a different model family. It does not score. It hunts.
+
+```text
+FAILURE HYPOTHESIS #2
+  claim: "MobileNetV3 small fits in <100ms on Pixel 7"
+  what would make it fail: thermal throttling under sustained video at 30fps
+  evidence required: 5-minute sustained run on Pixel 7 with thermal logging
+  severity if wrong: critical (kills latency invariant in DoW)
+  confidence: medium-high
+```
+
+EXECUTE cannot proceed until every open failure hypothesis is either accepted (with a test added), rejected (with counter-evidence from the Source Ledger), or escalated.
+
+### EXECUTE — the loop in motion
+
+```text
+[cycle 1] test: model loads in <2s on cold start → FAIL (load = 4.3s)
+[cycle 1] fix:  switch to TFLite quantised int8 → PASS (load = 1.1s)
+[cycle 2] test: p95 latency <100ms over 30s at 30fps → FAIL (p95 = 142ms)
+[cycle 2] fix:  drop input resolution 240→192 → PASS (p95 = 78ms)
+[cycle 3] test: sustained 5-minute run, no thermal throttle → PASS
+[cycle 4] acceptance suite: 17/17 → DONE
+```
+
+The fail-then-fix transcript is stored. If you re-run the task tomorrow, RETAIN serves these as known-good shortcuts.
+
+---
+
+## Quickstart
+
+Prerequisites: Node.js 20+, Python 3.10+, Playwright with `cloakbrowser`, Claude Code (or another supported host).
 
 ```bash
-# 1. Install the framework globally
+# 1. install
 npm install -g forger-framework
 
-# 2. Navigate to your workspace
+# 2. cd into your project
 cd my-project
 
-# 3. Initialize & Deploy FORGER
+# 3. initialise the workspace (writes .forger/ and registers the plugin)
 forger init --mode standard
+
+# 4. run a task
+forger run "Build a real-time facial emotion classifier for iOS"
 ```
 
-### Work Modes
+You will be dropped into CONTRACT first. From there the pipeline runs to RETAIN, asking for your input only when the contract is ambiguous or when a Tier-3 transformational idea wants promotion.
 
-Depending on how confident you are in the domain, adjust FORGER:
+### Modes
 
-- `quick`: (~5k tokens) For trivial tasks in cached domains. Skips `FIND`, trims probes.
-- `standard`: (~22k tokens) The default. Full 7-gate pipeline. Single cross-model review.
-- `deep`: (~35k tokens) High stakes autonomy. Dual-reviewer `GRILL`, mandatory manual waivers for assumptions.
+| Mode | When to pick it | Token budget (cold) | Differences |
+| --- | --- | --- | --- |
+| `quick` | You have built this kind of thing in this domain before | ~5k | FIND reads cached KB, OBSERVE trims probes, GRILL optional, Tier 1 only |
+| `standard` | The default | ~22k | Full pipeline, single cross-model reviewer |
+| `deep` | High stakes, novel domain, overnight autonomy | ~35k+ | Dual reviewer in GRILL, no waivers on high/critical probes, extended acceptance |
 
----
-
-## 🔒 Architectural Invariants
-
-FORGER plugins and integrations live by a few non-negotiable rules:
-
-1. **Done Means Ran** — The agent cannot claim completion without executing code and passing tests.
-2. **No Claim Without Evidence** — Every claim ends in a passed test, a sourced constraint, or a giant "speculative" warning tag.
-3. **Test Critical, Skip Trivial** — We avoid over-verification paralysis. The framework only probes high and critical assumptions.
-4. **Tier 2/3 Firewall** — Transformational ideas do not get executed unless a human explicitly promotes them.
-5. **Cross-Model Review** — The `GRILL` adversary must belong to a different model family.
+The token budgets in the table assume a cold run with no cached domain knowledge. The actual full-pipeline budget on first runs is closer to 700k for `standard`; the framework is being recalibrated. Tracking issue: [FORGER_FLAWS #6](framework/FORGER_FLAWS.md#flaw-6).
 
 ---
 
-## 📖 Documentation
+## Architectural invariants
 
-- [Introduction & Best Practices](#)
-- [The Philosophical Foundation](framework/FORGER.md)
-- [Implementing Custom Hooks](#)
-- [Managing the Knowledge Ledger](#)
+These do not get bent for convenience:
+
+1. **Done Means Ran.** No completion claim without execution and a green acceptance suite, or a documented reason execution was impossible.
+2. **No claim without evidence or label.** Every claim is either ledger-supported, test-supported, or tagged `speculative`.
+3. **Test critical, skip trivial.** Only `high` and `critical` assumptions require runtime probes.
+4. **Tier 2/3 firewall.** Speculative ideas live in their own files. They do not enter EXECUTE without explicit human promotion.
+5. **Cross-model review for standard and deep.** GRILL reviewer must be from a different model family than the executor.
+6. **Mechanism-fit before recombination.** Every combination passes a "does the causal mechanism transfer?" check.
+7. **Knowledge self-evolves.** Successful runs update the KB. After three runs in a domain, shortcuts become available.
+8. **Scripts are mechanical.** Hooks check liveness, schema, quote-existence. Judgment is LLM only.
+9. **Definition of Works is the single source of truth.** Every gate traces back to it.
 
 ---
 
-## 🌍 Community & Support
+## Documentation
 
-- **[Join Discord](#)** — Talk epistemic grounding, BDI architecture, and AI hallucination management.
-- **[GitHub Issues](#)** — Found a bug where the agent bypassed the firewall? Drop it here.
-- **[Contributing](#)** — Read our contribution guide.
+| Doc | What's in it |
+| --- | --- |
+| [docs/01-what-is-forger.md](docs/01-what-is-forger.md) | Plain-language framing, the failure mode it targets, the philosophy in short |
+| [docs/02-how-it-works.md](docs/02-how-it-works.md) | Architecture, harness vs agent, BDI split, epistemic triangle map |
+| [docs/03-phases.md](docs/03-phases.md) | Per-phase reference, including the EXECUTE sub-pipeline in full |
+| [docs/04-examples.md](docs/04-examples.md) | Full demo walkthroughs for CONTRACT, FIND, OBSERVE, RECOMBINE, GRILL, EXECUTE, RETAIN |
+| [docs/05-usage.md](docs/05-usage.md) | Install, init, modes, CLI reference, troubleshooting, common workflows |
+| [docs/06-architecture.md](docs/06-architecture.md) | Plugin filesystem, ledger schemas, audit hooks, KB structure |
+| [framework/FORGER.md](framework/FORGER.md) | Long-form philosophical foundation (legacy; being merged into `/docs`) |
 
-<br>
+---
+
+## Status and known gaps
+
+The current packaging has 8 critical flaws documented in [framework/FORGER_FLAWS.md](framework/FORGER_FLAWS.md). The pipeline ships artifacts that pass acceptance, but the install path requires an external shim while the plugin layout is restructured. If you want to try it before the v0.2 packaging lands, follow the install instructions in [docs/05-usage.md](docs/05-usage.md) and use the shim at `forger-local-marketplace`.
+
+What we are working on next:
+
+- Restructure the plugin to the standard Claude Code layout (`.claude-plugin/`, `agents/`, `skills/<slug>/`)
+- Move FIND fan-out to the orchestrator level (Claude Code strips `Task` from subagent toolsets)
+- Recalibrate the token budgets against real telemetry
+- Real reviewer adapters for OpenAI, Gemini, and cross-account Anthropic
+
+---
+
+## Community
+
+- **Discord** — coming with the v0.2 release
+- **GitHub Issues** — bug reports, especially when the framework lets a hallucination through
+- **Contributing** — see `CONTRIBUTING.md` (in progress)
+
+---
 
 <div align="center">
-  <b>Built for developers tired of AI slop. 100% Free and Open Source.</b> <br/>
-  Star this repository to support grounded AI engineering.
+  <sub>MIT licensed. Built because watching agents confidently produce broken code got old.</sub>
 </div>
