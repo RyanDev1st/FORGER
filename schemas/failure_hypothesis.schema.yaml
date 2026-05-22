@@ -1,0 +1,30 @@
+$schema: 'http://json-schema.org/draft-07/schema#'
+$id: 'forger://schemas/failure_hypothesis'
+type: object
+required:
+  - id
+  - hypothesis
+  - what_disproves
+  - minimal_test
+  - severity_if_wrong
+  - confidence
+  - status
+properties:
+  id:                { type: string }
+  hypothesis:        { type: string }
+  what_disproves:    { type: string }
+  minimal_test:      { type: string }
+  severity_if_wrong: { enum: [low, medium, high, critical] }
+  confidence:        { type: integer, minimum: 0, maximum: 5 }
+  reviewer_provider: { type: string }
+  reviewer_model:    { type: string }
+  reviewer_tier:     { enum: [best, good, acceptable, weak] }
+  blind:             { type: boolean, default: false }
+  status:
+    enum:
+      - open
+      - accepted_test_added
+      - rejected_with_counter_evidence
+      - escalated
+  counter_evidence_refs: { type: array, items: { type: string } }
+  resolution_test_id:    { type: string }

@@ -1,0 +1,20 @@
+# schema: ../schemas/risk_map.schema.yaml
+assumptions:
+  - id: a-1
+    description: 'Example unverified assumption.'
+    severity: high
+    evidence_refs:
+      - clm-example
+    resolution_required: source+probe
+    status: unresolved
+mechanisms:
+  - id: m-1
+    name: 'Example mechanism'
+    description: 'Causal process used by the artifact.'
+    source_refs:
+      - src-example
+known_failure_modes:
+  - id: fm-1
+    description: 'Known mode of failure.'
+    conditions: 'When this triggers.'
+    detection_method: 'How to detect.'

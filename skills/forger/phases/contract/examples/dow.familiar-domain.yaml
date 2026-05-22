@@ -1,0 +1,96 @@
+# schema: ../../../schemas/definition_of_works.schema.yaml
+# Worked example: familiar-domain DoW.
+# Scenario: user asks to add a markdown export flag to an existing CLI tool.
+# Mode: quick (auto-picked via mode_select_heuristic Rule 1).
+meta:
+  id: add-markdown-export-cli
+  created_at: '2026-05-20T13:42:11Z'
+  user_query_verbatim: |
+    Add a --format=markdown flag to my existing reportgen CLI. It already
+    supports --format=json. Should produce a readable markdown report from
+    the same internal report object. Same project, same tests.
+  mode: quick
+  domain_slug: cli-output-formatting
+  mode_picked_by: auto
+
+artifact:
+  type: code
+  format: 'Node.js CLI subcommand (extends existing reportgen)'
+  description: |
+    A new --format=markdown branch in the existing reportgen CLI that
+    serialises the same internal Report object the JSON path uses, producing
+    a single well-formed markdown document on stdout. No new dependencies,
+    no behaviour change to the existing JSON path.
+
+audience:
+  who: 'Developers on the analytics team who run reportgen in CI for nightly reports.'
+  use_case: |
+    Run `reportgen --input metrics.json --format=markdown > nightly.md` from
+    a GitHub Actions workflow; the output is committed back to the repo so
+    reviewers can read diffs in pull requests instead of scanning JSON.
+
+hard_constraints:
+  - id: hc-1
+    description: |
+      Must not change behaviour of the existing --format=json path. All
+      existing tests for JSON output must continue to pass unmodified.
+    verification_method: 'npm test -- --grep json must pass with zero changes to its test files.'
+  - id: hc-2
+    description: |
+      Must not introduce a new runtime dependency. Only the standard library
+      and packages already in package.json may be used.
+    verification_method: 'git diff package.json package-lock.json shows no new entries under dependencies.'
+  - id: hc-3
+    description: |
+      Output must be valid CommonMark — parseable by `commonmark` (a dev
+      dependency already present in this repo for the test suite).
+    verification_method: 'Pipe stdout into `commonmark` and assert no parse errors on the bundled fixture set.'
+
+success_criteria_measurable:
+  - id: sc-m-1
+    metric: 'unit-test coverage for the new markdown formatter module'
+    threshold: '>= 90% line coverage'
+    test_method: 'npm run coverage -- src/format/markdown.* prints a per-file table; the row for the new module is >= 90.'
+  - id: sc-m-2
+    metric: 'end-to-end CLI exit code on the fixture inputs'
+    threshold: 'exit 0 on every fixture in test/fixtures/reports/'
+    test_method: 'bash test/scripts/run_all_fixtures.sh --format=markdown; non-zero exit on any fixture fails the run.'
+  - id: sc-m-3
+    metric: 'rendered output byte size relative to the JSON path'
+    threshold: 'markdown output <= 2.5x the JSON output for the same input on the largest fixture'
+    test_method: 'wc -c on both outputs from test/fixtures/reports/large.json; ratio computed and asserted by a new perf test.'
+
+success_criteria_subjective:
+  - id: sc-s-1
+    criterion: 'The markdown reads naturally in GitHub PR preview — headings, lists, and code fences render as intended.'
+    measurement_protocol: |
+      Generate the report for test/fixtures/reports/sample.json, paste into a
+      throwaway GitHub PR description, eyeball the rendered preview, and
+      confirm: H2-per-section, no escaped HTML, code fences identify their
+      language. Capture a screenshot in the workspace.
+
+unacceptable_failure_modes:
+  - id: ufm-1
+    description: 'A regression in the existing --format=json path that ships unnoticed.'
+    detection_method: 'Existing JSON test suite is the canary; CI fails if any JSON test starts failing in this branch.'
+    safety_critical: false
+  - id: ufm-2
+    description: 'Markdown output that is silently malformed (renders but is not actually valid CommonMark).'
+    detection_method: 'The CommonMark parse check in hc-3 is the canary; any parse error fails the build.'
+    safety_critical: false
+
+reframe_memo:
+  original_framing: 'Add a markdown export format to the existing reportgen CLI alongside JSON.'
+  alternative_framings:
+    - 'Build a tiny standalone `report-to-md` script that consumes the JSON output of reportgen, instead of extending reportgen itself.'
+    - 'Generate HTML instead of markdown and render it inline in PRs as an image artifact.'
+  chosen_framing: 'Extend reportgen with a new --format=markdown branch, sharing the existing Report object.'
+  rationale: |
+    The standalone script alternative duplicates the JSON I/O surface area
+    and requires users to remember to chain two commands. The HTML
+    alternative loses the diffable-in-PRs property that motivated the
+    request. Extending reportgen keeps one CLI, one input contract, and one
+    test scaffold, and is small enough to land cleanly without touching the
+    JSON path.
+
+assumptions: []

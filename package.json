@@ -1,0 +1,22 @@
+{
+  "name": "forger",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Test-gated, execution-centric framework for grounded AI creativity.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "vitest run dev/tests",
+    "test:watch": "vitest dev/tests",
+    "validate:schemas": "node src/dev/validate_all_schemas.mjs",
+    "install:plugin": "node src/dev/install.mjs",
+    "setup:browser": "node src/dev/setup_browser.mjs"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "dotenv": "^16.4.5",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": { "vitest": "^2.1.0" }
+}

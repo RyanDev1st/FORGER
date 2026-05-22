@@ -1,0 +1,155 @@
+# schema: ../../../schemas/claim_ledger_entry.schema.yaml
+# Worked example: a claim_ledger.yaml from the same deep-mode FIND run as
+# source_ledger.example.yaml (all three lanes present). Each claim points to a
+# source_id that exists in that file. Severity, entailment, and status are
+# diverse on purpose so the file doubles as a calibration reference and
+# exercises FIND gate 3 via the trailing `status: blocked` critical entry.
+
+- id: clm-pipeline-error-propagation
+  source_id: src-node-stream-docs
+  lane: production
+  claim_text: |
+    stream.pipeline forwards errors from any stream in the chain to the final
+    callback, so callers do not need to wire .on('error') on every stage.
+  verbatim_quote: 'pipeline forwards errors to the callback'
+  severity: critical
+  dow_criterion_refs: [hc-1, ufm-2]
+  entailment: directly_supported
+  mechanism: |
+    Removes the per-stream listener boilerplate that the DoW forbids, and
+    eliminates the silent-error failure mode that the FM lists.
+  intended_use: primary
+  status: open
+
+- id: clm-backpressure-default
+  source_id: src-node-stream-backpressure-guide
+  lane: production
+  claim_text: |
+    Readable streams pause automatically when a downstream writable returns
+    false from .write(), so backpressure is the default behavior of pipe().
+  verbatim_quote: 'pipe handles backpressure automatically'
+  severity: high
+  dow_criterion_refs: [sc-m-1]
+  entailment: directly_supported
+  mechanism: |
+    Confirms the measured-throughput criterion can be met without custom
+    flow control as long as the artifact uses pipe() or pipeline().
+  intended_use: primary
+  status: open
+
+- id: clm-undici-pipeline-fix
+  source_id: src-nodejs-undici-stream-pr
+  lane: production
+  claim_text: |
+    A backpressure regression in undici was traced to early callback resolution
+    and fixed by awaiting the drain event before resolving the promise.
+  verbatim_quote: 'await the drain event before resolving'
+  severity: medium
+  dow_criterion_refs: [sc-m-1]
+  entailment: weakly_supported
+  mechanism: |
+    Patterns from this fix inform our streaming wrapper; quote describes the
+    fix mechanism but not the metric threshold directly.
+  intended_use: primary
+  status: open
+
+- id: clm-pipeline-error-handler-required
+  source_id: src-so-stream-pipeline-error
+  lane: community
+  claim_text: |
+    Without a final callback, errors in stream.pipeline are unhandled and
+    crash the Node.js process under default settings.
+  verbatim_quote: 'errors are unhandled without the callback'
+  severity: critical
+  dow_criterion_refs: [ufm-2]
+  entailment: directly_supported
+  mechanism: |
+    Crash-on-unhandled is exactly the failure mode the DoW marks as
+    unacceptable; the answer demonstrates a reproducible case.
+  intended_use: primary
+  status: open
+
+- id: clm-destroyed-writable-leak
+  source_id: src-gh-issue-stream-leak
+  lane: community
+  claim_text: |
+    Piping into a writable that was already destroyed can leak memory until
+    the process exits, particularly under repeated short-lived connections.
+  verbatim_quote: 'memory grows until process exits'
+  severity: high
+  dow_criterion_refs: [sc-m-1, ufm-1]
+  entailment: extrapolated
+  mechanism: |
+    Connects throughput regression to GC pressure; mechanism extrapolated
+    beyond the quoted single-case observation.
+  intended_use: primary
+  status: open
+
+- id: clm-stream-state-machine-debate
+  source_id: src-blog-streams-considered-harmful
+  lane: frontier
+  claim_text: |
+    Node.js streams expose a complex internal state machine that is difficult
+    to reason about without dedicated tooling, contributing to most observed
+    streaming bugs in practice.
+  verbatim_quote: 'streams expose a complex internal state machine'
+  severity: medium
+  dow_criterion_refs: [sc-m-1, ufm-1]
+  entailment: speculative
+  mechanism: |
+    Frames the OBSERVE phase: if the contrarian framing is right, we need a
+    probe that inspects stream state transitions during a load test.
+  intended_use: tier2_seed
+  status: open
+
+- id: clm-pipeline-arity
+  source_id: src-node-stream-docs
+  lane: production
+  claim_text: |
+    stream.pipeline accepts an arbitrary number of streams between source and
+    destination, including transform streams, in a single call.
+  verbatim_quote: 'pipeline accepts an arbitrary number of streams'
+  severity: low
+  dow_criterion_refs: [hc-1]
+  entailment: directly_supported
+  mechanism: |
+    Allows the artifact to compose transforms inline without intermediate
+    pipe() chains; minor design clarification.
+  intended_use: primary
+  status: open
+
+- id: clm-stream-encoding-default
+  source_id: src-node-stream-docs
+  lane: production
+  claim_text: |
+    Readable streams return Buffer objects by default unless setEncoding is
+    called, regardless of the upstream data type.
+  verbatim_quote: 'returns Buffer objects unless setEncoding is called'
+  severity: trivial
+  dow_criterion_refs: [hc-1]
+  entailment: directly_supported
+  mechanism: |
+    Background note for the implementation; not a contested point.
+  intended_use: primary
+  status: open
+
+- id: clm-destroyed-writable-rate
+  source_id: src-gh-issue-stream-leak
+  lane: community
+  claim_text: |
+    Under sustained short-lived connection churn (>= 500 conn/s) the
+    destroyed-writable leak grows fast enough to OOM a default-heap Node
+    process within minutes.
+  verbatim_quote: 'memory grows until process exits'
+  severity: critical
+  dow_criterion_refs: [ufm-1]
+  entailment: weakly_supported
+  mechanism: |
+    Quantitative rate is extrapolated from the qualitative quote; the
+    severity is critical because the failure mode is exactly what the
+    DoW marks as unacceptable, but the entailment is not strong enough
+    to anchor the claim. FIND gate 3 (critical claim at non-
+    `directly_supported` entailment) forces this entry to `blocked` so
+    OBSERVE must probe it before it can flow into RECOMBINE.
+  intended_use: primary
+  status: blocked

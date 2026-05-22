@@ -1,0 +1,19 @@
+# schema: ../schemas/source_ledger_entry.schema.yaml
+# Array of source_ledger_entry objects. Append-only.
+- id: src-example
+  url: 'https://example.com/docs'
+  title: 'Example Docs Page'
+  lane: production
+  accessed_at: '2026-05-19T00:00:00Z'
+  ttl_days: 90
+  expires_at: '2026-08-17T00:00:00Z'
+  quality_scores:
+    authority: 5
+    recency: 5
+    reproducibility: 4
+    implementation_relevance: 5
+    independence: 5
+    conflict_of_interest: 5
+  composite_score: 4.83
+  flags: []
+  notes: 'Vendor docs.'
