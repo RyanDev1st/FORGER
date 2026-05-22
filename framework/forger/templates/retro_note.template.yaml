@@ -1,0 +1,14 @@
+# schema: ../schemas/retro_note.schema.yaml
+task_id: example-task-2026-05-19
+domain_slug: example-domain
+completed_at: '2026-05-19T00:00:00Z'
+mode_used: standard
+status: shipped
+token_used: 0
+duration_ms: 0
+proven_claim_ids:
+  - clm-example
+failed_assumptions: []
+working_architecture_ref: ''
+ttl_overrides: {}
+shortcut_eligible: false
