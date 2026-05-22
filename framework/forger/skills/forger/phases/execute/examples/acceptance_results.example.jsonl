@@ -1,4 +1,0 @@
-{"ts":"2026-05-19T12:00:00Z","criterion_id":"sc-m-1","type":"measurable","passed":true,"expected":"<100ms","actual":"72ms","duration_ms":3000,"exit":0,"output_snippet":""}
-{"ts":"2026-05-19T12:01:30Z","criterion_id":"sc-m-2","type":"measurable","passed":true,"expected":">=0.95 f1","actual":"0.971 f1","duration_ms":18420,"exit":0,"output_snippet":"f1=0.971 precision=0.968 recall=0.974"}
-{"ts":"2026-05-19T12:03:10Z","criterion_id":"hc-1","type":"hard_constraint","passed":false,"duration_ms":540,"exit":1,"output_snippet":"npm run lint exited 1: src/parser.mjs:42:7 no-unused-vars 'context' is defined but never used"}
-{"ts":"2026-05-19T12:05:00Z","criterion_id":"sc-s-1","type":"subjective_pending","passed":false,"protocol":"reviewer reads docs/architecture.md and rates clarity 1-5; pass at >=4"}
