@@ -10,29 +10,6 @@ RED-GREEN-IMPROVE discipline and the anti-patterns to avoid.
 
 ---
 
-## 0. Subphase router (one-shot, before loop)
-
-Before entering the per-criterion loop, walk
-`procedure/subphase_router.md` once to choose B1, B2, or B3. The
-router reads `dow.yaml` and `risk_map.yaml` and emits
-`subphase_chosen` and `router_reason` fields for the EXECUTE
-telemetry line.
-
-- **B1** (default) → enter the loop below directly using
-  `refs/tdd_micro_cycle.md`.
-- **B2** → load `refs/spec_and_tasks.md`, produce `spec.md`,
-  `impl_plan.md`, and `tasks.yaml`, then enter the loop per task in
-  topological order.
-- **B3** → load `refs/walking_skeleton.md`, produce thinnest
-  end-to-end slice plus build/deploy/run mechanics plus one
-  `subjective_pending` acceptance line, then enter the loop per
-  inside-component criterion.
-
-Quick mode forces B1 regardless of inputs. Other modes follow the
-router decision rule.
-
----
-
 ## Loop (per criterion)
 
 ### 1. Pick the next open criterion

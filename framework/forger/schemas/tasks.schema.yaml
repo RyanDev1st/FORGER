@@ -1,0 +1,92 @@
+# JSON Schema (YAML form) for workspaces/{slug}/tasks.yaml
+#
+# Produced by EXECUTE subphase B2 (refs/spec_and_tasks.md).
+# Read by branch_code.md's per-task TDD loop.
+#
+# This schema is intentionally light. B2 produces tasks at the
+# granularity its router input suggested; over-constraining the
+# schema would force ceremony onto small task lists. Tighten only
+# after multiple domains have produced tasks.yaml and patterns of
+# missing structure become measurable.
+
+$schema: "http://json-schema.org/draft-07/schema#"
+title: tasks
+description: >
+  Sequenced task ledger produced by EXECUTE subphase B2. Each entry is
+  one TDD-loop unit. The list as a whole is a topologically valid DAG
+  via depends_on. No task may name a criterion absent from the DoW.
+
+type: array
+minItems: 1
+items:
+  type: object
+  required:
+    - id
+    - criterion_ids
+    - files_touched
+    - depends_on
+    - verification_command
+    - done_when
+  additionalProperties: false
+  properties:
+    id:
+      type: string
+      pattern: "^task-[a-z0-9-]+$"
+      description: >
+        Short identifier, kebab-case after the literal "task-" prefix.
+        Must be unique within the file.
+    criterion_ids:
+      type: array
+      minItems: 1
+      items:
+        type: string
+      description: >
+        DoW criterion IDs that this task closes. Every entry must
+        exist in dow.success_criteria_measurable, dow.hard_constraints,
+        or dow.unacceptable_failure_modes.
+    files_touched:
+      type: array
+      minItems: 0
+      items:
+        type: string
+      description: >
+        Paths the task is expected to write to. May be empty for tasks
+        that exercise existing files only (e.g. integration test runs).
+        Relative to workspace root.
+    depends_on:
+      type: array
+      items:
+        type: string
+        pattern: "^task-[a-z0-9-]+$"
+      description: >
+        Task IDs that must complete before this task. The full
+        depends_on graph across tasks.yaml must be a DAG (no cycles).
+    verification_command:
+      type: string
+      minLength: 1
+      description: >
+        Exact shell command the per-task TDD loop runs as the GREEN
+        verification. Should be deterministic and produce a clear pass
+        signal. Example: "npm run test -- --grep meas-1".
+    done_when:
+      type: string
+      minLength: 1
+      description: >
+        Plain-language statement of the exit condition. Typically
+        cites acceptance_results.jsonl. Example:
+        "acceptance_results.jsonl has passed:true for meas-1".
+    red_assertion:
+      type: string
+      description: >
+        Optional one-line description of the failing test the task
+        will write first. Useful when verification_command grep is
+        ambiguous.
+    notes:
+      type: string
+      description: >
+        Free-form executor notes. Not consumed by gates.
+
+# Validator hint (informational, not enforced by the schema itself):
+#   - cross-check every criterion_ids[*] against dow.yaml.
+#   - depends_on graph must be acyclic.
+#   - id must be unique across the array.
