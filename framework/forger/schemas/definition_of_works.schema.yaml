@@ -1,0 +1,92 @@
+$schema: 'http://json-schema.org/draft-07/schema#'
+$id: 'forger://schemas/definition_of_works'
+type: object
+required:
+  - meta
+  - artifact
+  - audience
+  - hard_constraints
+  - success_criteria_measurable
+  - unacceptable_failure_modes
+  - reframe_memo
+properties:
+  meta:
+    type: object
+    required: [id, created_at, user_query_verbatim, mode, domain_slug]
+    properties:
+      id:                  { type: string, pattern: '^[a-z0-9-]+$' }
+      created_at:          { type: string, format: 'date-time' }
+      user_query_verbatim: { type: string, minLength: 1 }
+      mode:                { enum: [quick, standard, deep] }
+      domain_slug:         { type: string, pattern: '^[a-z0-9-]+$' }
+      mode_picked_by:      { enum: [user, auto] }
+  artifact:
+    type: object
+    required: [type, description]
+    properties:
+      type:        { enum: [code, system, research_report, design, spec, other] }
+      format:      { type: string }
+      description: { type: string }
+  audience:
+    type: object
+    required: [who, use_case]
+    properties:
+      who:      { type: string }
+      use_case: { type: string }
+  hard_constraints:
+    type: array
+    items:
+      type: object
+      required: [id, description, verification_method]
+      properties:
+        id:                  { type: string }
+        description:         { type: string }
+        verification_method: { type: string }
+        threshold:           { type: string }
+  success_criteria_measurable:
+    type: array
+    items:
+      type: object
+      required: [id, metric, threshold, test_method]
+      properties:
+        id:          { type: string }
+        metric:      { type: string }
+        threshold:   { type: string }
+        test_method: { type: string }
+  success_criteria_subjective:
+    type: array
+    items:
+      type: object
+      required: [id, criterion, measurement_protocol]
+      properties:
+        id:                   { type: string }
+        criterion:            { type: string }
+        measurement_protocol: { type: string }
+  unacceptable_failure_modes:
+    type: array
+    items:
+      type: object
+      required: [id, description, detection_method]
+      properties:
+        id:                { type: string }
+        description:       { type: string }
+        detection_method:  { type: string }
+        safety_critical:   { type: boolean, default: false }
+  reframe_memo:
+    type: object
+    required: [original_framing, alternative_framings, chosen_framing, rationale]
+    properties:
+      original_framing:     { type: string }
+      alternative_framings: { type: array, items: { type: string }, minItems: 1 }
+      chosen_framing:       { type: string }
+      rationale:            { type: string }
+  assumptions:
+    type: array
+    items:
+      type: object
+      required: [id, description, severity, status]
+      properties:
+        id:          { type: string }
+        description: { type: string }
+        severity:    { enum: [trivial, low, medium, high, critical] }
+        status:      { enum: [unverified, verified, waived, invalid] }

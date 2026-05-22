@@ -1,0 +1,46 @@
+# schema: ../schemas/definition_of_works.schema.yaml
+meta:
+  id: example-task-slug
+  created_at: '2026-05-19T00:00:00Z'
+  user_query_verbatim: 'Replace with the user verbatim query.'
+  mode: standard
+  domain_slug: example-domain
+  mode_picked_by: user
+
+artifact:
+  type: code
+  format: 'Node.js library'
+  description: 'Replace with one-paragraph artifact description.'
+
+audience:
+  who: 'Replace with primary audience.'
+  use_case: 'Replace with how it will be used.'
+
+hard_constraints:
+  - id: hc-1
+    description: 'Constraint statement.'
+    verification_method: 'How a human or test can verify.'
+    threshold: 'Optional measurable bound.'
+
+success_criteria_measurable:
+  - id: sc-m-1
+    metric: 'e.g. p95 latency'
+    threshold: '< 100ms'
+    test_method: 'Command or protocol that measures this.'
+
+success_criteria_subjective: []
+
+unacceptable_failure_modes:
+  - id: ufm-1
+    description: 'What must never happen.'
+    detection_method: 'How to know it happened.'
+    safety_critical: false
+
+reframe_memo:
+  original_framing: 'User-stated problem framing.'
+  alternative_framings:
+    - 'A simpler reframe to consider.'
+  chosen_framing: 'The framing we ran with.'
+  rationale: 'Why we chose it.'
+
+assumptions: []
