@@ -40,7 +40,7 @@ The three things FORGER guarantees on a successful run:
 
 | Guarantee | Mechanism |
 | --- | --- |
-| **Grounded** in live sources | `playwright-cli` + `cloakbrowser` open real pages; no search-API snippets |
+| **Grounded** in live sources | `agent-browser` + `cloakbrowser` open real pages; no search-API snippets |
 | **Reviewed** by an outsider | The GRILL phase invokes a model from a different family that tries to break the proposal |
 | **Ran** | EXECUTE refuses to mark the task done until the artifact has been executed and acceptance tests pass |
 
