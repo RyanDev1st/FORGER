@@ -328,6 +328,12 @@ What we are working on next:
 
 ---
 
+## Related
+
+- **[SkillRouter](https://github.com/RyanDev1st/SkillRouter)** — a retrieval MCP for Claude Code skills. Claude Code loads every skill's description into context on every request; SkillRouter suppresses them and lets the agent retrieve only the skills a task actually needs. Built alongside FORGER, shipped separately because it is useful on its own.
+
+---
+
 ## Community
 
 - **Discord** — coming with the v0.2 release
