@@ -5,3 +5,22 @@ workspaces/
 **/probe-sandbox/
 **/.retry-*
 **/hook_log.jsonl
+
+# Local dev workspace (agent worktrees, scratch projects, capture output)
+.claude/
+.playwright/
+.playwright-cli/
+/IPBC/
+/data/
+/examples/
+/framework/
+/FORGER/
+/FORGER framework/
+/reTruth/
+/results/
+ruvector.db
+colorize.js
+tagger.js
+handoff.md
+ARCHITECTURE.md
+CLAUDE.md

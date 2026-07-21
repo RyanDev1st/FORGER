@@ -17,7 +17,7 @@
   <img src="https://img.shields.io/badge/Pipeline-7_Phase-000000?style=for-the-badge" alt="7-Phase Pipeline" />
   <img src="https://img.shields.io/badge/Done_Means-Ran-000000?style=for-the-badge" alt="Done Means Ran" />
   <img src="https://img.shields.io/badge/Cross_Model-Review-000000?style=for-the-badge" alt="Cross Model Review" />
-  <img src="https://img.shields.io/badge/License-MIT-000000?style=for-the-badge" alt="License" />
+  <img src="https://img.shields.io/badge/License-Apache_2.0-000000?style=for-the-badge" alt="License" />
 </p>
 
 > Status: pre-release. The architecture is locked. Public packaging is being rebuilt against the Claude Code plugin layout (see [FORGER_FLAWS.md](framework/FORGER_FLAWS.md) for the open list).
@@ -337,5 +337,5 @@ What we are working on next:
 ---
 
 <div align="center">
-  <sub>MIT licensed. Built because watching agents confidently produce broken code got old.</sub>
+  <sub>Apache 2.0 licensed. Built because watching agents confidently produce broken code got old.</sub>
 </div>
